@@ -5,6 +5,11 @@
 
 _This chapter assumes you know the shape of a 4X game but want to play Civ VI *well* with The Grand Chronicle installed — what to set up, which game modes earn their place, and how to read the game with the mods' new lenses, era by era._
 
+== Which layer are you playing?
+
+- _Layer 1 — Vanilla+ (learning):_ the rules are 100% vanilla. Everything in this chapter applies, but you can ignore the technology and content notes — the tree is the vanilla tree, the resources are the vanilla set. Play with all game modes off; that is what "learning the game" means here.
+- _Layer 2 — The Grand Chronicle (fully modded):_ Layer 1 plus the AI and content. What changes: the AI thinks like a rival great power (Real Strategy); the tech tree is rearranged to be historical (Real Tech Tree) and its boosts are randomized every game (Real Eurekas); the world has ~60 extra resources (Resourceful 2, Sukritact's Resources), 20 extra natural wonders (Terra Mirabilis), wetlands that matter, dynamic city names, and an optional oceans game mode. This chapter's technology and content sections are written for this layer.
+
 == Creating your game: the Chronicle baseline
 
 From the main menu choose *Single Player → Create Game* and open *Advanced Setup*. This baseline works for every persona in Chapter 4:
@@ -35,7 +40,7 @@ From the main menu choose *Single Player → Create Game* and open *Advanced Set
 
 === Game modes: which earn their place
 
-Game modes are official DLC toggles in Advanced Setup — choose them per game, not per install.
+Game modes are official DLC toggles in Advanced Setup — choose them per game, not per install. On Layer 1, leave them all off: the point of that layer is the vanilla rules. On Layer 2, the table below is your guide.
 
 #text(size: 9.5pt)[
 #table(
@@ -65,6 +70,7 @@ The UI mods are not decoration — they change *how you make decisions*:
 - _Extended Diplomacy Ribbon + Global Relations Panel_ give you the diplomatic map: who is weak, who is friendly, who everyone hates. Use it — grievances and alliances are visible strategy.
 - _Better Combat Preview_ changes war: you see damage ranges before you attack. Ambushes and favorable terrain become things you *engineer*, not hope for.
 - _Better Report Screen_ is your endgame dashboard: units, deals, policies, minors — one screen to plan your victory push.
+- _Better Tech Tree_ (and, on Layer 2, the Real Tech Tree reorder) makes the research path legible: prerequisites, costs, and unlocks at a glance, so you can see what beelining actually costs you.
 - _Real Strategy_ makes the AI behave like a player with a plan. Respect it: the AI now builds districts that make sense, which means it *will* have an economy by the Renaissance. Early aggression windows are real, but so are its counterattacks.
 
 == Era by era
@@ -73,7 +79,7 @@ The UI mods are not decoration — they change *how you make decisions*:
 
 - _Open_ with a scout (or two) and a slinger: meet city-states for free first-meet envoys, find your neighbors, and grab the tribal villages.
 - _Settle on fresh water_ (river or coast) and *plan before you plant*: your first three cities should have room to grow into their districts. Drop tacks now, settle accordingly.
-- _Tech eureka culture_: don't research blind — read what boosts a tech (build that pasture, meet that civ) and let the boosts pull you forward. This is the game's hidden skill floor.
+- _Tech eureka culture_: don't research blind — read what boosts a tech (build that pasture, meet that civ) and let the boosts pull you forward. This is the game's hidden skill floor. (Layer 2 with Real Eurekas: the boost conditions are randomized each game, so the skill becomes *discovering* them — hover the tech and read what this game's boost is.)
 - _Combat_: slingers with the warrior are enough to clear camps. Do not over-build military in a peaceful opening — every unit is a missed settler.
 
 === Classical & Medieval — governments and golden ages
@@ -83,11 +89,12 @@ The UI mods are not decoration — they change *how you make decisions*:
 - _Policy economy_: with Extended Policy Cards, you can *see* when a military card beats a growth card. Re-swap every few turns — that's the actual government minigame.
 - _Loyalty_ (R&F/GS): don't settle inside your neighbor's pressure bubble unless you plan to take their cities next. Foreign cities flip; yours can too.
 - _Wonders_: pick two or three per era that match your victory (Chapter 4 personas say which). With Real Strategy installed, the AI races you — check the wonder screen and pivot when beaten.
+- _Research path (Layer 2)_: Real Tech Tree reorders prerequisites to be historical — don't assume the vanilla chain. Open the tree (Better Tech Tree makes this easy) and chart your path before you commit.
 
 === Renaissance & Industrial — the economy era
 
 - _Trade routes are your second economy_ (Gathering Storm makes them even more vital). With Better Trade Screen, sort by gold/science and keep every route filled — internal routes grow new cities, external routes make money and spread religion.
-- _Corporations_ (if Monopolies & Corporations is on): monopolies come from controlling a luxury's sources — trade for them, don't gift them. Products are endgame gold.
+- _Corporations_ (if Monopolies & Corporations is on): monopolies come from controlling a luxury's sources — trade for them, don't gift them. Products are endgame gold. (Layer 2: with Resourceful 2 and Luxury Resource Variety there are far more luxuries in play — and therefore more monopolies to chase.)
 - _Great People_: with Real Great People, the window shows portraits and points. Plan *which* great person you want and protect your lead in that category — don't let a neighbor's Theatre Square out-accumulate you.
 - _Alliances_: a Research or Economic Alliance with the right neighbor is compounding value. The Global Relations Panel shows who's actually reliable.
 
@@ -112,13 +119,14 @@ The UI mods are not decoration — they change *how you make decisions*:
 - _Loyalty_: pressure from nearby cities and civics; governors, garrisons, and population decide who keeps the city.
 - _Grievances_ (GS): declare war without cause and the world hates you; casus belli keeps grievances low. The ribbon shows the fallout.
 - _Religion_: founding a religion is optional but powerful (faith economy, relics, city-state Suzerain bonuses, religious victory). If you skip it, at least defend against it.
+- _Resources (Layer 2)_: with ~60 extra resource types (Resourceful 2, Sukritact's Resources), amenity and trade planning gets richer — and Luxury Resource Variety makes each map's economy look different, so don't assume last game's luxury mix.
 - _City-states_: first meet = free envoy; 3 envoys = Suzerain. Suzerain bonuses are among the strongest incentives in the game — the report screen's new minors tab tracks them.
 - _Tourism_ (culture victory): great works, wonders, relics, seaside resorts, rock bands. Theming bonuses (same era/type in one museum) multiply tourism — Great Works Viewer exists for this.
 - _Climate_ (GS): CO₂ from coal/oil plants, floods and droughts scale with disaster intensity. Clean energy later; the congress votes on carbon taxes.
 
 == Victory roadmaps
 
-- _Science_: campuses everywhere → universities → Oxford/space agency wonders → moon/mars projects. Pingala in the spaceport city, Production Queue on the projects, research alliances. *Persona: The Cradle of Science.*
+- _Science_: campuses everywhere → universities → Oxford/space agency wonders → moon/mars projects. Pingala in the spaceport city, Production Queue on the projects, research alliances. (Layer 2: Real Tech Tree makes the path to rocketry more historical — chart it early with Better Tech Tree.) *Persona: The Cradle of Science.*
 - _Culture_: theatre squares, wonders, artifacts, then rock bands; monopolies multiply tourism if that mode is on. *Persona: The Architect of Wonders.*
 - _Domination_: an early war to cripple a neighbor, then snowball — but Real Strategy's AI will punish a stalled war. Corps, oil, and air power close it out. *Persona: The Iron Chancellor.*
 - _Diplomatic_: win world congress votes — build Statue of Liberty, spread your government's appeal, bank favour with everyone. *Persona: The Merchant Republic.*

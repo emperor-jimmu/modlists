@@ -1,26 +1,24 @@
-// 20-modlist.typ — The Grand Chronicle: the modlist.
+// 20-modlist.typ — The Grand Chronicle: the modlist, in two layers.
 #import "theme.typ": *
 
 = The Modlist
 
-_Twenty-six verified mods in four categories. Every entry was checked against its live Steam Workshop page (author, item id, update date) at the time of writing. None of them make the game easier or hand you power — they make the AI think, the map beautiful, and your decisions informed._
+_Thirty-two verified mods (31 required, one optional) in two installation layers. Every entry was checked against its live Steam Workshop page (author, item id, update date) at the time of writing. None of them make the game easier or hand you power — they make the AI think, the map beautiful, and your decisions informed._
 
-== 1 · AI & Strategy
+== The two layers
 
-The single most important mod in the list. One AI overhaul only — the community consensus is that AI mods must not be stacked.
+The list is deliberately split in two, because "learning the game" and "playing the full chronicle" need different setups:
 
-#mod-entry(
-  name: "Real Strategy (AI)",
-  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=1617282434",
-  author: "infixo",
-  what: "A different approach to making the AI better: a mixture of Lua 'thinking' and tuned AI lists. The AI plans districts and units coherently, pursues victory types, and handles war and naval play sensibly instead of drifting.",
-  why: "This is the 'more AI' request in one package — a smarter opponent that respects the game's own systems, which raises the challenge without cheating.",
-  compat: "Do not combine with AI+, RHAI or Better Balanced Game. Updated August 2023 for the final build.",
-)
+- _Layer 1 — Vanilla+ (20 mods):_ interface and graphics only. *Zero gameplay changes* — the rules are exactly the vanilla game, just readable and prettier. This is the layer to learn on: everything you learn transfers 1:1 to unmodded play.
+- _Layer 2 — The Grand Chronicle (31 mods + 1 optional):_ Layer 1 plus the AI overhaul, the tech-tree suite, and the content mods. This is the fully modded game — the AI plans, the tech tree is historical, and the world is full of resources, wonders, and things to discover.
 
-== 2 · Interface & Information
+Start in Layer 1, graduate to Layer 2 when the vanilla systems feel familiar. The installation chapter covers both flows.
 
-Thirteen UI mods that reveal information the vanilla interface hides. None change balance — they turn guessing into planning, which is exactly the kind of depth this list is about.
+== Layer 1 · Vanilla+ — learn the game
+
+=== Interface & Information (14)
+
+UI mods that reveal information the vanilla interface hides. None change balance — they turn guessing into planning. On this layer, that's the whole point: you learn the *real* rules, only with a cockpit you can read.
 
 #mod-entry(
   name: "Quick Deals",
@@ -74,6 +72,15 @@ Thirteen UI mods that reveal information the vanilla interface hides. None chang
   what: "The Civilopedia now shows decoded modifiers, district adjacencies, and AI strategies — the actual numbers behind the prose.",
   why: "The reference book becomes worth opening: you can learn how the systems really work.",
   compat: "UI-only; language-independent.",
+)
+
+#mod-entry(
+  name: "Better Tech Tree (UI)",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=1337632610",
+  author: "infixo",
+  what: "Shows far more information in the tech and civic trees and adds ~150 unique icons, so you can read prerequisites, costs, and unlocks at a glance.",
+  why: "The tree is where the whole game is planned — making it legible belongs in the learning layer.",
+  compat: "UI-only; designed by the same author as the Layer 2 tech mods it will sit beside later.",
 )
 
 #mod-entry(
@@ -139,7 +146,7 @@ Thirteen UI mods that reveal information the vanilla interface hides. None chang
   compat: "UI-only; does not cover air combats.",
 )
 
-== 3 · Graphics & Immersion
+=== Graphics & Immersion (6)
 
 Six visual mods that make the map calmer, richer, and easier to read. All cosmetic; none touch gameplay numbers.
 
@@ -197,9 +204,82 @@ Six visual mods that make the map calmer, richer, and easier to read. All cosmet
   compat: "Visual only; includes a variant texture for Terra Mirabilis's Lake Victoria.",
 )
 
-== 4 · World & Content
+== Layer 2 · The Grand Chronicle — the fully modded game
 
-Six mods that add detail, depth, and things to discover — new wonders, new resources, new terrain, dynamic names, and the map pack. All are additions, not power spikes.
+_Everything from Layer 1, plus the mods that change how the game thinks. This is where the Chronicle actually begins._
+
+=== AI & Strategy (1)
+
+#mod-entry(
+  name: "Real Strategy (AI)",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=1617282434",
+  author: "infixo",
+  what: "A different approach to making the AI better: a mixture of Lua 'thinking' and tuned AI lists. The AI plans districts and units coherently, pursues victory types, and handles war and naval play sensibly instead of drifting.",
+  why: "This is the 'more AI' request in one package — a smarter opponent that respects the game's own systems, which raises the challenge without cheating.",
+  compat: "Do not combine with AI+, RHAI or Better Balanced Game. Designed to sit alongside the author's other mods below.",
+)
+
+=== Technology (3, plus 1 optional)
+
+The 'more tech' request: a tree that makes historical sense, research boosts that surprise you, and — if you want it — eras that last long enough to live in.
+
+#mod-entry(
+  name: "Real Tech Tree",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=871465857",
+  author: "infixo",
+  what: "Rearranges the tech and civic trees to be more historically accurate and logical: new connections patch the omissions that let players beeline two eras ahead, and same-era techs cost comparably.",
+  why: "Research becomes a historical path instead of a spreadsheet — the 'more tech' request in one mod.",
+  compat: "Data-only (tree connections and costs); stable since 2020. Designed by the same author as Real Strategy and the rest of this section.",
+)
+
+#mod-entry(
+  name: "Real Eurekas",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=886630163",
+  author: "infixo",
+  what: "Over 500 new eureka and inspiration conditions, randomly assigned to techs and civics — every game's boost map is different.",
+  why: "Replayability: you can't memorize the tree's shortcuts, so each chronicle researches its own way.",
+  compat: "Version 3+ works with Better Tech Tree (Layer 1). Honest note: it makes research planning less predictable — that's the point.",
+)
+
+#mod-entry(
+  name: "Extended Eras (optional)",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2123444827",
+  author: "p0kiehl",
+  what: "Adjusts research costs so eras last longer without making the game unbearably long; also stops civilizations from rushing ahead or falling too far behind.",
+  why: "The pacing choice for chronicle-style games — each era gets played out instead of flown past. Pairs perfectly with the Chronicler persona.",
+  compat: "Pacing-only; works on all game speeds. Optional: skip it if you prefer the standard game length.",
+)
+
+=== World & Content (8)
+
+New resources, new wonders, dynamic names, and the map pack — additions, not power spikes.
+
+#mod-entry(
+  name: "Resourceful 2",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=1369684991",
+  author: "Amatheria",
+  what: "Adds 51 new resources (bonus, luxury, and strategic) across pastures, quarries, mines, and camps; all luxuries can be harvested; pantheons and Monopolies & Corporations support included.",
+  why: "The resource depth request: economies get more things to improve, trade, and monopolize.",
+  compat: "Fully compatible with the New Frontier Pass and the Monopolies & Corporations game mode. No documented conflict with Sukritact's Resources. It is the heaviest asset mod in the list — see the crash troubleshooting in Chapter 1.",
+)
+
+#mod-entry(
+  name: "Luxury Resource Variety",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=1862846514",
+  author: "p0kiehl",
+  what: "Increases the number of unique luxury kinds on each map size, so economies look different every game (it does not change the total amount of luxury tiles — that stays tied to the resource setting).",
+  why: "More variety in what you trade and monopolize; the Merchant Republic persona is built on it.",
+  compat: "Requires Resourceful 2 (present in this layer) or Sukritact's Resources + Civitas Resources.",
+)
+
+#mod-entry(
+  name: "Sukritact's Resources",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=1150492115",
+  author: "sukritact",
+  what: "Adds new resources across the board: Cheese, Camels, Obsidian, Gold (mine), Bison, and more, each with sensible yields on their improvement.",
+  why: "Richer economies — more luxuries and bonuses to trade, improve, and fight over.",
+  compat: "Content mod, balanced yields; sits alongside Resourceful 2 without documented conflicts.",
+)
 
 #mod-entry(
   name: "Terra Mirabilis",
@@ -217,15 +297,6 @@ Six mods that add detail, depth, and things to discover — new wonders, new res
   what: "Cities change their names to match their owner's culture, and duplicate names never appear in the same game — a conquered York becomes Eboracum again.",
   why: "The map tells a story of conquest and culture; fully modular across mods and DLC.",
   compat: "Flavor mod; works regardless of enabled DLC.",
-)
-
-#mod-entry(
-  name: "Sukritact's Resources",
-  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=1150492115",
-  author: "sukritact",
-  what: "Adds new resources across the board: Cheese, Camels, Obsidian, Gold (mine), Bison, and more, each with sensible yields on their improvement.",
-  why: "Richer economies — more luxuries and bonuses to trade, improve, and fight over.",
-  compat: "Content mod, balanced yields; also serves as a base for other mods.",
 )
 
 #mod-entry(
@@ -261,4 +332,5 @@ Six mods that add detail, depth, and things to discover — new wonders, new res
 - _Better Balanced Game (BBG)_ — a competitive multiplayer rebalance; it re-tunes the whole economy and conflicts with the 'deepen, don't rebalance' goal, and it must not sit next to Real Strategy.
 - _AI+ / RHAI_ — fine mods on their own, but AI overhauls do not stack; Real Strategy is the single choice here.
 - _Heroes & Legends, Zombie Defense, Apocalypse_ game modes — gimmicks and power spikes that make the game easier or weirder.
+- _Cheat-y research mods_ (faster techs, gold-bought research) and stale tree reworks that *remove* techs (e.g. Tech Tree Rework) — the opposite of this list's charter.
 - Anything that hands the player free yields, cheaper units, or faster tech — that is the opposite of this list's charter.

@@ -50,3 +50,26 @@ All entries verified against live Steam Workshop pages (title, author, item id, 
 - CQUI — stale monolithic UI superseded by the individual UI mods above.
 - Heroes & Legends game mode — power creep (not a mod; noted in guide as "leave off").
 - john6/CivModManager — dead 2017 utility, rejected as mod manager.
+
+## LAYERS (2026-08-11)
+
+The list is split into **two installation layers** (user directive):
+
+- **Layer 1 — Vanilla+ (learn the game)**: UI / information and graphics mods only. Zero gameplay changes — what you learn transfers 1:1 to unmodded play. 20 mods.
+- **Layer 2 — The Grand Chronicle (fully modded)**: Layer 1 plus the AI overhaul, tech-tree mods, and content mods. 31 mods (32 with optional Extended Eras).
+
+Personas assume Layer 2. Beginners start in Layer 1 and graduate.
+
+## VERDICTS ROUND 2 (2026-08-11)
+
+| Verdict | Mod | Author | Workshop id | Layer | Notes |
+|---|---|---|---|---|---|
+| Adopted | Better Tech Tree (UI) | infixo | 1337632610 | 1 | UI-only; ~150 new icons, more tree info |
+| Adopted | Resourceful 2 | Amatheria | 1369684991 | 2 | +51 resources; NFP + Monopolies & Corporations compatible; heaviest asset mod in the list |
+| Adopted | Luxury Resource Variety | p0kiehl | 1862846514 | 2 | More unique luxury kinds per map size; requires Resourceful 2 (satisfied) |
+| Adopted | Real Tech Tree | infixo | 871465857 | 2 | Historical/logical tree connections; anti-beeline; pairs with Real Strategy |
+| Adopted | Real Eurekas | infixo | 886630163 | 2 | 500+ eureka/inspiration conditions randomized per game; v3+ works with Better Tech Tree |
+| Adopted (optional) | Extended Eras | p0kiehl | 2123444827 | 2 | Pacing: eras last longer, prevents rushing/falling behind; works all speeds |
+| Rejected | Tech Tree Rework | Remove Sniper from TF2 | 1714676022 | — | Stale (2019, 59 subs), removes techs — opposite of "more tech" |
+| Rejected | Alternate Civics Tree | UncivilizedGuy | 2049369576 | — | 191 subs, niche |
+| Rejected | Alliances Expanded | JNR | 1945460659 | — | Diplomacy content outside the resources/tech ask; needs a compat patch with UI mods |

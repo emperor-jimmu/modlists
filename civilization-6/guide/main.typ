@@ -61,7 +61,7 @@
   #v(0.2cm)
   #text(size: 11pt, fill: muted)[Complete Edition · Final build 1.0.12.68 (July 2024)]
   #v(0.2cm)
-  #text(size: 10.5pt, fill: muted)[26 mods · Installation · How to Play · Six Personas]
+  #text(size: 10.5pt, fill: muted)[Two layers · 20 vanilla+ / 31 fully modded · Six Personas]
   #v(2.6cm)
   #text(size: 9.5pt, fill: muted)[Compiled August 2026 — for the last version of the game]
 ]

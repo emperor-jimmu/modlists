@@ -6,7 +6,7 @@ The list deepens and modernizes the game — smarter AI, richer information, mor
 
 ## Contents
 
-- **26 verified mods** across four categories: AI & Strategy · Interface & Information · Graphics & Immersion · World & Content
+- **32 verified mods in two layers**: Layer 1 "Vanilla+" (20 mods — interface & graphics only, zero gameplay change, for learning the game) and Layer 2 "The Grand Chronicle" (31 required / 32 with the optional pacing mod — adds AI, tech-tree, and resource/wonder content)
 - **Mod manager**: Steam Workshop + Enhanced Mod Manager + the in-game Additional Content screen
 - **How to play**: game setup, game modes, era-by-era play with the mods' new lenses
 - **Six personas**: The Architect of Wonders, The Iron Chancellor, The Cradle of Science, The Merchant Republic, The Faithful Pilgrim, The Chronicler of Eras

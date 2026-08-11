@@ -12,11 +12,11 @@ Civ 6 has no character creator — your identity comes from the choices in *Adva
 - _The civilization and leader._ This is your kit: unique district, unique units, leader ability. Each persona pairs them with a victory lane.
 - _The map and the world._ Map type, size, speed, and game modes shape *how* the story plays out — an archipelago is a different chronicle than a Pangaea.
 - _The difficulty and the house rules._ Difficulty sets the opponent's economy; house rules are the real character: what you may do, what you must do, what counts as winning.
-- _The mods._ Chapter 2's list is one installation; each persona simply leans on the mods that matter to its playstyle and picks its game modes accordingly.
+- _The mods._ Chapter 2's list is one installation with two layers — the personas are all Layer 2 games, so make sure you have graduated before starting a persona run; each persona leans on the mods that matter to its playstyle and picks its game modes accordingly.
 - _The save._ Name each game after its persona (`grand-architect`, `grand-chancellor`, …) and keep one active game per persona — switching personas means starting a new chronicle, not a new install.
 
 #info[
-  All six personas run on the same modlist — the personas differ in civ, setup, and self-imposed rules, not in mods. Keep one save per persona so you can always return to an old chronicle.
+  All six personas run on the same modlist — the personas differ in civ, setup, and self-imposed rules, not in mods. They are _Layer 2 games_: learn the rules on a Layer 1 save (Chapter 1 installs it), then graduate. Keep one save per persona so you can always return to an old chronicle.
 ]
 
 == 1 · The Architect of Wonders
@@ -36,7 +36,7 @@ Civ 6 has no character creator — your identity comes from the choices in *Adva
 - *Game modes:* Monopolies & Corporations on (monopolies multiply tourism); everything else default.
 - *House rules:* at least two wonders completed every era; builders must be *earned* — no buying them with gold before the Medieval era; never chop a wonder's production (real architects don't demolish forests for columns).
 - *Goal:* three wonders per era, one fully themed museum, and a culture victory — or simply the most beautiful empire at the score screen.
-- *Mods that shine:* Detailed Map Tacks (wonder adjacency planning), Extended Policy Cards, Terra Mirabilis (20 new natural wonders to build around), Colorized Historic Moments, City Sprawl Graphics, Prettier Lakes.
+- *Mods that shine:* Detailed Map Tacks (wonder adjacency planning), Extended Policy Cards, Terra Mirabilis (20 new natural wonders to build around), Resourceful 2 (more luxuries to keep your cities happy), Colorized Historic Moments, City Sprawl Graphics, Prettier Lakes.
 
 == 2 · The Iron Chancellor
 
@@ -55,7 +55,7 @@ Civ 6 has no character creator — your identity comes from the choices in *Adva
 - *Game modes:* default modes off; Barbarian Clans on (more factions, more politics).
 - *House rules:* no war before the Medieval era (chancellors prepare first); every war needs a *casus belli* — denounce first, then demand; never accept peace without a city, a luxury, or a tribute in gold; maintain a standing army of at least six units at all times.
 - *Goal:* annex two rivals' capitals, then win by domination — or by score if the world sues for peace first.
-- *Mods that shine:* Better Combat Preview (calculate every assault), Extended Diplomacy Ribbon (read the balance of power), Real Strategy (the AI pushes back), Production Queue (keep the war machine fed).
+- *Mods that shine:* Better Combat Preview (calculate every assault), Extended Diplomacy Ribbon (read the balance of power), Real Strategy (the AI pushes back), Real Tech Tree (plan the military research path), Production Queue (keep the war machine fed).
 
 == 3 · The Cradle of Science
 
@@ -74,7 +74,7 @@ Civ 6 has no character creator — your identity comes from the choices in *Adva
 - *Game modes:* default modes off — a clean ruleset is the point.
 - *House rules:* every city must contain a campus (settle accordingly); gold may *never* buy buildings or projects — everything must be produced or built; no reloading, ever; at least one research alliance maintained from the Medieval era on.
 - *Goal:* science victory; the personal target is being first to the Information era tech tree's crown.
-- *Mods that shine:* Detailed Map Tacks (campus adjacency), Better Report Screen (the empire-wide dashboard), Production Queue (space projects without idle cities), Sukritact's Simple UI Adjustments.
+- *Mods that shine:* Detailed Map Tacks (campus adjacency), Better Report Screen (the empire-wide dashboard), Better Tech Tree + Real Tech Tree (chart the historical research path), Real Eurekas (adapt to each game's boosts), Production Queue (space projects without idle cities).
 
 == 4 · The Merchant Republic
 
@@ -93,7 +93,7 @@ Civ 6 has no character creator — your identity comes from the choices in *Adva
 - *Game modes:* Monopolies & Corporations _on_ (the mode this persona is built for); Secret Societies optional if you want a splash of fantasy.
 - *House rules:* trade routes must run at capacity from the moment they unlock; gold must be reinvested within five turns (build, buy, or gift — no hoarding); every city-state you meet gets at least one envoy.
 - *Goal:* diplomatic victory — or 100,000 gold in the treasury, whichever comes first.
-- *Mods that shine:* Quick Deals (the market at a keystroke), Better Trade Screen (route yield sorting), Global Relations Panel (who owes whom), Sukritact's Resources (more luxuries to monopolize and trade).
+- *Mods that shine:* Quick Deals (the market at a keystroke), Better Trade Screen (route yield sorting), Global Relations Panel (who owes whom), Resourceful 2 + Luxury Resource Variety (the monopoly raw material), Sukritact's Resources.
 
 == 5 · The Faithful Pilgrim
 
@@ -131,7 +131,7 @@ Civ 6 has no character creator — your identity comes from the choices in *Adva
 - *Game modes:* Barbarian Clans and Dramatic Ages _on_ (history should bite); Sukritact's Oceans on if you use a standard map script instead of YnAMP.
 - *House rules:* never chase a victory type — pursue whatever the era demands (era score decides); never restart a save, never reload a disaster; screenshot every era transition; write the story in your head as you go.
 - *Goal:* a world history you would retell — and the highest era score you can honestly earn.
-- *Mods that shine:* the whole World & Content stack — YnAMP, Rosetta, Terra Mirabilis, Wetlands, Sukritact's Resources (+ Oceans), Environment Skin, Denser Vegetation, City Sprawl Graphics, Colorized Historic Moments, Hillier Hills, Prettier Lakes.
+- *Mods that shine:* the whole World & Content stack — YnAMP, Rosetta, Terra Mirabilis, Wetlands, Sukritact's Resources (+ Oceans), Resourceful 2, Environment Skin, Denser Vegetation, City Sprawl Graphics, Colorized Historic Moments, Hillier Hills, Prettier Lakes — plus Real Tech Tree and, if you want the eras to breathe, Extended Eras.
 
 == How to start a persona run
 
@@ -148,11 +148,11 @@ Civ 6 has no character creator — your identity comes from the choices in *Adva
   fill: (x, y) => if y == 0 { banner } else if calc.even(y) { panel } else { panel },
   align: (left, left, left),
   [_Persona_], [_Difficulty_], [_Signature mods_],
-  [The Architect of Wonders], [King], [Detailed Map Tacks, Terra Mirabilis, Colorized Historic Moments, City Sprawl Graphics],
-  [The Iron Chancellor], [King–Emperor], [Better Combat Preview, Extended Diplomacy Ribbon, Real Strategy, Production Queue],
-  [The Cradle of Science], [Emperor], [Detailed Map Tacks, Better Report Screen, Production Queue, Simple UI Adjustments],
-  [The Merchant Republic], [King], [Quick Deals, Better Trade Screen, Global Relations Panel, Sukritact's Resources],
+  [The Architect of Wonders], [King], [Detailed Map Tacks, Terra Mirabilis, Resourceful 2, Colorized Historic Moments, City Sprawl Graphics],
+  [The Iron Chancellor], [King–Emperor], [Better Combat Preview, Extended Diplomacy Ribbon, Real Strategy, Real Tech Tree, Production Queue],
+  [The Cradle of Science], [Emperor], [Detailed Map Tacks, Better Tech Tree, Real Tech Tree, Real Eurekas, Production Queue],
+  [The Merchant Republic], [King], [Quick Deals, Better Trade Screen, Global Relations Panel, Resourceful 2, Luxury Resource Variety],
   [The Faithful Pilgrim], [King], [More Lenses, Extended Policy Cards, Real Great People, Better Report Screen],
-  [The Chronicler of Eras], [Prince], [YnAMP, Rosetta, Terra Mirabilis, Wetlands, Environment Skin, Denser Vegetation, Colorized Historic Moments],
+  [The Chronicler of Eras], [Prince], [YnAMP, Rosetta, Terra Mirabilis, Wetlands, Environment Skin, Denser Vegetation, Real Tech Tree],
 )
 ]
