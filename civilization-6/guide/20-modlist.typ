@@ -326,6 +326,53 @@ New resources, new wonders, dynamic names, and the map pack — additions, not p
   compat: "Maps only. _Keep map size at Enormous or smaller_ — sizes above Enormous crash late-game on the Gathering Storm build. If you want Sukritact's Oceans in the same game, prefer standard map scripts over YnAMP maps.",
 )
 
+== The list at a glance
+
+A quick index for subscription and re-checking. Items are grouped by layer, then by category.
+
+#text(size: 9pt)[
+#table(
+  columns: (1.3fr, 2.2fr, 3.6fr, 1.5fr),
+  inset: 5pt,
+  stroke: hairline,
+  fill: (x, y) => if y == 0 { banner } else if calc.even(y) { panel } else { cream },
+  align: (left, left, left, left),
+  [_Layer_], [_Category_], [_Mod_], [_Author_],
+  [1], [Interface], [Quick Deals], [wltk],
+  [1], [Interface], [Detailed Map Tacks], [wltk],
+  [1], [Interface], [Extended Policy Cards], [Aristos],
+  [1], [Interface], [Extended Diplomacy Ribbon], [Aristos],
+  [1], [Interface], [Better Report Screen (UI)], [infixo],
+  [1], [Interface], [Better Civilopedia (UI)], [infixo],
+  [1], [Interface], [Better Tech Tree (UI)], [infixo],
+  [1], [Interface], [More Lenses], [astor],
+  [1], [Interface], [Better Trade Screen], [astor],
+  [1], [Interface], [Production Queue], [Lozenge],
+  [1], [Interface], [Great Works Viewer], [Glindor],
+  [1], [Interface], [Sukritact's Simple UI Adjustments], [sukritact],
+  [1], [Interface], [Sukritact's Global Relations Panel], [sukritact],
+  [1], [Interface], [Better Combat Preview (UI)], [Maple_Leaves],
+  [1], [Graphics], [Environment Skin: Civ V], [GrrrrArrrg],
+  [1], [Graphics], [Hillier Hills], [Deliverator23],
+  [1], [Graphics], [City Sprawl Graphics], [Hiraeth],
+  [1], [Graphics], [Denser Vegetation (for Civ V Skin)], [JNR],
+  [1], [Graphics], [Colorized Historic Moments], [MiniRagnarok],
+  [1], [Graphics], [Prettier Lakes], [p0kiehl],
+  [2], [AI & Strategy], [Real Strategy (AI)], [infixo],
+  [2], [Technology], [Real Tech Tree], [infixo],
+  [2], [Technology], [Real Eurekas], [infixo],
+  [2], [Technology], [Extended Eras (optional)], [p0kiehl],
+  [2], [Content], [Resourceful 2], [Amatheria],
+  [2], [Content], [Luxury Resource Variety], [p0kiehl],
+  [2], [Content], [Sukritact's Resources], [sukritact],
+  [2], [Content], [Terra Mirabilis], [Deliverator & ChimpanG],
+  [2], [Content], [Rosetta — Dynamic City Names], [SeelingCat],
+  [2], [Content], [Sukritact's Oceans], [sukritact],
+  [2], [Content], [Wetlands], [JNR],
+  [2], [Content], [Yet (not) Another Maps Pack], [Gedemon],
+)
+]
+
 == Deliberately not in this list
 
 - _CQUI / HBUI_ — monolithic UI overhauls that bundle several of the mods above; they are stale relative to the final build and superseded by the individual, maintained mods.

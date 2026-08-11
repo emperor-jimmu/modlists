@@ -59,6 +59,22 @@ For The Grand Chronicle this mostly takes care of itself: the mods in Chapter 2 
 
 The list is split into two layers (see Chapter 2): _Layer 1 — Vanilla+_ is 20 interface/graphics mods with zero gameplay change, the layer to learn on; _Layer 2 — The Grand Chronicle_ adds 11 more (12 with the optional Extended Eras) — AI, tech tree, and content. Install them in that order.
 
+#text(size: 9.5pt)[
+#table(
+  columns: (1.4fr, 1fr, 1.4fr, 2fr),
+  inset: 6pt,
+  stroke: hairline,
+  fill: (x, y) => if y == 0 { banner } else if calc.even(y) { panel } else { cream },
+  align: (left, left, left, left),
+  [_Question_], [_Layer 1 — Vanilla+_], [_Layer 2 — The Chronicle_], [_Who it is for_],
+  [Gameplay changes], [None — vanilla rules], [AI, tech tree, resources, wonders], [Layer 1: anyone learning or returning],
+  [Mods], [20 (interface + graphics)], [31 required / 32 with Extended Eras], [Layer 2: players who know the systems],
+  [Game modes], [All off], [Monopolies & Barbarian Clans recommended], [—],
+  [Typical difficulty], [Prince–King], [King–Emperor], [—],
+  [When to move on], [Systems feel familiar], [When you want the chronicle], [—],
+)
+]
+
 1. _Install and launch the game once_ (vanilla) to generate your settings and confirm the build works.
 2. _Subscribe to Layer 1_ — the 20 items under Layer 1 in Chapter 2, plus _Enhanced Mod Manager_ (#link("https://steamcommunity.com/sharedfiles/filedetails/?id=1601259406")[Workshop item 1601259406]) — 21 subscriptions total. Steam downloads them in the background.
 3. _Verify and enable_ — the items appear in `workshop\content\289070\` when complete; launch the game, open *Additional Content → Mods*, and move every subscribed item to the enabled list.

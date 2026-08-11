@@ -36,6 +36,7 @@ Civ 6 has no character creator — your identity comes from the choices in *Adva
 - *Game modes:* Monopolies & Corporations on (monopolies multiply tourism); everything else default.
 - *House rules:* at least two wonders completed every era; builders must be *earned* — no buying them with gold before the Medieval era; never chop a wonder's production (real architects don't demolish forests for columns).
 - *Goal:* three wonders per era, one fully themed museum, and a culture victory — or simply the most beautiful empire at the score screen.
+- *Era arc:* early — scout for wonder sites and grow to three cities; mid — one wonder per era plus themed museums; late — rock bands and the tourism finish.
 - *Mods that shine:* Detailed Map Tacks (wonder adjacency planning), Extended Policy Cards, Terra Mirabilis (20 new natural wonders to build around), Resourceful 2 (more luxuries to keep your cities happy), Colorized Historic Moments, City Sprawl Graphics, Prettier Lakes.
 
 == 2 · The Iron Chancellor
@@ -55,6 +56,7 @@ Civ 6 has no character creator — your identity comes from the choices in *Adva
 - *Game modes:* default modes off; Barbarian Clans on (more factions, more politics).
 - *House rules:* no war before the Medieval era (chancellors prepare first); every war needs a *casus belli* — denounce first, then demand; never accept peace without a city, a luxury, or a tribute in gold; maintain a standing army of at least six units at all times.
 - *Goal:* annex two rivals' capitals, then win by domination — or by score if the world sues for peace first.
+- *Era arc:* early — industrial base and two cities angled at your future rival; mid — casus belli, corps, the first capital; late — oil, air power, the last capitals.
 - *Mods that shine:* Better Combat Preview (calculate every assault), Extended Diplomacy Ribbon (read the balance of power), Real Strategy (the AI pushes back), Real Tech Tree (plan the military research path), Production Queue (keep the war machine fed).
 
 == 3 · The Cradle of Science
@@ -74,6 +76,7 @@ Civ 6 has no character creator — your identity comes from the choices in *Adva
 - *Game modes:* default modes off — a clean ruleset is the point.
 - *House rules:* every city must contain a campus (settle accordingly); gold may *never* buy buildings or projects — everything must be produced or built; no reloading, ever; at least one research alliance maintained from the Medieval era on.
 - *Goal:* science victory; the personal target is being first to the Information era tech tree's crown.
+- *Era arc:* early — campuses and eureka discipline; mid — universities and research alliances; late — the spaceport city and the Mars dash.
 - *Mods that shine:* Detailed Map Tacks (campus adjacency), Better Report Screen (the empire-wide dashboard), Better Tech Tree + Real Tech Tree (chart the historical research path), Real Eurekas (adapt to each game's boosts), Production Queue (space projects without idle cities).
 
 == 4 · The Merchant Republic
@@ -93,6 +96,7 @@ Civ 6 has no character creator — your identity comes from the choices in *Adva
 - *Game modes:* Monopolies & Corporations _on_ (the mode this persona is built for); Secret Societies optional if you want a splash of fantasy.
 - *House rules:* trade routes must run at capacity from the moment they unlock; gold must be reinvested within five turns (build, buy, or gift — no hoarding); every city-state you meet gets at least one envoy.
 - *Goal:* diplomatic victory — or 100,000 gold in the treasury, whichever comes first.
+- *Era arc:* early — ports and trade routes at capacity; mid — monopolies and corporations; late — diplomatic favour and the congress win.
 - *Mods that shine:* Quick Deals (the market at a keystroke), Better Trade Screen (route yield sorting), Global Relations Panel (who owes whom), Resourceful 2 + Luxury Resource Variety (the monopoly raw material), Sukritact's Resources.
 
 == 5 · The Faithful Pilgrim
@@ -112,6 +116,7 @@ Civ 6 has no character creator — your identity comes from the choices in *Adva
 - *Game modes:* default modes off.
 - *House rules:* found a religion by turn 100 or restart the chronicle; every Holy Site must be *built*, never bought; convert at least one city in every other civilization — including rivals you never meet peacefully (trade routes and apostles do the job).
 - *Goal:* religious victory, converted cleanly — and a faith stockpile to fund the endgame as a bonus.
+- *Era arc:* early — Holy Sites and the prophet; mid — spread on trade routes and missionary trails; late — the final conversion.
 - *Mods that shine:* More Lenses (holy-site adjacency), Extended Policy Cards (faith policies), Real Great People (the overview that plans your prophet and apostles), Better Report Screen.
 
 == 6 · The Chronicler of Eras
@@ -131,6 +136,7 @@ Civ 6 has no character creator — your identity comes from the choices in *Adva
 - *Game modes:* Barbarian Clans and Dramatic Ages _on_ (history should bite); Sukritact's Oceans on if you use a standard map script instead of YnAMP.
 - *House rules:* never chase a victory type — pursue whatever the era demands (era score decides); never restart a save, never reload a disaster; screenshot every era transition; write the story in your head as you go.
 - *Goal:* a world history you would retell — and the highest era score you can honestly earn.
+- *Era arc:* no fixed arc — follow the era score: wars when the world is angry, wonders when it is peaceful, and golden ages whenever history demands them.
 - *Mods that shine:* the whole World & Content stack — YnAMP, Rosetta, Terra Mirabilis, Wetlands, Sukritact's Resources (+ Oceans), Resourceful 2, Environment Skin, Denser Vegetation, City Sprawl Graphics, Colorized Historic Moments, Hillier Hills, Prettier Lakes — plus Real Tech Tree and, if you want the eras to breathe, Extended Eras.
 
 == How to start a persona run

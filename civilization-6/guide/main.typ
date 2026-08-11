@@ -19,14 +19,14 @@
 )
 
 #set text(font: ("Georgia", "Segoe UI"), size: 10.5pt, fill: ink)
-#set par(justify: true, leading: 0.62em, spacing: 0.5em)
+#set par(justify: true, leading: 0.68em, spacing: 0.62em)
 #set heading(numbering: "1.1")
 #show link: set text(fill: gold)
 
 #show heading: it => block(
   width: 100%,
-  above: if it.level == 1 { 1.3em } else { 0.95em },
-  below: if it.level == 1 { 0.7em } else { 0.45em },
+  above: if it.level == 1 { 2em } else { 1.4em },
+  below: if it.level == 1 { 1em } else { 0.75em },
   fill: if it.level == 1 { banner } else { none },
   inset: if it.level == 1 { (x: 12pt, y: 7pt) } else { 0pt },
   radius: if it.level == 1 { 5pt } else { 0pt },
