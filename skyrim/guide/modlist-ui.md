@@ -11,7 +11,7 @@ The base menu and interface framework the rest of the UI stack builds on.
 | Mod                                                                                                             | Description                                                                                                        |
 |-----------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
 | [SkyUI](https://www.nexusmods.com/skyrimspecialedition/mods/12604)                                              | Non-negotiable baseline.                                                                                           |
-| [Oathvein UI](https://www.nexusmods.com/skyrimspecialedition/mods/160916)                                       | Locked visual direction. Grim-dark presentation matches the project tone; cleaner dependency chain than Norden UI. |
+| [Oathvein UI](https://www.nexusmods.com/skyrimspecialedition/mods/160916)                                       | Locked visual direction. Grim-dark presentation; cleaner dependency chain than Norden UI. |
 | [UIExtensions](https://www.nexusmods.com/skyrimspecialedition/mods/17561)                                       | Support infrastructure, not competing UI identity.                                                                 |
 | [Constructible Object Custom Keyword System (COCKS)](https://www.nexusmods.com/skyrimspecialedition/mods/81409) | Crafting-menu category infrastructure.                                                                             |
 | [MCM Helper](https://www.nexusmods.com/skyrimspecialedition/mods/53000)                                         | Persists MCM settings across saves. Hard dependency of TDM, CNO, and others.                                       |
@@ -47,7 +47,7 @@ Health, stamina, magicka, target readability, and permanent interface structure 
 | [Oxygen Meter 2 - Fixes and Additions](https://www.nexusmods.com/skyrimspecialedition/mods/171916)                         | Bugfixes and feature tweaks.                                                                                                   |
 | [Detection Meter](https://www.nexusmods.com/skyrimspecialedition/mods/63057)                                               | Stealth detection meter. Pairs with RAID.                                                                                      |
 | [Detection Meter - AE Support](https://www.nexusmods.com/skyrimspecialedition/mods/77350)                                  | Required for 1.6.1170.                                                                                                         |
-| [Casting Bar Reskin - Edge UI Inspired](https://www.nexusmods.com/skyrimspecialedition/mods/140826)                        | Cosmetic reskin of Casting Bar. Evaluate integration with Veldun UI's own casting bar (not in Elder Wilds stack).              |
+| [Casting Bar Reskin - Edge UI Inspired](https://www.nexusmods.com/skyrimspecialedition/mods/140826)                        | Cosmetic reskin of Casting Bar.              |
 | [STB Widgets](https://www.nexusmods.com/skyrimspecialedition/mods/136148)                                                  | Lightweight modular widgets (clock, time, compass-free direction, stat bars). SKSE + MCM.                                      |
 | [Follower Stats](https://www.nexusmods.com/skyrimspecialedition/mods/159406)                                               | MCM-based follower stat tracking. Pairs with Nether's.                                                                         |
 | [Tween Menu Overhaul Improved](https://www.nexusmods.com/skyrimspecialedition/mods/155036)                                 | Main-menu and loading-screen visual overhaul. Updated version with additional scenes.                                          |
@@ -60,7 +60,7 @@ Health, stamina, magicka, target readability, and permanent interface structure 
 
 | Mod                                                                                    | Description                                                           |
 |----------------------------------------------------------------------------------------|-----------------------------------------------------------------------|
-| [Stats Tracker Menu - STM](https://www.nexusmods.com/skyrimspecialedition/mods/180653) | Brand new (May 2026), very low community signal. Test before locking. |
+| [Stats Tracker Menu - STM](https://www.nexusmods.com/skyrimspecialedition/mods/180653) | Very low community signal — test before locking. |
 | [Kill feed](https://www.nexusmods.com/skyrimspecialedition/mods/179053)                | Kill notification overlay.                                            |
 
 ---
@@ -79,7 +79,7 @@ Health, stamina, magicka, target readability, and permanent interface structure 
 | [I4 Shout Icons Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/107334)                     |                                                                                    |
 | [The Handy Icon Collection Collective (THICC)](https://www.nexusmods.com/skyrimspecialedition/mods/90508) | Thousands of high-fidelity icons. Additive to I4 family.                           |
 | [Favorites Menu Effects Description](https://www.nexusmods.com/skyrimspecialedition/mods/143532)          | Effect descriptions in favorites menu. SKSE plugin, no ESP. Essential for gamepad. |
-| [B.O.O.B.I.E.S (aka Immersive Icons)](https://www.nexusmods.com/skyrimspecialedition/mods/89241)          | Icon overhaul for SkyUI. 28K+ endorsements. FOMOD: 2K recommended.                 |
+| [B.O.O.B.I.E.S (aka Immersive Icons)](https://www.nexusmods.com/skyrimspecialedition/mods/89241)          | Icon overhaul for SkyUI. FOMOD: 2K recommended.                                     |
 | [B.O.O.B.I.E.S - POTIONS](https://www.nexusmods.com/skyrimspecialedition/mods/163838)                     | Dedicated potion bottle icons.                                                     |
 | [P.E.N.I.S. for B.O.O.B.I.E.S.](https://www.nexusmods.com/skyrimspecialedition/mods/90526)                | Ingredient icon pack.                                                              |
 | [A.S.S. for B.O.O.B.I.E.S.](https://www.nexusmods.com/skyrimspecialedition/mods/89823)                    | Food & drink icon pack.                                                            |
@@ -179,7 +179,7 @@ Add descriptive text to inventory item cards for better readability. All by the 
 |-----------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
 | [Dialogue Interface ReShaped](https://www.nexusmods.com/skyrimspecialedition/mods/46546)                  | Visual dialogue flow.                                                                   |
 | [Convenient Dialogue UI - SE](https://www.nexusmods.com/skyrimspecialedition/mods/57943)                  |                                                                                         |
-| [Smart Talk (Dialogue Menu Enhancer)](https://www.nexusmods.com/skyrimspecialedition/mods/161500)         | Highlights quest options, reorders choices, gamepad-friendly skip. 5.5K endorsements.   |
+| [Smart Talk (Dialogue Menu Enhancer)](https://www.nexusmods.com/skyrimspecialedition/mods/161500)         | Highlights quest options, reorders choices, gamepad-friendly skip.                       |
 | [Various Dialogue Tags](https://www.nexusmods.com/skyrimspecialedition/mods/103920)                       | Adds contextual tags to dialogue options (e.g., [Lie], [Persuade], [Ask]). ESL-flagged. |
 | [Various Book Tags](https://www.nexusmods.com/skyrimspecialedition/mods/151404)                           | Adds contextual tags to book-reading prompts. Same author as Various Dialogue Tags.     |
 | [Skyrim Autocorrect - Dialogue Grammar Fixes](https://www.nexusmods.com/skyrimspecialedition/mods/141632) | Fixes grammar, spelling, and punctuation in vanilla dialogue. Text-only, no records.    |
@@ -238,7 +238,7 @@ Add descriptive text to inventory item cards for better readability. All by the 
 
 | Mod                                                                                        | Description                                                                         |
 |--------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
-| [COCKS](https://www.nexusmods.com/skyrimspecialedition/mods/81409)                         | See Framework Prerequisites above. Directly improves the Constructible Object Menu. |
+| [COCKS](https://www.nexusmods.com/skyrimspecialedition/mods/81409)                         | See Framework Prerequisites above.                                                     |
 | [SkyUI - Vanilla Crafting menu](https://www.nexusmods.com/skyrimspecialedition/mods/18717) | Fallback for vanilla-style split categories.                                        |
 
 ---
@@ -255,7 +255,7 @@ Add descriptive text to inventory item cards for better readability. All by the 
 
 | Mod                                                                                                      | Description                                                                                       | Notes                                                    |
 |----------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|----------------------------------------------------------|
-| [The Elder Scrolls Legends - Loading Screens](https://www.nexusmods.com/skyrimspecialedition/mods/37929) | 110 Legends card-art loading screens. Install at 100% frequency in 16:9 with Fixed Height border. | Previously locked baseline. Keep as known-good fallback. |
+| [The Elder Scrolls Legends - Loading Screens](https://www.nexusmods.com/skyrimspecialedition/mods/37929) | 110 Legends card-art loading screens. Install at 100% frequency in 16:9 with Fixed Height border. | Known-good fallback. |
 
 ---
 
@@ -263,10 +263,4 @@ Add descriptive text to inventory item cards for better readability. All by the 
 
 | Mod                                                                                                        | Description                                                                                                                                                         |
 |------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Skyrim Party Sheet - Follower and Player HUD](https://www.nexusmods.com/skyrimspecialedition/mods/167538) | Persistent overlay for player attributes and follower info. v2.7 (June 2026). Research before installing — verify no conflicts with TrueHUD, Oathvein, or Nether's. |
-
----
-
-## Open Research
-
-Open research for the UI stack is tracked in `TODO.md`.
+| [Skyrim Party Sheet - Follower and Player HUD](https://www.nexusmods.com/skyrimspecialedition/mods/167538) | Persistent overlay for player attributes and follower info. Research before installing — verify no conflicts with TrueHUD, Oathvein, or Nether's. |

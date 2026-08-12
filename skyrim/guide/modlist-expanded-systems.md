@@ -4,8 +4,6 @@
 
 This section owns the gameplay systems that expand Skyrim beyond its 2011 baseline: character creation, progression, magic, perks, survival, crafting, economy, followers, and social systems. Each pillar of the Expanded Systems section lives in its own sub-file.
 
-The system is designed to be evaluated in order — progression choices (races, standing stones, perks) come before magic, survival, crafting, and social systems that build on them.
-
 ## Sub-Files
 
 | Area                    | File                                                       | Separator                                    | Topics                                                                               |
@@ -18,6 +16,6 @@ The system is designed to be evaluated in order — progression choices (races, 
 
 ## Key Principles
 
-- Simonrim progression family (`Adamant`, `Mysticism`, `Thaumaturgy`, etc.) is the locked baseline. EnaiRim (`Ordinator`, `Apocalypse`, etc.) is rejected.
+- Simonrim progression family (`Adamant`, `Mysticism`, `Thaumaturgy`, etc.) is the locked baseline.
 - Survival, difficulty, and balance interactions across the full load order are owned by `modlist-survival-combat.md` → `Survival & Combat`
 - All system choices must be evaluated for third-person gamepad usability and compatibility with the `Legacy of the Dragonborn` museum pillar → `Legacy of the Dragonborn`

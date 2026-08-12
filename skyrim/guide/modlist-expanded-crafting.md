@@ -14,14 +14,12 @@ Whether alchemy is a disciplined support system for potions/poisons/ingredients 
 ### Risks & Compatibility
 
 - A very large alchemy package can quietly absorb cooking and food design.
-- A restrained overhaul can undershoot if too many adjacent systems also land on conservative choices.
-- Treat large food-and-cooking coverage as a deliberate expansion choice, not something hitchhiking into the alchemy baseline.
 
 #### Flavor Additions
 
 | Mod | Dial | Notes |
 | --- | ---- | ----- |
-| [Alchemy Requires Bottles](https://www.nexusmods.com/skyrimspecialedition/mods/137443) | all | Empty potions at alchemy lab. Adds bottle-crafting step. Tentative — evaluate gameplay friction. |
+| [Alchemy Requires Bottles](https://www.nexusmods.com/skyrimspecialedition/mods/137443) | all | Empty potions at alchemy lab. Adds bottle-crafting step. |
 
 ---
 
@@ -48,9 +46,7 @@ Whether food and cooking are mostly ambient support for travel and downtime or a
 
 ### Risks & Compatibility
 
-- Cooking can become too dependent on the survival framework and stop making sense as its own system.
 - A very large cooking package can quietly absorb alchemy and economy ownership.
-- Judge cooking on inns, camps, home bases, travel prep, and downtime rhythm rather than recipe volume alone.
 
 ---
 
@@ -70,8 +66,6 @@ What crafting is supposed to do: lightly improve vanilla smithing, become a broa
 ### Risks & Compatibility
 
 - A very large crafting framework can absorb economy and loot-balance ownership.
-- Mixing player-centric crafting with strong NPC-service assumptions can produce an incoherent progression loop.
-- `Ars Metallica` and `Honed Metal` serve different purposes and should be locked together as complementary.
 
 ### Woodcutting Support
 
@@ -99,8 +93,6 @@ What economy and loot should feel like: lightly rebalanced merchant-and-pricing,
 
 | Mod                                                                                                   | Type          | Dial         | Notes                                                          |
 |-------------------------------------------------------------------------------------------------------|---------------|--------------|----------------------------------------------------------------|
-| Mod                                                                                                   | Type          | Dial         | Notes                                                          |
-| ----------------------------------------------------------------------------------------------------- | ------------- | ------------ | -------------------------------------------------------------- |
 | [Trade and Barter](https://www.nexusmods.com/skyrimspecialedition/mods/23081)                         | Baseline      | #1, #2, #4   | Merchant-pricing route.                                        |
 | [C.O.I.N. — Coins of Interesting Nature](https://www.nexusmods.com/skyrimspecialedition/mods/51439)   | Baseline      | #1, #2, #4   | Regional coin variety. No price/loot changes.                  |
 | [C.O.I.N. — Treasury Exchange](https://www.nexusmods.com/skyrimspecialedition/mods/131682)            | Baseline      | #1, #2, #4   | Currency exchange for coin type conversion.                    |
@@ -129,11 +121,10 @@ What economy and loot should feel like: lightly rebalanced merchant-and-pricing,
 ### Risks & Compatibility
 
 - A heavy loot-distribution framework can absorb crafting and progression ownership.
-- Harsh scarcity can make exploration, crafting, and reward pacing feel punitive rather than immersive.
 - `Barter Limit Fix` belongs in → `Foundations` (Targeted Bugfix Mods), not as the economy-framework answer.
 
 ---
 
 ## Weapons, Armor, And Equipment Content
 
-Weapon packs, armor packs, artifacts, and clothing content have been consolidated into their own dedicated section. See → [Weapons & Armor](modlist-weapons-armor.md).
+See → [Weapons & Armor](modlist-weapons-armor.md).

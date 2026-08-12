@@ -22,7 +22,7 @@
 ### Baseline
 
 - **Content restraint first, then low-maintenance optimization.**
-- **Lightened Skyrim** — Leading optimization branch. Almost invisible cleanup, low drama.
+- **Lightened Skyrim** — Leading optimization branch. Almost invisible cleanup.
 - **eFPS - Anniversary Edition** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/58727)) — Optional only if exterior draw-call pressure still needs help after main world stack is stable. Plan for patch coverage.
 - Re-evaluate exterior optimization after major city, roadside, tree, or world-content choices.
 
@@ -37,7 +37,6 @@
 ### Baseline
 
 - **Tool-first route** — Use `BethINI Pie` as the baseline editor.
-- Keep MO2 INI path behavior simple and documented.
 - After baseline is set, keep only a short list of manual overrides justified by display/shadow/frame-cap targets.
 - Let `SSE Display Tweaks` handle display behavior and frame pacing.
 
@@ -47,7 +46,7 @@ Run through MO2 targeting the active profile INIs.
 
 1. **Basic:** Reset to Defaults → High preset → Apply Recommended Tweaks. Window Mode: Borderless. FOV: First Person 75, Third Person 85.
 
-2. **General → Saved Games:** Untick Autosaves, Save on Travel, Save on Rest, Save on Wait (survival mods handle save restrictions; manual saves are safer). Leave `iAutoSaveCount=3` (the default) under `[SaveGame]` in `Skyrim.ini` — **do not set it to `0`**: it is a slot count, not an on/off flag, and the engine divides by it while processing save slots, so `0` hard-crashes with `EXCEPTION_INT_DIVIDE_BY_ZERO` the moment a save loads from the main menu (confirmed 2026-08-08). Autosave *triggers* are disabled by these ticks; SSSO3 force-deactivates the rest and manages its own rotating saves.
+2. **General → Saved Games:** Untick Autosaves, Save on Travel, Save on Rest, Save on Wait (survival mods handle save restrictions; manual saves are safer). Leave `iAutoSaveCount=3` (the default) under `[SaveGame]` in `Skyrim.ini` — **do not set it to `0`**: it is a slot count, not an on/off flag, and the engine divides by it while processing save slots, so `0` hard-crashes with `EXCEPTION_INT_DIVIDE_BY_ZERO` the moment a save loads from the main menu. Autosave *triggers* are disabled by these ticks; SSSO3 force-deactivates the rest and manages its own rotating saves.
 
 3. **Gameplay:** Difficulty Adept. Untick Disable Kill Cam. Tick Remove Borders. Untick Tutorials.
 

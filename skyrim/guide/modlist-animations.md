@@ -3,7 +3,7 @@
 ---
 
 ## Animation Framework Landscape — What Goes With What
-Skyrim's animation stack has four distinct layers. Each layer has exactly one active owner. Understanding what replaces what, what depends on what, and what is mutually exclusive is the single most important prerequisite to building a stable animation load order.
+Skyrim's animation stack has four distinct layers. Each layer has exactly one active owner. Understanding what replaces what, what depends on what, and what is mutually exclusive is the prerequisite to a stable animation load order.
 
 ### The Four Layers
 
@@ -24,7 +24,7 @@ Behavior engines are the foundation. They read your installed animation mods, re
 | **Nemesis** | Superseded  | Partial (never completed) | Natively              | Partial            | Open source. Replaced FNIS around 2020. Creature support was a promised feature that never shipped. Still works on AE 1.6.1170 but Pandora is the direct upgrade.                                                        |
 | **Pandora** | **Current** | Full                      | Yes                   | Yes                | Open source. Cross-platform. Error-tolerant (isolates illegal edits so one broken mod doesn't poison the whole patch). Faster generation. Reads both Nemesis patch format and legacy FNIS XML. **Elder Wilds baseline.** |
 
-**Key compatibility rule:** Pandora replaces both FNIS and Nemesis. You do NOT install FNIS or Nemesis alongside Pandora. Most mods that say "Requires Nemesis" work under Pandora without modification — the Nemesis patch format is read natively. The rare exception is a hypothetical mod using a Nemesis-only code plugin that Pandora hasn't implemented, but this is essentially nonexistent in a modern AE load order.
+**Key compatibility rule:** Pandora replaces both FNIS and Nemesis. You do NOT install FNIS or Nemesis alongside Pandora. Most mods that say "Requires Nemesis" work under Pandora without modification — the Nemesis patch format is read natively.
 
 Nemesis page lists "Project New Reign — Nemesis Unlimited Behavior Engine" at mod ID 60033 (the real page), NOT the various fork/translation pages that share the Nemesis name.
 
@@ -34,7 +34,7 @@ Conditional replacers sit between the behavior engine output and the game engine
 
 | Replacer                             | Status           | Backward Compat                 | Open Source | Notes                                                                                                                                                                                                                               |
 |--------------------------------------|------------------|---------------------------------|-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **DAR** (Dynamic Animation Replacer) | Maintenance-only | —                               | No (closed) | Author inactive. Works on AE 1.6.1170 but no new features expected. If DAR ever breaks from a future Skyrim update, nobody can fix it except the original author.                                                                   |
+| **DAR** (Dynamic Animation Replacer) | Maintenance-only | —                               | No (closed) | Author inactive. Works on AE 1.6.1170 but no new features expected — if a future Skyrim update breaks DAR, nobody can fix it.                                                              |
 | **OAR** (Open Animation Replacer)    | **Current**      | Full DAR backward compatibility | Yes         | Implements every DAR condition. Adds: animation variants (random/sequential), presets (reusable condition blocks), in-game editor, constant polling, paired animation support, graph variable conditions. **Elder Wilds baseline.** |
 
 **Key compatibility rule:** Any mod packaged for DAR works in OAR without modification. OAR reads DAR's folder structure and condition format natively. You do NOT need DAR installed alongside OAR — OAR is a complete replacement.
@@ -43,7 +43,7 @@ DAR-based mods use folder paths like `meshes\actors\character\animations\Dynamic
 
 ### Combat Animation Frameworks
 
-Combat frameworks replace Skyrim's vanilla attack behavior — directional power attacks, combo chains, attack commitment, and motion-data-driven movement during swings. They are the layer that makes combat feel modern.
+Combat frameworks replace Skyrim's vanilla attack behavior — directional power attacks, combo chains, attack commitment, and motion-data-driven movement during swings.
 
 | Framework                                                                     | Requires                                                | Built-In Features                                                                                                                                                                            | Moveset Format            | Notes                                                                                                                                                                                                                                                               |
 |-------------------------------------------------------------------------------|---------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -140,13 +140,9 @@ flowchart TD
     style PR fill:#1d4ed8,color:#e2e8f0
 ```
 
-### Research Findings (July 2026)
+### Research Findings
 
-All four tasks researched. Sources: Nexus mod pages, Nexus community posts tabs, official patch compatibility statements.
-
-**Task 1 — Pandora compatibility with modlist behavior mods**
-
-Pandora v4.3.1 is confirmed compatible with all behavior-requiring mods currently in the Elder Wilds modlist. The BFCO author (BF001) explicitly tested and confirmed: *"I tested in Pandora v4.3.1 + Skeleton Auto Patch, everything works perfectly"* (BFCO sticky post, May 2024, updated for v3.100+). Pandora reads both Nemesis patch format and legacy FNIS XML natively — the only edge case identified is SCAR (see Task 3 below).
+**Pandora compatibility with modlist behavior mods**
 
 Behavior-requiring mods in the current modlist and their Pandora status:
 
@@ -166,31 +162,31 @@ Behavior-requiring mods in the current modlist and their Pandora status:
 | OAR | No patch needed | SKSE plugin only; no behavior generation. |
 | IFrame Generator RE | No patch needed | SKSE plugin only; install only when a pack explicitly lists it. |
 
-**Task 2 — MCO vs BFCO community signal on AE 1.6.1170 with Pandora**
+**MCO vs BFCO on AE 1.6.1170 with Pandora**
 
-Both frameworks are actively maintained and Pandora-compatible. The community signal divides along a clear line:
+Both frameworks are actively maintained and Pandora-compatible:
 
-- **MCO** remains the established standard with the larger moveset library (hundreds of MCO-format animation packs). It is the proven path with the most community tutorials and troubleshooting resources. Distar's ecosystem (MCO, DMCO, related mods) is mature.
-- **BFCO** is the rapidly growing alternative. Key advantages: built-in jump attacks, swim attacks, charge attacks, vanilla attack speed support, and gamepad MCM hotkey support — all features that MCO requires separate companion mods (or can't do) to achieve. BFCO v3.100+ is described by the author as "almost done with my idea," indicating maturity.
+- **MCO** — established standard with the larger moveset library (hundreds of MCO-format animation packs) and the most tutorials and troubleshooting resources. Distar's ecosystem (MCO, DMCO, related mods) is mature.
+- **BFCO** — rapidly growing alternative. Key advantages: built-in jump attacks, swim attacks, charge attacks, vanilla attack speed support, and gamepad MCM hotkey support — features that MCO needs separate companion mods (or can't do) to achieve.
 
-The **MCO→BFCO Converter** ([mod 119926](https://www.nexusmods.com/skyrimspecialedition/mods/119926), v1.2.2) is actively maintained and handles: file renaming, annotation conversion (attack speed, power windows, recovery, next-attack chaining, multi-window annotations), and batch processing. It converts `MCO_powerattackloop*.hkx` and `MCO_powerattackoutro*.hkx` files (supported since converter v1.2.1 / BFCO >= 3.3). The converter has gone through 10+ bugfix releases, with progressively better annotation fidelity.
+The **MCO→BFCO Converter** ([mod 119926](https://www.nexusmods.com/skyrimspecialedition/mods/119926), v1.2.2) is actively maintained and handles: file renaming, annotation conversion (attack speed, power windows, recovery, next-attack chaining, multi-window annotations), and batch processing. It converts `MCO_powerattackloop*.hkx` and `MCO_powerattackoutro*.hkx` files (supported since converter v1.2.1 / BFCO >= 3.3).
 
 BFCO also has a **BFCO NG** companion ([mod 160505](https://www.nexusmods.com/skyrimspecialedition/mods/160505)) for flexible hotkey assignment. BFCO's FOMOD offers pre-input behavior choices: "Vanilla Like" (can only input next attack after hit frame) vs "MCO Like" (can input next attack almost immediately — same feel as MCO).
 
-**Recommendation:** BFCO is locked for Elder Wilds. Built-in gamepad support, fewer companion-mods-required, and the MCO→BFCO converter making the MCO moveset library accessible make it the right long-term fit. MCO is rejected.
+**Recommendation:** BFCO is locked for Elder Wilds. Built-in gamepad support, fewer companion-mods-required, and the MCO→BFCO converter making the MCO moveset library accessible make it the right long-term fit.
 
-**Task 3 — SCAR + Pandora interaction confirmed**
+**SCAR + Pandora interaction**
 
 SCAR works with Pandora but needs the **SCAR - Pandora - Fix** ([mod 164638](https://www.nexusmods.com/skyrimspecialedition/mods/164638)). Requirements: Pandora Behaviour Engine Plus + SCAR AE Support. Install order: SCAR → SCAR AE Support → SCAR Pandora Fix. Then re-run Pandora.
 
 Additional SCAR compatibility notes from community posts:
 - If using **SCAR AE Support** ([mod 77285](https://www.nexusmods.com/skyrimspecialedition/mods/77285)) with BFCO: do NOT install the default animations in the SCAR AE Support FOMOD — they cause compatibility issues with BFCO.
 - SCAR version 2.0 from GitHub (not the Nexus page) reportedly has issues with BFCO — stick to the Nexus version (v1.06b) for now.
-- SCAR does not hard-require MCO; it works with MCO, BFCO, or SkySA/ABR. The SCAR Nexus comments explicitly state: *"You don't need MCO if you are using ABR or SkySA for this mod to work."*
+- SCAR does not hard-require MCO — it works with MCO, BFCO, or SkySA/ABR.
 
-**Task 4 — MCO→BFCO converter quality assessment**
+**MCO→BFCO converter quality assessment**
 
-The converter tool (v1.2.2) is actively maintained with good annotation fidelity but is not lossless. The changelog reveals the conversion has gone through multiple rounds of bugfixing:
+The converter (v1.2.2) is actively maintained with good annotation fidelity but is not lossless:
 
 - **v1.1.3:** Multi-window annotations fixed (animations with more than one `MCO_nextattack` or `MCO_PowerWinOpen` now convert correctly).
 - **v1.1.4:** Added `MCO_powerWinOpen`/`MCO_powerWinClose` → BFCO annotation recognition.
@@ -199,8 +195,6 @@ The converter tool (v1.2.2) is actively maintained with good annotation fidelity
 - **v1.2.1:** Power attack loop and outro files supported (`MCO_powerattackloop*.hkx`, `MCO_powerattackoutro*.hkx`).
 
 Known limitations: the converter handles standard MCO annotations. MCO movesets with heavily custom or non-standard annotations may not convert perfectly. Complex movesets should be tested individually after conversion for: animation timing drift, ice-skating (lost motion data), missing combo-chain windows, and power attack trigger reliability.
-
-**Risk assessment for the converter:** For the vast majority of MCO movesets with standard Distar-ecosystem annotations, the converter should produce clean BFCO output. Edge-case movesets with hand-tuned custom annotations are the primary risk. Given that Elder Wilds hasn't locked specific movesets yet, this is a manageable risk — verify each adopted moveset post-conversion rather than counting on batch-convert perfection.
 
 ---
 
@@ -234,7 +228,7 @@ Known limitations: the converter handles standard MCO annotations. MCO movesets 
 ## Parkour, Climbing, And Free-Form Movement
 | Mod                                                                                                                            | Type        | Notes                                                                                     |
 |--------------------------------------------------------------------------------------------------------------------------------|-------------|-------------------------------------------------------------------------------------------|
-| [SkyParkour v3 - Procedural Parkour and Climbing Framework (SPPF)](https://www.nexusmods.com/skyrimspecialedition/mods/132292) | Baseline    | Vault, climb, traverse environmental geometry. 10,112 endorsements.                       |
+| [SkyParkour v3 - Procedural Parkour and Climbing Framework (SPPF)](https://www.nexusmods.com/skyrimspecialedition/mods/132292) | Baseline    | Vault, climb, traverse environmental geometry.                                            |
 | [EVG CLAMBER - Slope Animations](https://www.nexusmods.com/skyrimspecialedition/mods/114753)                                   | Baseline    | Character posture adjusts dynamically on slopes and stairs. Complements SkyParkour.       |
 | [Feminine EVG Clamber Stair Animations](https://www.nexusmods.com/skyrimspecialedition/mods/148067)                            | Baseline    | Female-specific stair animations for EVG CLAMBER.                                         |
 | [SkyClimb](https://www.nexusmods.com/skyrimspecialedition/mods/97253)                                                          | Alternative | Climbing-first alternative built around EVGAT. Pick one (not cumulative with SkyParkour). |
@@ -244,18 +238,18 @@ Known limitations: the converter handles standard MCO annotations. MCO movesets 
 
 | Mod | Type | Notes |
 | --- | --- | --- |
-| [Thundertrot Horse Animations](https://www.nexusmods.com/skyrimspecialedition/mods/140941) | Baseline | **Locked.** OAR-based horse movement/idle replacer (walk, trot, gallop). 763 endorsements, v2.1. |
+| [Thundertrot Horse Animations](https://www.nexusmods.com/skyrimspecialedition/mods/140941) | Baseline | **Locked.** OAR-based horse movement/idle replacer (walk, trot, gallop). |
 | [Horse Animation Overhaul (WIP - OAR)](https://www.nexusmods.com/skyrimspecialedition/mods/140122) | Baseline | **Locked.** OAR-based rider animation replacement with directional movement support. Requires Thundertrot for directional movement patch. WIP status — monitor for stable release. |
 
 ### Alternatives
 
 | Mod | Type | Notes |
 | --- | --- | --- |
-| [Riding Animation Overhaul - RAO (OAR)](https://www.nexusmods.com/skyrimspecialedition/mods/102881) | Alternative | Rejected — HAO is the newer successor by the same author (mxnedula) with directional movement support. RAO v2.0 (3,804 endorsements) remains the fallback if HAO is abandoned. |
+| [Riding Animation Overhaul - RAO (OAR)](https://www.nexusmods.com/skyrimspecialedition/mods/102881) | Alternative | Superseded by HAO (same author, mxnedula) with directional movement support. Fallback if HAO is abandoned. |
 
 All horse animation mods are OAR-based and work under Pandora. Thundertrot (horse layer) + HAO (rider layer) are designed to stack — HAO's directional movement patch requires Thundertrot as a dependency.
 
-### Companion Candidates (evaluate after baseline is locked)
+### Companion Candidates
 
 - **Dova Jump** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/125550)) — Stamina-based jump height/distance. Complements parkour.
 - **Walk Speed Tuner** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/179215)) — Configurable walk speed hotkey.
@@ -318,7 +312,7 @@ CATA (Conditional Armor Type Animations) is the framework — choose the CATA Ad
 | [Animated Armoury - OAR](https://www.nexusmods.com/skyrimspecialedition/mods/103577)                                                                                        | Baseline        | 12 new weapon types. Requires [DAR Version](https://www.nexusmods.com/skyrimspecialedition/mods/35978) for meshes/collision/leveled lists. Tick in Pandora for new weapon behaviors. |
 | [No Spinning Death Animation LITE](https://www.nexusmods.com/skyrimspecialedition/mods/33597)                                                                               | Baseline        | Prevents spinning death animations.                                                                                                        |
 | [Animation Motion Revolution](https://www.nexusmods.com/skyrimspecialedition/mods/50258) + [Payload Interpreter](https://www.nexusmods.com/skyrimspecialedition/mods/65089) | Baseline        | Required by BFCO (attack behavior framework). AMR enables motion data in .hkx files; Payload Interpreter handles attack event processing. |
-| [BFCO - Attack Behavior Framework](https://www.nexusmods.com/skyrimspecialedition/mods/117052)                                                                              | Baseline        | **Locked.** Attack behavior framework. Requires [DMK](https://www.nexusmods.com/skyrimspecialedition/mods/174499) for directional power attacks. Companion: [BFCO NG](https://www.nexusmods.com/skyrimspecialedition/mods/160505) for flexible hotkeys. Confirmed working with Pandora v4.3.1. |
+| [BFCO - Attack Behavior Framework](https://www.nexusmods.com/skyrimspecialedition/mods/117052)                                                                              | Baseline        | **Locked.** Attack behavior framework. Requires [DMK](https://www.nexusmods.com/skyrimspecialedition/mods/174499) for directional power attacks. Companion: [BFCO NG](https://www.nexusmods.com/skyrimspecialedition/mods/160505) for flexible hotkeys. |
 | [IFrame Generator RE AE Support](https://www.nexusmods.com/skyrimspecialedition/mods/82737)                                                                                 | Support         | Install only when a pack explicitly lists it.                                            |
 | [Elden Ring DLC Light Greatsword Moveset](https://www.nexusmods.com/skyrimspecialedition/mods/122800)                                                                       | Alternative     | Requires MCO or BFCO framework. 1H and 2H moveset.                                                                                         |
 | [For Honor in Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/151478)                                                                                     | Prerequisite    | Asset base only. Required by For Honor Reforged for animation files. Do not run standalone — overwrite with 172176.                        |
@@ -343,12 +337,12 @@ CATA (Conditional Armor Type Animations) is the framework — choose the CATA Ad
 | [Vanargand Animations - Sneak Crossbows](https://www.nexusmods.com/skyrimspecialedition/mods/67282)                                                                      | Alternative     | Sneak crossbow stance and fire animation replacer.                                                                                         |
 | [Goetia Animations - Sneak Magic](https://www.nexusmods.com/skyrimspecialedition/mods/75482)                                                                             | Alternative     | Sneak magic-casting animation replacer.                                                                                                    |
 | [Goetia Animations - Conditional Shouts](https://www.nexusmods.com/skyrimspecialedition/mods/76388)                                                                      | Alternative     | Conditional shout animation replacer.                                                                                                      |
-| [Dynamic Dodge Animation](https://www.nexusmods.com/skyrimspecialedition/mods/79598)                                                                                     | Alternative     | SKSE-based dodge animation with i-frames. Evaluate as potential TK Dodge RE companion.                 |
+| [Dynamic Dodge Animation](https://www.nexusmods.com/skyrimspecialedition/mods/79598)                                                                                     | Alternative     | SKSE-based dodge animation with i-frames. Potential TK Dodge RE companion.                 |
 
 ---
 
 ## BFCO Install Workflow Reference
-External tutorial baseline: BFCO is the locked combat animation framework for Elder Wilds (Pandora for behaviour generation, OAR for conditional selection).
+BFCO is the locked combat animation framework for Elder Wilds (Pandora for behaviour generation, OAR for conditional selection).
 
 ### Core Install — BFCO Stack
 
@@ -427,7 +421,7 @@ External tutorial baseline: BFCO is the locked combat animation framework for El
 | [Conditional Armor Type Animations](https://www.nexusmods.com/skyrimspecialedition/mods/51507)           | Baseline    | Armor-type-based animation switching. Pairs with Leviathan II (heavy), Vanargand II (light), and Goetia (mage) CATA Addons in → `Locomotion`. |
 | [EVG Conditional Idles](https://www.nexusmods.com/skyrimspecialedition/mods/34006)                       | Alternative | Idle animation conditional framework.                         |
 | [Unique Jarl Throne Sitting Animation (OAR)](https://www.nexusmods.com/skyrimspecialedition/mods/174752) | Alternative | Throne sitting animation for Jarls.                           |
-| [Malignis Animations - Conditions](https://www.nexusmods.com/skyrimspecialedition/mods/132028)           | Alternative | OAR condition pack for animation variety. Personal favourite. |
+| [Malignis Animations - Conditions](https://www.nexusmods.com/skyrimspecialedition/mods/132028)           | Alternative | OAR condition pack for animation variety. |
 
 ---
 
@@ -448,9 +442,9 @@ Equipment visibility, sheathing positions, and draw-sheathe animations. Builds o
 | [Simple Dual Sheath](https://www.nexusmods.com/skyrimspecialedition/mods/50049)                                      | Baseline    | Dual-sheathed weapon support. Requires IED.                                                     |
 | [Weapon Styles - Draw-Sheathe animations for IED](https://www.nexusmods.com/skyrimspecialedition/mods/85085)         | Addon       | Conditional draw/sheathe animations per weapon type. Requires IED.                              |
 | [Walking Stick - Walk with staves or polearms - IED-OAR](https://www.nexusmods.com/skyrimspecialedition/mods/120966) | Addon       | Staff/polearm walking animation support. Requires IED.                                          |
-| [Ready to Play IED](https://www.nexusmods.com/skyrimspecialedition/mods/158531)                                      | Alternative | Pre-configured IED preset. Evaluate only if manual IED configuration proves too time-consuming. |
+| [Ready to Play IED](https://www.nexusmods.com/skyrimspecialedition/mods/158531)                                      | Alternative | Pre-configured IED preset — fallback if manual IED configuration proves too time-consuming. |
 | [Weapons On Back](https://www.nexusmods.com/skyrimspecialedition/mods/14997)                                        | Alternative | Weapon positioning on back rather than hip. Complements IED/SDS. |
-| [Guards Pose With Weapons — IED-OAR](https://www.nexusmods.com/skyrimspecialedition/mods/110005)                  | Addon       | Guard and faction guards hold-weapon poses via IED + OAR. Requires both baselines. Third-person (gamepad) flavor. |
+| [Guards Pose With Weapons — IED-OAR](https://www.nexusmods.com/skyrimspecialedition/mods/110005)                  | Addon       | Guard and faction guards hold-weapon poses via IED + OAR. Requires both baselines. |
 
 ---
 
@@ -465,7 +459,7 @@ Equipment visibility, sheathing positions, and draw-sheathe animations. Builds o
 
 ### Risks & Compatibility
 
-- Validate per-pack combat-animation support individually. Keep layer small and intentional.
+- Validate per-pack combat-animation support individually.
 
 ---
 
@@ -490,7 +484,3 @@ Strict ownership: one clear owner per layer.
 - Mixed generated output hides whether a problem is from load order or stale behavior files.
 
 ---
-
-## Open Research
-
-Open research for the animations stack is tracked in `TODO.md`.

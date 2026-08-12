@@ -4,7 +4,7 @@
 
 This section owns the full graphics rendering pipeline for `Elder Wilds`: from the post-process shader framework through textures, lighting, weather, water, terrain, characters, and distant detail. Each pillar of the pipeline lives in its own sub-file.
 
-The pipeline is designed to be evaluated in order — each stage depends on the one before it. Do not jump ahead to textures or characters before the Community Shaders framework and its addon modules are locked.
+The pipeline is evaluated in order — each stage depends on the one before it; textures and characters wait until the Community Shaders framework and its addon modules are in place.
 
 ## Pipeline Order
 

@@ -3,11 +3,9 @@
 ---
 
 ## Performance Budgeting
-How `Elder Wilds` measures performance, identifies bottlenecks, and keeps generated workflow sane once the list gets heavy.
 
 ### Baseline
-- **Budgeted route** — Separate GPU, VRAM, CPU/script, and draw-call problems so fixes target the real cause.
-- Treat performance as four different problems that can look similar: shader cost, VRAM pressure, CPU/script load, and exterior draw-call pressure.
+- **Budgeted route** — Separate the four problems (shader cost, VRAM pressure, CPU/script load, exterior draw-call pressure) so fixes target the real cause.
 - Keep one repeatable forest scene, one city scene, and one dungeon/interior scene for comparisons.
 - Record baseline and post-change captures with `PresentMon` and review in `CapFrameX`.
 - Prefer a stable frame-time target over chasing the highest uncapped number.
@@ -23,7 +21,7 @@ How `Elder Wilds` measures performance, identifies bottlenecks, and keeps genera
 ---
 
 ## VRAM-Heavy Mod Review
-Texture resolution, PBR/parallax adoption, heavy shader features, and world coverage drive VRAM pressure. Spend texture budget where visible in normal play.
+Texture resolution, PBR/parallax adoption, heavy shader features, and world coverage drive VRAM pressure.
 
 ### Baseline
 - **Selective route** — High resolution only for hero assets, creatures, architecture, or landscape layers dominating the screen.
@@ -47,7 +45,6 @@ CPU and Papyrus pressure comes from layered systems, NPC density, polling script
 ### Baseline
 - **Moderated route** — Keep strong feature mods, but avoid stacking several background-heavy systems solving similar jobs.
 - Treat NPC expansion, survival layers, follower frameworks, reputation systems, defeat systems, and ambient event mods as cumulative load.
-- Prefer one good system per gameplay problem instead of three lighter systems all ticking in the background.
 - Keep diagnostic logging off during normal play unless a bug needs it.
 - Judge script health through sleeping, waiting, cell changes, combat cleanup, and long travel.
 
@@ -58,4 +55,3 @@ CPU and Papyrus pressure comes from layered systems, NPC density, polling script
 ### Risks & Compatibility
 - Script delay often misdiagnosed as low FPS or "Skyrim being Skyrim."
 - Mid-save uninstalls can create save instability looking like performance decay.
-- A list can feel fine in short tests and still degrade over longer sessions.

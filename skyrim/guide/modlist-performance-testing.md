@@ -123,4 +123,4 @@ Keep `changelog.txt` or `build-notes.md` in `Output` separator recording: date/s
 4. Never update DynDOLOD/TexGen/xLODGen mid-playthrough without verifying output is functionally identical. Start new game after LOD regeneration when in doubt.
 
 ### Playing Forward
-Two installations of `Elder Wilds` can look quite different while following the same guide. The rule: **whatever you changed, note it, and re-run only the patchers whose upstream input changed.**
+The rule: **whatever you changed, note it, and re-run only the patchers whose upstream input changed.**

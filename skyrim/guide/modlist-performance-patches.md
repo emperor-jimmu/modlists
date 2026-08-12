@@ -3,7 +3,7 @@
 ---
 
 ## Patcher Discipline
-The generic category maps only become useful when tied to the actual mods `Elder Wilds` ships with. This section is that binding: exact `Wrye Bash` tweaks, `Bash Tags` per plugin, and `Synthesis` patcher pipeline in exact order. Default is "do not touch" — add a `Synthesis` patcher or `Bash Tag` only when a specific mod in the list makes it necessary.
+This section is the binding between the patcher maps and the mods `Elder Wilds` ships with: exact `Wrye Bash` tweaks, `Bash Tags` per plugin, and the `Synthesis` patcher pipeline in exact order.
 
 ### Pre-Build Checklist
 
@@ -183,7 +183,7 @@ The `Synthesis` patcher pipeline runs as a single batch via **Run Mutagen** in M
 - `High Poly Head Vampire Fix`
 - `HP_NPC_WIGS_TO_HEADPART`
 - `FacegenBaseline` — after all NPC overhauls installed; fallback to zEdit FaceGen patcher if needed. See `### FacegenBaseline Configuration` below.
-- **`SynthEBD`** — NPC equipment/outfit distribution via rule-based config. Use as a SPID alternative for armor/clothing distribution when SPID can't cover the target (e.g., complex outfit rules, multi-condition NPC filtering). Requires SynthEBD config files per armor/outfit mod. See `### SynthEBD Configuration` below.
+- **`SynthEBD`** — NPC equipment/outfit distribution via rule-based config. Requires SynthEBD config files per armor/outfit mod. See `### SynthEBD Configuration` below.
 - `NPCStatRescaler`
 
 ### FacegenBaseline Configuration
@@ -300,7 +300,7 @@ Port of zEBD to Synthesis/Mutagen. Distributes equipment (armor/clothing/weapons
 
 ### Automated Leveled List Addition Configuration
 
-A Synthesis patcher that automatically adds weapons and armor to leveled lists, reducing manual patching for standalone weapon/armor mods. Runs in Stage 3 before OWLLeveledListAddition.
+Runs in Stage 3 before OWLLeveledListAddition.
 
 **What it does:** Scans all loaded plugins for weapons and armor records, then injects them into appropriate vanilla leveled lists based on material tier, type, and stat comparison against existing list entries.
 
@@ -322,13 +322,13 @@ A Synthesis patcher that automatically adds weapons and armor to leveled lists, 
 | Skip Already Leveled Items | Yes | Avoids duplicating items already in leveled lists |
 | Skip Unique/Quest Items | Yes | Prevents unique artifacts from appearing in random loot |
 
-**When to run:** After adding any standalone weapon or armor mod to the load order. Since Elder Wilds now has 16+ standalone weapon mods, this patcher is essential — run it every time the Weapons & Armor section changes.
+**When to run:** After adding any standalone weapon or armor mod to the load order. Run it every time the Weapons & Armor section changes.
 
 **Key relationships:** Runs before `OWLLeveledListAddition` and `leveledlistresolver`. Does not replace OWL integration — it handles inject-only distribution while OWL controls tier-gating and deleveling logic.
 
 ### Stage 3 — Leveled Lists And Loot
 
-- **`Automated Leveled List Addition`** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/25395)) — Automatically adds weapons/armor to leveled lists. Configure output plugins per section (weapons, armor, misc). Set default output plugins in the script's Settings section to avoid re-typing plugin names. Run after new weapon/armor mods are added and before `OWLLeveledListAddition`. See `### Automated Leveled List Addition Configuration` below.
+- **`Automated Leveled List Addition`** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/25395)) — Automatically adds weapons/armor to leveled lists. See `### Automated Leveled List Addition Configuration` below.
 - `OWLLeveledListAddition` — adds IA/IW to OWL lists.
 - `OWLPatcher`
 - `Skyrim-LeveledLoot`
@@ -347,7 +347,7 @@ A Synthesis patcher that automatically adds weapons and armor to leveled lists, 
 - `HonedMetalAdditionalIngredients`
 - `Heim Recipe Patcher`
 - `ReProccer Evolved`
-- **`Weapon Stat Synthesis Patcher`** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/149027)) — Elder Wilds config: Damage Floor 4, Ceiling 22, Weight/Value Scale 1.0, Speed/Reach Normalization ON. Ignore List: Reliquary of Myth, ArteFakes, Unique Items Tweaks, Konahrik's Accoutrements. Run after OWLLeveledListAddition, SpeedandReachFixes, AmmoTweaks.
+- **`Weapon Stat Synthesis Patcher`** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/149027)) — Normalizes weapon stats across the load order. See `### Weapon Stat Synthesis Patcher Configuration` below.
 - `SpeedandReachFixes`
 - `WeaponSpeedEffectsFix`
 - `SynFixShieldData` / `SynFixWeaponAttackSpeed`
@@ -359,7 +359,7 @@ A Synthesis patcher that automatically adds weapons and armor to leveled lists, 
 
 ### Weapon Stat Synthesis Patcher Configuration
 
-Normalizes weapon stats across the entire load order when standalone weapon mods use different balance baselines. Runs in Stage 4 after `ReProccer Evolved`. Critical when adopting 16+ standalone weapon mods with varying stat philosophies.
+Runs in Stage 4 after `ReProccer Evolved`. Critical when adopting 16+ standalone weapon mods with varying stat philosophies.
 
 **What it does:** Recalculates weapon damage, weight, value, speed, and reach for all weapons based on a unified scaling formula. Ensures every weapon — vanilla, Heavy Armory, Immersive Weapons, and standalone mods — fits a consistent power curve.
 
@@ -393,7 +393,7 @@ Normalizes weapon stats across the entire load order when standalone weapon mods
 
 ### Stage 6 — Snow, Weather, Region
 
-- ~~`BDSPatcher`~~ — **REMOVED (2026-08-11).** Source-verified: the patcher (beefclot/BDSPatcherV2Updated) hard-requires `Better Dynamic Snow.esp`, maps only `SnowMaterial*` records, and has no keyword settings — **zero ash handling**. The Northpoint variant requires `Northpoint.esp` (a separate mod, not in the list). Better Dynamic Ash (54754) is standalone: it "converts the original Better Dynamic Snow shader to use installed ash texture and applies the shader to objects in Solstheim" via its own 52 KB plugin, with no patcher requirement. BDS3 (9121 v3.6.0) uses its own material/ESM records. No Synthesis step needed for snow or ash coverage.
+- Better Dynamic Ash (54754) is standalone — no Synthesis patcher needed. BDS3 (9121) uses its own material/ESM records. No Synthesis step needed for snow or ash coverage.
 - `SSBGPatcher`
 - `Nights Adjuster` / `Darker Weather Nights` — pick one.
 - `SkyVRaan Weather Patcher` — only if installed.
@@ -465,12 +465,8 @@ The full rebuild order for the generated pipeline. Stages after `SSEEdit` can be
 ### Patcher Load Order
 
 - `Bashed Patch` and `Synthesis` both write into same load-order range. Place Synthesis patch last unless a known conflict needs Bashed Patch to win.
-- `SynESLify` **must** be last in its stage.
-- `World: Timescale = 12` bakes into saves — never change on a long-running test save.
 - `Skyrim-LeveledLoot` and `OWL` overlap: run `OWLLeveledListAddition` first.
-- `AOSISCSoundPatcher` requires both AOS and ISC active.
 - `HP_NPC_WIGS_TO_HEADPART` before `KS Hairs Bald Helmets Fixer`.
-- `NavmeshCollector-Updated` dangerous with Bruma and Falskaar.
 - Record Bashed Patch CRC after every rebuild. Verify by disabling source mods and confirming patch shrinks.
 
 ### Key Principles

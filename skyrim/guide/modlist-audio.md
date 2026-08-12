@@ -10,11 +10,11 @@ The soundtrack direction: how much to expand Skyrim's music while staying close 
 | Mod | Notes |
 | --- | --- |
 | [Chapter II - Jeremy Soule Inspired Music](https://www.nexusmods.com/skyrimspecialedition/mods/37792) | Darker, more emotional melancholy without breaking from Soule's shape. |
-| [The Northerner Diaries - Immersive Edition (music by Jeremy Soule)](https://www.nexusmods.com/skyrimspecialedition/mods/28108) | Authentic Jeremy Soule compositions: 8 curated exploration tracks (Skyrim + Solstheim exploration/sunset/night categories). HD 192kbps, lossless-sourced, ESL option. Link fixed 2026-08-07 (was pointing at the unrelated texture mod 33903). |
+| [The Northerner Diaries - Immersive Edition (music by Jeremy Soule)](https://www.nexusmods.com/skyrimspecialedition/mods/28108) | Authentic Jeremy Soule compositions: 8 curated exploration tracks (Skyrim + Solstheim exploration/sunset/night categories). HD 192kbps, lossless-sourced, ESL option. |
 | [Hun Lovaas - Skyrim Fan-Made Combat Music](https://www.nexusmods.com/skyrimspecialedition/mods/16123) | Adds entirely new, lore-friendly combat tracks written for Skyrim, fitting the vanilla vibe. Non-replacer version — introduces new music rather than overwriting vanilla. Blend via Synthesis music merge; ESL option available. **Pre-2020 (v1.0, 2018) — verify native AE support before locking.** |
 | [The Southerner Diaries](https://www.nexusmods.com/skyrimspecialedition/mods/32593) | 22 Soule-inspired exploration and town tracks. |
 | [Melodies of Civilization](https://www.nexusmods.com/skyrimspecialedition/mods/37533) | 20+ town, tavern, and settlement tracks. |
-| [Nyghtfall - Dark Fantasy Music](https://www.nexusmods.com/skyrimspecialedition/mods/39011) | ~7 hours, 98 dark-fantasy tracks. Evaluate after baseline is in place. |
+| [Nyghtfall - Dark Fantasy Music](https://www.nexusmods.com/skyrimspecialedition/mods/39011) | ~7 hours, 98 dark-fantasy tracks. |
 | [Nordenhamr - Viking Music](https://www.nexusmods.com/skyrimspecialedition/mods/58080) | Viking identity reinforcement. |
 | [BA Bard Songs](https://www.nexusmods.com/skyrimspecialedition/mods/47202) | Bard song replacer. Compatible with Skyrim's Got Talent. |
 
@@ -30,19 +30,18 @@ The soundtrack direction: how much to expand Skyrim's music while staying close 
 - See → `Performance` for Synthesis pipeline configuration.
 
 ### Risks & Compatibility
-- A very large combined soundtrack can feel incoherent if tracks don't share tonal identity.
 - Multiple music mods must be merged via Synthesis to avoid overlapping `MUSTT` records.
 - Any pre-2020 music mod may lack native AE support — verify before locking.
 
 ---
 
 ## Weapon, Magic, And Impact SFX
-The sound-effects layer for combat, magic, items, UI, and impact. The bar: modern, weighty, clear audio readable in third-person without visual confirmation.
+The sound-effects layer for combat, magic, items, UI, and impact.
 
 | Mod | Notes |
 | --- | --- |
 | [Immersive Sounds - Compendium](https://www.nexusmods.com/skyrimspecialedition/mods/523) | Weapon-and-armor SFX baseline. Broadest patch ecosystem. |
-| [Audio Overhaul for Skyrim SE](https://www.nexusmods.com/skyrimspecialedition/mods/12341) | Master reverb-and-attenuation layer. 27K endorsements, actively maintained (v4.1.4, April 2026). |
+| [Audio Overhaul for Skyrim SE](https://www.nexusmods.com/skyrimspecialedition/mods/12341) | Master reverb-and-attenuation layer. Actively maintained. |
 | [Airgetlam - Shouts SFX](https://www.nexusmods.com/skyrimspecialedition/mods/33993) | Shout-audio companion. Replaces raw `.wav` files, no record conflicts. |
 | Strange Runes | Magic audio layer (cross-referenced from → `Magic & Perks`). |
 
@@ -58,7 +57,7 @@ The sound-effects layer for combat, magic, items, UI, and impact. The bar: moder
 ## Creature And NPC SFX
 ### Baseline
 - Minimalist route — rely on ISC + AOS for creature sounds. Add dedicated replacers only if testing reveals weak vocalisations.
-- **Talkative Dragons** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/26955)) — Dragons speak during combat via reused vanilla voice lines. ESL-flagged, only overwrites one record (`CreatureDialogueDragon`). 15,478 endorsements.
+- **Talkative Dragons** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/26955)) — Dragons speak during combat via reused vanilla voice lines. ESL-flagged, only overwrites one record (`CreatureDialogueDragon`).
 
 ### Risks & Compatibility
 - Creature sound `.wav` replacers are generally safe (no record conflicts). Sound descriptor editors must load after ISC and AOS.

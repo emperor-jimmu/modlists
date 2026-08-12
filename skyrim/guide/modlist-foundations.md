@@ -51,7 +51,7 @@ Install all core libraries and frameworks upfront — they are non-negotiable de
 | Base install (step 1) | **USMP base v2.6.6** — `Required` | Always installs. |
 | Racial Plugins | *(none)* | Races of Tamriel, Palladium, Mannaz, YASH, SkyRem, etc. — none installed. Race baseline is Aetherius (own step below). |
 | Aetherius v2.14.1 combination patches | **`Aetherius-A Race Overhaul`** only | Aetherius locked (→ [Race Overhauls](modlist-expanded-character.md)). FK's DRS, Left Hand Rings, Racial Body Morphs not installed — pick the plain patch, not the combos. |
-| Imperious / Disparity combos | *(none)* | Imperious and Disparity rejected (EnaiRim/vanilla-plus direction). |
+| Imperious / Disparity combos | *(none)* | Not installed — EnaiRim/vanilla-plus not used. |
 | Other combination patches | *(none)* | Left Hand Rings, Mannaz, Racial Passives not installed. |
 | Skeletons and Mannequins | *(none)* | FK's DRS, RBM, mannequin variants not installed. |
 | Other Patches — Dialogue | **`Guard Dialogue Overhaul or Redux`**, **`Relationship Dialogue Overhaul`** | GDO adopted (→ [NPC Dialogue](modlist-npcs.md)); RDO locked (→ [Followers](modlist-expanded-followers.md)). The GDO row appears when `Guard Dialogue Overhaul.esp` is active and WACCF is not. |
@@ -69,7 +69,7 @@ Vanilla autosaves, quicksaves, and manual saves all write the same `.ess` format
 
 1. Install requirements (already in Core Libraries): `JContainers SE`, `NL_MCM - A Modular MCM Framework`, `Regional Save Names`, `SSE Engine Fixes`
 2. Install the SSSO3 main file and `SSSO3 - French` (if applicable). Place SSSO3 anywhere in load order.
-3. **Disable all vanilla autosaves** in BethINI Pie — see → [INI Tuning And Display Settings](modlist-performance-optimization.md) (BethINI Pie Configuration Baseline). Keep `iAutoSaveCount` at its positive default (`3`) — **never `0`**: confirmed crash (2026-08-08) — the engine divides by the slot count when a save loads, and `0` produces a hard `INT_DIVIDE_BY_ZERO` CTD. SSSO3 force-deactivates the autosaves, but the INI settings prevent the values from conflicting.
+3. **Disable all vanilla autosaves** in BethINI Pie — see → [INI Tuning And Display Settings](modlist-performance-optimization.md) (BethINI Pie Configuration Baseline). Keep `iAutoSaveCount` at its positive default (`3`) — **never `0`**: the engine divides by the slot count when a save loads, and `0` produces a hard `INT_DIVIDE_BY_ZERO` CTD. SSSO3 force-deactivates the autosaves, but the INI settings prevent the values from conflicting.
 
 **In-game setup (required before the rotating system activates):**
 
@@ -81,7 +81,7 @@ Vanilla autosaves, quicksaves, and manual saves all write the same `.ess` format
 6. **Select a preset profile.** For Elder Wilds, start with **Vanilla+** — it replicates vanilla autosave behavior with Save Shield protection and timed saves, no hardcore restrictions.
 7. From the MCM's **Rotating System** page, set your preferred save cap (20-30 is reasonable for a playthrough).
 
-**SSSO3 Configuration for Elder Wilds:** Starfrost (locked survival baseline) does not use Campfire files — no patch conflict expected. If a campfire-required mod is adopted later, SSSO3 includes compatibility patches.
+**SSSO3 Configuration for Elder Wilds:** Starfrost (locked survival baseline) does not use Campfire files — no patch conflict expected.
 
 ### SkyPatcher And SkyPatched Mods
 **SkyPatcher** is an SKSE plugin that patches vanilla records at runtime from INI-style configuration files rather than traditional ESP plugins. No winner-loser override chain, no per-pair patches for the records it covers.
@@ -134,7 +134,7 @@ Pure-mesh mod — no ESP, no requirements, no runtime config. The FOMOD has thre
 | Markarth | `No parallax version` |
 | Windhelm | `No parallax version` |
 
-The `Parallax version` of each city requires a parallax retexture (`_p` textures) — not used here. Windhelm's parallax variant additionally requires BDS and BDS patcher (per the FOMOD description), reinforcing the no-parallax pick.
+The `Parallax version` of each city requires a parallax retexture (`_p` textures), and Windhelm's variant additionally requires BDS and BDS patcher — not used here.
 
 **Step 2 — Towns and Villages** (`SelectExactlyOne` per hold; choose `Farmhouses Without Parallax`):
 
@@ -152,7 +152,7 @@ The `Parallax version` of each city requires a parallax retexture (`_p` textures
 | Bright Waterfall Fix (ENB) | No | ENB-only; not installed. |
 | Icy Windhelm | No | Not installed — Windhelm snow coverage is `Windhelm Is Snowy - BOS` → [Terrain](modlist-graphics-terrain.md). |
 | ELFX Exteriors | No | ELFX is a fallback alternative in → [Lighting](modlist-graphics-lighting.md), not baseline. |
-| Majestic Mountains | No | Dropped — list uses Enhanced Rocks and Mountains (→ [Terrain](modlist-graphics-terrain.md)). |
+| Majestic Mountains | No | Not installed — list uses Enhanced Rocks and Mountains (→ [Terrain](modlist-graphics-terrain.md)). |
 | Riften Architectural Details | No | Not installed (Riften outdoor coverage comes from the Snazzy AIO series). |
 | Skyrim 202X by Pfuscher | No | Textures are PBR (Tomato's pack etc.), not 202X. |
 | Skyrim - A Mountainous Experience | No | Not installed. |
@@ -343,14 +343,14 @@ Converting ESP to ESL-flagged ESP frees a regular plugin slot (limit 254) by mov
 
 ### Not Installed
 
-- **Alt-Tab Stuck Key Fix** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/148466)) — Prevents stuck modifier keys after alt-tabbing. Optional fix, evaluate if alt-tab issues arise during testing.
+- **Alt-Tab Stuck Key Fix** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/148466)) — Prevents stuck modifier keys after alt-tabbing.
 - **I'm Walkin' Here NG with Pets** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/122516)) — Ally/pet body-blocking fix.
-- **Bard Instrumentals Mostly - Sing Rarely** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/10927)) — Repetitive tavern singing. Not needed — other bard mods cover this.
+- **Bard Instrumentals Mostly - Sing Rarely** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/10927)) — Reduces repetitive tavern singing.
 
 
 #### Navigator - Navmesh Fixes — FOMOD Options
 
-The FOMOD has five steps: AIO vs Modular, AIO main-file + compatibility patches, optional add-ons, and optional extras. Picks below are verified against the modlist's current adoptions.
+The FOMOD has five steps: AIO vs Modular, AIO main-file + compatibility patches, optional add-ons, and optional extras.
 
 **Step 1 — AIO or Modular** (`SelectExactlyOne`):
 
@@ -370,7 +370,7 @@ The FOMOD has five steps: AIO vs Modular, AIO main-file + compatibility patches,
 
 | Patch                   | Pick        | Reason                                                                                      |
 |-------------------------|------------|---------------------------------------------------------------------------------------------|
-| Interesting NPCs        | Skip        | 3DNPC is listed as an Alternative in → [NPCs](modlist-npcs.md), not adopted.                |
+| Interesting NPCs        | Skip        | 3DNPC is listed as an Alternative in → [NPCs](modlist-npcs.md), not in the list.               |
 | Skyrim Sewers           | Skip        | Not in modlist.                                                                             |
 | Sunder and Wraithguard  | Skip        | `ccbgssse008-wraithguard.esl` is paid AE Upgrade content, not in this load order.           |
 
@@ -378,9 +378,9 @@ The FOMOD has five steps: AIO vs Modular, AIO main-file + compatibility patches,
 
 | Add-on          | Pick        | Reason                                                          |
 |-----------------|------------|-----------------------------------------------------------------|
-| Interesting NPCs | Skip        | Not adopted.                                                    |
-| Skyrim Sewers    | Skip        | Not adopted.                                                    |
-| Vigilant         | **Select**  | Vigilant is adopted baseline (→ AGENTS.md Session Decisions). Installs `VigilantNavFix.esp`. |
+| Interesting NPCs | Skip        | Not installed.                                                   |
+| Skyrim Sewers    | Skip        | Not installed.                                                   |
+| Vigilant         | **Select**  | Vigilant is in the list (→ [World Content](modlist-world-content.md)). Installs `VigilantNavFix.esp`. |
 
 **Step 5 — Optional extras** (`SelectAtMostOne` / `SelectAny`):
 

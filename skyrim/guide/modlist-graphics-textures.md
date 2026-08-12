@@ -22,7 +22,6 @@ This section owns the graphics-framework decision for the shader-first visual st
 
 - Some CS features are much heavier than the core framework.
 - Older ecosystem pages may refer to legacy behavior or outdated version requirements.
-- A shader-first stack still needs discipline; enabling every feature isn't the same as building a coherent visual direction.
 
 ---
 
@@ -56,16 +55,16 @@ These ship with the main Community Shaders package — no separate download need
 
 | Mod | Description |
 | --- | --- |
-| [Wetness Effects](https://www.nexusmods.com/skyrimspecialedition/mods/112739) | Rain wetness, puddles, raindrop splash/ripple VFX, shore wetness. 9.8K endorsements, v3.1.0. |
-| [HDR](https://www.nexusmods.com/skyrimspecialedition/mods/179371) | Native HDR10 output, configurable peak brightness (up to 10,000 nits), paper-white slider, BT.2020 colour space. **Requires an HDR-capable monitor.** Disable Windows Auto HDR and NVIDIA RTX HDR. 970 endorsements, v1.0.2. |
+| [Wetness Effects](https://www.nexusmods.com/skyrimspecialedition/mods/112739) | Rain wetness, puddles, raindrop splash/ripple VFX, shore wetness. |
+| [HDR](https://www.nexusmods.com/skyrimspecialedition/mods/179371) | Native HDR10 output, configurable peak brightness (up to 10,000 nits), paper-white slider, BT.2020 colour space. **Requires an HDR-capable monitor.** Disable Windows Auto HDR and NVIDIA RTX HDR. |
 | [Screen Space Global Illumination (SSGI)](https://www.nexusmods.com/skyrimspecialedition/mods/130375) | Realistic indirect bounce light. Performance-intensive — high-end tier only. |
-| [Skylighting](https://www.nexusmods.com/skyrimspecialedition/mods/139352) | Soft ambient sky occlusion. Pairs cleanly with the conservative tier for an authentic grim-dark look. |
+| [Skylighting](https://www.nexusmods.com/skyrimspecialedition/mods/139352) | Soft ambient sky occlusion. Pairs with the conservative tier. |
 | [Hair Specular](https://www.nexusmods.com/skyrimspecialedition/mods/149011) | Anisotropic hair highlights for more realistic hair rendering. |
 | [Terrain Blending](https://www.nexusmods.com/skyrimspecialedition/mods/157076) | Seamless terrain-to-mesh transitions. |
 | [Terrain Variation](https://www.nexusmods.com/skyrimspecialedition/mods/148123) | Stochastic sampling to prevent visible tiling on terrain textures. |
 | [Terrain Helper](https://www.nexusmods.com/skyrimspecialedition/mods/143149) | Terrain rendering utilities required by some terrain features. |
-| [Upscaling](https://www.nexusmods.com/skyrimspecialedition/mods/156952) | DLSS 4 / FSR 3.1 upscaling with FSR Frame Generation. The CS-team replacement for the older Skyrim Upscaler (80343). Requires SSE Display Tweaks. 6.4K endorsements, v1.4.0. |
-| [Effects 11](https://www.nexusmods.com/skyrimspecialedition/mods/179824) | ENB preset compatibility layer via FX11 framework. Experimental — evaluate before locking. |
+| [Upscaling](https://www.nexusmods.com/skyrimspecialedition/mods/156952) | DLSS 4 / FSR 3.1 upscaling with FSR Frame Generation. The CS-team replacement for the older Skyrim Upscaler (80343). Requires SSE Display Tweaks. |
+| [Effects 11](https://www.nexusmods.com/skyrimspecialedition/mods/179824) | ENB preset compatibility layer via FX11 framework. Experimental. |
 
 ---
 
@@ -104,8 +103,6 @@ These ship with the main Community Shaders package — no separate download need
 ### Risks & Compatibility
 
 - Module stacks that look good in isolation can fight later weather, water, or lighting winners.
-- Measuring several shader changes at once makes later decisions impossible to trust.
-- Screenshot appeal can hide long-session readability or frame-time problems.
 
 ---
 
@@ -130,7 +127,7 @@ The mesh/data side of parallax and complex materials is handled by **PGPatcher**
 
 PBR is an adoption strategy layered on top of Community Shaders, not a separate renderer choice. The real decision is how selectively to use PBR-ready materials and conversions. Every install below requires **PGPatcher** (→ [PGPatcher Workflow](modlist-graphics-pgpatcher.md)), run after the texture stack settles.
 
-Landscape and rock PBR overrides (TomatoRim PBR Landscapes, Enhanced Rocks and Mountains) are decided in → [Terrain & Flora](modlist-graphics-terrain.md). PGPatcher applies mesh patches across all separators — re-run once ALL PBR texture mods (Textures, Terrain, Characters, Lighting) are stable.
+Landscape and rock PBR overrides (TomatoRim PBR Landscapes, Enhanced Rocks and Mountains) are owned by → [Terrain & Flora](modlist-graphics-terrain.md). PGPatcher applies mesh patches across all separators — re-run once ALL PBR texture mods (Textures, Terrain, Characters, Lighting) are stable.
 
 ### Baseline — Balanced PBR Route
 
@@ -138,10 +135,10 @@ Broad AIO base + targeted city and farmhouse overrides.
 
 - **Vanilla PBR AIO** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/174091), 11.5 GB) — Primary base. Covers all architecture, clutter, actors, dungeons with vanilla-faithful art direction.
 - **Tomato's Whiterun Remake - PBR or Complex Material** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/173747)) — Optional Whiterun override; replaces the deprecated Tomato's PBR Whiterun (135771). FOMOD installer — choose the PBR branch, 2K recommended, skip 4K. Requires CS core + PGPatcher (both already in the stack).
-- **Tomato's Solitude Remastered - PBR-CPM** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/181707)) — Solitude PBR override. Complements the VPBR base with hand-authored Solitude textures by Tomatokillz (same author as TomatoRim PBR Landscapes, PBR Farmhouses 2.0, Whiterun Remake — all locked baselines). FOMOD installer — choose the PBR branch, 2K recommended. Compatible with Grand Solitude (baseline) and Window Shadows Ultimate (baseline). Requires CS core + PGPatcher. Install after VPBR, before running PGPatcher.
+- **Tomato's Solitude Remastered - PBR-CPM** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/181707)) — Solitude PBR override. Complements the VPBR base with hand-authored Solitude textures by Tomatokillz (same author as TomatoRim PBR Landscapes, PBR Farmhouses 2.0, Whiterun Remake). FOMOD installer — choose the PBR branch, 2K recommended. Compatible with Grand Solitude (baseline) and Window Shadows Ultimate (baseline). Requires CS core + PGPatcher. Install after VPBR, before running PGPatcher.
 - **Tomato's PBR Farmhouses 2.0** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/135774)) — Optional farmhouse override. Install Grey 2K (84 MB), skip 4K. Optional: `WSU PBR Farmhouse windows patch` if Window Shadows Ultimate is in the stack.
 - **Faultier's PBR Armors and Clothes** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/175319), 2.9 GB) — Complete PBR retexture of all vanilla armors/weapons/clothes. Requires CS + PGPatcher. Install under this separator before the clothing/armor texture upgrades in → [Characters & Creatures](modlist-graphics-characters.md).
-- **Skyking Nordic Ruins Complex Parallax** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/183021)) — Nordic ruins dungeon texture override. By Skyking2020 (Skyland AIO author). Complete Nordic ruins retexture with Complex Parallax textures, new custom meshes (individual-plank wooden stairs/platforms), and ivy/root coverage. Requires CS + PGPatcher. **Choose 2K.** Install after VPBR, before running PGPatcher. Supersedes the Numinous Nord Ruins tentative (146766, rejected — ENB-oriented, author forbids CS PBR porting).
+- **Skyking Nordic Ruins Complex Parallax** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/183021)) — Nordic ruins dungeon texture override. By Skyking2020 (Skyland AIO author). Complete Nordic ruins retexture with Complex Parallax textures, new custom meshes (individual-plank wooden stairs/platforms), and ivy/root coverage. Requires CS + PGPatcher. **Choose 2K.** Install after VPBR, before running PGPatcher. Supersedes the Numinous Nord Ruins alternative (146766 — ENB-oriented, author forbids CS PBR porting).
 - **Faultier's PBR Windows** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/125308?tab=files), 169 MB) — Standalone optional file, **not** part of the Skyrim AIO (no AIO dependency; "no requirements except for running PG"). PBR multilayer parallax windows, including farmhouses/Whiterun/Riften windows the AIO doesn't cover, **plus shadow masks for Window Shadows Ultimate** (150494, locked baseline in → [Lighting](modlist-graphics-lighting.md)) so window shadows match window shapes. Install after VPBR.
 - **Faultier's PBR Road Signs** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/125308?tab=files), 42.7 MB) — Standalone optional file, **not** part of the Skyrim AIO ("requirements: none", supports Cutting Room Floor). PBR road-sign textures. Pairs with Point The Way (→ [World Feel](modlist-world-feel.md)) — signposts use vanilla meshes, so the retexture applies.
 
@@ -178,7 +175,7 @@ Community Shaders ships **Dynamic Cubemaps** and **Image-Based Lighting (IBL)** 
 
 - **PBR textures for The Great Cities Collection** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/133493))
 - **PBR Hub** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/139889)) — Discovery hub for later expansion.
-- Landscape additions are owned by → [Terrain & Flora](modlist-graphics-terrain.md) — TomatoRim PBR Landscapes AIO (177621) and Enhanced Rocks and Mountains (121336) are locked there; Cathedralist's PBR Landscape (137333) is rejected. No open landscape candidates belong in this section.
+- Landscape additions are owned by → [Terrain & Flora](modlist-graphics-terrain.md) — TomatoRim PBR Landscapes AIO (177621) and Enhanced Rocks and Mountains (121336) are locked there. No open landscape candidates belong in this section.
 
 ### Working Rollout Order
 
@@ -192,14 +189,12 @@ Community Shaders ships **Dynamic Cubemaps** and **Image-Based Lighting (IBL)** 
 
 - VPBR is newer (March 2026) than Faultier's PBR Skyrim (v3.0) — single-point-of-failure risk if abandoned. Active development so far (v1.0 → v1.32 in ~2 months).
 - VPBR includes mountain textures that must be overridden by ERM (→ [Terrain & Flora](modlist-graphics-terrain.md)). Load ERM after VPBR.
-- Do NOT install `Faultier's Skyrim AIO` alongside VPBR — same texture paths.
-- PBR ambition can outrun the rest of the stack if weather, trees, water, and lighting aren't held to a similar bar.
 
 ---
 
 ## Mesh Improvements - Core Foundation → separator: `Graphics - Textures & Meshes`
 
-Improve shape quality and silhouette readability without creating an unmaintainable conflict swamp. The best outcome is a stable baseline of mesh improvements, targeted fixes where they matter, and parallax support only where textures benefit from it. Categories split into the `Graphics - Mesh Improvements - *` sub-separators below; the core foundation stays in `Graphics - Textures & Meshes`.
+Improve shape quality and silhouette readability without creating an unmaintainable conflict swamp. Categories split into the `Graphics - Mesh Improvements - *` sub-separators below; the core foundation stays in `Graphics - Textures & Meshes`.
 
 **⏱ Install order:** Core foundation (this section) → `Mesh Improvements - Weapons & Armor` → `Mesh Improvements - Cities & Structures` → `Mesh Improvements - Furniture & Props`. Follow the grouping in each section.
 
@@ -313,7 +308,7 @@ All mesh-only, no ESP.
 | [Blary's Booksets](https://www.nexusmods.com/skyrimspecialedition/mods/159303)                      | Book set and book stack clutter mesh replacer.                                |
 | [ElSopa Misc Ruins Redone](https://www.nexusmods.com/skyrimspecialedition/mods/153797)              | Nordic/Dwemer ruins clutter mesh replacer.                                    |
 | [Snazzy Orc Chests](https://www.nexusmods.com/skyrimspecialedition/mods/142275)                     | Orc stronghold chest mesh replacer.                                           |
-| [High Poly Project](https://www.nexusmods.com/skyrimspecialedition/mods/12029)                   | Higher-polygon mesh replacer for common objects. Adds geometry detail; evaluate vs conflict cost. |
+| [High Poly Project](https://www.nexusmods.com/skyrimspecialedition/mods/12029)                   | Higher-polygon mesh replacer for common objects. |
 
 ### Environment & Props
 
@@ -363,7 +358,7 @@ Texture and mesh upgrades for furniture, clutter, and items beyond the Snazzy ci
 | [Wall Mounted Dead Animals Fixes](https://www.nexusmods.com/skyrimspecialedition/mods/58511)                     | Install after Fluffy Wall Mounted Dead Animals.                             |
 | [Snazzy Diverse Carriages - BOS](https://www.nexusmods.com/skyrimspecialedition/mods/112041)                     |                                                                             |
 | [Snazzy Diverse Carriages - Seasonal Patch](https://www.nexusmods.com/skyrimspecialedition/mods/112210)          | Required if Seasonal Landscapes is adopted.                                 |
-| [RUSTIC CLUTTER COLLECTION](https://www.nexusmods.com/skyrimspecialedition/mods/5795)                           | Higher-res diffuse/normal replacer for common clutter. May be redundant with VPBR's clutter coverage — evaluate side-by-side. |
+| [RUSTIC CLUTTER COLLECTION](https://www.nexusmods.com/skyrimspecialedition/mods/5795)                           | Higher-res diffuse/normal replacer for common clutter. May be redundant with VPBR's clutter coverage. |
 
 ### Vanaheimr Series
 
@@ -449,7 +444,7 @@ In-world visual effects during combat: blood pools, persistent decals, lingering
 
 ## Book and Paper Visual Overhauls → separator: `Graphics - Textures & Meshes`
 
-Visual upgrades for books, notes, and paper — the most-read world objects. Texture and mesh improvements make reading feel more tactile and library exploration more rewarding without touching gameplay records.
+Visual upgrades for books, notes, and paper — the most-read world objects. Texture and mesh changes only; no gameplay-record edits.
 
 **⏱ Install order:** Book Covers Skyrim → Enhanced Textures → SkyPatched → Lost Library (optional content).
 
@@ -457,7 +452,7 @@ Visual upgrades for books, notes, and paper — the most-read world objects. Tex
 
 | Mod                                                                                                | Description                                                                                                                                                           |
 |----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Book Covers Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/901)                      | Core book-cover texture replacer. Every book gets a unique hand-crafted cover. 200K+ endorsements. Choose the **Main Files** download (not the USSEP Update variant). |
+| [Book Covers Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/901)                      | Core book-cover texture replacer. Every book gets a unique hand-crafted cover. Choose the **Main Files** download (not the USSEP Update variant). |
 | [Book Covers Skyrim Enhanced Textures](https://www.nexusmods.com/skyrimspecialedition/mods/178820) | 2K/4K texture upgrade. Install after base mod and overwrite. Optional but recommended for 4K displays.                                                                |
 | [Book Covers Skyrim - SkyPatched](https://www.nexusmods.com/skyrimspecialedition/mods/109254)      | SkyPatcher-based forward-port resolving record-level conflicts. Choose **Recommended Main File**.                                                                     |
 | [Book Covers Skyrim - Lost Library](https://www.nexusmods.com/skyrimspecialedition/mods/902)       | Library of 150+ lore books from earlier TES games. Content companion; quest-level decision owned by [World Content](modlist-world-content.md). Add the PBR-compatible cover variant where available. |
@@ -469,7 +464,7 @@ Visual upgrades for books, notes, and paper — the most-read world objects. Tex
 - With USSEP in the load order, use the SkyPatched variant — it handles USSEP forwarding plus broader compatibility.
 - Enhanced Textures is recommended for 4K displays. At 2K the base BC7 textures are adequate.
 - Verify compatibility with mods touching book inventory records (e.g. Unread Books Glow). SkyPatched resolves most record-level conflicts.
-- Base mod is ~600 MB for 2K. Evaluate whether unique book covers earn their VRAM and disk space cost.
+- Base mod is ~600 MB for 2K.
 
 ---
 
@@ -513,7 +508,7 @@ Small texture/mesh replacers that don't fit the main topic sections above. Each 
 | [Dwemer Tech Glowmapped](https://www.nexusmods.com/skyrimspecialedition/mods/47802)                                      | Glowmap for Dwemer tech. Requires SSE Engine Fixes.                                                                                            |
 | [Dwemer Weapons Glowmapped](https://www.nexusmods.com/skyrimspecialedition/mods/48232)                                   | Glowmap for Dwemer weapons. Requires SSE Engine Fixes.                                                                                         |
 | [Dwemer Elevator Lights](https://www.nexusmods.com/skyrimspecialedition/mods/55478)                                      | Animated Dwemer elevator lights.                                                                                                               |
-| [Cathedral - Mushrooms](https://www.nexusmods.com/skyrimspecialedition/mods/26103)                                       | HD mushroom textures, 2K. Cathedral series. AI-Generated tag — quality eval per curation policy.                                                |
+| [Cathedral - Mushrooms](https://www.nexusmods.com/skyrimspecialedition/mods/26103)                                       | HD mushroom textures, 2K. Cathedral series. AI-Generated tag.                                                |
 | [Cathedral Snowberries — Inventory/Wreath/Planter](https://www.nexusmods.com/skyrimspecialedition/mods/69933)            | Inventory model for Cathedral 3D Snow Berries (→ [Terrain & Flora](modlist-graphics-terrain.md)).                                               |
 | [Detailed Rugs](https://www.nexusmods.com/skyrimspecialedition/mods/9030)                                                | Main file (with meshes).                                                                                                                       |
 | [DB Tenets Redone](https://www.nexusmods.com/skyrimspecialedition/mods/6782)                                             | 4K.                                                                                                                                            |
@@ -540,11 +535,7 @@ Small texture/mesh replacers that don't fit the main topic sections above. Each 
 | [Scallions of Skyrim - High Polygon Leeks](https://www.nexusmods.com/skyrimspecialedition/mods/53205)                    | Higher-poly leek mesh replacer. **Choose main file.**                                                                                          |
 | [Halffaces - Common Chair](https://www.nexusmods.com/skyrimspecialedition/mods/121182)                                   | Mesh + texture replacer for commonchair02. **Choose main file.**                                                                               |
 | [Animated Coffins](https://www.nexusmods.com/skyrimspecialedition/mods/63564)                                            | Animated coffin props. Install after Skeleton Replacer HD (→ [Characters & Creatures](modlist-graphics-characters.md)).                        |
-| [Grave Gargoyles](https://www.nexusmods.com/skyrimspecialedition/mods/21907)                                              | Custom gargoyle skeleton replacer. Fits grim-dark pillar.                                                                                       |
+| [Grave Gargoyles](https://www.nexusmods.com/skyrimspecialedition/mods/21907)                                              | Custom gargoyle skeleton replacer.                                                                                       |
 | [Kanjs — Dragon Stone and Map of Dragon Burials](https://www.nexusmods.com/skyrimspecialedition/mods/167084)             | Animated dragon stone and burial map mesh replacer. No ESP.                                                                                     |
 
 ---
-
-## Open Research
-
-Open research for the graphics pipeline is tracked in `TODO.md`.

@@ -7,7 +7,7 @@ OStim Standalone — a modern, standalone adult animation framework that does no
 
 | Mod                                                                                                              | Type     | Notes                                                   |
 |------------------------------------------------------------------------------------------------------------------|----------|---------------------------------------------------------|
-| [OStim Standalone](https://www.nexusmods.com/skyrimspecialedition/mods/98163)                                    | Baseline | Modern adult animation framework. Does not require OSA. |
+| [OStim Standalone](https://www.nexusmods.com/skyrimspecialedition/mods/98163)                                    | Baseline | Does not require OSA.                                        |
 | [OStim Community Resource](https://www.nexusmods.com/skyrimspecialedition/mods/106519)                           | Baseline | Shared framework for OStim add-ons.                     |
 | [Night-blooming Violets for OStim Standalone](https://www.nexusmods.com/skyrimspecialedition/mods/98276)         | Baseline | Scene framework addon.                                  |
 | [OARE - Open Animations Romance and Erotica](https://www.nexusmods.com/skyrimspecialedition/mods/80594)          | Baseline | Recommended animation pack baseline.                    |
@@ -88,15 +88,13 @@ Pregnancy, childbirth, family systems, and child NPC overhauls. These mods form 
 
 | Mod | Notes |
 | --- | --- |
-| [Beeing Female NG](https://www.nexusmods.com/skyrimspecialedition/mods/168434) | Tentative — evaluate gameplay and compatibility impact. Pregnancy and female reproductive system framework. |
-| [Beeing Female - FM - FMR - Skychild Patch](https://www.nexusmods.com/skyrimspecialedition/mods/169104) | Tentative — consider alongside Beeing Female NG. Compatibility patch for Beeing Female + SkyChild. |
+| [Beeing Female NG](https://www.nexusmods.com/skyrimspecialedition/mods/168434) | Tentative. Pregnancy and female reproductive system framework. |
+| [Beeing Female - FM - FMR - Skychild Patch](https://www.nexusmods.com/skyrimspecialedition/mods/169104) | Tentative. Compatibility patch for Beeing Female + SkyChild. |
 | [Seeds of Skyrim - Lore Pregnant NPCs](https://www.nexusmods.com/skyrimspecialedition/mods/55112) | Lore-friendly pregnant NPCs. Evaluate for overlap with Beeing Female pregnancy system. |
 
 ### Risks & Compatibility
 
 - Pregnancy frameworks add persistent actor data and scripts — monitor save file growth.
 - SkyChild replaces child NPC models; verify compatibility with any mod that adds or modifies child NPCs.
-- These mods interact with each other; install patches where available.
-- Evaluate all pregnancy/child mods as a set before locking any individual pick.
 
 

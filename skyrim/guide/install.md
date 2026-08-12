@@ -1,6 +1,6 @@
 # Installation Guide
 
-This document covers everything needed to set up the toolchain and environment for Elder Wilds. The section index and project scope live in [`modlist.md`](modlist.md).
+The section index and project scope live in [`modlist.md`](modlist.md).
 
 ## Pre-Installation: Steam, Skyrim, And Creation Kit
 
@@ -96,7 +96,6 @@ iTintTextureResolution=2048
 ```
 
 - Register `skse64_loader.exe` in MO2 as the `SKSE Skyrim Launcher` executable and launch the game through that entry after the vanilla initialization step.
-- Community troubleshooting on `r/skyrimmods` still clusters around the same mistakes: wrong runtime build, root files copied into the wrong folder, scripts not installed as a mod, or launching outside MO2. Guard against those explicitly.
 
 ## Register Tools In MO2
 

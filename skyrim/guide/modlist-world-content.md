@@ -7,8 +7,6 @@ Large worldspace-content changes making regions feel meaningfully different to c
 
 ### Baseline
 
-First experiment:
-
 | Mod            | Description                                                                 |
 |----------------|-----------------------------------------------------------------------------|
 | [The Marshlands](https://www.nexusmods.com/skyrimspecialedition/mods/23062) | Gives Hjaalmarch strong identity without redefining a central travel space. |
@@ -48,7 +46,7 @@ Authored settlement content — real places, not just denser vibes.
 | [The City of Crossed Daggers - Riften Expansion](https://www.nexusmods.com/skyrimspecialedition/mods/168629) | Riften market and canal expansion with new shops, NPCs, and quests. |
 | [Grand Solitude - The Walls of High King Erling](https://www.nexusmods.com/skyrimspecialedition/mods/157506) | Solitude wall and exterior expansion adding new areas and detail. |
 | [Bards College Rework](https://www.nexusmods.com/skyrimspecialedition/mods/182641) | Solitude Bard College architecture/interior overhaul (mesh-only, no gameplay changes). Verify mesh stack vs Grand Solitude / Riton Solitude (choose one) + CS/PBR mesh compat. |
-- [Solitude - Square of Akatosh](https://www.nexusmods.com/skyrimspecialedition/mods/175460) | Akatosh statue in Castle Dour square (pedestal or draconic fountain variant), relocated seating area near Thalmor HQ. ESP-FE, seasonal model support. Compatible with Grand Solitude (baseline). 206 endorsements, v2.5 (Jul 2026). Fits "Living the world" and Imperial-authority theme. **Choose fountain variant for visual impact.** Verify seasonal-swap uses Turn of the Seasons (baseline) path rather than Seasonal Landscapes (rejected). |
+- [Solitude - Square of Akatosh](https://www.nexusmods.com/skyrimspecialedition/mods/175460) | Akatosh statue in Castle Dour square (pedestal or draconic fountain variant), relocated seating area near Thalmor HQ. ESP-FE, seasonal model support. Compatible with Grand Solitude (baseline). **Choose fountain variant for visual impact.** Verify seasonal-swap uses the Turn of the Seasons (baseline) path. |
 
 ### Locked Faction-HQ Additions
 
@@ -128,7 +126,7 @@ Travel-stop identity, small community presence, memorable rural pauses.
 |--------------------------------------|----------------------------------------------------|
 | [The Great Village of Old Hroldan SSE](https://www.nexusmods.com/skyrimspecialedition/mods/33189) |  |
 | [Candlehearth - An Inn Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/97542) | Locked inn-overhaul baseline. Every inn in Skyrim. |
-| [Ask Innkeepers To Show Room SE](https://www.nexusmods.com/skyrimspecialedition/mods/5990) |  Preview room before renting. 5,351 endorsements.    |
+| [Ask Innkeepers To Show Room SE](https://www.nexusmods.com/skyrimspecialedition/mods/5990) |  Preview room before renting.    |
 | [Inns Can Be Closed](https://www.nexusmods.com/skyrimspecialedition/mods/57407) |  Inns close at night, must knock for entry.           |
 
 ### Alternatives
@@ -146,11 +144,11 @@ Inn-side downtime flavor layered on the Candlehearth baseline: tavern economy, d
 
 | Mod | Type | Notes |
 |-----|------|-------|
-| [Tavern Games - Mini Games in Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/1668) | Add-on | Card ("Battle of Heroes"), dice, and lottery mini-games at any tavern + tavern vouchers (3 free nights). v1.2.1, SKSE-free. Top-down camera (Witcher/Fable-like); Xbox One port exists. **Verify gamepad inputs in testing** (2016-era SkyUILib UI). |
+| [Tavern Games - Mini Games in Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/1668) | Add-on | Card ("Battle of Heroes"), dice, and lottery mini-games at any tavern + tavern vouchers (3 free nights). SKSE-free. Top-down camera (Witcher/Fable-like); Xbox One port exists. **Verify gamepad inputs in testing** (2016-era SkyUILib UI). |
 | [Tavern Games - Ink-art Card Retexture](https://www.nexusmods.com/skyrimspecialedition/mods/172419) | Companion | Card visuals for the above. Only with Tavern Games. |
 | [Today's Menu](https://www.nexusmods.com/skyrimspecialedition/mods/55187) | Add-on | Buy the innkeeper's daily menu (20 gold): randomized main dish + drink + side/dessert, locality-aware, once/day/inn. Distributions via editable leveled lists. Complements Candlehearth. |
 | [Coherent Inns Prices](https://www.nexusmods.com/skyrimspecialedition/mods/55207) | Add-on | Location-based inn prices (cheap 40 / normal 70 / expensive 100; main-city + Old Hroldan expensive). Contained per-inn dial — no effect on the locked economy/loot stack. **Use the provided Candlehearth patch**. Compatible with Inns Can Be Closed / Extended Stay. |
-| [Coherent Inns Prices - More Expensive](https://www.nexusmods.com/skyrimspecialedition/mods/141377) | Add-on | Scales the price globals upward for a harder-sticker-shock economy (user-approved). Install alongside 55207; values remain configurable via the base mod's globals. |
+| [Coherent Inns Prices - More Expensive](https://www.nexusmods.com/skyrimspecialedition/mods/141377) | Add-on | Scales the price globals upward for a harder-sticker-shock economy. Install alongside 55207; values remain configurable via the base mod's globals. |
 
 ---
 
@@ -160,13 +158,10 @@ Owned "Living the world" home layer — a believable home the player lives in be
 
 | Mod | Notes |
 |-----|-------|
-| [Autumngate - A Believable Player Home](https://www.nexusmods.com/skyrimspecialedition/mods/60951) | Small believable home southeast of Ivarstead (Rift), ESL. Four FOMOD versions (Standard/Forge/Reduced Clutter/RC Forge). **Install the Purchasable House add-on** (purchasable from Wilhem at Vilemyr Inn for 12,000 gold; dialogue appears after 24 in-game hours or a quicksave/reload). Optional Enchanting Table add-on acceptable. Purchasable voice lines are xVASynth (AI-voiced, single NPC) — quality-eval per policy, approved. Verify navmesh against Ivarstead-area mods (Northern Roads patch available). |
+| [Autumngate - A Believable Player Home](https://www.nexusmods.com/skyrimspecialedition/mods/60951) | Small believable home southeast of Ivarstead (Rift), ESL. Four FOMOD versions (Standard/Forge/Reduced Clutter/RC Forge). **Install the Purchasable House add-on** (purchasable from Wilhem at Vilemyr Inn for 12,000 gold; dialogue appears after 24 in-game hours or a quicksave/reload). Optional Enchanting Table add-on acceptable. Purchasable voice lines are xVASynth (AI-voiced, single NPC). Verify navmesh against Ivarstead-area mods (Northern Roads patch available). |
 
 ### Risks & Compatibility
 
-- Autumngate checks in on the Ivarstead navmesh; verify against adopted town/interior mods for the southeast of Ivarstead.
-- Tavern Life stack must not creep into the locked economy/loot dials (`Crafting & Economy`).
-- Tavern Games' forced top-down camera needs a third-person/gamepad sense-check before locking.
 - Candlehearth (locked inn baseline) owns the inn cells — Tavern Life mods act via dialogue/factions/leveled lists, not cell edits.
 
 ---
@@ -177,7 +172,7 @@ Owned "Living the world" home layer — a believable home the player lives in be
 | Mod                         | Description                                                  |
 |-----------------------------|--------------------------------------------------------------|
 | [Forgotten Dungeons (SSE)](https://www.nexusmods.com/skyrimspecialedition/mods/449) |                                                                |
-| [Caves of Morrowind](https://www.nexusmods.com/skyrimspecialedition/mods/13745) | Hand-authored new-cave/dungeon pack in the Velothi Mountains (Dunmer smuggling operation). V3.1, self-contained cells, vanilla-asset-only (PS4-origin), no scripts/quests, navmesh + LOD generated. **Level 15+ recommended** — a somewhat challenging explorer experience. |
+| [Caves of Morrowind](https://www.nexusmods.com/skyrimspecialedition/mods/13745) | Hand-authored new-cave/dungeon pack in the Velothi Mountains (Dunmer smuggling operation). Self-contained cells, vanilla-asset-only (PS4-origin), no scripts/quests, navmesh + LOD generated. **Level 15+ recommended** — a somewhat challenging explorer experience. |
 | [Dungeons - Revisited](https://www.nexusmods.com/skyrimspecialedition/mods/51798) |  Improves existing ruins rather than adding new destinations.  |
 | [Iconic's Crown of Barenziah](https://www.nexusmods.com/skyrimspecialedition/mods/137469) | High-quality crown/gems/display stand. |
 
@@ -214,7 +209,7 @@ Visual-only overhauls for specific dungeons. No record or navmesh edits, but con
 
 | Mod |
 |-----|
-| [Immersive Dungeon's Fire](https://www.nexusmods.com/skyrimspecialedition/mods/162277) | Enhanced fire VFX and ambient fire behavior in dungeons. Requires OIF. Tentative — evaluate visual and gameplay impact. |
+| [Immersive Dungeon's Fire](https://www.nexusmods.com/skyrimspecialedition/mods/162277) | Enhanced fire VFX and ambient fire behavior in dungeons. Requires OIF. |
 
 ---
 
@@ -251,7 +246,7 @@ Smaller discoverable places between headline destinations.
 | [Interesting Locations](https://www.nexusmods.com/skyrimspecialedition/mods/153298) | Environmental-storytelling additions to existing vanilla locations (hunting/fishing/lore details). No new quests or scripts; mostly added static/NPC-facing clutter. Verify per-cell against adopted city/tavern overhauls. |
 | [Regional Food Barrels - BOS](https://www.nexusmods.com/skyrimspecialedition/mods/141954) | BOS swaps food-barrel contents by region for variety. No leveled-list or quest edits. Safe mid-save. |
 | [Classic Paintings Compilation for Skyrim interiors](https://www.nexusmods.com/skyrimspecialedition/mods/63325) | Broad distribution of classic public-domain paintings across interior locations and DLC cells. No new scripts/quests. Verify against adopted clutter/art replacers per-cell. |
-| [Orc Sentries](https://www.nexusmods.com/skyrimspecialedition/mods/174478) | Adds female Orc sentries (guards, patrols, wall sentinels) to all Orc strongholds. ESP-FE, no vanilla edits beyond NPC placements + idle markers. SkyPatcher-based armor/hair variations available. 77 endorsements, v1.0.2 (Apr 2026). Tentative — verify sentry placement doesn't break stronghold stealth approaches; SkyPatcher CC weapon integration requires confirming CC pack availability. Fits "Living the world" pillar (strongholds feel underpopulated in vanilla). Patch available for Orc Strongholds - All In One (150246) if adopted later. |
+| [Orc Sentries](https://www.nexusmods.com/skyrimspecialedition/mods/174478) | Adds female Orc sentries (guards, patrols, wall sentinels) to all Orc strongholds. ESP-FE, no vanilla edits beyond NPC placements + idle markers. SkyPatcher-based armor/hair variations available. Verify sentry placement doesn't break stronghold stealth approaches. Patch available for Orc Strongholds - All In One (150246). |
 
 ### Alternatives
 
@@ -298,8 +293,8 @@ Non-combat downtime making Skyrim feel lived-in when the player isn't dungeon-de
 | Mod                              | Description                                                                                            |
 |----------------------------------|--------------------------------------------------------------------------------------------------------|
 | [Simple Fishing Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/103440) | 200+ lines improved dialogue, NPC reactions, MCM. ESL-flagged, by jayserpa. |
-| [Hunterborn SE](https://www.nexusmods.com/skyrimspecialedition/mods/7900) |  Dressing, skinning, harvesting, butchering. 20K endorsements. Use `Hunterborn Extender` via Synthesis.  |
-| [Headhunter - Bounties Redone](https://www.nexusmods.com/skyrimspecialedition/mods/119228) | Locked. Transforms vanilla bounties. By jayserpa, 28K+ endorsements. |
+| [Hunterborn SE](https://www.nexusmods.com/skyrimspecialedition/mods/7900) |  Dressing, skinning, harvesting, butchering. Use `Hunterborn Extender` via Synthesis.  |
+| [Headhunter - Bounties Redone](https://www.nexusmods.com/skyrimspecialedition/mods/119228) | Locked. Transforms vanilla bounties. By jayserpa. |
 | [Skyrim's Got Talent](https://www.nexusmods.com/skyrimspecialedition/mods/106106) | Locked. Instrument practice, skill progression, inn performances. By jayserpa. |
 | [SGT - Player Reactions Addon](https://www.nexusmods.com/skyrimspecialedition/mods/78629) |                                                                                                          |
 | [SGT - Show in UI](https://www.nexusmods.com/skyrimspecialedition/mods/135473) |  |
@@ -358,7 +353,7 @@ Weapons, armor, artifacts, and clothing content has been consolidated into its o
 | [Opulent Thieves Guild](https://www.nexusmods.com/skyrimspecialedition/mods/10932) |  Visual-progression companion.                                                                                                    |
 | [Improved Companions - Questline Tweaks](https://www.nexusmods.com/skyrimspecialedition/mods/120609) | Removes forced radiant-quest spam between Companions missions. |
 | [The Companions Extended Collection](https://www.nexusmods.com/skyrimspecialedition/mods/95001) |  Patches for several Companions mods. Integrates quest/dialogue/visual overhauls.                                                   |
-| [Penitus Oculatus](https://www.nexusmods.com/skyrimspecialedition/mods/21061) |  Locked. "Destroy the Dark Brotherhood!" replacement faction with radiant quests. 11.5K endorsements.                             |
+| [Penitus Oculatus](https://www.nexusmods.com/skyrimspecialedition/mods/21061) |  Locked. "Destroy the Dark Brotherhood!" replacement faction with radiant quests.                             |
 | [The Brotherhood of Old - Dark Brotherhood Continued](https://www.nexusmods.com/skyrimspecialedition/mods/15322) |  Post-DB-questline continuation with new sanctuary, quests, and radiant content. Complements Penitus Oculatus alternative route.  |
 
 **Optional alternative:** **Destroy The Dark Brotherhood - Quest Expansion** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/118229)) — jayserpa's quest-expansion approach to destroying the DB. *Incompatible with Penitus Oculatus — choose one.*
@@ -407,7 +402,7 @@ Weapons, armor, artifacts, and clothing content has been consolidated into its o
 |-------------------------|-------------------------------------------------------------------------------------------|
 | [The Forgotten City](https://www.nexusmods.com/skyrimspecialedition/mods/1179) |  Locked. Most decorated Skyrim quest mod. Self-contained murder-mystery, LoTD integration.  |
 | [Mysteries of the Dwemer](https://www.nexusmods.com/skyrimspecialedition/mods/114863) | Dwemer-theme quest mod. |
-| [Frozen in Time - Definitely Not Another Snow Elf Waifu Mod](https://www.nexusmods.com/skyrimspecialedition/mods/39732) | Quest to reanimate an ancient Snow Elf warrior. 2-part quest, 2 dungeons, custom assets, portable player home. 2,833 endorsements. | AI-voiced (ElevenLabs). Vanilla/UUNP/CBBE body options. No AFT during quest. |
+| [Frozen in Time - Definitely Not Another Snow Elf Waifu Mod](https://www.nexusmods.com/skyrimspecialedition/mods/39732) | Quest to reanimate an ancient Snow Elf warrior. 2-part quest, 2 dungeons, custom assets, portable player home. | AI-voiced (ElevenLabs). Vanilla/UUNP/CBBE body options. No AFT during quest. |
 
 ### Alternatives
 
@@ -427,9 +422,9 @@ Weapons, armor, artifacts, and clothing content has been consolidated into its o
 
 | Mod | Description |
 |-----|-------------|
-| [Land of Vominheim SE](https://www.nexusmods.com/skyrimspecialedition/mods/31472) | Expansive new worldspace — Valenwood-themed region, quests, dungeons, followers. High patch and compatibility debt. Evaluate against existing new-lands commitments. |
+| [Land of Vominheim SE](https://www.nexusmods.com/skyrimspecialedition/mods/31472) | Expansive new worldspace — Valenwood-themed region, quests, dungeons, followers. High patch and compatibility debt. |
 | [Snowpoint](https://www.nexusmods.com/skyrimspecialedition/mods/146533) | New snow-covered worldspace with quest content. Lighter footprint than Vominheim. |
-| [Darkend](https://www.nexusmods.com/skyrimspecialedition/mods/10423) | Dark Souls-inspired island of Pharos — no quest, no hand-holding, level 15+ recommended. New enemies + an Ancient weapon set (Trinity of Chaos). LoTD patch available. 12,166 endorsements. |
+| [Darkend](https://www.nexusmods.com/skyrimspecialedition/mods/10423) | Dark Souls-inspired island of Pharos — no quest, no hand-holding, level 15+ recommended. New enemies + an Ancient weapon set (Trinity of Chaos). LoTD patch available. |
 
 ### Vicn Trilogy (GLEN-MORIL + Unslaad + VIGILANT)
 
@@ -448,7 +443,7 @@ The Vicn trilogy covers three connected quest mods. VIGILANT is already in the a
 | [VIGILANT - GLENMORIL - UNSLAAD - Book Covers](https://www.nexusmods.com/skyrimspecialedition/mods/32940) |
 | [Animated Armoury Unslaad Patch](https://www.nexusmods.com/skyrimspecialedition/mods/89322) |
 
-All three have LoTD integration (→ [Legacy of the Dragonborn](modlist-lotd.md)). Voiced addons replace subtitle-only dialogue. Delayed Start postpones GLEN-MORIL's initiation until the player reaches a minimum level. The VIGILANT voiced addon covers all missing lines for v1.8.0 and requires the English Translation.
+All three have LoTD integration (→ [Legacy of the Dragonborn](modlist-lotd.md)). Voiced addons replace subtitle-only dialogue. Delayed Start postpones GLEN-MORIL's initiation until the player reaches a minimum level. The VIGILANT voiced addon covers all missing lines and requires the English Translation.
 
 #### Standalone Quest Mods
 
@@ -478,7 +473,7 @@ Undeath adds a necromancy-themed questline that lets the player become a Lich. N
 
 | Mod | Description |
 |-----|-------------|
-| [Undeath - Classical Lichdom](https://www.nexusmods.com/skyrimspecialedition/mods/40802) | **Recommended.** Full lich perk tree and progression. 157K UDLs. | |
+| [Undeath - Classical Lichdom](https://www.nexusmods.com/skyrimspecialedition/mods/40802) | **Recommended.** Full lich perk tree and progression. | |
 | [Undeath - The Ascension](https://www.nexusmods.com/skyrimspecialedition/mods/32960) | Alternative. Lighter overhaul (bugfixes + balance). | |
 | [Undeath Immersive Lichdom SSE](https://www.nexusmods.com/skyrimspecialedition/mods/9223) | Alternative. Different lich mechanical approach. | |
 
@@ -506,12 +501,12 @@ Undeath adds a necromancy-themed questline that lets the player become a Lich. N
 |---------------------------------------------------------------------|----------------------------------------------------------------------------------------|
 | [Leaps of Faith](https://www.nexusmods.com/skyrimspecialedition/mods/53074) |  Lightweight pilgrimage. ESL-flagged.                                                    |
 | [Rescue Missions](https://www.nexusmods.com/skyrimspecialedition/mods/144251) | Radiant rescue. ESL-flagged. |
-| [Sleepwalking Into A Nightmare - New Daedric Prince Quest](https://www.nexusmods.com/skyrimspecialedition/mods/141047) | New Daedric quest mod. Evaluate for LoTD integration. |
-| [SIRENROOT - Deluge of Deceit](https://www.nexusmods.com/skyrimspecialedition/mods/70917) |  Quest adventure with new dungeon, voice acting. LoTD patch status: needs verification.  |
+| [Sleepwalking Into A Nightmare - New Daedric Prince Quest](https://www.nexusmods.com/skyrimspecialedition/mods/141047) | New Daedric quest mod. |
+| [SIRENROOT - Deluge of Deceit](https://www.nexusmods.com/skyrimspecialedition/mods/70917) |  Quest adventure with new dungeon, voice acting.  |
 | [Legends of Aetherium - New Dungeon - Quest - Armour - Weapons](https://www.nexusmods.com/skyrimspecialedition/mods/69807) |  Quest mod expanding the Aetherium storyline.                                            |
 | [Restoring the Aretino Residence SE](https://www.nexusmods.com/skyrimspecialedition/mods/30447) |  Short quest adding Aretino family home restoration. ESL-flagged.                        |
 | [Better Skyrim Parties - Weddings - Funerals - Crowd Events Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/102594) | Overhauls crowd events and ceremonies. Lightweight, ESL-flagged. |
-| [SpiderWIP](https://www.nexusmods.com/skyrimspecialedition/mods/84053) |  Morthal-themed quest mod. Evaluate for coverage overlap.                                |
+| [SpiderWIP](https://www.nexusmods.com/skyrimspecialedition/mods/84053) |  Morthal-themed quest mod.                                |
 | [Better Courier](https://www.nexusmods.com/skyrimspecialedition/mods/40709) |  Courier improvements — better delivery dialogue and behavior.                           |
 | [Quests Are In Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/18416) |  Restricts radiant quest destinations to Skyrim province only. ESL-flagged.              |
 | [Andrealletius' Harder Quests](https://www.nexusmods.com/skyrimspecialedition/mods/27939) |  Higher requirements for quest objectives — thaneships, nirnroot, solstheim quests, etc.  |

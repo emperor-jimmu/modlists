@@ -33,9 +33,9 @@ Creature-specific visual direction layered on top of the Bellyaches texture foun
 | [Canidae - A Wolf Replacer](https://www.nexusmods.com/skyrimspecialedition/mods/182994) | Alternative | Mesh/texture replacer for red/black/ice wolves + spectral/fiery summons. Pick one wolf replacer vs Riv's Wolves of the Wild. |
 | [Diverse Dragon Priests — Pixie's Creature Series](https://www.nexusmods.com/skyrimspecialedition/mods/105519) | Alternative | BOS-based dragon priest mask/clothing variety. Verify vs Apophysis Dragon Priest Masks (5800). |
 | [Diverse Dragon Priests — Xtudo Optimized Textures](https://www.nexusmods.com/skyrimspecialedition/mods/105713) | Add-on | Optimized textures for Diverse Dragon Priests. Install after base. |
-| [Skeletons SE](https://www.nexusmods.com/skyrimspecialedition/mods/124394) | Baseline | **Locked.** Skeleton model replacer by Xtudo. Consistent undead visual direction with locked Draugrs SE and Spider SE baselines. 2,002 endorsements. |
+| [Skeletons SE](https://www.nexusmods.com/skyrimspecialedition/mods/124394) | Baseline | **Locked.** Skeleton model replacer by Xtudo. Consistent undead visual direction with locked Draugrs SE and Spider SE baselines. |
 | [Skeletons SE - Expanded](https://www.nexusmods.com/skyrimspecialedition/mods/154872) | Baseline | **Locked.** BOS-based skeleton variety addon. Install after Skeletons SE. |
-| Skeleton Replacer HD (52845) | Alternative | Rejected — single-model replacer, no variety. Xtudo consistency across undead stack (Draugrs, Spiders, Skeletons) preferred. |
+| Skeleton Replacer HD (52845) | Alternative | Single-model replacer, no variety; Xtudo consistency across the undead stack preferred. |
 | [TNT - True Nordic Trolls - Revamped](https://www.nexusmods.com/skyrimspecialedition/mods/140979) | Baseline | Troll model/texture overhaul. |
 | [Cannibal Draugr on Solstheim](https://www.nexusmods.com/skyrimspecialedition/mods/21238) | Baseline | Bloodmoon-flavored identity. |
 | [Hagraven — New models and Textures](https://www.nexusmods.com/skyrimspecialedition/mods/160407) | Baseline | |
@@ -43,7 +43,7 @@ Creature-specific visual direction layered on top of the Bellyaches texture foun
 | [Fusa Fusa Project](https://www.nexusmods.com/skyrimspecialedition/mods/5514) | Alternative | Don't casually stack with Fluffworks. |
 | [Splendor — Dragon Variants](https://www.nexusmods.com/skyrimspecialedition/mods/9670) | Alternative | Last updated Sept 2017. |
 | [Next Gen Dragon VFX](https://www.nexusmods.com/skyrimspecialedition/mods/168405) | Alternative | Dragon breath/VFX visual upgrade. |
-| [Diverse 4thUnknown Dragons](https://www.nexusmods.com/skyrimspecialedition/mods/146462) | Alternative | Dragon model variety via SkyPatcher. Requires Dragons SE (rejected). Verify compatibility with Iconic's Dragon Retexture before adopting. |
+| [Diverse 4thUnknown Dragons](https://www.nexusmods.com/skyrimspecialedition/mods/146462) | Alternative | Dragon model variety via SkyPatcher. Requires Dragons SE (not in the list). Verify compatibility with Iconic's Dragon Retexture before adopting. |
 | [Sleep of the Dead — Draugr Leather and Shroud Replacer](https://www.nexusmods.com/skyrimspecialedition/mods/178057) | Alternative | Draugr shroud/leather retexture. |
 | [Frozen Electrocuted Combustion](https://www.nexusmods.com/skyrimspecialedition/mods/3532) | Alternative | Elemental creature death effects. |
 | [Better Butterflies](https://www.nexusmods.com/skyrimspecialedition/mods/79332) | Alternative | Butterfly insect visual overhaul. |
@@ -100,7 +100,7 @@ How creatures attack, react, and express identity once combat starts.
 | --- | --- | --- |
 | [Dragons Use Thu'um](https://www.nexusmods.com/skyrimspecialedition/mods/87085) | Baseline | Smarter dragon shout usage and encounter AI. |
 | [The Restless Dead](https://www.nexusmods.com/skyrimspecialedition/mods/94100) | Baseline | Undead-behavior baseline. Replaces abandoned Draugr Upgrades and Improvements. Requires [Skeletons SE patch](https://www.nexusmods.com/skyrimspecialedition/mods/125609) for compatibility with locked Skeletons SE (124394) baseline. |
-| [JS Shout Apart Skeletons SE](https://www.nexusmods.com/skyrimspecialedition/mods/72548) | Add-on | Unrelenting Force (player or dragons) instantly destroys weaker skeletons and pushes their bones apart. No vanilla record edits; configurable word level via ini. Requires PapyrusUtil + Po3 Extender + Po3 Tweaks + SPID (all baseline). Fits the locked Skeletons SE direction. |
+| [JS Shout Apart Skeletons SE](https://www.nexusmods.com/skyrimspecialedition/mods/72548) | Add-on | Unrelenting Force (player or dragons) instantly destroys weaker skeletons and pushes their bones apart. No vanilla record edits; configurable word level via ini. Requires PapyrusUtil + Po3 Extender + Po3 Tweaks + SPID (all baseline). |
 | [Epic Dragon Combat REDONE](https://www.nexusmods.com/skyrimspecialedition/mods/126680) | Alternative | Full dragon combat overhaul — 20+ new types, unique abilities, custom VFX. Self-contained; replaces baseline dragon visual direction. |
 | [Dragon War](https://www.nexusmods.com/skyrimspecialedition/mods/51310) | Alternative | Heavier dragon route for fight structure/tempo. |
 | [Dragons actually fall down](https://www.nexusmods.com/skyrimspecialedition/mods/156824) | Alternative | Dragons collapse on the ground when staggered/low health. |
@@ -116,5 +116,3 @@ How creatures attack, react, and express identity once combat starts.
 | --- | --- | --- |
 | [True Hunter — fewer animals per square meter](https://www.nexusmods.com/skyrimspecialedition/mods/25628) | Baseline | Spawn-chance reduction for more deliberate wildlife. |
 | [No Predators on roads](https://www.nexusmods.com/skyrimspecialedition/mods/11901) | Alternative | Abandoned (Aug 2017). Coexists with True Hunter. |
-
-Open research for this section is tracked in `TODO.md`.

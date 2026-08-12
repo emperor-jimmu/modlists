@@ -22,7 +22,7 @@ No concrete mod picks live here. The owning sections (notably → [Crafting & Ec
 
 ## The Interlocked Dial
 
-The four concerns are coupled, and the dial really has **six knobs** — the four named plus the **experience mod** (how fast the player levels and what skill-ups do) and the **perks overhaul** (what perks do and how perk points are spent). All six need to sing together or the list feels incoherent:
+The four concerns are coupled, and the dial really has **six knobs** — the four named plus the **experience mod** and the **perks overhaul**. All six need to sing together or the list feels incoherent:
 
 - **Leveling style** (deleveled / static / vanilla) — what gear the world offers at what level.
 - **Encounter zones** — what threat the world offers at what location.
@@ -151,7 +151,7 @@ Pairs naturally with a heavy perks overhaul and a power-fantasy XP curve (high l
 
 ## Suggested Combinations
 
-These are **suggestions for different list identities**, not a ranking. The owning sections still pick the concrete mods; the combinations just steer those picks in compatible directions. The curator picks the combination that matches the list's intent.
+These are **suggestions for different list identities**, not a ranking. The owning sections still pick the concrete mods; the combinations just steer those picks in compatible directions.
 
 ### 1. "Big, Dark, Awe-Inspiring World" — Deleveled Or Static With Hard Threat
 

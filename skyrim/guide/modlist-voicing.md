@@ -36,20 +36,18 @@ Dragonborn Voice Over 2 (DBVO2) is the runtime framework that intercepts player 
 ---
 
 ## Two Custom Voice Packs
-Two custom-generated packs (Laura Bailey female, Graham McTavish male) for character flexibility. Install as separate MO2 mods, swap via MO2 profile or DBVO2 voice pack dropdown in SKSE Menu Framework (F1).
-
-Run → [Custom Voice Pack Pipeline](#custom-voice-pack-pipeline) twice with two ElevenLabs voice IDs (Laura Bailey female, Graham McTavish male). Package as separate MO2 mods and enable one at a time.
+Two custom-generated packs (Laura Bailey female, Graham McTavish male) for character flexibility. Run → [Custom Voice Pack Pipeline](#custom-voice-pack-pipeline) twice with two ElevenLabs voice IDs; package as separate MO2 mods and enable one at a time (MO2 profile or DBVO2 voice pack dropdown, F1).
 
 ---
 
 ## Custom Voice Pack Pipeline
-Unified workflow covering dialogue export → audio generation → packaging into DBVO2 format. Replaces the legacy MCVO Generator + standalone ElevenLabs sections.
+Unified workflow covering dialogue export → audio generation → packaging into DBVO2 format.
 
 ### Prerequisites
 
 - Install DBVO2 and dependencies (SKSE64, Address Library, SKSE Menu Framework). DBVO2 must be enabled in MO2 before exporting.
 - Build the full modlist in MO2 with final load order.
-- Download [DBVO Dialogue Export for xEdit](https://www.nexusmods.com/skyrimspecialedition/mods/182009) — modern xEdit script that exports player dialogue lines. Replaces MCVO Generator.
+- Download [DBVO Dialogue Export for xEdit](https://www.nexusmods.com/skyrimspecialedition/mods/182009) — modern xEdit script that exports player dialogue lines.
 - [ElevenLabs](https://elevenlabs.io) paid account — required for both custom targets (Laura Bailey and Graham McTavish).
 - Download DBVO Voice Packer 2 V2.5.1 (Google Drive link) — packages generated audio into DBVO2 format with `.fuz` files and `voice-pack.json` manifest.
 

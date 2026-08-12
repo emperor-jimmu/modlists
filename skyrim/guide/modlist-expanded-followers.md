@@ -16,11 +16,7 @@ How much the world should notice what the player does socially — reputation, c
 
 ### Risks & Compatibility
 
-- A very light social-response layer can leave crime and reputation too close to vanilla.
-- A stealth-heavy crime toolkit can make one playstyle dominate a subsection meant for broader roleplay.
-- City suspicion systems can become annoying without enough payoff.
 - Targeted fixes like `Simple Offence Suppression` belong in → `Foundations` (Targeted Bugfix Mods), not as the social-system answer.
-- Keep stealth-expression tooling separate from broader world-reaction goals.
 
 ---
 
@@ -35,8 +31,6 @@ How companion management should function at the systems level.
 
 ### Risks & Compatibility
 
-- A very light or dated framework can leave companions awkward to manage once the modlist grows.
-- A heavy follower-control framework can make party management dominate ordinary play.
 - Generic frameworks can conflict with custom companions better left outside them.
 - This subsection owns party-management philosophy, not named companion selection (→ `NPCs`).
 
@@ -47,11 +41,11 @@ The SFW romance and marriage layer: expanded marriage mechanics, modern dialogue
 
 | Mod                                                                                              | Type        | Dial           | Notes                                                                         |
 |--------------------------------------------------------------------------------------------------|-------------|----------------|-------------------------------------------------------------------------------|
-| [Relationship Dialogue Overhaul — RDO](https://www.nexusmods.com/skyrimspecialedition/mods/1187) | Baseline    | #1, #2, #3, #4 | 5,000+ voiced lines for NPCs/followers/spouses. 137K endorsements, fully SFW. |
+| [Relationship Dialogue Overhaul — RDO](https://www.nexusmods.com/skyrimspecialedition/mods/1187) | Baseline    | #1, #2, #3, #4 | 5,000+ voiced lines for NPCs/followers/spouses. Fully SFW. |
 | [Amorous Adventures](https://www.nexusmods.com/skyrimspecialedition/mods/7305) (clean variant)   | Baseline    | #1, #2, #3, #4 | Opt-in romance quests, fade-to-black. **Lock only clean build.**              |
 | [Marriage Mod — To Have And To Hold](https://www.nexusmods.com/skyrimspecialedition/mods/8589)   | Baseline    | #1, #2, #3, #4 | Up to 11 spouses, divorce, enhanced wedding, dynamic events.                  |
-| [Serana Dialogue Add-On](https://www.nexusmods.com/skyrimspecialedition/mods/32161)              | Baseline    | #1, #2, #3, #4 | 7,000+ voiced lines, new story arcs, romance. 51K endorsements.               |
-| [I'm Glad You're Here](https://www.nexusmods.com/skyrimspecialedition/mods/41856)              | Add-on      | all            | Fully-voiced follower/spouse/adopted-kids appreciation via dialogue + hug animation. v3.6.0, 10K endorsements. Reqs FLM, KID, SPID, OAR, MCM Helper, SKSE — all baseline. "Living the world" homecoming layer. |
+| [Serana Dialogue Add-On](https://www.nexusmods.com/skyrimspecialedition/mods/32161)              | Baseline    | #1, #2, #3, #4 | 7,000+ voiced lines, new story arcs, romance.               |
+| [I'm Glad You're Here](https://www.nexusmods.com/skyrimspecialedition/mods/41856)              | Add-on      | all            | Fully-voiced follower/spouse/adopted-kids appreciation via dialogue + hug animation. Reqs FLM, KID, SPID, OAR, MCM Helper, SKSE — all baseline. |
 | Discipline-first route                                                                           | Alternative | all            | Vanilla marriage mechanics.                                                   |
 
 ### Risks & Compatibility

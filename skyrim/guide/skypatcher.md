@@ -1,6 +1,6 @@
 # SkyPatcher — Usage & Authoring Guide
 
-**SkyPatcher** (by Zzyxzz, v7.0.0) is a runtime patcher built on SKSE and CommonLibSSE that modifies game data — NPCs, weapons, armors, leveled lists, formlists, containers, and more — from INI-style configuration files instead of traditional ESP plugins. It is the Skyrim port of *RobCo Patcher* for Fallout 4, and it was originally created for *SkyValor*.
+**SkyPatcher** (by Zzyxzz) is a runtime patcher built on SKSE and CommonLibSSE that modifies game data — NPCs, weapons, armors, leveled lists, formlists, containers, and more — from INI-style configuration files instead of traditional ESP plugins. It is the Skyrim port of *RobCo Patcher* for Fallout 4.
 
 In Elder Wilds, SkyPatcher is a **hard requirement** for several adopted mods, and "SkyPatched" variants ship their record changes as SkyPatcher configs instead of an ESP (see → [Foundations and Compatibility](modlist-foundations.md)). This guide covers installing and using it, and authoring your own patches with the same syntax.
 

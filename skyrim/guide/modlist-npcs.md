@@ -96,14 +96,14 @@ Targeted dialogue additions for existing NPCs — expanding what vanilla charact
 | [Civil War Lines Expansion](https://www.nexusmods.com/skyrimspecialedition/mods/139920)              | Civil war faction dialogue                           |                                                                   |
 | [Forsworn and Thalmor Lines Expansion](https://www.nexusmods.com/skyrimspecialedition/mods/80188)    | Forsworn / Thalmor dialogue                          | jayserpa. Spliced lines.                                          |
 | [Vampire Lines Expansion](https://www.nexusmods.com/skyrimspecialedition/mods/83484)                 | New spliced lines for vampires                       | Same series as Forsworn/Thalmor. Dialogue-only — compatible with Sacrosanct. |
-| [Guard Dialogue Overhaul SE](https://www.nexusmods.com/skyrimspecialedition/mods/22075)              | 600+ lines for guards reacting to player deeds/gear  | 26.2K endorsements. Older mod — verify 1.6.1170.                 |
-| [Shouts of Stallholders](https://www.nexusmods.com/skyrimspecialedition/mods/139025)                 | AI-Generated Content                                 | Evaluate voice quality.                                           |
+| [Guard Dialogue Overhaul SE](https://www.nexusmods.com/skyrimspecialedition/mods/22075)              | 600+ lines for guards reacting to player deeds/gear  | Older mod — verify 1.6.1170.                 |
+| [Shouts of Stallholders](https://www.nexusmods.com/skyrimspecialedition/mods/139025)                 | AI-Generated Content                                 |                                                                   |
 | [Naked Comments Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/142249)                | NPC comments on player nudity.                       | Alternative                                                       |
 | [Collision Dialogue Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/115079)            | Dialogue triggered by NPC collision events.          | Alternative                                                       |
 | [Chattier Hunters and Fishermen](https://www.nexusmods.com/skyrimspecialedition/mods/179154)         | Expanded ambient dialogue for hunters and fishermen. | Alternative                                                       |
 | [Chatty NPCs and Followers](https://www.nexusmods.com/skyrimspecialedition/mods/133266)                | Varied idle/contextual dialogue for all NPCs and followers. No behavior changes. | Baseline — complements existing faction-specific dialogue expansions. |
-| [Dialogue Expansion - Indaryn-Ingun-Asgeir-Alessandra](https://www.nexusmods.com/skyrimspecialedition/mods/92600) | ~140 lines + 4 scenes for Riften NPCs (Elgrim's Elixirs, Black-Briar Meadery, Bee and Barb). Dialogue-only, ESP-FE, no package/worldspace/navmesh edits. | **AI-voiced (ElevenLabs)** — accepted per AI gate decision (2026-08-07). AdamDunmer. Verify vs Riften-area mods (City of Crossed Daggers - Riften, JK's Riften Outskirts). |
-| [Dialogue Expansion - Shor's Stone](https://www.nexusmods.com/skyrimspecialedition/mods/97337) | ~250 lines + 9 scenes for Odfel, Sylgja, Grogmar, Filnjar. Dialogue-only, ESP-FE. | **AI-voiced (11labs)** — accepted per AI gate decision (2026-08-07). AdamDunmer. The Great Town of Shor's Stone (town geometry) has no overlap expected. |
+| [Dialogue Expansion - Indaryn-Ingun-Asgeir-Alessandra](https://www.nexusmods.com/skyrimspecialedition/mods/92600) | ~140 lines + 4 scenes for Riften NPCs (Elgrim's Elixirs, Black-Briar Meadery, Bee and Barb). Dialogue-only, ESP-FE, no package/worldspace/navmesh edits. | **AI-voiced (ElevenLabs).** AdamDunmer. Verify vs Riften-area mods (City of Crossed Daggers - Riften, JK's Riften Outskirts). |
+| [Dialogue Expansion - Shor's Stone](https://www.nexusmods.com/skyrimspecialedition/mods/97337) | ~250 lines + 9 scenes for Odfel, Sylgja, Grogmar, Filnjar. Dialogue-only, ESP-FE. | **AI-voiced (11labs).** AdamDunmer. The Great Town of Shor's Stone (town geometry) has no overlap expected. |
 
 ### Follower Dialogue Expansion (FDE) series by Anbeegod
 
@@ -124,11 +124,11 @@ Targeted dialogue additions for existing NPCs — expanding what vanilla charact
 | [FDE — Mjoll the Lioness](https://www.nexusmods.com/skyrimspecialedition/mods/116025)       | 451   | Quest and location awareness.    |
 | [FDE — Faralda](https://www.nexusmods.com/skyrimspecialedition/mods/155510)                 | 441   | Self-contained follower, personal quest. Verify overlap with College Quest Expansion. |
 | [FDE — Eola](https://www.nexusmods.com/skyrimspecialedition/mods/157012)                    | 233   | Namira cultist dialogue.         |
-| [FDE — Ralof](https://www.nexusmods.com/skyrimspecialedition/mods/180198)                   | 551   | [INFERENCE] AI-voiced, ESL, 100% compatible, safe mid-game. |
-| [FDE — Senna](https://www.nexusmods.com/skyrimspecialedition/mods/183143)                   | 243   | [INFERENCE] AI-voiced, ESL, safe mid-game. |
-| [FDE — Lisette](https://www.nexusmods.com/skyrimspecialedition/mods/177717)                 | 243   | [INFERENCE] AI-voiced, ESL, safe mid-game. |
-| [FDE — Marcurio](https://www.nexusmods.com/skyrimspecialedition/mods/174725)                | 210   | [INFERENCE] AI-voiced, ESL, safe mid-game. |
-| [FDE — Saadia](https://www.nexusmods.com/skyrimspecialedition/mods/170684)                  | 231   | [INFERENCE] AI-voiced, ESL, safe mid-game. |
+| [FDE — Ralof](https://www.nexusmods.com/skyrimspecialedition/mods/180198)                   | 551   |  |
+| [FDE — Senna](https://www.nexusmods.com/skyrimspecialedition/mods/183143)                   | 243   |  |
+| [FDE — Lisette](https://www.nexusmods.com/skyrimspecialedition/mods/177717)                 | 243   |  |
+| [FDE — Marcurio](https://www.nexusmods.com/skyrimspecialedition/mods/174725)                | 210   |  |
+| [FDE — Saadia](https://www.nexusmods.com/skyrimspecialedition/mods/170684)                  | 231   |  |
 | [FDE — Elisif the Fair](https://www.nexusmods.com/skyrimspecialedition/mods/167954)         | 942   | Romance + marriage arc, approval system, Civil War awareness. v2.0. ESL. |
 | [FDE — Fura Bloodmouth](https://www.nexusmods.com/skyrimspecialedition/mods/165839)        | 614   | [INFERENCE] 2 personal quests, Volkihar, banter with Aranea/Sapphire/Serana. ESL. |
 | [FDE — Sapphire](https://www.nexusmods.com/skyrimspecialedition/mods/147428)                | 208   | Thieves Guild follower. ESL. |
@@ -155,19 +155,19 @@ Custom fully-voiced follower additions with authored dialogue, quest commentary,
 
 | Follower                                                                                                   | Lines | Notes                                                              | Dependencies / Extras                                                                                                                                                                                                                                                      |
 |------------------------------------------------------------------------------------------------------------|-------|--------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Lucien — Immersive Fully Voiced Male Follower](https://www.nexusmods.com/skyrimspecialedition/mods/20035) | 5000+ | Personal quest, LoTD-aware. 30K+ endorsements.                     | See framework notes.                                                                                                                                                                                                                                                       |
+| [Lucien — Immersive Fully Voiced Male Follower](https://www.nexusmods.com/skyrimspecialedition/mods/20035) | 5000+ | Personal quest, LoTD-aware.                     | See framework notes.                                                                                                                                                                                                                                                       |
 | [Remiel — Custom Voiced Dwemer Specialist](https://www.nexusmods.com/skyrimspecialedition/mods/51874)      | ~5000 | Custom framework — do not assign via NFF/AFT.                      | Banter with Inigo, Auri, Kaidan 2.                                                                                                                                                                                                                                         |
-| [INIGO](https://www.nexusmods.com/skyrimspecialedition/mods/1461)                                          | 7000+ | 100K+ endorsements.                                                | [Inigo Official Patch SE](https://www.nexusmods.com/skyrimspecialedition/mods/62868) required for 1.6.1170. Visual replacer: [Lulu's INIGO 2.0](https://www.nexusmods.com/skyrimspecialedition/mods/126199).                                                               |
-| [Khajiit Will Follow](https://www.nexusmods.com/skyrimspecialedition/mods/2227)                            |       | 4 Khajiit followers. ~8K endorsements.                             | See framework notes.                                                                                                                                                                                                                                                       |
+| [INIGO](https://www.nexusmods.com/skyrimspecialedition/mods/1461)                                          | 7000+ |                                                | [Inigo Official Patch SE](https://www.nexusmods.com/skyrimspecialedition/mods/62868) required for 1.6.1170. Visual replacer: [Lulu's INIGO 2.0](https://www.nexusmods.com/skyrimspecialedition/mods/126199).                                                               |
+| [Khajiit Will Follow](https://www.nexusmods.com/skyrimspecialedition/mods/2227)                            |       | 4 Khajiit followers.                             | See framework notes.                                                                                                                                                                                                                                                       |
 | [Song of the Green (Auri Follower)](https://www.nexusmods.com/skyrimspecialedition/mods/11278)             | 1000+ | Romance option, Inigo banter. Custom framework — do not assign via NFF/AFT 2.0+. | Visual replacer: [Majestic Auri](https://www.nexusmods.com/skyrimspecialedition/mods/72361).                                                                                                                                                                               |
-| [Sofia — The Funny Fully Voiced Follower](https://www.nexusmods.com/skyrimspecialedition/mods/2180)        |       | Comic relief. May be cut for tonal mismatch.                       | See framework notes.                                                                                                                                                                                                                                                       |
+| [Sofia — The Funny Fully Voiced Follower](https://www.nexusmods.com/skyrimspecialedition/mods/2180)        |       | Comic relief.                       | See framework notes.                                                                                                                                                                                                                                                       |
 | [Kaidan 2](https://www.nexusmods.com/skyrimspecialedition/mods/19075)                                      | 1200+ | Romance arc. Custom AI — do not assign via NFF/AFT.                | Use [Immersive Features AIO](https://kaidanmod.com) (Nexus Extended Edition deprecated). Extras: [A Makeover for Kaidan](https://www.nexusmods.com/skyrimspecialedition/mods/100586), [Immersive Kaidan Start](https://www.nexusmods.com/skyrimspecialedition/mods/64064). |
 | [Miraak Follower Expansion](https://www.nexusmods.com/skyrimspecialedition/mods/160275)                  | 3200+ | Post-Dragonborn-quest Miraak follower: quest/world awareness, spouse dialogue, NPC banter. | Full ESP slot (not ESL since v1.5). Verify NFF integration and quest-stage conditions against Dragonborn DLC quests. |
 | [Caesia Follower — Borne of Magic (Revamped)](https://www.nexusmods.com/skyrimspecialedition/mods/13389) | 730+ | Anbeegod's custom mage follower (Morthal inn). Disposition system, romanceable regardless of sex/race, Shezarrine-lore hints. | Older (v2.0, 2017) — verify 1.6.1170; uses RaceMenu, KS Hairdos, Brows, Ordinary Women/SG textures. |
-| [Livia Salvian Revamped — Custom-Voiced Follower](https://www.nexusmods.com/skyrimspecialedition/mods/33318) | 1500+ | Imperial knight in Dragonsreach; personal romance quest, custom armor, singing, banter with Onmund. Anbeegod's "Fate of Tamriel"/Shezarrine universe. | v2.2.1 (2020). Original v1 ([mod 20143](https://www.nexusmods.com/skyrimspecialedition/mods/20143)) superseded — install Revamped only. Verify 1.6.1170. |
+| [Livia Salvian Revamped — Custom-Voiced Follower](https://www.nexusmods.com/skyrimspecialedition/mods/33318) | 1500+ | Imperial knight in Dragonsreach; personal romance quest, custom armor, singing, banter with Onmund. Anbeegod's "Fate of Tamriel"/Shezarrine universe. | Original v1 ([mod 20143](https://www.nexusmods.com/skyrimspecialedition/mods/20143)) superseded — install Revamped only. Verify 1.6.1170. |
 
 ### Tone & Genre Fit (anbeegod profile)
-anbeegod's profile also hosts Final-Fantasy-styled custom followers (Aerith/Tifa-style characters). These are **not adopted** and flagged as tone mismatches: they contradict the grim-dark, Elder Scrolls-native direction of the list. If the user wants them, they belong as clearly-labeled Optional/off-dial entries, not in the core list.
+anbeegod's profile also hosts Final-Fantasy-styled custom followers (Aerith/Tifa-style characters). They contradict the grim-dark, Elder Scrolls-native direction of the list; if wanted, they belong as clearly-labeled Optional/off-dial entries, not in the core list.
 
 ### Framework Notes
 
@@ -190,7 +190,7 @@ anbeegod's profile also hosts Final-Fantasy-styled custom followers (Aerith/Tifa
 
 ### Additional Mods
 
-- [Keep Up — Follower Locomotion Fix](https://www.nexusmods.com/skyrimspecialedition/mods/169808) — Alternative. Prevents followers from getting stuck behind the player. Evaluate after the follower framework baseline is locked.
+- [Keep Up — Follower Locomotion Fix](https://www.nexusmods.com/skyrimspecialedition/mods/169808) — Alternative. Prevents followers from getting stuck behind the player.
 
 ---
 
@@ -208,7 +208,7 @@ Playable race mods enabling new character options at game start. Snow Elf (Ancie
 
 | Mod | Type | Notes |
 |-----|------|-------|
-| [The Ancient Falmer - A Snow Elf Race SE](https://www.nexusmods.com/skyrimspecialedition/mods/16854) | Baseline | Most comprehensive snow elf race mod. Adds Snow Elf race, Gelebor/Vyrthur overhaul, optional followers (Valrysa, Ashian), craftable Ancient Falmer weapons. 2,752 endorsements. Requires RaceCompatibility. Last updated Oct 2023. |
+| [The Ancient Falmer - A Snow Elf Race SE](https://www.nexusmods.com/skyrimspecialedition/mods/16854) | Baseline | Most comprehensive snow elf race mod. Adds Snow Elf race, Gelebor/Vyrthur overhaul, optional followers (Valrysa, Ashian), craftable Ancient Falmer weapons. Requires RaceCompatibility. |
 | [Lost Races of Nirn](https://www.nexusmods.com/skyrimspecialedition/mods/69467) | Alternative | Modular race pack: Ayleid, Dwemer, Maormer, Snow Elf, Tsaesci. Separate plugins per race via FOMOD. Requires RCS (no-ESP framework). HPH Addon available ([mod 147619](https://www.nexusmods.com/skyrimspecialedition/mods/147619)). |
 | [True Snow Elf Race](https://www.nexusmods.com/skyrimspecialedition/mods/7880) | Alternative | Vanilla-faithful standalone Snow Elf race. Last updated 2018. Does not require RaceCompatibility — standalone BSA. |
 
@@ -217,13 +217,13 @@ Playable race mods enabling new character options at game start. Snow Elf (Ancie
 | Mod | For | Notes |
 |-----|-----|-------|
 | [Frosty Snow Elf Skin Renewal](https://www.nexusmods.com/skyrimspecialedition/mods/16854?tab=files) | The Ancient Falmer | Hyperborean BnP skin for Ancient Falmer. Download from the Ancient Falmer Patch Center. Core mod per Ancient Falmer requirements. |
-| [High Poly Head For Custom Races](https://www.nexusmods.com/skyrimspecialedition/mods/43098) | The Ancient Falmer | Patches High Poly Head to work with 30+ custom races including The Ancient Falmer. 2,306 endorsements. Requires High Poly Head (off-site, vectorplexis) and RaceMenu. |
+| [High Poly Head For Custom Races](https://www.nexusmods.com/skyrimspecialedition/mods/43098) | The Ancient Falmer | Patches High Poly Head to work with 30+ custom races including The Ancient Falmer. Requires High Poly Head (off-site, vectorplexis) and RaceMenu. |
 | [Lost Races of Nirn - High Poly Head Addon](https://www.nexusmods.com/skyrimspecialedition/mods/147619) | Lost Races of Nirn | HPH patches for Lost Races of Nirn 3.0+. ESP-FE. Includes Dwemer, Maormer, Snow Elf, Tsaesci. |
 | [Lost Races of Nirn - Female Skin Textures](https://www.nexusmods.com/skyrimspecialedition/mods/90443) | Lost Races of Nirn | High-quality female textures based on Reverie Skin. UNP/CBBE, 4K-2K, ESP-FE. Fixes neck-seam issues with custom body textures. |
 
 ### Risks & Compatibility
 
-- **Ancient Falmer vs Lost Races of Nirn:** These are competing race frameworks. The Ancient Falmer is more comprehensive (followers, spells, leveled-list weapons) but has a larger patch footprint (RaceCompatibility, Patch Center). Lost Races of Nirn is modular, uses the lighter RCS framework, and has better HPH support. **Evaluate which to adopt as baseline** — running both is risky.
+- **Ancient Falmer vs Lost Races of Nirn:** These are competing race frameworks. The Ancient Falmer is more comprehensive (followers, spells, leveled-list weapons) but has a larger patch footprint (RaceCompatibility, Patch Center). Lost Races of Nirn is modular, uses the lighter RCS framework, and has better HPH support. Running both is risky.
 - **RaceCompatibility vs RCS:** Do not use both simultaneously. RaceCompatibility (ESP/ESM) is required by The Ancient Falmer. RCS (no ESP) is required by Lost Races of Nirn. This is a hard fork — pick one race framework.
 - **Race-aware dialogue:** Both race mods support [Snow Elf Dialogue](https://www.nexusmods.com/skyrimspecialedition/mods/155222) — see NPC Dialogue Expansions section.
 - **Alternate start synergy:** The Surviving Falmer ([mod 131974](https://www.nexusmods.com/skyrimspecialedition/mods/131974)) and alternate-start frameworks (Skyrim Unbound Reborn — locked) provide Snow Elf-specific starting scenarios.
@@ -282,9 +282,3 @@ These Synthesis patchers resolve facegen and stat issues introduced by NPC appea
 **Configuration:** Set target stat ranges to match the encounter design in → [Survival, Difficulty, and Balance](modlist-survival-combat.md). Default Synthesis profile applies reasonable vanilla+-derived values.
 
 **Key relationship:** NPCStatRescaler runs after FacegenBaseline in the Synthesis pipeline. If both are active, FacegenBaseline runs first so that NPC records have complete facegen data before stats are rescaled.
-
----
-
-## Open Research
-
-Open research for the NPCs stack is tracked in `TODO.md`.

@@ -15,25 +15,20 @@ How much day-to-day bodily upkeep the list wants: enough hunger, fatigue, cold, 
 - Confirm Starfrost (Simonrim) ships no same-named disease system so Immersive Diseases owns the affliction axis cleanly (its scope is cold/hunger/fatigue). Versions 1.1+ feature per-disease OAR animations and RaceMenu overlays.
 - 9 open bug reports on Nexus — load-test disease acquisition/progression before locking.
 
-- A heavy survival system can dominate pacing and crowd out other expanded systems.
-- A very light setup can undershoot the immersive-travel pillar if later downtime decisions expect more texture.
-- Cold, disease, food, sleep, and camping can blur together between survival, cooking, roleplay, and religion ownership.
-- Judge survival primarily on travel texture, downtime rhythm, and world feel rather than maximum hardship.
-
 ---
 
 ## Roleplay Upkeep And Hygiene
-Lighter day-to-day body-maintenance layer between full survival needs and pure visual flavor. Adds believable downtime rituals without turning hygiene into a second dominant survival framework.
+Lighter day-to-day body-maintenance layer between full survival needs and pure visual flavor.
 
 | Mod                                                                                       | Type        | Dial           | Notes                                                                                                                                                                      |
 |-------------------------------------------------------------------------------------------|-------------|----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Bathing in Skyrim — Renewed](https://www.nexusmods.com/skyrimspecialedition/mods/135288) | Baseline    | #1, #2, #3, #4 | SKSE + KPE + PO3 Papyrus Extender. Auto freecam, custom bathing animations, washable blood decal removal, bundled dirt overlays, unique soap with SkyPatcher distribution. |
 | [Saunas of Skyrim - The Bathing Mare (External)](https://www.nexusmods.com/skyrimspecialedition/mods/169240) | Add-on      | #1, #2, #3, #4 | Bathhouse outside Whiterun with custom NPCs, vendor, sauna buffs, brandy kegs, rentable bed. Compatible with JK's Whiterun and BiSR. |
 | [Real Water in Buckets and Barrels](https://www.nexusmods.com/skyrimspecialedition/mods/122422)             | Add-on      | all            | Visible water in containers (buckets, barrels, pots, pans). iNeed supported. BOS-based. Enhances survival-immersion visual detail.       |
-| [Dynamic Dialogue Replacer — DDR](https://www.nexusmods.com/skyrimspecialedition/mods/135618)                | Framework   | all            | SKSE runtime dialogue-replacement framework (v1.4.1). Needed by the Simple Inn Bath dialogue expansion below; also reusable for future non-AI dialogue mods. |
-| [Simple Inn Bath](https://www.nexusmods.com/skyrimspecialedition/mods/49014)                                | Add-on      | all            | Bathhouse access at inns via innkeeper dialogue — minimal cell edits, high compatibility. **Confirmed working with the locked `Candlehearth` inn baseline (→ `modlist-world-content.md`, Inns) — no patches needed** (acts via dialogue/faction, not cell edits). |
-| [Simple Inn Bath - Dialogue Expansion - DDR](https://www.nexusmods.com/skyrimspecialedition/mods/158544)    | Add-on      | all            | DDR-based voiced dialogue lines for Simple Inn Bath (~80 lines: spliced innkeeper + bathing dialogue). **Requires DDR (135618) + Simple Inn Bath**. Carries an **AI-Generated Content** tag — quality-eval per policy; **user-approved** (same gate precedent as Autumngate's xVASynth add-on). |
-| [Simple Inn Bath for New Lands — SPID](https://www.nexusmods.com/skyrimspecialedition/mods/104314) | Add-on      | all            | SPID patches granting Simple Inn Bath dialogue to Bruma, Falskaar, Skyrim - Obscure's College of Winterhold, Beyond Reach, Wyrmstooth, and Midwood Isle innkeepers so you bathe at those new-land inns. Requires SPID (baseline). |
+| [Dynamic Dialogue Replacer — DDR](https://www.nexusmods.com/skyrimspecialedition/mods/135618)                | Framework   | all            | SKSE runtime dialogue-replacement framework. Required by the Simple Inn Bath dialogue expansion below. |
+| [Simple Inn Bath](https://www.nexusmods.com/skyrimspecialedition/mods/49014)                                | Add-on      | all            | Bathhouse access at inns via innkeeper dialogue — minimal cell edits, high compatibility. **Works with the locked `Candlehearth` inn baseline (→ `modlist-world-content.md`, Inns) — no patches needed** (acts via dialogue/faction, not cell edits). |
+| [Simple Inn Bath - Dialogue Expansion - DDR](https://www.nexusmods.com/skyrimspecialedition/mods/158544)    | Add-on      | all            | DDR-based voiced dialogue lines for Simple Inn Bath (~80 lines: spliced innkeeper + bathing dialogue). **Requires DDR (135618) + Simple Inn Bath**. Carries an **AI-Generated Content** tag — quality-eval per policy. |
+| [Simple Inn Bath for New Lands — SPID](https://www.nexusmods.com/skyrimspecialedition/mods/104314) | Add-on      | all            | SPID patches granting Simple Inn Bath dialogue to Bruma, Falskaar, Skyrim - Obscure's College of Winterhold, Beyond Reach, Wyrmstooth, and Midwood Isle innkeepers. Requires SPID (baseline). |
 | Minimalist route                                                                                          | Alternative | all            | Leave hygiene implied through inns, rivers, roleplay.                                                                                      |
 
 ### Eating & Drinking Animations
@@ -43,7 +38,7 @@ Visible eating and drinking as a downtime ritual — animated consumption with s
 |---------------------------------------------------------------------------------------|----------|------|-----------------------------------------------------------------------------------------------------------|
 | [Animated Eating Redux SE](https://www.nexusmods.com/skyrimspecialedition/mods/4652)  | Baseline | all  | Third-person eating/drinking animations with sound. NPCs eat autonomously based on time of day. FOMOD with optional animated potions, coffee/tea. Requires SKSE + SkyUI + Pandora (behavior engine). |
 | [Animated Eating Redux - Settings Loader](https://www.nexusmods.com/skyrimspecialedition/mods/63841) | Companion | all | MCM settings loader/preset. Install after Animated Eating Redux.                           |
-| [Eating Animations and Sounds](https://www.nexusmods.com/skyrimspecialedition/mods/42602)             | Alternative | all | Lighter eating/drinking animation replacement. v1.9.4, 11,210 endorsements. **Competes with the locked `Animated Eating Redux` baseline on the same animation events — choose one.** |
+| [Eating Animations and Sounds](https://www.nexusmods.com/skyrimspecialedition/mods/42602)             | Alternative | all | Lighter eating/drinking animation replacement. **Competes with the locked `Animated Eating Redux` baseline on the same animation events — choose one.** |
 
 ### Key Features
 
@@ -72,19 +67,17 @@ Use `"!!doautoload" : 1` and `"!!doautostart" : 1` to skip MCM setup on new game
 ### Configuration Discipline
 
 - Hygiene busywork risk. Configure overlay intervals and NPC tracking counts to taste.
-- Equipment handling, overlays, and optional integrations need stricter discipline than a simple immersion add-on.
-- Only hard runtime requirements should be treated as mandatory.
 - For Steam runtime `1.6.1170`, Backported Extended ESL Support requirement does not apply.
 
 ---
 
 ## Death Alternative System
-What happens when the player falls in combat. Goal: add consequence and narrative texture to defeat without making every lost fight permanent.
+What happens when the player falls in combat.
 
 | Mod                                                                           | Type        | Dial   | Notes                                                                                                        |
 |-------------------------------------------------------------------------------|-------------|--------|--------------------------------------------------------------------------------------------------------------|
-| Discipline-first route                                                        | Baseline    | all    | Vanilla death-and-reload loop. Chosen over Shadow of Skyrim for zero compatibility risk.                      |
-| [Shadow of Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/72924) | Alternative | #1, #4 | Nemesis system — respawn with debuffs, enemies gain name/buffs/presence. Rejected due to script debt at this list's complexity. |
+| Discipline-first route                                                        | Baseline    | all    | Vanilla death-and-reload loop. Zero compatibility risk.                      |
+| [Shadow of Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/72924) | Alternative | #1, #4 | Nemesis system — respawn with debuffs, enemies gain name/buffs/presence. High script load at this list's complexity. |
 
 ### Risks & Compatibility
 

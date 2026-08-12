@@ -102,7 +102,7 @@ Distributes different BodySlide presets across NPCs so the world doesn't look li
 - **Realistic Racial Body Diversity - OBody NG Config** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/87239)) — Per-race body distribution (broader Nords, leaner Elves, heavy Orcs). Covers both CBBE 3BA and HIMBO.
 - **Individual presets:** `Rugged Body - 3BA`, `Skinny Berry - 3BA`, `Realistic chubby and curvy body - 3BA`.
 - **Male variety:** **HIMBO SliderPresets Pack 02** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/176023)) — 10 presets.
-- **Racemenu - Thigh Position Sliders** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/59689)) — Adds 3 thigh sliders (Up/Down, Forward/Back, Spacing) to the Body Scale category for finer thigh-gap customization. Requires RaceMenu + XPMSSE (both baseline). Overwrites `RaceMenuPluginXPMSE.pex` — **verify against the locked XPMSSE RaceMenu plugin before committing** (skeleton baseline accommodation gate).
+- **Racemenu - Thigh Position Sliders** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/59689)) — Adds 3 thigh sliders (Up/Down, Forward/Back, Spacing) to the Body Scale category for finer thigh-gap customization. Requires RaceMenu + XPMSSE (both baseline). Overwrites `RaceMenuPluginXPMSE.pex` — **verify against the locked XPMSSE RaceMenu plugin**.
 
 #### Alternatives
 
@@ -128,16 +128,16 @@ Distributes different BodySlide presets across NPCs so the world doesn't look li
 | [Steel Armor Redone — PBR](https://www.nexusmods.com/skyrimspecialedition/mods/177513) | PBR retexture of CC Steel Armor. Requires CC Alternative Armors — Steel Soldier, CS, PGPatcher. Optional. |
 | [Robes Retexture SE](https://www.nexusmods.com/skyrimspecialedition/mods/110655) | Higher-quality robe textures for all vanilla robes. |
 | [Divine Crusader Retexture SE](https://www.nexusmods.com/skyrimspecialedition/mods/123738) | Retexture of Divine Crusader armor set. |
-| [aMidianBorn Book of Silence SE](https://www.nexusmods.com/skyrimspecialedition/mods/35382) | Comprehensive armor/weapon/dragon retexture. 207K endorsements. |
+| [aMidianBorn Book of Silence SE](https://www.nexusmods.com/skyrimspecialedition/mods/35382) | Comprehensive armor/weapon/dragon retexture. |
 | [aMidianBorn Content Addon](https://www.nexusmods.com/skyrimspecialedition/mods/35390) | Extends aMidianBorn coverage to additional armors. Install after Book of Silence. |
 | [aMidianBorn Content Addon - 3BA and HIMBO Patch](https://www.nexusmods.com/skyrimspecialedition/mods/144952) | Body refit patch for Content Addon. |
 | [Resurgence Armory - Artifact Weapons and Armor Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/83855) | Visual overhaul for artifact weapons and armor models. |
 | [3BA and HIMBO Refits for Resurgence Armors](https://www.nexusmods.com/skyrimspecialedition/mods/85669) | Body refit for Resurgence Armory armors. |
 | [HDT-SMP Vanilla Armors](https://www.nexusmods.com/skyrimspecialedition/mods/142450) | Adds HDT-SMP physics to all vanilla armors. |
-| [HDT-SMP College Mage Robes](https://www.nexusmods.com/skyrimspecialedition/mods/183045) | Adds FSMP cloth physics to vanilla College mage robes (Apprentice, Journeyman, Archmage, CC Vagrant). Compatible with CBBE, 3BA, HIMBO. Requires FSMP (baseline). 567 endorsements, v1.01 (Jun 2026). Complemented by Clutter-free HIMBO College Robes (133675) for BodySlide zap projects. |
-| [Mage Clothing Expansion](https://www.nexusmods.com/skyrimspecialedition/mods/128173) | 25 new lore-friendly mage robes (9 male / 9 female + darker variants + hood), crafted from vanilla assets. Craftable at tanning rack (3 leather). SPID distribution to College NPCs available. Prebuilt HIMBO + CBBE Curvy meshes. ESL-flagged. 7,093 endorsements, v2.0.1 (Sep 2024). |
+| [HDT-SMP College Mage Robes](https://www.nexusmods.com/skyrimspecialedition/mods/183045) | Adds FSMP cloth physics to vanilla College mage robes (Apprentice, Journeyman, Archmage, CC Vagrant). Compatible with CBBE, 3BA, HIMBO. Requires FSMP (baseline). Complemented by Clutter-free HIMBO College Robes (133675) for BodySlide zap projects. |
+| [Mage Clothing Expansion](https://www.nexusmods.com/skyrimspecialedition/mods/128173) | 25 new lore-friendly mage robes (9 male / 9 female + darker variants + hood), crafted from vanilla assets. Craftable at tanning rack (3 leather). SPID distribution to College NPCs available. Prebuilt HIMBO + CBBE Curvy meshes. ESL-flagged. |
 | [Mage Clothing Expansion - 3BA Uniboob](https://www.nexusmods.com/skyrimspecialedition/mods/128838) | CBBE 3BA conversion for MCE. Required for body-stack consistency with the SlimFantasy 3BA preset. Chain-adopted companion. |
-| [Clutter-free HIMBO College Robes and MCE](https://www.nexusmods.com/skyrimspecialedition/mods/133675) | BodySlide zap projects for HIMBO college robes + HDT-SMP CMR + MCE (satchel/pouch removal, sleeve/pants cuffs, collar zap, fur trim zap). Also fixes vertex scrunching on HIMBO's stock Archmage robes. FOMOD. Requires HDT-SMP College Mage Robes (183045) + MCE (128173). 68 endorsements, v1.2.4 (Jun 2026).
+| [Clutter-free HIMBO College Robes and MCE](https://www.nexusmods.com/skyrimspecialedition/mods/133675) | BodySlide zap projects for HIMBO college robes + HDT-SMP CMR + MCE (satchel/pouch removal, sleeve/pants cuffs, collar zap, fur trim zap). Also fixes vertex scrunching on HIMBO's stock Archmage robes. FOMOD. Requires HDT-SMP College Mage Robes (183045) + MCE (128173).
 
 ---
 
@@ -151,11 +151,8 @@ Distributes different BodySlide presets across NPCs so the world doesn't look li
 
 ### General Notes
 
-- Body-base choices create a large armor-refit and outfit-conversion workload later.
 - Choosing 3BA/3BBB increases female outfit compatibility requirements versus plain CBBE.
 - Letting BodySlide output overwrite source mods makes auditing and rebuilds much harder.
-- Skin mods that look strong in screenshots can still appear too polished or glossy in gameplay lighting.
-- High Poly Head 1.4 adds headpart and facegen complexity with vampire fixes, NPC overhauls, and custom presets.
 - Do not let this section expand into full NPC beautification — that belongs in → `NPCs`.
 
 ---
@@ -165,7 +162,7 @@ Per-character face assets: hairstyles, eye textures, and beard options. Ensures 
 
 | Mod | Type | Notes |
 | --- | --- | --- |
-| [KS Hairdos SSE](https://www.nexusmods.com/skyrimspecialedition/mods/6817) | Baseline | Community-canonical hair pack. 141K endorsements. |
+| [KS Hairdos SSE](https://www.nexusmods.com/skyrimspecialedition/mods/6817) | Baseline | Community-canonical hair pack. |
 | [High Poly Vanilla Hair](https://www.nexusmods.com/skyrimspecialedition/mods/41863) | Baseline | Higher-poly vanilla hair meshes (smooth geometry, 3D braids, UV tweaks). Replaces the vanilla styles NPCs/player use; complements KS Hairdos (which adds its own styles, not vanilla replacements). Human races. No ESP. |
 | [Modular SMP Hairstyles](https://www.nexusmods.com/skyrimspecialedition/mods/93608) | Add-on | 100+ unisex SMP hairstyle combos (mix & match front/back) added to the hair slider. Requires FSMP (baseline). Physics cost on the wearer only. Verify against SMP-NPC crash fix (baseline) when used on NPC distribution. ESL. |
 | [Eyes Nouveaux](https://www.nexusmods.com/skyrimspecialedition/mods/131210) | Baseline | Khisartin-style eye textures, grim-dark tone. |
@@ -205,4 +202,3 @@ Visual upgrades to in-world skeleton and bone assets: skulls, bone piles, skelet
 
 - Skeleton Replacer HD can conflict with creature mods that ship their own skeleton/bone assets.
 - Some vanilla draugr and dragon priest models have unique assets the mod can override; verify they're preserved.
-- High-resolution bones can look out of place in a dungeon without matching texture work.

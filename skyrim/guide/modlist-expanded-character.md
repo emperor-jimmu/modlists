@@ -3,7 +3,7 @@
 ---
 
 ## Character Creation And Starting Choices
-How `Elder Wilds` begins: a grounded alternate start, a utility-first start, or a configurable route. The decision should improve replayability and roleplay expression without pre-answering later race, progression, religion, survival, or follower choices.
+How `Elder Wilds` begins: a grounded alternate start, a utility-first start, or a configurable route.
 
 | Mod                                                                                                               | Type        | Dial           | Notes                                                                                                                   |
 |-------------------------------------------------------------------------------------------------------------------|-------------|----------------|-------------------------------------------------------------------------------------------------------------------------|
@@ -20,15 +20,12 @@ How `Elder Wilds` begins: a grounded alternate start, a utility-first start, or 
 ### Risks & Compatibility
 
 - Start frameworks carry world-state assumptions that ripple into later quest, city, survival, or follower decisions.
-- `Dealing with Backstories` must be judged against the chosen race, standing-stone, perk, and survival stack.
-- `Take Notes` only earns a slot if the list expects real roleplay or long-form journaling.
-- A more immersive start loses value if it adds onboarding friction without materially improving the early-game tone.
-- This subsection gets muddy if race, perk, religion, or survival decisions leak into it too early.
+- `Dealing with Backstories` grants starting skills, bonuses, and drawbacks — dial fit depends on the chosen race, standing-stone, perk, and survival stack.
 
 ---
 
 ## Race Overhauls
-How race traits shape long-term character identity. Choose before perks, magic, and religion build on top of it.
+How race traits shape long-term character identity.
 
 | Mod                                                                                           | Type        | Dial       | Notes                                             |
 |-----------------------------------------------------------------------------------------------|-------------|------------|---------------------------------------------------|
@@ -43,16 +40,10 @@ How race traits shape long-term character identity. Choose before perks, magic, 
 | [RiS — Races](https://www.nexusmods.com/skyrimspecialedition/mods/149544)    | Biological race overhaul    | all  | KID, SPID                          |
 | [RiS — Lineages](https://www.nexusmods.com/skyrimspecialedition/mods/174443) | 4 subraces per vanilla race | all  | KID, SPID, Papyrus Ini Manipulator |
 
-### Risks & Compatibility
-
-- Race overhauls can quietly pre-decide too much of the character-building experience.
-- A very expressive route can push optimization-heavy play even if the project wants immersive tone.
-- A very light route can undershoot if later systems assume stronger identity hooks.
-
 ---
 
 ## Standing Stones
-How standing stones and birthsigns provide ongoing passive identity. Judge together with race pick so the progression baseline stays coherent.
+How standing stones and birthsigns provide ongoing passive identity.
 
 | Mod                                                                                             | Type        | Dial       | Notes                                             |
 |-------------------------------------------------------------------------------------------------|-------------|------------|---------------------------------------------------|
@@ -60,24 +51,15 @@ How standing stones and birthsigns provide ongoing passive identity. Judge toget
 
 ### Roleplaying in Skyrim Companion Series: Standing Stones
 
-> All RiS mods require SKSE. Check individual mod pages for specific dependencies.
-
 | Mod                                                                                 | Purpose                                 | Dial | Requirements                                                 |
 |-------------------------------------------------------------------------------------|-----------------------------------------|------|--------------------------------------------------------------|
 | [RiS — Standing Stones](https://www.nexusmods.com/skyrimspecialedition/mods/157053) | 13 stones overhaul                      | all  | aTweaks and Utilities, KID, Perk Entry Point Extender, SkyUI |
 | [RiS — Birthsigns](https://www.nexusmods.com/skyrimspecialedition/mods/154610)      | Monthly waxing/waning birthsign effects | all  | KID, Papyrus Ini Manipulator                                 |
 
-### Risks & Compatibility
-
-- Stone and birthsign overhauls can quietly pre-decide too much of the character-building experience.
-- Judge race and stone picks as a pair so the progression baseline stays coherent.
-
 ---
 
 ## Character Progression Mechanics
 Supporting progression layers that govern how stats and skills grow over time.
-
-> All RiS mods require SKSE. Check individual mod pages for specific dependencies.
 
 | Mod                                                                                         | Purpose                                 | Dial   | Requirements            |
 |---------------------------------------------------------------------------------------------|-----------------------------------------|--------|-------------------------|
@@ -88,19 +70,13 @@ Supporting progression layers that govern how stats and skills grow over time.
 ---
 
 ## Character Traits And Identity Hooks
-Opt-in character-defining quirks shaping a run from the start without replacing the broader progression stack. Goal: stronger roleplay identity and replayability, not a giant second character-build framework.
+Opt-in character-defining quirks shaping a run from the start without replacing the broader progression stack.
 
 | Mod                                                                                               | Type        | Dial           | Notes                                                                      |
 |---------------------------------------------------------------------------------------------------|-------------|----------------|----------------------------------------------------------------------------|
 | [Biggie Traits](https://www.nexusmods.com/skyrimspecialedition/mods/136384)                       | Baseline    | #1, #4         | Run-defining tradeoffs. Fallout-style traits. No hard dependencies.        |
 | [Pumping Iron — Dynamic Muscle Growth](https://www.nexusmods.com/skyrimspecialedition/mods/13434) | Alternative | #1, #2, #3, #4 | Cosmetic muscle growth from combat + sleep. No gameplay impact.            |
 | Minimalist route                                                                                  | Alternative | #2, #3         | Leave identity to race, standing stones, perks, and self-imposed roleplay. |
-
-### Risks & Compatibility
-
-- Trait systems can duplicate what race, perk, religion, or survival choices are already doing.
-- If the best traits are too obviously optimal, the whole idea collapses into routine min-maxing.
-- Traits should sharpen character identity and replayability, not replace the race-and-perk decisions above.
 
 ---
 
@@ -111,13 +87,6 @@ How much explicit spiritual identity and day-to-day roleplay texture `Elder Wild
 |---------------------------------------------------------------------------------------------------|-------------|------------|-------------------------------------------------------------------|
 | [Pilgrim — A Religion Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/54099)        | Baseline    | #1, #2, #4 | **Locked.** Fits Simonrim progression family. |
 
-### Risks & Compatibility
-
-- A very light religion route can undershoot and leave roleplay identity too close to vanilla.
-- A heavy deity-centered framework can make religion dominate character identity.
-- Survival, economy, and follower expectations can drift into this section if faith routines aren't scoped carefully.
-- Judge by ordinary play rhythm: prayer habits, shrine relevance, exploration texture.
-
 ---
 
 ## Race-Specific Overhauls
@@ -125,15 +94,15 @@ Dedicated overhauls for vampire, werewolf, and shout gameplay — three characte
 
 | Mod                                                                                         | Type        | Dial       | Notes                                                                          |
 |---------------------------------------------------------------------------------------------|-------------|------------|--------------------------------------------------------------------------------|
-| [Sacrosanct — Vampires of Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/3928) | Baseline    | #1, #4     | Vampirism progression, 4 feeding tiers, blood-power by age. 133K endorsements. |
-| [Dark Envoy — Vampire Powers](https://www.nexusmods.com/skyrimspecialedition/mods/16425)    | Add-on      | #1, #4     | Small questline + new VL powers (Bat Form flight, Bat Teleport, Gate of Coldharbour). 2,157 endorsements. Author-tested with Sacrosanct. |
-| [Vampire Lord Renewed (VL Framework) ESL](https://www.nexusmods.com/skyrimspecialedition/mods/87166) | Add-on | #1, #4     | Humanoid VL form, inventory/spell menu access in VL form, loot/activate enabled. Explicitly supports Sacrosanct. Fully ESL-flagged. v6.4.11 actively maintained. |
+| [Sacrosanct — Vampires of Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/3928) | Baseline    | #1, #4     | Vampirism progression, 4 feeding tiers, blood-power by age. |
+| [Dark Envoy — Vampire Powers](https://www.nexusmods.com/skyrimspecialedition/mods/16425)    | Add-on      | #1, #4     | Small questline + new VL powers (Bat Form flight, Bat Teleport, Gate of Coldharbour). Author-tested with Sacrosanct. |
+| [Vampire Lord Renewed (VL Framework) ESL](https://www.nexusmods.com/skyrimspecialedition/mods/87166) | Add-on | #1, #4     | Humanoid VL form, inventory/spell menu access in VL form, loot/activate enabled. Explicitly supports Sacrosanct. Fully ESL-flagged. Actively maintained. |
 | [Vampire Lord Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/89538)           | Add-on      | all        | Visual-only VL replacer — 8K skin, armors, bigger wings, glowing eyes. Compatible with all gameplay overhauls. |
 | [Just Bite — DAK Patch for Sacrosanct](https://www.nexusmods.com/skyrimspecialedition/mods/122597) | Add-on | #1, #4     | Replaces Sacrosanct feeding pop-up menus with Dynamic Activation Key single-button feed/drain. Better gamepad/third-person UX. Requires DAK (96273). |
 | [Vampire Feed Decals](https://www.nexusmods.com/skyrimspecialedition/mods/123546) | Add-on | #1, #4     | Blood decals on body/face when feeding as a vampire. BodySlot-based (race-independent). Requires Vampire Animations (100349), Behavior Data Injector. Optional SPID for NPC decals. |
-| [Vampires Cast No Shadow 2](https://www.nexusmods.com/skyrimspecialedition/mods/46107) | Add-on | #1, #4     | SKSE plugin (powerofthree): vampires cast no shadow in sunlight (humanoid + Lord forms). Zero records, compatible with every mesh/vampire mod. Visual immersion fix — aligns sun behavior with vampiric lore. v1.2.2 supports AE 1.6.1170. |
-| [Dark Destiny — Become a Vampire Unwillingly](https://www.nexusmods.com/skyrimspecialedition/mods/84998) | Add-on | all        | Short voiced quest scene where the player is captured and turned into a vampire against their will in Pinemoon Cave. AI-voiced (ElevenLabs). No hard dependencies. Compatible with any vampire overhaul. |
-| [Seeking The Cure — A Rising At Dawn Quest Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/85923) | Add-on | all        | Makes vampirism incurable — Falion's ritual fails. Rising At Dawn becomes a non-repeatable story quest. 100+ lines AI-voiced dialogue. Pairs with Dark Destiny for a full unwilling-vampire arc. |
+| [Vampires Cast No Shadow 2](https://www.nexusmods.com/skyrimspecialedition/mods/46107) | Add-on | #1, #4     | SKSE plugin (powerofthree): vampires cast no shadow in sunlight (humanoid + Lord forms). Zero records, compatible with every mesh/vampire mod. Supports AE 1.6.1170. |
+| [Dark Destiny — Become a Vampire Unwillingly](https://www.nexusmods.com/skyrimspecialedition/mods/84998) | Add-on | all        | Short voiced quest scene where the player is captured and turned into a vampire against their will in Pinemoon Cave. AI-voiced (ElevenLabs). No hard dependencies. |
+| [Seeking The Cure — A Rising At Dawn Quest Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/85923) | Add-on | all        | Makes vampirism incurable — Falion's ritual fails. Rising At Dawn becomes a non-repeatable story quest. 100+ lines AI-voiced dialogue. |
 | [Ancient Mausoleum SSE](https://www.nexusmods.com/skyrimspecialedition/mods/18724) | Add-on | all        | Small vampire-themed player home with custom storage and artifact displays (dragon claws, masks). |
 | [Vampire Clothing Expansion](https://www.nexusmods.com/skyrimspecialedition/mods/97185) | Add-on | all        | New vampire-themed clothing items. Author: Hornclonic. |
 | [Growl — Werebeasts of Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/14645)   | Baseline    | #1, #4     | Beast-form progression, perks, 5 werebear varieties.                           |
@@ -143,7 +112,7 @@ Dedicated overhauls for vampire, werewolf, and shout gameplay — three characte
 
 ### Risks & Compatibility
 
-- All three core overhauls are by EnaiSiaion and operate independently of the progression stack. Death-alternative (discipline-first) does not apply — verify Sacrosanct death scenarios work with vanilla death/reload.
+- Sacrosanct death scenarios use vanilla death/reload — verify under the discipline-first death baseline.
 - `Sacrosanct` and `Growl` interact with `Heart of the Beast` (werewolf transformation audio) in section 10. Load transformation-sfx after transformation-system mods.
 - `Thunderchild`'s new shouts interact with shout-audio mods (`Airgetlam - Shouts SFX`) from section 10. Verify sfx replacements apply to Thunderchild's shouts, not just vanilla.
 - Vampire feeding interacts with the crime-and-reputation baseline (`Skyrim Reputation` from → `Followers & Reputation`). Test feeding in cities.
@@ -170,7 +139,7 @@ Training and study utilities for off-combat skill progression.
 ---
 
 ## Experience and Leveling
-How the player gains levels and skill points. Instead of vanilla sleep-to-level, use Experience (discovery-based leveling) paired with Static Skill Leveling Rewritten (cooldown-gated skill advancement) for progression earned through exploration and deliberate practice.
+How the player gains levels and skill points.
 
 | Mod                                                                                          | Type        | Dial   | Notes                                                                       |
 |----------------------------------------------------------------------------------------------|-------------|--------|-----------------------------------------------------------------------------|

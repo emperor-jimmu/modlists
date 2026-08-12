@@ -76,7 +76,7 @@ Neither requires ongoing configuration or conflict maintenance once installed.
 
 ### Recursion Monitor
 - **Nexus:** [Recursion Monitor](https://www.nexusmods.com/skyrimspecialedition/mods/76867) — Detects broken Papyrus scripts stuck in recursive loops. Requires SKSE, Address Library.
-- **Updated fork:** [recursion-fix-updated](https://www.nexusmods.com/skyrimspecialedition/mods/179627) (May 2026) — Removes blocking debug popup; writes to SKSE log instead. Prefer for production list.
+- **Updated fork:** [recursion-fix-updated](https://www.nexusmods.com/skyrimspecialedition/mods/179627) — Removes blocking debug popup; writes to SKSE log instead. Prefer for production list.
 
 ### S.L.A.C.K. (Save And Load Accelerator For SKSE Cosaves)
 - **Nexus:** [S.L.A.C.K.](https://www.nexusmods.com/skyrimspecialedition/mods/163969) — Cosaves save up to 150× faster, load up to 15× faster. Error-friendly mode catches exceptions from other SKSE plugins' cosave handlers.

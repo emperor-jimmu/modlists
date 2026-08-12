@@ -30,7 +30,7 @@ Build lighting as a coherent layer supporting the shader-first visual direction,
 
 | Mod | Role | Notes |
 | --- | --- | --- |
-| [Embers XD](https://www.nexusmods.com/skyrimspecialedition/mods/37085) | Fire | 140K+ endorsements. Install after main lighting overhauls. CS particle-light support built in. → `Graphics - Lighting` |
+| [Embers XD](https://www.nexusmods.com/skyrimspecialedition/mods/37085) | Fire | Install after main lighting overhauls. CS particle-light support built in. → `Graphics - Lighting` |
 | [Luminous Atronachs](https://www.nexusmods.com/skyrimspecialedition/mods/27732) | Effects | Self-illuminating atronachs via particle lights. |
 | [KD Realistic Fireplaces](https://www.nexusmods.com/skyrimspecialedition/mods/28877) | Fire | Optional fireplace visual upgrade. Cosmetic only. |
 
@@ -47,7 +47,6 @@ Build lighting as a coherent layer supporting the shader-first visual direction,
 - The CS-native stack has ~35-55 total patches versus LUX's ~80-120 across the Patch Hub.
 - CS Light + True Light + WSU relies on Light Placer non-shadow-casting bulbs — test together before locking.
 - WSU can hit shadow-caster limits and flicker in certain interiors — monitor during playtesting.
-- Very dark interiors look impressive in screenshots and feel worse in long play sessions.
 - Choosing lighting before weather is settled can produce a mismatched visual tone.
 - True Light author is doing a major rework — monitor for a post-v3.5.x fix for the LoS II lamp post bug.
 - SLT provides template-level standardization; verify it does not conflict with CS Light's template expectations.

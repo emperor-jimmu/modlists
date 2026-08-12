@@ -21,17 +21,17 @@ Weapon content packs adding new named and leveled-list weapons fitting vanilla's
 | [Immersive Weapons SkyPatched](https://www.nexusmods.com/skyrimspecialedition/mods/142044)      | Alternative | #1, #4         | SkyPatched forward-port resolving record-level conflicts. Preferred over original. |
 | [Moonblade](https://www.nexusmods.com/skyrimspecialedition/mods/170595)      | Alternative | all            | Unique moon-themed weapon with quest content.                                     |
 | [Sorcerer Staff](https://www.nexusmods.com/skyrimspecialedition/mods/178148)                    | Alternative | all            | Unique staff / Staff of Magnus replacer with expanded mechanics.                  |
-| [Occiglacies - Ancient Falmer Blade](https://www.nexusmods.com/skyrimspecialedition/mods/35637) | Alternative | #1, #4         | Ancient Falmer greatsword/sword. Switchable 1H/2H at Skyforge. 1,471 endorsements. Found in Forgotten Vale area. LoTD display patch available. |
-| [JaySuS Swords SE](https://www.nexusmods.com/skyrimspecialedition/mods/29415)                 | Alternative | #1, #2, #4     | 50 hand-crafted weapons (craftable/lootable/unique finds) from the classic pack. Older era (Dec 2020) — check vs established weapon packs; modern alternatives (Billyro packs, Reforging - To the Masses) fill the same niche. LoTD display patch exists. |
+| [Occiglacies - Ancient Falmer Blade](https://www.nexusmods.com/skyrimspecialedition/mods/35637) | Alternative | #1, #4         | Ancient Falmer greatsword/sword. Switchable 1H/2H at Skyforge. Found in Forgotten Vale area. LoTD display patch available. |
+| [JaySuS Swords SE](https://www.nexusmods.com/skyrimspecialedition/mods/29415)                 | Alternative | #1, #2, #4     | 50 hand-crafted weapons (craftable/lootable/unique finds) from the classic pack. Modern alternatives (Billyro packs, Reforging - To the Masses) fill the same niche. LoTD display patch exists. |
 | [Lost Relics of Tamriel - Echos of the Past](https://www.nexusmods.com/skyrimspecialedition/mods/122137) | Alternative | #1, #2, #4 | Legendary relic/artifact collection by Noctis3DArts. Adds multiple unique weapons and artifacts. |
 | [Bloodskal Blade 4](https://www.nexusmods.com/skyrimspecialedition/mods/120399) | Alternative | #1, #2, #4 | Remodels the Bloodskal Blade. PBR conversion available (165893). |
 | [Bloodskal Blade 4 — PBR Conversion](https://www.nexusmods.com/skyrimspecialedition/mods/165893) | Add-on | #1, #2 | PBR textures for Bloodskal Blade 4. Requires 120399 + CS + PGPatcher. |
 | [Nordic Battle Axes](https://www.nexusmods.com/skyrimspecialedition/mods/143738) | Alternative | all | 3 new 2H war axes. Craftable at forge under Steel perk. Simple, lore-friendly. |
-| [Volkihar Relic Sword](https://www.nexusmods.com/skyrimspecialedition/mods/128508) | Alternative | #1, #4 | Unique 1H vampire sword. Animated textures, bleed mechanics, Vampire Lord +30% dmg. Fits grim-dark. |
+| [Volkihar Relic Sword](https://www.nexusmods.com/skyrimspecialedition/mods/128508) | Alternative | #1, #4 | Unique 1H vampire sword. Animated textures, bleed mechanics, Vampire Lord +30% dmg. |
 | [Ivory Bow SE](https://www.nexusmods.com/skyrimspecialedition/mods/115856) | Alternative | #1, #4 | New bow by johnskyrim. |
-| [Steel Battleaxe Of Fiery Souls — Truly Unique](https://www.nexusmods.com/skyrimspecialedition/mods/154943) | Alternative | #1, #4 | Unique weapon rework with animated textures, VFX, 4K/2K. Fits grim-dark. |
-| [PBR Hub](https://www.nexusmods.com/skyrimspecialedition/mods/139889) | Framework | #1, #2 | Collection of PBR add-ons for various weapon/armor mods. 36 files. Install only sub-files matching weapons already adopted. Requires CS + PGPatcher. |
-| [Radiance](https://www.nexusmods.com/skyrimspecialedition/mods/143286) | Alternative | #1, #2, #4 | Glowing light sword/mace, acts as torch replacement. ESL, SKSE, follower-compatible. Strong dark-fantasy fit. |
+| [Steel Battleaxe Of Fiery Souls — Truly Unique](https://www.nexusmods.com/skyrimspecialedition/mods/154943) | Alternative | #1, #4 | Unique weapon rework with animated textures, VFX, 4K/2K. |
+| [PBR Hub](https://www.nexusmods.com/skyrimspecialedition/mods/139889) | Framework | #1, #2 | Collection of PBR add-ons for various weapon/armor mods. 36 files. Install only sub-files matching weapons already in the list. Requires CS + PGPatcher. |
+| [Radiance](https://www.nexusmods.com/skyrimspecialedition/mods/143286) | Alternative | #1, #2, #4 | Glowing light sword/mace, acts as torch replacement. ESL, SKSE, follower-compatible. |
 | [Runecarvers Edge](https://www.nexusmods.com/skyrimspecialedition/mods/138601) | Alternative | #1, #4 | Lore-friendly sword + greatsword. Vanilla/Complex Material/PBR support. ESL, leveled lists. |
 | [Chitin Bow SE](https://www.nexusmods.com/skyrimspecialedition/mods/162526) | Alternative | #1, #4 | Dunmer-themed bow. SPID distribution companion (162877). |
 | [Chitin Bow SPID](https://www.nexusmods.com/skyrimspecialedition/mods/162877) | Add-on | all | SPID distribution for Chitin Bow SE. |
@@ -59,7 +59,7 @@ Armor content packs adding new named and leveled-list armors fitting the medieva
 
 | Mod                                                                                            | Description                                                            |
 |------------------------------------------------------------------------------------------------|------------------------------------------------------------------------|
-|  [Immersive Armors](https://www.nexusmods.com/skyrimspecialedition/mods/3479)                    |  ~55 armor sets, 396 shields. 206K endorsements.                         |
+|  [Immersive Armors](https://www.nexusmods.com/skyrimspecialedition/mods/3479)                    |  ~55 armor sets, 396 shields.                                         |
 |  [Immersive Armors Retexture and Mesh Fixes SE](https://www.nexusmods.com/skyrimspecialedition/mods/75891)  |  Brings visuals in line with 4K PBR stack.                       |
 
 ### Alternatives
@@ -91,12 +91,12 @@ Armor content packs adding new named and leveled-list armors fitting the medieva
 
 | Mod | Description | Notes |
 | --- | --- | --- |
-| [Armor Variants Expansion](https://www.nexusmods.com/skyrimspecialedition/mods/34100) | Visual variants for every vanilla armor set. | Has CBBE patch. Fits medieval-Nordic aesthetic. |
+| [Armor Variants Expansion](https://www.nexusmods.com/skyrimspecialedition/mods/34100) | Visual variants for every vanilla armor set. | Has CBBE patch. |
 | [Ufok's Reinforced Leather Armour](https://www.nexusmods.com/skyrimspecialedition/mods/183824) | D&D-inspired light armor. | 3BA, CBBE, UBE, HIMBO, Vanilla. ESL, craftable, Skypatcher integration. |
-| [Tera Armors Collection](https://www.nexusmods.com/skyrimspecialedition/mods/9651) | Armor collection ported from TERA MMO. | CBBE. Evaluate visual fit. |
-| [Lustmord Vampire Armor - SSE CBBE Bodyslide](https://www.nexusmods.com/skyrimspecialedition/mods/16676) | CBBE 3BA vampire armor with physics. | 14K endorsements. |
-| [Wilderness Witch Outfit](https://www.nexusmods.com/skyrimspecialedition/mods/40963) | CBBE witch/mage outfit. | Fits grim-dark aesthetic. |
-| [Dark Mage of Plegia - hdt SMP (CBBE 3BA)](https://www.nexusmods.com/skyrimspecialedition/mods/84554) | CBBE 3BA SMP dark mage outfit. | 9K endorsements. |
+| [Tera Armors Collection](https://www.nexusmods.com/skyrimspecialedition/mods/9651) | Armor collection ported from TERA MMO. | CBBE. |
+| [Lustmord Vampire Armor - SSE CBBE Bodyslide](https://www.nexusmods.com/skyrimspecialedition/mods/16676) | CBBE 3BA vampire armor with physics. | |
+| [Wilderness Witch Outfit](https://www.nexusmods.com/skyrimspecialedition/mods/40963) | CBBE witch/mage outfit. | |
+| [Dark Mage of Plegia - hdt SMP (CBBE 3BA)](https://www.nexusmods.com/skyrimspecialedition/mods/84554) | CBBE 3BA SMP dark mage outfit. | |
 | [Dremora Markynaz Armor SE](https://www.nexusmods.com/skyrimspecialedition/mods/79753) | Daedric-themed armor set. | Requires HDT-SMP. HIMBO refit ([125150](https://www.nexusmods.com/skyrimspecialedition/mods/125150)), CBBE ([79968](https://www.nexusmods.com/skyrimspecialedition/mods/79968)). |
 | [Silver Armor SE](https://www.nexusmods.com/skyrimspecialedition/mods/79088) | Silver-themed armor set. | CBBE ([79319](https://www.nexusmods.com/skyrimspecialedition/mods/79319)), HIMBO ([87675](https://www.nexusmods.com/skyrimspecialedition/mods/87675)), HDT-SMP patch ([79255](https://www.nexusmods.com/skyrimspecialedition/mods/79255)). |
 | [Colovian Prince Set](https://www.nexusmods.com/skyrimspecialedition/mods/79894) | Colovian-themed armor set. | |
@@ -135,7 +135,7 @@ Armor content packs adding new named and leveled-list armors fitting the medieva
 | [Wolf Leather Armor](https://www.nexusmods.com/skyrimspecialedition/mods/136189) | Light armor set. | BHUNP/HIMBO/CBBE/3BA bodyslides ([136273](https://www.nexusmods.com/skyrimspecialedition/mods/136273)). |
 | [Elven Chainmail (SSE Port)](https://www.nexusmods.com/skyrimspecialedition/mods/14978) | Female-only elven light armor set + scimitar. Found in Northwatch Keep. | LE port by JWGaming75. Requires CBBE. Last updated Jan 2018 — verify 1.6.1170. |
 | [HD Falmer Elven Chainmail Retexture](https://www.nexusmods.com/skyrimspecialedition/mods/35669) | HD retexture for Elven Chainmail. | By trion77/Vindition. Install over Elven Chainmail base mod. |
-| [Kozakowy's Female Vampire Armor Replacer](https://www.nexusmods.com/skyrimspecialedition/mods/95284) | Replaces vanilla female vampire armor (3 color variants). CBBE 3BA, 811 endorsements. | Female-only, no weightslider compatibility. Pure mesh/texture replacer — no records conflict. 3BA SMP conversion available ([143980](https://www.nexusmods.com/skyrimspecialedition/mods/143980)). |
+| [Kozakowy's Female Vampire Armor Replacer](https://www.nexusmods.com/skyrimspecialedition/mods/95284) | Replaces vanilla female vampire armor (3 color variants). CBBE 3BA. | Female-only, no weightslider compatibility. Pure mesh/texture replacer — no records conflict. 3BA SMP conversion available ([143980](https://www.nexusmods.com/skyrimspecialedition/mods/143980)). |
 | [Faction Armors and Weapons Retexture SE](https://www.nexusmods.com/skyrimspecialedition/mods/169281) | All-in-one retexture of Dawnguard, Vampire, Thieves Guild, Nightingale, Dark Brotherhood, Forsworn, Wolf armors/weapons. Optional mesh additions, color variants (Shrouded). | By Xavbio. Replaces hidden mod 96855. Respects original designs with refined detail and grounded look. Covers both armor and weapons. |
 | [Xavbio Retexture Collection - Glass (87580)](https://www.nexusmods.com/skyrimspecialedition/mods/87580) | Retexture of vanilla Glass armor/weapons, matching the Xavbio faction/ebony direction. | Same author as the locked Faction (169281) + Ebony (83654) stack — keeps the Glass material tier in the same visual family. Choose 2K. |
 | [Armor of Nocturnal](https://www.nexusmods.com/skyrimspecialedition/mods/129809) | Dark fantasy light armor set, standalone craftable. Dwarven-tier. | ChakraSSE. 4K/2K textures, custom male/female meshes. No HDT-SMP. HIMBO refit below. |
@@ -145,8 +145,8 @@ Armor content packs adding new named and leveled-list armors fitting the medieva
 | [Nordic Brute Armor (CBBE HDT-SMP)](https://www.nexusmods.com/skyrimspecialedition/mods/146704) | Heavy armor with HDT-SMP cloth physics. | ChakraSSE. Requires FSMP. HIMBO via ChakraSSE HIMBO bundle (159950). |
 | [Drake Knight Armor](https://www.nexusmods.com/skyrimspecialedition/mods/142360) | Armor set, glow variant available. | ChakraSSE. HIMBO via ChakraSSE HIMBO bundle (159950). |
 | [Armor Of Hermaeus Mora](https://www.nexusmods.com/skyrimspecialedition/mods/132399) | Daedric-themed armor set. | ChakraSSE. HIMBO via ChakraSSE HIMBO bundle (159950). |
-| [More ChakraSSE Armor HIMBO Refits](https://www.nexusmods.com/skyrimspecialedition/mods/159950) | HIMBO/BodySlide refits for Armor of Alessia, Nightstalker Nazir, Nordic Brute, Drake Knight, Armor of Hermaeus Mora. | Install per-armor, overwrite originals. Requires each base mod + BodySlide + HIMBO. 55 endorsements. |
-| [Master Thief Armor 3BA-BHUNP-UNP-CBBE-HIMBO-Vanilla](https://www.nexusmods.com/skyrimspecialedition/mods/141700) | Armor set with CBBE 3BA / HIMBO support. | Evaluate for visual fit with the rest of the armor stack. Alternative — not baseline. |
+| [More ChakraSSE Armor HIMBO Refits](https://www.nexusmods.com/skyrimspecialedition/mods/159950) | HIMBO/BodySlide refits for Armor of Alessia, Nightstalker Nazir, Nordic Brute, Drake Knight, Armor of Hermaeus Mora. | Install per-armor, overwrite originals. Requires each base mod + BodySlide + HIMBO. |
+| [Master Thief Armor 3BA-BHUNP-UNP-CBBE-HIMBO-Vanilla](https://www.nexusmods.com/skyrimspecialedition/mods/141700) | Armor set with CBBE 3BA / HIMBO support. | Alternative — not baseline. |
 | [Fluted Armor SE](https://www.nexusmods.com/skyrimspecialedition/mods/106381) | New heavy armor set. | 4thUnknown. Esp-fe. HDT-SMP patch (106791) for physics cloth. |
 | [Fluted Armor - SPID](https://www.nexusmods.com/skyrimspecialedition/mods/122563) | SPID distribution of Fluted Armor to NPCs. | Requires base 106381 + SPID (both baseline). |
 | [(Upgrade) HDT-SMP Fluted Armor Patch](https://www.nexusmods.com/skyrimspecialedition/mods/106791) | Adds HDT-SMP cloth physics to the Fluted set. | Requires base 106381 + FSMP (baseline). |
@@ -174,7 +174,7 @@ Unique-item content packs that add depth to Daedric artifacts, dragon priest mas
 
 | Mod                                                                                   | Type        | Dial           | Notes                                                                                |
 |---------------------------------------------------------------------------------------|-------------|----------------|--------------------------------------------------------------------------------------|
-| [Reliquary of Myth](https://www.nexusmods.com/skyrimspecialedition/mods/31612)        | Baseline    | #1, #4         | Artifact stats and effects. 12K endorsements.                                        |
+| [Reliquary of Myth](https://www.nexusmods.com/skyrimspecialedition/mods/31612)        | Baseline    | #1, #4         | Artifact stats and effects.                                        |
 
 ### Alternatives
 
@@ -191,7 +191,6 @@ Unique-item content packs that add depth to Daedric artifacts, dragon priest mas
 
 - `Reliquary of Myth` + `ArteFakes` + `Unique Items Tweaks` touches every unique-item record. Verify the Synthesis patcher chain in → `Performance` doesn't re-balance the same records.
 - `Konahrik's Accoutrements` adds new Dragon Priest encounters — check the `LoTD Patches (Official)` hub in → `Legacy of the Dragonborn` for an integration patch.
-- Artifact overhauls that rebalance too aggressively can break encounter expectations.
 - `Unique Items Tweaks` overlaps lightly with `Reliquary of Myth` on a small number of records — verify with a Bashed Patch.
 
 ---
@@ -203,7 +202,7 @@ Clothing content packs adding new clothing, cloaks, and wearable non-armor items
 
 | Mod                                                                                                           | Type        | Dial           | Notes                                                                               |
 |---------------------------------------------------------------------------------------------------------------|-------------|----------------|-------------------------------------------------------------------------------------|
-| [Armor and Clothing Extension](https://www.nexusmods.com/skyrimspecialedition/mods/19002)                     | Baseline    | #1, #2, #3, #4 | Clothing diversity. 35K+ endorsements. Requires RUSTIC CLOTHING + SkyUI.            |
+| [Armor and Clothing Extension](https://www.nexusmods.com/skyrimspecialedition/mods/19002)                     | Baseline    | #1, #2, #3, #4 | Clothing diversity. Requires RUSTIC CLOTHING + SkyUI.            |
 
 ### Alternatives
 
@@ -233,6 +232,5 @@ Clothing content packs adding new clothing, cloaks, and wearable non-armor items
 ### Risks & Compatibility
 
 - `Armor and Clothing Extension` requires `RUSTIC CLOTHING` and `SkyUI` — verify load order keeps `RUSTIC CLOTHING` above ACE.
-- `Cloaks of Skyrim` adds 100+ cloak items. If → `Third-Person Gameplay` adds a custom cloak-slot overhaul, verify stacking. RMB SPCH (116030) is the preferred SkyPatched variant over the original.
+- `Cloaks of Skyrim` adds 100+ cloak items. If → `Third-Person Gameplay` adds a custom cloak-slot overhaul, verify stacking.
 - `Knapsack Backpacks SE` (cosmetic) and `Bandolier` (inventory) can stack, but verify inventory UI doesn't show duplicate bag icons.
-- Verify `Colovian Noble Clothes` for known issues before locking.

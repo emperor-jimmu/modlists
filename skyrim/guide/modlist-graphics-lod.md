@@ -48,7 +48,7 @@ Distant detail determines whether `Elder Wilds` feels large and coherent during 
 #### Setup
 
 - Install `DynDOLOD Resources SE 3` as a normal mod in MO2. During FOMOD installation, uncheck `Low-Res LOD Textures` and `Holy Cow`. On Skyrim SE 1.6+, also uncheck `Whiterun Exterior Grass`. Place the mod relatively high in the left pane.
-- Install `DynDOLOD DLL NG` as a normal mod in MO2. Provides the large-reference bug workaround from its own side — only use if the modlist ships with it and you understand the implications; not recommended unless the list explicitly requires it.
+- Install `DynDOLOD DLL NG` as a normal mod in MO2. Provides the large-reference bug workaround from its own side.
 - Install `No Grass In Objects`, `Grass Cache Fixes`, and `xLODGen Resource` as support content.
 - Register **TexGen**, **DynDOLOD**, and **xLODGen** as MO2 executables, not mixed into mod folders.
 - Treat occlusion as generated output, not as a separate mod pick.
@@ -106,7 +106,7 @@ Apply matching rules for your chosen tree overhaul if its DynDOLOD add-on or aut
 
 - **Ultra Trees (3D tree LOD):** Recommended once first-pass High is validated. 3D tree LOD provides substantially better visual quality for a minor performance cost and unloads properly, unlike hybrid LODs. Anything above `1024` tile size for billboards provides diminishing returns — keep at or below `1024`.
 - **Billboard brightness:** Adjust the R/G/B brightness values in DynDOLOD's grass/billboard settings if distant tree LOD appears too bright in game. A common starting point is `0.500` across all channels.
-- **DynDOLOD DLL NG:** If using DLL NG for the large-reference bug workaround, ensure DynDOLOD settings match its expectations exactly (tick the large-reference workaround options in DynDOLOD's advanced GUI). Not recommended unless the modlist requires it.
+- **DynDOLOD DLL NG:** If using DLL NG for the large-reference bug workaround, ensure DynDOLOD settings match its expectations exactly (tick the large-reference workaround options in DynDOLOD's advanced GUI).
 
 #### Baseline Starting Profile For Elder Wilds
 
@@ -137,9 +137,6 @@ Apply matching rules for your chosen tree overhaul if its DynDOLOD add-on or aut
 ### Risks & Compatibility
 
 - Strong near-field visuals can still look broken in motion if distant terrain and tree lines don't match.
-- Optional LOD texture and tree-optimization add-ons create extra maintenance for limited payoff.
-- Generating too early produces stale outputs that quietly poison later comparisons.
-- Partial rebuild habits leave mismatched terrain, tree, and occlusion outputs active simultaneously.
 
 ### Rebuild Rules
 

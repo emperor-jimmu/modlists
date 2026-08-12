@@ -13,12 +13,7 @@
 - **Customizable Camera** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/12201)) — Leaner fallback.
 - **True Directional Movement** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/51614)) — Governs movement/targeting, not the camera framework itself.
 - **Improved Camera SE** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/93962)) — Perspective support, not main third-person framework.
-- **Modern Combat Gamepad Overhaul** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/123409)) — Gamepad-centric combat controls integration. Research before adding — evaluate overlap with TDM and the combat stack.
-
-### Risks & Compatibility
-
-- A good preset can hide weak camera behavior — judge the framework, not the preset.
-- Over-tuned cameras look impressive in clips but become tiring.
+- **Modern Combat Gamepad Overhaul** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/123409)) — Gamepad-centric combat controls integration. Evaluate overlap with TDM and the combat stack.
 
 ---
 
@@ -44,11 +39,10 @@ Restrained centered-to-light-offset baseline. Shoulder switching is a support fe
 ## Target Lock And Targeting Behavior
 
 - **TDM** as the targeting-behavior owner. Keep lock-on restrained — optional combat-readability tool, not permanent default.
-- **TrueHUD** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/62775)) — Optional feedback companion. Add only if testing shows material improvement.
+- **TrueHUD** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/62775)) — Optional feedback companion.
 
 ### Risks & Compatibility
 
-- Weak target selection/switching makes even good camera and movement feel unreliable.
 - TrueHUD can create illusion of a solved targeting system when the underlying behavior is still awkward.
 
 ---
@@ -69,7 +63,7 @@ Restrained centered-to-light-offset baseline. Shoulder switching is a support fe
 ### Alternatives
 
 - **TK Dodge SE** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/15309)) — Legacy fallback reference.
-- **Dodge for all** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/174544)) — Newer (May 2026). Too early for baseline — low community signal.
+- **Dodge for all** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/174544)) — Not baseline — low community signal.
 
 ---
 
@@ -80,11 +74,6 @@ Restrained centered-to-light-offset baseline. Shoulder switching is a support fe
 | [Valhalla Combat](https://www.nexusmods.com/skyrimspecialedition/mods/64741) | Main gameplay-side comparison for hit feedback and stagger. |
 | Precision (from → `Animations`)                                              | Adjacent support for contact feel.                          |
 
-### Risks & Compatibility
-
-- Too much stagger flattens combat; too little leaves animations unsatisfying.
-- Camera, animation timing, collision, and gameplay rules all affect impact feel — ownership blurs quickly.
-
 ---
 
 ## Third-Person Combat Systems
@@ -93,7 +82,7 @@ Restrained centered-to-light-offset baseline. Shoulder switching is a support fe
 |-------------------------------------------------------------------------------------------------------|----------|--------------------------------------------------------------|
 | [Valhalla Combat](https://www.nexusmods.com/skyrimspecialedition/mods/64741)                          | Baseline | Gameplay-rule framework.                                     |
 | SCAR (from → `Animations`)                                                                            | Baseline | NPC-side attack variety.                                     |
-| [Knockback SKSE](https://www.nexusmods.com/skyrimspecialedition/mods/171277)                          | Support  | Compatible with BFCO. Evaluate for adoption with BFCO setup. |
+| [Knockback SKSE](https://www.nexusmods.com/skyrimspecialedition/mods/171277)                          | Support  | Compatible with BFCO. |
 | [RaySense - Cover Animation](https://www.nexusmods.com/skyrimspecialedition/mods/175504)              | Optional | Cover animation system.                                      |
 | [Fire Ignites Arrows](https://www.nexusmods.com/skyrimspecialedition/mods/118544)                     | Optional | Arrow ignition from fire sources.                            |
 | [Poisoned Arrows and Bolts](https://www.nexusmods.com/skyrimspecialedition/mods/123585)               | Optional | Poison crafting for ranged ammo.                             |
@@ -143,12 +132,8 @@ Restrained centered-to-light-offset baseline. Shoulder switching is a support fe
 
 ## Third-Person Interactions: Lockpicking
 
-Gamepad-accessible lockpicking that works entirely in third-person without mouse input. Required by the design directive — every interaction must work in third-person with a gamepad.
+Gamepad-accessible lockpicking that works entirely in third-person without mouse input.
 
 | Mod                                                                                | Notes                                                                                                                    |
 |------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
 | [Break The Lock - OIF](https://www.nexusmods.com/skyrimspecialedition/mods/154901) | Physics-based lockpicking with breakable locks via OIF. Gamepad-compatible, third-person usable. Requires OIF framework. |
-
-## Open Research
-
-Open research for the third-person stack is tracked in `TODO.md`.

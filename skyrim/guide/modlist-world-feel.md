@@ -7,11 +7,11 @@ How quickly days pass, whether routine actions consume believable chunks of time
 
 ### Baseline
 - **Time Flies SE** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/39426)) — Grounded play loops without turning into abstract clock tuning.
-- **Seasons of Skyrim SKSE** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/62861)) + **Turn of the Seasons** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/63623)) — **Locked seasonal baseline.** Full summer/autumn/winter/spring asset swaps. v1.0.8 (Jun 2026, actively maintained). Requires Seasons of Skyrim SKSE (62861); **Shrubs of Snow - Seasons of Skyrim SKSE** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/63463)) is highly recommended to cover winter assets missed by SoS. **Operational cost is owned by the seasonal LOD workflow** (4× DynDOLOD passes, 4× grass caches, seasonal terrain/object LOD — see → `Performance`/`Graphics - LOD`). Azurite III (locked weather baseline) is the season-driving layer.
+- **Seasons of Skyrim SKSE** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/62861)) + **Turn of the Seasons** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/63623)) — **Locked seasonal baseline.** Full summer/autumn/winter/spring asset swaps. Actively maintained. Requires Seasons of Skyrim SKSE (62861); **Shrubs of Snow - Seasons of Skyrim SKSE** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/63463)) is highly recommended to cover winter assets missed by SoS. **Operational cost is owned by the seasonal LOD workflow** (4× DynDOLOD passes, 4× grass caches, seasonal terrain/object LOD — see → `Performance`/`Graphics - LOD`). Azurite III (locked weather baseline) is the season-driving layer.
 - **Seasonal Calendar** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/18164)) — Companion for calendar readability now that the seasonal branch is baseline.
 
 ### Alternatives
-- **[Extended Stay - Longer inn](https://www.nexusmods.com/skyrimspecialedition/mods/156)** — Optional longer-stay inn mechanic. Adopt only if the project leans into "living the world."
+- **[Extended Stay - Longer inn](https://www.nexusmods.com/skyrimspecialedition/mods/156)** — Optional longer-stay inn mechanic.
 - **[Sleep Tight SE](https://www.nexusmods.com/skyrimspecialedition/mods/20680)** — NPC sleep schedule enforcement and sleepwear.
 - **[Sleep Tight - NPCs wear underwear](https://www.nexusmods.com/skyrimspecialedition/mods/87132)** — NPC sleepwear variant without sleep schedule changes.
 
@@ -22,12 +22,12 @@ NPC-side sleep realism and downtime interaction — sleeping without dead-manneq
 
 | Mod | Type | Notes |
 |-----|------|-------|
-| [Sleeping Expanded - Animations and NPC reactions](https://www.nexusmods.com/skyrimspecialedition/mods/59250) | Add-on | JaySerpa. NPC breathing/sleeping animations, ~100 fully-voiced woken-up reactions, context-aware bed enter/exit speeds (fast combat exit = no more dying while slowly getting up). v1.23 (Aug 2023), 15,444 endorsements. ESL, no vanilla edits. OAR baseline satisfies its DAR-based animations (OAR loads DAR folders). **Choose main file** (DAR-less only if OAR absent). |
+| [Sleeping Expanded - Animations and NPC reactions](https://www.nexusmods.com/skyrimspecialedition/mods/59250) | Add-on | JaySerpa. NPC breathing/sleeping animations, ~100 fully-voiced woken-up reactions, context-aware bed enter/exit speeds (fast combat exit = no more dying while slowly getting up). ESL, no vanilla edits. OAR baseline satisfies its DAR-based animations (OAR loads DAR folders). **Choose main file** (DAR-less only if OAR absent). |
 | [Sleep Tight SE](https://www.nexusmods.com/skyrimspecialedition/mods/20680) | Alternative | NPC sleep-schedule enforcement + sleepwear (see `## Timescale` Alternatives). |
 
 ### Risks & Compatibility
 
-- No cell or record conflicts (vanilla-free edits); verify the OAR-animation interplay with any other bed/keep animation mods in → `Animations`.
+- Verify the OAR-animation interplay with any other bed/keep animation mods in → `Animations`.
 - Pairing with `Snores of Skyrim` (→ `Audio`) layers sleep ambience cleanly — no overlap.
 
 ---
@@ -43,7 +43,7 @@ How much friction, structure, and world texture sits between major locations.
 ### Alternatives
 - **Carriage Stops of Skyrim** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/10434)) — Broader route coverage.
 - **Fast Travel Cost** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/20200)) — Economic pressure on map fast travel.
-- **Journeyman - A Fast Travel Overhaul** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/92220)) — Restricts fast travel unless a Travel Pack is crafted/purchased. SKSE plugin + ESP. Fits "living the world" without forcing no-fast-travel.
+- **Journeyman - A Fast Travel Overhaul** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/92220)) — Restricts fast travel unless a Travel Pack is crafted/purchased. SKSE plugin + ESP; doesn't force full no-fast-travel.
 - **Detailed Carriages 2.0** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/89604)) — Unique redesigned look for every carriage, Hearthfire support, SMIM patch. Conflicts with the `Snazzy Diverse Carriages - BOS` baseline (→ `Textures & Meshes`) — choose one carriage visual identity. Compatible with Carriages and Stables Dialogue Bundle + Carriage Drivers Are Alive (baseline above).
 
 ---
@@ -78,7 +78,6 @@ What roads, settlements, wilderness, and interiors sound like during ordinary ex
 
 ### Alternatives
 - **Acoustic Space Improvement Fixes** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/78992)) — Interior ambience and reverb treatment.
-- **Discipline-first** — Keep current sound stack if playtesting shows world already sounds readable.
 
 ---
 
@@ -143,7 +142,7 @@ Roads as built infrastructure at mesh/geometry level (separate from surface text
 - **Point The Way** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/352)) — Navigational signposting at junctions.
 
 ### Risks & Compatibility
-- **Northern Roads** was evaluated and rejected due to patch burden at this modlist's complexity level. **Northern Roads - Clutters Only** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/126175)) is a lighter variant with only roadside clutter — re-evaluate if the full Northern Roads patch burden remains too high.
+- **Northern Roads** adds significant patch burden at this complexity level; the **Northern Roads - Clutters Only** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/126175)) variant adds only roadside clutter.
 
 ---
 
@@ -156,18 +155,18 @@ Weather-aware wind physics, dynamic cloth, and airborne particles for physical w
 | [Dynamic Wind - Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/177024) | Required data companion with weather/location profiles. |
 | [Particle Wind - SKSE Plugin](https://www.nexusmods.com/skyrimspecialedition/mods/174812) | Dust, leaves, snow, ash respond to wind direction. |
 | [Realistic Boat Bobbing SE](https://www.nexusmods.com/skyrimspecialedition/mods/26080) + [BOS Edition](https://www.nexusmods.com/skyrimspecialedition/mods/88885) | Boat bobbing with BOS mesh swap support. |
-| [R.A.S.S. - Rain Ash And Snow Shaders](https://www.nexusmods.com/skyrimspecialedition/mods/22745) | Visible rain droplets, snow accumulation, ash/frost shaders on player/NPCs. 33K+ endorsements. |
-| [Dynamic Wetness](https://www.nexusmods.com/skyrimspecialedition/mods/158207) | SKSE plugin — character wetness VFX (soak/dry gloss on skin, hair, armor, weapons) from swimming, rain, and snow. Roof/heat-source detection, NPC support, PBR-aware. 1.1K endorsements, v1.5.0a. |
+| [R.A.S.S. - Rain Ash And Snow Shaders](https://www.nexusmods.com/skyrimspecialedition/mods/22745) | Visible rain droplets, snow accumulation, ash/frost shaders on player/NPCs. |
+| [Dynamic Wetness](https://www.nexusmods.com/skyrimspecialedition/mods/158207) | SKSE plugin — character wetness VFX (soak/dry gloss on skin, hair, armor, weapons) from swimming, rain, and snow. Roof/heat-source detection, NPC support, PBR-aware. |
 | [Animated Icebergs](https://www.nexusmods.com/skyrimspecialedition/mods/121420) | Drifting iceberg meshes in northern waters. |
 | [Animated Ice Floes](https://www.nexusmods.com/skyrimspecialedition/mods/90634) | Animated ice floe meshes in cold regions. |
 | [Nocturnal Moths](https://www.nexusmods.com/skyrimspecialedition/mods/68288) | Moths flutter around exterior lanterns at night (10 PM–4 AM, MCM-tunable). Requires BOS (baseline) + [Lanterns of Skyrim II patch](https://www.nexusmods.com/skyrimspecialedition/mods/68288?tab=files) (road/settlement lantern layer is LoS II + CS Lantern Lights).|
-| [Ships On The Horizon](https://www.nexusmods.com/skyrimspecialedition/mods/79034) | Ships visible offshore in the Sea of Ghosts near Solitude, Raven Rock, and Tel Mithryn. Animated version. Fits the living-coast world-feel; animated ships and dock layer are in → `World Content` POI. |
+| [Ships On The Horizon](https://www.nexusmods.com/skyrimspecialedition/mods/79034) | Ships visible offshore in the Sea of Ghosts near Solitude, Raven Rock, and Tel Mithryn. Animated version. Animated ships and dock layer are in → `World Content` POI. |
 
 ### OIF Ecosystem — Physics-Based Interactions & Destruction
 
 | Mod | Notes |
 | --- | --- |
-| [Dynamic Inn Fireplace - OIF](https://www.nexusmods.com/skyrimspecialedition/mods/155492) | Physics-enabled inn fireplace embers, smoke, and debris via OIF. Adds ambient fire life to interiors. |
+| [Dynamic Inn Fireplace - OIF](https://www.nexusmods.com/skyrimspecialedition/mods/155492) | Physics-enabled inn fireplace embers, smoke, and debris via OIF. |
 | [No Fire During The Rain](https://www.nexusmods.com/skyrimspecialedition/mods/161369) | Exterior campfires and braziers are extinguished during rain/storms. Requires OIF. |
 | [Release The Soul - OIF](https://www.nexusmods.com/skyrimspecialedition/mods/149693) | Break filled soul gems to release the trapped soul. Requires OIF. No conflict with the soul-gem retexture/description stack. |
 | [Burn Those Insects - OIF](https://www.nexusmods.com/skyrimspecialedition/mods/180747) | Burn frostbite spider and chaurus egg sacs to ash. Requires OIF. |
@@ -175,7 +174,6 @@ Weather-aware wind physics, dynamic cloth, and airborne particles for physical w
 
 ### Risks & Compatibility
 - **Actor wetness stack + CS coexistence:** CS Wetness Effects handles terrain/objects; R.A.S.S. (droplets/frost/ash) and Dynamic Wetness (wet gloss, explicitly CS-compatible — "effects stack/merge with CS", TruePBR support in v1.4.4+) handle actor surfaces. All three are designed to coexist — verify in testing.
-- OIF-based interactions depend on the OIF framework being installed and stable in the core library stack.
 
 ---
 
@@ -183,7 +181,7 @@ Weather-aware wind physics, dynamic cloth, and airborne particles for physical w
 | Mod | Notes |
 | --- | --- |
 | Darkness baseline from the weather mod and CS pair selected in → `Graphics` | Base darkness level. |
-| [Simply Darker Nights](https://www.nexusmods.com/skyrimspecialedition/mods/14269) | Simple image-space overlay. Verify it's not redundant before adding. |
+| [Simply Darker Nights](https://www.nexusmods.com/skyrimspecialedition/mods/14269) | Simple image-space overlay. |
 | [Lanterns of Skyrim II](https://www.nexusmods.com/skyrimspecialedition/mods/30817) | Road and settlement exterior lantern placement. FOMOD patch hub covers ~30-50 patches. |
 | [CS Lantern Lights - Lanterns of Skyrim II](https://www.nexusmods.com/skyrimspecialedition/mods/179964) | CS particle lights for LoS II. Install after LoS II. |
 | [Simple Wearable Lanterns - Remastered](https://www.nexusmods.com/skyrimspecialedition/mods/132196) | Preferred carried-visibility branch. Modern, lightweight, no SKSE. |
@@ -213,7 +211,7 @@ Interactive campfire behavior for survival and immersion — sitting, cooking, r
 | Mod | Notes |
 | --- | --- |
 | [Usable Campfires](https://www.nexusmods.com/skyrimspecialedition/mods/140915) | BOS swaps worldspaces into interactive campfire furniture (cook, light, rest). Requires BOS (baseline). Optional Unlit / Rest at Campfire integration. |
-| [Campfire Animations](https://www.nexusmods.com/skyrimspecialedition/mods/112322) | OAR-based animations for campfire actions (add fuel, cook, eat at fire). Requires OAR, FormList Manipulator, MCM Helper. Campfire (Chesko) no longer hard requirement — evaluate against Starfrost-frame cooking. |
+| [Campfire Animations](https://www.nexusmods.com/skyrimspecialedition/mods/112322) | OAR-based animations for campfire actions (add fuel, cook, eat at fire). Requires OAR, FormList Manipulator, MCM Helper. Campfire not required. |
 
 ---
 
@@ -221,8 +219,4 @@ Interactive campfire behavior for survival and immersion — sitting, cooking, r
 ### Baseline
 - **Roleplaying In Skyrim - Immersive Activators** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/149908)) — Descriptive activation text (e.g., "Read Book" instead of "Activate"), hides NPC names until interaction (toggleable). 8KB, no scripts, no SKSE.
 
----
 
-## Open Research
-
-Open research for the world-feel stack is tracked in `TODO.md`.

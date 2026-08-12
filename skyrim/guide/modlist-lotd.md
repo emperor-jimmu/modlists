@@ -7,12 +7,12 @@ Treated as a foundational content pillar for the final list, not a late optional
 
 | Mod                                                                                                                                                                          | Type     | Notes                                                         |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------|---------------------------------------------------------------|
-| [Legacy of the Dragonborn](https://www.nexusmods.com/skyrimspecialedition/mods/11802) v6.10.1 (May 2026)                                                                     | Baseline | Non-negotiable centerpiece.                                   |
-| [The Curator's Companion](https://www.nexusmods.com/skyrimspecialedition/mods/38529) v7.0.8                                                                                  | Baseline | In-game tracking for museum displays and collection progress. |
-| [Legacy of the Dragonborn Patches (Official)](https://www.nexusmods.com/skyrimspecialedition/mods/30980) v6.10.7 (June 2026)                                                 | Baseline | Required integration infrastructure.                          |
-| Paintings Replacer for Legacy of the Dragonborn SSE (Nexus 13279, v1.1, Nov 2017)                                                                                            | Baseline | Texture replacer, low risk.                                   |
-| Fate Cards Remade - Legacy of The Dragonborn ([Nexus 76418](https://www.nexusmods.com/skyrimspecialedition/mods/76418))                                                                 | Baseline | 130 unique card artworks, remade meshes and display assets.   |
-| Placeable Display Cases (Nexus 131107, v3.1, Jan 2025)                                                                                                                       | Baseline | Placeable museum display cases.                               |
+| [Legacy of the Dragonborn](https://www.nexusmods.com/skyrimspecialedition/mods/11802) | Baseline | Non-negotiable centerpiece.                                   |
+| [The Curator's Companion](https://www.nexusmods.com/skyrimspecialedition/mods/38529) | Baseline | In-game tracking for museum displays and collection progress. |
+| [Legacy of the Dragonborn Patches (Official)](https://www.nexusmods.com/skyrimspecialedition/mods/30980) | Baseline | Required integration infrastructure.                          |
+| Paintings Replacer for Legacy of the Dragonborn SSE (Nexus 13279) | Baseline | Texture replacer, low risk.                                   |
+| Fate Cards Remade - Legacy of The Dragonborn ([Nexus 76418](https://www.nexusmods.com/skyrimspecialedition/mods/76418)) | Baseline | 130 unique card artworks, remade meshes and display assets.   |
+| Placeable Display Cases (Nexus 131107) | Baseline | Placeable museum display cases.                               |
 | [Achievement Injector](https://www.nexusmods.com/skyrimspecialedition/mods/126220) + [LoTD Achievement Injector](https://www.nexusmods.com/skyrimspecialedition/mods/130114) | Baseline | Museum achievement content.                                   |
 
 ---
@@ -22,7 +22,6 @@ Treated as a foundational content pillar for the final list, not a late optional
 
 - **VIGILANT** — Multiple display cases in Hall of Oddities.
 - **Unslaad** — Official patch hub support.
-- **Glenmoril** — Patch pipeline still maturing; check before locking.
 - **Project AHO** — Full display room in Hall of Secrets.
 - **Carved Brink** — Displays for Faceted Stones artifacts.
 - **The Forgotten City** — Unique items and choice reward display.
@@ -32,7 +31,6 @@ Treated as a foundational content pillar for the final list, not a late optional
 - **Moon and Star** — Unique armor/weapon display.
 - **Wyrmstooth** — Displays for unique items.
 - **Falskaar** — Base museum count supports.
-- **Sirenroot - A Verdant Tale** — Check patch status.
 - **Midwood Isle** — Official patch support.
 - **The Gray Cowl of Nocturnal** — Legendary mask display.
 - **The Breton Paladin** — Official patch support.
@@ -45,7 +43,6 @@ Treated as a foundational content pillar for the final list, not a late optional
 ### Display Expansions And Room Mods
 
 - **LOTD Display Patch Repos** — Third-party display patches not covered by official hub.
-- **Museum Display Room Expansion** — Evaluate if base museum feels cramped.
 - **Hall of Forgotten Guild** — Curator's Companion feature for additional collectible space.
 
 ### Collectible Additions
@@ -80,7 +77,7 @@ Treated as a foundational content pillar for the final list, not a late optional
 ## Submods And Quality-Of-Life
 ### Sorting And Inventory
 
-- **Legacy Safehouse Plus** — Expanded safehouse with additional crafting stations. Check v6.10+ compatibility.
+- **Legacy Safehouse Plus** — Expanded safehouse with additional crafting stations.
 - **LOTD - Explorer's Room** — Explorer-themed storage/display.
 - **Quick Light** — Not LoTD-specific but essential for museum navigation.
 - **Map Markers for LotD** — Fast-travel marker after quest conditions met.
@@ -94,7 +91,7 @@ Treated as a foundational content pillar for the final list, not a late optional
 ### Additional QoL
 
 - **Legacy of The Dragonborn - SMIM Chests** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/55720)) — SMIM-quality chest meshes for the museum displays.
-- **LOTD - Museum Exterior Music** — Low priority; evaluate after → `Audio` is locked.
+- **LOTD - Museum Exterior Music** — Low priority.
 - **Dynamic Activation Key** — Reduces E-key scroll-conflict with crowded displays.
 
 ### Relic System
