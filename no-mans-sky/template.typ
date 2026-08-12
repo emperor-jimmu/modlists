@@ -23,7 +23,7 @@
 
 // == Cover Page
 #v(2.5cm)
-#align(center)[#image("assets/logo.jpg", width: 34%)]
+#align(center)[#image("assets/logo.jpg", width: 65%)]
 #v(2.5cm)
 #align(center)[
   #text(size: 36pt, weight: "bold", fill: teal, font: "Cinzel", "Aetherial Purity")
