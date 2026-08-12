@@ -5,6 +5,7 @@
 ### GUIDE.md Conciseness Pass (Aug 2026)
 
 - [x] GUIDE.md trimmed from 4,629 → 4,300 lines (~25 KB). Removed duplicated wave intros/closings, the redundant "Performance Mods — Install and Forget" table, per-mod prose blurbs condensed to one-line bullets (Wave 0.5 What to Expect + Daily Tools, texture packs, Create Addon Details), duplicated interdependency notes (Hybrid Aquatic × Starcatcher/Better Fishtanks, Starcatcher's Delight × FD, Better Fishtanks × Create, Wave 6 trio), and fluff lines (Wave 2/3/5/6 intros, Torchmaster, Wave 7). Fixed Wave 1 broken integration table (glued `### Ores` heading), deduped Mod Count Summary (stale Wave 2 row), moved it out of the middle of Wave 7 to before Keybindings. All instructions/configs/compat notes preserved. DRIFTWOOD-GUIDE.pdf regenerated cleanly.
+- [x] Fixed accidental setext heading: Wave 6 "Chill living fit" paragraph was directly followed by `---` with no blank line, so CommonMark (via cmarker) rendered it as an H2 in the PDF ToC. Added the blank line — now renders as a normal paragraph. Scan confirmed it was the only occurrence.
 
 ### V3 Documentation (MODLIST.md) — Full V3 Mod List Written
 

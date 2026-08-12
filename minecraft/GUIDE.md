@@ -3103,6 +3103,7 @@ Futuristic laser barriers created by powering Laser Source blocks with redstone.
 - **Comparators** — use container fullness to control bridge length dynamically
 
 **Chill living fit**: Purely decorative/functional — no combat interaction, no progression pressure. Dye-customizable to match base aesthetics (warm amber lasers for cozy builds, cool blue for tech areas).
+
 ---
 
 ### Session Plan — Wave 6
