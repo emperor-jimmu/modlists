@@ -180,6 +180,10 @@ These are confirmed from the current modlist state. When evaluating armor/body/p
 
 - **Dragon War (51310):** Locked dragon combat overhaul. Structured encounter tempo. Complements Dragons Use Thu'um (87085, baseline dragon AI).
 
+### UI
+
+- **STB Active Effects (140002) + Widescreen Scale Removed for 1.6.1130+ (136793):** Locked prerequisites of Oathvein UI (160916) (user instruction 2026-08-12). Oathvein's Nexus page lists STB as soft requirement and WSR as hard requirement for 1.6.1130+ (list target 1.6.1170). STB requires SKSE Menu Framework (120352, promoted to UI baseline — DBVO2 already assumed it); WSR supersedes SWF unsquish fixes — do not combine with Complete Widescreen Fix (1778). See `modlist-ui.md` → UI Framework Prerequisites.
+
 ### Creatures — Undead
 
 - **Skeletons SE (124394):** Locked skeleton model replacer by Xtudo. 2,002 endorsements. Consistent undead visual direction with Draugrs SE (123170) and Spider SE (182638) — all Xtudo baselines.

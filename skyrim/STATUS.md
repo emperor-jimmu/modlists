@@ -537,3 +537,12 @@ Reviewed all 66 mods from `TODO.md` against Elder Wilds pillars (CS-exclusive, t
 | Adopted (needs new entry) | 39 |
 | Rejected | 11 |
 | **Total reviewed** | **66** |
+
+## Mods for review — VERDICTS (2026-08-12, Oathvein UI prerequisites)
+
+User instruction: lock **STB Active Effects (140002)** and **Widescreen Scale Removed for 1.6.1130+ (136793)** as prerequisites of the locked Oathvein UI baseline (160916). Both appear on the Oathvein UI Nexus requirements list — STB Active Effects as soft requirement, Widescreen Scale Removed as hard requirement for 1.6.1130+ (list target 1.6.1170). Neither was previously in the modlist.
+
+### Adopted — prerequisites of Oathvein UI
+
+- **STB Active Effects (140002)** — ADOPTED as Oathvein UI prerequisite (user instruction). Replaces the standard SkyUI active-effects HUD icons with a configurable widget (position, scale, time/magnitude display, source grouping, custom icons). Requires Address Library (32444, baseline) + **SKSE Menu Framework (120352)** — promoted from Alternative to UI baseline, since STB hard-requires it and DBVO2 already assumed it in the UI stack (`modlist-voicing.md:30`). `modlist-ui.md` → UI Framework Prerequisites.
+- **Widescreen Scale Removed for 1.6.1130 and higher (136793)** — ADOPTED as Oathvein UI prerequisite (user instruction). SKSE plugin removing Bethesda's native widescreen scaling (1.6.1130+) so Oathvein's Edge UI / Dear Diary–lineage SWFs render unsquished. Supersedes SWF unsquish fixes — the author explicitly warns against running unsquishing fixes alongside; **Complete Widescreen Fix (1778) must not be combined** (noted in `modlist-ui.md` → UI Scaling section). `modlist-ui.md` → UI Framework Prerequisites.
