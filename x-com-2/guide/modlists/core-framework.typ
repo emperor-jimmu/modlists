@@ -1,5 +1,6 @@
 // The 3rd Coming - Core & Framework category
-// Cards transcribed from the user-supplied [WOTC] Core Collection baseline (2026-08-12).
+// Cards transcribed from the user-supplied [WOTC] Core Collection baseline (2026-08-12)
+// and the LWOTC Community QoL Collection (2026-08-12, advanced-wave suggestions).
 // Card format:
 //   #mod-entry(name: "Mod name", url: "https://steamcommunity.com/...", deps: "...", impact: "...", notes: "...")
 // A field the user did not supply stays out of the card.
@@ -50,6 +51,38 @@ Foundational systems other mods build on: engine-level fixes, framework librarie
   name: "[WOTC] Core Collection Meta Mod",
   url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2166295671",
   notes: "This meta mod contains various compatibility patches, configuration and bug fixes for the mods in the Core Collection and the game itself. Other than Highlander, Core Collection Meta Mod is the closest thing we have to a 'community patch mod'.",
+)
+
+#mod-entry(
+  name: "[WOTC] CommanderHUD",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3505513412",
+  notes: "Adds functionality for abilities to be added to the top-right of the screen, next to the original CommandHUD. This mod has no effect on its own; other mods must make use of the feature.",
+)
+
+#mod-entry(
+  name: "Better Second Wave Mod Support",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=1149493976",
+  notes: "Allows multiple mods to add more second wave options without conflicting when it comes to localization. Also allows some SW options to be modified in campaign. (Not all are supported)",
+)
+
+#mod-entry(
+  name: "Gameplay Patch compendium for LWOTC (QoL/Fixes)",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3578777067",
+  notes: "Some mods have some options turned on by default that are gameplay affecting. While these are benign for WOTC, they do break the intended balance of LWOTC. This ain't anything against the mod creators as they do offer the ability to disable them in the config.",
+)
+
+=== Console & Utility
+
+#mod-entry(
+  name: "[WOTC] Additional Soldier Console Commands",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=1370543410",
+  notes: "Adds several new console commands that can be used from the armory and one command used in tactical missions. Though the commands may be used to do cheaty things, the primary purpose of these commands is to help.",
+)
+
+#mod-entry(
+  name: "[WOTC] XpanD's Console Commands",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3113132590",
+  notes: "Adds several new console commands to the game. Part utility, part developer stuff, part blatant cheating. (I won't judge)",
 )
 
 === Stability & Performance

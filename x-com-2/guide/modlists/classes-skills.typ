@@ -1,5 +1,6 @@
 // The 3rd Coming - Classes & Skills category
-// Cards transcribed from the user-supplied [WOTC] Core Collection baseline (2026-08-12).
+// Cards transcribed from the user-supplied [WOTC] Core Collection baseline (2026-08-12)
+// and the LWOTC Community QoL Collection (2026-08-12, advanced-wave suggestions).
 // Card format:
 //   #mod-entry(name: "Mod name", url: "https://steamcommunity.com/...", deps: "...", impact: "...", notes: "...")
 // A field the user did not supply stays out of the card.
@@ -47,6 +48,12 @@ Soldier classes, abilities, and skill trees: how your operatives grow and what t
 )
 
 #mod-entry(
+  name: "[WOTC] Reliable Ever Vigilant Redux",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3546124299",
+  notes: "Just like the previous incarnations, this mod stops Ever Vigilant from being invalidated by free neutral or uncontrollable actions. Unlike the original mod, this version does not rely on a custom effect game state, which caused EV to not always work.",
+)
+
+#mod-entry(
   name: "[WOTC] Ability Interaction Fixes",
   url: "https://steamcommunity.com/sharedfiles/filedetails/?id=1129878719",
   notes: "This is a War of the Chosen mod. 'Ability Interaction Fixes' primarily fixes several 'Ability Interactions' which are in some way bugged.",
@@ -56,6 +63,24 @@ Soldier classes, abilities, and skill trees: how your operatives grow and what t
   name: "[WotC] Scanning Protocol Fix",
   url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2365326252",
   notes: "Scanning Protocol Fix fixes the highlighted effect of Scanning Protocol and Battlescanners still being applied even if you can see the enemy. Scanning Protocol will no longer fill the battlefield with ugly red blobs!",
+)
+
+#mod-entry(
+  name: "[WOTC] Universal Threat Assessment",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3155092427",
+  notes: "Did you know that the Specialist's Threat Assessment (Aid Protocol) perk did not actually work on Templars because the effect code only took Sharpshooters into account? Well now it will work on Templars and many other classes that should use a pistol.",
+)
+
+#mod-entry(
+  name: "[WOTC] Improved Wrath Targeting",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3311002488",
+  notes: "Improves the targeting for the Skirmisher's Wrath ability, allowing you to choose the destination tile. Now you can pick from potentially up to 8 tiles (or more for larger enemies) for the Skirmisher to grapple to, allowing you to make sure you have cover.",
+)
+
+#mod-entry(
+  name: "Sacrifice Targeting Fix",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2648230104",
+  notes: "Changes the Sacrifice ability targeting to always preview the target location where the spark stops, disregarding where the mouse cursor might be. No longer will you get 10 different coverages depending on where in the target tile you place your cursor.",
 )
 
 === Class Mechanics

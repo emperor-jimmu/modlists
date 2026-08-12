@@ -11,13 +11,13 @@ A game guide and modlist scaffold for **XCOM 2: War of the Chosen** (last offici
 
 | Category | File | Status |
 |---|---|---|
-| Core & Framework | `guide/modlists/core-framework.typ` | 5 mods (Core Collection) |
-| Quality of Life | `guide/modlists/quality-of-life.typ` | 12 mods (Core Collection) |
-| UI & HUD | `guide/modlists/ui-hud.typ` | 33 mods (Core Collection) |
-| Classes & Skills | `guide/modlists/classes-skills.typ` | 7 mods (Core Collection) |
+| Core & Framework | `guide/modlists/core-framework.typ` | 10 mods (Core Collection 5 + advanced-wave 5) |
+| Quality of Life | `guide/modlists/quality-of-life.typ` | 24 mods (Core Collection 12 + advanced-wave 12) |
+| UI & HUD | `guide/modlists/ui-hud.typ` | 66 mods (Core Collection 33 + advanced-wave 33) |
+| Classes & Skills | `guide/modlists/classes-skills.typ` | 11 mods (Core Collection 7 + advanced-wave 4) |
 | Enemies & Aliens | `guide/modlists/enemies.typ` | 7 mods (Core Collection) |
 | Weapons & Gear | `guide/modlists/weapons-gear.typ` | 5 mods (Core Collection) |
-| Cosmetics & Visuals | `guide/modlists/cosmetics-visuals.typ` | 5 mods (Core Collection) |
+| Cosmetics & Visuals | `guide/modlists/cosmetics-visuals.typ` | 9 mods (Core Collection 5 + advanced-wave 4) |
 | Audio & Sound | `guide/modlists/audio.typ` | 1 mod (Core Collection) |
 
 ## Structure

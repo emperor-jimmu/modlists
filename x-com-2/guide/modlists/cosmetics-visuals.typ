@@ -1,5 +1,6 @@
 // The 3rd Coming - Cosmetics & Visuals category
-// Cards transcribed from the user-supplied [WOTC] Core Collection baseline (2026-08-12).
+// Cards transcribed from the user-supplied [WOTC] Core Collection baseline (2026-08-12)
+// and the LWOTC Community QoL Collection (2026-08-12, advanced-wave suggestions).
 // Card format:
 //   #mod-entry(name: "Mod name", url: "https://steamcommunity.com/...", deps: "...", impact: "...", notes: "...")
 // A field the user did not supply stays out of the card.
@@ -64,4 +65,28 @@ Appearance: soldier cosmetics, environment visuals, and effects. These cards cha
   name: "SQUID BE GONE!",
   url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2392049232",
   notes: "There is a mystery bug around for a very long time. Its hillarious, its scary, it comes and it goes and there was no cure to be found!",
+)
+
+#mod-entry(
+  name: "Grey Smoke Grenade",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=742478385",
+  notes: "Seriously! Who thought that this pink was a good idea? Gives Smoke Grenades and Smoke Bombs a grey smoke and blinking light, in case that wasn't obvious enough.",
+)
+
+#mod-entry(
+  name: "[WOTC] Holographic Scanning",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2234141519",
+  notes: "A simple config edit mod with some provided materials, that changes how scanned units look. It makes units that have been scanned look like the mimic beacon holograms. The original 'solid red' look...",
+)
+
+#mod-entry(
+  name: "EvilBob's Dejanker",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3314878803",
+  notes: "Inspired by, and similar to, the Avenger Dejanker mod, this mod is an attempt to fix up and improve some of the 'good enough' graphical stuff out there. It now also includes broken/missing text entries. The original Avenger Dejanker is not required.",
+)
+
+#mod-entry(
+  name: "(WOTC) Zip Mode Combat Protocol Camera Fix",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=1278585557",
+  notes: "A tiny mod to fix a tiny (but annoying) problem. If you're using zip mode, the default camera for Combat Protocol shows a close-up of your Specialist, but by the time the camera cuts away, the Gremlin is already at the target, and the whole thing just looks wrong.",
 )
