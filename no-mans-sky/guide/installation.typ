@@ -13,7 +13,7 @@ This guide targets *No Man's Sky* version *6.45.1* on *Steam*. Before anything e
 ])
 
 #callout("Tip:", [
-  Mods for No Man's Sky are `.pak` files. The game loads them from the `MODS` folder inside the install directory: `...\No Man's Sky\GAMEDATA\PCBANKS\MODS\`. You will rarely touch this folder by hand, because the manager in this guide handles it for you — but knowing where mods live makes every troubleshooting step below understandable.
+  Mods for No Man's Sky are folder-based patches since the *Worlds Part II* rework: each mod is a folder of `.EXML`/`.MBIN` patch files, and the game loads them from the `MODS` folder inside `GAMEDATA`: `...\No Man's Sky\GAMEDATA\MODS\`. The old `.pak`-in-`PCBANKS\MODS` system is obsolete — files packed that way are ignored by modern builds. You will rarely touch this folder by hand, because the manager in this guide handles it for you — but knowing where mods live makes every troubleshooting step below understandable.
 ])
 
 === Singularity — the Mod Manager
@@ -52,14 +52,14 @@ On first launch, Singularity scans for a No Man's Sky installation.
 
 1. Confirm it detected your Steam copy. The detection covers Steam, GOG, and Game Pass PC installs automatically.
 2. If detection fails, point it at your install manually: find the folder that contains `GAMEDATA` — for a default Steam install that is `...\Steam\steamapps\common\No Man's Sky\`.
-3. Confirm the mods folder the manager reports: it should resolve to `...\No Man's Sky\GAMEDATA\PCBANKS\MODS\`.
+3. Confirm the mods folder the manager reports: it should resolve to `...\No Man's Sky\GAMEDATA\MODS\`.
 
 #callout("Warning:", [
-  The mods folder must be the one *inside* `GAMEDATA\PCBANKS`. Dropping mods anywhere else does nothing. If you are not sure where Steam put the game, right-click *No Man's Sky* in your Steam library → *Manage* → *Browse local files*.
+  The mods folder must be the one *inside* `GAMEDATA`. Dropping mods into `PCBANKS\MODS` (the pre-Worlds-II location) does nothing on modern builds. If you are not sure where Steam put the game, right-click *No Man's Sky* in your Steam library → *Manage* → *Browse local files*.
 ])
 
 #callout("Note:", [
-  No Man's Sky ignores its `MODS` folder unless the switch file `enablemods.txt` exists inside `PCBANKS` — a long-standing requirement of the game itself. Singularity's setup handles the game folder, but if your mods load as vanilla, this file is the first thing to check: it must exist in `PCBANKS` (an empty file with exactly that name is enough). If the manager already created it, leave it alone.
+  Modern No Man's Sky manages mod loading through `GCMODSETTINGS.MXML` in `...\No Man's Sky\Binaries\SETTINGS\`. If mods load as vanilla, this file is the first thing to check: it may contain `DisableAllMods = true` (the game can set this itself after a crash). The file is safe to delete — the game regenerates it on next launch. The old `enablemods.txt` switch from the `PCBANKS` era is no longer part of the flow; ignore guides that still mention it.
 ])
 
 === The Aetherial Purity Profile
@@ -79,7 +79,7 @@ Every mod in this guide is listed as a *mod card* in its wave's Modlist section,
 + *Manual* — download the archive yourself and add it through the app.
 
 #callout("Note:", [
-  In this release of the guide the mod cards are pending addition — the mods themselves come from you, and the cards are placeholders waiting for your links. The moment a card has a URL, the installation flow above is all it takes to bring that mod in.
+  In this release the mod cards are filled with a curated, verified modlist (see the wave chapters), except for a few slots that remain *"user to provide"* because no maintained mod fits the wave rules — those are listed in STATUS.md. The installation flow above is all it takes to bring any card's mod in.
 ])
 
 === Managing Mods
@@ -112,6 +112,10 @@ This guide is written for version *6.45.1*, and every mod in it must be compatib
 + A mod whose page shows it was updated close to the release of 6.45.1 is the safest bet — it was most recently checked against the current game.
 + A mod that has not been touched in months may still work fine, but it is riskier.
 + Dependencies matter as much as dates: a mod that requires something you do not have is incompatible no matter how fresh it is.
+
+#callout("Note:", [
+  There is a hard floor, not just a heuristic: the *Worlds Part II* rework (late January 2025) changed how mods are packaged, and the modding community's rule of thumb is that no mod last updated before 29 January 2025 works with modern game builds. Every card in this guide's waves was verified to be updated after that date on 2026-08-12; the *"user to provide"* slots are exactly the ones where no maintained mod could be found.
+])
 
 #callout("Tip:", [
   Read each mod's own page before adding it — the page's last-updated date and listed requirements are the signals to trust, not titles or badges elsewhere. And whenever the game updates, re-run the update check and re-read the affected mod pages: a new game build can break mods that were fine the day before.
