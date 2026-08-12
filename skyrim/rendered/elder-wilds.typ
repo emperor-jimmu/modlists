@@ -1448,6 +1448,8 @@ The base menu and interface framework the rest of the UI stack builds on.
   [Hard requirement of Oathvein UI on AE 1.6.1130+ (list target 1.6.1170). Removes Bethesda's widescreen scaling so Oathvein SWFs render unsquished. Supersedes unsquish fixes — do not combine with Complete Widescreen Fix.],
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/120352")[SKSE Menu Framework]],
   [Low-level menu framework for SKSE-based UI mods. Hard dependency of STB Active Effects (140002).],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/74483")[Infinity UI]],
+  [SWF patch-loading framework for menu/HUD element replacement. Hard prerequisite of Compass Navigation Overhaul (74484); also used by Local Map Upgrade (129756). Requires Address Library (→ `Foundations`).],
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/17561")[UIExtensions]],
   [Support infrastructure, not competing UI identity.],
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/81409")[Constructible Object Custom Keyword System (COCKS)]],
@@ -1502,7 +1504,7 @@ Health, stamina, magicka, target readability, and permanent interface structure 
   [Lightweight modular widgets (clock, time, compass-free direction, stat bars). SKSE + MCM.],
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/159406")[Follower Stats]],
   [MCM-based follower stat tracking. Pairs with Nether's.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/155036")[Tween Menu Overhaul Improved]],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/143275")[Tween Menu Overhaul]],
   [Main-menu and loading-screen visual overhaul. Updated version with additional scenes.],
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/160831")[RUMINATE - Frost and Snow - Main Menu Video Pack]],
   [Frost-and-snow themed main menu cinematic.],
@@ -1832,6 +1834,7 @@ Add descriptive text to inventory item cards for better readability. All by the 
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/1778")[Complete Widescreen Fix]],
   [Secondary for ultrawide layouts. *Superseded by Widescreen Scale Removed (136793) — do not combine* (unsquish-fix class; author's compatibility warning).],
 )
+
 ---
 
 == Compass, Markers, And Minimal HUD
@@ -1849,7 +1852,7 @@ Add descriptive text to inventory item cards for better readability. All by the 
   [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Description]*],
   table.hline(stroke: 0.8pt + clr-gold),
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/74484")[Compass Navigation Overhaul]],
-  [First-pass navigational layer.],
+  [First-pass navigational layer. Requires Infinity UI (74483) → `UI Framework Prerequisites`.],
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/56123")[CoMAP - Common Marker Addon Project]],
   [Marker consistency across the FWMF ecosystem.],
 )

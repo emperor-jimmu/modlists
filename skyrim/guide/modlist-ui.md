@@ -15,6 +15,7 @@ The base menu and interface framework the rest of the UI stack builds on.
 | [STB Active Effects](https://www.nexusmods.com/skyrimspecialedition/mods/140002)                                | Prerequisite of Oathvein UI. Replaces SkyUI active-effects HUD icons with a configurable widget (position, scale, time/magnitude, source grouping). Requires Address Library (→ `Foundations`) + SKSE Menu Framework.      |
 | [Widescreen Scale Removed for 1.6.1130+](https://www.nexusmods.com/skyrimspecialedition/mods/136793)            | Hard requirement of Oathvein UI on AE 1.6.1130+ (list target 1.6.1170). Removes Bethesda's widescreen scaling so Oathvein SWFs render unsquished. Supersedes unsquish fixes — do not combine with Complete Widescreen Fix. |
 | [SKSE Menu Framework](https://www.nexusmods.com/skyrimspecialedition/mods/120352)                               | Low-level menu framework for SKSE-based UI mods. Hard dependency of STB Active Effects (140002).                                                                                                                           |
+| [Infinity UI](https://www.nexusmods.com/skyrimspecialedition/mods/74483)                                        | SWF patch-loading framework for menu/HUD element replacement. Hard prerequisite of Compass Navigation Overhaul (74484); also used by Local Map Upgrade (129756). Requires Address Library (→ `Foundations`).               |
 | [UIExtensions](https://www.nexusmods.com/skyrimspecialedition/mods/17561)                                       | Support infrastructure, not competing UI identity.                                                                                                                                                                         |
 | [Constructible Object Custom Keyword System (COCKS)](https://www.nexusmods.com/skyrimspecialedition/mods/81409) | Crafting-menu category infrastructure.                                                                                                                                                                                     |
 | [MCM Helper](https://www.nexusmods.com/skyrimspecialedition/mods/53000)                                         | Persists MCM settings across saves. Hard dependency of TDM, CNO, and others.                                                                                                                                               |
@@ -215,7 +216,7 @@ Add descriptive text to inventory item cards for better readability. All by the 
 
 | Mod                                                                                              | Description                                   |
 |--------------------------------------------------------------------------------------------------|-----------------------------------------------|
-| [Compass Navigation Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/74484)         | First-pass navigational layer.                |
+| [Compass Navigation Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/74484)         | First-pass navigational layer. Requires Infinity UI (74483) → `UI Framework Prerequisites`. |
 | [CoMAP - Common Marker Addon Project](https://www.nexusmods.com/skyrimspecialedition/mods/56123) | Marker consistency across the FWMF ecosystem. |
 
 ### Alternatives

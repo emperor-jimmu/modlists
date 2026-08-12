@@ -183,6 +183,7 @@ These are confirmed from the current modlist state. When evaluating armor/body/p
 ### UI
 
 - **STB Active Effects (140002) + Widescreen Scale Removed for 1.6.1130+ (136793):** Locked prerequisites of Oathvein UI (160916) (user instruction 2026-08-12). Oathvein's Nexus page lists STB as soft requirement and WSR as hard requirement for 1.6.1130+ (list target 1.6.1170). STB requires SKSE Menu Framework (120352, promoted to UI baseline — DBVO2 already assumed it); WSR supersedes SWF unsquish fixes — do not combine with Complete Widescreen Fix (1778). See `modlist-ui.md` → UI Framework Prerequisites.
+- **Infinity UI (74483):** Locked prerequisite of Compass Navigation Overhaul (74484) (user instruction 2026-08-12). alexsylex's SWF patch-loading framework; hard requirement per CNO's Nexus page. Also used by Local Map Upgrade (129756). See `modlist-ui.md` → UI Framework Prerequisites.
 
 ### Creatures — Undead
 
