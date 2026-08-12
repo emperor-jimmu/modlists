@@ -1,5 +1,6 @@
 // The 3rd Coming - Cosmetics & Visuals category
-// Mod cards are supplied by the user. Card format:
+// Cards transcribed from the user-supplied [WOTC] Core Collection baseline (2026-08-12).
+// Card format:
 //   #mod-entry(name: "Mod name", url: "https://steamcommunity.com/...", deps: "...", impact: "...", notes: "...")
 // A field the user did not supply stays out of the card.
 
@@ -31,10 +32,36 @@
 
 Appearance: soldier cosmetics, environment visuals, and effects. These cards change how the game *looks*, not how it plays - unless a card's Impact explicitly says otherwise.
 
-// The placeholder below shows the format. Replace it with one card per supplied mod.
+=== Soldier Appearance
+
 #mod-entry(
-  name: "user to provide",
-  deps: "user to provide",
-  impact: "user to provide",
-  notes: "user to provide",
+  name: "WOTC - Configurable Headshots",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=1273848330",
+  notes: "This small mod generates visually more pleasing soldier portrait photos. For some strange reason Firaxis tinkered with the way soldier portrait photos ('headshots') are shot in WOTC.",
+)
+
+#mod-entry(
+  name: "[WOTC] Visible Utility Items by Iridar",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2849922249",
+  notes: "This small and purely visual mod will make grenades and other utility items visible at all times in the Armory, and, with some caveats, in Tactical.",
+)
+
+=== Effects & Presentation
+
+#mod-entry(
+  name: "Post Process Status Effects",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=1290331416",
+  notes: "Adds post-process visual effects for when a soldier is affected by Fire, Acid, Poison or Disorientation so you immediately notice that.",
+)
+
+#mod-entry(
+  name: "[WOTC] Cinematic Rapid Fire (and other abilities)",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=1124794449",
+  notes: "Gives Rapid Fire, and it's ugly sister Chain Shot, their cinematic camera back! Also, with WotC, shows the reaper Banish ability the love too.",
+)
+
+#mod-entry(
+  name: "SQUID BE GONE!",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2392049232",
+  notes: "There is a mystery bug around for a very long time. Its hillarious, its scary, it comes and it goes and there was no cure to be found!",
 )

@@ -1,5 +1,6 @@
 // The 3rd Coming - Core & Framework category
-// Mod cards are supplied by the user. Card format:
+// Cards transcribed from the user-supplied [WOTC] Core Collection baseline (2026-08-12).
+// Card format:
 //   #mod-entry(name: "Mod name", url: "https://steamcommunity.com/...", deps: "...", impact: "...", notes: "...")
 // A field the user did not supply stays out of the card.
 
@@ -31,10 +32,36 @@
 
 Foundational systems other mods build on: engine-level fixes, framework libraries, and utilities that sit underneath the rest of the load. Cards in this category usually load first and are required by other categories' mods - check each card's Dependencies field.
 
-// The placeholder below shows the format. Replace it with one card per supplied mod.
+=== Engine & Framework
+
 #mod-entry(
-  name: "user to provide",
-  deps: "user to provide",
-  impact: "user to provide",
-  notes: "user to provide",
+  name: "X2WOTCCommunityHighlander v1.31.0",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=1134256495",
+  notes: "Highlander replaces a big portion of the game's code in order to make it more moddable and mod-compatible, as well as fix a lot of bugs. As implied by the name, only one Highlander mod can be used at a time.",
+)
+
+#mod-entry(
+  name: "[WotC] Mod Config Menu",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=667104300",
+  notes: "This mod (MCM) is a shared settings menu. Some mods require this mod in order for you to use the in-game configuration menus.",
+)
+
+#mod-entry(
+  name: "[WOTC] Core Collection Meta Mod",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2166295671",
+  notes: "This meta mod contains various compatibility patches, configuration and bug fixes for the mods in the Core Collection and the game itself. Other than Highlander, Core Collection Meta Mod is the closest thing we have to a 'community patch mod'.",
+)
+
+=== Stability & Performance
+
+#mod-entry(
+  name: "[WOTC] Less Overwatch Lock Ups!",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=1276342555",
+  notes: "'Less Overwatch Lock Ups!' is a bugfix mod, to hopefully cut down on 'soft locks' during complex overwatch/reaction fire situations, and also when a soldier is revealed by enemy movement. A 'soft lock' is when the game doesn't crash as such, but is stuck.",
+)
+
+#mod-entry(
+  name: "Visibility Condition Bandaid For Rapid Fire And Friends",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2847640303",
+  notes: "In high population tactical missions, abilities with followup shots can result in the game lagging whenever the unit with them moves due to the game evaluating it's use against every single target on the mission.",
 )

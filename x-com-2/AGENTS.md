@@ -4,7 +4,7 @@ XCOM 2 (War of the Chosen) modlist and game guide. Last official patch: Build 82
 
 ## Structure
 
-- `guide/` - Typst sources (installation, overview, per-category modlist files)
+- `guide/` - Typst sources (installation, overview, how-to-play, vanilla strategy, per-category modlist files)
 - `output/` - generated PDF (`the-3rd-coming.pdf`)
 - `assets/` - static assets (`logo.jpg`)
 - `template.typ` - Typst master template (cover, TOC, page setup, fonts, dark neon theme)
@@ -16,6 +16,7 @@ XCOM 2 (War of the Chosen) modlist and game guide. Last official patch: Build 82
 
 ## Key Rules
 
+- Mods have to be categorized: every supplied mod card must be placed in one (and only one) category file under `guide/modlists/`. The eight categories are core-framework, quality-of-life, ui-hud, classes-skills, enemies, weapons-gear, cosmetics-visuals, audio. A card is never left loose in a file or in the wrong category.
 - Required mod-entry fields (user supplies all): clickable name + URL, dependencies, system/mechanic impact, other notes. A field the user did not supply stays blank or reads "user to provide" - never invent or research the missing data.
 - No fabrication: no mod name or URL appears in guide files until the user supplies it.
 - Mod source: Steam Workshop. Mod organizer: Alternative Mod Launcher (AML).

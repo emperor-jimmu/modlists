@@ -30,7 +30,7 @@
 #set par(justify: true, leading: 0.62em, spacing: 0.55em)
 
 // ---- headings
-#show heading: set block(above: 1.3em, below: 0.45em)
+#show heading: set block(above: 1.3em, below: 0.85em)
 #show heading.where(level: 1): set text(font: "Bahnschrift", size: 21pt, weight: "bold", fill: cyan)
 #show heading.where(level: 2): set text(font: "Bahnschrift", size: 15pt, weight: "bold", fill: cyan)
 #show heading.where(level: 3): set text(font: "Bahnschrift", size: 11.5pt, weight: "bold", fill: red)
@@ -43,18 +43,14 @@
 // Typst include scope does not share #let bindings into the included file.
 // See guide/installation.typ (callout) and guide/modlists/*.typ (mod-entry).
 
-// ---- glitch title (layered red/cyan copies behind the main text)
-#let glitch-title(t, size: 44pt) = block(width: 100%)[
-  #place(dx: -1.5pt, dy: -1.2pt)[#text(font: "Bahnschrift", size: size, weight: "bold", fill: red, t)]
-  #place(dx: 1.5pt, dy: 1.2pt)[#text(font: "Bahnschrift", size: size, weight: "bold", fill: cyan, t)]
-  #text(font: "Bahnschrift", size: size, weight: "bold", fill: ink, t)
-]
+// ---- cover title (single clean layer; earlier layered glitch rendered garbled)
+#let cover-title(t, size: 44pt) = text(font: "Bahnschrift", size: size, weight: "bold", fill: ink, t)
 
 // ==================== Cover ====================
 #v(1.5cm)
 #align(center)[#image("assets/logo.jpg", width: 58%)]
 #v(1.1cm)
-#align(center)[#glitch-title("THE 3RD COMING")]
+#align(center)[#cover-title("THE 3RD COMING")]
 #v(0.55cm)
 #align(center)[#text(font: "Bahnschrift", size: 13.5pt, fill: dim)[XCOM 2: War of the Chosen — Modlist & Guide]]
 #v(0.9cm)
@@ -81,10 +77,20 @@
 #include "guide/overview.typ"
 #pagebreak()
 
+// ==================== How to Play ====================
+= How to Play
+#include "guide/how-to-play.typ"
+#pagebreak()
+
+// ==================== Vanilla Strategy ====================
+= Vanilla Strategy
+#include "guide/strategy.typ"
+#pagebreak()
+
 // ==================== The Modlist ====================
 = The Modlist
 
-Every mod in this guide appears as a *mod card*: a clickable Workshop link plus the four facts that matter — dependencies, system / mechanic impact, other notes. The cards are supplied by the user; a field the user did not supply reads *user to provide*.
+Every mod in this guide appears as a *mod card*: a clickable Workshop link plus the facts that matter — dependencies, system / mechanic impact, other notes. The cards are transcribed from the user-supplied baseline, the [WOTC] Core Collection (75 mods); a field the user did not supply stays out of the card.
 
 #v(6pt)
 #include "guide/modlists/core-framework.typ"

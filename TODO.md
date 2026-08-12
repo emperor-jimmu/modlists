@@ -32,7 +32,7 @@
 [x] 26. No Man's Sky
 [ ] 27. Oxygen Not Included
 [ ] 28. Starfield
-[ ] 29. X-COM 2
+[~] 29. X-COM 2
 [ ] 30. X4: Foundations
 [ ] 31. Civilization IV (only Caveman 2 Cosmos in Wave 3)
 

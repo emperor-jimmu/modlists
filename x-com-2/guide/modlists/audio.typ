@@ -1,5 +1,6 @@
 // The 3rd Coming - Audio & Sound category
-// Mod cards are supplied by the user. Card format:
+// Cards transcribed from the user-supplied [WOTC] Core Collection baseline (2026-08-12).
+// Card format:
 //   #mod-entry(name: "Mod name", url: "https://steamcommunity.com/...", deps: "...", impact: "...", notes: "...")
 // A field the user did not supply stays out of the card.
 
@@ -31,10 +32,8 @@
 
 Music, voice, and sound design: the audio layer of the campaign. Pure presentation unless a card's Impact says otherwise.
 
-// The placeholder below shows the format. Replace it with one card per supplied mod.
 #mod-entry(
-  name: "user to provide",
-  deps: "user to provide",
-  impact: "user to provide",
-  notes: "user to provide",
+  name: "Quieter Warlock Skills",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2729803041",
+  notes: "Gives the warlock adjusted animations that use quieter sectoid noises instead of the eardrum-destroying garbage he usually does. Impacts mind scorch, summon zombies, mind control.",
 )
