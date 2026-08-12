@@ -3,36 +3,37 @@
 ---
 
 ## Lighting Overhaul Strategy
+
 Build lighting as a coherent layer supporting the shader-first visual direction, stronger world scale, and third-person readability. Interior mood matters, but so do readability, compatibility cost, and coherence with the final weather route. The baseline is a Community Shaders-native stack with much lower patch burden than the LUX family.
 
 **⏱ Install order:** SLT → CS Light + True Light + WSU → Based Lighting Configs → Ambient Templates → Helios → Embers XD → Luminous Atronachs.
 
 ### Core CS-Native Stack
 
-| Mod | Role | Notes |
-| --- | --- | --- |
-| [Standard Lighting Templates (SLT)](https://www.nexusmods.com/skyrimspecialedition/mods/66943) | Foundation | Standardized light template records. Replaces per-cell template work. |
-| [CS Light](https://www.nexusmods.com/skyrimspecialedition/mods/138443) | Core | CS-native interior/exterior lighting. |
-| [True Light](https://www.nexusmods.com/skyrimspecialedition/mods/135488) | Exterior bulbs | Exterior bulb placement via Light Placer. **Pin v3.4.1** — v3.5.x breaks LoS II lamppost ground illumination. |
-| [Window Shadows Ultimate (WSU)](https://www.nexusmods.com/skyrimspecialedition/mods/150494) | Interior | Interior shadowed windows. |
-| [Ambient Templates for Lighting Mods](https://www.nexusmods.com/skyrimspecialedition/mods/153425) | Required | Required by the CS-native stack. |
+| Mod                                                                                               | Role           | Notes                                                                                                         |
+|---------------------------------------------------------------------------------------------------|----------------|---------------------------------------------------------------------------------------------------------------|
+| [Standard Lighting Templates (SLT)](https://www.nexusmods.com/skyrimspecialedition/mods/66943)    | Foundation     | Standardized light template records. Replaces per-cell template work.                                         |
+| [CS Light](https://www.nexusmods.com/skyrimspecialedition/mods/138443)                            | Core           | CS-native interior/exterior lighting.                                                                         |
+| [True Light](https://www.nexusmods.com/skyrimspecialedition/mods/135488)                          | Exterior bulbs | Exterior bulb placement via Light Placer. **Pin v3.4.1** — v3.5.x breaks LoS II lamppost ground illumination. |
+| [Window Shadows Ultimate (WSU)](https://www.nexusmods.com/skyrimspecialedition/mods/150494)       | Interior       | Interior shadowed windows.                                                                                    |
+| [Ambient Templates for Lighting Mods](https://www.nexusmods.com/skyrimspecialedition/mods/153425) | Required       | Required by the CS-native stack.                                                                              |
 
 > **True Light FOMOD:** Select **Exterior mode** — attaches bulbs to exterior meshes (braziers, campfires, torches, lanterns) via Light Placer. This replaces Lux Orbis's exterior lighting role.
 
 ### Configuration & Ambient
 
-| Mod | Role | Notes |
-| --- | --- | --- |
-| [Based Lighting Configs](https://www.nexusmods.com/skyrimspecialedition/mods/136870) | Presets | Standardizes tone/behavior across interiors/exteriors. |
-| [Helios](https://www.nexusmods.com/skyrimspecialedition/mods/181533) | Ambient | Dynamic auto-ambient adjustment for interiors and exteriors via Community Shaders. |
+| Mod                                                                                  | Role    | Notes                                                                              |
+|--------------------------------------------------------------------------------------|---------|------------------------------------------------------------------------------------|
+| [Based Lighting Configs](https://www.nexusmods.com/skyrimspecialedition/mods/136870) | Presets | Standardizes tone/behavior across interiors/exteriors.                             |
+| [Helios](https://www.nexusmods.com/skyrimspecialedition/mods/181533)                 | Ambient | Dynamic auto-ambient adjustment for interiors and exteriors via Community Shaders. |
 
 ### Fire & Effects
 
-| Mod | Role | Notes |
-| --- | --- | --- |
-| [Embers XD](https://www.nexusmods.com/skyrimspecialedition/mods/37085) | Fire | Install after main lighting overhauls. CS particle-light support built in. → `Graphics - Lighting` |
-| [Luminous Atronachs](https://www.nexusmods.com/skyrimspecialedition/mods/27732) | Effects | Self-illuminating atronachs via particle lights. |
-| [KD Realistic Fireplaces](https://www.nexusmods.com/skyrimspecialedition/mods/28877) | Fire | Optional fireplace visual upgrade. Cosmetic only. |
+| Mod                                                                                  | Role    | Notes                                                                                              |
+|--------------------------------------------------------------------------------------|---------|----------------------------------------------------------------------------------------------------|
+| [Embers XD](https://www.nexusmods.com/skyrimspecialedition/mods/37085)               | Fire    | Install after main lighting overhauls. CS particle-light support built in. → `Graphics - Lighting` |
+| [Luminous Atronachs](https://www.nexusmods.com/skyrimspecialedition/mods/27732)      | Effects | Self-illuminating atronachs via particle lights.                                                   |
+| [KD Realistic Fireplaces](https://www.nexusmods.com/skyrimspecialedition/mods/28877) | Fire    | Optional fireplace visual upgrade. Cosmetic only.                                                  |
 
 ### Alternatives
 

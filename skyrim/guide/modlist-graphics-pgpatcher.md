@@ -3,6 +3,7 @@
 ---
 
 ## PGPatcher Workflow
+
 PGPatcher is a post-installation patcher that generates parallax and PBR-compatible meshes from the installed texture and mesh stack. It must run after the main texture, mesh, parallax, and PBR candidate set is mostly chosen so it works against a stable asset baseline.
 
 | Mod                                                                     | Type     | Notes                                                                         |

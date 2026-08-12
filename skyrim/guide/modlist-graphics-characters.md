@@ -1,6 +1,7 @@
 # Characters & Creatures
 
 ## Character, Skin, And Creature Visuals
+
 Baseline visual treatment for player bodies, skin textures, and common creature visuals before NPC-specific overhauls are chosen. Target: grounded modern look that holds up in third person without drifting into overly glossy, doll-like, or hyper-stylized presentation.
 
 ### Body Bases And Skins
@@ -9,31 +10,31 @@ Baseline visual treatment for player bodies, skin textures, and common creature 
 
 #### Female Body
 
-| Mod | Notes |
-| --- | --- |
-| [CBBE NSFW](https://www.nexusmods.com/skyrimspecialedition/mods/74257) | Female body base. |
-| [CBBE 3BA (3BBB)](https://www.nexusmods.com/skyrimspecialedition/mods/30174) | Extension and preset ecosystem. |
-| [BnP — Female Skin](https://www.nexusmods.com/skyrimspecialedition/mods/65274) | Female skin textures. |
+| Mod                                                                            | Notes                           |
+|--------------------------------------------------------------------------------|---------------------------------|
+| [CBBE NSFW](https://www.nexusmods.com/skyrimspecialedition/mods/74257)         | Female body base.               |
+| [CBBE 3BA (3BBB)](https://www.nexusmods.com/skyrimspecialedition/mods/30174)   | Extension and preset ecosystem. |
+| [BnP — Female Skin](https://www.nexusmods.com/skyrimspecialedition/mods/65274) | Female skin textures.           |
 
 #### Male Body
 
-| Mod | Notes |
-| --- | --- |
-| [HIMBO](https://www.nexusmods.com/skyrimspecialedition/mods/74174) | Male body base. |
+| Mod                                                                          | Notes               |
+|------------------------------------------------------------------------------|---------------------|
+| [HIMBO](https://www.nexusmods.com/skyrimspecialedition/mods/74174)           | Male body base.     |
 | [BnP — Male Skin](https://www.nexusmods.com/skyrimspecialedition/mods/65402) | Male skin textures. |
 
 #### Character Creation
 
-| Mod | Notes |
-| --- | --- |
-| [RaceMenu SE](https://www.nexusmods.com/skyrimspecialedition/mods/29624) | Character creation framework. |
-| [Racemenu Enhancer](https://www.nexusmods.com/skyrimspecialedition/mods/182536) | RaceMenu addon: smooth camera, player rotation, freeze (incl. blinking), idle previews, hide UI, strip equipment. |
-| High Poly Head 1.4 SE | [Google Drive mirror](https://drive.google.com/drive/folders/1V_jcYzwTiKnSv8Dbv-7Z0hh9SWbkn6Bi). Pair with Expressive Facegen Morphs + Expressive Facial Animation (Female + Male). |
-| [SlimFantasy — 3BAv2 Body Preset](https://www.nexusmods.com/skyrimspecialedition/mods/119145) | Female Bodyslide preset. Slim/lean dancer physique. |
-| [HIMBO Preset — Chadborn](https://www.nexusmods.com/skyrimspecialedition/mods/155757) | Male Bodyslide preset. Muscular build. |
-| [Lovely Makeup — Racemenu Overlays](https://www.nexusmods.com/skyrimspecialedition/mods/94271) | Makeup overlay collection. |
-| [Lovely Makeup 2](https://www.nexusmods.com/skyrimspecialedition/mods/102335) | Additional makeup overlays. |
-| [Koralina's Freckles and Moles](https://www.nexusmods.com/skyrimspecialedition/mods/62508) | Freckle and mole overlays. |
+| Mod                                                                                            | Notes                                                                                                                                                                               |
+|------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [RaceMenu SE](https://www.nexusmods.com/skyrimspecialedition/mods/29624)                       | Character creation framework.                                                                                                                                                       |
+| [Racemenu Enhancer](https://www.nexusmods.com/skyrimspecialedition/mods/182536)                | RaceMenu addon: smooth camera, player rotation, freeze (incl. blinking), idle previews, hide UI, strip equipment.                                                                   |
+| High Poly Head 1.4 SE                                                                          | [Google Drive mirror](https://drive.google.com/drive/folders/1V_jcYzwTiKnSv8Dbv-7Z0hh9SWbkn6Bi). Pair with Expressive Facegen Morphs + Expressive Facial Animation (Female + Male). |
+| [SlimFantasy — 3BAv2 Body Preset](https://www.nexusmods.com/skyrimspecialedition/mods/119145)  | Female Bodyslide preset. Slim/lean dancer physique.                                                                                                                                 |
+| [HIMBO Preset — Chadborn](https://www.nexusmods.com/skyrimspecialedition/mods/155757)          | Male Bodyslide preset. Muscular build.                                                                                                                                              |
+| [Lovely Makeup — Racemenu Overlays](https://www.nexusmods.com/skyrimspecialedition/mods/94271) | Makeup overlay collection.                                                                                                                                                          |
+| [Lovely Makeup 2](https://www.nexusmods.com/skyrimspecialedition/mods/102335)                  | Additional makeup overlays.                                                                                                                                                         |
+| [Koralina's Freckles and Moles](https://www.nexusmods.com/skyrimspecialedition/mods/62508)     | Freckle and mole overlays.                                                                                                                                                          |
 
 ### Face Mesh Branch Notes
 
@@ -120,31 +121,31 @@ Distributes different BodySlide presets across NPCs so the world doesn't look li
 
 ### Clothing And Armor Texture Upgrades
 
-| Mod | Notes |
-| --- | --- |
-| [Faultier's PBR Armors and Clothes](https://www.nexusmods.com/skyrimspecialedition/mods/175319) (2.9 GB) | Complete PBR retexture of all vanilla armors/weapons/clothes. Requires CS + PGPatcher. |
-| [RUSTIC CLOTHING — SE](https://www.nexusmods.com/skyrimspecialedition/mods/4703) | Higher-res clothing textures. Test for style consistency. |
-| [Dwemer Armors and Weapons Retexture SE](https://www.nexusmods.com/skyrimspecialedition/mods/93088) | Gear-side companion to VPBR's Dwemer ruin textures. |
-| [Steel Armor Redone — PBR](https://www.nexusmods.com/skyrimspecialedition/mods/177513) | PBR retexture of CC Steel Armor. Requires CC Alternative Armors — Steel Soldier, CS, PGPatcher. Optional. |
-| [Robes Retexture SE](https://www.nexusmods.com/skyrimspecialedition/mods/110655) | Higher-quality robe textures for all vanilla robes. |
-| [Divine Crusader Retexture SE](https://www.nexusmods.com/skyrimspecialedition/mods/123738) | Retexture of Divine Crusader armor set. |
-| [aMidianBorn Book of Silence SE](https://www.nexusmods.com/skyrimspecialedition/mods/35382) | Comprehensive armor/weapon/dragon retexture. |
-| [aMidianBorn Content Addon](https://www.nexusmods.com/skyrimspecialedition/mods/35390) | Extends aMidianBorn coverage to additional armors. Install after Book of Silence. |
-| [aMidianBorn Content Addon - 3BA and HIMBO Patch](https://www.nexusmods.com/skyrimspecialedition/mods/144952) | Body refit patch for Content Addon. |
-| [Resurgence Armory - Artifact Weapons and Armor Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/83855) | Visual overhaul for artifact weapons and armor models. |
-| [3BA and HIMBO Refits for Resurgence Armors](https://www.nexusmods.com/skyrimspecialedition/mods/85669) | Body refit for Resurgence Armory armors. |
-| [HDT-SMP Vanilla Armors](https://www.nexusmods.com/skyrimspecialedition/mods/142450) | Adds HDT-SMP physics to all vanilla armors. |
-| [HDT-SMP College Mage Robes](https://www.nexusmods.com/skyrimspecialedition/mods/183045) | Adds FSMP cloth physics to vanilla College mage robes (Apprentice, Journeyman, Archmage, CC Vagrant). Compatible with CBBE, 3BA, HIMBO. Requires FSMP (baseline). Complemented by Clutter-free HIMBO College Robes (133675) for BodySlide zap projects. |
-| [Mage Clothing Expansion](https://www.nexusmods.com/skyrimspecialedition/mods/128173) | 25 new lore-friendly mage robes (9 male / 9 female + darker variants + hood), crafted from vanilla assets. Craftable at tanning rack (3 leather). SPID distribution to College NPCs available. Prebuilt HIMBO + CBBE Curvy meshes. ESL-flagged. |
-| [Mage Clothing Expansion - 3BA Uniboob](https://www.nexusmods.com/skyrimspecialedition/mods/128838) | CBBE 3BA conversion for MCE. Required for body-stack consistency with the SlimFantasy 3BA preset. Chain-adopted companion. |
+| Mod                                                                                                                  | Notes                                                                                                                                                                                                                                                   |
+|----------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Faultier's PBR Armors and Clothes](https://www.nexusmods.com/skyrimspecialedition/mods/175319) (2.9 GB)             | Complete PBR retexture of all vanilla armors/weapons/clothes. Requires CS + PGPatcher.                                                                                                                                                                  |
+| [RUSTIC CLOTHING — SE](https://www.nexusmods.com/skyrimspecialedition/mods/4703)                                     | Higher-res clothing textures. Test for style consistency.                                                                                                                                                                                               |
+| [Dwemer Armors and Weapons Retexture SE](https://www.nexusmods.com/skyrimspecialedition/mods/93088)                  | Gear-side companion to VPBR's Dwemer ruin textures.                                                                                                                                                                                                     |
+| [Steel Armor Redone — PBR](https://www.nexusmods.com/skyrimspecialedition/mods/177513)                               | PBR retexture of CC Steel Armor. Requires CC Alternative Armors — Steel Soldier, CS, PGPatcher. Optional.                                                                                                                                               |
+| [Robes Retexture SE](https://www.nexusmods.com/skyrimspecialedition/mods/110655)                                     | Higher-quality robe textures for all vanilla robes.                                                                                                                                                                                                     |
+| [Divine Crusader Retexture SE](https://www.nexusmods.com/skyrimspecialedition/mods/123738)                           | Retexture of Divine Crusader armor set.                                                                                                                                                                                                                 |
+| [aMidianBorn Book of Silence SE](https://www.nexusmods.com/skyrimspecialedition/mods/35382)                          | Comprehensive armor/weapon/dragon retexture.                                                                                                                                                                                                            |
+| [aMidianBorn Content Addon](https://www.nexusmods.com/skyrimspecialedition/mods/35390)                               | Extends aMidianBorn coverage to additional armors. Install after Book of Silence.                                                                                                                                                                       |
+| [aMidianBorn Content Addon - 3BA and HIMBO Patch](https://www.nexusmods.com/skyrimspecialedition/mods/144952)        | Body refit patch for Content Addon.                                                                                                                                                                                                                     |
+| [Resurgence Armory - Artifact Weapons and Armor Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/83855) | Visual overhaul for artifact weapons and armor models.                                                                                                                                                                                                  |
+| [3BA and HIMBO Refits for Resurgence Armors](https://www.nexusmods.com/skyrimspecialedition/mods/85669)              | Body refit for Resurgence Armory armors.                                                                                                                                                                                                                |
+| [HDT-SMP Vanilla Armors](https://www.nexusmods.com/skyrimspecialedition/mods/142450)                                 | Adds HDT-SMP physics to all vanilla armors.                                                                                                                                                                                                             |
+| [HDT-SMP College Mage Robes](https://www.nexusmods.com/skyrimspecialedition/mods/183045)                             | Adds FSMP cloth physics to vanilla College mage robes (Apprentice, Journeyman, Archmage, CC Vagrant). Compatible with CBBE, 3BA, HIMBO. Requires FSMP (baseline). Complemented by Clutter-free HIMBO College Robes (133675) for BodySlide zap projects. |
+| [Mage Clothing Expansion](https://www.nexusmods.com/skyrimspecialedition/mods/128173)                                | 25 new lore-friendly mage robes (9 male / 9 female + darker variants + hood), crafted from vanilla assets. Craftable at tanning rack (3 leather). SPID distribution to College NPCs available. Prebuilt HIMBO + CBBE Curvy meshes. ESL-flagged.         |
+| [Mage Clothing Expansion - 3BA Uniboob](https://www.nexusmods.com/skyrimspecialedition/mods/128838)                  | CBBE 3BA conversion for MCE. Required for body-stack consistency with the SlimFantasy 3BA preset. Chain-adopted companion.                                                                                                                              |
 | [Clutter-free HIMBO College Robes and MCE](https://www.nexusmods.com/skyrimspecialedition/mods/133675) | BodySlide zap projects for HIMBO college robes + HDT-SMP CMR + MCE (satchel/pouch removal, sleeve/pants cuffs, collar zap, fur trim zap). Also fixes vertex scrunching on HIMBO's stock Archmage robes. FOMOD. Requires HDT-SMP College Mage Robes (183045) + MCE (128173).
 
 ---
 
 ### Recommended Creature Baseline
 
-| Mod | Notes |
-| --- | --- |
+| Mod                                                                                                 | Notes                        |
+|-----------------------------------------------------------------------------------------------------|------------------------------|
 | [Bellyaches Animal and Creature Pack SSE](https://www.nexusmods.com/skyrimspecialedition/mods/6839) | Creature texture foundation. |
 
 ---
@@ -158,25 +159,26 @@ Distributes different BodySlide presets across NPCs so the world doesn't look li
 ---
 
 ## Hair, Eyes, And Beards
+
 Per-character face assets: hairstyles, eye textures, and beard options. Ensures character close-ups match the grim-dark tone without pulling in full NPC face-gen overhauls.
 
-| Mod | Type | Notes |
-| --- | --- | --- |
-| [KS Hairdos SSE](https://www.nexusmods.com/skyrimspecialedition/mods/6817) | Baseline | Community-canonical hair pack. |
-| [High Poly Vanilla Hair](https://www.nexusmods.com/skyrimspecialedition/mods/41863) | Baseline | Higher-poly vanilla hair meshes (smooth geometry, 3D braids, UV tweaks). Replaces the vanilla styles NPCs/player use; complements KS Hairdos (which adds its own styles, not vanilla replacements). Human races. No ESP. |
-| [Modular SMP Hairstyles](https://www.nexusmods.com/skyrimspecialedition/mods/93608) | Add-on | 100+ unisex SMP hairstyle combos (mix & match front/back) added to the hair slider. Requires FSMP (baseline). Physics cost on the wearer only. Verify against SMP-NPC crash fix (baseline) when used on NPC distribution. ESL. |
-| [Eyes Nouveaux](https://www.nexusmods.com/skyrimspecialedition/mods/131210) | Baseline | Khisartin-style eye textures, grim-dark tone. |
-| [LDD Clean Cubemap for Eyes 4K](https://www.nexusmods.com/skyrimspecialedition/mods/168060) | Baseline | Cleaner eye cubemaps. Stacks on eye-texture baseline. |
-| [Brows](https://www.nexusmods.com/skyrimspecialedition/mods/1062) | Baseline | Brow shape and texture replacer for all races. |
-| [Better Argonian Horns](https://www.nexusmods.com/skyrimspecialedition/mods/80568) | Baseline | Higher-quality Argonian horn meshes and textures. BOS-based. |
-| [The Eyes Of Beauty SSE](https://www.nexusmods.com/skyrimspecialedition/mods/16185) | Alternative | Community-standard alternative to Eyes Nouveaux. |
-| [Argonian - Khajiit FabULook Eyes SSE](https://www.nexusmods.com/skyrimspecialedition/mods/15136) | Alternative | High-res eye textures for Argonian and Khajiit. |
-| [Beards of Power](https://www.nexusmods.com/skyrimspecialedition/mods/42635) | Alternative | High-fidelity beard meshes and textures. Adds variety over vanilla. |
-| [BnP - Teeth Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/84288) | Alternative | Higher-quality teeth meshes/textures. Complements BnP skin stack. |
-| [New Beast Feet](https://www.nexusmods.com/skyrimspecialedition/mods/107689) | Alternative | Higher-detail beast race (Khajiit/Argonian) feet with claws/digits. |
-| [SG Female Eyebrows](https://www.nexusmods.com/skyrimspecialedition/mods/25890) + [Improved](https://www.nexusmods.com/skyrimspecialedition/mods/93266) | Alternative | Higher-fidelity female eyebrow shapes. Use Improved variant. |
-| [Eyes of Beauty - Nouveaux](https://www.nexusmods.com/skyrimspecialedition/mods/152223) | Alternative | Combines Eyes Nouveaux meshes with The Eyes of Beauty textures. Requires both as dependencies. |
-| Discipline-first route | Alternative | Rely on vanilla hair and eye textures entirely. |
+| Mod                                                                                                                                                     | Type        | Notes                                                                                                                                                                                                                          |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [KS Hairdos SSE](https://www.nexusmods.com/skyrimspecialedition/mods/6817)                                                                              | Baseline    | Community-canonical hair pack.                                                                                                                                                                                                 |
+| [High Poly Vanilla Hair](https://www.nexusmods.com/skyrimspecialedition/mods/41863)                                                                     | Baseline    | Higher-poly vanilla hair meshes (smooth geometry, 3D braids, UV tweaks). Replaces the vanilla styles NPCs/player use; complements KS Hairdos (which adds its own styles, not vanilla replacements). Human races. No ESP.       |
+| [Modular SMP Hairstyles](https://www.nexusmods.com/skyrimspecialedition/mods/93608)                                                                     | Add-on      | 100+ unisex SMP hairstyle combos (mix & match front/back) added to the hair slider. Requires FSMP (baseline). Physics cost on the wearer only. Verify against SMP-NPC crash fix (baseline) when used on NPC distribution. ESL. |
+| [Eyes Nouveaux](https://www.nexusmods.com/skyrimspecialedition/mods/131210)                                                                             | Baseline    | Khisartin-style eye textures, grim-dark tone.                                                                                                                                                                                  |
+| [LDD Clean Cubemap for Eyes 4K](https://www.nexusmods.com/skyrimspecialedition/mods/168060)                                                             | Baseline    | Cleaner eye cubemaps. Stacks on eye-texture baseline.                                                                                                                                                                          |
+| [Brows](https://www.nexusmods.com/skyrimspecialedition/mods/1062)                                                                                       | Baseline    | Brow shape and texture replacer for all races.                                                                                                                                                                                 |
+| [Better Argonian Horns](https://www.nexusmods.com/skyrimspecialedition/mods/80568)                                                                      | Baseline    | Higher-quality Argonian horn meshes and textures. BOS-based.                                                                                                                                                                   |
+| [The Eyes Of Beauty SSE](https://www.nexusmods.com/skyrimspecialedition/mods/16185)                                                                     | Alternative | Community-standard alternative to Eyes Nouveaux.                                                                                                                                                                               |
+| [Argonian - Khajiit FabULook Eyes SSE](https://www.nexusmods.com/skyrimspecialedition/mods/15136)                                                       | Alternative | High-res eye textures for Argonian and Khajiit.                                                                                                                                                                                |
+| [Beards of Power](https://www.nexusmods.com/skyrimspecialedition/mods/42635)                                                                            | Alternative | High-fidelity beard meshes and textures. Adds variety over vanilla.                                                                                                                                                            |
+| [BnP - Teeth Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/84288)                                                                       | Alternative | Higher-quality teeth meshes/textures. Complements BnP skin stack.                                                                                                                                                              |
+| [New Beast Feet](https://www.nexusmods.com/skyrimspecialedition/mods/107689)                                                                            | Alternative | Higher-detail beast race (Khajiit/Argonian) feet with claws/digits.                                                                                                                                                            |
+| [SG Female Eyebrows](https://www.nexusmods.com/skyrimspecialedition/mods/25890) + [Improved](https://www.nexusmods.com/skyrimspecialedition/mods/93266) | Alternative | Higher-fidelity female eyebrow shapes. Use Improved variant.                                                                                                                                                                   |
+| [Eyes of Beauty - Nouveaux](https://www.nexusmods.com/skyrimspecialedition/mods/152223)                                                                 | Alternative | Combines Eyes Nouveaux meshes with The Eyes of Beauty textures. Requires both as dependencies.                                                                                                                                 |
+| Discipline-first route                                                                                                                                  | Alternative | Rely on vanilla hair and eye textures entirely.                                                                                                                                                                                |
 
 Keep the beard decision minimal; vanilla beards work well with the chosen body and face mesh stack.
 
@@ -190,13 +192,14 @@ Keep the beard decision minimal; vanilla beards work well with the chosen body a
 ---
 
 ## Skeleton And Bone Replacers
+
 Visual upgrades to in-world skeleton and bone assets: skulls, bone piles, skeleton models in dungeons, Nordic ruins, draugr crypts, dragon priest rooms. Kept separate from the rigged skeleton baseline in → `Animations`.
 
-| Mod | Type | Notes |
-| --- | --- | --- |
-| [Skeleton Replacer HD — SE](https://www.nexusmods.com/skyrimspecialedition/mods/52845) | Baseline | High-res skeleton/bone models. Choose **2K** main file. |
-| [Skeleton Replacer HD — Mesh Patches](https://www.nexusmods.com/skyrimspecialedition/mods/177253) | Baseline | Add only if modlist includes a creature/content mod needing a mesh patch. |
-| Discipline-first route | Alternative | Rely on vanilla skeleton assets. |
+| Mod                                                                                               | Type        | Notes                                                                     |
+|---------------------------------------------------------------------------------------------------|-------------|---------------------------------------------------------------------------|
+| [Skeleton Replacer HD — SE](https://www.nexusmods.com/skyrimspecialedition/mods/52845)            | Baseline    | High-res skeleton/bone models. Choose **2K** main file.                   |
+| [Skeleton Replacer HD — Mesh Patches](https://www.nexusmods.com/skyrimspecialedition/mods/177253) | Baseline    | Add only if modlist includes a creature/content mod needing a mesh patch. |
+| Discipline-first route                                                                            | Alternative | Rely on vanilla skeleton assets.                                          |
 
 ### Risks & Compatibility
 

@@ -31,7 +31,6 @@ Elder Wilds is an opinionated modlist for Skyrim AE 1.6.1170 (Steam) built aroun
 - `guide/modlist-restructure-design.md` is the historical design rationale for the current file conventions. It is not a live planning document; keep it for context but do not edit it as if it were active guidance.
 - `guide/modlist-curation.md` is the active curation rulebook. When evaluating mods or making additions, cross-reference its curation principles before committing.
 
-
 ## Lighting & Graphics Direction
 
 - **Community Shaders** is the exclusive graphics framework. No ENB, no LUX family (Lux, Lux CS, Lux Orbis, Lux Via). The lighting baseline is the CS-native stack: CS Light + True Light + Window Shadows Ultimate + Ambient Templates, paired with Based Lighting Configs and Standard Lighting Templates (SLT).
@@ -43,7 +42,7 @@ Elder Wilds is an opinionated modlist for Skyrim AE 1.6.1170 (Steam) built aroun
 - All planning files (`modlist*.md`, `install.md`) live in `guide/`. Active numbered sections span `guide/modlist-foundations.md` through `guide/modlist-voicing.md`, with sub-file suffixes (02a–h, 06a–e, 14a–e) for sections split across multiple files. Parent overview files (`guide/modlist-graphics.md`, `guide/modlist-expanded-systems.md`, `guide/modlist-performance.md`) index their sub-files and own section-level principles.
 - Current section titles: `Foundations and Compatibility`, `Graphics Pipeline` (parent, 02), `PGPatcher` (02a), `Community Shaders` (02b), `Textures & Meshes` (02c), `Lighting` (02d), `Weather & Water` (02e), `Terrain & Flora` (02f), `Characters & Creatures` (02g), `LOD & Distant Detail` (02h), `Modernized UI`, `Animations and Movement`, `Third-Person Gameplay`, `Expanded Systems` (parent, 06), `Character & Progression` (06a), `Magic & Perks` (06b), `Survival & Needs` (06c), `Crafting & Economy` (06d), `Followers & Reputation` (06e), `Immersive Scale and World Feel`, `World Content`, `NPCs`, `Enemies & Creatures`, `Audio and Feedback`, `Survival, Difficulty, and Balance`, `Legacy of the Dragonborn`, `Modlist Curation Rules and Testing Plan`, `Performance and Technical Workflow` (parent, 14), `Performance Strategy` (14a), `Optimization & Configuration` (14b), `Tool Pipeline` (14c), `Bashed Patch & Synthesis Configuration` (14d), `Testing & Maintenance` (14e), `Adult Content`, `Main Character Voicing`.
 - `guide/modlist-graphics.md` is the Graphics Pipeline parent overview; it indexes sub-files `Graphics - PGPatcher` through `Graphics - LOD & Distant Detail` covering PGPatcher, Community Shaders, Textures & Meshes, Lighting, Weather & Water, Terrain & Flora, Characters & Creatures, and LOD & Distant Detail.
-- `guide/modlist-graphics-shaders.md` (Community Shaders) and `guide/modlist-npcs.md` (NPCs) have been reviewed and rewritten/trimmed. The numbered-section template work in `guide/modlist-npcs.md` established the repeatable rewrite pattern used across sections.
+- `guide/modlist-graphics-textures.md` (Community Shaders) and `guide/modlist-npcs.md` (NPCs) have been reviewed and rewritten/trimmed. The numbered-section template work in `guide/modlist-npcs.md` established the repeatable rewrite pattern used across sections.
 - `guide/modlist-animations.md` (Animations and Movement) and `guide/modlist-third-person.md` (Third-Person Gameplay) are fully expanded and treated as established baselines.
 - `guide/modlist-expanded-systems.md` (Expanded Systems) is a parent overview; the locked original content lives in five sub-files: `guide/modlist-expanded-character.md` (Character & Progression), `guide/modlist-expanded-magic.md` (Magic & Perks), `guide/modlist-expanded-survival.md` (Survival & Needs), `guide/modlist-expanded-crafting.md` (Crafting & Economy), `guide/modlist-expanded-followers.md` (Followers & Reputation).
 - `guide/modlist-ui.md` (Modernized UI) is locked. Baseline picks: `SkyUI` + `Oathvein UI`, `SkyHUD` + `TrueHUD`, `FWMF` + Mirhayasu paper maps, `Compass Navigation Overhaul`, `COCKS`, `Sovngarde Font`.
@@ -70,7 +69,7 @@ Elder Wilds is an opinionated modlist for Skyrim AE 1.6.1170 (Steam) built aroun
 
 - Keep section writing decision-oriented: explain recommendation, alternatives when meaningful, why the baseline is right, risks, research tasks, and acceptance criteria.
 - Default subsection structure for numbered section files is: `### Baseline`, `### Alternatives`, `### Risks & Compatibility`. Add an `### Install Order` block only when the section's mods genuinely need explicit load-order guidance. Add a procedural `### Notes`, `### Setup Requirements`, or `### Patcher Load Order` block only when the content would otherwise be lost. Avoid `Core Idea`/`Options`/`Recommendation` H2 templates — they are the legacy academic structure.
-- Every `## Topic` H2 in a sub-file that contributes to one specific separator must end with `→ separator: \`X\`` (or `→ separators: \`X\` / \`Y\``) so the separator mapping is visible at the heading level. The exception is parent overview files (`modlist.md`, `modlist-graphics.md`, `modlist-expanded-systems.md`, `modlist-performance.md`), which own multiple separators.
+- Every `## Topic` H2 in a sub-file that contributes to one specific separator must end with `→ separator: \`X\`` (or `→ separators: \`X\` / \`Y\``) so the separator mapping is visible at the heading level. The exception is parent overview files (`modlist.md`,`modlist-graphics.md`,`modlist-expanded-systems.md`,`modlist-performance.md`), which own multiple separators.
 - Every sub-file must declare its MO2 separator(s) on the line immediately after the H1 title using the form `**MO2 Separator:** \`X\`` (one separator) or `**MO2 Separators:** \`X\` → \`Y\`, \`Z\`` (parent + sub-separators). The declaration must match the canonical entry in `guide/separators.md`.
 - Do not use boilerplate headings such as repeated `Why This Is The Right Baseline`, `Working Guidance For Elder Wilds`, `What Elder Wilds Should Prioritize`, or `### Notes` blocks when that information can be folded into the table row or into `### Risks & Compatibility`. A standalone `### Notes` heading earns its name only when it carries unique procedural content (specific install order, specific framework requirements, specific load-order rules) — not when it is a list of generic trade-off caveats.
 - Avoid restating the same mod, rationale, or compatibility warning across multiple headings in the same subsection. Each important point should usually be stated once in its owning subsection.
@@ -125,12 +124,14 @@ When moving mods from `TODO.md` into their section files:
 These are confirmed from the current modlist state. When evaluating armor/body/physics mods, use these as givens.
 
 ### Body & Physics
+
 - **FSMP — Faster HDT-SMP (57339):** Baseline in `modlist-animations.md:232`. Required by OStim and physics outfits. All HDT-SMP armor mods are adoptable.
 - **HIMBO (74174):** Male body baseline in `modlist-graphics-characters.md:26`. HIMBO refits for armor mods are relevant.
 - **CBBE 3BA:** Female body baseline. CBBE 3BA refits for armor mods are relevant.
 - **OBody NG:** Body distribution framework. Works with both CBBE 3BA and HIMBO.
 
 ### Quest & World Content
+
 - **VIGILANT (11849):** Listed in `modlist-world-content.md:401` (Vicn Trilogy). Patches for VIGILANT (e.g. Ancient Imperial Armor for Vigilant) are adoptable.
 - **Moon and Star (4301):** Listed in `modlist-world-content.md:413`. Undeath Moon and Star patches are adoptable.
 - **Beyond Skyrim - Bruma (10917):** Listed in `modlist-world-content.md:376`. Bruma-related patches/replacers are adoptable.
@@ -138,12 +139,14 @@ These are confirmed from the current modlist state. When evaluating armor/body/p
 - **Undeath Remastered (6180):** Adopted. Classical Lichdom (40802) locked as lich gameplay route. GDOS Door Patch (132038), Camera Fix (52950), Conjuration Absorb Fix (18762), and Facegen Data Patch (20046) required.
 
 ### Graphics Framework
+
 - **Community Shaders:** Exclusive graphics framework. No ENB, no LUX. PBR texture companions (e.g. Buoyant Armiger PBR, Dark Apprentice PBR) are in-scope.
 - **Parallax hard rule — NEVER install Auto Parallax (79473) or Complex Parallax Materials (95134).** PGPatcher (120946) statically patches meshes/plugins for parallax, Complex Material, and PBR and explicitly supersedes Auto Parallax; CPM is absent from the CS v1.8+ supported-feature list and its rendering lives in CS core Extended Materials. Any question about parallax pre-reqs or either of these two is answered the same way: do not install. See `modlist-graphics-shaders.md` → Parallax Framework Dependencies.
 - **Embers XD (37085):** Baseline fire/ember mod in `modlist-graphics-lighting.md:37`. Required by Diverse Campfires (109731).
 - **GDOS — Glorious Doors of Skyrim (32376):** Baseline in `modlist-graphics-textures.md:29`. Undeath GDOS Door Patch (132038) is REQUIRED if Undeath is adopted.
 
 ### Graphics — Landscape & Sky
+
 - **TomatoRim PBR Landscapes AIO (177621):** Locked landscape texture baseline. PBR-native, chosen for shared-author visual coherence with Tomato's PBR Vanilla Trees (locked tree texture companion to NOTWL). Choose 2K.
 - **Enhanced Rocks and Mountains - CM and PBR (121336):** Locked mountain/rock identity. Drop Majestic Mountains entirely.
 - **Praedy's Night Sky AIO (47530):** Locked night sky baseline (stars, nebula, galaxy, constellations, moons, auroras). FOMOD-tunable. Choose 2K. 5,795 endorsements, v2.1.
@@ -151,6 +154,7 @@ These are confirmed from the current modlist state. When evaluating armor/body/p
 - **Shooting Stars SE (73090):** Locked complementary layer. Script-free dynamic shooting star streaks on top of Praedy's static sky.
 
 ### Behavior & Animation
+
 - **Pandora:** Behavior engine baseline. Nemesis-format behavior patches are generally backward-compatible.
 - **OAR — Open Animation Replacer:** Conditional animation selection baseline.
 - **BFCO — Attack Behavior Framework:** Locked combat framework. MCO rejected. See `modlist-animations.md:184`. BFCO provides built-in gamepad support, jump attacks, swim attacks, and charge attacks.
@@ -159,11 +163,13 @@ These are confirmed from the current modlist state. When evaluating armor/body/p
 - **RAO (102881):** Fallback if HAO is abandoned. Same author (mxnedula), 3,804 endorsements, v2.0.
 
 ### Weather & Travel
+
 - **Azurite III CS (162153):** Locked weather baseline. FOMOD with darker nights and reduced bloom for tunable grim-dark aesthetic. Requires balanced CS tier (SSGI, SSS, Grass Lighting, Wetness Effects).
 - **Journeyman (92220):** Locked fast travel system. Restricts fast travel unless Travel Pack is crafted/purchased. SKSE plugin + ESP. CFTO rejected.
 - **Seasons of Skyrim SKSE (62861) + Turn of the Seasons (63623):** Locked seasonal baseline (2026-08-07, user instruction). Companion: Shrubs of Snow (63463). Owns the 4× DynDOLOD/grass-cache seasonal LOD workflow. Seasonal Landscapes (66903) stays rejected.
 
 ### Armor & Clothing
+
 - **Immersive Armors** is baseline. HIMBO Conversion V2 (76552) is the male path.
 - **FSMP physics armors** are adoptable (FSMP is baseline). Include HDT-SMP patches where available.
 - **SPID distribution** companions are relevant for NPC integration of armor mods.
@@ -171,18 +177,21 @@ These are confirmed from the current modlist state. When evaluating armor/body/p
 - **Dynamic Artisan Cloaks (146438):** Locked cloak physics layer. OAR-based cloak animations.
 
 ### Combat & Difficulty
+
 - **Dragon War (51310):** Locked dragon combat overhaul. Structured encounter tempo. Complements Dragons Use Thu'um (87085, baseline dragon AI).
 
 ### Creatures — Undead
+
 - **Skeletons SE (124394):** Locked skeleton model replacer by Xtudo. 2,002 endorsements. Consistent undead visual direction with Draugrs SE (123170) and Spider SE (182638) — all Xtudo baselines.
 - **Skeletons SE - Expanded (154872):** Locked BOS-based skeleton variety addon. Install after Skeletons SE. Skeleton Replacer HD (52845) adopted for static bone props only (skulls, ribcages, bandit poles, Hearthfire trophies) — loads before Skeletons SE so creature skeletons still use Xtudo's models. See `STATUS.md` for layered approach details.
 
 ### Undeath Decisions
+
 - **Undeath Remastered (6180):** Adopted. Classical Lichdom (40802) locked as lich gameplay route. GDOS Door Patch (132038), Camera Fix (52950), Conjuration Absorb Fix (18762), and Facegen Data Patch (20046) required.
 
 ### AI Content Gate
+
 - **AI speech/audio is allowed.** AI-generated voice content (ElevenLabs, xVASynth, 11labs, etc.) is treated the same as traditionally voiced content — no special exclusion, scrutiny, or labelling requirement beyond the Nexus tag. Evaluate AI-voiced mods on quality, compatibility, and tonal fit alone, per → [Modlist Curation Rules](guide/modlist-curation.md) (Curation Principles).
 - The "AI-content gate" cited in some earlier reviews is retired as a hard exclusion. Instances already following this: AI-voiced FDE follower series, `Dark Destiny`, `Seeking The Cure`, `Snow Elf Dialogue`, `Shouts of Stallholders`, `Autumngate` (xVASynth add-on), and the Simple Inn Bath DDR expansion.
 - **Adopted AI-voiced dialogue expansions (2026-08-07, user instruction):** `Dialogue Expansion - Indaryn-Ingun-Asgeir-Alessandra` (92600) and `Dialogue Expansion - Shor's Stone` (97337) by AdamDunmer — see `modlist-npcs.md` NPC Dialogue Expansions.
 - **Retiring the gate is not a blanket green-light:** AI content is no longer excluded for being AI, but a mod is still evaluated on its other merits. `Extended Guard Dialogue` (106523) and `New Female Guard Voices` (125124) **remain REJECTED** on niche coverage (guard-flavor already owned by Guard Dialogue Overhaul + Echoes of Oblivion), independent of the retired gate — see `STATUS.md`.
-

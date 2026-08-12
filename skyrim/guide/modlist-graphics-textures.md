@@ -43,28 +43,28 @@ Install the CS main download (v1.8+) — the features below are either bundled i
 
 These ship with the main Community Shaders package — no separate download needed:
 
-| Feature | Included Since |
-| --- | --- |
-| Extended Materials, LOD Blending, Volumetric Lighting, Dynamic Cubemaps, Light Limit Fix, Unified Water, Performance Overlay, Weather Picker | Always |
-| Terrain Shadows, Inverse Square Lighting, **Water Effects**, Interior Sun, Extended Translucency | v1.4.7 |
-| Screen-Space Shadows, **Grass Collision**, **Grass Lighting**, **Subsurface Scattering** | v1.5.0 |
-| Sky Sync | v1.7.0 |
-| Cloud Shadows | v1.8.0 |
+| Feature                                                                                                                                      | Included Since |
+|----------------------------------------------------------------------------------------------------------------------------------------------|----------------|
+| Extended Materials, LOD Blending, Volumetric Lighting, Dynamic Cubemaps, Light Limit Fix, Unified Water, Performance Overlay, Weather Picker | Always         |
+| Terrain Shadows, Inverse Square Lighting, **Water Effects**, Interior Sun, Extended Translucency                                             | v1.4.7         |
+| Screen-Space Shadows, **Grass Collision**, **Grass Lighting**, **Subsurface Scattering**                                                     | v1.5.0         |
+| Sky Sync                                                                                                                                     | v1.7.0         |
+| Cloud Shadows                                                                                                                                | v1.8.0         |
 
 ### CS Optional Plugins (separate Nexus downloads)
 
-| Mod | Description |
-| --- | --- |
-| [Wetness Effects](https://www.nexusmods.com/skyrimspecialedition/mods/112739) | Rain wetness, puddles, raindrop splash/ripple VFX, shore wetness. |
-| [HDR](https://www.nexusmods.com/skyrimspecialedition/mods/179371) | Native HDR10 output, configurable peak brightness (up to 10,000 nits), paper-white slider, BT.2020 colour space. **Requires an HDR-capable monitor.** Disable Windows Auto HDR and NVIDIA RTX HDR. |
-| [Screen Space Global Illumination (SSGI)](https://www.nexusmods.com/skyrimspecialedition/mods/130375) | Realistic indirect bounce light. Performance-intensive — high-end tier only. |
-| [Skylighting](https://www.nexusmods.com/skyrimspecialedition/mods/139352) | Soft ambient sky occlusion. Pairs with the conservative tier. |
-| [Hair Specular](https://www.nexusmods.com/skyrimspecialedition/mods/149011) | Anisotropic hair highlights for more realistic hair rendering. |
-| [Terrain Blending](https://www.nexusmods.com/skyrimspecialedition/mods/157076) | Seamless terrain-to-mesh transitions. |
-| [Terrain Variation](https://www.nexusmods.com/skyrimspecialedition/mods/148123) | Stochastic sampling to prevent visible tiling on terrain textures. |
-| [Terrain Helper](https://www.nexusmods.com/skyrimspecialedition/mods/143149) | Terrain rendering utilities required by some terrain features. |
-| [Upscaling](https://www.nexusmods.com/skyrimspecialedition/mods/156952) | DLSS 4 / FSR 3.1 upscaling with FSR Frame Generation. The CS-team replacement for the older Skyrim Upscaler (80343). Requires SSE Display Tweaks. |
-| [Effects 11](https://www.nexusmods.com/skyrimspecialedition/mods/179824) | ENB preset compatibility layer via FX11 framework. Experimental. |
+| Mod                                                                                                   | Description                                                                                                                                                                                        |
+|-------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Wetness Effects](https://www.nexusmods.com/skyrimspecialedition/mods/112739)                         | Rain wetness, puddles, raindrop splash/ripple VFX, shore wetness.                                                                                                                                  |
+| [HDR](https://www.nexusmods.com/skyrimspecialedition/mods/179371)                                     | Native HDR10 output, configurable peak brightness (up to 10,000 nits), paper-white slider, BT.2020 colour space. **Requires an HDR-capable monitor.** Disable Windows Auto HDR and NVIDIA RTX HDR. |
+| [Screen Space Global Illumination (SSGI)](https://www.nexusmods.com/skyrimspecialedition/mods/130375) | Realistic indirect bounce light. Performance-intensive — high-end tier only.                                                                                                                       |
+| [Skylighting](https://www.nexusmods.com/skyrimspecialedition/mods/139352)                             | Soft ambient sky occlusion. Pairs with the conservative tier.                                                                                                                                      |
+| [Hair Specular](https://www.nexusmods.com/skyrimspecialedition/mods/149011)                           | Anisotropic hair highlights for more realistic hair rendering.                                                                                                                                     |
+| [Terrain Blending](https://www.nexusmods.com/skyrimspecialedition/mods/157076)                        | Seamless terrain-to-mesh transitions.                                                                                                                                                              |
+| [Terrain Variation](https://www.nexusmods.com/skyrimspecialedition/mods/148123)                       | Stochastic sampling to prevent visible tiling on terrain textures.                                                                                                                                 |
+| [Terrain Helper](https://www.nexusmods.com/skyrimspecialedition/mods/143149)                          | Terrain rendering utilities required by some terrain features.                                                                                                                                     |
+| [Upscaling](https://www.nexusmods.com/skyrimspecialedition/mods/156952)                               | DLSS 4 / FSR 3.1 upscaling with FSR Frame Generation. The CS-team replacement for the older Skyrim Upscaler (80343). Requires SSE Display Tweaks.                                                  |
+| [Effects 11](https://www.nexusmods.com/skyrimspecialedition/mods/179824)                              | ENB preset compatibility layer via FX11 framework. Experimental.                                                                                                                                   |
 
 ---
 
@@ -200,11 +200,11 @@ Improve shape quality and silhouette readability without creating an unmaintaina
 
 ### Core Foundation
 
-| Mod                                                                                                   | Description                                                                          |
-|-------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
-| [Static Mesh Improvement Mod (SMIM)](https://www.nexusmods.com/skyrimspecialedition/mods/659)         | Core mesh foundation.                                                                |
-| [Unofficial Material Fix](https://www.nexusmods.com/skyrimspecialedition/mods/21027)                  | Corrects material records for Community Shaders PBR. Install after SMIM.             |
-| [XEMI Utility](https://www.nexusmods.com/skyrimspecialedition/mods/159084)                            | Prerequisite for FYX collision fixes (→ Doors, Walls & Structures).                              |
+| Mod                                                                                           | Description                                                              |
+|-----------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
+| [Static Mesh Improvement Mod (SMIM)](https://www.nexusmods.com/skyrimspecialedition/mods/659) | Core mesh foundation.                                                    |
+| [Unofficial Material Fix](https://www.nexusmods.com/skyrimspecialedition/mods/21027)          | Corrects material records for Community Shaders PBR. Install after SMIM. |
+| [XEMI Utility](https://www.nexusmods.com/skyrimspecialedition/mods/159084)                    | Prerequisite for FYX collision fixes (→ Doors, Walls & Structures).      |
 
 > **PGPatcher:** Use the PGPatcher workflow in → [PGPatcher Workflow](modlist-graphics-pgpatcher.md) for late-stage parallax generation rules. Do not add **Auto Parallax (79473)** or **Complex Parallax Materials (95134)** as requirements for parallax/CM texture packs — PGPatcher replaces both (see `## Parallax Framework Dependencies` above).
 
@@ -240,21 +240,21 @@ City-scale geometry and clutter — doors, walls, stockades, locks, and the Snaz
 | [Whiterun Has Walls Redone](https://www.nexusmods.com/skyrimspecialedition/mods/119229)                 | 3D geometry and parallax textures for Whiterun's exterior walls. Replaces flat walls.                                                                             |
 | [Stockades of Skyrim 3D](https://www.nexusmods.com/skyrimspecialedition/mods/43227)                     | Base layer for 3D stockade walls and barricades.                                                                                                                  |
 | [FYX - 3D Stockades](https://www.nexusmods.com/skyrimspecialedition/mods/65104)                         | Overwrites Stockades of Skyrim 3D meshes. Install after the stockade base.                                                                                        |
-| [FYX - Nordic Doors and Traps Collisions](https://www.nexusmods.com/skyrimspecialedition/mods/100295) | Collision geometry fix for Nordic doors and traps. Requires XEMI Utility (installed in Core Foundation). |
+| [FYX - Nordic Doors and Traps Collisions](https://www.nexusmods.com/skyrimspecialedition/mods/100295)   | Collision geometry fix for Nordic doors and traps. Requires XEMI Utility (installed in Core Foundation).                                                          |
 | [Born in a Barn - Door Curtains for Shacks](https://www.nexusmods.com/skyrimspecialedition/mods/113432) | BOS-based door curtains for shacks and poor homes. No ESP.                                                                                                        |
 
 ### Security Overhaul SKSE Series
 
 Install together. Use **2K textures** for all — locks are examined up close but 4K is wasted VRAM.
 
-| Mod                                                                          | Description                                                              |
-|------------------------------------------------------------------------------|--------------------------------------------------------------------------|
-| [Lock Variations](https://www.nexusmods.com/skyrimspecialedition/mods/58224) | Multiple lock model variants for visual variety.                         |
-| [Regional Locks](https://www.nexusmods.com/skyrimspecialedition/mods/62781)  | Assigns lock models by hold and location type.                           |
-| [Lock Add-ons](https://www.nexusmods.com/skyrimspecialedition/mods/59529)    | Additional lock models extending the Security Overhaul series.           |
-| [Some More Locks](https://www.nexusmods.com/skyrimspecialedition/mods/59961) | Further lock model variety.                                              |
-| [Extra Locks](https://www.nexusmods.com/skyrimspecialedition/mods/126119)    | Even more lock model variations.                                         |
-| [PBR](https://www.nexusmods.com/skyrimspecialedition/mods/152269)            | PBR textures for all Security Overhaul lock models.                      |
+| Mod                                                                          | Description                                                    |
+|------------------------------------------------------------------------------|----------------------------------------------------------------|
+| [Lock Variations](https://www.nexusmods.com/skyrimspecialedition/mods/58224) | Multiple lock model variants for visual variety.               |
+| [Regional Locks](https://www.nexusmods.com/skyrimspecialedition/mods/62781)  | Assigns lock models by hold and location type.                 |
+| [Lock Add-ons](https://www.nexusmods.com/skyrimspecialedition/mods/59529)    | Additional lock models extending the Security Overhaul series. |
+| [Some More Locks](https://www.nexusmods.com/skyrimspecialedition/mods/59961) | Further lock model variety.                                    |
+| [Extra Locks](https://www.nexusmods.com/skyrimspecialedition/mods/126119)    | Even more lock model variations.                               |
+| [PBR](https://www.nexusmods.com/skyrimspecialedition/mods/152269)            | PBR textures for all Security Overhaul lock models.            |
 
 ### Furniture, Clutter & City Detail
 
@@ -291,24 +291,24 @@ Standalone mesh replacers for furniture, props, and environment objects outside 
 
 All mesh-only, no ESP.
 
-| Mod                                                                                                 | Description                                                                    |
-|-----------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
-| [V.A.E.R.](https://www.nexusmods.com/skyrimspecialedition/mods/145018)                              | Visual Animated Enchants Remastered — animated weapon enchantment VFX.         |
-| [Thrones Expanded](https://www.nexusmods.com/skyrimspecialedition/mods/139544)                      | Variety of throne models for different holds and factions.                     |
-| [Rustic Repose - A Common Bed Replacer](https://www.nexusmods.com/skyrimspecialedition/mods/138889) | Rustic bed model replacer for common beds.                                    |
-| [Use Those Blankets](https://www.nexusmods.com/skyrimspecialedition/mods/75481)                     | Adds 3D blanket meshes to beds.                                               |
-| [Sleipnir Beds](https://www.nexusmods.com/skyrimspecialedition/mods/143168)                         | Norse-themed carved wooden bed replacer.                                      |
-| [The Royal Seat](https://www.nexusmods.com/skyrimspecialedition/mods/118892)                        | High-detail royal throne mesh replacer.                                       |
-| [Divide and Conquer](https://www.nexusmods.com/skyrimspecialedition/mods/117295)                    | Room divider and partition mesh replacers.                                    |
-| [Oddments and Miscellanea](https://www.nexusmods.com/skyrimspecialedition/mods/118859)              | Misc clutter object mesh replacers (lanterns, scales, hourglasses).           |
-| [Utenlands Nordic Tents](https://www.nexusmods.com/skyrimspecialedition/mods/121203)                | High-detail Nordic fur tent mesh replacer.                                    |
-| [Redoran Reverie](https://www.nexusmods.com/skyrimspecialedition/mods/132997)                       | Dunmer/Redoran-style furniture mesh replacer.                                 |
-| [HFs Archery Target Remodel](https://www.nexusmods.com/skyrimspecialedition/mods/138492)            | High-quality archery target model replacer.                                   |
-| [Diverse Grindstones](https://www.nexusmods.com/skyrimspecialedition/mods/145870)                   | Multiple grindstone model variants via BOS.                                   |
-| [Blary's Booksets](https://www.nexusmods.com/skyrimspecialedition/mods/159303)                      | Book set and book stack clutter mesh replacer.                                |
-| [ElSopa Misc Ruins Redone](https://www.nexusmods.com/skyrimspecialedition/mods/153797)              | Nordic/Dwemer ruins clutter mesh replacer.                                    |
-| [Snazzy Orc Chests](https://www.nexusmods.com/skyrimspecialedition/mods/142275)                     | Orc stronghold chest mesh replacer.                                           |
-| [High Poly Project](https://www.nexusmods.com/skyrimspecialedition/mods/12029)                   | Higher-polygon mesh replacer for common objects. |
+| Mod                                                                                                 | Description                                                            |
+|-----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------|
+| [V.A.E.R.](https://www.nexusmods.com/skyrimspecialedition/mods/145018)                              | Visual Animated Enchants Remastered — animated weapon enchantment VFX. |
+| [Thrones Expanded](https://www.nexusmods.com/skyrimspecialedition/mods/139544)                      | Variety of throne models for different holds and factions.             |
+| [Rustic Repose - A Common Bed Replacer](https://www.nexusmods.com/skyrimspecialedition/mods/138889) | Rustic bed model replacer for common beds.                             |
+| [Use Those Blankets](https://www.nexusmods.com/skyrimspecialedition/mods/75481)                     | Adds 3D blanket meshes to beds.                                        |
+| [Sleipnir Beds](https://www.nexusmods.com/skyrimspecialedition/mods/143168)                         | Norse-themed carved wooden bed replacer.                               |
+| [The Royal Seat](https://www.nexusmods.com/skyrimspecialedition/mods/118892)                        | High-detail royal throne mesh replacer.                                |
+| [Divide and Conquer](https://www.nexusmods.com/skyrimspecialedition/mods/117295)                    | Room divider and partition mesh replacers.                             |
+| [Oddments and Miscellanea](https://www.nexusmods.com/skyrimspecialedition/mods/118859)              | Misc clutter object mesh replacers (lanterns, scales, hourglasses).    |
+| [Utenlands Nordic Tents](https://www.nexusmods.com/skyrimspecialedition/mods/121203)                | High-detail Nordic fur tent mesh replacer.                             |
+| [Redoran Reverie](https://www.nexusmods.com/skyrimspecialedition/mods/132997)                       | Dunmer/Redoran-style furniture mesh replacer.                          |
+| [HFs Archery Target Remodel](https://www.nexusmods.com/skyrimspecialedition/mods/138492)            | High-quality archery target model replacer.                            |
+| [Diverse Grindstones](https://www.nexusmods.com/skyrimspecialedition/mods/145870)                   | Multiple grindstone model variants via BOS.                            |
+| [Blary's Booksets](https://www.nexusmods.com/skyrimspecialedition/mods/159303)                      | Book set and book stack clutter mesh replacer.                         |
+| [ElSopa Misc Ruins Redone](https://www.nexusmods.com/skyrimspecialedition/mods/153797)              | Nordic/Dwemer ruins clutter mesh replacer.                             |
+| [Snazzy Orc Chests](https://www.nexusmods.com/skyrimspecialedition/mods/142275)                     | Orc stronghold chest mesh replacer.                                    |
+| [High Poly Project](https://www.nexusmods.com/skyrimspecialedition/mods/12029)                      | Higher-polygon mesh replacer for common objects.                       |
 
 ### Environment & Props
 
@@ -329,36 +329,36 @@ Texture and mesh upgrades for furniture, clutter, and items beyond the Snazzy ci
 
 ### Rally's, Arc's, And Snazzy Clutter
 
-| Mod                                                                                                              | Description                                                                 |
-|------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
-| [Rally's Noble Furniture - BOS](https://www.nexusmods.com/skyrimspecialedition/mods/113326)                      |                                                                             |
-| [Rally's Orc Furniture](https://www.nexusmods.com/skyrimspecialedition/mods/111457)                              |                                                                             |
-| [Rally's Upper Furniture](https://www.nexusmods.com/skyrimspecialedition/mods/112256)                            |                                                                             |
-| [Rally's Barsets](https://www.nexusmods.com/skyrimspecialedition/mods/114178)                                    |                                                                             |
-| [Rally's Common Furniture](https://www.nexusmods.com/skyrimspecialedition/mods/110370)                           |                                                                             |
-| [Rally's Dark Elf Furniture (High Poly - ENB Light)](https://www.nexusmods.com/skyrimspecialedition/mods/112042) |                                                                             |
-| [Snazzy Common Wardrobes - BOS](https://www.nexusmods.com/skyrimspecialedition/mods/92809)                       | Choose the BOS meshes main file.                                            |
-| [Whiterun Objects SMIMed (and fixes too)](https://www.nexusmods.com/skyrimspecialedition/mods/69125)             |                                                                             |
-| [Arc's WispMother Redux 2K-4K](https://www.nexusmods.com/skyrimspecialedition/mods/111330)                       | Choose 2K.                                                                  |
-| [Arc's Kettle REDUX 2K-4K](https://www.nexusmods.com/skyrimspecialedition/mods/110929)                           | Choose 2K.                                                                  |
-| [Arc's Kitchen Redux 2K-4K](https://www.nexusmods.com/skyrimspecialedition/mods/111694)                          | Choose 2K.                                                                  |
-| [Arc's MeadBarrel Redux 2K-4K](https://www.nexusmods.com/skyrimspecialedition/mods/111195)                       | Stack: install all three (base + Bloody + Distributed). Choose 2K for base. |
-| [Arc's Bloody MeadBarrel Redux](https://www.nexusmods.com/skyrimspecialedition/mods/116447)                      |                                                                             |
-| [Distributed Arc's Mead Barrels](https://www.nexusmods.com/skyrimspecialedition/mods/119006)                     |                                                                             |
-| [Arc's Tankard Redux](https://www.nexusmods.com/skyrimspecialedition/mods/112567)                                |                                                                             |
-| [ElSopa - HD Iron Tools Redone SE](https://www.nexusmods.com/skyrimspecialedition/mods/60495)                    |                                                                             |
-| [Diverse BOS Kitchenware](https://www.nexusmods.com/skyrimspecialedition/mods/112361)                            |                                                                             |
-| [HFs - Diverse Inkwell and Quill (BOS)](https://www.nexusmods.com/skyrimspecialedition/mods/132023)              | Diverse inkwell and quill meshes via BOS or Model Swapper.                  |
-| [Dynamic Things Alternative - BOS](https://www.nexusmods.com/skyrimspecialedition/mods/60741)                    |                                                                             |
-| [Nordic Stonewalls](https://www.nexusmods.com/skyrimspecialedition/mods/57686)                                   |                                                                             |
-| [Nordic Stonewall Terraces](https://www.nexusmods.com/skyrimspecialedition/mods/115210)                          |                                                                             |
-| [Nordic Stonewalls Complex Material and PBR](https://www.nexusmods.com/skyrimspecialedition/mods/127188)         | PBR upgrade. Install after base Nordic Stonewalls.                          |
-| [Snazzy Wall Mounted Trophies - BOS](https://www.nexusmods.com/skyrimspecialedition/mods/115054)                 |                                                                             |
-| [Fluffy Wall Mounted Dead Animals](https://www.nexusmods.com/skyrimspecialedition/mods/90369)                    |                                                                             |
-| [Wall Mounted Dead Animals Fixes](https://www.nexusmods.com/skyrimspecialedition/mods/58511)                     | Install after Fluffy Wall Mounted Dead Animals.                             |
-| [Snazzy Diverse Carriages - BOS](https://www.nexusmods.com/skyrimspecialedition/mods/112041)                     |                                                                             |
-| [Snazzy Diverse Carriages - Seasonal Patch](https://www.nexusmods.com/skyrimspecialedition/mods/112210)          | Required if Seasonal Landscapes is adopted.                                 |
-| [RUSTIC CLUTTER COLLECTION](https://www.nexusmods.com/skyrimspecialedition/mods/5795)                           | Higher-res diffuse/normal replacer for common clutter. May be redundant with VPBR's clutter coverage. |
+| Mod                                                                                                              | Description                                                                                           |
+|------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
+| [Rally's Noble Furniture - BOS](https://www.nexusmods.com/skyrimspecialedition/mods/113326)                      |                                                                                                       |
+| [Rally's Orc Furniture](https://www.nexusmods.com/skyrimspecialedition/mods/111457)                              |                                                                                                       |
+| [Rally's Upper Furniture](https://www.nexusmods.com/skyrimspecialedition/mods/112256)                            |                                                                                                       |
+| [Rally's Barsets](https://www.nexusmods.com/skyrimspecialedition/mods/114178)                                    |                                                                                                       |
+| [Rally's Common Furniture](https://www.nexusmods.com/skyrimspecialedition/mods/110370)                           |                                                                                                       |
+| [Rally's Dark Elf Furniture (High Poly - ENB Light)](https://www.nexusmods.com/skyrimspecialedition/mods/112042) |                                                                                                       |
+| [Snazzy Common Wardrobes - BOS](https://www.nexusmods.com/skyrimspecialedition/mods/92809)                       | Choose the BOS meshes main file.                                                                      |
+| [Whiterun Objects SMIMed (and fixes too)](https://www.nexusmods.com/skyrimspecialedition/mods/69125)             |                                                                                                       |
+| [Arc's WispMother Redux 2K-4K](https://www.nexusmods.com/skyrimspecialedition/mods/111330)                       | Choose 2K.                                                                                            |
+| [Arc's Kettle REDUX 2K-4K](https://www.nexusmods.com/skyrimspecialedition/mods/110929)                           | Choose 2K.                                                                                            |
+| [Arc's Kitchen Redux 2K-4K](https://www.nexusmods.com/skyrimspecialedition/mods/111694)                          | Choose 2K.                                                                                            |
+| [Arc's MeadBarrel Redux 2K-4K](https://www.nexusmods.com/skyrimspecialedition/mods/111195)                       | Stack: install all three (base + Bloody + Distributed). Choose 2K for base.                           |
+| [Arc's Bloody MeadBarrel Redux](https://www.nexusmods.com/skyrimspecialedition/mods/116447)                      |                                                                                                       |
+| [Distributed Arc's Mead Barrels](https://www.nexusmods.com/skyrimspecialedition/mods/119006)                     |                                                                                                       |
+| [Arc's Tankard Redux](https://www.nexusmods.com/skyrimspecialedition/mods/112567)                                |                                                                                                       |
+| [ElSopa - HD Iron Tools Redone SE](https://www.nexusmods.com/skyrimspecialedition/mods/60495)                    |                                                                                                       |
+| [Diverse BOS Kitchenware](https://www.nexusmods.com/skyrimspecialedition/mods/112361)                            |                                                                                                       |
+| [HFs - Diverse Inkwell and Quill (BOS)](https://www.nexusmods.com/skyrimspecialedition/mods/132023)              | Diverse inkwell and quill meshes via BOS or Model Swapper.                                            |
+| [Dynamic Things Alternative - BOS](https://www.nexusmods.com/skyrimspecialedition/mods/60741)                    |                                                                                                       |
+| [Nordic Stonewalls](https://www.nexusmods.com/skyrimspecialedition/mods/57686)                                   |                                                                                                       |
+| [Nordic Stonewall Terraces](https://www.nexusmods.com/skyrimspecialedition/mods/115210)                          |                                                                                                       |
+| [Nordic Stonewalls Complex Material and PBR](https://www.nexusmods.com/skyrimspecialedition/mods/127188)         | PBR upgrade. Install after base Nordic Stonewalls.                                                    |
+| [Snazzy Wall Mounted Trophies - BOS](https://www.nexusmods.com/skyrimspecialedition/mods/115054)                 |                                                                                                       |
+| [Fluffy Wall Mounted Dead Animals](https://www.nexusmods.com/skyrimspecialedition/mods/90369)                    |                                                                                                       |
+| [Wall Mounted Dead Animals Fixes](https://www.nexusmods.com/skyrimspecialedition/mods/58511)                     | Install after Fluffy Wall Mounted Dead Animals.                                                       |
+| [Snazzy Diverse Carriages - BOS](https://www.nexusmods.com/skyrimspecialedition/mods/112041)                     |                                                                                                       |
+| [Snazzy Diverse Carriages - Seasonal Patch](https://www.nexusmods.com/skyrimspecialedition/mods/112210)          | Required if Seasonal Landscapes is adopted.                                                           |
+| [RUSTIC CLUTTER COLLECTION](https://www.nexusmods.com/skyrimspecialedition/mods/5795)                            | Higher-res diffuse/normal replacer for common clutter. May be redundant with VPBR's clutter coverage. |
 
 ### Vanaheimr Series
 
@@ -380,7 +380,7 @@ Texture and mesh upgrades for furniture, clutter, and items beyond the Snazzy ci
 | [Kanjs - Stalhrim Weapons Animated](https://www.nexusmods.com/skyrimspecialedition/mods/146167)               | Animated Stalhrim weapon mesh replacer.                                                   |
 | [Kanjs - Nordic Puzzle Door Animated](https://www.nexusmods.com/skyrimspecialedition/mods/133482)             | Animated Nordic puzzle door mesh replacer.                                                |
 | [Kanjs - Ancient Falmer Tomes Animated](https://www.nexusmods.com/skyrimspecialedition/mods/106618)           | Animated Ancient Falmer tomes (Dawnguard lore books), remesh + 4K + animated emissive.    |
-| [Kanjs - The Boethiah's Proving Book Animated](https://www.nexusmods.com/skyrimspecialedition/mods/104747)   | Animated Boethiah's Proving Book, remesh + 4K + animated emissive.                        |
+| [Kanjs - The Boethiah's Proving Book Animated](https://www.nexusmods.com/skyrimspecialedition/mods/104747)    | Animated Boethiah's Proving Book, remesh + 4K + animated emissive.                        |
 | [Kanjs - Master Spell Tomes Animated](https://www.nexusmods.com/skyrimspecialedition/mods/105990)             | Animated Master spell tomes (College), remesh + 4K + animated emissive.                   |
 | [Kanjs - The Dreamstride Book Animated](https://www.nexusmods.com/skyrimspecialedition/mods/104236)           | Animated Dreamstride Book, remesh + 4K + animated emissive.                               |
 | [Zerofrost's Tamriel Alchemy](https://www.nexusmods.com/skyrimspecialedition/mods/185386)                     | Animated alchemy ingredient and potion replacer. Conflicts with Tamriel Alchemy Replacer. |
@@ -420,18 +420,18 @@ In-world visual effects during combat: blood pools, persistent decals, lingering
 |-------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Dynamic Bloodpool Framework](https://www.nexusmods.com/skyrimspecialedition/mods/172080) | Blood and decal framework. Lock in after weather/lighting baselines are stable (decals must read correctly under both daylight and your night setup). |
 | [Dragon Breath VFX Edit](https://www.nexusmods.com/skyrimspecialedition/mods/118431)      | Dragon breath projectile/impact VFX replacer. Mesh-only, no ESP.                                                                                      |
-| [Flame VFX Edit](https://www.nexusmods.com/skyrimspecialedition/mods/109414)               | Mesh-only fire spell effect improvement. CS-compatible. Sibling of Dragon Breath/Lightning/Light Magic VFX Edit.                                    |
+| [Flame VFX Edit](https://www.nexusmods.com/skyrimspecialedition/mods/109414)              | Mesh-only fire spell effect improvement. CS-compatible. Sibling of Dragon Breath/Lightning/Light Magic VFX Edit.                                      |
 
 ### Alternatives
 
-| Mod                                                                                   | Description                                                                                                                                                                                                                                                                         |
-|---------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Improved Sparks](https://www.nexusmods.com/skyrimspecialedition/mods/19831)          | Orange spark effects on metal impacts and grindstones. FOMOD with density options (1X-20X).                                                                                                                                                                                         |
-| [Lightning VFX Edit](https://www.nexusmods.com/skyrimspecialedition/mods/124520)      | Lightning bolt VFX replacer. Mesh-only, no ESP.                                                                                                                                                                                                                                     |
-| [Light Magic VFX Edit](https://www.nexusmods.com/skyrimspecialedition/mods/151787)    | Candlelight/Magelight VFX glow replacer. Mesh-only, no ESP. Sibling of Dragon Breath/Lightning VFX Edit.                                                                                                                                                                            |
-| [VFX Edit AIO - Spells Retexture](https://www.nexusmods.com/skyrimspecialedition/mods/133774) | All-in-one spell visual effect retexture. Same VFX Edit author line as Dragon Breath/Flame/Lightning/Light Magic. Mesh-only, no ESP.                                                                                 |
-| [Sanguine Symphony](https://www.nexusmods.com/skyrimspecialedition/mods/148388)       | Combat impact overhaul: adaptive blood splatters, detailed decals, HD wound textures, custom SFX, slow-motion kills. Verify overlap with Dynamic Bloodpool Framework and Simplicity of Splatter — decal/impact ownership; check slow-mo kills against Precision/Valhalla/BFCO feel. |
-| [Dynamic Footprints SKSE](https://www.nexusmods.com/skyrimspecialedition/mods/175254) | Persistent footprints on snow, mud, sand. Add after blood/decals baseline is stable.                                                                                                                                                                                                |
+| Mod                                                                                           | Description                                                                                                                                                                                                                                                                         |
+|-----------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Improved Sparks](https://www.nexusmods.com/skyrimspecialedition/mods/19831)                  | Orange spark effects on metal impacts and grindstones. FOMOD with density options (1X-20X).                                                                                                                                                                                         |
+| [Lightning VFX Edit](https://www.nexusmods.com/skyrimspecialedition/mods/124520)              | Lightning bolt VFX replacer. Mesh-only, no ESP.                                                                                                                                                                                                                                     |
+| [Light Magic VFX Edit](https://www.nexusmods.com/skyrimspecialedition/mods/151787)            | Candlelight/Magelight VFX glow replacer. Mesh-only, no ESP. Sibling of Dragon Breath/Lightning VFX Edit.                                                                                                                                                                            |
+| [VFX Edit AIO - Spells Retexture](https://www.nexusmods.com/skyrimspecialedition/mods/133774) | All-in-one spell visual effect retexture. Same VFX Edit author line as Dragon Breath/Flame/Lightning/Light Magic. Mesh-only, no ESP.                                                                                                                                                |
+| [Sanguine Symphony](https://www.nexusmods.com/skyrimspecialedition/mods/148388)               | Combat impact overhaul: adaptive blood splatters, detailed decals, HD wound textures, custom SFX, slow-motion kills. Verify overlap with Dynamic Bloodpool Framework and Simplicity of Splatter — decal/impact ownership; check slow-mo kills against Precision/Valhalla/BFCO feel. |
+| [Dynamic Footprints SKSE](https://www.nexusmods.com/skyrimspecialedition/mods/175254)         | Persistent footprints on snow, mud, sand. Add after blood/decals baseline is stable.                                                                                                                                                                                                |
 
 ### Risks & Compatibility
 
@@ -450,14 +450,14 @@ Visual upgrades for books, notes, and paper — the most-read world objects. Tex
 
 ### Base + Enhancements
 
-| Mod                                                                                                | Description                                                                                                                                                           |
-|----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Book Covers Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/901)                      | Core book-cover texture replacer. Every book gets a unique hand-crafted cover. Choose the **Main Files** download (not the USSEP Update variant). |
-| [Book Covers Skyrim Enhanced Textures](https://www.nexusmods.com/skyrimspecialedition/mods/178820) | 2K/4K texture upgrade. Install after base mod and overwrite. Optional but recommended for 4K displays.                                                                |
-| [Book Covers Skyrim - SkyPatched](https://www.nexusmods.com/skyrimspecialedition/mods/109254)      | SkyPatcher-based forward-port resolving record-level conflicts. Choose **Recommended Main File**.                                                                     |
-| [Book Covers Skyrim - Lost Library](https://www.nexusmods.com/skyrimspecialedition/mods/902)       | Library of 150+ lore books from earlier TES games. Content companion; quest-level decision owned by [World Content](modlist-world-content.md). Add the PBR-compatible cover variant where available. |
-| [Book Covers Skyrim - PBR (155254)](https://www.nexusmods.com/skyrimspecialedition/mods/155254) | PBR conversion of the Book Covers stack (book main + Enhanced Textures 178820). Requires the Community Shaders PBR pipeline (locked baseline); install after BCS + Enhanced Textures. 2K recommended. |
-| [HFs - Ruined Books](https://www.nexusmods.com/skyrimspecialedition/mods/132355)                 | High-quality ruined/destroyed book clutter meshes. Complements Book Covers Skyrim for damaged books.                                                                  |
+| Mod                                                                                                | Description                                                                                                                                                                                           |
+|----------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Book Covers Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/901)                      | Core book-cover texture replacer. Every book gets a unique hand-crafted cover. Choose the **Main Files** download (not the USSEP Update variant).                                                     |
+| [Book Covers Skyrim Enhanced Textures](https://www.nexusmods.com/skyrimspecialedition/mods/178820) | 2K/4K texture upgrade. Install after base mod and overwrite. Optional but recommended for 4K displays.                                                                                                |
+| [Book Covers Skyrim - SkyPatched](https://www.nexusmods.com/skyrimspecialedition/mods/109254)      | SkyPatcher-based forward-port resolving record-level conflicts. Choose **Recommended Main File**.                                                                                                     |
+| [Book Covers Skyrim - Lost Library](https://www.nexusmods.com/skyrimspecialedition/mods/902)       | Library of 150+ lore books from earlier TES games. Content companion; quest-level decision owned by [World Content](modlist-world-content.md). Add the PBR-compatible cover variant where available.  |
+| [Book Covers Skyrim - PBR (155254)](https://www.nexusmods.com/skyrimspecialedition/mods/155254)    | PBR conversion of the Book Covers stack (book main + Enhanced Textures 178820). Requires the Community Shaders PBR pipeline (locked baseline); install after BCS + Enhanced Textures. 2K recommended. |
+| [HFs - Ruined Books](https://www.nexusmods.com/skyrimspecialedition/mods/132355)                   | High-quality ruined/destroyed book clutter meshes. Complements Book Covers Skyrim for damaged books.                                                                                                  |
 
 ### Risks & Compatibility
 
@@ -472,70 +472,70 @@ Visual upgrades for books, notes, and paper — the most-read world objects. Tex
 
 Small texture/mesh replacers that don't fit the main topic sections above. Each is a single-author or single-object upgrade.
 
-| Mod                                                                                                                      | Notes                                                                                                                                         |
-|--------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| [Visual Animated Enchants](https://www.nexusmods.com/skyrimspecialedition/mods/7037)                                     | Original VAE — superseded by V.A.E.R. in the main Mesh Replacer Series. Keep only if V.A.E.R. conflicts.                                      |
-| [Apophysis Dragon Priest Masks SE](https://www.nexusmods.com/skyrimspecialedition/mods/5800)                             | Dragon priest mask retexture. Optional cosmetic upgrade.                                                                                      |
-| [Runed Nordic Weapons](https://www.nexusmods.com/skyrimspecialedition/mods/11559)                                        | Nordic weapon mesh/texture replacer.                                                                                                          |
-| [Elven Armor replacer glow](https://www.nexusmods.com/skyrimspecialedition/mods/73235)                                   | Elven armor retexture with glow maps.                                                                                                         |
-| [Elsopa Iron weapons redone](https://www.nexusmods.com/skyrimspecialedition/mods/52605)                                  | Iron weapon retexture.                                                                                                                        |
-| [Ennead Banners and Shields](https://www.nexusmods.com/skyrimspecialedition/mods/46360)                                  | Banner/shield retexture.                                                                                                                      |
-| [Elsopa Quivers Redone](https://www.nexusmods.com/skyrimspecialedition/mods/65921)                                       | Quiver retexture.                                                                                                                             |
-| [Believable greatswords sheathed](https://www.nexusmods.com/skyrimspecialedition/mods/36909)                             | Greatsword sheath mesh fix.                                                                                                                   |
-| [ElSopa - HD Medieval anvil](https://www.nexusmods.com/skyrimspecialedition/mods/48825)                                  | Anvil retexture.                                                                                                                              |
-| [Elsopa Grindstones](https://www.nexusmods.com/skyrimspecialedition/mods/58149)                                          | Grindstone retexture.                                                                                                                         |
-| [Renthal's workbench](https://www.nexusmods.com/skyrimspecialedition/mods/23164)                                         | Workbench retexture.                                                                                                                          |
-| [JFresh's Mead Stein - A Tankard Replacer](https://www.nexusmods.com/skyrimspecialedition/mods/26685)                    | Mead stein/tankard retexture.                                                                                                                 |
-| [SD's Horn Candles](https://www.nexusmods.com/skyrimspecialedition/mods/40192)                                           | Candle retexture.                                                                                                                             |
-| [JS Dragon Claws](https://www.nexusmods.com/skyrimspecialedition/mods/57038)                                             | Dragon claw retexture.                                                                                                                        |
-| [Skyrim Remastered - Soul Gems](https://www.nexusmods.com/skyrimspecialedition/mods/39397)                               | Soul gem retexture.                                                                                                                           |
-| [Rally's Market Stalls](https://www.nexusmods.com/skyrimspecialedition/mods/81282)                                       | Market stall retexture.                                                                                                                       |
-| [KanJS Spell Tomes Animated](https://www.nexusmods.com/skyrimspecialedition/mods/103057)                                 | Animated spell tome mesh replacer.                                                                                                            |
-| [Alt Markarth Forge](https://www.nexusmods.com/skyrimspecialedition/mods/88936)                                          | Markarth forge retexture.                                                                                                                     |
-| [HD Unique Handmade Signs (ElSopa)](https://www.nexusmods.com/skyrimspecialedition/mods/21704)                           | Inn/shop sign retexture.                                                                                                                      |
-| [Skyking Windhelm Bridge Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/147846)                           | Windhelm bridge mesh/texture replacer.                                                                                                        |
-| [Tomato's Windhelm - PBR or Complex Material](https://www.nexusmods.com/skyrimspecialedition/mods/174492)                | Windhelm city-wide PBR retexture. 2K main file recommended.                                                                                   |
-| [Distinguished Drapery](https://www.nexusmods.com/skyrimspecialedition/mods/173894)                                      | Curtain/hanging fabric retexture.                                                                                                             |
-| [The Mists of Blackreach](https://www.nexusmods.com/skyrimspecialedition/mods/179487)                                    | Blackreach mist/fog visual effect overhaul.                                                                                                   |
-| [Valhalla Bridges](https://www.nexusmods.com/skyrimspecialedition/mods/157314)                                           | Higher-detail bridge mesh replacers. Mesh-only, no ESP.                                                                                       |
-| [HFs - Imperial Jail Grates](https://www.nexusmods.com/skyrimspecialedition/mods/171332)                                 | High-quality remodel of Imperial jail grate doors/gates. Mesh-only clutter improvement.                                                       |
-| [HFs - War horns - remodel](https://www.nexusmods.com/skyrimspecialedition/mods/139520)                                  | New Nord war horn model + HD textures. **Choose main file** (Nord war horn); Torygg/Jurgen ESL add-ons optional.                             |
-| [HFs - Safe - remodel](https://www.nexusmods.com/skyrimspecialedition/mods/165568)                                       | New metal-safe model + textures (safeandlock01.nif). No ESP, no scripts.                                                                      |
-| [Dwemer Pipework Reworked](https://www.nexusmods.com/skyrimspecialedition/mods/46507)                                    | Dwemer pipework mesh/texture upgrade. 4K. Requires Dwemer Metals Retexture SE (181444).                                                       |
-| [Dwemer Metals Retexture SE](https://www.nexusmods.com/skyrimspecialedition/mods/181444)                                 | Prerequisite for Dwemer Pipework Reworked.                                                                                                    |
-| [Dwemer Armor Glowmapped](https://www.nexusmods.com/skyrimspecialedition/mods/48227)                                     | Glowmap for Dwemer armor. Requires SSE Engine Fixes (baseline).                                                                                |
-| [Dwemer Automatons Glowmapped](https://www.nexusmods.com/skyrimspecialedition/mods/48724)                                | Glowmap for Dwemer automatons. Requires SSE Engine Fixes.                                                                                      |
-| [Dwemer Tech Glowmapped](https://www.nexusmods.com/skyrimspecialedition/mods/47802)                                      | Glowmap for Dwemer tech. Requires SSE Engine Fixes.                                                                                            |
-| [Dwemer Weapons Glowmapped](https://www.nexusmods.com/skyrimspecialedition/mods/48232)                                   | Glowmap for Dwemer weapons. Requires SSE Engine Fixes.                                                                                         |
-| [Dwemer Elevator Lights](https://www.nexusmods.com/skyrimspecialedition/mods/55478)                                      | Animated Dwemer elevator lights.                                                                                                               |
-| [Cathedral - Mushrooms](https://www.nexusmods.com/skyrimspecialedition/mods/26103)                                       | HD mushroom textures, 2K. Cathedral series. AI-Generated tag.                                                |
-| [Cathedral Snowberries — Inventory/Wreath/Planter](https://www.nexusmods.com/skyrimspecialedition/mods/69933)            | Inventory model for Cathedral 3D Snow Berries (→ [Terrain & Flora](modlist-graphics-terrain.md)).                                               |
-| [Detailed Rugs](https://www.nexusmods.com/skyrimspecialedition/mods/9030)                                                | Main file (with meshes).                                                                                                                       |
-| [DB Tenets Redone](https://www.nexusmods.com/skyrimspecialedition/mods/6782)                                             | 4K.                                                                                                                                            |
-| [Dusty Vampire Dust](https://www.nexusmods.com/skyrimspecialedition/mods/62907)                                          | 2K.                                                                                                                                            |
-| [Clams HD](https://www.nexusmods.com/skyrimspecialedition/mods/69655)                                                    |                                                                                                                                                |
-| [Comfy Dwemer Beds](https://www.nexusmods.com/skyrimspecialedition/mods/4798)                                            |                                                                                                                                                |
-| [Charcoal Stick and Coal](https://www.nexusmods.com/skyrimspecialedition/mods/69038)                                     | 2K.                                                                                                                                            |
-| [ElSopa - Glorious HD Amulets SE](https://www.nexusmods.com/skyrimspecialedition/mods/38194)                             | All divine/unique amulet retexture. **Choose Quality 2K.**                                                                                     |
-| [ElSopa - HD Better Bloody Rags SE](https://www.nexusmods.com/skyrimspecialedition/mods/44059)                           | New mesh + textures for bloody rags. **Choose 2K.**                                                                                            |
-| [ElSopa - HD Giant Mortars Redone SE](https://www.nexusmods.com/skyrimspecialedition/mods/49384)                         | New mesh + textures for giant mortar clutter. **Choose 2K.**                                                                                   |
-| [ElSopa - HD Keys Redone SE](https://www.nexusmods.com/skyrimspecialedition/mods/48209)                                  | New models + textures for all keys. **Choose 2K.**                                                                                             |
-| [ElSopa - Silver Mold Redone](https://www.nexusmods.com/skyrimspecialedition/mods/70144)                                  | Silver mold retexture. **Choose 2K.**                                                                                                          |
-| [ElSopa - Skeleton Key Redone](https://www.nexusmods.com/skyrimspecialedition/mods/85504)                                | Skeleton Key model/texture replacer. No ESP. **Choose 2K.**                                                                                    |
-| [ElSopa - Unique Coin Bags HD SE](https://www.nexusmods.com/skyrimspecialedition/mods/33910)                             | Distinct coin bag appearances. **Choose 2K.**                                                                                                  |
-| [Various Immersive Coinbags](https://www.nexusmods.com/skyrimspecialedition/mods/96476)                                  | BOS distribution of 60+ coin bag variations. Requires ElSopa Coin Bags HD. **Choose BOS main file.**                                            |
-| [ElSopa HD - Organic Burial Urns SE](https://www.nexusmods.com/skyrimspecialedition/mods/26692)                          | Burial urn retexture. **Choose 2K.**                                                                                                           |
-| [ElSopa HD - Remade Better Dust Piles SE](https://www.nexusmods.com/skyrimspecialedition/mods/22106)                     | Complete dust pile remake. **Choose 2K with skulls.**                                                                                          |
-| [FYX - Riften Canal and Round Posts](https://www.nexusmods.com/skyrimspecialedition/mods/75431)                          | Replaces square posts with round posts, fixes seams. No ESP. **Choose main file.**                                                             |
-| [FYX - Smooth Wells](https://www.nexusmods.com/skyrimspecialedition/mods/66715)                                          | Smooths water/magic wells, fixes UVs. No ESP. **Choose main file** (CotN Falkreath optional if adopted).                                       |
-| [FYX - Windhelm Graveyard](https://www.nexusmods.com/skyrimspecialedition/mods/98260)                                    | Graveyard mesh improvements. No ESP. **Choose main file** (JK's patch if JK's Windhelm adopted).                                               |
-| [Various Immersive Farmtables](https://www.nexusmods.com/skyrimspecialedition/mods/100469)                               | BOS-based farmtable variety. **Choose BOS main file.**                                                                                         |
-| [Falmer Huts Animated](https://www.nexusmods.com/skyrimspecialedition/mods/101539)                                       | BOS-based animated Falmer hut mesh replacer. **Choose BOS main file.**                                                                         |
-| [Garlic - A Garlic Mod](https://www.nexusmods.com/skyrimspecialedition/mods/78848)                                       | Garlic clutter replacer. **Choose main file.**                                                                                                 |
-| [Scallions of Skyrim - High Polygon Leeks](https://www.nexusmods.com/skyrimspecialedition/mods/53205)                    | Higher-poly leek mesh replacer. **Choose main file.**                                                                                          |
-| [Halffaces - Common Chair](https://www.nexusmods.com/skyrimspecialedition/mods/121182)                                   | Mesh + texture replacer for commonchair02. **Choose main file.**                                                                               |
-| [Animated Coffins](https://www.nexusmods.com/skyrimspecialedition/mods/63564)                                            | Animated coffin props. Install after Skeleton Replacer HD (→ [Characters & Creatures](modlist-graphics-characters.md)).                        |
-| [Grave Gargoyles](https://www.nexusmods.com/skyrimspecialedition/mods/21907)                                              | Custom gargoyle skeleton replacer.                                                                                       |
-| [Kanjs — Dragon Stone and Map of Dragon Burials](https://www.nexusmods.com/skyrimspecialedition/mods/167084)             | Animated dragon stone and burial map mesh replacer. No ESP.                                                                                     |
+| Mod                                                                                                           | Notes                                                                                                                   |
+|---------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
+| [Visual Animated Enchants](https://www.nexusmods.com/skyrimspecialedition/mods/7037)                          | Original VAE — superseded by V.A.E.R. in the main Mesh Replacer Series. Keep only if V.A.E.R. conflicts.                |
+| [Apophysis Dragon Priest Masks SE](https://www.nexusmods.com/skyrimspecialedition/mods/5800)                  | Dragon priest mask retexture. Optional cosmetic upgrade.                                                                |
+| [Runed Nordic Weapons](https://www.nexusmods.com/skyrimspecialedition/mods/11559)                             | Nordic weapon mesh/texture replacer.                                                                                    |
+| [Elven Armor replacer glow](https://www.nexusmods.com/skyrimspecialedition/mods/73235)                        | Elven armor retexture with glow maps.                                                                                   |
+| [Elsopa Iron weapons redone](https://www.nexusmods.com/skyrimspecialedition/mods/52605)                       | Iron weapon retexture.                                                                                                  |
+| [Ennead Banners and Shields](https://www.nexusmods.com/skyrimspecialedition/mods/46360)                       | Banner/shield retexture.                                                                                                |
+| [Elsopa Quivers Redone](https://www.nexusmods.com/skyrimspecialedition/mods/65921)                            | Quiver retexture.                                                                                                       |
+| [Believable greatswords sheathed](https://www.nexusmods.com/skyrimspecialedition/mods/36909)                  | Greatsword sheath mesh fix.                                                                                             |
+| [ElSopa - HD Medieval anvil](https://www.nexusmods.com/skyrimspecialedition/mods/48825)                       | Anvil retexture.                                                                                                        |
+| [Elsopa Grindstones](https://www.nexusmods.com/skyrimspecialedition/mods/58149)                               | Grindstone retexture.                                                                                                   |
+| [Renthal's workbench](https://www.nexusmods.com/skyrimspecialedition/mods/23164)                              | Workbench retexture.                                                                                                    |
+| [JFresh's Mead Stein - A Tankard Replacer](https://www.nexusmods.com/skyrimspecialedition/mods/26685)         | Mead stein/tankard retexture.                                                                                           |
+| [SD's Horn Candles](https://www.nexusmods.com/skyrimspecialedition/mods/40192)                                | Candle retexture.                                                                                                       |
+| [JS Dragon Claws](https://www.nexusmods.com/skyrimspecialedition/mods/57038)                                  | Dragon claw retexture.                                                                                                  |
+| [Skyrim Remastered - Soul Gems](https://www.nexusmods.com/skyrimspecialedition/mods/39397)                    | Soul gem retexture.                                                                                                     |
+| [Rally's Market Stalls](https://www.nexusmods.com/skyrimspecialedition/mods/81282)                            | Market stall retexture.                                                                                                 |
+| [KanJS Spell Tomes Animated](https://www.nexusmods.com/skyrimspecialedition/mods/103057)                      | Animated spell tome mesh replacer.                                                                                      |
+| [Alt Markarth Forge](https://www.nexusmods.com/skyrimspecialedition/mods/88936)                               | Markarth forge retexture.                                                                                               |
+| [HD Unique Handmade Signs (ElSopa)](https://www.nexusmods.com/skyrimspecialedition/mods/21704)                | Inn/shop sign retexture.                                                                                                |
+| [Skyking Windhelm Bridge Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/147846)                | Windhelm bridge mesh/texture replacer.                                                                                  |
+| [Tomato's Windhelm - PBR or Complex Material](https://www.nexusmods.com/skyrimspecialedition/mods/174492)     | Windhelm city-wide PBR retexture. 2K main file recommended.                                                             |
+| [Distinguished Drapery](https://www.nexusmods.com/skyrimspecialedition/mods/173894)                           | Curtain/hanging fabric retexture.                                                                                       |
+| [The Mists of Blackreach](https://www.nexusmods.com/skyrimspecialedition/mods/179487)                         | Blackreach mist/fog visual effect overhaul.                                                                             |
+| [Valhalla Bridges](https://www.nexusmods.com/skyrimspecialedition/mods/157314)                                | Higher-detail bridge mesh replacers. Mesh-only, no ESP.                                                                 |
+| [HFs - Imperial Jail Grates](https://www.nexusmods.com/skyrimspecialedition/mods/171332)                      | High-quality remodel of Imperial jail grate doors/gates. Mesh-only clutter improvement.                                 |
+| [HFs - War horns - remodel](https://www.nexusmods.com/skyrimspecialedition/mods/139520)                       | New Nord war horn model + HD textures. **Choose main file** (Nord war horn); Torygg/Jurgen ESL add-ons optional.        |
+| [HFs - Safe - remodel](https://www.nexusmods.com/skyrimspecialedition/mods/165568)                            | New metal-safe model + textures (safeandlock01.nif). No ESP, no scripts.                                                |
+| [Dwemer Pipework Reworked](https://www.nexusmods.com/skyrimspecialedition/mods/46507)                         | Dwemer pipework mesh/texture upgrade. 4K. Requires Dwemer Metals Retexture SE (181444).                                 |
+| [Dwemer Metals Retexture SE](https://www.nexusmods.com/skyrimspecialedition/mods/181444)                      | Prerequisite for Dwemer Pipework Reworked.                                                                              |
+| [Dwemer Armor Glowmapped](https://www.nexusmods.com/skyrimspecialedition/mods/48227)                          | Glowmap for Dwemer armor. Requires SSE Engine Fixes (baseline).                                                         |
+| [Dwemer Automatons Glowmapped](https://www.nexusmods.com/skyrimspecialedition/mods/48724)                     | Glowmap for Dwemer automatons. Requires SSE Engine Fixes.                                                               |
+| [Dwemer Tech Glowmapped](https://www.nexusmods.com/skyrimspecialedition/mods/47802)                           | Glowmap for Dwemer tech. Requires SSE Engine Fixes.                                                                     |
+| [Dwemer Weapons Glowmapped](https://www.nexusmods.com/skyrimspecialedition/mods/48232)                        | Glowmap for Dwemer weapons. Requires SSE Engine Fixes.                                                                  |
+| [Dwemer Elevator Lights](https://www.nexusmods.com/skyrimspecialedition/mods/55478)                           | Animated Dwemer elevator lights.                                                                                        |
+| [Cathedral - Mushrooms](https://www.nexusmods.com/skyrimspecialedition/mods/26103)                            | HD mushroom textures, 2K. Cathedral series. AI-Generated tag.                                                           |
+| [Cathedral Snowberries — Inventory/Wreath/Planter](https://www.nexusmods.com/skyrimspecialedition/mods/69933) | Inventory model for Cathedral 3D Snow Berries (→ [Terrain & Flora](modlist-graphics-terrain.md)).                       |
+| [Detailed Rugs](https://www.nexusmods.com/skyrimspecialedition/mods/9030)                                     | Main file (with meshes).                                                                                                |
+| [DB Tenets Redone](https://www.nexusmods.com/skyrimspecialedition/mods/6782)                                  | 4K.                                                                                                                     |
+| [Dusty Vampire Dust](https://www.nexusmods.com/skyrimspecialedition/mods/62907)                               | 2K.                                                                                                                     |
+| [Clams HD](https://www.nexusmods.com/skyrimspecialedition/mods/69655)                                         |                                                                                                                         |
+| [Comfy Dwemer Beds](https://www.nexusmods.com/skyrimspecialedition/mods/4798)                                 |                                                                                                                         |
+| [Charcoal Stick and Coal](https://www.nexusmods.com/skyrimspecialedition/mods/69038)                          | 2K.                                                                                                                     |
+| [ElSopa - Glorious HD Amulets SE](https://www.nexusmods.com/skyrimspecialedition/mods/38194)                  | All divine/unique amulet retexture. **Choose Quality 2K.**                                                              |
+| [ElSopa - HD Better Bloody Rags SE](https://www.nexusmods.com/skyrimspecialedition/mods/44059)                | New mesh + textures for bloody rags. **Choose 2K.**                                                                     |
+| [ElSopa - HD Giant Mortars Redone SE](https://www.nexusmods.com/skyrimspecialedition/mods/49384)              | New mesh + textures for giant mortar clutter. **Choose 2K.**                                                            |
+| [ElSopa - HD Keys Redone SE](https://www.nexusmods.com/skyrimspecialedition/mods/48209)                       | New models + textures for all keys. **Choose 2K.**                                                                      |
+| [ElSopa - Silver Mold Redone](https://www.nexusmods.com/skyrimspecialedition/mods/70144)                      | Silver mold retexture. **Choose 2K.**                                                                                   |
+| [ElSopa - Skeleton Key Redone](https://www.nexusmods.com/skyrimspecialedition/mods/85504)                     | Skeleton Key model/texture replacer. No ESP. **Choose 2K.**                                                             |
+| [ElSopa - Unique Coin Bags HD SE](https://www.nexusmods.com/skyrimspecialedition/mods/33910)                  | Distinct coin bag appearances. **Choose 2K.**                                                                           |
+| [Various Immersive Coinbags](https://www.nexusmods.com/skyrimspecialedition/mods/96476)                       | BOS distribution of 60+ coin bag variations. Requires ElSopa Coin Bags HD. **Choose BOS main file.**                    |
+| [ElSopa HD - Organic Burial Urns SE](https://www.nexusmods.com/skyrimspecialedition/mods/26692)               | Burial urn retexture. **Choose 2K.**                                                                                    |
+| [ElSopa HD - Remade Better Dust Piles SE](https://www.nexusmods.com/skyrimspecialedition/mods/22106)          | Complete dust pile remake. **Choose 2K with skulls.**                                                                   |
+| [FYX - Riften Canal and Round Posts](https://www.nexusmods.com/skyrimspecialedition/mods/75431)               | Replaces square posts with round posts, fixes seams. No ESP. **Choose main file.**                                      |
+| [FYX - Smooth Wells](https://www.nexusmods.com/skyrimspecialedition/mods/66715)                               | Smooths water/magic wells, fixes UVs. No ESP. **Choose main file** (CotN Falkreath optional if adopted).                |
+| [FYX - Windhelm Graveyard](https://www.nexusmods.com/skyrimspecialedition/mods/98260)                         | Graveyard mesh improvements. No ESP. **Choose main file** (JK's patch if JK's Windhelm adopted).                        |
+| [Various Immersive Farmtables](https://www.nexusmods.com/skyrimspecialedition/mods/100469)                    | BOS-based farmtable variety. **Choose BOS main file.**                                                                  |
+| [Falmer Huts Animated](https://www.nexusmods.com/skyrimspecialedition/mods/101539)                            | BOS-based animated Falmer hut mesh replacer. **Choose BOS main file.**                                                  |
+| [Garlic - A Garlic Mod](https://www.nexusmods.com/skyrimspecialedition/mods/78848)                            | Garlic clutter replacer. **Choose main file.**                                                                          |
+| [Scallions of Skyrim - High Polygon Leeks](https://www.nexusmods.com/skyrimspecialedition/mods/53205)         | Higher-poly leek mesh replacer. **Choose main file.**                                                                   |
+| [Halffaces - Common Chair](https://www.nexusmods.com/skyrimspecialedition/mods/121182)                        | Mesh + texture replacer for commonchair02. **Choose main file.**                                                        |
+| [Animated Coffins](https://www.nexusmods.com/skyrimspecialedition/mods/63564)                                 | Animated coffin props. Install after Skeleton Replacer HD (→ [Characters & Creatures](modlist-graphics-characters.md)). |
+| [Grave Gargoyles](https://www.nexusmods.com/skyrimspecialedition/mods/21907)                                  | Custom gargoyle skeleton replacer.                                                                                      |
+| [Kanjs — Dragon Stone and Map of Dragon Burials](https://www.nexusmods.com/skyrimspecialedition/mods/167084)  | Animated dragon stone and burial map mesh replacer. No ESP.                                                             |
 
 ---

@@ -7,38 +7,40 @@
 Install all core libraries and frameworks upfront — they are non-negotiable dependencies for virtually every mod in the list. Bulk-install prevents missing-master errors and lets every subsequent section work against the real framework stack.
 
 ### SKSE & Scripts
+
 - **SKSE64** — Script extender; required by almost every SKSE plugin. [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/30379)
 
 ### Core Libraries
-| Mod                                                                                                 | Purpose                                                                                   |
-|-----------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
-| [Address Library for SKSE Plugins](https://www.nexusmods.com/skyrimspecialedition/mods/32444)       | Universal SKSE plugin compatibility layer for 1.6.1170.                                   |
-| [USSEP](https://www.nexusmods.com/skyrimspecialedition/mods/266)                                    | Foundational record patch. Requires the four free CC masters — no paid AE Upgrade needed. |
-| [SSE Engine Fixes](https://www.nexusmods.com/skyrimspecialedition/mods/17230)                       | Critical engine-level stability and bug fixes.                                            |
-| [SSE Display Tweaks](https://www.nexusmods.com/skyrimspecialedition/mods/34705)                     | Mandatory display and frame-pacing control.                                               |
-| [Scrambled Bugs](https://www.nexusmods.com/skyrimspecialedition/mods/43532)                         | Collection of low-level engine tweaks.                                                    |
-| [powerofthree's Tweaks](https://www.nexusmods.com/skyrimspecialedition/mods/51073)                  | SKSE plugin tweak framework; hard dependency for many modern mods.                        |
-| [powerofthree's Papyrus Extender](https://www.nexusmods.com/skyrimspecialedition/mods/22854)        | Extended Papyrus scripting functions.                                                     |
-| [PapyrusUtil](https://www.nexusmods.com/skyrimspecialedition/mods/13048)                            | Papyrus array/map utilities.                                                              |
-| [JContainers](https://www.nexusmods.com/skyrimspecialedition/mods/16495)                            | JSON data storage for Papyrus.                                                            |
-| [Keyword Item Distributor (KID)](https://www.nexusmods.com/skyrimspecialedition/mods/55728)         | Distributes keywords to items without patching.                                           |
-| [Spell Perk Item Distributor (SPID)](https://www.nexusmods.com/skyrimspecialedition/mods/36869)     | Distributes spells/perks to NPCs dynamically.                                             |
-| [Base Object Swapper (BOS)](https://www.nexusmods.com/skyrimspecialedition/mods/60805)              | Swaps base objects via rules without direct overrides.                                    |
-| [Crash Logger SSE AE VR](https://www.nexusmods.com/skyrimspecialedition/mods/59818)                 | Crash dump logging for diagnosing CTDs.                                                   |
-| [SkyPatcher](https://www.nexusmods.com/skyrimspecialedition/mods/106659)                            | SKSE-based vanilla record patcher; hard requirement for several NPC/AI mods.              |
-| [Dual Casting Fix](https://www.nexusmods.com/skyrimspecialedition/mods/92454)                       | Required by Blade and Blunt.                                                              |
-| [Andrealphus' Papyrus Functions](https://www.nexusmods.com/skyrimspecialedition/mods/85252)         | Required by Dragon War.                                                                   |
-| [ConsoleUtilSSE NG](https://www.nexusmods.com/skyrimspecialedition/mods/76649)                      | Required by Dragon War and several animation behavior mods.                               |
-| [Kris's Papyrus Extender](https://www.nexusmods.com/skyrimspecialedition/mods/115164)               | Required by Bathing in Skyrim - Renewed.                                                  |
-| [Animation Queue Fix](https://www.nexusmods.com/skyrimspecialedition/mods/82395)                    | Animation-stack stability for heavy OAR/behavior loads.                                   |
-| [Papyrus Tweaks NG](https://www.nexusmods.com/skyrimspecialedition/mods/77779)                      | Script-engine performance optimization; widely adopted baseline.                          |
-| [Lexicon SKSE](https://www.nexusmods.com/skyrimspecialedition/mods/153176)                          | Required by Actor Value Generator.                                                        |
-| [Actor Value Generator](https://www.nexusmods.com/skyrimspecialedition/mods/84743)                  | Required by Classic Attributes.                                                           |
-| [Sonders Keyword Distribution Resources](https://www.nexusmods.com/skyrimspecialedition/mods/93995) | Keyword distribution framework for item/keyword tagging.                                  |
-| [Skyrim Save System Overhaul 3 (SSSO3)](https://www.nexusmods.com/skyrimspecialedition/mods/122343) | Save-system replacement with Save Shield, rotating caps, and safe timed hardsaves. Requires `JContainers SE` + `NL_MCM`. |
-| [Unofficial Skyrim Modder's Patch - USMP SE](https://www.nexusmods.com/skyrimspecialedition/mods/49616) | Modder-side patch collection fixing record-level bugs across DLC and CC content. Complements USSEP. |
-| [USMP - Patch Emporium](https://www.nexusmods.com/skyrimspecialedition/mods/50813) | Centralized patch hub for USMP — third-party compatibility patches for various content mods. Install after USMP base. |
-| [Object Impact Framework (OIF)](https://www.nexusmods.com/skyrimspecialedition/mods/149484) | Physics-based object impact system; prerequisite for several immersion/destruction mods. |
+
+| Mod                                                                                                     | Purpose                                                                                                                  |
+|---------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
+| [Address Library for SKSE Plugins](https://www.nexusmods.com/skyrimspecialedition/mods/32444)           | Universal SKSE plugin compatibility layer for 1.6.1170.                                                                  |
+| [USSEP](https://www.nexusmods.com/skyrimspecialedition/mods/266)                                        | Foundational record patch. Requires the four free CC masters — no paid AE Upgrade needed.                                |
+| [SSE Engine Fixes](https://www.nexusmods.com/skyrimspecialedition/mods/17230)                           | Critical engine-level stability and bug fixes.                                                                           |
+| [SSE Display Tweaks](https://www.nexusmods.com/skyrimspecialedition/mods/34705)                         | Mandatory display and frame-pacing control.                                                                              |
+| [Scrambled Bugs](https://www.nexusmods.com/skyrimspecialedition/mods/43532)                             | Collection of low-level engine tweaks.                                                                                   |
+| [powerofthree's Tweaks](https://www.nexusmods.com/skyrimspecialedition/mods/51073)                      | SKSE plugin tweak framework; hard dependency for many modern mods.                                                       |
+| [powerofthree's Papyrus Extender](https://www.nexusmods.com/skyrimspecialedition/mods/22854)            | Extended Papyrus scripting functions.                                                                                    |
+| [PapyrusUtil](https://www.nexusmods.com/skyrimspecialedition/mods/13048)                                | Papyrus array/map utilities.                                                                                             |
+| [JContainers](https://www.nexusmods.com/skyrimspecialedition/mods/16495)                                | JSON data storage for Papyrus.                                                                                           |
+| [Keyword Item Distributor (KID)](https://www.nexusmods.com/skyrimspecialedition/mods/55728)             | Distributes keywords to items without patching.                                                                          |
+| [Spell Perk Item Distributor (SPID)](https://www.nexusmods.com/skyrimspecialedition/mods/36869)         | Distributes spells/perks to NPCs dynamically.                                                                            |
+| [Base Object Swapper (BOS)](https://www.nexusmods.com/skyrimspecialedition/mods/60805)                  | Swaps base objects via rules without direct overrides.                                                                   |
+| [Crash Logger SSE AE VR](https://www.nexusmods.com/skyrimspecialedition/mods/59818)                     | Crash dump logging for diagnosing CTDs.                                                                                  |
+| [SkyPatcher](https://www.nexusmods.com/skyrimspecialedition/mods/106659)                                | SKSE-based vanilla record patcher; hard requirement for several NPC/AI mods.                                             |
+| [Dual Casting Fix](https://www.nexusmods.com/skyrimspecialedition/mods/92454)                           | Required by Blade and Blunt.                                                                                             |
+| [Andrealphus' Papyrus Functions](https://www.nexusmods.com/skyrimspecialedition/mods/85252)             | Required by Dragon War.                                                                                                  |
+| [ConsoleUtilSSE NG](https://www.nexusmods.com/skyrimspecialedition/mods/76649)                          | Required by Dragon War and several animation behavior mods.                                                              |
+| [Kris's Papyrus Extender](https://www.nexusmods.com/skyrimspecialedition/mods/115164)                   | Required by Bathing in Skyrim - Renewed.                                                                                 |
+| [Animation Queue Fix](https://www.nexusmods.com/skyrimspecialedition/mods/82395)                        | Animation-stack stability for heavy OAR/behavior loads.                                                                  |
+| [Papyrus Tweaks NG](https://www.nexusmods.com/skyrimspecialedition/mods/77779)                          | Script-engine performance optimization; widely adopted baseline.                                                         |
+| [Lexicon SKSE](https://www.nexusmods.com/skyrimspecialedition/mods/153176)                              | Required by Actor Value Generator.                                                                                       |
+| [Actor Value Generator](https://www.nexusmods.com/skyrimspecialedition/mods/84743)                      | Required by Classic Attributes.                                                                                          |
+| [Sonders Keyword Distribution Resources](https://www.nexusmods.com/skyrimspecialedition/mods/93995)     | Keyword distribution framework for item/keyword tagging.                                                                 |
+| [Skyrim Save System Overhaul 3 (SSSO3)](https://www.nexusmods.com/skyrimspecialedition/mods/122343)     | Save-system replacement with Save Shield, rotating caps, and safe timed hardsaves. Requires `JContainers SE` + `NL_MCM`. |
+| [Unofficial Skyrim Modder's Patch - USMP SE](https://www.nexusmods.com/skyrimspecialedition/mods/49616) | Modder-side patch collection fixing record-level bugs across DLC and CC content. Complements USSEP.                      |
+| [USMP - Patch Emporium](https://www.nexusmods.com/skyrimspecialedition/mods/50813)                      | Centralized patch hub for USMP — third-party compatibility patches for various content mods. Install after USMP base.    |
+| [Object Impact Framework (OIF)](https://www.nexusmods.com/skyrimspecialedition/mods/149484)             | Physics-based object impact system; prerequisite for several immersion/destruction mods.                                 |
 
 ### USMP Patch Emporium — File Selection
 
@@ -46,18 +48,18 @@ Install all core libraries and frameworks upfront — they are non-negotiable de
 
 **FOMOD selections — install patches for these targets only** (verified against `ModuleConfig.xml`; each entry's `.esp` dependency gates it to `Recommended` only when that plugin is installed):
 
-| FOMOD step | Selection | Why |
-|---|---|---|
-| Base install (step 1) | **USMP base v2.6.6** — `Required` | Always installs. |
-| Racial Plugins | *(none)* | Races of Tamriel, Palladium, Mannaz, YASH, SkyRem, etc. — none installed. Race baseline is Aetherius (own step below). |
-| Aetherius v2.14.1 combination patches | **`Aetherius-A Race Overhaul`** only | Aetherius locked (→ [Race Overhauls](modlist-expanded-character.md)). FK's DRS, Left Hand Rings, Racial Body Morphs not installed — pick the plain patch, not the combos. |
-| Imperious / Disparity combos | *(none)* | Not installed — EnaiRim/vanilla-plus not used. |
-| Other combination patches | *(none)* | Left Hand Rings, Mannaz, Racial Passives not installed. |
-| Skeletons and Mannequins | *(none)* | FK's DRS, RBM, mannequin variants not installed. |
-| Other Patches — Dialogue | **`Guard Dialogue Overhaul or Redux`**, **`Relationship Dialogue Overhaul`** | GDO adopted (→ [NPC Dialogue](modlist-npcs.md)); RDO locked (→ [Followers](modlist-expanded-followers.md)). The GDO row appears when `Guard Dialogue Overhaul.esp` is active and WACCF is not. |
-| Other Patches — select any | **`AI Overhaul`**, **`Legacy of the Dragonborn Ver 6.3.0`**, **`Book Covers Skyrim`** | AI Overhaul SSE and LoTD locked baselines; Book Covers Skyrim locked (→ [Textures & Meshes](modlist-graphics-textures.md)). Skip Cutting Room Floor, Apachii Divine Elegance, Relighting Skyrim, ELFX Shadows, USSE Fixes, Unofficial CC Content Patch — none installed (Relighting/ELFX are fallback alternatives only). |
-| kryptopyr's patches | **`Timing is Everything`** | Baseline (→ [Time & World Encounters](modlist-world-content.md)). **`Weapons Armor Clothing and Clutter Fixes` only if WACCF installed** — WACCF is optional ("skip if conflicts outweigh gains"); when installed, pick the `WACCF and Guard Dialogue Overhaul` combo above instead of the plain GDO row. |
-| Vampire Werewolf Beast | *(none)* | None of these mods installed. |
+| FOMOD step                            | Selection                                                                             | Why                                                                                                                                                                                                                                                                                                                       |
+|---------------------------------------|---------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Base install (step 1)                 | **USMP base v2.6.6** — `Required`                                                     | Always installs.                                                                                                                                                                                                                                                                                                          |
+| Racial Plugins                        | *(none)*                                                                              | Races of Tamriel, Palladium, Mannaz, YASH, SkyRem, etc. — none installed. Race baseline is Aetherius (own step below).                                                                                                                                                                                                    |
+| Aetherius v2.14.1 combination patches | **`Aetherius-A Race Overhaul`** only                                                  | Aetherius locked (→ [Race Overhauls](modlist-expanded-character.md)). FK's DRS, Left Hand Rings, Racial Body Morphs not installed — pick the plain patch, not the combos.                                                                                                                                                 |
+| Imperious / Disparity combos          | *(none)*                                                                              | Not installed — EnaiRim/vanilla-plus not used.                                                                                                                                                                                                                                                                            |
+| Other combination patches             | *(none)*                                                                              | Left Hand Rings, Mannaz, Racial Passives not installed.                                                                                                                                                                                                                                                                   |
+| Skeletons and Mannequins              | *(none)*                                                                              | FK's DRS, RBM, mannequin variants not installed.                                                                                                                                                                                                                                                                          |
+| Other Patches — Dialogue              | **`Guard Dialogue Overhaul or Redux`**, **`Relationship Dialogue Overhaul`**          | GDO adopted (→ [NPC Dialogue](modlist-npcs.md)); RDO locked (→ [Followers](modlist-expanded-followers.md)). The GDO row appears when `Guard Dialogue Overhaul.esp` is active and WACCF is not.                                                                                                                            |
+| Other Patches — select any            | **`AI Overhaul`**, **`Legacy of the Dragonborn Ver 6.3.0`**, **`Book Covers Skyrim`** | AI Overhaul SSE and LoTD locked baselines; Book Covers Skyrim locked (→ [Textures & Meshes](modlist-graphics-textures.md)). Skip Cutting Room Floor, Apachii Divine Elegance, Relighting Skyrim, ELFX Shadows, USSE Fixes, Unofficial CC Content Patch — none installed (Relighting/ELFX are fallback alternatives only). |
+| kryptopyr's patches                   | **`Timing is Everything`**                                                            | Baseline (→ [Time & World Encounters](modlist-world-content.md)). **`Weapons Armor Clothing and Clutter Fixes` only if WACCF installed** — WACCF is optional ("skip if conflicts outweigh gains"); when installed, pick the `WACCF and Guard Dialogue Overhaul` combo above instead of the plain GDO row.                 |
+| Vampire Werewolf Beast                | *(none)*                                                                              | None of these mods installed.                                                                                                                                                                                                                                                                                             |
 
 **Load order:** Emporium after USMP base; also after each mod it patches (Aetherius, AI Overhaul SSE, LoTD, RDO, etc.) in the MO2 left pane.
 
@@ -84,6 +86,7 @@ Vanilla autosaves, quicksaves, and manual saves all write the same `.ess` format
 **SSSO3 Configuration for Elder Wilds:** Starfrost (locked survival baseline) does not use Campfire files — no patch conflict expected.
 
 ### SkyPatcher And SkyPatched Mods
+
 **SkyPatcher** is an SKSE plugin that patches vanilla records at runtime from INI-style configuration files rather than traditional ESP plugins. No winner-loser override chain, no per-pair patches for the records it covers.
 
 A **"SkyPatched"** variant ships record changes as SkyPatcher configs instead of an ESP. Assets (meshes, textures, scripts) still install in MO2's left pane, but the plugin slot is replaced by files under `SKSE/Plugins/SkyPatcher/`.
@@ -114,11 +117,11 @@ For installation, config syntax, filtering reference, authoring recipes, and the
 
 Small mesh-level corrections for vanilla rendering errors — bad lighting flags, UVs, collision, and over-lit particle effects. All are mesh/texture-only (no plugin slots) and load-order-safe with the graphics stack.
 
-| Mod                                                                                              | Purpose                                                                                                                                     |
-|--------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| [Particle Patch](https://www.nexusmods.com/skyrimspecialedition/mods/65720)                      | Fixes incorrect particle/effect brightness and blending under the CS lighting model (fire, fog, mist, snow). See FOMOD options below. |
-| [Assorted Mesh Fixes](https://www.nexusmods.com/skyrimspecialedition/mods/32117)                 | Corrects vanilla mesh rendering errors — lighting flags, UVs, collision, normals, shadow/depth issues. Mesh-only, no ESP. Load after SMIM (→ [Textures & Meshes](modlist-graphics-textures.md)). |
-| [Flickering Meshes Fix](https://www.nexusmods.com/skyrimspecialedition/mods/53957)               | Splits over-lit city meshes so the engine's 6-lights-per-mesh limit no longer causes flicker. Covers all five cities plus hold farmhouses. No ESP. See FOMOD options below. |
+| Mod                                                                                | Purpose                                                                                                                                                                                          |
+|------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Particle Patch](https://www.nexusmods.com/skyrimspecialedition/mods/65720)        | Fixes incorrect particle/effect brightness and blending under the CS lighting model (fire, fog, mist, snow). See FOMOD options below.                                                            |
+| [Assorted Mesh Fixes](https://www.nexusmods.com/skyrimspecialedition/mods/32117)   | Corrects vanilla mesh rendering errors — lighting flags, UVs, collision, normals, shadow/depth issues. Mesh-only, no ESP. Load after SMIM (→ [Textures & Meshes](modlist-graphics-textures.md)). |
+| [Flickering Meshes Fix](https://www.nexusmods.com/skyrimspecialedition/mods/53957) | Splits over-lit city meshes so the engine's 6-lights-per-mesh limit no longer causes flicker. Covers all five cities plus hold farmhouses. No ESP. See FOMOD options below.                      |
 
 #### Flickering Meshes Fix — FOMOD Options
 
@@ -126,9 +129,9 @@ Pure-mesh mod — no ESP, no requirements, no runtime config. The FOMOD has thre
 
 **Step 1 — Main Cities** (`SelectExactlyOne` per city — pick `No parallax version` for all five; never `None` — that skips the fix):
 
-| City     | Pick                   |
-|----------|------------------------|
-| Riften  | `No parallax version` |
+| City     | Pick                  |
+|----------|-----------------------|
+| Riften   | `No parallax version` |
 | Solitude | `No parallax version` |
 | Whiterun | `No parallax version` |
 | Markarth | `No parallax version` |
@@ -138,25 +141,25 @@ The `Parallax version` of each city requires a parallax retexture (`_p` textures
 
 **Step 2 — Towns and Villages** (`SelectExactlyOne` per hold; choose `Farmhouses Without Parallax`):
 
-| Group | Pick                             |
-|-------|----------------------------------|
+| Group                                   | Pick                                                          |
+|-----------------------------------------|---------------------------------------------------------------|
 | Whiterun and Windhelm Holds' farmhouses | `Farmhouses Without Parallax` (Riverwood etc. use these nifs) |
-| Solitude Hold's farmhouses             | `Farmhouses Without Parallax`    |
-| Markarth Hold's farmhouses             | `Farmhouses Without Parallax`    |
+| Solitude Hold's farmhouses              | `Farmhouses Without Parallax`                                 |
+| Markarth Hold's farmhouses              | `Farmhouses Without Parallax`                                 |
 
 **Step 3 — Compatibility choices** (`SelectAny`; only SMIM is checked by this list):
 
-| Option | Pick | Reason |
-|--------|------|--------|
-| **SMIM** | **Yes** | SMIM is the core baseline (→ [Textures & Meshes](modlist-graphics-textures.md)); FOMOD marks it Recommended when `SMIM-SE-Merged-All.esp` is active, and it wires SMIM-compatible Solitude splits. |
-| Bright Waterfall Fix (ENB) | No | ENB-only; not installed. |
-| Icy Windhelm | No | Not installed — Windhelm snow coverage is `Windhelm Is Snowy - BOS` → [Terrain](modlist-graphics-terrain.md). |
-| ELFX Exteriors | No | ELFX is a fallback alternative in → [Lighting](modlist-graphics-lighting.md), not baseline. |
-| Majestic Mountains | No | Not installed — list uses Enhanced Rocks and Mountains (→ [Terrain](modlist-graphics-terrain.md)). |
-| Riften Architectural Details | No | Not installed (Riften outdoor coverage comes from the Snazzy AIO series). |
-| Skyrim 202X by Pfuscher | No | Textures are PBR (Tomato's pack etc.), not 202X. |
-| Skyrim - A Mountainous Experience | No | Not installed. |
-| Water for ENB | No | No ENB; water stack is CS (Simplicity of Sea + Water Effects CS). Also skipped when using Realistic Water Two. |
+| Option                            | Pick    | Reason                                                                                                                                                                                             |
+|-----------------------------------|---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **SMIM**                          | **Yes** | SMIM is the core baseline (→ [Textures & Meshes](modlist-graphics-textures.md)); FOMOD marks it Recommended when `SMIM-SE-Merged-All.esp` is active, and it wires SMIM-compatible Solitude splits. |
+| Bright Waterfall Fix (ENB)        | No      | ENB-only; not installed.                                                                                                                                                                           |
+| Icy Windhelm                      | No      | Not installed — Windhelm snow coverage is `Windhelm Is Snowy - BOS` → [Terrain](modlist-graphics-terrain.md).                                                                                      |
+| ELFX Exteriors                    | No      | ELFX is a fallback alternative in → [Lighting](modlist-graphics-lighting.md), not baseline.                                                                                                        |
+| Majestic Mountains                | No      | Not installed — list uses Enhanced Rocks and Mountains (→ [Terrain](modlist-graphics-terrain.md)).                                                                                                 |
+| Riften Architectural Details      | No      | Not installed (Riften outdoor coverage comes from the Snazzy AIO series).                                                                                                                          |
+| Skyrim 202X by Pfuscher           | No      | Textures are PBR (Tomato's pack etc.), not 202X.                                                                                                                                                   |
+| Skyrim - A Mountainous Experience | No      | Not installed.                                                                                                                                                                                     |
+| Water for ENB                     | No      | No ENB; water stack is CS (Simplicity of Sea + Water Effects CS). Also skipped when using Realistic Water Two.                                                                                     |
 
 **Overwrite rule:** let it win over Assorted Mesh Fixes and city-mesh mods; here, keep the list's `Whiterun Has Walls`/city overrides on top with the city-mesh mods winning per-section order, and `Flickering Meshes Fix` winning the vanilla-based meshes it targets — aligned with the author: "compatible with almost everything... let this overwrite them when required".
 
@@ -164,14 +167,14 @@ The `Parallax version` of each city requires a parallax retexture (`_p` textures
 
 v1.4.3+ consolidated ENB and CS into a single build; the plugin-name choice is cosmetic, but should still match the list's framework (CS, not ENB). Only the **Fake Light Glow** row differs from the factory default.
 
-| Option              | Pick                   | Reason                                                                                                                |
-|---------------------|------------------------|-----------------------------------------------------------------------------------------------------------------------|
-| Installation Format | `BSA`                  | Keeps the modlist tidy; archive vs loose files is organizational.                                                     |
-| Plugin Name         | `Particle Patch`       | Not `Particle Patch for ENB` — the list is CS-only.                                                                   |
-| Light Shafts        | `No`                   | Volumetric god-rays are an ENB-style effect. CS's own lighting stack handles atmosphere.                              |
-| Fake Light Glow     | **`Particle Light`**   | Converts fake candle/lamp glows to real particle lights that CS renders correctly. Without this, fixtures go dark.    |
+| Option              | Pick                     | Reason                                                                                                                      |
+|---------------------|--------------------------|-----------------------------------------------------------------------------------------------------------------------------|
+| Installation Format | `BSA`                    | Keeps the modlist tidy; archive vs loose files is organizational.                                                           |
+| Plugin Name         | `Particle Patch`         | Not `Particle Patch for ENB` — the list is CS-only.                                                                         |
+| Light Shafts        | `No`                     | Volumetric god-rays are an ENB-style effect. CS's own lighting stack handles atmosphere.                                    |
+| Fake Light Glow     | **`Particle Light`**     | Converts fake candle/lamp glows to real particle lights that CS renders correctly. Without this, fixtures go dark.          |
 | Remove Fake Glow    | *(leave both unchecked)* | With `Particle Light` the fake glow is replaced, not removed. Leave unchecked to preserve fixture presence for readability. |
-| Custom Textures     | `Yes`                  | Keep the shipped texture fixes.                                                                                       |
+| Custom Textures     | `Yes`                    | Keep the shipped texture fixes.                                                                                             |
 
 ---
 
@@ -314,31 +317,32 @@ Converting ESP to ESL-flagged ESP frees a regular plugin slot (limit 254) by mov
 ---
 
 ## Targeted Bugfix Mods
-| Mod                                                                                           | Purpose                                                             |
-|-----------------------------------------------------------------------------------------------|---------------------------------------------------------------------|
-| [Fuz Ro D-oh - Silent Voice](https://www.nexusmods.com/skyrimspecialedition/mods/15109)       | Subtitle safety for unvoiced dialogue.                              |
-| [Actor Limit Fix](https://www.nexusmods.com/skyrimspecialedition/mods/32349)                  | Crowded scene / facial animation reliability.                       |
-| [Equip Enchantment Fix](https://www.nexusmods.com/skyrimspecialedition/mods/42839)            | Enchantments dropping off while equipped.                           |
-| [NPC AI Process Position Fix - NG](https://www.nexusmods.com/skyrimspecialedition/mods/69326) | NPC processing after waiting/fast travel.                           |
-| [Simple Offence Suppression](https://www.nexusmods.com/skyrimspecialedition/mods/41764)       | Accidental hostility from stray hits.                               |
-| [Bug Fixes SSE](https://www.nexusmods.com/skyrimspecialedition/mods/33261)                    | Crafting-menu, perk-application, and water-behavior fixes.          |
-| [Navigator - Navmesh Fixes](https://www.nexusmods.com/skyrimspecialedition/mods/52641)        | Follower pathing in complex worldspaces. See FOMOD options below.   |
-| [Barter Limit Fix](https://www.nexusmods.com/skyrimspecialedition/mods/77173)                 | Merchant gold cap overflow.                                         |
-| [Mum's the Word NG](https://www.nexusmods.com/skyrimspecialedition/mods/77409)                | Worthless stolen-item tagging.                                      |
-| [Unique Region Names SE](https://www.nexusmods.com/skyrimspecialedition/mods/56452)           | Data provider: renames exterior worldspace locations to descriptive region names. ESL-flagged. Pairs with Regional Save Names below. |
-| [Regional Save Names](https://www.nexusmods.com/skyrimspecialedition/mods/49698)              | Save labeling for testing hygiene.                                  |
-| [Better Jumping SE](https://www.nexusmods.com/skyrimspecialedition/mods/18967)                | Consistent jumping control.                                         |
-| [LeveledList Crash Fix](https://www.nexusmods.com/skyrimspecialedition/mods/129136)           | Leveled-list crash protection.                                      |
-| [Explosion Collision Fix](https://www.nexusmods.com/skyrimspecialedition/mods/154076)         | Prevents explosion-force spells from launching objects into camera. |
-| [Inertia (Floating Gear Fix)](https://www.nexusmods.com/skyrimspecialedition/mods/148746)    | Stops dead-NPC equipment freezing mid-air by briefly keeping collision capsules active after death (configurable duration). SKSE plugin, zero records, all NPCs/creatures. |
-| [SMP-NPC crash fix](https://www.nexusmods.com/skyrimspecialedition/mods/91616)              | Prevents the known FSMP crash when loading NPCs with SMP hair. Required companion to the locked FSMP baseline. SKSE plugin. |
-| [Dragon Stalking Fix](https://www.nexusmods.com/skyrimspecialedition/mods/14060)            | Dragon corpses no longer follow the player or fall out of the sky. ESL, SPID-based corpse cleanup. Requires Po3 Tweaks (baseline). |
-| [Beard Mask Fix](https://www.nexusmods.com/skyrimspecialedition/mods/80232)                  | Beards use slot 44 — prevents mask clipping. SKSE plugin.           |
-| [Mini's Micro-Systems Framework (MMSF)](https://www.nexusmods.com/skyrimspecialedition/mods/183073) | Weather identification and dynamic FormID allocation framework. Required by Luma Utility below. |
-| [Luma Utility](https://www.nexusmods.com/skyrimspecialedition/mods/177961)                   | Patch-free cell integration utility. Requires MMSF above.          |
-| [Exit Sneak On Sprint](https://www.nexusmods.com/skyrimspecialedition/mods/138669) | Exits sneak mode when sprinting. Lightweight SKSE plugin, no records. |
-| [Naked Dead NPC Fix](https://www.nexusmods.com/skyrimspecialedition/mods/99024)       | Auto-equips body/hands/feet/head slots when a dead NPC loads naked (outfit-distribution glitch). SKSE, zero records, "compatible with everything". |
-| [Native EditorID Fix](https://www.nexusmods.com/skyrimspecialedition/mods/85260)       | Bug-fix utility (Bug Fixes/SKSE) correcting engine-side native EditorID handling. SKSE plugin, requires Address Library (baseline). |
+
+| Mod                                                                                                           | Purpose                                                                                                                                                                                 |
+|---------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Fuz Ro D-oh - Silent Voice](https://www.nexusmods.com/skyrimspecialedition/mods/15109)                       | Subtitle safety for unvoiced dialogue.                                                                                                                                                  |
+| [Actor Limit Fix](https://www.nexusmods.com/skyrimspecialedition/mods/32349)                                  | Crowded scene / facial animation reliability.                                                                                                                                           |
+| [Equip Enchantment Fix](https://www.nexusmods.com/skyrimspecialedition/mods/42839)                            | Enchantments dropping off while equipped.                                                                                                                                               |
+| [NPC AI Process Position Fix - NG](https://www.nexusmods.com/skyrimspecialedition/mods/69326)                 | NPC processing after waiting/fast travel.                                                                                                                                               |
+| [Simple Offence Suppression](https://www.nexusmods.com/skyrimspecialedition/mods/41764)                       | Accidental hostility from stray hits.                                                                                                                                                   |
+| [Bug Fixes SSE](https://www.nexusmods.com/skyrimspecialedition/mods/33261)                                    | Crafting-menu, perk-application, and water-behavior fixes.                                                                                                                              |
+| [Navigator - Navmesh Fixes](https://www.nexusmods.com/skyrimspecialedition/mods/52641)                        | Follower pathing in complex worldspaces. See FOMOD options below.                                                                                                                       |
+| [Barter Limit Fix](https://www.nexusmods.com/skyrimspecialedition/mods/77173)                                 | Merchant gold cap overflow.                                                                                                                                                             |
+| [Mum's the Word NG](https://www.nexusmods.com/skyrimspecialedition/mods/77409)                                | Worthless stolen-item tagging.                                                                                                                                                          |
+| [Unique Region Names SE](https://www.nexusmods.com/skyrimspecialedition/mods/56452)                           | Data provider: renames exterior worldspace locations to descriptive region names. ESL-flagged. Pairs with Regional Save Names below.                                                    |
+| [Regional Save Names](https://www.nexusmods.com/skyrimspecialedition/mods/49698)                              | Save labeling for testing hygiene.                                                                                                                                                      |
+| [Better Jumping SE](https://www.nexusmods.com/skyrimspecialedition/mods/18967)                                | Consistent jumping control.                                                                                                                                                             |
+| [LeveledList Crash Fix](https://www.nexusmods.com/skyrimspecialedition/mods/129136)                           | Leveled-list crash protection.                                                                                                                                                          |
+| [Explosion Collision Fix](https://www.nexusmods.com/skyrimspecialedition/mods/154076)                         | Prevents explosion-force spells from launching objects into camera.                                                                                                                     |
+| [Inertia (Floating Gear Fix)](https://www.nexusmods.com/skyrimspecialedition/mods/148746)                     | Stops dead-NPC equipment freezing mid-air by briefly keeping collision capsules active after death (configurable duration). SKSE plugin, zero records, all NPCs/creatures.              |
+| [SMP-NPC crash fix](https://www.nexusmods.com/skyrimspecialedition/mods/91616)                                | Prevents the known FSMP crash when loading NPCs with SMP hair. Required companion to the locked FSMP baseline. SKSE plugin.                                                             |
+| [Dragon Stalking Fix](https://www.nexusmods.com/skyrimspecialedition/mods/14060)                              | Dragon corpses no longer follow the player or fall out of the sky. ESL, SPID-based corpse cleanup. Requires Po3 Tweaks (baseline).                                                      |
+| [Beard Mask Fix](https://www.nexusmods.com/skyrimspecialedition/mods/80232)                                   | Beards use slot 44 — prevents mask clipping. SKSE plugin.                                                                                                                               |
+| [Mini's Micro-Systems Framework (MMSF)](https://www.nexusmods.com/skyrimspecialedition/mods/183073)           | Weather identification and dynamic FormID allocation framework. Required by Luma Utility below.                                                                                         |
+| [Luma Utility](https://www.nexusmods.com/skyrimspecialedition/mods/177961)                                    | Patch-free cell integration utility. Requires MMSF above.                                                                                                                               |
+| [Exit Sneak On Sprint](https://www.nexusmods.com/skyrimspecialedition/mods/138669)                            | Exits sneak mode when sprinting. Lightweight SKSE plugin, no records.                                                                                                                   |
+| [Naked Dead NPC Fix](https://www.nexusmods.com/skyrimspecialedition/mods/99024)                               | Auto-equips body/hands/feet/head slots when a dead NPC loads naked (outfit-distribution glitch). SKSE, zero records, "compatible with everything".                                      |
+| [Native EditorID Fix](https://www.nexusmods.com/skyrimspecialedition/mods/85260)                              | Bug-fix utility (Bug Fixes/SKSE) correcting engine-side native EditorID handling. SKSE plugin, requires Address Library (baseline).                                                     |
 | [Weapons Armor Clothing and Clutter Fixes (WACCF)](https://www.nexusmods.com/skyrimspecialedition/mods/18994) | Broad record fix for weapon/armor/clothing/clutter records. High compatibility debt — test carefully with the crafting and artifact stack. Optional — skip if conflicts outweigh gains. |
 
 ### Not Installed
@@ -347,48 +351,47 @@ Converting ESP to ESL-flagged ESP frees a regular plugin slot (limit 254) by mov
 - **I'm Walkin' Here NG with Pets** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/122516)) — Ally/pet body-blocking fix.
 - **Bard Instrumentals Mostly - Sing Rarely** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/10927)) — Reduces repetitive tavern singing.
 
-
 #### Navigator - Navmesh Fixes — FOMOD Options
 
 The FOMOD has five steps: AIO vs Modular, AIO main-file + compatibility patches, optional add-ons, and optional extras.
 
 **Step 1 — AIO or Modular** (`SelectExactlyOne`):
 
-| Option       | Pick         | Reason                                                        |
-|-------------|-------------|---------------------------------------------------------------|
-| All-in-one  | **Select**  | Author-recommended. Single `.esl` is cleaner than ~80 modular ESPs. |
-| Modular     | Skip         | Only needed for selective per-cell installs.                  |
+| Option     | Pick       | Reason                                                              |
+|------------|------------|---------------------------------------------------------------------|
+| All-in-one | **Select** | Author-recommended. Single `.esl` is cleaner than ~80 modular ESPs. |
+| Modular    | Skip       | Only needed for selective per-cell installs.                        |
 
 **Step 2 — Main file** (`SelectExactlyOne`; only shown when AIO selected):
 
-| Option | Pick        | Reason                                                                     |
-|--------|------------|----------------------------------------------------------------------------|
-| `.esl` | **Select** | Light master — load as high as possible. Author-recommended.               |
-| ESP-FE | Skip        | Light plugin variant; only needed for manual load-order conflict solving.  |
+| Option | Pick       | Reason                                                                    |
+|--------|------------|---------------------------------------------------------------------------|
+| `.esl` | **Select** | Light master — load as high as possible. Author-recommended.              |
+| ESP-FE | Skip       | Light plugin variant; only needed for manual load-order conflict solving. |
 
 **Step 2 — Compatibility patches** (`SelectAny`):
 
-| Patch                   | Pick        | Reason                                                                                      |
-|-------------------------|------------|---------------------------------------------------------------------------------------------|
-| Interesting NPCs        | Skip        | 3DNPC is listed as an Alternative in → [NPCs](modlist-npcs.md), not in the list.               |
-| Skyrim Sewers           | Skip        | Not in modlist.                                                                             |
-| Sunder and Wraithguard  | Skip        | `ccbgssse008-wraithguard.esl` is paid AE Upgrade content, not in this load order.           |
+| Patch                  | Pick | Reason                                                                            |
+|------------------------|------|-----------------------------------------------------------------------------------|
+| Interesting NPCs       | Skip | 3DNPC is listed as an Alternative in → [NPCs](modlist-npcs.md), not in the list.  |
+| Skyrim Sewers          | Skip | Not in modlist.                                                                   |
+| Sunder and Wraithguard | Skip | `ccbgssse008-wraithguard.esl` is paid AE Upgrade content, not in this load order. |
 
 **Step 4 — Optional add-ons** (`SelectAny`; always shown):
 
-| Add-on          | Pick        | Reason                                                          |
-|-----------------|------------|-----------------------------------------------------------------|
-| Interesting NPCs | Skip        | Not installed.                                                   |
-| Skyrim Sewers    | Skip        | Not installed.                                                   |
-| Vigilant         | **Select**  | Vigilant is in the list (→ [World Content](modlist-world-content.md)). Installs `VigilantNavFix.esp`. |
+| Add-on           | Pick       | Reason                                                                                                |
+|------------------|------------|-------------------------------------------------------------------------------------------------------|
+| Interesting NPCs | Skip       | Not installed.                                                                                        |
+| Skyrim Sewers    | Skip       | Not installed.                                                                                        |
+| Vigilant         | **Select** | Vigilant is in the list (→ [World Content](modlist-world-content.md)). Installs `VigilantNavFix.esp`. |
 
 **Step 5 — Optional extras** (`SelectAtMostOne` / `SelectAny`):
 
-| Extra                          | Pick        | Reason                                                                               |
-|--------------------------------|------------|--------------------------------------------------------------------------------------|
-| Abandoned Prison               | **Vanilla** | Skyrim Unbound Reborn is the alternate start (→ [Character & Progression](modlist-expanded-character.md)), not AS-LAL or AS Reborn. Installs `AbandonedPrisonNavFix.esp`. |
-| Quicksilver Mine                | **Select**  | No Vigil Enforcer Armor Set CC conflict. Installs `QuicksilverMineNavFix.esp`.       |
-| Broken Oar script tweak         | **Select**  | Prevents non-standard followers from being stuck exiting Broken Oar Grotto. Installs `defaultNoEnemiesFollowDoorScript.pex`. |
+| Extra                   | Pick        | Reason                                                                                                                                                                    |
+|-------------------------|-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Abandoned Prison        | **Vanilla** | Skyrim Unbound Reborn is the alternate start (→ [Character & Progression](modlist-expanded-character.md)), not AS-LAL or AS Reborn. Installs `AbandonedPrisonNavFix.esp`. |
+| Quicksilver Mine        | **Select**  | No Vigil Enforcer Armor Set CC conflict. Installs `QuicksilverMineNavFix.esp`.                                                                                            |
+| Broken Oar script tweak | **Select**  | Prevents non-standard followers from being stuck exiting Broken Oar Grotto. Installs `defaultNoEnemiesFollowDoorScript.pex`.                                              |
 
 **Resulting plugins:** `Navigator-NavFixes.esl`, `VigilantNavFix.esp`, `AbandonedPrisonNavFix.esp`, `QuicksilverMineNavFix.esp`.
 
