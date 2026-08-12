@@ -43,7 +43,7 @@ Health, stamina, magicka, target readability, and permanent interface structure 
 | [Detection Meter - AE Support](https://www.nexusmods.com/skyrimspecialedition/mods/77350)                                  | Required for 1.6.1170.                                                                                                         |
 | [STB Widgets](https://www.nexusmods.com/skyrimspecialedition/mods/136148)                                                  | Lightweight modular widgets (clock, time, compass-free direction, stat bars). SKSE + MCM.                                      |
 | [Follower Stats](https://www.nexusmods.com/skyrimspecialedition/mods/159406)                                               | MCM-based follower stat tracking. Pairs with Nether's.                                                                         |
-| [Tween Menu Overhaul Improved](https://www.nexusmods.com/skyrimspecialedition/mods/155036)                                 | Main-menu and loading-screen visual overhaul. Updated version with additional scenes.                                          |
+| [Tween Menu Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/143275)                                          | Main-menu and loading-screen visual overhaul. Updated version with additional scenes.                                          |
 | [RUMINATE - Frost and Snow - Main Menu Video Pack](https://www.nexusmods.com/skyrimspecialedition/mods/160831)             | Frost-and-snow themed main menu cinematic.                                                                                     |
 | [Skeuomorphism of Skyrim - Immersive Plaque Reading Interface](https://www.nexusmods.com/skyrimspecialedition/mods/119849) | 3D in-world plaque model. Requires BOS. ESL-flagged.                                                                           |
 | [Dynamic Location Pop-ups](https://www.nexusmods.com/skyrimspecialedition/mods/153122)                                     | Location discovery notification banner.                                                                                        |
@@ -206,6 +206,7 @@ Add descriptive text to inventory item cards for better readability. All by the 
 |---------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Sovngarde - Mist's Font Replacer](https://www.nexusmods.com/skyrimspecialedition/mods/386) | Text readability for 16:9 4K HDR. Prefer Bold V8.9 first.                                                                                                   |
 | [Complete Widescreen Fix](https://www.nexusmods.com/skyrimspecialedition/mods/1778)         | Secondary for ultrawide layouts. **Superseded by Widescreen Scale Removed (136793) — do not combine** (unsquish-fix class; author's compatibility warning). |
+
 ---
 
 ## Compass, Markers, And Minimal HUD
