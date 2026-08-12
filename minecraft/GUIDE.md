@@ -33,7 +33,7 @@ Recommended JVM arguments (for XMCL → instance settings → Java → JVM Argum
 | 32 GB      | `-Xms12G -Xmx22G -XX:SoftMaxHeapSize=12G` |
 | 64 GB      | `-Xms12G -Xmx32G -XX:SoftMaxHeapSize=12G` |
 
-> **Note**: ZGC (Z Garbage Collector) with generational mode is the recommended GC for Java 21 with NeoForge. It provides consistently low latency (sub-millisecond pause times) and handles the large heap sizes common with modded Minecraft better than Shenandoah or G1GC. The Adoptium Temurin JDK 21 includes ZGC — no special Java build needed. `-XX:+AlwaysPreTouch` pre-initializes all memory pages at startup, preventing runtime page-fault stalls. `-XX:+PerfDisableSharedMem` disables synchronous `hsperfdata` file writes, removing a minor source of I/O-induced latency. `-XX:SoftMaxHeapSize=12G` tells ZGC to target ~12G heap usage and GC more aggressively to stay near that level, while allowing bursts above it up to `-Xmx`. For this to take effect, `-Xmx` must be set higher than `-Xms`. The baseline uses equal values for simplicity; on a 64 GB machine you may want e.g. `-Xms12G -Xmx24G` instead to let SoftMaxHeapSize work.
+> **Note**: ZGC with generational mode is the recommended GC for Java 21 + NeoForge — low pause times, handles large heaps. Temurin JDK 21 includes it. `-XX:+AlwaysPreTouch` pre-initializes memory pages at startup; `-XX:+PerfDisableSharedMem` skips `hsperfdata` writes. `-XX:SoftMaxHeapSize=12G` targets ~12G heap usage with bursts allowed up to `-Xmx` (which must be set higher than the soft cap).
 
 ### X Minecraft Launcher (XMCL)
 
@@ -41,7 +41,7 @@ Recommended JVM arguments (for XMCL → instance settings → Java → JVM Argum
 |-------------------------------|------------------------------------------|
 | [XMCL](https://www.xmcl.app/) | Mod manager and launcher for the modpack |
 
-**XMCL** manages mod and modpack installation, updates, and launching for this modpack. It supports both **CurseForge** and **Modrinth** as mod sources in one launcher, handles NeoForge installation automatically, manages Java versions per instance, and uses hard links to avoid duplicate mod storage. Open source, free, with no premium tier.
+**XMCL** manages mod and modpack installation, updates, and launching for this modpack. It supports both **CurseForge** and **Modrinth** as mod sources in one launcher, handles NeoForge installation automatically, and manages Java versions per instance. Open source, free, with no premium tier.
 
 **Setup**:
 
@@ -223,26 +223,16 @@ Distant Horizons handles far rendering — keep vanilla render distance low. DH 
 | [Fresh Animations: Extensions](https://www.curseforge.com/minecraft/texture-packs/fresh-animations-extensions)                               | Official FA extension bundle — 8 addons: Objects, Details, Emissive, Creepers, Spiders, Quivers, Classic Horses, Slamacow |
 | [MissingSoundsFix](https://modrinth.com/resourcepack/missingsoundsfix)                                                                 | Suppresses vanilla empty-sound warnings (salmon.ambient, cod.ambient, etc.) — fixes log spam from MC-97521 |
 
-**Smooth Font** replaces Minecraft's pixelated default font with a clean, smooth 32x typeface based on Faithful 32x. Improves readability across menus, chat, and UI while keeping a vanilla-friendly look. Only overrides font textures — safe to use alongside any 16x resource packs. By apt9002. [Source (CurseForge)](https://www.curseforge.com/minecraft/texture-packs/smooth-font)
-
-**Fresh Animations** adds idle animations, directional looking, sleep/blink cycles, and emotional states to all vanilla mobs. It's a resource pack overlay (not a mod) — place it high in the pack order. Works on any version with no mod dependencies.
-
-**Enhanced Boss Bars** replaces boss bar textures with themed designs — covers vanilla bosses and has support for Twilight Forest bosses. For full compatibility with L_Ender's Cataclysm and The Aether (which use custom boss bar rendering), install the companion [Enhanced Boss Bars mod](https://www.curseforge.com/minecraft/mc-mods/enhanced-boss-bars-mod). Pure resource pack for vanilla/Twilight Forest bars.
-
-**RAY's 3D Rails** replaces rail block and item textures with 3D models. Supports shaders since v3.0. Compatible with all rail types from Steam 'n' Rails and Create.
-
-**Better Lanterns** gives lanterns and chains an enhanced 3D look with connected chain models. Compatible with Arcane Lanterns and Thin Air mods.
-
-**(Bee's) Fancy Crops** reworks vanilla crop models with texture variations and a fluffier look. Built to work with **Farmer's Delight** (Wave 4) and compatible with any mod that adds crops. 16x, vanilla-friendly. No mods required — pure resource pack. By EverLoste. 6.5M downloads. [Source (Modrinth)](https://modrinth.com/resourcepack/fancy-crops)
-
-**Fire Rekindled** overhauls almost all animated textures in the game: fire, soul fire, campfires, torches, lanterns, water, lava, magma, nether portal, slime, sculk, and more. Animations are 32-64 frames, loop seamlessly, and stay close to vanilla artstyle. Supports **Create** mod (honey, steam jet particles). All textures include Normal and Specular maps (LabPBR standard) for PBR-compatible shaders. 1.3M downloads, MIT license. By Tectato. [Source (Modrinth)](https://modrinth.com/resourcepack/fire-rekindled) — Optional CTM addon pack available.
-
-**Bushy Pink Petals, Wildflowers & Leaf Litter** replaces flat pink petals, wildflowers, and leaf litter with 3D models. Makes ground cover look thicker and more natural — petals and leaves pile up with visible depth. Apache 2.0 licensed, actively maintained. By godhusk. 178K downloads. [Source (CurseForge)](https://www.curseforge.com/minecraft/texture-packs/bushy-pink-petals-wildflowers-leaf-litter)
-
-**Fresh Animations: Extensions** is the all-in-one bundle of official FA extensions by FreshLX. Contains all 8 addons in a single download: **Objects** (animated chests/boats/minecarts/shulker boxes), **Details** (extra model details + texture variations for farm animals), **Emissive** (glowing mob eyes/features for shaders — works with Complementary Unbound), **Creepers** (custom creeper textures + rare model variants), **Spiders** (more detailed/realistic spider models), **Quivers** (quiver models on skeletons/strays/bogged), **Classic Horses** (1.12-era horse look with modern animations), and **Slamacow** (character variants). Load above Fresh Animations in the pack order. All 16x, vanilla-friendly. By FreshLX. 20.5M downloads. [Source (CurseForge)](https://www.curseforge.com/minecraft/texture-packs/fresh-animations-extensions)
-
-
-**MissingSoundsFix** suppresses vanilla empty-sound warnings (`salmon.ambient`, `cod.ambient`, `pufferfish.ambient`, `tropical_fish.ambient`) that spam the log. This is a vanilla Minecraft bug (MC-97521) — Mojang registered ambient sound events for fish but never shipped audio files. The resource pack provides dummy sound mappings that silence the warnings. No sound is actually changed. Pure resource pack, works on any version. By Tilera. 144K downloads. [Source (Modrinth)](https://modrinth.com/resourcepack/missingsoundsfix)
+- **Smooth Font** — 32x font based on Faithful 32x. Overrides font textures only — safe with any 16x packs.
+- **Fresh Animations** — idle animations, directional looking, sleep/blink, emotions for all vanilla mobs. Resource pack overlay (not a mod) — place high in pack order.
+- **Enhanced Boss Bars** — themed boss bar designs for vanilla + Twilight Forest. For Cataclysm/Aether bars (custom rendering), also install the companion [Enhanced Boss Bars mod](https://www.curseforge.com/minecraft/mc-mods/enhanced-boss-bars-mod).
+- **RAY's 3D Rails** — 3D rail models; shader support since v3.0. Compatible with Steam 'n' Rails and Create rails.
+- **Better Lanterns** — 3D lanterns + connected chain models. Compatible with Arcane Lanterns and Thin Air.
+- **(Bee's) Fancy Crops** — vanilla crop rework with texture variations; built to work with Farmer's Delight (Wave 4).
+- **Fire Rekindled** — animated fire, lava, water, portal textures with Normal/Specular maps for PBR shaders; supports Create (honey, steam particles). Optional CTM addon available.
+- **Bushy Pink Petals, Wildflowers & Leaf Litter** — 3D models for ground-cover flora; denser, more natural look.
+- **Fresh Animations: Extensions** — all 8 official FA addons in one download (Objects, Details, Emissive, Creepers, Spiders, Quivers, Classic Horses, Slamacow). Load above Fresh Animations.
+- **MissingSoundsFix** — silences vanilla empty-sound log spam (`salmon.ambient`, etc. — MC-97521) with dummy sound mappings; no audio changed.
 
 **Installation**: Install via XMCL — drop `.zip` files into the instance's Resource Packs tab, or copy them into the instance's `resourcepacks/` folder (access via instance settings). Load order (top = highest priority):
 
@@ -265,8 +255,6 @@ Distant Horizons handles far rendering — keep vanilla render distance low. DH 
 | [SuperMartijn642's Config Lib](https://www.curseforge.com/minecraft/mc-mods/supermartijn642s-config-lib) | Config library (Chunk Loaders dependency)                                |
 | [SuperMartijn642's Core Lib](https://www.curseforge.com/minecraft/mc-mods/supermartijn642s-core-lib)     | Core library (Chunk Loaders dependency)                                  |
 | [Chunky](https://www.curseforge.com/minecraft/mc-mods/chunky)                                            | World pregenerator — generates chunks preemptively to eliminate stutter  |
-
-The essentials that make the game run well. Dependencies, performance, rendering, shaders, chunk loading, and texture packs. Install everything here before launching.
 
 ### Install
 
@@ -302,7 +290,7 @@ Open **Video Settings → [colored tiles icon]** next to the FOV slider.
 
 > **Tip**: DH generates LOD data as you explore, in new chunks only. First visit to an area has temporary pop-in. Terralith + Tectonic terrain takes longer than vanilla. Monitor VRAM — shaders + DH at 4K can push past 12GB.
 >
-> **During Chunky pre-generation**, switch Distant Generator Mode to `PRE_EXISTING_ONLY` and drop CPU Load to Low/Balanced so DH converts Chunky's freshly generated chunks into LODs instead of racing it — see [Chunky — World Pregeneration](#5-chunky--world-pregeneration). Switch back to the default mode and raise CPU Load once pre-generation is done.
+> **During Chunky pre-generation**, switch Distant Generator Mode to `PRE_EXISTING_ONLY` and drop CPU Load to Low/Balanced so DH converts Chunky's freshly generated chunks into LODs instead of racing it — see [Chunky — World Pregenerator](#chunky--world-pregenerator). Switch back to the default mode and raise CPU Load once pre-generation is done.
 
 #### 3. Shader Setup
 
@@ -310,27 +298,9 @@ Drop **Complementary Unbound** `.zip` into `shaderpacks/`. In-game: Options → 
 
 **Euphoria Patches** (optional add-on): Install the patcher mod, it auto-detects Complementary and applies additional visual options. All features disabled by default. Open Shader Options → Popular Settings tab → apply the Popular Settings preset, then browse individual categories to fine-tune.
 
-**Settings for RTX 4080 SUPER (16GB VRAM, 4K)**:
+Full settings table (RTX 4080 SUPER, 16GB VRAM): see [Shaderpack](#shaderpack) above. General MC: Graphics Fancy, Render Distance 10, Simulation 8, VSync OFF.
 
-- Visual Style: Unbound, Profile: High, RP Support: Integrated PBR+
-- Shadow Resolution: 2048, Shadow Distance: 12 chunks
-- Real-Time Shadows: High, Light Shaft Quality: Medium
-- Entity Shadows: OFF, Cloud Quality: High, Water Reflection: Medium
-
-General MC: Graphics Fancy, Render Distance 10, Simulation 8, Biome Blend 2, Mipmap 4x, Entity Distance 100%, VSync OFF, Max Framerate 120.
-
-#### 4. Texture Pack Load Order (top = highest priority)
-
-1. Smooth Font
-2. Fresh Animations
-3. Enhanced Boss Bars
-4. RAY's 3D Rails
-5. Better Lanterns
-6. (Bee's) Fancy Crops
-7. Fire Rekindled
-8. Bushy Pink Petals, Wildflowers & Leaf Litter
-
-#### 5. Chunky — World Pregeneration
+#### 4. Chunky — World Pregeneration
 
 Run before exploring beyond your spawn area to avoid exploration stutter.
 
@@ -339,37 +309,7 @@ Run before exploring beyond your spawn area to avoid exploration stutter.
 /chunky start
 ```
 
-Let it finish (~15-30 minutes). Check progress with `/chunky status`. The world border expands as chunks generate. Set `"continue-on-restart": true` in `config/chunky/config.json` before you start — this auto-resumes the task every time you load the world, so you can close the game and it picks up where it left off.
-
-**Distant Horizons + Chunky — practical setup** (so DH turns the pre-generated world into LODs while Chunky runs):
-
-- **Distant Generation**: ON — DH converts Chunky's newly generated chunks into LODs as Chunky progresses.
-- **Distant Generator Mode**: `PRE_EXISTING_ONLY` — DH builds LODs only from chunks Chunky has already generated, rather than generating terrain itself.
-- **DH CPU Load**: Low/Balanced during Chunky, especially with a big modpack; increase it afterward if you want to rapidly finish the LOD conversion.
-- **Never** switch the mode to `SURFACE` or `FEATURES` while Chunky is active — unless you specifically want DH generating terrain too.
-
-When Chunky finishes, switch Distant Generator Mode back to the default and raise CPU Load back up so DH keeps generating LODs for newly explored chunks.
-
----
-
-### Performance Mods — Install and Forget
-
-These mods optimize automatically. No config needed.
-
-| Mod                  | What it does                                              |
-|----------------------|-----------------------------------------------------------|
-| **Sodium**           | Modern rendering engine — massive FPS boost               |
-| **Iris**             | Shader loader (Complementary Unbound)                     |
-| **Lithium**          | Server-side logic optimization — faster AI, block updates |
-| **Distant Horizons** | LOD rendering — see 256+ chunks away                      |
-| **ModernFix**        | All-in-one performance + bug fixes                        |
-| **ImmediatelyFast**  | Immediate-mode rendering for blocks/items                 |
-| **Entity Culling**   | Skip rendering off-screen entities                        |
-| **Dynamic FPS**      | Lower FPS when Minecraft is backgrounded                  |
-| **NoisiumForked**    | Faster world generation when exploring                    |
-| **FerriteCore**      | Lower memory usage — fewer OOM crashes                    |
-
-**ModernFix critical setting**: `mixin.perf.dynamic_resources = true` in `config/modernfix-mixins.properties` — biggest single launch-time speedup. Disable only if you see missing textures.
+Let it finish (~15-30 min), check with `/chunky status`. Full workflow — `continue-on-restart` and the Distant Horizons interplay — is in the [Chunky — World Pregenerator](#chunky--world-pregenerator) section below.
 
 ---
 
@@ -425,7 +365,7 @@ This generates a 5000-block radius circle around your spawn point. On a modern C
 
 Any active task will now resume by itself whenever you open the world. This is the recommended approach for single-player — the task resumes the moment you load the world, no manual `/chunky continue` needed.
 
-**Distant Horizons + Chunky**: while pre-generating, set DH to Distant Generation ON, Distant Generator Mode `PRE_EXISTING_ONLY`, and CPU Load Low/Balanced so DH converts Chunky's chunks into LODs as they generate. Switch back to the default generator mode and raise CPU Load when Chunky finishes. Full workflow in [First Launch Checklist §5](#5-chunky--world-pregeneration).
+**Distant Horizons + Chunky**: while pre-generating, set DH to Distant Generation ON, Distant Generator Mode `PRE_EXISTING_ONLY`, and CPU Load Low/Balanced so DH converts Chunky's chunks into LODs as they generate. Switch back to the default generator mode and raise CPU Load when Chunky finishes. Full workflow in the [Chunky — World Pregenerator](#chunky--world-pregenerator) section above.
 
 
 ---
@@ -648,256 +588,65 @@ No keybind changes needed — the mod works fully through context detection. YAC
 
 **Known issue — double text**: Some mods render text shadows that get doubled by the dark shader. Fix: edit `darkmodeeverywhereshaders.json` (create in `config/` or via a resource pack) and change `darkColorRecplacement` from `16777215` to `4868682` (all 3 occurrences). Only needed if you see doubled text on specific screens.
 
-All the visual polish, UI improvements, inventory tools, storage, travel, trading, and quality-of-life features that make the game feel great. Install alongside Wave 0.
-
 ### Visual & Client QoL — What to Expect
 
 These mods change how the game looks and feels. All are client-side and work immediately.
 
-#### LambDynamicLights
-
-Hold a torch, glowstone, or lantern → it emits light around you. Works in off-hand.
-**Pro tip**: Hold torch in off-hand while mining. No more placing torches every 5 blocks. Toggle with `Ctrl+L`.
-
-#### BetterF3
-
-Press `F3` for a cleaner debug HUD. Customize in Mod Menu → BetterF3 → Config. Toggle FPS, coords, biome, light level without clutter.
-
-#### Sound Physics Remastered
-
-Sound behaves realistically — muffled through walls, echo in caves, directional audio. Works automatically.
-
-#### AmbientSounds
-
-Biome-aware ambient audio — birds in forests, wind in mountains, water near rivers. Automatic, no config.
-
-#### The Immersive Music Mod
-
-147 new biome/structure-aware songs with natural silence gaps (unlike Constant Music which forces a 2-minute fade). Plays like vanilla but with much more variety.
-
-#### Immersive UI
-
-Smooth hotbar sliding, item pickup particles, animated tooltips, menu transitions. Pure polish.
-
-#### Immersive Hotbar
-
-Animated hotbar item slots bounce/shrink on pickup, use, and swap. Animated tooltip on item switch or hover. Animated XP bar and level-up effects make RPG progression feel impactful. Configurable animations via Mod Menu (YACL, already in pack). Complements Immersive UI — IUI animates the hotbar *selector bar*; Immersive Hotbar animates the *slot contents*.
-
-#### Smooth GUI
-
-Smooth slide-in animation when opening any GUI, with fade-in background overlay and blur. Pure cosmetic — makes inventory/chest/crafting screens feel polished. No dependencies, no config needed.
-
-#### Status Effect Bars Reforged
-
-Small progress bars on status effect icons showing remaining duration. Config via Cloth Config. Auto-hides for beacon effects.
-
-#### Traveler's Titles
-
-RPG-style title cards when entering biomes, dimensions, or deep caves/high peaks. No config needed.
-
-#### Better Modlist
-
-Enhanced mod list screen with badges (library/core/addon), categories, and search.
-
-#### Better Third Person
-
-Decouples camera from character in third-person. Look around independently while walking any direction. Essential for combat awareness and scenic building.
-**How**: Bind a toggle key in Controls → Better Third Person. Once active, character moves independently of camera.
-
-#### Tooltip Overhaul
-
-Rounded corners, sharper text, scrollable tooltips, 3D item previews on hover. No config.
-
-#### First Person Model + 3D Skin Layers
-
-Shows your full body in first-person view, with 3D depth on skin layers (jackets, hats). Requires Not Enough Animations (auto-installed dependency).
-
-#### Presence Footsteps
-
-Block-aware footstep sounds for every surface — wood creaks, gravel crunches, stone clacks. Works with Sound Physics for realistic acoustics.
-
-#### Particular Reforged
-
-Ambient visual effects: 3D water splashes, waterfall cascades, fireflies at dusk, falling leaves, cave dust, underwater bubbles, rain ripples. Toggle individual effects in `config/particular.json` if any feel excessive.
-
-#### Particle Rain
-
-Replaces vanilla rain and snow with angled particle effects (wind-blown during storms), adds sandstorms to deserts and dry biomes (including modded), plus atmospheric fog and wind. Client-side only, no gameplay impact — purely cosmetic weather enhancement. Configurable via `/particlerain` in-game menu or Mod List → Config. By PigCart, same author as Cosy Critters (already in this wave).
-
-#### Swinging Lanterns
-
-Adds subtle physics-based swaying to hanging lanterns and their chains. Makes builds feel alive and dynamic — lanterns gently rock as if stirred by a breeze. Client-side only, works on vanilla servers. No dependencies, no config needed.
-
-#### Wakes Reforged
-
-Realistic water wakes and splashes when traveling on water. Works with Small Ships (Wave 2) and vanilla boats.
-
-#### Sounds
-
-170+ new sound effects for UI clicks, item drops, eating, achievements, block actions. Every vanilla action feels tactile. Customize individually in Mod List → Sounds → Config or `config/sounds/`. Conflicts with nothing — complements Sound Physics (environment) perfectly.
-
-#### Better Safe Bed
-
-Mobs that can't reach you no longer block sleep. Chill-rule essential.
-
-#### Beautiful Enchanted Books [Mod Edition]
-
-Unique textures per enchantment type — Protection books look different from Sharpness books. Standalone mod, no resource pack needed.
-
-#### Overflowing Bars
-
-Health, armor, and toughness bars expand beyond vanilla limits. Essential once you stack Apotheosis bonuses and skill tree HP.
-
-#### Leave My Bars Alone
-
-Keeps your food, health, and armor bars visible while riding mounts. Vanilla replaces your bars with the mount's health — this fixes that. Essential for exploration on horses, aircraft, ships. Requires Puzzles Lib (already in pack). No config needed.
-
-#### Cherished Worlds
-
-Favorite/pin worlds to the top of your list, prevent accidental deletion. Right-click a world in the list to favorite it.
-
-#### Day Counter
-
-Brief "Day N" ActionBar message at dawn that appears and auto-fades, plus a small milestone gift on days 100/250/500/1000/2000. Pack config: `config/day_counter.toml`.
-
-#### Eating Animation
-
-First-person eating/drinking animation — food moves to your mouth and shrinks. Works with Farmer's Delight foods.
-
-#### Camera Overhaul
-
-Camera tilting on movement, screen shakes on explosions, mouselook roll, idle sway. Satisfying feedback. Configurable in `config/cameraoverhaul-client.toml`.
-
-#### Real Camera
-
-Realistic first-person camera: the view binds to your head (or another body part) with configurable position/rotation, and your player model renders in first-person — you see your body below you instead of a floating camera. `F6` toggles the effect; the Model View Screen (bind a key in Controls → Real Camera) binds the camera, hides obstructing model parts, and previews the result. Requires Cloth Config (already in pack). **Version pin**: `realcamera-1.21.1-neoforge-0.7.8-beta` (2026-06-28, client-only, no required deps).
-
-- **Compatible** (all already in pack): First Person Model, Not Enough Animations, Better Combat, Camera Overhaul. Works with Iris + Complementary shaders.
-- **Caveat**: GeckoLib-rendered armor is incompatible — none in the pack (GeckoLib is present only for Create: Gunsmithing items; Protection Pixel armor uses Kleiders Custom Renderer API). [VERIFY] Protection Pixel armor renders correctly with model binding after test launch.
-
-#### [DLS] Dark Loading Screen
-
-Replaces the bright-red loading screen with a dark version. No config.
-
-#### Cosy Critters & Creepy Crawlies
-
-Adds ambient atmospheric creatures: birds flock in the sky and land on elevated blocks, bugs scuttle through grass, and other critters bring the world to life. Birds scatter when you or a vehicle approach. **Client-side only** — no server install needed. All effects individually toggleable via `/cosycritters` command or the mod list config menu. Zero performance impact (97KB).
-
-#### Foxified Dense Flowers
-
-Renders multiple flowers per block in flower fields — the more flowers adjacent to each other, the denser the display. Makes flower forests and plains feel lush and overgrown without adding new flowers or changing worldgen. **Client-side only**. Works with existing vanilla and modded flowers.
-
-#### Effectual
-
-Atmospheric particle effects that make the world feel more alive: steam breath in cold biomes, bubbles underwater, drips when surfacing, fire sparks and lamp glows, footprints in snow, cave dust, steam columns where water meets lava, minecart sparks, and more. **Compatible with Particular Reforged** — any overlapping effects (e.g., cave dust) can be disabled individually via `config/effectual-client.toml`. Requires **Architectury API** (already in pack), **Cloth Config API** (already in pack), and **TLib** (auto-installed Wave 0.5 dependency). Client-side only, MIT license. By iMeeTake. 1.6M downloads.
+- **LambDynamicLights** — held light sources emit light around you; off-hand works. Pro tip: torch in off-hand while mining. Toggle `Ctrl+L`.
+- **BetterF3** — cleaner debug HUD; toggle FPS, coords, biome, light level. Customize in Mod Menu → BetterF3.
+- **Sound Physics Remastered** — sound muffled by walls, echoes in caves, directional. Works automatically.
+- **AmbientSounds** — biome-aware ambience (birds, wind, water). No config.
+- **The Immersive Music Mod** — 147 biome/structure-aware songs with natural silence gaps.
+- **Immersive UI** — smooth hotbar sliding, pickup particles, animated tooltips, menu transitions.
+- **Immersive Hotbar** — animated slot contents on pickup/use/swap, animated XP bar. Complements Immersive UI (which animates the selector bar). Configurable via YACL.
+- **Smooth GUI** — slide-in GUI animations with blur. No config.
+- **Status Effect Bars Reforged** — duration bars on effect icons; auto-hides beacon effects. Config via Cloth Config.
+- **Traveler's Titles** — RPG-style title cards entering biomes/dimensions. No config.
+- **Better Modlist** — mod list with badges (library/core/addon), categories, search.
+- **Better Third Person** — independent camera in third-person; bind a toggle key in Controls.
+- **Tooltip Overhaul** — rounded, scrollable tooltips with 3D item previews. No config.
+- **First Person Model + 3D Skin Layers** — full body in first person with skin-layer depth. Requires Not Enough Animations (auto-installed).
+- **Presence Footsteps** — block-aware footstep sounds; works with Sound Physics.
+- **Particular Reforged** — ambient particles (splashes, fireflies, leaves, cave dust, cascades). Toggle per-effect in `config/particular.json`.
+- **Particle Rain** — particle-based weather (angled rain, sandstorms, fog). `/particlerain` or Mod List → Config.
+- **Swinging Lanterns** — physics-based sway on lanterns and chains. No config.
+- **Wakes Reforged** — water wakes and splashes; works with Small Ships and boats.
+- **Sounds** — 170+ UI/item/block sound effects. Customize in Mod List → Sounds or `config/sounds/`.
+
+- **Better Safe Bed** — unreachable mobs no longer block sleep. Chill-rule essential.
+- **Beautiful Enchanted Books [Mod Edition]** — unique texture per enchantment type. Standalone, no resource pack needed.
+- **Overflowing Bars** — health/armor/toughness bars expand past vanilla limits — needed once Apotheosis bonuses stack.
+- **Leave My Bars Alone** — keeps your bars visible while riding mounts. Requires Puzzles Lib (already in pack).
+- **Cherished Worlds** — pin worlds to top, prevent accidental deletion. Right-click in world list.
+- **Day Counter** — "Day N" ActionBar flash at dawn + milestone gifts (days 100–2000). Config: `config/day_counter.toml`.
+- **Eating Animation** — first-person eating/drinking animation; works with Farmer's Delight foods.
+- **Camera Overhaul** — camera tilt, screen shake, mouselook roll, idle sway. Config: `config/cameraoverhaul-client.toml`.
+- **Real Camera** — first-person body view bound to your head; `F6` toggles. Version pin `0.7.8-beta`. Compatible with First Person Model, Not Enough Animations, Better Combat; GeckoLib-rendered armor incompatible (none in pack). [VERIFY] Protection Pixel armor with model binding after test launch.
+- **[DLS] Dark Loading Screen** — dark loading screen. No config.
+- **Cosy Critters & Creepy Crawlies** — ambient birds/bugs/critters; client-side, toggleable via `/cosycritters`. Zero perf impact.
+- **Foxified Dense Flowers** — denser flower fields; client-side.
+- **Effectual** — atmospheric particles (steam breath, bubbles, footprints, cave dust, sparks). Disable overlap with Particular Reforged in `config/effectual-client.toml`. Requires Architectury API, Cloth Config, TLib (all in pack).
 
 ---
 
 ### Inventory & UI — Your Daily Tools
 
-#### EMI
-
-Your primary learning tool. **Hover any item, press `R`** to see how to craft it. **Press `U`** to see what it's used in. Every mod in future waves is learned through EMI first. EMI also shows recipe trees — break down complex crafts (Create sequenced assembly, Mekanism ore processing chains) into every step, showing base ingredients and leftovers.
-
-#### Jade + Jade Addons
-
-Look at any block → HUD shows block name, mod source, machine status, crop growth, chest contents. **Jade Addons** extends this with panels for Create (SU/RPM), Mekanism (energy/gas), AE2 (channel info).
-
-**Pro tip**: Keep Jade enabled. Fastest way to check if a machine is running or a crop is ready.
-
-**Conflict fix**: Main Menu → Mods → Jade → Config → Mod Settings → Display Bosses → OFF (avoids conflict with Enhanced Boss Bars).
-
-#### JourneyMap + JourneyMap Integration
-
-- **Minimap** — top-right corner, auto-maps, shows entity dots
-- **Fullscreen map** (`J`) — zoomable world map with biome colors, terrain height, waypoints
-- **Waypoints** — `B` at your location, or set on the map. Custom icons, colors, groups
-- **Entity radar** — shows nearby mobs/animals on minimap
-- **Integration** — your placed Waystones appear as icons on JourneyMap automatically
-
-**Pro tip**: `J` → right-click to set temporary waypoint. Double-click a waypoint name to edit it.
-
-#### AppleSkin
-
-Hover over food → see exact hunger and saturation values. Pre-eat preview shows dashed outlines on your hunger bar. Saturation overlay shows the hidden second layer. No config.
-
-#### Immersive Armor HUD
-
-Miniaturized armor type icons above the armor bar with durability indicators — shows which pieces are about to break at a glance without opening inventory. Vanilla-friendly 7×7 pixel icons. Works with modded armor (Mekanism, Apotheosis gear). No dependencies, no config needed.
-
-#### Inventory Essentials
-
-Drag-to-transfer, single-item moves, sorting:
-
-- `Ctrl+click` a stack → moves one item
-- `Shift+Ctrl+click` → moves all items of that type
-- Sort buttons on chest/inventory GUIs
-
-**Note**: ClientSort (below) handles sorting with 4 sort modes, Fill Stacks, and Transfer Matching. Inventory Essentials remains for drag-to-transfer and single-item moves — its sorting is superseded but not conflicting.
-
-#### ClientSort
-
-Versatile inventory sorting with 4 sort modes:
-
-- **Sort** (default): creative inventory tab order — middle-click to trigger
-- **Shift+Sort**: descending order of quantity
-- **Ctrl+Sort**: alphabetical order
-- **Alt+Sort**: ascending order of item ID
-
-Additional operations:
-
-- **Fill Stacks**: top up partial stacks in the other inventory using items from this one
-- **Transfer Matching**: move all matching items between inventories in one click
-- **Button Editor**: right-click any trigger button to reposition or enable/disable
-
-All operations can be triggered via buttons (shown on inventory/crafting GUIs) or keybinds. Requires **Cloth Config API** (already in pack for config). No overlap conflict with Inventory Essentials — IE handles drag-to-transfer and single-item moves; ClientSort handles sorting and bulk operations.
-
-#### Shulker Box Tooltip
-
-Hover over a shulker box in inventory → preview its contents. No config.
-
-#### Item Borders
-
-Colored rarity borders on items. Common = gray, Uncommon = green, Rare = blue, Epic = purple, Mythic = gold. Helps spot good drops instantly.
-
-#### Loot Journal
-
-Animated pickup notifications near your hotbar. Session summary on disconnect shows what you gained/lost. Config in Mod Menu → Loot Journal:
-
-- `trackItemPickups = true`
-- `trackXpPickups = true`
-- `showSummaryOnDisconnect = true`
-
-#### Better Advancements
-
-Overhauled advancements UI — larger screen, pan/zoom, tab sorting, search. Open with `L`. Pairs with Advancement Plaques (glowing popup banners).
-
-#### Advancement Plaques
-
-Glowing advancement plaques replace vanilla popups — copper for Tasks, silver for Goals, gold for Challenges. Requires **Iceberg** (auto-installed). Configurable position, distance, and whitelist filter.
-
-#### Polymorph+
-
-When two mods have conflicting recipes for the same item, a small button appears next to the crafting output. Click to cycle recipes. Persists per ingredient combination.
-
-#### Traveler Tool Belt
-
-Quick-swap tool access without opening your inventory. Hold **R** (configurable in Controls) to open a radial menu, then select the tool you need. The belt renders as a subtle layer on your player model.
-
-- Starts with **2 slots**, expandable to **9** by upgrading at a crafting table
-- Holds any non-stackable item by default (tools, weapons, weapons)
-- Integrates with Curios API belt slot (already in pack) — equip from Curios menu or inventory
-- Equip in the belt slot, or keep it in your inventory if Curios is unavailable
-
-#### Controlling
-
-Search keybinds by name in the Controls menu. "Show Conflicts" button highlights only conflicting binds so you can fix them fast. Lists all available (unbound) keys. Essential for a 150+ mod pack — the vanilla keybind menu without Controlling is a wall of unsortable text. No dependencies, no config needed.
-
----
-
-#### EMIffect
-
-Status effects are browsable in EMI — search any effect name to see its description, what mod adds it, and its icon colors. Works like a built-in wiki for status effects from Apotheosis, Relics, Simply Swords, Runes, Brewin' And Chewin', and any mod that ships JEED-format descriptions. Complements Status Effect Bars Reforged — SEBR shows active effects on your HUD; EMIffect lets you look up any effect in EMI whether you have it or not. Client-side only, no dependencies beyond EMI, no config needed.
+- **EMI** — your primary learning tool: hover any item, `R` for recipe, `U` for uses. Recipe trees break complex crafts (Create sequenced assembly, Mekanism ore chains) into every step.
+- **Jade + Jade Addons** — block name, mod source, machine status, crop growth, chest contents; Addons adds Create (SU/RPM), Mekanism (energy/gas), AE2 (channel) panels. Keep enabled. Conflict fix: Jade → Config → Mod Settings → Display Bosses → OFF (avoids Enhanced Boss Bars conflict).
+- **JourneyMap + Integration** — minimap with entity dots, fullscreen map (`J`), waypoints (`B` to set), entity radar. Waystones appear as icons via the Integration mod. `J` → right-click sets a temporary waypoint.
+- **AppleSkin** — hover food for exact hunger/saturation; dashed outlines preview a meal. No config.
+- **Immersive Armor HUD** — armor icons + durability above the bar; works with modded armor. No config.
+- **Inventory Essentials** — drag-to-transfer and single-item moves: `Ctrl+click` moves one item, `Shift+Ctrl+click` moves all of a type. Sorting is superseded by ClientSort (below).
+- **ClientSort** — sorting with 4 modes (creative order, quantity, alphabetical, item ID) plus Fill Stacks, Transfer Matching, and a Button Editor. No overlap with Inventory Essentials.
+- **Shulker Box Tooltip** — hover a shulker for a contents preview. No config.
+- **Item Borders** — rarity-colored borders (gray → gold) to spot drops instantly.
+- **Loot Journal** — animated pickup notifications; session summary on disconnect. Config: `trackItemPickups`, `trackXpPickups`, `showSummaryOnDisconnect`.
+- **Better Advancements** — overhauled advancements UI, open with `L`. Pairs with Advancement Plaques.
+- **Advancement Plaques** — glowing plaques (copper/silver/gold per tier). Requires Iceberg (auto-installed).
+- **Polymorph+** — when recipes conflict, click the button next to the crafting output to cycle. Persists per ingredient combination.
+- **Traveler Tool Belt** — hold `R` for a radial quick-swap menu; 2 slots, expandable to 9. Integrates with the Curios belt slot.
+- **Controlling** — search keybinds, show only conflicts, list unbound keys. Essential in a 150+ mod pack.
+- **EMIffect** — browse any status effect in EMI (description, source mod, colors) — a built-in wiki for Apotheosis/Relics/Runes effects. Complements Status Effect Bars Reforged.
 
 ### Storage & Travel
 
@@ -989,13 +738,10 @@ The classic tech trio. Create handles mechanical automation, Mekanism handles in
 | [Create: Protection Pixel](https://www.curseforge.com/minecraft/mc-mods/protection-pixel)                                           | Create-themed power armor — brass/alloy tiers, per-piece active abilities (AoE, debuff clear, speed→damage), combustion reactor (blaze rods + water). Bridges gear between Mekanism Tools and MekaSuit |
 ### Create Addon Details
 
-**Create Better FPS** optimizes Create's rendering pipeline — handles addon models (e.g., blaze with straw from Create Crafts & Additions), speed controllers, factory gauges, and schematic previews. Benchmarked 7→35 FPS with 512 waterwheels under shaders. Works alongside ColorWheel: ColorWheel handles Flywheel instance compatibility; Create Better FPS handles everything else.
-
-**ColorWheel** makes Flywheel (Create's rendering engine) compatible with Iris shaders. Without it, Create contraptions either don't render or tank performance under shaders. ColorWheel is the higher-priority install between the two — Create Better FPS is additional optimization on top.
-
-**Create Slice & Dice** automates Farmer's Delight through Create. The **Slicer** acts as an automatic Cutting Board — place a knife or axe inside (right-click), and it registers all FD cutting recipes as mechanical processing. **Automatic cooking** converts FD Cooking Pot recipes into Create heated mixing recipes, so you can pipe ingredients in and collect meals. The **Sprinkler** distributes fluids below it: water for hydration, lava for damage, potions for effects, and Liquid Fertilizer (new fluid) for automatic bonemeal. This bridges Phase 1's food focus with Phase 2's automation — by the time you have Create infrastructure, meal production becomes fully pipeable.
-
-**Create: Dragons Plus** is a library that expands Create's fan processing with Bulk Coloring (dye items via Encased Fan + dye fluid), Bulk Freezing (Powder Snow), Bulk Ending (Dragon's Breath / Dragon Head), and Bulk Sanding (quicksand). Also adds a Fluid Hatch for convenient tank I/O and Aether Bulk Enchanting (enchanting recipes, repair, Moa Egg incubation in the Aether). All features can be toggled individually in config. Required dependency for Create: Shimmer.
+- **Create Better FPS** — Create rendering optimization (addon models, speed controllers, gauges, schematic previews). Benchmarked 7→35 FPS with 512 waterwheels under shaders. Pairs with ColorWheel, which handles Flywheel–Iris compatibility.
+- **ColorWheel** — required for Create contraptions to render under Iris shaders; install it before Create Better FPS.
+- **Create Slice & Dice** — automates Farmer's Delight: Slicer (auto Cutting Board), FD Cooking Pot recipes as Create heated mixing, Sprinkler for fluid farming (water, lava, potions, Liquid Fertilizer). Meal production becomes fully pipeable in Phase 2.
+- **Create: Dragons Plus** — fan-processing expansion (Bulk Coloring, Freezing, Ending, Sanding), Fluid Hatch for tank I/O, Aether Bulk Enchanting. Features toggleable in config; required by Create: Shimmer.
 
 
 #### Create: Protection Pixel
@@ -1040,17 +786,7 @@ Steampunk power armor built with Create materials. Each armor piece has a unique
 
 **Dependencies**: Both Advanced Finders and Advanced Chimneys require [ForgeEndertech](https://www.curseforge.com/minecraft/mc-mods/forgeendertech) library.
 
-### How They Work Together
-
-| Layer              | Mod                                                                                      |          |
-|--------------------|------------------------------------------------------------------------------------------|----------|
-| Power generation   | Create (water wheels, windmills, steam) + Mekanism (advanced generators, fusion reactor) |          |
-| Gear progression   | Mekanism Tools — Osmium → Bronze → Refined Obsidian → MekaSuit                           |          |
-| Ore processing     | Mekanism — up to 5x ore multiplication with chemical processing                          |          |
-| Factory automation | Create — conveyor belts, deployers, sequenced crafters                                   |          |
-| Storage            | AE2 — ME drives, storage busses, crafting CPUs                                           |          |
-| Transport          | Create trains + AE2 P2P tunnels                                                          |          |
-| Endgame            | Mekanism fusion reactor + MekaSuit + AE2 autocrafting                                    | ### Ores |
+### Ores
 
 | Mod                 | Role                                 |
 |---------------------|--------------------------------------|
@@ -1070,7 +806,6 @@ Steampunk power armor built with Create materials. Each armor piece has a unique
 - Mekanism's universal cables can power AE2 controllers via the Energy Acceptor. No adapter mod needed.
 - **Create Crafts & Additions** electric motors and alternators create a direct kinetic↔FE bridge, replacing the Create Alternator workaround. Silver and electrum add new material tiers that integrate with Mekanism's ore processing line.
 - **Steam 'n' Rails** expands Create's train system with new tracks, semaphores, conductor mobs, and coupling blocks. Essential for moving resources between MineColonies, Mekanism factories, and AE2 storage across a sprawling base.
-- **Create train ecosystem**: SnR provides track types (monorail, wooden, wide gauge), semaphores, and the conductor mob. **Train Utilities** adds station architecture (sliding doors, platform blocks). **Railways Navigator** adds display boards and route management. **Interiors** makes train cars usable with seats and tray tables. **Train Parts** adds crossing gates, windows, and steps for detailing. **Threaded Trains** keeps the whole network performant by running pathfinding on a separate thread. Together they cover tracks → stations → navigation → interiors → detailing → performance without overlap.
 - Mekanism's 5x ore processing (Chemical Dissolution Chamber → Washer → Crystallizer) outclasses Create's Crushing Wheels (1.5x) and Millstone (1x) for ore multiplication. This is intentional — Create handles mechanical automation and component crafting, Mekanism handles industrial processing. Neither obsoletes the other.
 - AE2's Storage Bus on a Sophisticated Storage barrel makes early-mid game storage migration seamless. Place a Storage Bus on your barrel wall, configure it to show contents in the ME terminal, and transition gradually to full digital storage.
 - **Sophisticated Storage Create Integration** and **Sophisticated Backpacks Create Integration** (both by P3pp3rF1y) enable full backpack and barrel functionality on Create contraptions — upgrades, automation features (pickup, magnet, feeding), and inventory settings all work while the contraption is in motion. Without these addons, Sophisticated inventories on contraptions are limited to basic item transport.
@@ -1078,8 +813,6 @@ Steampunk power armor built with Create materials. Each armor piece has a unique
 - **Create: The Factory Must Grow** adds oil drilling, distillation towers, blast furnaces, and diesel engines — expanding Create's mechanical toolkit into heavy industry. Its steel replaces Mekanism's steel (TFMG's blast furnace is the intended steel source; Mekanism's steel recipe is disabled by the Mekanism TFMG Compat mod). TFMG aluminum and plastic feed into Mekanism's advanced processing chains.
 - **Mekanism TFMG Compatibility** resolves 85+ recipe overlaps between TFMG and Mekanism — lead, sulfur, and steel are unified under TFMG's production lines, while Mekanism retains its chemical processing advantage. Both EMI item blacklist config and per-recipe toggles are available for pack tuning.
 - **Create: Protection Pixel** adds steampunk power armor that bridges Create's brass-tier infrastructure with the power fantasy of Mekanism's MekaSuit. Brass-tier armor requires Create brass (early Phase 2); alloy-tier requires additional Create alloy processing (mid-Phase 2). The Combustion Reactor's blaze rod fuel can be farmed via Mekanism spawner systems, Apotheosis spawner upgrades, or vanilla blaze grinders. Blaze automation is a natural Phase 2 milestone that unlocks full power armor capability. MekaSuit remains the Phase 3 ultimate upgrade — Protection Pixel fills the gap, it doesn't compete.
-
-The core tech trio. Create handles mechanical automation, Mekanism handles industrial processing, AE2 handles digital storage and autocrafting. Install all three core mods plus addons at once.
 
 ### Core Tech
 
@@ -1363,14 +1096,6 @@ Smoke ventilation systems for factories. Redirect emissions outdoors.
 | Rail expansion     | Steam 'n' Rails + train ecosystem             | Full train network with stations and interiors                       |
 | Colony defense     | Create Big Cannons (Wave 5)                   | Artillery for base perimeter                                         |
 
-**Integration highlights**:
-
-- Mekanism universal cables power AE2 controllers via Energy Acceptor
-- AE2 Storage Bus on Sophisticated Storage barrel = seamless early-mid storage migration
-- Sophisticated Storage/Backpacks Create Integration = full backpack/barrel functionality on moving contraptions
-- Applied Mekanistics bridges AE2 autocrafting with Mekanism chemical processing
-- TFMG steel replaces Mekanism steel (blast furnace is the intended source)
-
 ---
 
 ### Session Plan — Wave 1
@@ -1522,14 +1247,8 @@ MineColonies provides autonomous NPC workers that mine, farm, craft, and guard y
 
 ### Interdependency notes for Wave 1.5
 
-- MineColonies guards (deployed via the Town Hall's "Guard Tower" building) patrol your base perimeter, reducing the need to secure every wall gap manually. Their effectiveness scales with the Guard Tower level and the colony's skill research. This creates a natural progression — automated base defense grows as your colony does.
-- MineColonies Colony Research milestones signal Phase 2 progression readiness. For example, the "Industrial Revolution" research (Colony level 3, 5000 research points) serves as a soft gate — by the time you reach it, you have the colony infrastructure to support Mekanism and AE2. Hard recipe gating (e.g., Atomic Alloy locked behind research) requires a data pack or scripting mod and is not implemented in this pack — the progression pillars in AGENTS.md define the intent, and playtesting determines if soft gating is sufficient.
-- Chunk Loaders (Wave 0) are essential for MineColonies — they keep workers active while you explore other dimensions. Place at least one at your colony after setting up your base.
-- Create: Colony Logistics lets Create's logistic network (belts, chutes, depots, trains) interact directly with MineColonies warehouses. Automate material delivery to builder huts without manual restocking.
-- ColonyLink lets you monitor colony resource needs from your AE2 terminal. When a builder runs out of materials, ColonyLink triggers AE2 autocrafting — the loop closes: AE2 crafts → Create delivers → MineColonies builds. This is the Phase 2+ integration sweet spot.
-- Byzantine Styles and Stylecolonies are purely visual — pick a style pack, apply to a hut, and the build theme changes. No gameplay impact. Mix and match across different huts in the same colony.
-
-MineColonies provides autonomous NPC workers that mine, farm, craft, and guard your base. Grows alongside your factory.
+- MineColonies guards patrol your base perimeter; coverage scales with Guard Tower level and skill research — defense grows with the colony.
+- Colony Research soft-gates Phase 2: "Industrial Revolution" (Colony level 3, 5000 points) signals you have the infrastructure to support Mekanism and AE2. Hard recipe gating is not implemented in this pack — playtesting determines if soft gating is sufficient.
 
 ### Getting Started
 
@@ -1607,8 +1326,6 @@ MineColonies provides autonomous NPC workers that mine, farm, craft, and guard y
 |-------------------------------------------------------------------------------|-----------------------------------------------------------------|
 | [Serene Seasons](https://www.curseforge.com/minecraft/mc-mods/serene-seasons) | Seasonal foliage colors, temperature shifts, crop growth cycles |
 
-**Serene Seasons** adds four seasons (Spring, Summer, Autumn, Winter) with visual foliage changes, temperature shifts, and seasonal crop growth modifiers. Crop impact is enabled — planting in the wrong season reduces yield, encouraging greenhouse planning. Temperature damage is **disabled** — no freezing or heat damage, preserving the chill rule.
-
 ### Underground & Ocean
 
 | Mod                                                                                                          | Role                                                                              |
@@ -1619,10 +1336,6 @@ MineColonies provides autonomous NPC workers that mine, farm, craft, and guard y
 | [Hybrid Aquatic](https://www.curseforge.com/minecraft/mc-mods/hybrid-aquatic)                                | Marine creatures — sharks, crustaceans, otters, nautiluses, diving armor, corals  |
 
 **Interdependency note — Hybrid Aquatic + Upgrade Aquatic**: Both expand oceans but cover different niches. Upgrade Aquatic adds mob mechanics (Thrasher) and ocean-floor features. Hybrid Aquatic adds creature variety (sharks, otters, crustaceans) and diving gear. They layer without conflict — more ocean life, more reasons to dive.
-
-**Interdependency note — Hybrid Aquatic + Starcatcher (Wave 4)**: Starcatcher has built-in compatibility with Hybrid Aquatic. Hybrid Aquatic fish are automatically added as catchable entries with the corresponding entity and bucketed fish versions. No config needed.
-
-**Interdependency note — Hybrid Aquatic + Better Fishtanks (Wave 4)**: Better Fishtanks can house Hybrid Aquatic creatures in its aquariums. Use Fish Bags to catch Hybrid Aquatic mobs and place them in tanks.
 
 **Interdependency note — Darker Depths + TerraBlender**: Darker Depths 2.1+ requires a worldgen API to register its cave biomes. Either **TerraBlender** (NeoForge) or **Biolith** must be installed. TerraBlender NeoForge is the recommended choice (available for 1.21.1 on both CurseForge and Modrinth). Without it, Darker Depths crashes on startup with `Missing Worldgen API! Install TerraBlender or Biolith.`
 
@@ -1734,7 +1447,7 @@ Recommended companion mods:
 
 **Interdependency note — Hang Glider + Create Ornithopter Glider**: The Hang Glider provides simpler, earlier flight than the Create Ornithopter Glider (Wave 1). The Hang Glider requires only wood and leather (Phase 1 accessible, no power), while the Ornithopter Glider needs Create rotational power (Phase 1.5+). Both coexist as a natural progression: Hang Glider for early-Phase-1 exploration, Ornithopter Glider once Create infrastructure is online, Immersive Aircraft for powered mid-game flight.
 
-**Interdependency note — Immersive Machinery + Immersive Aircraft**: Immersive Machinery is ported to Immersive Aircraft 1.2.0+ and integrates with its fuel/vehicle system. The Copperfin submarine uses a conduit for power rather than IA fuel, so it works independently. The Bamboo Bee is a simple item transport drone — complementary to but simpler than Create belts or AE2. The Redstone Sheep provides early-game farming automation before Create harvesters come online. The Tunnel Digger is a piloted alternative to Create's mining contraptions — less scalable but more hands-on. All four machines are Phase 1 accessible, filling gaps before Create/Mekanism/AE2 infrastructure comes online in Phase 2.
+**Interdependency note — Immersive Machinery + Immersive Aircraft**: Four Phase 1 utility machines that fill gaps before Create/Mekanism/AE2 arrive: Copperfin submarine (conduit-powered, independent of IA fuel), Bamboo Bee item drone, Redstone Sheep early farming automation, Tunnel Digger piloted mining vehicle.
 
 **Interdependency note — Twilight Forest + Apotheosis**: Apotheosis boss affixes (Wave 3) apply to Twilight Forest bosses. A Naga with the "Tough" affix is significantly harder. This is intended — it keeps dimension bosses relevant even with late-game gear. If a boss feels too strong, the player can return after better equipment or use Apotheosis gems/runes for the edge.
 
@@ -1766,8 +1479,6 @@ Recommended companion mods:
 > **⚠️ New world required**: These are worldgen changes. Existing chunks keep their old terrain. Pre-generate with Chunky: fly to ocean → `/chunky radius 300` → `/chunky start`.
 
 **Quick verification**: Stand at ocean surface (Y=62), look down with F3 open. Deep oceans should show the floor at Y=-28 (±5). Standard oceans at Y=17 (±5). Monuments should have their base at Y=-16 (±5) — floating ~12 blocks above the trench floor. If values are off, adjust in-game via Mod Menu → Tectonic → Configure.
-
-The world is dramatically transformed. Terralith overhauls biomes, Tectonic reshapes terrain, YUNG's expands every structure, and three new dimensions open up.
 
 ### Overworld
 
@@ -1907,8 +1618,6 @@ Expands underwater life with realistic marine creatures and diving equipment.
 5. Craft diving armor → extended ocean exploration becomes viable
 
 **Integration with Starcatcher (Wave 4)**: Starcatcher automatically adds Hybrid Aquatic fish as catchable entries. No config needed — more fish to catch, more variety in your catalogue.
-
-**Integration with Better Fishtanks (Wave 4)**: Use Fish Bags to catch Hybrid Aquatic creatures and place them in aquariums. Otters, nautiluses, and reef fish make excellent tank inhabitants.
 
 **Integration with Ocean's Delight (Wave 4)**: Hybrid Aquatic crustacean drops (crab meat, lobster tail) integrate as seafood ingredients.
 
@@ -2132,9 +1841,7 @@ The End is now a layered destination — each mod handles a distinct piece:
 
 ## Wave 2.5 — Building Your Home
 
-You've explored the world, found stunning biomes, and gathered materials. Now it's time to stop surviving and start **living**. This section covers how to build a home you're proud of — no creative mode required, no artistic talent assumed. Just a few principles that separate "dirt hut" from "place I actually want to come back to."
-
-Building is a core pillar of this modpack. At any point you can stop optimizing factories and just build something beautiful. This guide works at any stage — but it's especially satisfying now, when you have enough materials to be selective but haven't yet automated everything.
+Building is a core pillar of this modpack — at any point you can stop optimizing and just build something beautiful. This guide works at any stage: no creative mode or artistic talent required, just a few principles that separate a "dirt hut" from a home you want to come back to.
 
 ### Finding Your Build Site
 
@@ -2407,8 +2114,6 @@ This cost curve encourages the player to settle for "good enough" gear until the
 
 **Immersive Armors** adds 40+ unique armor sets with custom effects: Wooden (arrow/explosion protection), Skeleton (speed, Wither variant, skeleton neutrality), Divine (dyeable, blocks 1 attack/min), Heavy (high armor, anti-knockback, slow), Slime (bounce attackers), Warrior (berserk — more damage at low HP), Robe (dyeable wool, fire thorns, fireproof), Steampunk (hostile radar, enhanced UI, double jump, no fall damage), and Prismarine (spikes, depth strider). All sets are enchantable, repairable, and dyeable where applicable. Recipes in vanilla recipe book and EMI. **Apotheosis affixes and gems apply to all Immersive Armors pieces.** Mekanism Tools fills the material-tier progression (Osmium→Bronze→Steel→MekaSuit); Immersive Armors fills the unique-effect side grade slot — different armor sets for different situations rather than linear upgrades.
 
-Every weapon rolls with random affixes, every accessory provides a unique ability, and a skill tree with real tradeoffs gives every action meaning. This wave makes you **feel** your character grow alongside your tech.
-
 ### Skills Mastery Reimagined — Character Growth
 
 71 nodes. 36 unlock slots. Every point is a commitment — you can't max everything, so you build a character, not a spreadsheet.
@@ -2668,17 +2373,9 @@ Enabled. Adds telegraphed death-traps to the world (spikes, poison darts, instak
 | [**Starcatcher's Delight**](https://www.curseforge.com/minecraft/mc-mods/starcatchers-delight) v3.0.1 | Starcatcher × Farmer's Delight crossover — fish fillets, seafood dishes, sushi |
 | [**Better Fishtanks**](https://www.curseforge.com/minecraft/mc-mods/better-fishtanks)                 | Functional aquariums — fish bags, decorations, feeding system, Create/AE2 compat |
 
-**Interdependency note — Starcatcher's Delight + Farmer's Delight**: Starcatcher's Delight is installed — fish caught via Starcatcher are cut into fillets and cooked into Farmer's Delight meals. Fish-specific dishes (sushi, stews, fried fish) and generic dishes with quality tiers (rarity of fish → quality of food). Legendary fish produce legendary meals with absorption hearts. All recipes visible in EMI. Same author as Starcatcher — seamless integration.
-
-**Interdependency note — Starcatcher + Hybrid Aquatic (Wave 2)**: Starcatcher automatically adds Hybrid Aquatic fish as catchable entries with biome/weather/time restrictions. Hybrid Aquatic baits attract Hybrid Aquatic fish. No config needed.
-
-**Interdependency note — Better Fishtanks + Create (Wave 1)**: Better Fishtanks is designed for tech mod automation. The Fish Tank and Aquarist Table inventories are fully accessible via Create pipes. Use fluid pipes to fill tanks with water. Automate fish feeding with Create's mechanical systems.
-
 **Interdependency note — Better Fishtanks + Hybrid Aquatic (Wave 2)**: Better Fishtanks can house any fish mod's creatures. Use Fish Bags to catch Hybrid Aquatic mobs and place them in tanks as living displays.
 
-**Interdependency note — Twilight's Flavors & Delight + Twilight Forest (Wave 2) + Farmer's Delight**: This mod bridges Twilight Forest and Farmer's Delight. TF mob drops and foraged items become cookable into 35+ FD-style meals. The Maze Stove (crafted from maze ooze) accelerates cooking in TF biomes. 4 TF-material knives (ironwood, fiery, knightmetal, phantom) have unique abilities. Boss trophies can be dismantled for precious loot — giving each TF boss run lasting value beyond the first kill. Optional Neapolitan compat adds 19 more food types (Neapolitan not in pack — 35+ FD meals still available without it).
-
-Farmer's Delight brings a full cooking ecosystem. Optional — you can survive on baked potatoes — but cooking gives powerful status effects, better healing, and a cozy kitchen to build around.
+**Interdependency note — Twilight's Flavors & Delight + Twilight Forest (Wave 2) + Farmer's Delight**: Bridges TF and Farmer's Delight — TF mob drops and foraged items cook into 35+ FD-style meals, 4 TF-material knives with unique abilities, Maze Stove accelerates cooking in TF biomes, boss trophies dismantle into precious loot.
 
 ### Farmer's Delight — Cooking Hub
 
@@ -2886,8 +2583,6 @@ A complete fishing overhaul with 100+ fish, skill-based minigame, progression sy
 
 **Golden Fish**: Rare variants of every fish — higher value, trophy-worthy. Hunt these for the ultimate collection.
 
-**Integration with Starcatcher's Delight**: Starcatcher's Delight is installed — fish caught via Starcatcher are cut into fillets and cooked into Farmer's Delight meals. Fish quality (Common→Legendary) determines dish quality. Legendary meals always grant absorption hearts. See the Starcatcher's Delight section below for details.
-
 **Configuration**: In `config/starcatcher-server.toml`, set `giveGuideOnFirstJoin = false` to prevent the fishing guide book from being handed to the player on first login. The guide is still craftable (check EMI for recipe) — just not auto-given.
 
 **Integration with Hybrid Aquatic (Wave 2)**: Starcatcher automatically adds Hybrid Aquatic fish as catchable entries. No config needed — more fish to catch, more variety in your catalogue.
@@ -3045,8 +2740,6 @@ Authored quest book with chapters covering every major mod in the pack. Guides p
 
 Apotheosis also adds boss modifiers and elite mob affixes — partially covers what Champions would have done.
 
-Your powerful gear finally has worthy opponents. Better combat mechanics, tougher mobs, epic boss fights, roguelike dungeons.
-
 ### Better Combat — Weapon Feel
 
 Replaces Minecraft's single swing with weapon-specific movesets:
@@ -3167,25 +2860,15 @@ Functional cannons built from Create materials, using rotational power for assem
 
 ### Torchmaster — Conquering the Land
 
-Torchmaster makes **peace a reward, not a default**. Its Mega Torch suppresses hostile mob spawning in a 48-block radius — but the torch itself requires a **Cataclysm boss conquest** to craft (KubeJS gate, `kubejs/server_scripts/wave5_torchmaster.js`):
+The **Mega Torch** suppresses hostile mob spawning in a 48-block radius — but each torch is **earned**: crafting requires an Ignitium Ingot from a Cataclysm boss (KubeJS gate, `kubejs/server_scripts/wave5_torchmaster.js`):
 
 | Item | Gated Recipe | Gate |
 |---|---|---|
 | Mega Torch | Ignitium Ingot (Cataclysm Ignite drop) + Create brass ingots + blaze rods | Phase 2 — first Cataclysm boss + brass age |
 
-**The conquest loop** — each torch is one earned region:
+**The conquest loop**: scout a hostile region by air/ship/train → clear its structures → defeat the Cataclysm boss for the Ignitium Ingot → craft the Mega Torch → plant it. The area is permanently peaceful. Conquest is renewable — Cataclysm arenas re-summon bosses (Eye item), so there's no world exhaustion.
 
-1. **Scout** — fly your plane (Immersive Aircraft / Man of Many Planes) or roll out (Create train, Small Ships) to a hostile region
-2. **Clear** — fight through the structures with your guns (Create: Gunsmithing), artillery (Create Big Cannons), and gear
-3. **Harvest** — defeat the Cataclysm boss, collect the Ignitium Ingot
-4. **Craft** — return home, craft the Mega Torch in your factory (Create brass)
-5. **Plant** — place it at the region's center. The area is now *yours* — permanently peaceful, safe to build in
-
-**Why it's gated**: Cataclysm bosses are re-fightable (arena respawner blocks accept an Eye item to re-summon), so conquest is **renewable** — no torch farming loophole, no world exhaustion. Every peaceful biome is an earned trophy, and the 200h+ content runway survives because you can always find another arena to conquer.
-
-**Config** (`config/torchmaster-common.toml`): Mega Torch radius 48 blocks (village-sized zone). Feral Flare Lantern (radius 24) suppresses only dark-spawned mobs — useful for cave/ruin clearing without full pacification. Mega Torch blocks natural spawning only, not spawners.
-
-**Chill Rule check**: Conquered land is permanent — you can log off, ignore progression, or decorate for a session without a single mob interrupting. This is the *payoff* of the pack's chill pillar, earned through the power fantasy.
+**Config** (`config/torchmaster-common.toml`): Mega Torch radius 48 blocks. Feral Flare Lantern (radius 24) suppresses only dark-spawned mobs — useful for cave/ruin clearing. Mega Torch blocks natural spawning only, not spawners.
 
 ---
 
@@ -3226,20 +2909,12 @@ Torchmaster makes **peace a reward, not a default**. Its Mega Torch suppresses h
 | [Fetzi's Displays](https://www.curseforge.com/minecraft/mc-mods/fetzis-displays)                                        | Item displays — glass cloches, katana stands, wall holders, racks     |
 | [Laser Bridges & Doors](https://www.curseforge.com/minecraft/mc-mods/laser-bridges-doors)                                     | Laser platforms, bridges, doors, and fences powered by redstone — length scales with signal strength, dye-customizable colors |
 
-**Interdependency note — Laser Bridges & Doors + AE2 (Wave 1)**: Laser sources require an End Crystal (post-End-dragon). Redstone control pairs naturally with AE2 level emitters and Create redstone circuits — automate laser gates that open when your ME system detects specific conditions.
-
-**Interdependency note — Fetzi's Displays + Apotheosis (Wave 3)**: Fetzi's Displays is ideal for showcasing Apotheosis gear. Glass cloches and katana stands let you display mythic drops and perfect gem rolls as trophies. Wall holders with plaques let you name your legendary weapons.
-
-**Interdependency note — Lili's Pottery + Handcrafted**: Both add decorative blocks but cover different aesthetics. Handcrafted is rustic furniture (chairs, tables, shelves). Lili's Pottery is earthenware (pots, vases, urns). Together they provide a full interior decoration toolkit.
-
 ### Rechiseled Addons
 
 | Mod                                                                                                                | Role                                                                 |
 |--------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
 | [Rechiseled: Create](https://www.curseforge.com/minecraft/mc-mods/rechiseled-create)                               | 100+ decorative variants of Create blocks + mechanical chisel        |
 | [Rechiseled: Applied Energistics 2](https://www.curseforge.com/minecraft/mc-mods/rechiseled-applied-energistics-2) | AE2 autocrafting for Rechiseled blocks via Chiseling Pattern Encoder |
-
-Tools and blocks to build the base you deserve.
 
 ### Rechiseled — Decorative Block Variants
 
@@ -3462,27 +3137,6 @@ Stellaris (by ExodusTeam) is the successor to Beyond Earth and the premier space
 | Storage        | AE2 ME drives store Stellaris materials; autocrafting builds rocket components                          |
 | Ore Processing | Mekanism 5x ore multiplication works on Stellaris ores (desh, ostranium, etc.)                          |
 | Food           | Farmer's Delight meals eatable in space when oxygen is present (v1.2.1+)                                |
-
-### Progression Placement
-
-
-## Mod Count Summary
-| Wave                         | Mods    | Deps   | Total   | Notes                                                                                                                                                                                                                                                                  |
-|------------------------------|---------|--------|---------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Wave 0 — Foundation          | 14      | 10     | 24      | Dependencies (12), Performance & Rendering (10), Shaderpack (1 mod: Euphoria Patches), Infrastructure (3) — all the nuts & bolts that make the game run (+1 shaderpack, +11 resource packs)                                                                            |
-| Wave 1 — Tech                | 19      | 5      | 24      | Create + 13 addons (incl. Power Grid, Gunsmithing, Protection Pixel, Ornithopter Glider, Train Utilities, Railways Navigator, Interiors, Train Parts, Threaded Trains), Mekanism + Generators, AE2, Advanced Finders, Advanced Chimneys + NTGL, GeckoLib, Framework, ForgeEndertech, Kleiders deps |
-| Wave 1.5 — Colony            | 9       | —      | 9       | MineColonies (4 deps counted as mods — they're library mods; CurseForge-only) + 4 addons: Byzantine Styles, Stylecolonies, Create: Colony Logistics, ColonyLink                                                                                                           |
-| Wave 2 — Exploration         | 32      | 6      | 38      | YUNG's (12), Terralith/Tectonic, Serene Seasons, Darker Depths, Upgrade Aquatic, dimensions (3), End overhaul (3 + Nullscape dp + 5 deps), Structory + Structory Towers, navigation, aircraft, ships, hang glider, IaA + MoMP + IA Engines addons, Incendium (Nether biome overhaul), Immersive Machinery (utility machines)                                                                          |
-| Wave 3 — Equipment Magic     | 9       | 12     | 21      | Skills Mastery Reimagined, Pufferfish's Skills, Simply Swords, Simply More, Too Many Bows, Relics, Enchanting Runes, Immersive Armors, Apotheosis + 12 deps (Placebo, Apothic modules, Patchouli, Simply Tooltips, Fzzy Config, Ranged Weapon API, Spell Engine, Bundle API, Pufferfish's Attributes, Curios API)                                               |
-| Wave 4 — Food & Farming      | 11      | —      | 11      | Farmer's Delight + 8 addon mods + Neo Bee Fix + Comfortable Campfires                                                                                                                                                                                                  |
-| Wave 4.5 — Quests            | 6       | 1      | 7       | FTB Questing ecosystem: FTB Library + FTB Quests + FTB Teams + KubeJS + FTB XMod Compat + MineColonies Questline + ExtraQuests (Modrinth). Bountiful removed.                                                                                                                                                                           |
-| Wave 2 — Exploration         | 31      | 5      | 36      | YUNG's (12), Terralith/Tectonic, Serene Seasons, Darker Depths, Upgrade Aquatic, dimensions (3), End overhaul (3 + Nullscape dp + 5 deps), Structory + Structory Towers, navigation, aircraft, ships, hang glider, MoMP addon, Incendium (Nether biome overhaul), Immersive Machinery (utility machines)                                                                          |
-| Wave 6 — Building            | 12      | 3      | 15      | Rechiseled, Supplementaries, Macaw's (4), Building Wands, Reforged: Accurate Block Placement, Handcrafted, The Magic Mirror, Fetzi's Displays, Lili's Pottery, Laser Bridges & Doors + Rechiseled: Create, Rechiseled: AE2 + Moonlight, Resourceful, Fusion |
-| Wave 7 — Space Exploration   | 1       | 1      | 2       | Stellaris, Potentials API                                                                                                                                                                                                                                              |
-| Wave 8 — Programmable Computers | 1       | 0      | 1       | CC:Tweaked                                                                                                                                                                                                                                                             |
-| **Total**                    | **170** | **43** | **213** | All confirmed NeoForge 1.21.1 (+Real Camera; Day Counter Plus reverted — Day Counter + Hud Texts restored)                                                                                              |
-
-Space travel becomes real. Build rockets, manage oxygen, explore alien worlds, bring back exotic resources.
 
 ### Stellaris — Interplanetary Travel
 
@@ -4547,6 +4201,24 @@ end
 | 5 — Peripherals & Monitoring | 1 hour | Attach wired modems to Mekanism tanks + AE2 ME Drive. Print fuel levels and item counts to monitors. Build the base status dashboard script. | Peripheral API, modded block integration |
 | 6 — Networking | 1 hour | Craft Wireless Modem (needs Create brass). Two computers chatting via `rednet`. Remote base monitor at mining outpost. Alert system for automated alerts. | Wireless networking, multi-computer systems |
 | 7 — Integration Deep Dive | 2 hours | Write Mekanism fission watchdog. Stellaris launch sequencer. AE2 capacity monitor. Complete FTB Quests chapter. Experiment with custom automation ideas. | Cross-mod automation scripts, full ecosystem |
+
+---
+
+## Mod Count Summary
+
+| Wave                         | Mods    | Deps   | Total   | Notes                                                                                                                                                                                                                                                                  |
+|------------------------------|---------|--------|---------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Wave 0 — Foundation          | 14      | 10     | 24      | Dependencies (12), Performance & Rendering (10), Shaderpack (1 mod: Euphoria Patches), Infrastructure (3) — all the nuts & bolts that make the game run (+1 shaderpack, +11 resource packs)                                                                            |
+| Wave 1 — Tech                | 19      | 5      | 24      | Create + 13 addons (incl. Power Grid, Gunsmithing, Protection Pixel, Ornithopter Glider, Train Utilities, Railways Navigator, Interiors, Train Parts, Threaded Trains), Mekanism + Generators, AE2, Advanced Finders, Advanced Chimneys + NTGL, GeckoLib, Framework, ForgeEndertech, Kleiders deps |
+| Wave 1.5 — Colony            | 9       | —      | 9       | MineColonies (4 deps counted as mods — they're library mods; CurseForge-only) + 4 addons: Byzantine Styles, Stylecolonies, Create: Colony Logistics, ColonyLink                                                                                                           |
+| Wave 2 — Exploration         | 31      | 5      | 36      | YUNG's (12), Terralith/Tectonic, Serene Seasons, Darker Depths, Upgrade Aquatic, dimensions (3), End overhaul (3 + Nullscape dp + 5 deps), Structory + Structory Towers, navigation, aircraft, ships, hang glider, MoMP addon, Incendium (Nether biome overhaul), Immersive Machinery (utility machines)                                                                          |
+| Wave 3 — Equipment Magic     | 9       | 12     | 21      | Skills Mastery Reimagined, Pufferfish's Skills, Simply Swords, Simply More, Too Many Bows, Relics, Enchanting Runes, Immersive Armors, Apotheosis + 12 deps (Placebo, Apothic modules, Patchouli, Simply Tooltips, Fzzy Config, Ranged Weapon API, Spell Engine, Bundle API, Pufferfish's Attributes, Curios API)                                               |
+| Wave 4 — Food & Farming      | 11      | —      | 11      | Farmer's Delight + 8 addon mods + Neo Bee Fix + Comfortable Campfires                                                                                                                                                                                                  |
+| Wave 4.5 — Quests            | 6       | 1      | 7       | FTB Questing ecosystem: FTB Library + FTB Quests + FTB Teams + KubeJS + FTB XMod Compat + MineColonies Questline + ExtraQuests (Modrinth). Bountiful removed.                                                                                                                                                                           |
+| Wave 6 — Building            | 12      | 3      | 15      | Rechiseled, Supplementaries, Macaw's (4), Building Wands, Reforged: Accurate Block Placement, Handcrafted, The Magic Mirror, Fetzi's Displays, Lili's Pottery, Laser Bridges & Doors + Rechiseled: Create, Rechiseled: AE2 + Moonlight, Resourceful, Fusion |
+| Wave 7 — Space Exploration   | 1       | 1      | 2       | Stellaris, Potentials API                                                                                                                                                                                                                                              |
+| Wave 8 — Programmable Computers | 1       | 0      | 1       | CC:Tweaked                                                                                                                                                                                                                                                             |
+| **Total**                    | **170** | **43** | **213** | All confirmed NeoForge 1.21.1 (+Real Camera; Day Counter Plus reverted — Day Counter + Hud Texts restored)                                                                                              |
 
 ---
 
