@@ -3,12 +3,12 @@
 
 #set document(
   title: "Routa — My Winter Car Modlist & Guide",
-  author: "Routa",
+  author: "Nimrod",
 )
 
 #set page(
   paper: "a4",
-  margin: (top: 2.2cm, bottom: 2.1cm, left: 1.9cm, right: 1.9cm),
+  margin: (top: 2.2cm, bottom: 2.1cm, left: 1.8cm, right: 1.8cm),
   background: box(width: 100%, height: 100%, fill: bg),
   footer: context [
     #set text(size: 8.5pt, fill: muted)
@@ -42,7 +42,7 @@
 #page(footer: none)[
   #set align(center)
   #v(1.2cm)
-  #image("../assets/logo.jpg", height: 58%)
+  #image("../assets/logo.jpg", height: 55%)
   #v(0.9cm)
   #text(size: 38pt, weight: "bold", fill: amber)[Routa]
   #v(0.4cm)
