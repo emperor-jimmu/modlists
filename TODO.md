@@ -21,3 +21,23 @@
 [x] 18. My Summer Car
 [x] 19. Motorsport Manager
 [x] 20. My Winter Car
+
+## Add mods
+
+[ ] 21. AMS2 (automobilista-2)
+[ ] 22. F1 25
+[ ] 23. GTA IV
+[ ] 24. GTA V
+[ ] 25. Monster Hunter Rise
+[x] 26. No Man's Sky
+[ ] 27. Oxygen Not Included
+[ ] 28. Starfield
+[ ] 29. X-COM 2
+[ ] 30. X4: Foundations
+[ ] 31. Civilization IV (only Caveman 2 Cosmos in Wave 3)
+
+## Needs work
+
+[ ] 32. Witcher 3 (wave 0 done; waves 1-2 modlists still placeholders)
+[ ] 33. Warhammer 3 (graphics mods done; content/mechanics/modlist still placeholders)
+[ ] 34. X-Plane 12 (waves 1-5 partly done; wave 0 empty, open slots)
