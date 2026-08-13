@@ -623,6 +623,33 @@
           "xp_levels": 8
         }
       ]
+    },
+    {
+      "key": "sliceanddice",
+      "title": "Slicer",
+      "subtitle": "Create Slice & Dice automation",
+      "description": [
+        "The Slicer automates the Cutting Board with Create rotation - slice ingredients hands-free."
+      ],
+      "icon": "sliceanddice:slicer",
+      "shape": "square",
+      "phase": 2,
+      "dependencies": [
+        "fried_rice"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "sliceanddice:slicer",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 12
+        }
+      ]
     }
   ]
 }

@@ -766,6 +766,39 @@
         }
       ],
       "optional": false
+    },
+    {
+      "id": "81000046",
+      "title": "Slicer",
+      "subtitle": "Create Slice & Dice automation",
+      "description": [
+        "The Slicer automates the Cutting Board with Create rotation - slice ingredients hands-free."
+      ],
+      "icon": "sliceanddice:slicer",
+      "x": 4.5,
+      "y": 5,
+      "shape": "square",
+      "dependencies": [
+        "81000018"
+      ],
+      "tasks": [
+        {
+          "id": "81000047",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "sliceanddice:slicer"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "81000048",
+          "type": "xp_levels",
+          "xp_levels": 12
+        }
+      ],
+      "optional": false
     }
   ]
 }
