@@ -11,7 +11,7 @@ KNOWN_MODS = {
     "minecraft", "mekanism", "mekanismgenerators", "mekanismtools",
     "computercraft", "create", "ae2", "stellaris", "tfmg",
     "createbigcannons", "apotheosis", "simplyswords",
-    "railways", "createaddition", "cgs", "powergrid",
+    "railways", "createaddition", "cgs", "powergrid", "farmersdelight",
 }
 ITEM_RE = re.compile(r"^[a-z0-9_]+:[a-z0-9_./]+$")
 

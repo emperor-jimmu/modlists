@@ -1,0 +1,204 @@
+{
+  "chapter": {
+    "id": "81000000",
+    "title": "Farmer's Delight",
+    "subtitle": "Start with a Flint Knife and follow the chain",
+    "icon": "farmersdelight:cooking_pot",
+    "group": "20000001",
+    "order_index": 8
+  },
+  "quests": [
+    {
+      "key": "flint_knife",
+      "title": "Flint Knife",
+      "subtitle": "Your kitchen tool",
+      "description": [
+        "A Flint Knife cuts ingredients and harvests from crops. It is the first tool of cooking.",
+        "Next: a Cutting Board to prepare ingredients."
+      ],
+      "icon": "farmersdelight:flint_knife",
+      "shape": "hexagon",
+      "phase": 1,
+      "dependencies": [],
+      "tasks": [{ "type": "item", "item": "farmersdelight:flint_knife", "count": 1 }],
+      "rewards": [{ "type": "xp_levels", "xp_levels": 8 }]
+    },
+    {
+      "key": "cutting_board",
+      "title": "Cutting Board",
+      "subtitle": "Prepare ingredients",
+      "description": [
+        "A Cutting Board chops ingredients with a knife - cabbage into leaves, wheat into dough, meat into cuts.",
+        "Next: a Cooking Pot to cook meals."
+      ],
+      "icon": "farmersdelight:cutting_board",
+      "shape": "hexagon",
+      "phase": 1,
+      "dependencies": ["flint_knife"],
+      "tasks": [{ "type": "item", "item": "farmersdelight:cutting_board", "count": 1 }],
+      "rewards": [{ "type": "xp_levels", "xp_levels": 8 }]
+    },
+    {
+      "key": "cooking_pot",
+      "title": "Cooking Pot",
+      "subtitle": "Cook your meals",
+      "description": [
+        "A Cooking Pot cooks soups, stews, and rice by holding ingredients over a heat source.",
+        "Next: grow some Cabbage."
+      ],
+      "icon": "farmersdelight:cooking_pot",
+      "shape": "hexagon",
+      "phase": 1,
+      "dependencies": ["cutting_board"],
+      "tasks": [{ "type": "item", "item": "farmersdelight:cooking_pot", "count": 1 }],
+      "rewards": [{ "type": "xp_levels", "xp_levels": 8 }]
+    },
+    {
+      "key": "cabbage",
+      "title": "Cabbage",
+      "subtitle": "Grow a crop",
+      "description": [
+        "Plant Cabbage Seeds in tilled soil. Cabbage is the base of many Farmer's Delight meals.",
+        "Next: cook your first Vegetable Soup."
+      ],
+      "icon": "farmersdelight:cabbage",
+      "shape": "hexagon",
+      "phase": 1,
+      "dependencies": ["cooking_pot"],
+      "tasks": [{ "type": "item", "item": "farmersdelight:cabbage", "count": 1 }],
+      "rewards": [
+        { "type": "xp_levels", "xp_levels": 8 },
+        { "type": "item", "item": "farmersdelight:cabbage", "count": 4 }
+      ]
+    },
+    {
+      "key": "vegetable_soup",
+      "title": "Vegetable Soup",
+      "subtitle": "Your first meal",
+      "description": [
+        "Cook cabbage, onion, and carrot in a Cooking Pot to make Vegetable Soup. Meals give better nourishment than raw food.",
+        "Next: a Skillet to fry."
+      ],
+      "icon": "farmersdelight:vegetable_soup",
+      "shape": "hexagon",
+      "phase": 1,
+      "dependencies": ["cabbage"],
+      "tasks": [{ "type": "item", "item": "farmersdelight:vegetable_soup", "count": 1 }],
+      "rewards": [
+        { "type": "xp_levels", "xp_levels": 12 },
+        { "type": "item", "item": "farmersdelight:vegetable_soup", "count": 4 }
+      ]
+    },
+    {
+      "key": "skillet",
+      "title": "Skillet",
+      "subtitle": "Fry food",
+      "description": [
+        "A Skillet fries ingredients in a cooking pot for richer meals like Bacon and Eggs.",
+        "Next: a Stove for efficient cooking."
+      ],
+      "icon": "farmersdelight:skillet",
+      "shape": "hexagon",
+      "phase": 1,
+      "dependencies": ["vegetable_soup"],
+      "tasks": [{ "type": "item", "item": "farmersdelight:skillet", "count": 1 }],
+      "rewards": [{ "type": "xp_levels", "xp_levels": 8 }]
+    },
+    {
+      "key": "stove",
+      "title": "Stove",
+      "subtitle": "Cooking station",
+      "description": [
+        "A Stove heats multiple pots and pans at once and cooks faster than a campfire.",
+        "Next: cook Fried Rice."
+      ],
+      "icon": "farmersdelight:stove",
+      "shape": "hexagon",
+      "phase": 1,
+      "dependencies": ["skillet"],
+      "tasks": [{ "type": "item", "item": "farmersdelight:stove", "count": 1 }],
+      "rewards": [{ "type": "xp_levels", "xp_levels": 12 }]
+    },
+    {
+      "key": "fried_rice",
+      "title": "Fried Rice",
+      "subtitle": "A complex meal",
+      "description": [
+        "Cook Rice with onion, egg, and vegetables to make Fried Rice - a filling late-game meal.",
+        "Next: Organic Compost to fertilize crops."
+      ],
+      "icon": "farmersdelight:fried_rice",
+      "shape": "hexagon",
+      "phase": 2,
+      "dependencies": ["stove"],
+      "tasks": [{ "type": "item", "item": "farmersdelight:fried_rice", "count": 1 }],
+      "rewards": [
+        { "type": "xp_levels", "xp_levels": 16 },
+        { "type": "item", "item": "farmersdelight:fried_rice", "count": 4 }
+      ]
+    },
+    {
+      "key": "organic_compost",
+      "title": "Organic Compost",
+      "subtitle": "Fertilize crops",
+      "description": [
+        "Organic Compost speeds up crop growth and enriches rich soil for better harvests.",
+        "This completes the Farmer's Delight chapter."
+      ],
+      "icon": "farmersdelight:organic_compost",
+      "shape": "hexagon",
+      "phase": 2,
+      "dependencies": ["fried_rice"],
+      "tasks": [{ "type": "item", "item": "farmersdelight:organic_compost", "count": 1 }],
+      "rewards": [{ "type": "xp_levels", "xp_levels": 16 }]
+    },
+    {
+      "key": "tomato",
+      "title": "Tomato",
+      "subtitle": "Grow tomatoes",
+      "description": ["Tomatoes grow on vines and are a key ingredient in many meals."],
+      "icon": "farmersdelight:tomato",
+      "shape": "square",
+      "phase": 1,
+      "dependencies": ["cabbage"],
+      "tasks": [{ "type": "item", "item": "farmersdelight:tomato", "count": 1 }],
+      "rewards": [{ "type": "xp_levels", "xp_levels": 8 }]
+    },
+    {
+      "key": "onion",
+      "title": "Onion",
+      "subtitle": "Grow onions",
+      "description": ["Onions add flavor to soups and stews."],
+      "icon": "farmersdelight:onion",
+      "shape": "square",
+      "phase": 1,
+      "dependencies": ["cabbage"],
+      "tasks": [{ "type": "item", "item": "farmersdelight:onion", "count": 1 }],
+      "rewards": [{ "type": "xp_levels", "xp_levels": 8 }]
+    },
+    {
+      "key": "rice",
+      "title": "Rice",
+      "subtitle": "Grow rice",
+      "description": ["Rice grows in shallow water and is the base of rice dishes."],
+      "icon": "farmersdelight:rice",
+      "shape": "square",
+      "phase": 1,
+      "dependencies": ["cabbage"],
+      "tasks": [{ "type": "item", "item": "farmersdelight:rice", "count": 1 }],
+      "rewards": [{ "type": "xp_levels", "xp_levels": 8 }]
+    },
+    {
+      "key": "diamond_knife",
+      "title": "Diamond Knife",
+      "subtitle": "Upgraded knife",
+      "description": ["A Diamond Knife harvests faster and lasts longer than flint."],
+      "icon": "farmersdelight:diamond_knife",
+      "shape": "square",
+      "phase": 2,
+      "dependencies": ["stove"],
+      "tasks": [{ "type": "item", "item": "farmersdelight:diamond_knife", "count": 1 }],
+      "rewards": [{ "type": "xp_levels", "xp_levels": 12 }]
+    }
+  ]
+}
