@@ -667,6 +667,105 @@
         }
       ],
       "optional": false
+    },
+    {
+      "id": "8100003D",
+      "title": "Steak Sandwich",
+      "subtitle": "More Delight meal",
+      "description": [
+        "Steak Sandwich is from More Delight meal."
+      ],
+      "icon": "moredelight:steak_sandwich",
+      "x": 1.5,
+      "y": 6,
+      "shape": "square",
+      "dependencies": [
+        "81000007"
+      ],
+      "tasks": [
+        {
+          "id": "8100003E",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "moredelight:steak_sandwich"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "8100003F",
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "81000040",
+      "title": "Apple Crate",
+      "subtitle": "Crate Delight bulk storage",
+      "description": [
+        "Apple Crate is from Crate Delight bulk storage."
+      ],
+      "icon": "cratedelight:apple_crate",
+      "x": 1.5,
+      "y": 7,
+      "shape": "square",
+      "dependencies": [
+        "81000004"
+      ],
+      "tasks": [
+        {
+          "id": "81000041",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "cratedelight:apple_crate"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "81000042",
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "81000043",
+      "title": "Fish and Chips",
+      "subtitle": "Starcatcher's Delight meal",
+      "description": [
+        "Fish and Chips is from Starcatcher's Delight meal."
+      ],
+      "icon": "starcatcher_delight:fish_and_chips",
+      "x": 4.5,
+      "y": 4,
+      "shape": "square",
+      "dependencies": [
+        "81000018"
+      ],
+      "tasks": [
+        {
+          "id": "81000044",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "starcatcher_delight:fish_and_chips"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "81000045",
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ],
+      "optional": false
     }
   ]
 }

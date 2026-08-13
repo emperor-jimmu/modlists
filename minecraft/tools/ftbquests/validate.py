@@ -14,6 +14,7 @@ KNOWN_MODS = {
     "railways", "createaddition", "cgs", "powergrid", "farmersdelight",
     "oceansdelight", "endersdelight", "mynethersdelight", "twilightdelight",
     "brewinandchewin", "storagedelight", "sliceanddice",
+    "moredelight", "cratedelight", "starcatcher_delight",
 }
 ITEM_RE = re.compile(r"^[a-z0-9_]+:[a-z0-9_./]+$")
 

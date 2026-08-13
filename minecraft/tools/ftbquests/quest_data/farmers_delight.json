@@ -542,6 +542,87 @@
           "xp_levels": 8
         }
       ]
+    },
+    {
+      "key": "moredelight",
+      "title": "Steak Sandwich",
+      "subtitle": "More Delight meal",
+      "description": [
+        "Steak Sandwich is from More Delight meal."
+      ],
+      "icon": "moredelight:steak_sandwich",
+      "shape": "square",
+      "phase": 1,
+      "dependencies": [
+        "cooking_pot"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "moredelight:steak_sandwich",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
+    },
+    {
+      "key": "cratedelight",
+      "title": "Apple Crate",
+      "subtitle": "Crate Delight bulk storage",
+      "description": [
+        "Apple Crate is from Crate Delight bulk storage."
+      ],
+      "icon": "cratedelight:apple_crate",
+      "shape": "square",
+      "phase": 1,
+      "dependencies": [
+        "cutting_board"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "cratedelight:apple_crate",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
+    },
+    {
+      "key": "starcatcherdelight",
+      "title": "Fish and Chips",
+      "subtitle": "Starcatcher's Delight meal",
+      "description": [
+        "Fish and Chips is from Starcatcher's Delight meal."
+      ],
+      "icon": "starcatcher_delight:fish_and_chips",
+      "shape": "square",
+      "phase": 2,
+      "dependencies": [
+        "fried_rice"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "starcatcher_delight:fish_and_chips",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
     }
   ]
 }
