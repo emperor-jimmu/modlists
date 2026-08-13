@@ -1,0 +1,1422 @@
+{
+  "id": "60000000",
+  "group": "20000001",
+  "order_index": 2,
+  "title": "Create",
+  "subtitle": "Start with the Water Wheel and follow the chain",
+  "icon": "create:cogwheel",
+  "default_quest_shape": "square",
+  "quests": [
+    {
+      "id": "60000001",
+      "title": "Water Wheel",
+      "subtitle": "Your first rotational power",
+      "description": [
+        "Create runs on rotational power, measured in Stress Units (SU). A Water Wheel in flowing water spins a shaft to power machines.",
+        "Next: attach a Millstone to that shaft to crush items."
+      ],
+      "icon": "create:water_wheel",
+      "x": 0.0,
+      "y": 0,
+      "shape": "hexagon",
+      "dependencies": [],
+      "tasks": [
+        {
+          "id": "60000002",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "create:water_wheel"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "60000003",
+          "type": "xp_levels",
+          "xp_levels": 8
+        },
+        {
+          "id": "60000004",
+          "type": "item",
+          "count": 4,
+          "item": {
+            "count": 1,
+            "id": "create:andesite_alloy"
+          }
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "60000005",
+      "title": "Millstone",
+      "subtitle": "Crush items with rotation",
+      "description": [
+        "A Millstone grinds wheat into flour and cobble into gravel. Attach it to your spinning shaft.",
+        "Next: a Mechanical Press to stamp ingots into plates."
+      ],
+      "icon": "create:millstone",
+      "x": 0.0,
+      "y": 1,
+      "shape": "hexagon",
+      "dependencies": [
+        "60000001"
+      ],
+      "tasks": [
+        {
+          "id": "60000006",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "create:millstone"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "60000007",
+          "type": "xp_levels",
+          "xp_levels": 8
+        },
+        {
+          "id": "60000008",
+          "type": "item",
+          "count": 4,
+          "item": {
+            "count": 1,
+            "id": "minecraft:iron_ingot"
+          }
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "60000009",
+      "title": "Mechanical Press",
+      "subtitle": "Stamp items into plates",
+      "description": [
+        "A Mechanical Press stamps ingots into plates and sheets using rotational power.",
+        "Next: a Mechanical Pump to move fluids."
+      ],
+      "icon": "create:mechanical_press",
+      "x": 0.0,
+      "y": 2,
+      "shape": "hexagon",
+      "dependencies": [
+        "60000005"
+      ],
+      "tasks": [
+        {
+          "id": "6000000A",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "create:mechanical_press"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "6000000B",
+          "type": "xp_levels",
+          "xp_levels": 8
+        },
+        {
+          "id": "6000000C",
+          "type": "item",
+          "count": 4,
+          "item": {
+            "count": 1,
+            "id": "minecraft:iron_ingot"
+          }
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "6000000D",
+      "title": "Mechanical Pump",
+      "subtitle": "Move fluids",
+      "description": [
+        "A Mechanical Pump moves water, lava, and potions through pipes. Throughput depends on pump speed.",
+        "Next: a Fluid Tank to store what you pump."
+      ],
+      "icon": "create:mechanical_pump",
+      "x": 0.0,
+      "y": 3,
+      "shape": "hexagon",
+      "dependencies": [
+        "60000009"
+      ],
+      "tasks": [
+        {
+          "id": "6000000E",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "create:mechanical_pump"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "6000000F",
+          "type": "xp_levels",
+          "xp_levels": 8
+        },
+        {
+          "id": "60000010",
+          "type": "item",
+          "count": 4,
+          "item": {
+            "count": 1,
+            "id": "minecraft:copper_ingot"
+          }
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "60000011",
+      "title": "Fluid Tank",
+      "subtitle": "Store fluids",
+      "description": [
+        "A Fluid Tank holds liquids you pump. Attach a Spout to fill bottles or feed boilers.",
+        "Next: the Brass Age - craft Brass Ingots."
+      ],
+      "icon": "create:fluid_tank",
+      "x": 0.0,
+      "y": 4,
+      "shape": "hexagon",
+      "dependencies": [
+        "6000000D"
+      ],
+      "tasks": [
+        {
+          "id": "60000012",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "create:fluid_tank"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "60000013",
+          "type": "xp_levels",
+          "xp_levels": 8
+        },
+        {
+          "id": "60000014",
+          "type": "item",
+          "count": 4,
+          "item": {
+            "count": 1,
+            "id": "minecraft:copper_ingot"
+          }
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "60000015",
+      "title": "Brass Ingot",
+      "subtitle": "The brass age",
+      "description": [
+        "Brass = copper + zinc, mixed in a heated Mixer. Put a Blaze Burner under the Mixer and catch a blaze to fuel it. Brass unlocks Create's precision machines.",
+        "Next: a Mechanical Crafter for precision crafting."
+      ],
+      "icon": "create:brass_ingot",
+      "x": 0.0,
+      "y": 5,
+      "shape": "hexagon",
+      "dependencies": [
+        "60000011"
+      ],
+      "tasks": [
+        {
+          "id": "60000016",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "create:brass_ingot"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "60000017",
+          "type": "xp_levels",
+          "xp_levels": 12
+        },
+        {
+          "id": "60000018",
+          "type": "item",
+          "count": 4,
+          "item": {
+            "count": 1,
+            "id": "create:brass_ingot"
+          }
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "60000019",
+      "title": "Mechanical Crafter",
+      "subtitle": "Precision crafting",
+      "description": [
+        "Mechanical Crafters snap together in 3D shapes around your recipe pattern. Power them with a shaft.",
+        "Next: an Encased Fan for air and heat."
+      ],
+      "icon": "create:mechanical_crafter",
+      "x": 0.0,
+      "y": 6,
+      "shape": "hexagon",
+      "dependencies": [
+        "60000015"
+      ],
+      "tasks": [
+        {
+          "id": "6000001A",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "create:mechanical_crafter"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "6000001B",
+          "type": "xp_levels",
+          "xp_levels": 12
+        },
+        {
+          "id": "6000001C",
+          "type": "item",
+          "count": 1,
+          "item": {
+            "count": 1,
+            "id": "create:precision_mechanism"
+          }
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "6000001D",
+      "title": "Encased Fan",
+      "subtitle": "Air and heat",
+      "description": [
+        "Encased Fans create air streams. Facing water they wash items, facing fire they smelt, facing soul fire they haunt. No FE cost.",
+        "Next: a Belt to move items horizontally."
+      ],
+      "icon": "create:encased_fan",
+      "x": 0.0,
+      "y": 7,
+      "shape": "hexagon",
+      "dependencies": [
+        "60000019"
+      ],
+      "tasks": [
+        {
+          "id": "6000001E",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "create:encased_fan"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "6000001F",
+          "type": "xp_levels",
+          "xp_levels": 8
+        },
+        {
+          "id": "60000020",
+          "type": "item",
+          "count": 8,
+          "item": {
+            "count": 1,
+            "id": "minecraft:iron_ingot"
+          }
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "60000021",
+      "title": "Belt",
+      "subtitle": "Move items horizontally",
+      "description": [
+        "Belts carry items across your base. They are the spine of every item pipeline.",
+        "Next: a Chute to drop items down."
+      ],
+      "icon": "create:belt_connector",
+      "x": 0.0,
+      "y": 8,
+      "shape": "hexagon",
+      "dependencies": [
+        "6000001D"
+      ],
+      "tasks": [
+        {
+          "id": "60000022",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "create:belt_connector"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "60000023",
+          "type": "xp_levels",
+          "xp_levels": 8
+        },
+        {
+          "id": "60000024",
+          "type": "item",
+          "count": 8,
+          "item": {
+            "count": 1,
+            "id": "minecraft:redstone"
+          }
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "60000025",
+      "title": "Chute",
+      "subtitle": "Drop items down",
+      "description": [
+        "Chutes drop items downward and into inventories below.",
+        "Next: a Brass Funnel to pull items out of inventories."
+      ],
+      "icon": "create:chute",
+      "x": 0.0,
+      "y": 9,
+      "shape": "hexagon",
+      "dependencies": [
+        "60000021"
+      ],
+      "tasks": [
+        {
+          "id": "60000026",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "create:chute"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "60000027",
+          "type": "xp_levels",
+          "xp_levels": 8
+        },
+        {
+          "id": "60000028",
+          "type": "item",
+          "count": 8,
+          "item": {
+            "count": 1,
+            "id": "minecraft:redstone"
+          }
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "60000029",
+      "title": "Brass Funnel",
+      "subtitle": "Extract from inventories",
+      "description": [
+        "A Brass Funnel extracts items from chests and machines onto belts. Smart Chutes filter by item. Together they build your first full item pipeline.",
+        "Next: Train Track to connect distant builds."
+      ],
+      "icon": "create:brass_funnel",
+      "x": 0.0,
+      "y": 10,
+      "shape": "hexagon",
+      "dependencies": [
+        "60000025"
+      ],
+      "tasks": [
+        {
+          "id": "6000002A",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "create:brass_funnel"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "6000002B",
+          "type": "xp_levels",
+          "xp_levels": 8
+        },
+        {
+          "id": "6000002C",
+          "type": "item",
+          "count": 8,
+          "item": {
+            "count": 1,
+            "id": "minecraft:redstone"
+          }
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "6000002D",
+      "title": "Train Track",
+      "subtitle": "Rails for your trains",
+      "description": [
+        "Create trains run on your own built track. Lay it across your base to move items and yourself at speed.",
+        "Next: Train Controls to actually drive one."
+      ],
+      "icon": "create:track",
+      "x": 0.0,
+      "y": 11,
+      "shape": "hexagon",
+      "dependencies": [
+        "60000029"
+      ],
+      "tasks": [
+        {
+          "id": "6000002E",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "create:track"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "6000002F",
+          "type": "xp_levels",
+          "xp_levels": 12
+        },
+        {
+          "id": "60000030",
+          "type": "item",
+          "count": 8,
+          "item": {
+            "count": 1,
+            "id": "minecraft:iron_ingot"
+          }
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "60000031",
+      "title": "Train Controls",
+      "subtitle": "Drive your train",
+      "description": [
+        "Train Controls sit in a train and let you drive it. Build a casing, bogey, and controls, place them on track, and ride.",
+        "This completes Phase 1. Next: Steam Power for serious SU."
+      ],
+      "icon": "create:controls",
+      "x": 0.0,
+      "y": 12,
+      "shape": "hexagon",
+      "dependencies": [
+        "6000002D"
+      ],
+      "tasks": [
+        {
+          "id": "60000032",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "create:controls"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "60000033",
+          "type": "xp_levels",
+          "xp_levels": 12
+        },
+        {
+          "id": "60000034",
+          "type": "item",
+          "count": 4,
+          "item": {
+            "count": 1,
+            "id": "create:brass_ingot"
+          }
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "60000035",
+      "title": "Andesite Alloy",
+      "subtitle": "The base material",
+      "description": [
+        "Andesite + iron nuggets. You will need hundreds - automate production early."
+      ],
+      "icon": "create:andesite_alloy",
+      "x": 1.5,
+      "y": 0,
+      "shape": "square",
+      "dependencies": [
+        "60000001"
+      ],
+      "tasks": [
+        {
+          "id": "60000036",
+          "type": "item",
+          "item": {
+            "count": 16,
+            "id": "create:andesite_alloy"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "60000037",
+          "type": "xp_levels",
+          "xp_levels": 8
+        },
+        {
+          "id": "60000038",
+          "type": "item",
+          "count": 8,
+          "item": {
+            "count": 1,
+            "id": "create:andesite_alloy"
+          }
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "60000039",
+      "title": "Cogwheel",
+      "subtitle": "Change speed and direction",
+      "description": [
+        "Gearboxes reverse rotation. Large cogwheels change speed by ratio - small driving large is slower, large driving small is faster."
+      ],
+      "icon": "create:cogwheel",
+      "x": 1.5,
+      "y": 1,
+      "shape": "square",
+      "dependencies": [
+        "60000001"
+      ],
+      "tasks": [
+        {
+          "id": "6000003A",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "create:cogwheel"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "6000003B",
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "6000003C",
+      "title": "Engineer's Goggles",
+      "subtitle": "See stress and speed",
+      "description": [
+        "The most important Create item. Wear them to see SU usage, speed, and stress on every Create block."
+      ],
+      "icon": "create:goggles",
+      "x": 1.5,
+      "y": 2,
+      "shape": "square",
+      "dependencies": [
+        "60000001"
+      ],
+      "tasks": [
+        {
+          "id": "6000003D",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "create:goggles"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "6000003E",
+          "type": "xp_levels",
+          "xp_levels": 12
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "6000003F",
+      "title": "Redstone Link",
+      "subtitle": "Wireless redstone",
+      "description": [
+        "Two Links on the same frequency carry redstone signals across your base. No redstone dust spaghetti."
+      ],
+      "icon": "create:redstone_link",
+      "x": 1.5,
+      "y": 3,
+      "shape": "square",
+      "dependencies": [
+        "60000001"
+      ],
+      "tasks": [
+        {
+          "id": "60000040",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "create:redstone_link"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "60000041",
+          "type": "xp_levels",
+          "xp_levels": 8
+        },
+        {
+          "id": "60000042",
+          "type": "item",
+          "count": 4,
+          "item": {
+            "count": 1,
+            "id": "minecraft:redstone"
+          }
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "60000043",
+      "title": "Windmill Bearing",
+      "subtitle": "Passive power from wind",
+      "description": [
+        "Attach at least 8 sails to a Windmill Bearing for passive power. Needs clear sky above. Maintenance-free."
+      ],
+      "icon": "create:windmill_bearing",
+      "x": 1.5,
+      "y": 4,
+      "shape": "square",
+      "dependencies": [
+        "60000001"
+      ],
+      "tasks": [
+        {
+          "id": "60000044",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "create:windmill_bearing"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "60000045",
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "60000046",
+      "title": "Precision Mechanism",
+      "subtitle": "Advanced crafting component",
+      "description": [
+        "Made via Sequenced Assembly - Deployer adds, Press stamps, Saw cuts, Spout fills, then loop. Used in most advanced Create machines."
+      ],
+      "icon": "create:precision_mechanism",
+      "x": 1.5,
+      "y": 5,
+      "shape": "square",
+      "dependencies": [
+        "60000001"
+      ],
+      "tasks": [
+        {
+          "id": "60000047",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "create:precision_mechanism"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "60000048",
+          "type": "xp_levels",
+          "xp_levels": 16
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "60000049",
+      "title": "Steam Engine",
+      "subtitle": "Serious power",
+      "description": [
+        "Steam Engines output up to 16,384 SU - vastly more than water wheels. Needs a heated Blaze Burner, water in a Fluid Tank, and the engine block.",
+        "Next: Steel Ingots from TFMG's Blast Furnace."
+      ],
+      "icon": "create:steam_engine",
+      "x": 3.0,
+      "y": 0,
+      "shape": "hexagon",
+      "dependencies": [
+        "60000031"
+      ],
+      "tasks": [
+        {
+          "id": "6000004A",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "create:steam_engine"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "6000004B",
+          "type": "xp_levels",
+          "xp_levels": 16
+        },
+        {
+          "id": "6000004C",
+          "type": "item",
+          "count": 8,
+          "item": {
+            "count": 1,
+            "id": "create:brass_ingot"
+          }
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "6000004D",
+      "title": "Steel Ingot",
+      "subtitle": "Heavy industry begins",
+      "description": [
+        "TFMG adds heavy industry. Steel = iron + coal in a Blast Furnace multiblock. Steel is your Phase 2 structural material.",
+        "Next: a Gantry Carriage for moving contraptions."
+      ],
+      "icon": "tfmg:steel_ingot",
+      "x": 3.0,
+      "y": 1,
+      "shape": "hexagon",
+      "dependencies": [
+        "60000049"
+      ],
+      "tasks": [
+        {
+          "id": "6000004E",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "tfmg:steel_ingot"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "6000004F",
+          "type": "xp_levels",
+          "xp_levels": 16
+        },
+        {
+          "id": "60000050",
+          "type": "item",
+          "count": 8,
+          "item": {
+            "count": 1,
+            "id": "tfmg:steel_ingot"
+          }
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "60000051",
+      "title": "Gantry Carriage",
+      "subtitle": "Slide contraptions along a shaft",
+      "description": [
+        "Contraptions are Create's moving structures. A Gantry Carriage slides a contraption along a shaft.",
+        "Next: a Mechanical Piston to push rows."
+      ],
+      "icon": "create:gantry_carriage",
+      "x": 3.0,
+      "y": 2,
+      "shape": "hexagon",
+      "dependencies": [
+        "6000004D"
+      ],
+      "tasks": [
+        {
+          "id": "60000052",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "create:gantry_carriage"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "60000053",
+          "type": "xp_levels",
+          "xp_levels": 16
+        },
+        {
+          "id": "60000054",
+          "type": "item",
+          "count": 8,
+          "item": {
+            "count": 1,
+            "id": "create:brass_ingot"
+          }
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "60000055",
+      "title": "Mechanical Piston",
+      "subtitle": "Push and pull rows",
+      "description": [
+        "A Mechanical Piston extends and retracts to move rows of blocks. Contraptions mine, place, and harvest as they move.",
+        "Next: a Mechanical Arm for precise placement."
+      ],
+      "icon": "create:mechanical_piston",
+      "x": 3.0,
+      "y": 3,
+      "shape": "hexagon",
+      "dependencies": [
+        "60000051"
+      ],
+      "tasks": [
+        {
+          "id": "60000056",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "create:mechanical_piston"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "60000057",
+          "type": "xp_levels",
+          "xp_levels": 16
+        },
+        {
+          "id": "60000058",
+          "type": "item",
+          "count": 8,
+          "item": {
+            "count": 1,
+            "id": "create:brass_ingot"
+          }
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "60000059",
+      "title": "Mechanical Arm",
+      "subtitle": "Precise item placement",
+      "description": [
+        "The Mechanical Arm picks up and places items precisely. Program it with a wrench for complex assembly lines.",
+        "Next: a Pump Jack to extract oil."
+      ],
+      "icon": "create:mechanical_arm",
+      "x": 3.0,
+      "y": 4,
+      "shape": "hexagon",
+      "dependencies": [
+        "60000055"
+      ],
+      "tasks": [
+        {
+          "id": "6000005A",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "create:mechanical_arm"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "6000005B",
+          "type": "xp_levels",
+          "xp_levels": 16
+        },
+        {
+          "id": "6000005C",
+          "type": "item",
+          "count": 4,
+          "item": {
+            "count": 1,
+            "id": "create:precision_mechanism"
+          }
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "6000005D",
+      "title": "Pump Jack",
+      "subtitle": "Extract crude oil",
+      "description": [
+        "TFMG adds oil deposits. A Pump Jack extracts crude oil. This is your Phase 2 fuel backbone.",
+        "Next: a Distillation Controller to refine that oil."
+      ],
+      "icon": "tfmg:pump_jack",
+      "x": 3.0,
+      "y": 5,
+      "shape": "hexagon",
+      "dependencies": [
+        "60000059"
+      ],
+      "tasks": [
+        {
+          "id": "6000005E",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "tfmg:pump_jack"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "6000005F",
+          "type": "xp_levels",
+          "xp_levels": 16
+        },
+        {
+          "id": "60000060",
+          "type": "item",
+          "count": 8,
+          "item": {
+            "count": 1,
+            "id": "tfmg:steel_ingot"
+          }
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "60000061",
+      "title": "Distillation Controller",
+      "subtitle": "Refine oil into fuel",
+      "description": [
+        "The Distillation Tower is a multiblock. Crude oil enters and diesel, gasoline, kerosene, and lubricant exit from ports at different levels.",
+        "Next: a Sequenced Gearshift to program rotation."
+      ],
+      "icon": "tfmg:distillation_controller",
+      "x": 3.0,
+      "y": 6,
+      "shape": "hexagon",
+      "dependencies": [
+        "6000005D"
+      ],
+      "tasks": [
+        {
+          "id": "60000062",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "tfmg:distillation_controller"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "60000063",
+          "type": "xp_levels",
+          "xp_levels": 20
+        },
+        {
+          "id": "60000064",
+          "type": "item",
+          "count": 8,
+          "item": {
+            "count": 1,
+            "id": "tfmg:steel_ingot"
+          }
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "60000065",
+      "title": "Sequenced Gearshift",
+      "subtitle": "Program exact rotation",
+      "description": [
+        "A Sequenced Gearshift programs exact rotation - forward 90 degrees, pause, reverse 180 degrees. Pair with a Linked Controller for automated sequences.",
+        "Next: a Diesel Engine for massive SU."
+      ],
+      "icon": "create:sequenced_gearshift",
+      "x": 3.0,
+      "y": 7,
+      "shape": "hexagon",
+      "dependencies": [
+        "60000061"
+      ],
+      "tasks": [
+        {
+          "id": "60000066",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "create:sequenced_gearshift"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "60000067",
+          "type": "xp_levels",
+          "xp_levels": 16
+        },
+        {
+          "id": "60000068",
+          "type": "item",
+          "count": 4,
+          "item": {
+            "count": 1,
+            "id": "create:precision_mechanism"
+          }
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "60000069",
+      "title": "Diesel Engine",
+      "subtitle": "Massive rotational power",
+      "description": [
+        "TFMG's Diesel Engine burns refined diesel for massive SU. One engine powers an entire factory floor.",
+        "This completes Phase 2. Next: Electron Tubes for advanced components."
+      ],
+      "icon": "tfmg:diesel_engine",
+      "x": 3.0,
+      "y": 8,
+      "shape": "hexagon",
+      "dependencies": [
+        "60000065"
+      ],
+      "tasks": [
+        {
+          "id": "6000006A",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "tfmg:diesel_engine"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "6000006B",
+          "type": "xp_levels",
+          "xp_levels": 24
+        },
+        {
+          "id": "6000006C",
+          "type": "item",
+          "count": 8,
+          "item": {
+            "count": 1,
+            "id": "tfmg:steel_ingot"
+          }
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "6000006D",
+      "title": "Stockpile Switch",
+      "subtitle": "Detect inventory levels",
+      "description": [
+        "Detects when an inventory is full or empty and emits redstone. Turns machines off when full to prevent overflow."
+      ],
+      "icon": "create:stockpile_switch",
+      "x": 4.5,
+      "y": 0,
+      "shape": "square",
+      "dependencies": [
+        "60000049"
+      ],
+      "tasks": [
+        {
+          "id": "6000006E",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "create:stockpile_switch"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "6000006F",
+          "type": "xp_levels",
+          "xp_levels": 12
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "60000070",
+      "title": "Train Station",
+      "subtitle": "Stop and schedule trains",
+      "description": [
+        "A Train Station marks a stop. Train Signals prevent collisions. Schedule items route trains automatically."
+      ],
+      "icon": "create:track_station",
+      "x": 4.5,
+      "y": 1,
+      "shape": "square",
+      "dependencies": [
+        "60000049"
+      ],
+      "tasks": [
+        {
+          "id": "60000071",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "create:track_station"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "60000072",
+          "type": "xp_levels",
+          "xp_levels": 12
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "60000073",
+      "title": "Rotation Speed Controller",
+      "subtitle": "Fine-tune RPM",
+      "description": [
+        "Fine-tunes rotational speed without gear ratio math. Turn with a wrench to set precise speed."
+      ],
+      "icon": "create:rotation_speed_controller",
+      "x": 4.5,
+      "y": 2,
+      "shape": "square",
+      "dependencies": [
+        "60000049"
+      ],
+      "tasks": [
+        {
+          "id": "60000074",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "create:rotation_speed_controller"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "60000075",
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "60000076",
+      "title": "Content Observer",
+      "subtitle": "Read inventory contents",
+      "description": [
+        "Outputs redstone based on inventory contents. Pair with a Stockpile Switch for self-regulating production lines."
+      ],
+      "icon": "create:content_observer",
+      "x": 4.5,
+      "y": 3,
+      "shape": "square",
+      "dependencies": [
+        "60000049"
+      ],
+      "tasks": [
+        {
+          "id": "60000077",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "create:content_observer"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "60000078",
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "60000079",
+      "title": "Electron Tube",
+      "subtitle": "Advanced components",
+      "description": [
+        "Electron Tubes are advanced Create components used in top-tier machines. Crafting them means your factory is truly scaling.",
+        "Next: a Linked Controller for wireless contraption control."
+      ],
+      "icon": "create:electron_tube",
+      "x": 6.0,
+      "y": 0,
+      "shape": "hexagon",
+      "dependencies": [
+        "60000069"
+      ],
+      "tasks": [
+        {
+          "id": "6000007A",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "create:electron_tube"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "6000007B",
+          "type": "xp_levels",
+          "xp_levels": 24
+        },
+        {
+          "id": "6000007C",
+          "type": "item",
+          "count": 4,
+          "item": {
+            "count": 1,
+            "id": "create:electron_tube"
+          }
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "6000007D",
+      "title": "Linked Controller",
+      "subtitle": "Wireless contraption control",
+      "description": [
+        "A Linked Controller gives handheld control over Redstone Link frequencies. Bind it and drive contraptions, trains, and machines remotely.",
+        "This completes the Create chapter. You have full rotational automation."
+      ],
+      "icon": "create:linked_controller",
+      "x": 6.0,
+      "y": 1,
+      "shape": "hexagon",
+      "dependencies": [
+        "60000079"
+      ],
+      "tasks": [
+        {
+          "id": "6000007E",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "create:linked_controller"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "6000007F",
+          "type": "xp_levels",
+          "xp_levels": 32
+        },
+        {
+          "id": "60000080",
+          "type": "item",
+          "count": 4,
+          "item": {
+            "count": 1,
+            "id": "create:electron_tube"
+          }
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "60000081",
+      "title": "Cannon Mount",
+      "subtitle": "Colony defense artillery",
+      "description": [
+        "Create Big Cannons adds artillery. A Cannon Mount holds a cannon for colony defense. Automate ammo production and guard your perimeter."
+      ],
+      "icon": "createbigcannons:cannon_mount",
+      "x": 7.5,
+      "y": 0,
+      "shape": "square",
+      "dependencies": [
+        "60000079"
+      ],
+      "tasks": [
+        {
+          "id": "60000082",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "createbigcannons:cannon_mount"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "60000083",
+          "type": "xp_levels",
+          "xp_levels": 16
+        }
+      ],
+      "optional": false
+    }
+  ]
+}
