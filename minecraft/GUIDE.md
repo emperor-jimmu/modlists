@@ -1416,15 +1416,21 @@ MineColonies provides autonomous NPC workers that mine, farm, craft, and guard y
 
 ### Field Guide
 
+| Mod                                                              | Role                                                                                       |
+|------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
+| [Field Guide](https://modrinth.com/mod/field-guide) v1.14.0      | Spyglass exploration catalog — scan plants, animals, and monsters to fill an in-game encyclopedia |
+
 Opens a new way to experience the world. Craft a spyglass, then look at any plant, animal, or monster to catalog it in your Field Guide. Each entry you discover adds to your collection with lore about the creature or plant. Works with modded mobs and biomes — automatically discovers content from every mod in the pack.
 
-Recommended companion mods:
+**Companion mods** — the two mods below are **required dependencies** of the NeoForge 1.21.1 build: install them alongside Field Guide. Mod Descriptions is an optional resource pack:
 
 | Mod                                                                                                                      | Feature Added              |
 |--------------------------------------------------------------------------------------------------------------------------|----------------------------|
 | [Immersive Overlays](https://modrinth.com/mod/immersive-overlays)                                                        | Biome displays — shows spawn details for entities |
 | [Item Descriptions](https://modrinth.com/mod/item-descriptions)                                                          | Entry descriptions — auto-fills entry lore        |
 | [Mod Descriptions](https://modrinth.com/resourcepack/mod-descriptions) (resource pack)                                   | Modded support — adds descriptions for modded entries |
+
+**Interdependency note — Field Guide + pack content**: Field Guide auto-discovers entities, plants, and biomes from every mod in the pack — Aether and Twilight Forest mobs, Hybrid Aquatic creatures, and Incendium's Nether life are all catalogable with zero configuration. The optional Cloth Config API dependency is already in the pack (Wave 0.5) — nothing extra to install.
 
 ### Configuration — Wave 2
 
@@ -4212,14 +4218,14 @@ end
 | Wave 0 — Foundation          | 14      | 10     | 24      | Dependencies (12), Performance & Rendering (10), Shaderpack (1 mod: Euphoria Patches), Infrastructure (3) — all the nuts & bolts that make the game run (+1 shaderpack, +11 resource packs)                                                                            |
 | Wave 1 — Tech                | 19      | 5      | 24      | Create + 13 addons (incl. Power Grid, Gunsmithing, Protection Pixel, Ornithopter Glider, Train Utilities, Railways Navigator, Interiors, Train Parts, Threaded Trains), Mekanism + Generators, AE2, Advanced Finders, Advanced Chimneys + NTGL, GeckoLib, Framework, ForgeEndertech, Kleiders deps |
 | Wave 1.5 — Colony            | 9       | —      | 9       | MineColonies (4 deps counted as mods — they're library mods; CurseForge-only) + 4 addons: Byzantine Styles, Stylecolonies, Create: Colony Logistics, ColonyLink                                                                                                           |
-| Wave 2 — Exploration         | 31      | 5      | 36      | YUNG's (12), Terralith/Tectonic, Serene Seasons, Darker Depths, Upgrade Aquatic, dimensions (3), End overhaul (3 + Nullscape dp + 5 deps), Structory + Structory Towers, navigation, aircraft, ships, hang glider, MoMP addon, Incendium (Nether biome overhaul), Immersive Machinery (utility machines)                                                                          |
+| Wave 2 — Exploration         | 34      | 5      | 39      | YUNG's (12), Terralith/Tectonic, Serene Seasons, Darker Depths, Upgrade Aquatic, dimensions (3), End overhaul (3 + Nullscape dp + 5 deps), Structory + Structory Towers, navigation, aircraft, ships, hang glider, MoMP addon, Incendium (Nether biome overhaul), Immersive Machinery (utility machines), Field Guide + 2 required companions (Immersive Overlays, Item Descriptions)                                                                          |
 | Wave 3 — Equipment Magic     | 9       | 12     | 21      | Skills Mastery Reimagined, Pufferfish's Skills, Simply Swords, Simply More, Too Many Bows, Relics, Enchanting Runes, Immersive Armors, Apotheosis + 12 deps (Placebo, Apothic modules, Patchouli, Simply Tooltips, Fzzy Config, Ranged Weapon API, Spell Engine, Bundle API, Pufferfish's Attributes, Curios API)                                               |
 | Wave 4 — Food & Farming      | 11      | —      | 11      | Farmer's Delight + 8 addon mods + Neo Bee Fix + Comfortable Campfires                                                                                                                                                                                                  |
 | Wave 4.5 — Quests            | 6       | 1      | 7       | FTB Questing ecosystem: FTB Library + FTB Quests + FTB Teams + KubeJS + FTB XMod Compat + MineColonies Questline + ExtraQuests (Modrinth). Bountiful removed.                                                                                                                                                                           |
 | Wave 6 — Building            | 12      | 3      | 15      | Rechiseled, Supplementaries, Macaw's (4), Building Wands, Reforged: Accurate Block Placement, Handcrafted, The Magic Mirror, Fetzi's Displays, Lili's Pottery, Laser Bridges & Doors + Rechiseled: Create, Rechiseled: AE2 + Moonlight, Resourceful, Fusion |
 | Wave 7 — Space Exploration   | 1       | 1      | 2       | Stellaris, Potentials API                                                                                                                                                                                                                                              |
 | Wave 8 — Programmable Computers | 1       | 0      | 1       | CC:Tweaked                                                                                                                                                                                                                                                             |
-| **Total**                    | **170** | **43** | **213** | All confirmed NeoForge 1.21.1 (+Real Camera; Day Counter Plus reverted — Day Counter + Hud Texts restored)                                                                                              |
+| **Total**                    | **173** | **43** | **216** | All confirmed NeoForge 1.21.1 (+Real Camera; Day Counter Plus reverted — Day Counter + Hud Texts restored)                                                                                              |
 
 ---
 
