@@ -1488,6 +1488,22 @@ Opens a new way to experience the world. Craft a spyglass, then look at any plan
 
 **Quick verification**: Stand at ocean surface (Y=62), look down with F3 open. Deep oceans should show the floor at Y=-28 (±5). Standard oceans at Y=17 (±5). Monuments should have their base at Y=-16 (±5) — floating ~12 blocks above the trench floor. If values are off, adjust in-game via Mod Menu → Tectonic → Configure.
 
+**YUNG's Better Dungeons — Rarer Dungeons** (`datapacks/rarer-better-dungeons/`):
+
+Rebalances YUNG's Better Dungeons density against When Dungeons Arise (Wave 5). The 1.21.1 NeoForge build no longer exposes separation in its config — dungeon spacing is set by the mod's structure-set data files, so the override ships as a small datapack (pack_format 48).
+
+| Dungeon | Average separation (chunks) | Default | Recommended | Applied |
+|---------|-----------------------------|---------|-------------|---------|
+| Small Dungeons | `spacing` in `small_dungeons.json` | 10 | 20–24 | **22** |
+| Spider Caves | `spacing` in `spider_dungeons.json` | 44 | 55–60 | **58** |
+| Undead Fortresses | `spacing` in `skeleton_dungeons.json` | 46 | 55–65 | **60** |
+| Catacombs | `spacing` in `zombie_dungeons.json` | 48 | 55–65 | **60** |
+
+- **Spacing** = average distance between structures in chunks (the old `averageSeparation` value). **Separation** (minimum distance) is raised in step to ~50% of spacing, matching the mod's own default ratio.
+- **Why**: at default spacing (10) the classic small dungeons feel common and crowd out WDA's roguelike structures as landmarks. Rarer finds make each dungeon feel earned, and the two structure sets stop competing for exploration slots.
+- **Install**: copy `datapacks/rarer-better-dungeons/` (or its zip) into the world's `datapacks/` folder — or `%APPDATA%\.minecraft\datapacks\` for all worlds. Applies to newly generated regions only.
+- **Verify**: `/locate structure betterdungeons:small_dungeon` should show ~22-chunk average spacing with the datapack active.
+
 ### Overworld
 
 #### Terrain — Terralith + Tectonic

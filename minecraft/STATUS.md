@@ -641,3 +641,16 @@ User decision, same session as the Wave 5 review — supersedes the "KEEP, 1 [VE
 - [x] GUIDE.md updated: Wave 5 table row, "Mutant Monsters — Boss Variants" section, session plan (Session 2 removed, renumbered), Mod Count Summary (Wave 5 9→8 mods, 6→5 deps, 15→13 total; overall 174→173 mods, 216 total), Phase 2 progression mention, Easy Anvils + Hang Glider Puzzles Lib attribution notes.
 - [x] TODO.md: No Creeper Grief mutant-coverage [VERIFY] item removed (moot).
 - [x] DRIFTWOOD-GUIDE.pdf regenerated.
+
+### Added Datapack (2026-08-13) — Rarer Better Dungeons
+
+- [x] **Rarer Better Dungeons datapack** (`datapacks/rarer-better-dungeons/`) — rebalances YUNG's Better Dungeons density vs When Dungeons Arise (Wave 5) so the two structure sets stop competing for Overworld exploration slots.
+- [x] The 1.21.1 NeoForge build **removed the old `averageSeparation` JSON config** — verified against the mod source (YUNG-GANG/YUNGs-Better-Dungeons, branch 26.1.2): the NeoForge `ModConfigSpec` only exposes skulls/heads, nether blocks, chest counts, and staircase length. Spacing now lives in the mod's structure-set data files, so the override is a datapack (pack_format 48).
+- [x] Structure set overrides (spacing, applied as midpoints of recommended ranges; separation = ~50% of spacing, matching the mod's default ratio):
+  - `small_dungeons.json`: spacing 10 → **22** (separation 6 → 11) — range 20–24
+  - `spider_dungeons.json`: spacing 44 → **58** (separation 22 → 29) — range 55–60
+  - `skeleton_dungeons.json`: spacing 46 → **60** (separation 23 → 30) — range 55–65
+  - `zombie_dungeons.json`: spacing 48 → **60** (separation 24 → 30) — range 55–65
+- [x] Salts/weights unchanged — placement pattern identical, just sparser.
+- [x] GUIDE.md Wave 2 Configuration documented (settings table, rationale, install + verify); `datapacks/README.md` table updated; datapack README written.
+- [ ] [VERIFY] at test launch: datapack override takes effect over mod data — new regions should show small dungeons ~22 chunks apart (`/locate structure betterdungeons:small_dungeon`). Applies to newly generated regions only.
