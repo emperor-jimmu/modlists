@@ -707,6 +707,8 @@ The classic tech trio. Create handles mechanical automation, Mekanism handles in
 | [**Create**](https://www.curseforge.com/minecraft/mc-mods/create)                           | Mechanical automation — rotational power, water wheels, windmills, gear trains, conveyor belts, deployers, sequenced crafters, trains |
 | [**Mekanism**](https://www.curseforge.com/minecraft/mc-mods/mekanism)                       | Industrial processing — ore multiplication (2x→5x), digital miner, superdense energy storage, MekaSuit (flight, invulnerability)      |
 | [**Mekanism Generators**](https://www.curseforge.com/minecraft/mc-mods/mekanism-generators) | Power generation — heat, wind, solar, gas-burning, bio generators, fission reactor, fusion reactor, turbine                           |
+| [**Mekanism: Ponders**](https://modrinth.com/mod/mekanism-ponders) 1.0.3                     | Ponder scenes for Mekanism machines and multiblocks (fission/fusion reactors, turbine). Requires Mekanism                           |
+| [**Mekanism Guide Book**](https://www.curseforge.com/minecraft/mc-mods/mekanism-guide-book)  | Patchouli-based in-game guidebook for Mekanism. Requires Patchouli (already in pack via Apotheosis)                                 |
 | [**AE2**](https://www.curseforge.com/minecraft/mc-mods/applied-energistics-2) 19.2.17       | Digital storage — ME drives, autocrafting, P2P tunnels, spatial storage. The storage backbone                                         |
 | [**Applied Mekanistics**](https://www.curseforge.com/minecraft/mc-mods/applied-mekanistics) | AE2-Mekanism integration — autocrafting for chemical/gas/fission/fusion recipes, ME chemical storage, P2P chemical tunnels            |
 
