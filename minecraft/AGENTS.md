@@ -62,7 +62,7 @@ The complete mod list with versions, roles, and download links is maintained in 
 - Ars Nouveau spellbooks complement Mekanism gear — magic enhances tech, tech enhances magic. Neither should obsolete the other. *(Only if Ars Nouveau is added — currently not in V3; Apotheosis + Relics + Simply Swords fill the equipment-magic role.)*
 - Guard Villagers scale their presence with colony size. A larger base should have proportionally more guards.
 - Sophisticated Storage is intentionally outclassed by AE2 in Phase 2 but remains useful for localized micro-storage near Create contraptions.
-- Farmer's Delight is the hub for all food mods. Brewin' And Chewin' (drinks/fermentation), Delightful (new meals), and Storage Delight (kitchen furniture) extend it without overlapping.
+- Farmer's Delight is the hub for all food mods. Brewin' And Chewin' (drinks/fermentation), More Delight (new meals), and Storage Delight (kitchen furniture) extend it without overlapping.
 - YUNG's dungeon mods add exploration targets and loot injection points — they feed items into Apotheosis affix/gem system and reward dungeon diving in any phase.
 - The Aether, Twilight Forest, and L_Ender's Cataclysm are optional endgame combat dimensions. They don't gate or block any tech/magic progression — the player engages when they choose.
 - Waystones (fast travel) and GraveStone Mod (forgiving death) are chill-living enablers. Their configs should always be set to reduce friction, never to add it.
