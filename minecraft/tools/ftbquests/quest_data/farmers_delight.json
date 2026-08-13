@@ -785,6 +785,654 @@
           "xp_levels": 8
         }
       ]
+    },
+    {
+      "key": "pumpkin_soup",
+      "title": "Pumpkin Soup",
+      "subtitle": "hearty autumn soup",
+      "description": [
+        "Pumpkin Soup is a hearty autumn soup item."
+      ],
+      "icon": "farmersdelight:pumpkin_soup",
+      "shape": "hexagon",
+      "phase": 2,
+      "dependencies": [
+        "diamond_knife"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "farmersdelight:pumpkin_soup",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
+    },
+    {
+      "key": "beef_stew",
+      "title": "Beef Stew",
+      "subtitle": "rich stew",
+      "description": [
+        "Beef Stew is a rich stew item."
+      ],
+      "icon": "farmersdelight:beef_stew",
+      "shape": "hexagon",
+      "phase": 2,
+      "dependencies": [
+        "pumpkin_soup"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "farmersdelight:beef_stew",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
+    },
+    {
+      "key": "chicken_sandwich",
+      "title": "Chicken Sandwich",
+      "subtitle": "protein sandwich",
+      "description": [
+        "Chicken Sandwich is a protein sandwich item."
+      ],
+      "icon": "farmersdelight:chicken_sandwich",
+      "shape": "hexagon",
+      "phase": 2,
+      "dependencies": [
+        "beef_stew"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "farmersdelight:chicken_sandwich",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
+    },
+    {
+      "key": "grilled_salmon",
+      "title": "Grilled Salmon",
+      "subtitle": "seared fish",
+      "description": [
+        "Grilled Salmon is a seared fish item."
+      ],
+      "icon": "farmersdelight:grilled_salmon",
+      "shape": "hexagon",
+      "phase": 2,
+      "dependencies": [
+        "chicken_sandwich"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "farmersdelight:grilled_salmon",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
+    },
+    {
+      "key": "mushroom_rice",
+      "title": "Mushroom Rice",
+      "subtitle": "savory rice dish",
+      "description": [
+        "Mushroom Rice is a savory rice dish item."
+      ],
+      "icon": "farmersdelight:mushroom_rice",
+      "shape": "hexagon",
+      "phase": 2,
+      "dependencies": [
+        "grilled_salmon"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "farmersdelight:mushroom_rice",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
+    },
+    {
+      "key": "noodle_soup",
+      "title": "Noodle Soup",
+      "subtitle": "warming noodle broth",
+      "description": [
+        "Noodle Soup is a warming noodle broth item."
+      ],
+      "icon": "farmersdelight:noodle_soup",
+      "shape": "hexagon",
+      "phase": 2,
+      "dependencies": [
+        "mushroom_rice"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "farmersdelight:noodle_soup",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
+    },
+    {
+      "key": "ratatouille",
+      "title": "Ratatouille",
+      "subtitle": "vegetable medley",
+      "description": [
+        "Ratatouille is a vegetable medley item."
+      ],
+      "icon": "farmersdelight:ratatouille",
+      "shape": "hexagon",
+      "phase": 3,
+      "dependencies": [
+        "noodle_soup"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "farmersdelight:ratatouille",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
+    },
+    {
+      "key": "shepherds_pie",
+      "title": "Shepherd's Pie",
+      "subtitle": "baked comfort dish",
+      "description": [
+        "Shepherd's Pie is a baked comfort dish item."
+      ],
+      "icon": "farmersdelight:shepherds_pie",
+      "shape": "hexagon",
+      "phase": 3,
+      "dependencies": [
+        "ratatouille"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "farmersdelight:shepherds_pie",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
+    },
+    {
+      "key": "netherite_knife",
+      "title": "Netherite Knife",
+      "subtitle": "endgame knife",
+      "description": [
+        "Netherite Knife is a endgame knife item."
+      ],
+      "icon": "farmersdelight:netherite_knife",
+      "shape": "hexagon",
+      "phase": 3,
+      "dependencies": [
+        "shepherds_pie"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "farmersdelight:netherite_knife",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
+    },
+    {
+      "key": "iron_knife",
+      "title": "Iron Knife",
+      "subtitle": "mid-tier knife",
+      "description": [
+        "Iron Knife is a mid-tier knife item."
+      ],
+      "icon": "farmersdelight:iron_knife",
+      "shape": "square",
+      "phase": 1,
+      "dependencies": [
+        "flint_knife"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "farmersdelight:iron_knife",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
+    },
+    {
+      "key": "golden_knife",
+      "title": "Golden Knife",
+      "subtitle": "efficient knife",
+      "description": [
+        "Golden Knife is a efficient knife item."
+      ],
+      "icon": "farmersdelight:golden_knife",
+      "shape": "square",
+      "phase": 2,
+      "dependencies": [
+        "diamond_knife"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "farmersdelight:golden_knife",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
+    },
+    {
+      "key": "onion_soup",
+      "title": "Onion Soup",
+      "subtitle": "savory onion broth",
+      "description": [
+        "Onion Soup is a savory onion broth item."
+      ],
+      "icon": "farmersdelight:onion_soup",
+      "shape": "square",
+      "phase": 1,
+      "dependencies": [
+        "onion"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "farmersdelight:onion_soup",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
+    },
+    {
+      "key": "bacon_and_eggs",
+      "title": "Bacon and Eggs",
+      "subtitle": "breakfast skillet",
+      "description": [
+        "Bacon and Eggs is a breakfast skillet item."
+      ],
+      "icon": "farmersdelight:bacon_and_eggs",
+      "shape": "square",
+      "phase": 1,
+      "dependencies": [
+        "skillet"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "farmersdelight:bacon_and_eggs",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
+    },
+    {
+      "key": "egg_sandwich",
+      "title": "Egg Sandwich",
+      "subtitle": "simple sandwich",
+      "description": [
+        "Egg Sandwich is a simple sandwich item."
+      ],
+      "icon": "farmersdelight:egg_sandwich",
+      "shape": "square",
+      "phase": 1,
+      "dependencies": [
+        "skillet"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "farmersdelight:egg_sandwich",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
+    },
+    {
+      "key": "roasted_mutton_chops",
+      "title": "Roasted Mutton Chops",
+      "subtitle": "roasted meat",
+      "description": [
+        "Roasted Mutton Chops is a roasted meat item."
+      ],
+      "icon": "farmersdelight:roasted_mutton_chops",
+      "shape": "square",
+      "phase": 1,
+      "dependencies": [
+        "skillet"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "farmersdelight:roasted_mutton_chops",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
+    },
+    {
+      "key": "stuffed_potato",
+      "title": "Stuffed Potato",
+      "subtitle": "filled baked potato",
+      "description": [
+        "Stuffed Potato is a filled baked potato item."
+      ],
+      "icon": "farmersdelight:stuffed_potato",
+      "shape": "square",
+      "phase": 1,
+      "dependencies": [
+        "vegetable_soup"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "farmersdelight:stuffed_potato",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
+    },
+    {
+      "key": "stuffed_pumpkin",
+      "title": "Stuffed Pumpkin",
+      "subtitle": "filled baked pumpkin",
+      "description": [
+        "Stuffed Pumpkin is a filled baked pumpkin item."
+      ],
+      "icon": "farmersdelight:stuffed_pumpkin",
+      "shape": "square",
+      "phase": 2,
+      "dependencies": [
+        "vegetable_soup"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "farmersdelight:stuffed_pumpkin",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
+    },
+    {
+      "key": "honey_glazed_ham",
+      "title": "Honey Glazed Ham",
+      "subtitle": "sweet roasted ham",
+      "description": [
+        "Honey Glazed Ham is a sweet roasted ham item."
+      ],
+      "icon": "farmersdelight:honey_glazed_ham",
+      "shape": "square",
+      "phase": 2,
+      "dependencies": [
+        "skillet"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "farmersdelight:honey_glazed_ham",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
+    },
+    {
+      "key": "chocolate_pie",
+      "title": "Chocolate Pie",
+      "subtitle": "sweet dessert pie",
+      "description": [
+        "Chocolate Pie is a sweet dessert pie item."
+      ],
+      "icon": "farmersdelight:chocolate_pie",
+      "shape": "square",
+      "phase": 2,
+      "dependencies": [
+        "diamond_knife"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "farmersdelight:chocolate_pie",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
+    },
+    {
+      "key": "pumpkin_pie",
+      "title": "Pumpkin Pie",
+      "subtitle": "classic dessert pie",
+      "description": [
+        "Pumpkin Pie is a classic dessert pie item."
+      ],
+      "icon": "farmersdelight:pumpkin_pie",
+      "shape": "square",
+      "phase": 2,
+      "dependencies": [
+        "diamond_knife"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "farmersdelight:pumpkin_pie",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
+    },
+    {
+      "key": "sweet_berry_cheesecake",
+      "title": "Sweet Berry Cheesecake",
+      "subtitle": "creamy berry dessert",
+      "description": [
+        "Sweet Berry Cheesecake is a creamy berry dessert item."
+      ],
+      "icon": "farmersdelight:sweet_berry_cheesecake",
+      "shape": "square",
+      "phase": 3,
+      "dependencies": [
+        "diamond_knife"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "farmersdelight:sweet_berry_cheesecake",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
+    },
+    {
+      "key": "apple_cider",
+      "title": "Apple Cider",
+      "subtitle": "fruity drink",
+      "description": [
+        "Apple Cider is a fruity drink item."
+      ],
+      "icon": "farmersdelight:apple_cider",
+      "shape": "square",
+      "phase": 1,
+      "dependencies": [
+        "cutting_board"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "farmersdelight:apple_cider",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
+    },
+    {
+      "key": "melon_juice",
+      "title": "Melon Juice",
+      "subtitle": "refreshing drink",
+      "description": [
+        "Melon Juice is a refreshing drink item."
+      ],
+      "icon": "farmersdelight:melon_juice",
+      "shape": "square",
+      "phase": 1,
+      "dependencies": [
+        "cutting_board"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "farmersdelight:melon_juice",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
+    },
+    {
+      "key": "hot_cocoa",
+      "title": "Hot Cocoa",
+      "subtitle": "warming drink",
+      "description": [
+        "Hot Cocoa is a warming drink item."
+      ],
+      "icon": "farmersdelight:hot_cocoa",
+      "shape": "square",
+      "phase": 1,
+      "dependencies": [
+        "cooking_pot"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "farmersdelight:hot_cocoa",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
     }
   ]
 }
