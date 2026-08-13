@@ -8,22 +8,25 @@
 
 FTB Quests content in this pack was previously authored through the in-game editor. That content was removed (commit `e34de5e` "removed old FTB content") to be re-authored via automated generation.
 
-The quest **content** — chapter layout, per-mod milestone/breadcrumb lists, per-quest titles/descriptions/tasks/rewards/dependencies, and reward philosophy — is already fully specified in two prior docs and is **not** redefined here:
+The quest **content** — chapter layout, milestone/breadcrumb lists, per-quest titles/tasks/rewards/dependencies, and reward philosophy — is already fully specified in two prior docs and is reused as the **foundation**:
 
 - `docs/superpowers/specs/2026-07-27-ftb-quests-design.md` — chapter layout, milestone/breadcrumb lists, reward philosophy.
 - `docs/superpowers/plans/2026-07-27-ftb-quests-implementation.md` — per-quest titles, descriptions, task items, rewards, dependencies.
 
 This spec defines the **generation pipeline** that converts that content into loadable files, plus the **verify loop** that satisfies the "generate → re-check → fix until certain" requirement.
 
+One content change is in scope: the July pacing assumes a modded-Minecraft veteran. It is **re-granularized** here for a first-time player — see "Progression style" below.
+
 ## Decisions
 
 | Area | Decision |
 |---|---|
 | Approach | Data-driven generator + validator script (not hand-typed SNBT, not in-game editor) |
-| Content source | July design + implementation docs — reuse, do not rewrite |
+| Content source | July design + implementation docs — reused as the foundation, re-granularized per "Progression style" |
+| Progression style | **Newbie-first.** Each quest is one small, concrete step for a player who has never used the mod. The chapter forms a strict linear chain — every milestone depends on exactly the previous one, and each description names the next step. Multi-item processes are split into one-quest-per-step; no quest requires detecting several unfamiliar items at once. |
 | Output format | New per-chapter layout: `config/ftbquests/quests/chapters/<id>.snbt`, plus `chapter_groups.snbt` and `data.snbt`. The old `quests.snbt` / `rewards.snbt` format is superseded in this pack's FTB Quests version. |
 | Format ground truth | `20008000.snbt` (CC:Tweaked chapter) recovered from git history via `git show 903611e:minecraft/config/ftbquests/quests/chapters/20008000.snbt` — proven to load in this pack's FTB Quests version |
-| Reward philosophy | Unchanged from July spec: XP levels + phase-scaled consumable materials; no placement/utility blocks; no gated items |
+| Reward philosophy | Unchanged from July spec: XP levels + phase-scaled consumable materials; no placement/utility blocks; no gated items. With slower pacing, each reward is usable in the **immediately next** quest. |
 | Task types (pilot) | `item` (obtain, `consume_items:false`) as primary. `checkmark` only where detection is unreliable; exact field shape verified against FTB Quests before use. |
 | Reward types (pilot) | `xp_levels`, `item` |
 | Scope | Pilot = Mekanism chapter only. Field Guide lore deferred (separate follow-up). MineColonies Questline untouched (the mod self-generates its chapters). |
@@ -89,7 +92,7 @@ From the recovered `20008000.snbt`. The pack's `.snbt` is JSON-compatible (doubl
 
 ## Generator design
 
-- **Input**: quest definitions as structured data (one record per quest), sourced verbatim from the July implementation doc (title, subtitle, description lines, task item + count, rewards, dependencies, shape, grid x/y).
+- **Input**: quest definitions as structured data (one record per quest), sourced from the July implementation doc and **re-granularized per "Progression style"** — multi-item milestones split into single-step quests, descriptions rewritten to name the next step (title, subtitle, description lines, task item + count, rewards, dependencies, shape, grid x/y).
 - **Emit**: `.snbt` files in the proven JSON-compatible style above — one chapter file per chapter, plus `chapter_groups.snbt` and `data.snbt`.
 - **ID assignment**: the generator maintains a global registry. Each chapter gets a reserved 8-hex base ID; quests/tasks/rewards increment from it. The registry guarantees uniqueness and explicitly avoids the regenerating MineColonies chapter IDs (`20002099`, `200020E1`, `20000077`, `200000F5`, `2000205B`) and the removed CC:Tweaked block (`20008000`).
 - **Layout**: x/y follow the July grid convention — Phase 1 milestones at x=0.0, Phase 1 breadcrumbs at x=1.5, Phase 2 milestones x=3.0, Phase 2 breadcrumbs x=4.5, Phase 3 milestones x=6.0, Phase 3 breadcrumbs x=7.5; y increments per quest in dependency order.
@@ -111,6 +114,7 @@ The generator output must pass these checks in order, and any failure is fixed a
 - Mekanism chapter loads with no parse errors after `/ftbquests reload`.
 - All quests render with correct shapes, icons, and dependency arrows.
 - A fresh survival world can complete the Power Generation → Basic Metallurgy → Ore Doubling chain through item detection alone.
+- The chain is strictly linear for a newbie — each quest's description names the next step, and no milestone requires detecting more than one unfamiliar item at once.
 - The validator passes checks 1–5 on the committed output.
 
 ## Out of scope
@@ -119,6 +123,6 @@ The generator output must pass these checks in order, and any failure is fixed a
 - Non-Mekanism chapters (Create, AE2, Apotheosis, Stellaris) — after the pilot.
 - Removing or replacing the MineColonies Questline mod.
 
-## Open question
+## Chapter size
 
-- **Mekanism chapter size**: the July design specifies 33 quests (20 milestones + 13 breadcrumbs); the GUIDE.md rough table says "~20" (milestones only). The pilot should target the **full chapter (33)** for a complete deliverable, unless milestones-only is preferred.
+Resolved by "Progression style": the July 33 quests (20 milestones + 13 breadcrumbs) are re-granularized into smaller, linear steps. Multi-item milestones split into one-quest-per-step, so the Mekanism chapter will have **more than 33 quests**; the exact count emerges during planning when the July milestones are split. The pilot targets the **full re-granularized chapter**, not milestones-only.
