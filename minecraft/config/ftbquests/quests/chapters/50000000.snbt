@@ -3,7 +3,7 @@
   "group": "20000001",
   "order_index": 1,
   "title": "Mekanism",
-  "subtitle": "Industrial power, ore processing, and energy",
+  "subtitle": "Start with the Heat Generator and follow the chain",
   "icon": "mekanism:basic_energy_cube",
   "default_quest_shape": "square",
   "quests": [
@@ -338,7 +338,9 @@
       "x": 1.5,
       "y": 0,
       "shape": "square",
-      "dependencies": [],
+      "dependencies": [
+        "50000001"
+      ],
       "tasks": [
         {
           "type": "item",
@@ -373,7 +375,9 @@
       "x": 1.5,
       "y": 1,
       "shape": "square",
-      "dependencies": [],
+      "dependencies": [
+        "50000001"
+      ],
       "tasks": [
         {
           "type": "item",
@@ -399,10 +403,12 @@
         "Burns ethylene for lots of FE. More efficient than Heat Generators, but needs Phase 2 chemistry."
       ],
       "icon": "mekanism:gas_burning_generator",
-      "x": 1.5,
-      "y": 2,
+      "x": 4.5,
+      "y": 0,
       "shape": "square",
-      "dependencies": [],
+      "dependencies": [
+        "5000003E"
+      ],
       "tasks": [
         {
           "type": "item",
@@ -428,10 +434,12 @@
         "Set a frequency, link two pads, and teleport between them. Costs FE per trip."
       ],
       "icon": "mekanism:teleporter",
-      "x": 1.5,
-      "y": 3,
+      "x": 4.5,
+      "y": 1,
       "shape": "square",
-      "dependencies": [],
+      "dependencies": [
+        "5000003E"
+      ],
       "tasks": [
         {
           "type": "item",
@@ -458,9 +466,11 @@
       ],
       "icon": "mekanism:speed_upgrade",
       "x": 1.5,
-      "y": 4,
+      "y": 2,
       "shape": "square",
-      "dependencies": [],
+      "dependencies": [
+        "50000001"
+      ],
       "tasks": [
         {
           "type": "item",
@@ -492,10 +502,12 @@
         "Machines upgrade Basic -> Advanced -> Elite -> Ultimate. An Ultimate Enrichment Chamber runs 7 items at once."
       ],
       "icon": "mekanism:ultimate_control_circuit",
-      "x": 1.5,
-      "y": 5,
+      "x": 4.5,
+      "y": 2,
       "shape": "square",
-      "dependencies": [],
+      "dependencies": [
+        "5000003E"
+      ],
       "tasks": [
         {
           "type": "item",
@@ -528,9 +540,11 @@
       ],
       "icon": "mekanism:scuba_mask",
       "x": 1.5,
-      "y": 6,
+      "y": 3,
       "shape": "square",
-      "dependencies": [],
+      "dependencies": [
+        "50000001"
+      ],
       "tasks": [
         {
           "type": "item",
@@ -557,9 +571,11 @@
       ],
       "icon": "mekanismtools:osmium_pickaxe",
       "x": 1.5,
-      "y": 7,
+      "y": 4,
       "shape": "square",
-      "dependencies": [],
+      "dependencies": [
+        "50000001"
+      ],
       "tasks": [
         {
           "type": "item",
@@ -1074,9 +1090,11 @@
       ],
       "icon": "mekanism:boiler_casing",
       "x": 4.5,
-      "y": 0,
+      "y": 3,
       "shape": "square",
-      "dependencies": [],
+      "dependencies": [
+        "5000003E"
+      ],
       "tasks": [
         {
           "type": "item",
@@ -1103,9 +1121,11 @@
       ],
       "icon": "mekanism:radioactive_waste_barrel",
       "x": 4.5,
-      "y": 1,
+      "y": 4,
       "shape": "square",
-      "dependencies": [],
+      "dependencies": [
+        "5000003E"
+      ],
       "tasks": [
         {
           "type": "checkmark",
@@ -1130,9 +1150,11 @@
       ],
       "icon": "minecraft:paper",
       "x": 4.5,
-      "y": 2,
+      "y": 5,
       "shape": "square",
-      "dependencies": [],
+      "dependencies": [
+        "5000003E"
+      ],
       "tasks": [
         {
           "type": "checkmark",
@@ -1157,9 +1179,11 @@
       ],
       "icon": "mekanism:robit",
       "x": 4.5,
-      "y": 3,
+      "y": 6,
       "shape": "square",
-      "dependencies": [],
+      "dependencies": [
+        "5000003E"
+      ],
       "tasks": [
         {
           "type": "item",
@@ -1296,7 +1320,9 @@
       "x": 7.5,
       "y": 0,
       "shape": "square",
-      "dependencies": [],
+      "dependencies": [
+        "5000007A"
+      ],
       "tasks": [
         {
           "type": "checkmark",
@@ -1323,7 +1349,9 @@
       "x": 7.5,
       "y": 1,
       "shape": "square",
-      "dependencies": [],
+      "dependencies": [
+        "5000007A"
+      ],
       "tasks": [
         {
           "type": "checkmark",
