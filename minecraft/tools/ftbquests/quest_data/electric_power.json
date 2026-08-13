@@ -1,0 +1,159 @@
+{
+  "chapter": {
+    "id": "62000000",
+    "title": "Create: Electric Power",
+    "subtitle": "Start with the Rolling Mill and follow the chain",
+    "icon": "createaddition:electric_motor",
+    "group": "20000001",
+    "order_index": 4
+  },
+  "quests": [
+    {
+      "key": "rolling_mill",
+      "title": "Rolling Mill",
+      "subtitle": "Press sheets and rods",
+      "description": [
+        "The Rolling Mill presses ingots into rods, wires, and sheets. It is the foundation of Create's electric power.",
+        "Next: an Electric Motor to turn FE into rotational power."
+      ],
+      "icon": "createaddition:rolling_mill",
+      "shape": "hexagon",
+      "phase": 1,
+      "dependencies": [],
+      "tasks": [{ "type": "item", "item": "createaddition:rolling_mill", "count": 1 }],
+      "rewards": [{ "type": "xp_levels", "xp_levels": 8 }]
+    },
+    {
+      "key": "electric_motor",
+      "title": "Electric Motor",
+      "subtitle": "FE into rotation",
+      "description": [
+        "An Electric Motor converts Forge Energy (FE) into rotational power, bridging electricity and Create.",
+        "Next: an Alternator to do the reverse."
+      ],
+      "icon": "createaddition:electric_motor",
+      "shape": "hexagon",
+      "phase": 1,
+      "dependencies": ["rolling_mill"],
+      "tasks": [{ "type": "item", "item": "createaddition:electric_motor", "count": 1 }],
+      "rewards": [{ "type": "xp_levels", "xp_levels": 8 }]
+    },
+    {
+      "key": "alternator",
+      "title": "Alternator",
+      "subtitle": "Rotation into FE",
+      "description": [
+        "An Alternator converts rotational power into FE, letting your Create machines generate electricity.",
+        "Next: a Connector to attach wires."
+      ],
+      "icon": "createaddition:alternator",
+      "shape": "hexagon",
+      "phase": 1,
+      "dependencies": ["electric_motor"],
+      "tasks": [{ "type": "item", "item": "createaddition:alternator", "count": 1 }],
+      "rewards": [{ "type": "xp_levels", "xp_levels": 8 }]
+    },
+    {
+      "key": "connector",
+      "title": "Connector",
+      "subtitle": "Attach wires to machines",
+      "description": [
+        "Connectors attach Copper Wires to machines, letting electricity flow between them.",
+        "Next: Copper Wire to carry that power."
+      ],
+      "icon": "createaddition:connector",
+      "shape": "hexagon",
+      "phase": 1,
+      "dependencies": ["alternator"],
+      "tasks": [{ "type": "item", "item": "createaddition:connector", "count": 1 }],
+      "rewards": [{ "type": "xp_levels", "xp_levels": 8 }]
+    },
+    {
+      "key": "copper_wire",
+      "title": "Copper Wire",
+      "subtitle": "Carry electricity",
+      "description": [
+        "Copper Wire carries FE between Connectors. Roll copper into wire at the Rolling Mill.",
+        "Next: Electrum Ingots for a new material tier."
+      ],
+      "icon": "createaddition:copper_wire",
+      "shape": "hexagon",
+      "phase": 1,
+      "dependencies": ["connector"],
+      "tasks": [{ "type": "item", "item": "createaddition:copper_wire", "count": 1 }],
+      "rewards": [{ "type": "xp_levels", "xp_levels": 8 }]
+    },
+    {
+      "key": "electrum_ingot",
+      "title": "Electrum Ingot",
+      "subtitle": "New material tier",
+      "description": [
+        "Electrum (gold + silver) adds a new material tier that integrates with Mekanism ore processing.",
+        "Next: a Capacitor to store electrical charge."
+      ],
+      "icon": "createaddition:electrum_ingot",
+      "shape": "hexagon",
+      "phase": 1,
+      "dependencies": ["copper_wire"],
+      "tasks": [{ "type": "item", "item": "createaddition:electrum_ingot", "count": 1 }],
+      "rewards": [
+        { "type": "xp_levels", "xp_levels": 12 },
+        { "type": "item", "item": "createaddition:electrum_ingot", "count": 4 }
+      ]
+    },
+    {
+      "key": "capacitor",
+      "title": "Capacitor",
+      "subtitle": "Store electrical charge",
+      "description": [
+        "A Capacitor stores charge and boosts the power of nearby electric machines.",
+        "Next: an Accumulator for bulk FE storage."
+      ],
+      "icon": "createaddition:capacitor",
+      "shape": "hexagon",
+      "phase": 1,
+      "dependencies": ["electrum_ingot"],
+      "tasks": [{ "type": "item", "item": "createaddition:capacitor", "count": 1 }],
+      "rewards": [{ "type": "xp_levels", "xp_levels": 8 }]
+    },
+    {
+      "key": "accumulator",
+      "title": "Accumulator",
+      "subtitle": "Bulk FE storage",
+      "description": [
+        "An Accumulator stores large amounts of FE, buffering your electric power grid.",
+        "This completes the Electric Power chapter."
+      ],
+      "icon": "createaddition:accumulator",
+      "shape": "hexagon",
+      "phase": 1,
+      "dependencies": ["capacitor"],
+      "tasks": [{ "type": "item", "item": "createaddition:accumulator", "count": 1 }],
+      "rewards": [{ "type": "xp_levels", "xp_levels": 8 }]
+    },
+    {
+      "key": "redstone_relay",
+      "title": "Redstone Relay",
+      "subtitle": "Wireless redstone over power lines",
+      "description": ["A Redstone Relay sends redstone signals over your electric power lines."],
+      "icon": "createaddition:redstone_relay",
+      "shape": "square",
+      "phase": 1,
+      "dependencies": ["connector"],
+      "tasks": [{ "type": "item", "item": "createaddition:redstone_relay", "count": 1 }],
+      "rewards": [{ "type": "xp_levels", "xp_levels": 8 }]
+    },
+    {
+      "key": "tesla_coil",
+      "title": "Tesla Coil",
+      "subtitle": "Wireless power",
+      "description": ["A Tesla Coil transmits FE wirelessly over short distances."],
+      "icon": "createaddition:tesla_coil",
+      "shape": "square",
+      "phase": 1,
+      "dependencies": ["connector"],
+      "tasks": [{ "type": "item", "item": "createaddition:tesla_coil", "count": 1 }],
+      "rewards": [{ "type": "xp_levels", "xp_levels": 8 }]
+    }
+  ]
+}

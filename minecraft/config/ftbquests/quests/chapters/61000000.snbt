@@ -1,0 +1,145 @@
+{
+  "id": "61000000",
+  "group": "20000001",
+  "order_index": 3,
+  "title": "Steam 'n' Rails",
+  "subtitle": "Start with the Monorail Track and follow the chain",
+  "icon": "railways:monorail_track",
+  "default_quest_shape": "square",
+  "quests": [
+    {
+      "id": "61000001",
+      "title": "Monorail Track",
+      "subtitle": "Faster elevated rails",
+      "description": [
+        "Monorail tracks carry trains on elevated single-rail lines - faster and sleeker than vanilla Create track.",
+        "Next: a Semaphore to signal your trains."
+      ],
+      "icon": "railways:monorail_track",
+      "x": 0.0,
+      "y": 0,
+      "shape": "hexagon",
+      "dependencies": [],
+      "tasks": [
+        {
+          "id": "61000002",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "railways:monorail_track"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "61000003",
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "61000004",
+      "title": "Semaphore",
+      "subtitle": "Signal your trains",
+      "description": [
+        "A Semaphore signals trains and controls track segments to prevent collisions.",
+        "Next: a Conductor Whistle to summon a conductor."
+      ],
+      "icon": "railways:semaphore",
+      "x": 0.0,
+      "y": 1,
+      "shape": "hexagon",
+      "dependencies": [
+        "61000001"
+      ],
+      "tasks": [
+        {
+          "id": "61000005",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "railways:semaphore"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "61000006",
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "61000007",
+      "title": "Conductor Whistle",
+      "subtitle": "Summon a conductor",
+      "description": [
+        "The Conductor Whistle summons a conductor mob who can drive your trains for you.",
+        "Next: a Handcar for manual rail travel."
+      ],
+      "icon": "railways:conductor_whistle",
+      "x": 0.0,
+      "y": 2,
+      "shape": "hexagon",
+      "dependencies": [
+        "61000004"
+      ],
+      "tasks": [
+        {
+          "id": "61000008",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "railways:conductor_whistle"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "61000009",
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "6100000A",
+      "title": "Handcar",
+      "subtitle": "Manual rail transport",
+      "description": [
+        "A Handcar is a small manual rail vehicle - no fuel, no train assembly, just pump to move.",
+        "This completes the Steam 'n' Rails chapter."
+      ],
+      "icon": "railways:handcar",
+      "x": 0.0,
+      "y": 3,
+      "shape": "hexagon",
+      "dependencies": [
+        "61000007"
+      ],
+      "tasks": [
+        {
+          "id": "6100000B",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "railways:handcar"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "6100000C",
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ],
+      "optional": false
+    }
+  ]
+}

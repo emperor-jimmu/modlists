@@ -1,0 +1,331 @@
+{
+  "id": "63000000",
+  "group": "20000001",
+  "order_index": 5,
+  "title": "Create: Combat",
+  "subtitle": "Start with the Revolver and follow the chain",
+  "icon": "cgs:revolver",
+  "default_quest_shape": "square",
+  "quests": [
+    {
+      "id": "63000001",
+      "title": "Revolver",
+      "subtitle": "Your first gun",
+      "description": [
+        "A Revolver is your first steampunk firearm, crafted at a Gunsmithing Table.",
+        "Next: a Flintlock for a classic single-shot."
+      ],
+      "icon": "cgs:revolver",
+      "x": 0.0,
+      "y": 0,
+      "shape": "hexagon",
+      "dependencies": [],
+      "tasks": [
+        {
+          "id": "63000002",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "cgs:revolver"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "63000003",
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "63000004",
+      "title": "Flintlock",
+      "subtitle": "Classic single-shot",
+      "description": [
+        "A Flintlock is a single-shot firearm with a long barrel for accuracy.",
+        "Next: a Gatling for heavy firepower."
+      ],
+      "icon": "cgs:flintlock",
+      "x": 0.0,
+      "y": 1,
+      "shape": "hexagon",
+      "dependencies": [
+        "63000001"
+      ],
+      "tasks": [
+        {
+          "id": "63000005",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "cgs:flintlock"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "63000006",
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "63000007",
+      "title": "Gatling",
+      "subtitle": "Heavy firepower",
+      "description": [
+        "A Gatling gun delivers rapid sustained fire. Craft it with Create machines.",
+        "Next: an Iron Sight to aim better."
+      ],
+      "icon": "cgs:gatling",
+      "x": 0.0,
+      "y": 2,
+      "shape": "hexagon",
+      "dependencies": [
+        "63000004"
+      ],
+      "tasks": [
+        {
+          "id": "63000008",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "cgs:gatling"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "63000009",
+          "type": "xp_levels",
+          "xp_levels": 12
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "6300000A",
+      "title": "Iron Sight",
+      "subtitle": "Aim better",
+      "description": [
+        "An Iron Sight attaches to your gun for better accuracy.",
+        "Next: Paper Cartridges for ammo."
+      ],
+      "icon": "cgs:iron_sight",
+      "x": 0.0,
+      "y": 3,
+      "shape": "hexagon",
+      "dependencies": [
+        "63000007"
+      ],
+      "tasks": [
+        {
+          "id": "6300000B",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "cgs:iron_sight"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "6300000C",
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "6300000D",
+      "title": "Paper Cartridge",
+      "subtitle": "Ammunition",
+      "description": [
+        "Paper Cartridges are the ammo for your firearms. Stock up.",
+        "Next: a Cannon Mount for artillery."
+      ],
+      "icon": "cgs:paper_cartridge",
+      "x": 0.0,
+      "y": 4,
+      "shape": "hexagon",
+      "dependencies": [
+        "6300000A"
+      ],
+      "tasks": [
+        {
+          "id": "6300000E",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "cgs:paper_cartridge"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "6300000F",
+          "type": "xp_levels",
+          "xp_levels": 8
+        },
+        {
+          "id": "63000010",
+          "type": "item",
+          "count": 8,
+          "item": {
+            "count": 1,
+            "id": "cgs:paper_cartridge"
+          }
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "63000011",
+      "title": "Cannon Mount",
+      "subtitle": "Artillery for defense",
+      "description": [
+        "A Cannon Mount holds a Big Cannon. Place cannons at your colony perimeter for defense.",
+        "Next: Solid Shot for cannon ammo."
+      ],
+      "icon": "createbigcannons:cannon_mount",
+      "x": 0.0,
+      "y": 5,
+      "shape": "hexagon",
+      "dependencies": [
+        "6300000D"
+      ],
+      "tasks": [
+        {
+          "id": "63000012",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "createbigcannons:cannon_mount"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "63000013",
+          "type": "xp_levels",
+          "xp_levels": 12
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "63000014",
+      "title": "Solid Shot",
+      "subtitle": "Cannon ammunition",
+      "description": [
+        "Solid Shot is the basic cannon projectile - high penetrating force against structures.",
+        "This completes the Combat chapter."
+      ],
+      "icon": "createbigcannons:solid_shot",
+      "x": 0.0,
+      "y": 6,
+      "shape": "hexagon",
+      "dependencies": [
+        "63000011"
+      ],
+      "tasks": [
+        {
+          "id": "63000015",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "createbigcannons:solid_shot"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "63000016",
+          "type": "xp_levels",
+          "xp_levels": 8
+        },
+        {
+          "id": "63000017",
+          "type": "item",
+          "count": 8,
+          "item": {
+            "count": 1,
+            "id": "createbigcannons:solid_shot"
+          }
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "63000018",
+      "title": "Bayonet",
+      "subtitle": "Melee attachment",
+      "description": [
+        "A Bayonet attaches to your gun for melee combat."
+      ],
+      "icon": "cgs:bayonet",
+      "x": 1.5,
+      "y": 0,
+      "shape": "square",
+      "dependencies": [
+        "63000001"
+      ],
+      "tasks": [
+        {
+          "id": "63000019",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "cgs:bayonet"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "6300001A",
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "6300001B",
+      "title": "HE Shell",
+      "subtitle": "Explosive cannon ammo",
+      "description": [
+        "An HE Shell explodes with more force than TNT for demolishing structures."
+      ],
+      "icon": "createbigcannons:he_shell",
+      "x": 1.5,
+      "y": 1,
+      "shape": "square",
+      "dependencies": [
+        "63000011"
+      ],
+      "tasks": [
+        {
+          "id": "6300001C",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "createbigcannons:he_shell"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "6300001D",
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ],
+      "optional": false
+    }
+  ]
+}

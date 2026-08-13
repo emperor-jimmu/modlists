@@ -1,0 +1,356 @@
+{
+  "id": "62000000",
+  "group": "20000001",
+  "order_index": 4,
+  "title": "Create: Electric Power",
+  "subtitle": "Start with the Rolling Mill and follow the chain",
+  "icon": "createaddition:electric_motor",
+  "default_quest_shape": "square",
+  "quests": [
+    {
+      "id": "62000001",
+      "title": "Rolling Mill",
+      "subtitle": "Press sheets and rods",
+      "description": [
+        "The Rolling Mill presses ingots into rods, wires, and sheets. It is the foundation of Create's electric power.",
+        "Next: an Electric Motor to turn FE into rotational power."
+      ],
+      "icon": "createaddition:rolling_mill",
+      "x": 0.0,
+      "y": 0,
+      "shape": "hexagon",
+      "dependencies": [],
+      "tasks": [
+        {
+          "id": "62000002",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "createaddition:rolling_mill"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "62000003",
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "62000004",
+      "title": "Electric Motor",
+      "subtitle": "FE into rotation",
+      "description": [
+        "An Electric Motor converts Forge Energy (FE) into rotational power, bridging electricity and Create.",
+        "Next: an Alternator to do the reverse."
+      ],
+      "icon": "createaddition:electric_motor",
+      "x": 0.0,
+      "y": 1,
+      "shape": "hexagon",
+      "dependencies": [
+        "62000001"
+      ],
+      "tasks": [
+        {
+          "id": "62000005",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "createaddition:electric_motor"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "62000006",
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "62000007",
+      "title": "Alternator",
+      "subtitle": "Rotation into FE",
+      "description": [
+        "An Alternator converts rotational power into FE, letting your Create machines generate electricity.",
+        "Next: a Connector to attach wires."
+      ],
+      "icon": "createaddition:alternator",
+      "x": 0.0,
+      "y": 2,
+      "shape": "hexagon",
+      "dependencies": [
+        "62000004"
+      ],
+      "tasks": [
+        {
+          "id": "62000008",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "createaddition:alternator"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "62000009",
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "6200000A",
+      "title": "Connector",
+      "subtitle": "Attach wires to machines",
+      "description": [
+        "Connectors attach Copper Wires to machines, letting electricity flow between them.",
+        "Next: Copper Wire to carry that power."
+      ],
+      "icon": "createaddition:connector",
+      "x": 0.0,
+      "y": 3,
+      "shape": "hexagon",
+      "dependencies": [
+        "62000007"
+      ],
+      "tasks": [
+        {
+          "id": "6200000B",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "createaddition:connector"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "6200000C",
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "6200000D",
+      "title": "Copper Wire",
+      "subtitle": "Carry electricity",
+      "description": [
+        "Copper Wire carries FE between Connectors. Roll copper into wire at the Rolling Mill.",
+        "Next: Electrum Ingots for a new material tier."
+      ],
+      "icon": "createaddition:copper_wire",
+      "x": 0.0,
+      "y": 4,
+      "shape": "hexagon",
+      "dependencies": [
+        "6200000A"
+      ],
+      "tasks": [
+        {
+          "id": "6200000E",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "createaddition:copper_wire"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "6200000F",
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "62000010",
+      "title": "Electrum Ingot",
+      "subtitle": "New material tier",
+      "description": [
+        "Electrum (gold + silver) adds a new material tier that integrates with Mekanism ore processing.",
+        "Next: a Capacitor to store electrical charge."
+      ],
+      "icon": "createaddition:electrum_ingot",
+      "x": 0.0,
+      "y": 5,
+      "shape": "hexagon",
+      "dependencies": [
+        "6200000D"
+      ],
+      "tasks": [
+        {
+          "id": "62000011",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "createaddition:electrum_ingot"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "62000012",
+          "type": "xp_levels",
+          "xp_levels": 12
+        },
+        {
+          "id": "62000013",
+          "type": "item",
+          "count": 4,
+          "item": {
+            "count": 1,
+            "id": "createaddition:electrum_ingot"
+          }
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "62000014",
+      "title": "Capacitor",
+      "subtitle": "Store electrical charge",
+      "description": [
+        "A Capacitor stores charge and boosts the power of nearby electric machines.",
+        "Next: an Accumulator for bulk FE storage."
+      ],
+      "icon": "createaddition:capacitor",
+      "x": 0.0,
+      "y": 6,
+      "shape": "hexagon",
+      "dependencies": [
+        "62000010"
+      ],
+      "tasks": [
+        {
+          "id": "62000015",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "createaddition:capacitor"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "62000016",
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "62000017",
+      "title": "Accumulator",
+      "subtitle": "Bulk FE storage",
+      "description": [
+        "An Accumulator stores large amounts of FE, buffering your electric power grid.",
+        "This completes the Electric Power chapter."
+      ],
+      "icon": "createaddition:accumulator",
+      "x": 0.0,
+      "y": 7,
+      "shape": "hexagon",
+      "dependencies": [
+        "62000014"
+      ],
+      "tasks": [
+        {
+          "id": "62000018",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "createaddition:accumulator"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "62000019",
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "6200001A",
+      "title": "Redstone Relay",
+      "subtitle": "Wireless redstone over power lines",
+      "description": [
+        "A Redstone Relay sends redstone signals over your electric power lines."
+      ],
+      "icon": "createaddition:redstone_relay",
+      "x": 1.5,
+      "y": 0,
+      "shape": "square",
+      "dependencies": [
+        "6200000A"
+      ],
+      "tasks": [
+        {
+          "id": "6200001B",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "createaddition:redstone_relay"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "6200001C",
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "6200001D",
+      "title": "Tesla Coil",
+      "subtitle": "Wireless power",
+      "description": [
+        "A Tesla Coil transmits FE wirelessly over short distances."
+      ],
+      "icon": "createaddition:tesla_coil",
+      "x": 1.5,
+      "y": 1,
+      "shape": "square",
+      "dependencies": [
+        "6200000A"
+      ],
+      "tasks": [
+        {
+          "id": "6200001E",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "createaddition:tesla_coil"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "6200001F",
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ],
+      "optional": false
+    }
+  ]
+}
