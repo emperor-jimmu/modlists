@@ -797,7 +797,7 @@
       "shape": "hexagon",
       "phase": 2,
       "dependencies": [
-        "diamond_knife"
+        "organic_compost"
       ],
       "tasks": [
         {
