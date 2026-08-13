@@ -96,8 +96,9 @@ Discovered via in-game testing and study of the MineColonies Questline's shipped
 
 1. **Item tasks/rewards use a nested ItemStack** — `"item": { "count": N, "id": "modid:itemid" }`, never a flat `"item": "modid:itemid"` string. A flat string renders the quest *icon* but breaks item *detection*.
 2. **Text must be ASCII-only.** Em dashes (`—`, U+2014) render as their codepoint `2014` in-game. Use plain hyphens; avoid smart quotes, arrows, and other non-ASCII characters.
-3. **Prefer item detection over checkmark tasks.** A checkmark has no "real completion" and feels arbitrary. Use an `item` task wherever the goal is a real obtainable item; reserve `checkmark` for pure-knowledge quests.
+3. **Prefer item detection over checkmark tasks.** A checkmark has no "real completion" and feels arbitrary. Use an `item` task wherever the goal is a real obtainable item; a checkmark is never used — its grey-checkmark icon reads as a broken quest.
 4. **Verify every item ID against the mod's own registry** (its `en_us.json` lang file), not web-search summaries — the search confidently reported the wrong Speed Upgrade ID (`speed_upgrade` vs the real `upgrade_speed`).
+5. **Ampersands are formatting-code markers.** `&` followed by whitespace throws "you must escape whitespace after & with \&". Write "and" instead of `&` in all quest text (titles, subtitles, descriptions).
 
 ## Generator design
 

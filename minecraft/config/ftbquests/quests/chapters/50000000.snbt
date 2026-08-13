@@ -714,7 +714,7 @@
       "subtitle": "Split water into gases",
       "description": [
         "Splits water into hydrogen + oxygen. Oxygen feeds the Purification Chamber; hydrogen feeds chemistry.",
-        "Next: a Chemical Infuser to combine gases into new ones."
+        "Tip: map the full chemical chain on paper before you build pipes. Next: a Chemical Infuser to combine gases into new ones."
       ],
       "icon": "mekanism:electrolytic_separator",
       "x": 3.0,
@@ -1186,12 +1186,12 @@
     },
     {
       "id": "5000006D",
-      "title": "Chemical Processing Map",
-      "subtitle": "Plan the whole flowchart",
+      "title": "Robit",
+      "subtitle": "Your robot companion",
       "description": [
-        "Map it before you build: water -> H2 + O2, H2 + Cl2 -> HCl -> injection, sulfur -> SO2 -> SO3 -> dissolution. Label your pipes."
+        "A robot buddy: follows you, holds items, has a crafting table, and recharges your FE gear."
       ],
-      "icon": "minecraft:paper",
+      "icon": "mekanism:robit",
       "x": 4.5,
       "y": 5,
       "shape": "square",
@@ -1201,35 +1201,6 @@
       "tasks": [
         {
           "id": "5000006E",
-          "type": "checkmark"
-        }
-      ],
-      "rewards": [
-        {
-          "id": "5000006F",
-          "type": "xp_levels",
-          "xp_levels": 24
-        }
-      ],
-      "optional": false
-    },
-    {
-      "id": "50000070",
-      "title": "Robit",
-      "subtitle": "Your robot companion",
-      "description": [
-        "A robot buddy: follows you, holds items, has a crafting table, and recharges your FE gear."
-      ],
-      "icon": "mekanism:robit",
-      "x": 4.5,
-      "y": 6,
-      "shape": "square",
-      "dependencies": [
-        "5000003B"
-      ],
-      "tasks": [
-        {
-          "id": "50000071",
           "type": "item",
           "item": {
             "count": 1,
@@ -1239,7 +1210,7 @@
       ],
       "rewards": [
         {
-          "id": "50000072",
+          "id": "5000006F",
           "type": "xp_levels",
           "xp_levels": 8
         }
@@ -1247,7 +1218,7 @@
       "optional": false
     },
     {
-      "id": "50000073",
+      "id": "50000070",
       "title": "Fusion Reactor",
       "subtitle": "Zero-waste power",
       "description": [
@@ -1263,7 +1234,7 @@
       ],
       "tasks": [
         {
-          "id": "50000074",
+          "id": "50000071",
           "type": "item",
           "item": {
             "count": 1,
@@ -1273,12 +1244,12 @@
       ],
       "rewards": [
         {
-          "id": "50000075",
+          "id": "50000072",
           "type": "xp_levels",
           "xp_levels": 32
         },
         {
-          "id": "50000076",
+          "id": "50000073",
           "type": "item",
           "count": 8,
           "item": {
@@ -1290,7 +1261,7 @@
       "optional": false
     },
     {
-      "id": "50000077",
+      "id": "50000074",
       "title": "Quantum Entangloporter",
       "subtitle": "Instant wireless transport",
       "description": [
@@ -1302,11 +1273,11 @@
       "y": 1,
       "shape": "hexagon",
       "dependencies": [
-        "50000073"
+        "50000070"
       ],
       "tasks": [
         {
-          "id": "50000078",
+          "id": "50000075",
           "type": "item",
           "item": {
             "count": 1,
@@ -1316,7 +1287,7 @@
       ],
       "rewards": [
         {
-          "id": "50000079",
+          "id": "50000076",
           "type": "xp_levels",
           "xp_levels": 32
         }
@@ -1324,8 +1295,8 @@
       "optional": false
     },
     {
-      "id": "5000007A",
-      "title": "SPS & MekaSuit",
+      "id": "50000077",
+      "title": "SPS and MekaSuit",
       "subtitle": "Become a demigod",
       "description": [
         "The Supercritical Phase Shifter turns Polonium into Antimatter, which crafts the MekaSuit. Install the Gravitational Modulating Unit for creative flight, plus energy shield and jetpack modules.",
@@ -1336,11 +1307,11 @@
       "y": 2,
       "shape": "hexagon",
       "dependencies": [
-        "50000077"
+        "50000074"
       ],
       "tasks": [
         {
-          "id": "5000007B",
+          "id": "50000078",
           "type": "item",
           "item": {
             "count": 1,
@@ -1350,12 +1321,12 @@
       ],
       "rewards": [
         {
-          "id": "5000007C",
+          "id": "50000079",
           "type": "xp_levels",
           "xp_levels": 32
         },
         {
-          "id": "5000007D",
+          "id": "5000007A",
           "type": "item",
           "count": 1,
           "item": {
@@ -1367,7 +1338,7 @@
       "optional": false
     },
     {
-      "id": "5000007E",
+      "id": "5000007B",
       "title": "Polonium Production",
       "subtitle": "Waste into fuel",
       "description": [
@@ -1378,11 +1349,11 @@
       "y": 0,
       "shape": "square",
       "dependencies": [
-        "50000073"
+        "50000070"
       ],
       "tasks": [
         {
-          "id": "5000007F",
+          "id": "5000007C",
           "type": "item",
           "item": {
             "count": 1,
@@ -1392,7 +1363,7 @@
       ],
       "rewards": [
         {
-          "id": "50000080",
+          "id": "5000007D",
           "type": "xp_levels",
           "xp_levels": 24
         }
@@ -1400,7 +1371,7 @@
       "optional": false
     },
     {
-      "id": "50000081",
+      "id": "5000007E",
       "title": "Antimatter Chain",
       "subtitle": "The full endgame chain",
       "description": [
@@ -1411,11 +1382,11 @@
       "y": 1,
       "shape": "square",
       "dependencies": [
-        "50000073"
+        "50000070"
       ],
       "tasks": [
         {
-          "id": "50000082",
+          "id": "5000007F",
           "type": "item",
           "item": {
             "count": 1,
@@ -1425,7 +1396,7 @@
       ],
       "rewards": [
         {
-          "id": "50000083",
+          "id": "50000080",
           "type": "xp_levels",
           "xp_levels": 32
         }

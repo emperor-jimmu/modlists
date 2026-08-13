@@ -563,7 +563,7 @@
       "subtitle": "Split water into gases",
       "description": [
         "Splits water into hydrogen + oxygen. Oxygen feeds the Purification Chamber; hydrogen feeds chemistry.",
-        "Next: a Chemical Infuser to combine gases into new ones."
+        "Tip: map the full chemical chain on paper before you build pipes. Next: a Chemical Infuser to combine gases into new ones."
       ],
       "icon": "mekanism:electrolytic_separator",
       "shape": "hexagon",
@@ -940,31 +940,6 @@
       ]
     },
     {
-      "key": "chemical_chain",
-      "title": "Chemical Processing Map",
-      "subtitle": "Plan the whole flowchart",
-      "description": [
-        "Map it before you build: water -> H2 + O2, H2 + Cl2 -> HCl -> injection, sulfur -> SO2 -> SO3 -> dissolution. Label your pipes."
-      ],
-      "icon": "minecraft:paper",
-      "shape": "square",
-      "phase": 2,
-      "dependencies": [
-        "ore_tripling"
-      ],
-      "tasks": [
-        {
-          "type": "checkmark"
-        }
-      ],
-      "rewards": [
-        {
-          "type": "xp_levels",
-          "xp_levels": 24
-        }
-      ]
-    },
-    {
       "key": "robit",
       "title": "Robit",
       "subtitle": "Your robot companion",
@@ -1054,7 +1029,7 @@
     },
     {
       "key": "mekasuit",
-      "title": "SPS & MekaSuit",
+      "title": "SPS and MekaSuit",
       "subtitle": "Become a demigod",
       "description": [
         "The Supercritical Phase Shifter turns Polonium into Antimatter, which crafts the MekaSuit. Install the Gravitational Modulating Unit for creative flight, plus energy shield and jetpack modules.",
