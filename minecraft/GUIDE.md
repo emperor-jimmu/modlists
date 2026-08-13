@@ -1516,7 +1516,7 @@ The other half of the structure-density balance: WDA's minor structures (fishing
 | `exclusion_zone` | 10 chunks vs `major_structures` | unchanged |
 
 - Values verified by extracting `minor_structures.json` from the shipped `DungeonsArise-1.21.1-2.1.68` jar — older-version numbers (35/25) do not match 1.21.1.
-- The minor set on 1.21.1 holds only the 6 small builds above. Note: the **campsites** (illager_campsite, merchant_campsite, small_blimp, mushroom_house, greenwood_pub) are in the *major* set with high weights — they keep default density with this datapack. If they should also be thinned, options are scaling the whole major set or trimming those weights (see the datapack README).
+- The minor set on 1.21.1 holds only the 6 small builds above. The **most common major-set structures** (illager_campsite, merchant_campsite, small_blimp — weight 3) are trimmed to weight 2 (~28% rarer) by the same datapack; the big landmarks keep their density. Remaining weight-2 commons (greenwood_pub, illager_corsair, illager_galley, mushroom_house) stay at default.
 - **Install**: copy `datapacks/wda-density-tweak/` (or its zip) into the world's `datapacks/` folder — or `%APPDATA%\.minecraft\datapacks\` for all worlds. New regions only.
 - **Verify**: `/locate structure dungeons_arise:fishing_hut` should average ~56 chunks apart with the datapack active.
 
@@ -2864,24 +2864,54 @@ Hand-animated bosses with unique mechanics. **Opt-in** — you must build a summ
 
 ### When Dungeons Arise — Roguelike Structures
 
-Large multi-floor combat structures across the Overworld.
+38 unique structures (WDA 2.1.68) generated across two density sets: **Minor** (6 small builds — thinned +25% by the `wda-density-tweak` datapack) and **Major** (32 structures — the three most common camps trimmed to weight 2). Table verified against the shipped jar.
 
-| Structure        | Floors | Difficulty | Biome            | Loot                        |
-|------------------|--------|------------|------------------|-----------------------------|
-| Abandoned Temple | 3      | Easy       | Plains, forests  | Iron gear, early rare items |
-| Small Castle     | 4      | Medium     | Plains, hills    | Rare weapons, gold          |
-| Large Castle     | 6      | Hard       | Mountains        | Epic gear, diamonds         |
-| Barracks         | 2      | Easy       | Any              | Armor, shields              |
-| Scorched Fort    | 4      | Medium     | Desert, badlands | Fire-related items          |
-| Warped Fortress  | 5      | Hard       | Any (rare)       | Endgame gear, unique loot   |
-| Foundry          | 3      | Medium     | Underground      | Ores, mining gear           |
-| Bandit Camp      | 1      | Easy       | Forest, taiga    | Early weapons, food         |
+| Structure | Set | Where it spawns | What to expect |
+|-----------|-----|-----------------|----------------|
+| Fishing Hut | Minor | Beaches | Small hut, fishing barrels |
+| Wishing Well | Minor | Plains, meadows | Decorative well — no loot |
+| Jungle Tree House | Minor | Jungles | Treetop hideout, chests |
+| Bathhouse | Minor | Plains, forests, taiga, snowy | Bathhouse, supply barrels |
+| Abandoned Temple | Minor | Taiga, hills, mountains | Multi-room ruin, rooftop treasure + explorer map |
+| Lighthouse | Minor | Beaches, plains | Tower, rooftop chest |
+| Bandit Village | Major | Badlands | Tent settlement, supplies |
+| Bandit Towers | Major | Badlands | Tower cluster, gardens, supply rooms |
+| Illager Campsite | Major | Plains, hills, snowy | Tent camp, map + supply |
+| Merchant Campsite | Major | Plains, meadows | Trading camp, map + supply |
+| Illager Fort | Major | Taiga, snowy | Fortified outpost, treasure |
+| Illager Windmill | Major | Plains, meadows | Windmill, treasure |
+| Greenwood Pub | Major | Forests | Tavern, barrels |
+| Mushroom House | Major | Forests | Cozy mushroom home |
+| Mushroom Village | Major | Forests | Small mushroom settlement |
+| Mushroom Mines | Major | Forests | Underground mine, ore veins + tools |
+| Monastery | Major | Taiga, hills, mountains | Stone monastery, map + barrels |
+| Coliseum | Major | Plains, meadows | Arena ruin — combat only, no chest loot |
+| Ceryneian Hind | Major | Deserts | Giant stag monument, hidden treasure |
+| Typhon | Major | Oceans | Sea monster, treasure |
+| Illager Corsair | Major | Oceans | Illager pirate ship |
+| Illager Galley | Major | Oceans | Illager war galley |
+| Undead Pirate Ship | Major | Oceans | Haunted ship, enchanted gear |
+| Small Blimp | Major | Deserts, plains, savannas, forests, taiga | Tiny airship (redstone chamber, coal storage) |
+| Scorched Mines | Major | Deserts | Burnt-out mining settlement |
+| Mining Complex | Major | Deserts, plains, savannas | Underground facility (dripstone/lush caves) |
+| Foundry | Major | Deserts, plains, savannas | Industrial forge with lava pit |
+| Infested Temple | Major | Taiga, hills, snowy, cherry | Temple with ominous vaults (trial-chamber style) |
+| Kisegi Sanctuary | Major | Plains, hills, cherry | Shrine complex with ominous vaults |
+| Plague Asylum | Major | Forests, mountains | Asylum with potion lab and cells |
+| Keep Kayra | Major | Swamps, mangrove | Fortress keep with gardens and library |
+| Mechanical Nest | Major | Swamps, mangrove | Giant mechanical bird nest |
+| Thornborn Towers | Major | Forests | Thorn-covered towers |
+| Shiraz Palace | Major | Deserts | Grand palace, elite guards |
+| Heavenly Rider | Major | Deserts, plains, savannas + End | Sky fortress |
+| Heavenly Conqueror | Major | Deserts, plains, savannas + End | Sky fortress |
+| Heavenly Challenger | Major | Deserts, plains, savannas + End | Sky fortress |
+| Aviary | Major | End midlands & highlands | Colossal bird-nest tower in the End |
 
 **Finding**: Explorer's Compass → "When Dungeons Arise" filter → select structure.
 
-**Strategy**: Clear floors systematically. Loot scales with depth. Bring blocks to pillar, torches to light hallways, decent gear for deep floors.
+**Strategy**: Minor-set builds are Phase-1 friendly — light combat, early loot. Major-set dungeons range from camps (low threat) to palaces and sky fortresses (Phase 2+ — bring real gear, blocks to pillar, torches, and healing food). Structures without chest loot (Coliseum, Wishing Well) are pure exploration stops.
 
-**Note**: Structures are finite — once looted, they don't respawn unless chunks reset. Mark looted ones on JourneyMap.
+**Note**: Structures are finite — once looted, they don't respawn unless chunks reset. Mark looted ones on JourneyMap. `giant_mushroom` and `mining_system` exist in the mod's files but are not registered in either structure set in 2.1.68 — they do not generate.
 
 ### Create Big Cannons — Artillery Engineering
 
@@ -2944,7 +2974,7 @@ The **Mega Torch** suppresses hostile mob spawning in a 48-block radius — but 
 | Session                              | Focus                                                                                                                                    | What to Do                 |
 |--------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|----------------------------|
 | **Session 1 — Combat feel**          | Better Combat works automatically. Craft/find a Simply Swords weapon. Test daggers (fast stab) vs greatswords (wide sweep). Equip a rune | Learn your weapon          |
-| **Session 2 — First dungeon**        | Explorer's Compass → When Dungeons Arise small castle/abandoned temple. Clear floors                                                     | Roguelike dungeon complete |
+| **Session 2 — First dungeon**        | Explorer's Compass → When Dungeons Arise minor set: abandoned temple or bathhouse. Clear it                                                                    | Roguelike dungeon complete |
 | **Session 3 — First Cataclysm boss** | Easiest = Leviathan (deep ocean) or Netherite Monstrosity (Nether). Prepare: good weapons, fire resistance, healing food                 | Epic boss beaten           |
 | **Session 4 — Cannons**              | Craft bronze (zinc + copper in heated mixer). Build Small Cannon. Test fire. Mount near base entrance                                    | Artillery online           |
 | **Session 5+ — Boss gauntlet**       | Remaining Cataclysm bosses. Each drops unique endgame materials. Revisit Twilight Forest bosses with Wave 5 gear                         | Full endgame gear          |

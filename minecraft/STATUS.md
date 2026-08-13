@@ -665,3 +665,15 @@ User decision, same session as the Wave 5 review — supersedes the "KEEP, 1 [VE
 - [x] GUIDE.md Wave 2 Configuration documented; `datapacks/README.md` table updated; datapack README written (includes the campsite/major-set options).
 - [x] **Finding — stale WDA structure table in GUIDE.md Wave 5**: the "When Dungeons Arise — Roguelike Structures" table lists structures that do not exist in the 1.21.1 build (Small Castle, Large Castle, Barracks, Scorched Fort, Warped Fortress, Bandit Camp — these are pre-2.1-era names). Only abandoned_temple and foundry survive in the 2.1.68 jar. Table needs a rewrite against the actual 1.21.1 structure list (38 structures) — flagged, not done (separate task; user to confirm).
 - [ ] [VERIFY] at test launch: `/locate structure dungeons_arise:fishing_hut` averages ~56 chunks apart with the datapack active. New regions only.
+
+### WDA Density Tweak v1.1 + WDA Table Rewrite (2026-08-13)
+
+- [x] **`wda-density-tweak` extended with `major_structures.json` override** — the three weight-3 commons (illager_campsite, merchant_campsite, small_blimp) trimmed to weight 2 (~28% relative reduction ≈ 25% target; 3/43 → 2/40 per major-set roll). Rationale: scaling the whole major set would have made the big landmarks rarer (violates "leave big structures on default"); weight trims hit only the commons. Spacing/separation/salt/other 29 weights unchanged (diff-verified vs jar).
+- [x] **GUIDE.md Wave 5 WDA table rewritten against the real 1.21.1 data** (resolves the stale-table finding above) — 38 structures verified from the shipped 2.1.68 jar:
+  - Names + set membership (Minor 6 / Major 32) from `structure_set/*.json`
+  - Spawn biomes from `tags/worldgen/biome/has_structure/*.json` (incl. nested vanilla tags; e.g., Aviary = End midlands/highlands, Keep Kayra = swamps/mangrove, Heavenly trio = overworld arid/plains + End)
+  - Loot expectations grounded in `loot_table/chests/<structure>/*.json` filenames (e.g., Infested Temple + Kisegi Sanctuary have ominous vaults; Coliseum + Wishing Well have no chest loot; Mushroom Mines has ore/tool loot; Undead Pirate Ship has enchants)
+  - `giant_mushroom` + `mining_system` noted as present but unregistered (do not generate in 2.1.68)
+  - Session plan Session 2 updated to minor-set structures (abandoned temple / bathhouse)
+- [x] GUIDE.md Wave 2 density block + datapack README updated to reflect the weight trim; remaining weight-2 commons (greenwood_pub, illager_corsair, illager_galley, mushroom_house) left at default.
+- [ ] [VERIFY] at test launch: campsite finds should be visibly rarer than other major structures; if too rare, revert weights to 3.
