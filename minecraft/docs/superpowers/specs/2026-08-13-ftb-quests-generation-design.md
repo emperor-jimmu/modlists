@@ -25,9 +25,9 @@ One content change is in scope: the July pacing assumes a modded-Minecraft veter
 | Content source | July design + implementation docs — reused as the foundation, re-granularized per "Progression style" |
 | Progression style | **Newbie-first.** Each quest is one small, concrete step for a player who has never used the mod. The chapter forms a strict linear chain — every milestone depends on exactly the previous one, and each description names the next step. Multi-item processes are split into one-quest-per-step; no quest requires detecting several unfamiliar items at once. Breadcrumbs (optional side-quests) are gated behind the first milestone of their phase so exactly one quest is unlocked at start. |
 | Output format | New per-chapter layout: `config/ftbquests/quests/chapters/<id>.snbt`, plus `chapter_groups.snbt` and `data.snbt`. The old `quests.snbt` / `rewards.snbt` format is superseded in this pack's FTB Quests version. |
-| Format ground truth | `20008000.snbt` (CC:Tweaked chapter) recovered from git history via `git show 903611e:minecraft/config/ftbquests/quests/chapters/20008000.snbt` — proven to load in this pack's FTB Quests version |
+| Format ground truth | `20008000.snbt` (CC:Tweaked chapter) recovered from git history, plus the MineColonies Questline mod's shipped `minecolonies.snbt` (authoritative task/reward shapes) |
 | Reward philosophy | Unchanged from July spec: XP levels + phase-scaled consumable materials; no placement/utility blocks; no gated items. With slower pacing, each reward is usable in the **immediately next** quest. |
-| Task types (pilot) | `item` (obtain, `consume_items:false`) as primary. `checkmark` only where detection is unreliable; exact field shape verified against FTB Quests before use. |
+| Task types | `item` (obtain) as primary — use real item detection wherever a real item exists. `checkmark` only for pure-knowledge quests with no detectable item. |
 | Reward types (pilot) | `xp_levels`, `item` |
 | Scope | Pilot = Mekanism chapter only. Field Guide lore deferred (separate follow-up). MineColonies Questline untouched (the mod self-generates its chapters). |
 | Rollout | Pilot one chapter → validate end-to-end → scale to Create, AE2, Apotheosis, Stellaris |
@@ -72,14 +72,14 @@ From the recovered `20008000.snbt`. The pack's `.snbt` is JSON-compatible (doubl
 **Item task:**
 
 ```json
-{ "id": "20008002", "type": "item", "item": "computercraft:computer_normal", "count": 1, "consume_items": false }
+{ "id": "20008002", "type": "item", "item": { "count": 1, "id": "computercraft:computer_normal" } }
 ```
 
 **Rewards:**
 
 ```json
 { "id": "20008003", "type": "xp_levels", "xp_levels": 3 }
-{ "id": "20008006", "type": "item", "item": "minecraft:redstone", "count": 16, "reward_table_index": 0 }
+{ "id": "20008006", "type": "item", "count": 16, "item": { "count": 1, "id": "minecraft:redstone" } }
 ```
 
 **Group (`chapter_groups.snbt`):**
@@ -89,6 +89,15 @@ From the recovered `20008000.snbt`. The pack's `.snbt` is JSON-compatible (doubl
 ```
 
 **Global settings (`data.snbt`):** `{ "version": 1, "default_reward_team": false, ... }` — emitted once, unchanged.
+
+## Content authoring rules (learned from the pilot)
+
+Discovered via in-game testing and study of the MineColonies Questline's shipped `minecolonies.snbt`. Treat as hard rules for every future chapter:
+
+1. **Item tasks/rewards use a nested ItemStack** — `"item": { "count": N, "id": "modid:itemid" }`, never a flat `"item": "modid:itemid"` string. A flat string renders the quest *icon* but breaks item *detection*.
+2. **Text must be ASCII-only.** Em dashes (`—`, U+2014) render as their codepoint `2014` in-game. Use plain hyphens; avoid smart quotes, arrows, and other non-ASCII characters.
+3. **Prefer item detection over checkmark tasks.** A checkmark has no "real completion" and feels arbitrary. Use an `item` task wherever the goal is a real obtainable item; reserve `checkmark` for pure-knowledge quests.
+4. **Verify every item ID against the mod's own registry** (its `en_us.json` lang file), not web-search summaries — the search confidently reported the wrong Speed Upgrade ID (`speed_upgrade` vs the real `upgrade_speed`).
 
 ## Generator design
 
