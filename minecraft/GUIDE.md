@@ -2151,7 +2151,7 @@ This cost curve encourages the player to settle for "good enough" gear until the
 
 **Unique attributes**: Skills Mastery Reimagined unlocks attributes you won't find in vanilla or Apotheosis — Gravity (lower = floaty jumps), Scale (character size), Burning Time, Sneak Speed, Water Efficiency, Oxygen Bonus, Crossbow Projectile Speed, and weapon-specific damage (Mace, Trident, Sword, Axe). These change *how you interact with the world*, not just how hard you hit.
 
-**Weapon synergy**: Weapon-specific nodes (Sword Damage, Axe Damage, Mace Damage, Trident Damage) create a direct feedback loop with Simply Swords and Spartan Weaponry drops. Find a cool unique sword? There's a node that amplifies it. The skill tree and your loot chase feed each other.
+**Weapon synergy**: Weapon-specific nodes (Sword Damage, Axe Damage, Mace Damage, Trident Damage) create a direct feedback loop with Simply Swords and Simply More drops. Find a cool unique sword? There's a node that amplifies it. The skill tree and your loot chase feed each other.
 
 **Pufferfish's Skills**: The framework powering the tree — handles XP tracking and attribute modification behind the scenes. Auto-installed dependency.
 
@@ -2789,7 +2789,7 @@ Replaces Minecraft's single swing with weapon-specific movesets:
 
 **Config**: Mod Menu → Better Combat. Tweak reach, sweep radius, attack speed, visual effects per weapon type.
 
-**Integration**: Simply Swords weapons have built-in Better Combat data files — each category uses correct animation, reach, and speed automatically. Too Many Bows and Spartan Weaponry also integrate.
+**Integration**: Simply Swords weapons have built-in Better Combat data files — each category uses correct animation, reach, and speed automatically. Too Many Bows and Simply More also integrate.
 
 ### Enchantment Descriptions
 

@@ -16,4 +16,5 @@ Scratch backlog of future work. See STATUS.md for the canonical decision registe
 - [ ] Effectual config tuning: disable cave dust (duplicated by Particular Reforged)
 - [ ] Day Counter config — verify keys after test launch, apply overrides (ActionBar only, no sound, no rewards, no week days, no date system)
 - [ ] Verify Torchmaster config key names against generated `torchmaster-common.toml` after test launch
+- [ ] Verify No Creeper Grief datapack (PK V.2.0.3, 1.20→1.20.1 pin) covers Mutant Creeper / Creeper Minion explosions at test launch — mutant explosions reportedly bypass `doMobGriefing`; if uncovered, decide mitigation (accept + Torchmaster, spawn-weight tune, or 1.21.1 anti-grief replacement)
 - [ ] Author ~85 FTB Quests for non-MineColonies mods (Create, Mekanism, AE2, Apotheosis, Combat, Exploration, Food & Farming)
