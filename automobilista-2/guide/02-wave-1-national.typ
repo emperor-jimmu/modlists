@@ -124,9 +124,49 @@ Cascavel is a fast, flowing circuit with a mix of medium and high-speed corners 
 
 == Mods
 
-// MODS: Pending — Skin packs, additional tracks, SimHub overlays to be added here
+Wave 1 is where your grid starts to feel real: real driver names, real GT4 liveries, and a real multiclass field. All of these work through AMS2CM from Wave 0.
 
-*Awaiting mod list from user.*
+#mod-panel(
+  category: "AI Files",
+  name: "NAMeS: Real Drivers for AMS2",
+  version: "v5.95",
+  url: "https://www.overtake.gg/downloads/names-real-drivers-for-ams2.50989/",
+  source: "OverTake.gg",
+  wave: "1",
+  dependencies: "AMS2CM (Wave 0)",
+  install: "Drag-and-drop the NAMeS archive into AMS2CM and press Apply. The archive's prefix ensures it installs before larger livery packs, so those can keep their own AI files.",
+  what: "Replaces every fictional driver name in AMS2 with real drivers — over 2,900 grid places across all cars and DLC, with names and nationalities matched to the car or class (updated for AMS2 V1.6.9.9). It contains name data only: 100% of Reiza's default AI performance stays intact.",
+  why: "Wave 1 is your first real championship. Racing against 'F. Souza' in a GT4 field of strangers is fine; racing against real driver names in a correct nationalities grid is what makes the career feel legitimate. It is also the foundation the Wave 2-3 AI-name features of other mods build on.",
+  notes: "Names appear in single-player sessions only — multiplayer grids use AMS2's own generation. Works with all default content; do not combine with NAMeS+AI (its modded-content sibling) — see conflicts-mods.md.",
+)
+
+#mod-panel(
+  category: "Skins/Liveries",
+  name: "GT4 Skin Pack by JTN Race Art Works",
+  version: "v1.0",
+  url: "https://www.overtake.gg/downloads/gt4-skin-pack-by-jtn-race-art-works.77909/",
+  source: "OverTake.gg",
+  wave: "1",
+  dependencies: "None (uses standard in-game GT4 cars)",
+  install: "Extract the ZIP into your Automobilista 2 root folder. To pick an AI grid, open UserData/CustomAIDrivers and rename the chosen GT4 file to GT4.xml.",
+  what: "A 40-car livery pack for the standard AMS2 GT4 class — mostly fictional privateer teams plus two constructor outfits — with two ready AI grids (32- or 40-entry) that fill the class with named opponents.",
+  why: "GT4 is the Wave 1 teaching class, and a full, varied grid is what makes 10-lap races feel like a championship instead of a test session. It updates the default liveries Reiza ships for the same cars, so it is purely visual + grid-depth: zero physics change.",
+  notes: "Choose exactly one GT4 AI file — both target the same GT4.xml slot and will overwrite each other. The pack is from June 2025; if a later Reiza update ever misbehaves with it, re-apply it in AMS2CM after the update.",
+)
+
+#mod-panel(
+  category: "Skins/Liveries",
+  name: "IMSA MPC 2021 Pack | GT4/GS",
+  version: "v0.7",
+  url: "https://www.overtake.gg/downloads/imsa-mpc-2021-pack-gt4-gs.85929/",
+  source: "OverTake.gg",
+  wave: "1",
+  dependencies: "None (standard AMS2 GT4 cars; uses the GT4 Evo for the 2021 Aston Martin)",
+  install: "Extract into the Automobilista 2 root folder via AMS2CM. Note the pack's custom AI targets the GT4 class — see the conflict note below.",
+  what: "A growing recreation of the IMSA Michelin Pilot Challenge 2021 GT4/GS grid — McCann Racing, Team TGM, Rebel Rock, Volt Racing, Automatic Racing and more — with custom AI so the grid races with its real teams.",
+  why: "It pairs perfectly with the JTN pack: where JTN fills the GT4 class with a broad privateer grid, this pack recreates a specific historic season grid, adding a second visual layer and a story to your Wave 1 races.",
+  notes: "Actively developed — the author is still adding BMW and Mercedes entries, so expect updates. Its GT4 AI file shares the GT4.xml slot with the JTN pack: install this pack's AI last if you want the IMSA grid, or skip it and keep JTN's — never both.",
+)
 
 #checklist[
   - Clean 10-lap GT4 race at Cascavel (finish top 8, AI 70)

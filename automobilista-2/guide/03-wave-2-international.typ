@@ -144,9 +144,77 @@ Random weather in a timed race creates the most strategic depth in AMS2:
 
 == Mods
 
-// MODS: Pending — Custom FFB, season skin packs, telemetry dashboards, track mods to be added here
+Wave 2 is where the sim starts to feel like *your* sim: a custom FFB profile tuned for control at the limit, season-accurate GT3 grids, a full race overlay suite, and your first telemetry tools.
 
-*Awaiting mod list from user.*
+#mod-panel(
+  category: "Custom FFB",
+  name: "AMS2 Custom FFB — rFuktor — Control the Limit",
+  version: "v1.0.1",
+  url: "https://www.overtake.gg/downloads/ams2-custom-ffb-rfuktor-control-the-limit.75757/",
+  source: "OverTake.gg",
+  wave: "2",
+  dependencies: "None (file swap only; wheel-base software should be set neutral)",
+  install: "Unzip, rename the text file to ffb_custom_settings.txt, and replace the file of the same name in Documents/Automobilista 2. Restart AMS2, then select the Custom FFB profile in Options > Force Feedback and tune Gain to avoid clipping.",
+  what: "A custom FFB file by Elmar3rd, refined from the community-standard rFuktor base, tuned for predictable grip and slip feel at the limit — you can feel the front start to slide before it lets go.",
+  why: "Wave 2 removes Stability Control and runs performance-impacting damage: you are now catching slides and reading grip on feel alone. A predictable, communicative FFB signal is the difference between catching a slide and spinning — this is the single highest-leverage feel upgrade in the list.",
+  notes: "Only one custom FFB file can be active at a time — do not stack FFB mods (see conflicts-mods.md). Damping in the file represents suspension effects; start with a neutral wheel-base profile and adjust in-game Gain.",
+)
+
+#mod-panel(
+  category: "Skins/Liveries",
+  name: "Aces IMSA GT3 Bundle",
+  version: "2026.Phase3",
+  url: "https://www.overtake.gg/downloads/aces-imsa-gt3-bundle.79957/",
+  source: "OverTake.gg",
+  wave: "2",
+  dependencies: "NAMeS (Wave 1) for real driver names",
+  install: "Two files ready for AMS2CM: the liveries archive and the AI-names archive. Install the AI-names file *last* so NAMeS does not overwrite it.",
+  what: "From-scratch, accuracy-focused liveries for the 2026 IMSA GTD and GTD PRO grids — 18 current-season liveries plus 13 2025 fill-ins — with custom driver suits, helmets, interior banners, and an AI namefile matching each car to its real driver.",
+  why: "Wave 2's endurance and GT3 content lives at Spa, Daytona, and Sebring — the IMSA calendar. Racing the real 2026 field (including the 2026-class liveries) connects the sim to the actual season you can watch on TV, and the bundled namefile completes the NAMeS immersion.",
+  notes: "Author-documented interaction: install the GT3 namefile last so NAMeS does not overwrite it. Multiclass grids only populate correctly when every class used has a custom-AI file — NAMeS covers the rest of the classes.",
+)
+
+#mod-panel(
+  category: "Dashboard/Overlay",
+  name: "Aces AMS2 SimHub Overlay Suite",
+  version: "v1.3",
+  url: "https://www.overtake.gg/downloads/aces-ams2-simhub-overlay-suite.76390/",
+  source: "OverTake.gg",
+  wave: "2",
+  dependencies: "SimHub v9.10.1+ (Wave 0), GarySwallowDataPlugin, NAMeS (real car numbers)",
+  install: "Install SimHub, copy the GarySwallowDataPlugin DLL into SimHub's plugin folder and restart it, then open each .simhubdash file from the suite to install the overlays. In SimHub, create an overlay and add the dashboards you want. In AMS2 set Shared Memory to Project CARS 2 and run borderless.",
+  what: "A suite of 18 race overlays by Ace1226: class leaderboards with sector live-tracking and speed traps, real delta times (measured in milliseconds, not distance-based), penalties, a multiclass board, MFD with relatives view, telemetry gauges, tyre/weather monitors, and input monitors that show exactly how TC/ABS shape your pedal traces.",
+  why: "Wave 2 introduces endurance and telemetry — and AMS2's stock HUD cannot show your class battle in a 48-car multiclass race. This suite turns your screen into a live race broadcast of your own race: who is around you, how far to the class leader, sector-by-sector pace, and where you are losing time.",
+  notes: "Requires the GarySwallowDataPlugin (overtake.gg/downloads/simhub-tv-style-side-scrolling-leaderboards-timings-sidescreen.18746). Use the HTML renderer in SimHub for smoothest performance. Known quirk: cars that go off-track show a CALC delta until re-measured. SimHub free tier refreshes at 100 ms — fine for learning, Pro is smoother.",
+)
+
+#mod-panel(
+  category: "Dashboard/Overlay",
+  name: "Omitool2 (for SimHub)",
+  version: "20250727a",
+  url: "https://www.overtake.gg/downloads/omitool2-for-simhub.73858/",
+  source: "OverTake.gg",
+  wave: "2",
+  dependencies: "SimHub (Wave 0)",
+  install: "Unzip and double-click omitool2_dash — SimHub installs it as a dashboard. Use it as an overlay via SimHub's Dash Studio > More > convert. Keep SimHub units matching the sim's setup units.",
+  what: "A SimHub dashboard by Elmar3rd that simplifies camber and tyre-pressure setup. Per-class profiles (GT3, GT4, F3, Formula Ultimate, LMDh and more) show target pressures, temperatures, and inner-to-outer temperature spreads (Delta-T) to aim for when adjusting the setup.",
+  why: "Wave 2 ends with you managing tyres over a 45-minute stint and Wave 3 demands full setup engineering. Omitool2 turns tyre data into a concrete target sheet — what Delta-T to chase for your class, and how pressure shifts the numbers — so setup work is guided practice, not guesswork.",
+  notes: "Delta-T targets for orientation: F1-class ~12, GT3 ~10, GT4 ~8. If tyre pressure reads stuck at ~0.12 bar, disable UDP in AMS2 system settings (Shared Memory: Project CARS 2, UDP Frequency: Off) and restart the session.",
+)
+
+#mod-panel(
+  category: "Career App",
+  name: "Second Monitor",
+  version: "Latest release (actively maintained)",
+  url: "https://gitlab.com/winzarten/SecondMonitor",
+  source: "GitLab (winzarten)",
+  wave: "2",
+  dependencies: "None (reads AMS2 telemetry)",
+  install: "Download the release build from the GitLab repository, extract, and run. Start it before AMS2; it connects through AMS2's shared memory with no game-side configuration.",
+  what: "A free, open-source timing and car-monitoring app by Matus Celko — live standings, gaps, tyre and fuel monitoring in a clean second-screen interface. In active development (last activity August 2026).",
+  why: "This is the 'third-party tool' the telemetry workflow in this chapter refers to: it is the lightest way to watch your delta to the car ahead and the class leader on a second monitor while you practice, with zero HUD clutter on the main screen.",
+  notes: "Simpler than the Aces overlay suite — use it for focused practice sessions, the Aces suite for races. Both read shared memory and run happily side by side.",
+)
 
 #checklist[
   - 45-minute GT3 endurance at Spa with one pit stop (finish top 10, AI 85)

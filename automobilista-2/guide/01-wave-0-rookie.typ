@@ -141,9 +141,63 @@ After every race, watch the replay from chase cam. Focus on one corner where you
 
 == Mods
 
-// MODS: Pending — Essential HUD/UI mods to be added here
+Wave 0 is about foundations: the tools that make modding safe and racing feel alive. Install all four before your first race — the Installation chapter walks through the first two in detail.
 
-*Awaiting mod list from user.*
+#mod-panel(
+  category: "Career App",
+  name: "AMS2 Content Manager",
+  version: "v0.3.0",
+  url: "https://www.overtake.gg/downloads/automobilista-2-content-manager.59727/",
+  source: "OverTake.gg",
+  wave: "0",
+  dependencies: ".NET 6 Desktop Runtime (auto-prompted on first launch)",
+  install: "Covered step-by-step in the Installation & Setup chapter. Extract the archive, run AMS2CM.exe, and point it at your AMS2 installation. From then on, drag-and-drop any mod archive onto the window, tick it, and press Apply.",
+  what: "The community-standard mod manager for AMS2, by paoloambrosio. Drag-and-drop mod archives (zip, 7z, rar) onto the window and Apply — it handles bootfiles, skin imports, AI files, and clean uninstalls automatically.",
+  why: "Every other mod in this guide is installed and managed through AMS2CM. It is the backbone of the modlist: it prevents file conflicts, keeps the game folder clean, and makes removing a mod a one-click operation. Master it now and every later wave becomes trivial.",
+  notes: "Free and open-source (github.com/OpenSimTools/AMS2CM). Mods install in alphabetical order of archive names — use name prefixes to control load order. Always launch AMS2 through AMS2CM once mods are active; the vanilla Steam launch bypasses mod loading.",
+)
+
+#mod-panel(
+  category: "Dashboard/Overlay",
+  name: "SimHub",
+  version: "Latest release (auto-updates)",
+  url: "https://www.simhubdash.com/",
+  source: "Official website",
+  wave: "0",
+  dependencies: "None (free licence covers dashboards and overlays)",
+  install: "Download the installer from simhubdash.com and run it. SimHub auto-detects AMS2; leave the game's Shared Memory setting at its default (Project CARS 2) and UDP off.",
+  what: "The standard dashboard and overlay platform for sim racing, supporting 100+ games including AMS2. It powers custom HUDs, live telemetry screens, leaderboards, haptics, and motion add-ons — and is the required base for every dashboard mod in this guide.",
+  why: "AMS2's built-in HUD is functional but limited, and it cannot show class-relative data in multiclass racing. SimHub gives you a foundation you will build on in every wave: first overlays in Wave 1, full race suites in Wave 2, and setup tools in Wave 3.",
+  notes: "Free tier covers dashboards and overlays; a one-time licence unlocks extra refresh rates, haptics and motion. It runs alongside AMS2 (not inside it) — install it once and forget it.",
+)
+
+#mod-panel(
+  category: "Career App",
+  name: "Crew Chief",
+  version: "Latest release (auto-updates)",
+  url: "https://thecrewchief.org/",
+  source: "thecrewchief.org",
+  wave: "0",
+  dependencies: "None (installer downloads voice packs on demand)",
+  install: "Download the CrewChiefV4 installer from thecrewchief.org and run it. Launch Crew Chief before AMS2. In AMS2, leave Shared Memory on Project CARS 2 (the default in this guide's configuration).",
+  what: "A free, open-source team radio engineer and spotter by Mr Belowski, with full AMS2 support. It calls your position, gaps, and 'car left/clear', reads fuel and tyre state, reacts to incidents, and supports voice recognition.",
+  why: "In Wave 0 you are learning the racing line with no traffic. Crew Chief adds a spotter from your very first race — 'car on your right' — so you build situational awareness habits early instead of developing them later.",
+  notes: "Install the sound packs when prompted or the spotter stays silent. It is a companion app, not a mod: it reads AMS2's shared memory and never modifies the game. Fully compatible with SimHub and all mods in this guide.",
+)
+
+#mod-panel(
+  category: "Career App",
+  name: "Crew Chief App Manager",
+  version: "v1.0.0",
+  url: "https://www.overtake.gg/downloads/crew-chief-app-manager-%E2%80%93-automatically-start-stop-crew-chief-for-iracing-ams2-lmu-and-more.78606/",
+  source: "OverTake.gg",
+  wave: "0",
+  dependencies: "Crew Chief (above)",
+  install: "Download, unzip, and run Install.bat. It registers a Windows scheduled task that watches for AMS2 and auto-launches Crew Chief; Uninstall.bat removes it.",
+  what: "A lightweight tool by ewsimracing that automatically starts Crew Chief when you launch AMS2 and closes it when you quit — no more forgetting the spotter.",
+  why: "One fewer thing to remember at the start of every session. For beginners, any friction between 'I want to race' and 'I am racing' is worth removing.",
+  notes: "Do not combine with manually launching Crew Chief — let the manager own the lifecycle. Known limitation: launching AMS2 through a virtual desktop (VR) setup may not trigger it.",
+)
 
 #checklist[
   - Completed a clean 5-lap race at Velo Citta (no spins, no track limit violations)

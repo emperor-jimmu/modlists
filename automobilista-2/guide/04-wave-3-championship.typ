@@ -156,9 +156,119 @@ The championship forces you to race, not just hot-lap. When you're P4 with three
 
 == Mods
 
-// MODS: Pending — Career apps (Rewind GP, Race Pace), pro dashboards, historic skin packs, car mods to be added here
+Wave 3 is the full immersion layer: career worlds that give your championship a story, historic F1 seasons recreated to the helmet, period-correct grids for the DLC cars you race, and professional analysis tools for setup engineering.
 
-*Awaiting mod list from user.*
+#mod-panel(
+  category: "Career App",
+  name: "Rewind GP",
+  version: "v1.6",
+  url: "https://www.overtake.gg/downloads/rewind-gp.82303/",
+  source: "OverTake.gg",
+  wave: "3",
+  dependencies: "None (ships with a fictional 1996 season; optional season packs extend it)",
+  install: "Download and run the app alongside AMS2. It reads AMS2's shared memory automatically — launch order does not matter, but starting it before the game is smoothest.",
+  what: "A historical Formula 1 career mode app by MazzFrascuorno. Multi-season progression with a driver market, team reputation, scenario (what-if) mode, wild-card entries, and dynamic liveries and helmets — it turns AMS2's Formula Classic classes into a living F1 career with GPL-style presentation.",
+  why: "AMS2 has historic cars but no career scaffolding around them. Rewind GP supplies the context Wave 3's Historic F1 section is built for: you are not hot-lapping a 1990s car, you are negotiating a contract and racing a season with consequences.",
+  notes: "Fully compatible with the IMG 1990 and 1991 season packs below — the app and the liveries/AI target the same classes and are designed to work together. Season packs for other years (1995, 1997, 1998) are separate downloads.",
+)
+
+#mod-panel(
+  category: "Career App",
+  name: "Race Pace — A Living Career App",
+  version: "v20.0",
+  url: "https://www.overtake.gg/downloads/race-pace-a-living-career-app.81848/",
+  source: "OverTake.gg",
+  wave: "3",
+  dependencies: "None",
+  install: "Download and run alongside AMS2. Results are detected automatically from the game — no spreadsheets or manual entry.",
+  what: "A career companion by whyl_ that turns a collection of races into a persistent motorsport world. Hundreds of fully simulated AI drivers with rivalries and career life cycles, performance-based contract offers, 50+ real-life-inspired series (GT, endurance, open-wheel), custom livery support, and smart race scaling that preserves the day/night cycle.",
+  why: "Wave 3's championship section asks you to design a season and race it with intent. Race Pace gives that season memory between sessions: your reputation, your rivals, and the grid that evolves around you — the 'consequence and context' the base game lacks.",
+  notes: "Complements Rewind GP rather than competing: Rewind GP is a focused historic-F1 career; Race Pace simulates a broad racing world across every class you drive in this wave. Fully compatible with community livery packs.",
+)
+
+#mod-panel(
+  category: "Skins/Liveries",
+  name: "[IMG] F1 1990 Season",
+  version: "v1.4",
+  url: "https://www.overtake.gg/downloads/img-f1-1990-season.64765/",
+  source: "OverTake.gg",
+  wave: "3",
+  dependencies: "Brazilian Racing Legends Pack Pt 1 DLC (adds the McLaren MP4/5B); AMS2CM recommended",
+  install: "Install via AMS2CM (delete any older version first). Then run the F1 1990 Selector.bat in your AMS2 folder and type the scenario number before launching the game — it swaps liveries and AI per round.",
+  what: "The IMMERSION Modding Group's full recreation of the 1990 Formula 1 World Championship on the Formula Classic Gen 3 class: detailed liveries, Reiza-style menu previews, custom AI, driver helmets, race suits and gloves, plus an XML Selector with a preset for every 1990 round and what-if scenarios (Andretti's Chance, Capelli's Dilemma).",
+  why: "Wave 3's Historic F1 section explicitly covers the Formula Classic generations — Gen 3 is the 1980s turbo era, and the 1990 season is where it matured into the modern era. This pack makes the class a specific, authentic championship instead of a generic formula car.",
+  notes: "Recommended settings from the author: Medium AI aggression, 25 opponents (or 26 to add an extra car). The selector's AI file governs the F-Classic classes when active — see conflicts-mods.md for how that interacts with NAMeS.",
+)
+
+#mod-panel(
+  category: "Skins/Liveries",
+  name: "[AMS2] F1 1991 Season",
+  version: "v2.13",
+  url: "https://www.overtake.gg/downloads/ams2-f1-1991-season.38880/",
+  source: "OverTake.gg",
+  wave: "3",
+  dependencies: "None",
+  install: "Run the F1_Season_1991_XML_Selector.bat in your AMS2 folder and choose a scenario (early-season, European, Silverstone no-tobacco, Spa, late-season, Adelaide finale, or the Alesi-at-Williams what-if) before launching the game.",
+  what: "A complete 1991 Formula 1 season pack by AFry: ~40 liveries covering the full grid across the Classic Gen 4 V12, V10, and V8 models plus the McLaren MP4/6, with Reiza-style previews, HD helmets, and a custom AI file.",
+  why: "This is the modern-era bridge in your Historic F1 progression: the 1991 grid is where Gen 4 begins, and driving the Williams of Mansell against Senna's McLaren is the closest AMS2 comes to the sport's golden era — with zero electronic aids, exactly as the wave demands.",
+  notes: "Actively maintained since 2021 with V1.6-era fixes (V2.08 added previews for AMS2 V1.6; the AI file fixes wet-skill handling). Same XML Selector workflow as the 1990 pack — only one season's selector should be active at a time for the F-Classic classes.",
+)
+
+#mod-panel(
+  category: "Skins/Liveries",
+  name: "Trofeo Maserati Europe 2005",
+  version: "v1.0",
+  url: "https://www.overtake.gg/downloads/trofeo-maserati-europe-2005.86091/",
+  source: "OverTake.gg",
+  wave: "3",
+  dependencies: "Historical Endurance Pack Part 2 DLC (Maserati GranSport Trofeo) — the pack contains only liveries and AI and will not work without it",
+  install: "Install the liveries and custom AI through AMS2CM like any skin pack. Drive the Maserati GranSport Trofeo class at the 2005 calendar's tracks (Monza, Barcelona, Imola, Silverstone, Spa, Nürburgring — the author suggests Jerez as a stand-in for Valencia).",
+  what: "Twenty liveries and custom AI recreating the 2005 Trofeo Maserati Europe — the debut season of the GranSport Trofeo — with its real driver roster: champion Alberto Cerrai, María de Villota, Michael Bartels, Sabine Schmitz, Jodie Kidd, and Koen Wauters.",
+  why: "Wave 3's LMDh/endurance section is about multi-class racing, but single-marque sprint series are where car control is refined to its sharpest. The Maserati Trofeo is a low-downforce, high-torque car that punishes sloppy exits — and this pack turns it into a real 2005 championship.",
+  notes: "Fresh release (August 2026) matched to the current game version. NAMeS v5.95 already includes the Trofeo Maserati class, so names stay consistent with the grid.",
+)
+
+#mod-panel(
+  category: "Skins/Liveries",
+  name: "Dodge Viper Ex-WorksTeam ORECA — 2000 24H of Le Mans",
+  version: "v1.5",
+  url: "https://www.overtake.gg/downloads/dodge-viper-ex-worksteam-oreca-2000-24h-of-le-mans.80558/",
+  source: "OverTake.gg",
+  wave: "3",
+  dependencies: "None",
+  install: "Unzip and copy the two folders (Car #51 only, or the full team #51/#52/#53) into the Automobilista 2 root folder so the Vehicles tree merges correctly.",
+  what: "The three works ORECA Vipers from the 2000 24 Hours of Le Mans — the GTS-class winner that year — as high-detail liveries for the in-game Viper GTS-R, including the car that went on to take the ALMS GTS championship with 7 of 10 wins.",
+  why: "It gives the GT1-class content in Wave 3's endurance setting a real, historic identity: a specific car, a specific race, a specific team. Racing the actual winner's livery at Le Mans is the closest thing to a time machine the sim offers.",
+  notes: "Each livery is a separate XML file — if you want all three team cars in one grid, merge the XMLs as the author describes in the discussion thread. Reviewers report the liveries are standalone and do not touch physics.",
+)
+
+#mod-panel(
+  category: "Career App",
+  name: "AVUS",
+  version: "26.6",
+  url: "https://www.overtake.gg/downloads/avus.80196/",
+  source: "OverTake.gg",
+  wave: "3",
+  dependencies: "None (local server included; requires AMS2 shared memory)",
+  install: "Start the bundled CREST4AVUS server, open the AVUS Studio page in your browser, drive laps in AMS2, then select two laps and click Compare Selected Laps. AMS2 system settings: Shared Memory = Project CARS 2, UDP off.",
+  what: "A telemetry analysis tool by avusstudio — 'Analyse, Visualise, and Understand Speed'. It records any lap and compares two laps on time-based graphs (speed, throttle, brake, gearing, steering) with track-map overlays, auto-detected braking zones, and an animated 3D side-by-side replay of the two laps.",
+  why: "This is the tool for Wave 3's setup engineering workflow: baseline lap vs change-lap A/B testing, visualised side by side. When you are hunting a tenth through one corner, seeing exactly where the traces diverge beats guessing from feel.",
+  notes: "Active development (AC Evo support added June 2026). Uses a local server on your machine — no cloud, nothing leaves your PC. Complements Omitool2 (setup targets) and Second Monitor (live timing).",
+)
+
+#mod-panel(
+  category: "Dashboard/Overlay",
+  name: "_HERVE_DASH",
+  version: "V9.26",
+  url: "https://www.overtake.gg/downloads/_herve_dash.61877/",
+  source: "OverTake.gg",
+  wave: "3",
+  dependencies: "SimHub (Wave 0)",
+  install: "Unzip and open the .simhubdash files — SimHub installs them as dashboards. Follow the readme for the car-class logos and startup screen; configuration lives in _HERVE_MY_DASH_CONFIG.json.",
+  what: "A professional SimHub dashboard set by herve45: a full race dash with class-relative best-lap references, a dynamic leaderboard that always keeps the leader visible (25 drivers max, class best in navy, overall best in violet), and a graph dashboard for input analysis.",
+  why: "Wave 3 is about precision everywhere, including the cockpit view. A purpose-built dash with class-relative deltas and a leaderboard that survives a 48-car multiclass race gives you the full picture without lifting your eyes from the track.",
+  notes: "Interface labels are in French — the dashboards are primarily graphical (numbers, leaderboards), so this is cosmetic. Older dashboard file versions are long-lived and stable; if you prefer an English alternative, the Aces suite from Wave 2 covers similar ground.",
+)
 
 #checklist(title: "Mastery Checklist")[
   - Won a 2+ hour multi-class endurance race from pole position (AI 95+)
