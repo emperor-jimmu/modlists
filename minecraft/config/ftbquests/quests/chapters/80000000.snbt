@@ -1,0 +1,432 @@
+{
+  "id": "80000000",
+  "group": "20000001",
+  "order_index": 7,
+  "title": "Apotheosis",
+  "subtitle": "Start with the Salvaging Table and follow the chain",
+  "icon": "apotheosis:salvaging_table",
+  "default_quest_shape": "square",
+  "quests": [
+    {
+      "id": "80000001",
+      "title": "Salvaging Table",
+      "subtitle": "Break down affix items",
+      "description": [
+        "Affix items are gear with random rarity (Common to Mythic) and bonuses. A Salvaging Table breaks them down into rarity materials and Gem Dust.",
+        "Next: collect some Gem Dust from salvaging."
+      ],
+      "icon": "apotheosis:salvaging_table",
+      "x": 0.0,
+      "y": 0,
+      "shape": "hexagon",
+      "dependencies": [],
+      "tasks": [
+        {
+          "id": "80000002",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "apotheosis:salvaging_table"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "80000003",
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "80000004",
+      "title": "Gem Dust",
+      "subtitle": "Salvaged gem material",
+      "description": [
+        "Gem Dust drops when you salvage gems and affix items. It is the currency of gem upgrading.",
+        "Next: a Gem Cutting Table to spend it."
+      ],
+      "icon": "apotheosis:gem_dust",
+      "x": 0.0,
+      "y": 1,
+      "shape": "hexagon",
+      "dependencies": [
+        "80000001"
+      ],
+      "tasks": [
+        {
+          "id": "80000005",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "apotheosis:gem_dust"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "80000006",
+          "type": "xp_levels",
+          "xp_levels": 8
+        },
+        {
+          "id": "80000007",
+          "type": "item",
+          "count": 8,
+          "item": {
+            "count": 1,
+            "id": "apotheosis:gem_dust"
+          }
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "80000008",
+      "title": "Gem Cutting Table",
+      "subtitle": "Upgrade your gems",
+      "description": [
+        "A Gem Cutting Table uses Gem Dust and rarity materials to upgrade gems from Cracked up to Flawless.",
+        "Next: a Simple Reforging Table to reroll affixes."
+      ],
+      "icon": "apotheosis:gem_cutting_table",
+      "x": 0.0,
+      "y": 2,
+      "shape": "hexagon",
+      "dependencies": [
+        "80000004"
+      ],
+      "tasks": [
+        {
+          "id": "80000009",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "apotheosis:gem_cutting_table"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "8000000A",
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "8000000B",
+      "title": "Simple Reforging Table",
+      "subtitle": "Reroll affixes",
+      "description": [
+        "A Simple Reforging Table rerolls the affixes on an item, giving you another chance at good rolls.",
+        "Next: a Sigil of Socketing to add gem sockets."
+      ],
+      "icon": "apotheosis:simple_reforging_table",
+      "x": 0.0,
+      "y": 3,
+      "shape": "hexagon",
+      "dependencies": [
+        "80000008"
+      ],
+      "tasks": [
+        {
+          "id": "8000000C",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "apotheosis:simple_reforging_table"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "8000000D",
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "8000000E",
+      "title": "Sigil of Socketing",
+      "subtitle": "Add gem sockets",
+      "description": [
+        "A Sigil of Socketing adds a socket to an item so you can slot a gem into it.",
+        "Next: a Reforging Table for advanced reforging."
+      ],
+      "icon": "apotheosis:sigil_of_socketing",
+      "x": 0.0,
+      "y": 4,
+      "shape": "hexagon",
+      "dependencies": [
+        "8000000B"
+      ],
+      "tasks": [
+        {
+          "id": "8000000F",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "apotheosis:sigil_of_socketing"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "80000010",
+          "type": "xp_levels",
+          "xp_levels": 12
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "80000011",
+      "title": "Reforging Table",
+      "subtitle": "Advanced reforging",
+      "description": [
+        "A Reforging Table rerolls affixes with higher rarity materials for better results.",
+        "Next: an Augmenting Table to boost individual affixes."
+      ],
+      "icon": "apotheosis:reforging_table",
+      "x": 3.0,
+      "y": 0,
+      "shape": "hexagon",
+      "dependencies": [
+        "8000000E"
+      ],
+      "tasks": [
+        {
+          "id": "80000012",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "apotheosis:reforging_table"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "80000013",
+          "type": "xp_levels",
+          "xp_levels": 16
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "80000014",
+      "title": "Augmenting Table",
+      "subtitle": "Boost individual affixes",
+      "description": [
+        "An Augmenting Table uses Sigils of Enhancement to overcharge individual affixes on your gear.",
+        "Next: move a spawner with Silk Touch."
+      ],
+      "icon": "apotheosis:augmenting_table",
+      "x": 3.0,
+      "y": 1,
+      "shape": "hexagon",
+      "dependencies": [
+        "80000011"
+      ],
+      "tasks": [
+        {
+          "id": "80000015",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "apotheosis:augmenting_table"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "80000016",
+          "type": "xp_levels",
+          "xp_levels": 16
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "80000017",
+      "title": "Silk Touch Spawner",
+      "subtitle": "Move a mob spawner",
+      "description": [
+        "Mine a mob spawner with a Silk Touch pickaxe to move it. Apotheosis lets you modify moved spawners.",
+        "Next: a Spawner Rune to modify its behavior."
+      ],
+      "icon": "minecraft:spawner",
+      "x": 3.0,
+      "y": 2,
+      "shape": "hexagon",
+      "dependencies": [
+        "80000014"
+      ],
+      "tasks": [
+        {
+          "id": "80000018",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "minecraft:spawner"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "80000019",
+          "type": "xp_levels",
+          "xp_levels": 16
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "8000001A",
+      "title": "Spawner Rune",
+      "subtitle": "Modify your spawner",
+      "description": [
+        "Spawner Runes change how a moved spawner behaves - faster, quieter, no AI, or no light requirements.",
+        "This completes the Apotheosis chapter."
+      ],
+      "icon": "apotheosis:spawner_rune",
+      "x": 6.0,
+      "y": 0,
+      "shape": "hexagon",
+      "dependencies": [
+        "80000017"
+      ],
+      "tasks": [
+        {
+          "id": "8000001B",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "apotheosis:spawner_rune"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "8000001C",
+          "type": "xp_levels",
+          "xp_levels": 24
+        },
+        {
+          "id": "8000001D",
+          "type": "item",
+          "count": 4,
+          "item": {
+            "count": 1,
+            "id": "apotheosis:spawner_rune"
+          }
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "8000001E",
+      "title": "Gem Case",
+      "subtitle": "Store your gems",
+      "description": [
+        "A Gem Case stores and displays your gem collection."
+      ],
+      "icon": "apotheosis:gem_case",
+      "x": 1.5,
+      "y": 0,
+      "shape": "square",
+      "dependencies": [
+        "80000004"
+      ],
+      "tasks": [
+        {
+          "id": "8000001F",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "apotheosis:gem_case"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "80000020",
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "80000021",
+      "title": "Sigil of Enhancement",
+      "subtitle": "Fuel the augmenting table",
+      "description": [
+        "A Sigil of Enhancement fuels the Augmenting Table to overcharge affixes."
+      ],
+      "icon": "apotheosis:sigil_of_enhancement",
+      "x": 4.5,
+      "y": 0,
+      "shape": "square",
+      "dependencies": [
+        "80000014"
+      ],
+      "tasks": [
+        {
+          "id": "80000022",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "apotheosis:sigil_of_enhancement"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "80000023",
+          "type": "xp_levels",
+          "xp_levels": 12
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "80000024",
+      "title": "Spawner Chain",
+      "subtitle": "From spawner explosions",
+      "description": [
+        "A Spawner Chain drops when a mob spawner is detonated with an explosive."
+      ],
+      "icon": "apotheosis:spawner_chain",
+      "x": 7.5,
+      "y": 0,
+      "shape": "square",
+      "dependencies": [
+        "80000017"
+      ],
+      "tasks": [
+        {
+          "id": "80000025",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "apotheosis:spawner_chain"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "80000026",
+          "type": "xp_levels",
+          "xp_levels": 12
+        }
+      ],
+      "optional": false
+    }
+  ]
+}
