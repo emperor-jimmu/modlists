@@ -109,13 +109,13 @@
     },
     {
       "id": "6300000A",
-      "title": "Iron Sight",
-      "subtitle": "Aim better",
+      "title": "Paper Cartridge",
+      "subtitle": "Ammunition",
       "description": [
-        "An Iron Sight attaches to your gun for better accuracy.",
-        "Next: Paper Cartridges for ammo."
+        "Paper Cartridges are the ammo for your firearms. Stock up.",
+        "Next: a Cannon Mount for artillery."
       ],
-      "icon": "cgs:iron_sight",
+      "icon": "cgs:paper_cartridge",
       "x": 0.0,
       "y": 3,
       "shape": "hexagon",
@@ -128,7 +128,7 @@
           "type": "item",
           "item": {
             "count": 1,
-            "id": "cgs:iron_sight"
+            "id": "cgs:paper_cartridge"
           }
         }
       ],
@@ -137,19 +137,28 @@
           "id": "6300000C",
           "type": "xp_levels",
           "xp_levels": 8
+        },
+        {
+          "id": "6300000D",
+          "type": "item",
+          "count": 8,
+          "item": {
+            "count": 1,
+            "id": "cgs:paper_cartridge"
+          }
         }
       ],
       "optional": false
     },
     {
-      "id": "6300000D",
-      "title": "Paper Cartridge",
-      "subtitle": "Ammunition",
+      "id": "6300000E",
+      "title": "Cannon Builder",
+      "subtitle": "Assemble your cannons",
       "description": [
-        "Paper Cartridges are the ammo for your firearms. Stock up.",
-        "Next: a Cannon Mount for artillery."
+        "The Cannon Builder assembles Big Cannons from barrels, chambers, and breeches.",
+        "Next: Powder Charge for cannon propellant."
       ],
-      "icon": "cgs:paper_cartridge",
+      "icon": "createbigcannons:cannon_builder",
       "x": 0.0,
       "y": 4,
       "shape": "hexagon",
@@ -158,60 +167,17 @@
       ],
       "tasks": [
         {
-          "id": "6300000E",
+          "id": "6300000F",
           "type": "item",
           "item": {
             "count": 1,
-            "id": "cgs:paper_cartridge"
+            "id": "createbigcannons:cannon_builder"
           }
         }
       ],
       "rewards": [
-        {
-          "id": "6300000F",
-          "type": "xp_levels",
-          "xp_levels": 8
-        },
         {
           "id": "63000010",
-          "type": "item",
-          "count": 8,
-          "item": {
-            "count": 1,
-            "id": "cgs:paper_cartridge"
-          }
-        }
-      ],
-      "optional": false
-    },
-    {
-      "id": "63000011",
-      "title": "Cannon Mount",
-      "subtitle": "Artillery for defense",
-      "description": [
-        "A Cannon Mount holds a Big Cannon. Place cannons at your colony perimeter for defense.",
-        "Next: Solid Shot for cannon ammo."
-      ],
-      "icon": "createbigcannons:cannon_mount",
-      "x": 0.0,
-      "y": 5,
-      "shape": "hexagon",
-      "dependencies": [
-        "6300000D"
-      ],
-      "tasks": [
-        {
-          "id": "63000012",
-          "type": "item",
-          "item": {
-            "count": 1,
-            "id": "createbigcannons:cannon_mount"
-          }
-        }
-      ],
-      "rewards": [
-        {
-          "id": "63000013",
           "type": "xp_levels",
           "xp_levels": 12
         }
@@ -219,38 +185,38 @@
       "optional": false
     },
     {
-      "id": "63000014",
-      "title": "Solid Shot",
-      "subtitle": "Cannon ammunition",
+      "id": "63000011",
+      "title": "Powder Charge",
+      "subtitle": "Cannon propellant",
       "description": [
-        "Solid Shot is the basic cannon projectile - high penetrating force against structures.",
+        "Powder Charge is the standard propellant for Big Cannons.",
         "This completes the Combat chapter."
       ],
-      "icon": "createbigcannons:solid_shot",
+      "icon": "createbigcannons:powder_charge",
       "x": 0.0,
-      "y": 6,
+      "y": 5,
       "shape": "hexagon",
       "dependencies": [
-        "63000011"
+        "6300000E"
       ],
       "tasks": [
         {
-          "id": "63000015",
+          "id": "63000012",
           "type": "item",
           "item": {
             "count": 1,
-            "id": "createbigcannons:solid_shot"
+            "id": "createbigcannons:powder_charge"
           }
         }
       ],
       "rewards": [
         {
-          "id": "63000016",
+          "id": "63000013",
           "type": "xp_levels",
           "xp_levels": 8
         },
         {
-          "id": "63000017",
+          "id": "63000014",
           "type": "item",
           "count": 8,
           "item": {
@@ -262,7 +228,7 @@
       "optional": false
     },
     {
-      "id": "63000018",
+      "id": "63000015",
       "title": "Bayonet",
       "subtitle": "Melee attachment",
       "description": [
@@ -277,7 +243,7 @@
       ],
       "tasks": [
         {
-          "id": "63000019",
+          "id": "63000016",
           "type": "item",
           "item": {
             "count": 1,
@@ -287,40 +253,7 @@
       ],
       "rewards": [
         {
-          "id": "6300001A",
-          "type": "xp_levels",
-          "xp_levels": 8
-        }
-      ],
-      "optional": false
-    },
-    {
-      "id": "6300001B",
-      "title": "HE Shell",
-      "subtitle": "Explosive cannon ammo",
-      "description": [
-        "An HE Shell explodes with more force than TNT for demolishing structures."
-      ],
-      "icon": "createbigcannons:he_shell",
-      "x": 1.5,
-      "y": 1,
-      "shape": "square",
-      "dependencies": [
-        "63000011"
-      ],
-      "tasks": [
-        {
-          "id": "6300001C",
-          "type": "item",
-          "item": {
-            "count": 1,
-            "id": "createbigcannons:he_shell"
-          }
-        }
-      ],
-      "rewards": [
-        {
-          "id": "6300001D",
+          "id": "63000017",
           "type": "xp_levels",
           "xp_levels": 8
         }

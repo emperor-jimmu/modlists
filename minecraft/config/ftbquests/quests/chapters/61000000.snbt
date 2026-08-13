@@ -15,7 +15,7 @@
         "Monorail tracks carry trains on elevated single-rail lines - faster and sleeker than vanilla Create track.",
         "Next: a Semaphore to signal your trains."
       ],
-      "icon": "railways:monorail_track",
+      "icon": "railways:track_monorail",
       "x": 0.0,
       "y": 0,
       "shape": "hexagon",
@@ -26,7 +26,7 @@
           "type": "item",
           "item": {
             "count": 1,
-            "id": "railways:monorail_track"
+            "id": "railways:track_monorail"
           }
         }
       ],
@@ -113,7 +113,7 @@
       "subtitle": "Manual rail transport",
       "description": [
         "A Handcar is a small manual rail vehicle - no fuel, no train assembly, just pump to move.",
-        "This completes the Steam 'n' Rails chapter."
+        "Next: lay a long Monorail line to form your rail network."
       ],
       "icon": "railways:handcar",
       "x": 0.0,
@@ -137,6 +137,40 @@
           "id": "6100000C",
           "type": "xp_levels",
           "xp_levels": 8
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "6100000D",
+      "title": "Rail Network",
+      "subtitle": "Lay a long rail line",
+      "description": [
+        "Lay at least 64 Monorail Tracks to connect your base and outposts. A long rail line is the backbone of your train network.",
+        "This completes the Steam 'n' Rails chapter."
+      ],
+      "icon": "railways:track_monorail",
+      "x": 0.0,
+      "y": 4,
+      "shape": "hexagon",
+      "dependencies": [
+        "6100000A"
+      ],
+      "tasks": [
+        {
+          "id": "6100000E",
+          "type": "item",
+          "item": {
+            "count": 64,
+            "id": "railways:track_monorail"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "6100000F",
+          "type": "xp_levels",
+          "xp_levels": 16
         }
       ],
       "optional": false

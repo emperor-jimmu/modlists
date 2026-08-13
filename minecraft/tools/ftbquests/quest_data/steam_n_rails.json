@@ -16,12 +16,23 @@
         "Monorail tracks carry trains on elevated single-rail lines - faster and sleeker than vanilla Create track.",
         "Next: a Semaphore to signal your trains."
       ],
-      "icon": "railways:monorail_track",
+      "icon": "railways:track_monorail",
       "shape": "hexagon",
       "phase": 1,
       "dependencies": [],
-      "tasks": [{ "type": "item", "item": "railways:monorail_track", "count": 1 }],
-      "rewards": [{ "type": "xp_levels", "xp_levels": 8 }]
+      "tasks": [
+        {
+          "type": "item",
+          "item": "railways:track_monorail",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
     },
     {
       "key": "semaphore",
@@ -34,9 +45,22 @@
       "icon": "railways:semaphore",
       "shape": "hexagon",
       "phase": 1,
-      "dependencies": ["monorail_track"],
-      "tasks": [{ "type": "item", "item": "railways:semaphore", "count": 1 }],
-      "rewards": [{ "type": "xp_levels", "xp_levels": 8 }]
+      "dependencies": [
+        "monorail_track"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "railways:semaphore",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
     },
     {
       "key": "conductor_whistle",
@@ -49,9 +73,22 @@
       "icon": "railways:conductor_whistle",
       "shape": "hexagon",
       "phase": 1,
-      "dependencies": ["semaphore"],
-      "tasks": [{ "type": "item", "item": "railways:conductor_whistle", "count": 1 }],
-      "rewards": [{ "type": "xp_levels", "xp_levels": 8 }]
+      "dependencies": [
+        "semaphore"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "railways:conductor_whistle",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
     },
     {
       "key": "handcar",
@@ -59,14 +96,55 @@
       "subtitle": "Manual rail transport",
       "description": [
         "A Handcar is a small manual rail vehicle - no fuel, no train assembly, just pump to move.",
-        "This completes the Steam 'n' Rails chapter."
+        "Next: lay a long Monorail line to form your rail network."
       ],
       "icon": "railways:handcar",
       "shape": "hexagon",
       "phase": 1,
-      "dependencies": ["conductor_whistle"],
-      "tasks": [{ "type": "item", "item": "railways:handcar", "count": 1 }],
-      "rewards": [{ "type": "xp_levels", "xp_levels": 8 }]
+      "dependencies": [
+        "conductor_whistle"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "railways:handcar",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
+    },
+    {
+      "key": "rail_network",
+      "title": "Rail Network",
+      "subtitle": "Lay a long rail line",
+      "description": [
+        "Lay at least 64 Monorail Tracks to connect your base and outposts. A long rail line is the backbone of your train network.",
+        "This completes the Steam 'n' Rails chapter."
+      ],
+      "icon": "railways:track_monorail",
+      "shape": "hexagon",
+      "phase": 1,
+      "dependencies": [
+        "handcar"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "railways:track_monorail",
+          "count": 64
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 16
+        }
+      ]
     }
   ]
 }

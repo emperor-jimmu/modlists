@@ -20,8 +20,19 @@
       "shape": "hexagon",
       "phase": 1,
       "dependencies": [],
-      "tasks": [{ "type": "item", "item": "cgs:revolver", "count": 1 }],
-      "rewards": [{ "type": "xp_levels", "xp_levels": 8 }]
+      "tasks": [
+        {
+          "type": "item",
+          "item": "cgs:revolver",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
     },
     {
       "key": "flintlock",
@@ -34,9 +45,22 @@
       "icon": "cgs:flintlock",
       "shape": "hexagon",
       "phase": 1,
-      "dependencies": ["revolver"],
-      "tasks": [{ "type": "item", "item": "cgs:flintlock", "count": 1 }],
-      "rewards": [{ "type": "xp_levels", "xp_levels": 8 }]
+      "dependencies": [
+        "revolver"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "cgs:flintlock",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
     },
     {
       "key": "gatling",
@@ -49,24 +73,22 @@
       "icon": "cgs:gatling",
       "shape": "hexagon",
       "phase": 1,
-      "dependencies": ["flintlock"],
-      "tasks": [{ "type": "item", "item": "cgs:gatling", "count": 1 }],
-      "rewards": [{ "type": "xp_levels", "xp_levels": 12 }]
-    },
-    {
-      "key": "iron_sight",
-      "title": "Iron Sight",
-      "subtitle": "Aim better",
-      "description": [
-        "An Iron Sight attaches to your gun for better accuracy.",
-        "Next: Paper Cartridges for ammo."
+      "dependencies": [
+        "flintlock"
       ],
-      "icon": "cgs:iron_sight",
-      "shape": "hexagon",
-      "phase": 1,
-      "dependencies": ["gatling"],
-      "tasks": [{ "type": "item", "item": "cgs:iron_sight", "count": 1 }],
-      "rewards": [{ "type": "xp_levels", "xp_levels": 8 }]
+      "tasks": [
+        {
+          "type": "item",
+          "item": "cgs:gatling",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 12
+        }
+      ]
     },
     {
       "key": "paper_cartridge",
@@ -79,69 +101,115 @@
       "icon": "cgs:paper_cartridge",
       "shape": "hexagon",
       "phase": 1,
-      "dependencies": ["iron_sight"],
-      "tasks": [{ "type": "item", "item": "cgs:paper_cartridge", "count": 1 }],
+      "dependencies": [
+        "gatling"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "cgs:paper_cartridge",
+          "count": 1
+        }
+      ],
       "rewards": [
-        { "type": "xp_levels", "xp_levels": 8 },
-        { "type": "item", "item": "cgs:paper_cartridge", "count": 8 }
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        },
+        {
+          "type": "item",
+          "item": "cgs:paper_cartridge",
+          "count": 8
+        }
       ]
     },
     {
       "key": "cannon_mount",
-      "title": "Cannon Mount",
-      "subtitle": "Artillery for defense",
+      "title": "Cannon Builder",
+      "subtitle": "Assemble your cannons",
       "description": [
-        "A Cannon Mount holds a Big Cannon. Place cannons at your colony perimeter for defense.",
-        "Next: Solid Shot for cannon ammo."
+        "The Cannon Builder assembles Big Cannons from barrels, chambers, and breeches.",
+        "Next: Powder Charge for cannon propellant."
       ],
-      "icon": "createbigcannons:cannon_mount",
+      "icon": "createbigcannons:cannon_builder",
       "shape": "hexagon",
       "phase": 1,
-      "dependencies": ["paper_cartridge"],
-      "tasks": [{ "type": "item", "item": "createbigcannons:cannon_mount", "count": 1 }],
-      "rewards": [{ "type": "xp_levels", "xp_levels": 12 }]
+      "dependencies": [
+        "paper_cartridge"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "createbigcannons:cannon_builder",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 12
+        }
+      ]
     },
     {
       "key": "solid_shot",
-      "title": "Solid Shot",
-      "subtitle": "Cannon ammunition",
+      "title": "Powder Charge",
+      "subtitle": "Cannon propellant",
       "description": [
-        "Solid Shot is the basic cannon projectile - high penetrating force against structures.",
+        "Powder Charge is the standard propellant for Big Cannons.",
         "This completes the Combat chapter."
       ],
-      "icon": "createbigcannons:solid_shot",
+      "icon": "createbigcannons:powder_charge",
       "shape": "hexagon",
       "phase": 1,
-      "dependencies": ["cannon_mount"],
-      "tasks": [{ "type": "item", "item": "createbigcannons:solid_shot", "count": 1 }],
+      "dependencies": [
+        "cannon_mount"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "createbigcannons:powder_charge",
+          "count": 1
+        }
+      ],
       "rewards": [
-        { "type": "xp_levels", "xp_levels": 8 },
-        { "type": "item", "item": "createbigcannons:solid_shot", "count": 8 }
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        },
+        {
+          "type": "item",
+          "item": "createbigcannons:solid_shot",
+          "count": 8
+        }
       ]
     },
     {
       "key": "bayonet",
       "title": "Bayonet",
       "subtitle": "Melee attachment",
-      "description": ["A Bayonet attaches to your gun for melee combat."],
+      "description": [
+        "A Bayonet attaches to your gun for melee combat."
+      ],
       "icon": "cgs:bayonet",
       "shape": "square",
       "phase": 1,
-      "dependencies": ["revolver"],
-      "tasks": [{ "type": "item", "item": "cgs:bayonet", "count": 1 }],
-      "rewards": [{ "type": "xp_levels", "xp_levels": 8 }]
-    },
-    {
-      "key": "he_shell",
-      "title": "HE Shell",
-      "subtitle": "Explosive cannon ammo",
-      "description": ["An HE Shell explodes with more force than TNT for demolishing structures."],
-      "icon": "createbigcannons:he_shell",
-      "shape": "square",
-      "phase": 1,
-      "dependencies": ["cannon_mount"],
-      "tasks": [{ "type": "item", "item": "createbigcannons:he_shell", "count": 1 }],
-      "rewards": [{ "type": "xp_levels", "xp_levels": 8 }]
+      "dependencies": [
+        "revolver"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "cgs:bayonet",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
     }
   ]
 }

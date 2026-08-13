@@ -254,13 +254,13 @@
     },
     {
       "id": "62000017",
-      "title": "Accumulator",
+      "title": "Modular Accumulator",
       "subtitle": "Bulk FE storage",
       "description": [
         "An Accumulator stores large amounts of FE, buffering your electric power grid.",
         "This completes the Electric Power chapter."
       ],
-      "icon": "createaddition:accumulator",
+      "icon": "createaddition:modular_accumulator",
       "x": 0.0,
       "y": 7,
       "shape": "hexagon",
@@ -273,7 +273,7 @@
           "type": "item",
           "item": {
             "count": 1,
-            "id": "createaddition:accumulator"
+            "id": "createaddition:modular_accumulator"
           }
         }
       ],

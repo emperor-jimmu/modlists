@@ -20,8 +20,19 @@
       "shape": "hexagon",
       "phase": 1,
       "dependencies": [],
-      "tasks": [{ "type": "item", "item": "createaddition:rolling_mill", "count": 1 }],
-      "rewards": [{ "type": "xp_levels", "xp_levels": 8 }]
+      "tasks": [
+        {
+          "type": "item",
+          "item": "createaddition:rolling_mill",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
     },
     {
       "key": "electric_motor",
@@ -34,9 +45,22 @@
       "icon": "createaddition:electric_motor",
       "shape": "hexagon",
       "phase": 1,
-      "dependencies": ["rolling_mill"],
-      "tasks": [{ "type": "item", "item": "createaddition:electric_motor", "count": 1 }],
-      "rewards": [{ "type": "xp_levels", "xp_levels": 8 }]
+      "dependencies": [
+        "rolling_mill"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "createaddition:electric_motor",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
     },
     {
       "key": "alternator",
@@ -49,9 +73,22 @@
       "icon": "createaddition:alternator",
       "shape": "hexagon",
       "phase": 1,
-      "dependencies": ["electric_motor"],
-      "tasks": [{ "type": "item", "item": "createaddition:alternator", "count": 1 }],
-      "rewards": [{ "type": "xp_levels", "xp_levels": 8 }]
+      "dependencies": [
+        "electric_motor"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "createaddition:alternator",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
     },
     {
       "key": "connector",
@@ -64,9 +101,22 @@
       "icon": "createaddition:connector",
       "shape": "hexagon",
       "phase": 1,
-      "dependencies": ["alternator"],
-      "tasks": [{ "type": "item", "item": "createaddition:connector", "count": 1 }],
-      "rewards": [{ "type": "xp_levels", "xp_levels": 8 }]
+      "dependencies": [
+        "alternator"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "createaddition:connector",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
     },
     {
       "key": "copper_wire",
@@ -79,9 +129,22 @@
       "icon": "createaddition:copper_wire",
       "shape": "hexagon",
       "phase": 1,
-      "dependencies": ["connector"],
-      "tasks": [{ "type": "item", "item": "createaddition:copper_wire", "count": 1 }],
-      "rewards": [{ "type": "xp_levels", "xp_levels": 8 }]
+      "dependencies": [
+        "connector"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "createaddition:copper_wire",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
     },
     {
       "key": "electrum_ingot",
@@ -94,11 +157,26 @@
       "icon": "createaddition:electrum_ingot",
       "shape": "hexagon",
       "phase": 1,
-      "dependencies": ["copper_wire"],
-      "tasks": [{ "type": "item", "item": "createaddition:electrum_ingot", "count": 1 }],
+      "dependencies": [
+        "copper_wire"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "createaddition:electrum_ingot",
+          "count": 1
+        }
+      ],
       "rewards": [
-        { "type": "xp_levels", "xp_levels": 12 },
-        { "type": "item", "item": "createaddition:electrum_ingot", "count": 4 }
+        {
+          "type": "xp_levels",
+          "xp_levels": 12
+        },
+        {
+          "type": "item",
+          "item": "createaddition:electrum_ingot",
+          "count": 4
+        }
       ]
     },
     {
@@ -112,48 +190,104 @@
       "icon": "createaddition:capacitor",
       "shape": "hexagon",
       "phase": 1,
-      "dependencies": ["electrum_ingot"],
-      "tasks": [{ "type": "item", "item": "createaddition:capacitor", "count": 1 }],
-      "rewards": [{ "type": "xp_levels", "xp_levels": 8 }]
+      "dependencies": [
+        "electrum_ingot"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "createaddition:capacitor",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
     },
     {
       "key": "accumulator",
-      "title": "Accumulator",
+      "title": "Modular Accumulator",
       "subtitle": "Bulk FE storage",
       "description": [
         "An Accumulator stores large amounts of FE, buffering your electric power grid.",
         "This completes the Electric Power chapter."
       ],
-      "icon": "createaddition:accumulator",
+      "icon": "createaddition:modular_accumulator",
       "shape": "hexagon",
       "phase": 1,
-      "dependencies": ["capacitor"],
-      "tasks": [{ "type": "item", "item": "createaddition:accumulator", "count": 1 }],
-      "rewards": [{ "type": "xp_levels", "xp_levels": 8 }]
+      "dependencies": [
+        "capacitor"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "createaddition:modular_accumulator",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
     },
     {
       "key": "redstone_relay",
       "title": "Redstone Relay",
       "subtitle": "Wireless redstone over power lines",
-      "description": ["A Redstone Relay sends redstone signals over your electric power lines."],
+      "description": [
+        "A Redstone Relay sends redstone signals over your electric power lines."
+      ],
       "icon": "createaddition:redstone_relay",
       "shape": "square",
       "phase": 1,
-      "dependencies": ["connector"],
-      "tasks": [{ "type": "item", "item": "createaddition:redstone_relay", "count": 1 }],
-      "rewards": [{ "type": "xp_levels", "xp_levels": 8 }]
+      "dependencies": [
+        "connector"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "createaddition:redstone_relay",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
     },
     {
       "key": "tesla_coil",
       "title": "Tesla Coil",
       "subtitle": "Wireless power",
-      "description": ["A Tesla Coil transmits FE wirelessly over short distances."],
+      "description": [
+        "A Tesla Coil transmits FE wirelessly over short distances."
+      ],
       "icon": "createaddition:tesla_coil",
       "shape": "square",
       "phase": 1,
-      "dependencies": ["connector"],
-      "tasks": [{ "type": "item", "item": "createaddition:tesla_coil", "count": 1 }],
-      "rewards": [{ "type": "xp_levels", "xp_levels": 8 }]
+      "dependencies": [
+        "connector"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "createaddition:tesla_coil",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
     }
   ]
 }
