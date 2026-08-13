@@ -99,6 +99,8 @@ Discovered via in-game testing and study of the MineColonies Questline's shipped
 3. **Prefer item detection over checkmark tasks.** A checkmark has no "real completion" and feels arbitrary. Use an `item` task wherever the goal is a real obtainable item; a checkmark is never used — its grey-checkmark icon reads as a broken quest.
 4. **Verify every item ID against the mod's own registry** (its `en_us.json` lang file), not web-search summaries — the search confidently reported the wrong Speed Upgrade ID (`speed_upgrade` vs the real `upgrade_speed`).
 5. **Ampersands are formatting-code markers.** `&` followed by whitespace throws "you must escape whitespace after & with \&". Write "and" instead of `&` in all quest text (titles, subtitles, descriptions).
+6. **Use real items, not blocks-without-item-forms.** Some blocks are placed in-world (assembled, not crafted) and have no holdable item form — e.g. Big Cannons' `cannon_mount`, and some attachment/sight items. These render as "?" icons and can't be item-detected. Prefer tools, materials, ingots, and projectiles. Verify against the *installed version's* registry (pinned version, not latest), since item names shift between versions.
+7. **Confirm uncertain IDs with F3+H in-game.** Advanced Tooltips (F3+H) show the exact registry ID for the installed version. This is the ground truth when source tags can't be pinned or the mod is closed-source.
 
 ## Generator design
 
