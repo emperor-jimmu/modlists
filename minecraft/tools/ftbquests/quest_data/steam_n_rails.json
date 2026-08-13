@@ -3,7 +3,7 @@
     "id": "61000000",
     "title": "Steam 'n' Rails",
     "subtitle": "Start with the Monorail Track and follow the chain",
-    "icon": "railways:monorail_track",
+    "icon": "railways:track_monorail",
     "group": "20000001",
     "order_index": 3
   },
@@ -11,27 +11,19 @@
     {
       "key": "monorail_track",
       "title": "Monorail Track",
-      "subtitle": "Faster elevated rails",
+      "subtitle": "Your first rail",
       "description": [
-        "Monorail tracks carry trains on elevated single-rail lines - faster and sleeker than vanilla Create track.",
+        "Monorail tracks carry trains on elevated single-rail lines - faster and sleeker than vanilla Create track. Lay 8 to start.",
         "Next: a Semaphore to signal your trains."
       ],
       "icon": "railways:track_monorail",
       "shape": "hexagon",
       "phase": 1,
       "dependencies": [],
-      "tasks": [
-        {
-          "type": "item",
-          "item": "railways:track_monorail",
-          "count": 1
-        }
-      ],
+      "tasks": [{ "type": "item", "item": "railways:track_monorail", "count": 8 }],
       "rewards": [
-        {
-          "type": "xp_levels",
-          "xp_levels": 8
-        }
+        { "type": "xp_levels", "xp_levels": 8 },
+        { "type": "item", "item": "railways:track_monorail", "count": 8 }
       ]
     },
     {
@@ -45,22 +37,9 @@
       "icon": "railways:semaphore",
       "shape": "hexagon",
       "phase": 1,
-      "dependencies": [
-        "monorail_track"
-      ],
-      "tasks": [
-        {
-          "type": "item",
-          "item": "railways:semaphore",
-          "count": 1
-        }
-      ],
-      "rewards": [
-        {
-          "type": "xp_levels",
-          "xp_levels": 8
-        }
-      ]
+      "dependencies": ["monorail_track"],
+      "tasks": [{ "type": "item", "item": "railways:semaphore", "count": 1 }],
+      "rewards": [{ "type": "xp_levels", "xp_levels": 8 }]
     },
     {
       "key": "conductor_whistle",
@@ -73,22 +52,9 @@
       "icon": "railways:conductor_whistle",
       "shape": "hexagon",
       "phase": 1,
-      "dependencies": [
-        "semaphore"
-      ],
-      "tasks": [
-        {
-          "type": "item",
-          "item": "railways:conductor_whistle",
-          "count": 1
-        }
-      ],
-      "rewards": [
-        {
-          "type": "xp_levels",
-          "xp_levels": 8
-        }
-      ]
+      "dependencies": ["semaphore"],
+      "tasks": [{ "type": "item", "item": "railways:conductor_whistle", "count": 1 }],
+      "rewards": [{ "type": "xp_levels", "xp_levels": 8 }]
     },
     {
       "key": "handcar",
@@ -96,55 +62,86 @@
       "subtitle": "Manual rail transport",
       "description": [
         "A Handcar is a small manual rail vehicle - no fuel, no train assembly, just pump to move.",
-        "Next: lay a long Monorail line to form your rail network."
+        "Next: lay 32 Monorail Tracks to connect your base to an outpost."
       ],
       "icon": "railways:handcar",
       "shape": "hexagon",
       "phase": 1,
-      "dependencies": [
-        "conductor_whistle"
+      "dependencies": ["conductor_whistle"],
+      "tasks": [{ "type": "item", "item": "railways:handcar", "count": 1 }],
+      "rewards": [{ "type": "xp_levels", "xp_levels": 8 }]
+    },
+    {
+      "key": "rail_line",
+      "title": "Rail Line",
+      "subtitle": "Connect your base to an outpost",
+      "description": [
+        "Lay at least 32 Monorail Tracks to link your base with a mine or farm outpost. A dedicated line keeps resources flowing.",
+        "Next: a 64-track Rail Network."
       ],
-      "tasks": [
-        {
-          "type": "item",
-          "item": "railways:handcar",
-          "count": 1
-        }
-      ],
+      "icon": "railways:track_monorail",
+      "shape": "hexagon",
+      "phase": 1,
+      "dependencies": ["handcar"],
+      "tasks": [{ "type": "item", "item": "railways:track_monorail", "count": 32 }],
       "rewards": [
-        {
-          "type": "xp_levels",
-          "xp_levels": 8
-        }
+        { "type": "xp_levels", "xp_levels": 12 },
+        { "type": "item", "item": "railways:track_monorail", "count": 16 }
       ]
     },
     {
       "key": "rail_network",
       "title": "Rail Network",
-      "subtitle": "Lay a long rail line",
+      "subtitle": "Link multiple bases",
       "description": [
-        "Lay at least 64 Monorail Tracks to connect your base and outposts. A long rail line is the backbone of your train network.",
+        "Lay at least 64 Monorail Tracks to connect your bases, colony, and factories into one rail network.",
         "This completes the Steam 'n' Rails chapter."
       ],
       "icon": "railways:track_monorail",
       "shape": "hexagon",
       "phase": 1,
-      "dependencies": [
-        "handcar"
-      ],
-      "tasks": [
-        {
-          "type": "item",
-          "item": "railways:track_monorail",
-          "count": 64
-        }
-      ],
+      "dependencies": ["rail_line"],
+      "tasks": [{ "type": "item", "item": "railways:track_monorail", "count": 64 }],
       "rewards": [
-        {
-          "type": "xp_levels",
-          "xp_levels": 16
-        }
+        { "type": "xp_levels", "xp_levels": 16 },
+        { "type": "item", "item": "railways:track_monorail", "count": 32 }
       ]
+    },
+    {
+      "key": "wide_track",
+      "title": "Wide Track",
+      "subtitle": "Heavy-duty rails",
+      "description": ["Wide Track is a heavier rail variant for bigger, faster trains."],
+      "icon": "railways:track_wide",
+      "shape": "square",
+      "phase": 1,
+      "dependencies": ["monorail_track"],
+      "tasks": [{ "type": "item", "item": "railways:track_wide", "count": 1 }],
+      "rewards": [{ "type": "xp_levels", "xp_levels": 8 }]
+    },
+    {
+      "key": "coupler",
+      "title": "Coupler",
+      "subtitle": "Join train cars",
+      "description": ["A Coupler links train cars together into longer trains."],
+      "icon": "railways:track_coupler",
+      "shape": "square",
+      "phase": 1,
+      "dependencies": ["monorail_track"],
+      "tasks": [{ "type": "item", "item": "railways:track_coupler", "count": 1 }],
+      "rewards": [{ "type": "xp_levels", "xp_levels": 8 }]
+    },
+    {
+      "key": "remote_lens",
+      "title": "Remote Lens",
+      "subtitle": "Control trains from afar",
+      "description": ["A Remote Lens lets you control trains and signals from a distance."],
+      "icon": "railways:remote_lens",
+      "shape": "square",
+      "phase": 1,
+      "dependencies": ["monorail_track"],
+      "tasks": [{ "type": "item", "item": "railways:remote_lens", "count": 1 }],
+      "rewards": [{ "type": "xp_levels", "xp_levels": 8 }]
     }
   ]
 }

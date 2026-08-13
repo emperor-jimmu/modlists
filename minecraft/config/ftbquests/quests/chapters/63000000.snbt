@@ -186,13 +186,13 @@
     },
     {
       "id": "63000011",
-      "title": "Powder Charge",
-      "subtitle": "Cannon propellant",
+      "title": "Solid Shot",
+      "subtitle": "Cannon ammunition",
       "description": [
-        "Powder Charge is the standard propellant for Big Cannons.",
+        "Solid Shot is the basic cannon projectile - high penetrating force against structures.",
         "This completes the Combat chapter."
       ],
-      "icon": "createbigcannons:powder_charge",
+      "icon": "createbigcannons:solid_shot",
       "x": 0.0,
       "y": 5,
       "shape": "hexagon",
@@ -205,7 +205,7 @@
           "type": "item",
           "item": {
             "count": 1,
-            "id": "createbigcannons:powder_charge"
+            "id": "createbigcannons:solid_shot"
           }
         }
       ],
@@ -254,6 +254,39 @@
       "rewards": [
         {
           "id": "63000017",
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "63000018",
+      "title": "HE Shell",
+      "subtitle": "Explosive cannon ammo",
+      "description": [
+        "An HE Shell explodes with more force than TNT for demolishing structures."
+      ],
+      "icon": "createbigcannons:he_shell",
+      "x": 1.5,
+      "y": 1,
+      "shape": "square",
+      "dependencies": [
+        "63000011"
+      ],
+      "tasks": [
+        {
+          "id": "63000019",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "createbigcannons:he_shell"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "6300001A",
           "type": "xp_levels",
           "xp_levels": 8
         }
