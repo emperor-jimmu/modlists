@@ -288,6 +288,87 @@
           "xp_levels": 8
         }
       ]
+    },
+    {
+      "key": "pg_battery",
+      "title": "Battery",
+      "subtitle": "Power Grid electricity",
+      "description": [
+        "Battery is a Power Grid component for physics-based electricity."
+      ],
+      "icon": "powergrid:battery",
+      "shape": "square",
+      "phase": 2,
+      "dependencies": [
+        "accumulator"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "powergrid:battery",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
+    },
+    {
+      "key": "pg_capacitor",
+      "title": "Capacitor",
+      "subtitle": "Power Grid electricity",
+      "description": [
+        "Capacitor is a Power Grid component for physics-based electricity."
+      ],
+      "icon": "powergrid:capacitor",
+      "shape": "square",
+      "phase": 2,
+      "dependencies": [
+        "accumulator"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "powergrid:capacitor",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
+    },
+    {
+      "key": "pg_copper_coil",
+      "title": "Copper Coil",
+      "subtitle": "Power Grid electricity",
+      "description": [
+        "Copper Coil is a Power Grid component for physics-based electricity."
+      ],
+      "icon": "powergrid:copper_coil",
+      "shape": "square",
+      "phase": 2,
+      "dependencies": [
+        "accumulator"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "powergrid:copper_coil",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
     }
   ]
 }

@@ -351,6 +351,105 @@
         }
       ],
       "optional": false
+    },
+    {
+      "id": "62000020",
+      "title": "Battery",
+      "subtitle": "Power Grid electricity",
+      "description": [
+        "Battery is a Power Grid component for physics-based electricity."
+      ],
+      "icon": "powergrid:battery",
+      "x": 4.5,
+      "y": 0,
+      "shape": "square",
+      "dependencies": [
+        "62000017"
+      ],
+      "tasks": [
+        {
+          "id": "62000021",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "powergrid:battery"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "62000022",
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "62000023",
+      "title": "Capacitor",
+      "subtitle": "Power Grid electricity",
+      "description": [
+        "Capacitor is a Power Grid component for physics-based electricity."
+      ],
+      "icon": "powergrid:capacitor",
+      "x": 4.5,
+      "y": 1,
+      "shape": "square",
+      "dependencies": [
+        "62000017"
+      ],
+      "tasks": [
+        {
+          "id": "62000024",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "powergrid:capacitor"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "62000025",
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "62000026",
+      "title": "Copper Coil",
+      "subtitle": "Power Grid electricity",
+      "description": [
+        "Copper Coil is a Power Grid component for physics-based electricity."
+      ],
+      "icon": "powergrid:copper_coil",
+      "x": 4.5,
+      "y": 2,
+      "shape": "square",
+      "dependencies": [
+        "62000017"
+      ],
+      "tasks": [
+        {
+          "id": "62000027",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "powergrid:copper_coil"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "62000028",
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ],
+      "optional": false
     }
   ]
 }
