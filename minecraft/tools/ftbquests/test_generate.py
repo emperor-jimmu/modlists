@@ -58,6 +58,18 @@ def test_layout_assigns_columns():
     assert breadcrumb["x"] == 1.5
     assert milestone["y"] == 0
     assert breadcrumb["y"] == 0
+
+
+def test_build_task_uses_nested_item():
+    task = {"id": "50000002", "type": "item", "item": "mekanism:heat_generator", "count": 2}
+    out = generate.build_task(task)
+    assert out == {"id": "50000002", "type": "item", "item": {"count": 2, "id": "mekanism:heat_generator"}}
+
+
+def test_build_reward_uses_nested_item():
+    reward = {"id": "50000003", "type": "item", "item": "minecraft:redstone", "count": 4}
+    out = generate.build_reward(reward)
+    assert out == {"id": "50000003", "type": "item", "count": 4, "item": {"count": 1, "id": "minecraft:redstone"}}
 if __name__ == "__main__":
     import traceback
     _tests = [v for k, v in sorted(globals().items()) if k.startswith("test_") and callable(v)]

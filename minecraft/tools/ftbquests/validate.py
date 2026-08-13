@@ -25,11 +25,19 @@ def _load_chapters():
     return chapters
 
 
+def _item_id(item):
+    """Resolve the item id from either a nested ItemStack or a flat string."""
+    if isinstance(item, dict):
+        return item.get("id")
+    return item
+
+
 def _bad_item(item):
-    if not ITEM_RE.match(item):
-        return f"bad format: {item}"
-    if item.split(":")[0] not in KNOWN_MODS:
-        return f"unknown mod: {item}"
+    iid = _item_id(item)
+    if not iid or not ITEM_RE.match(iid):
+        return f"bad format: {iid}"
+    if iid.split(":")[0] not in KNOWN_MODS:
+        return f"unknown mod: {iid}"
     return None
 
 
@@ -75,8 +83,8 @@ def _check_completeness(chapters):
             if not q.get("tasks"):
                 errs.append(f"{q.get('title', q.get('id'))}: no tasks")
             for t in q.get("tasks", []):
-                if t.get("type") == "item" and "item" not in t:
-                    errs.append(f"{q.get('title')}: item task missing 'item'")
+                if t.get("type") == "item" and not _item_id(t.get("item")):
+                    errs.append(f"{q.get('title')}: item task missing 'item.id'")
     return errs
 
 
@@ -86,12 +94,12 @@ def _check_items(chapters):
         for q in c.get("quests", []):
             for t in q.get("tasks", []):
                 if t.get("type") == "item":
-                    b = _bad_item(t["item"])
+                    b = _bad_item(t.get("item"))
                     if b:
                         errs.append(f"{q.get('title')}: {b}")
             for r in q.get("rewards", []):
                 if r.get("type") == "item":
-                    b = _bad_item(r["item"])
+                    b = _bad_item(r.get("item"))
                     if b:
                         errs.append(f"{q.get('title')}: reward {b}")
     return errs

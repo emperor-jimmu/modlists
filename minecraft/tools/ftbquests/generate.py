@@ -67,14 +67,33 @@ def assign_layout(chapter):
         q["y"] = y
 
 
+def build_task(t):
+    """Emit the proven FTB Quests task shape (item is a nested ItemStack)."""
+    out = {"id": t["id"], "type": t["type"]}
+    if t["type"] == "item":
+        out["item"] = {"count": t.get("count", 1), "id": t["item"]}
+    return out
+
+
+def build_reward(r):
+    """Emit the proven FTB Quests reward shape (item is a nested ItemStack)."""
+    out = {"id": r["id"], "type": r["type"]}
+    if r["type"] == "item":
+        out["count"] = r.get("count", 1)
+        out["item"] = {"count": 1, "id": r["item"]}
+    elif r["type"] == "xp_levels":
+        out["xp_levels"] = r["xp_levels"]
+    return out
+
+
 def build_quest(q):
     return {
         "id": q["_id"], "title": q["title"], "subtitle": q.get("subtitle", ""),
         "description": q.get("description", []), "icon": q.get("icon", "minecraft:paper"),
         "x": q["x"], "y": q["y"], "shape": q.get("shape", "square"),
         "dependencies": q.get("dependencies", []),
-        "tasks": [t for t in q.get("tasks", []) if "id" in t],
-        "rewards": [r for r in q.get("rewards", []) if "id" in r],
+        "tasks": [build_task(t) for t in q.get("tasks", []) if "id" in t],
+        "rewards": [build_reward(r) for r in q.get("rewards", []) if "id" in r],
         "optional": q.get("optional", False),
     }
 

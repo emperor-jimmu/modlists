@@ -12,7 +12,7 @@
       "title": "Heat Generator",
       "subtitle": "Your first power source",
       "description": [
-        "Every machine needs power. A Heat Generator turns lava or burnable fuel into Forge Energy (FE) \u2014 the universal power unit.",
+        "Every machine needs power. A Heat Generator turns lava or burnable fuel into Forge Energy (FE) - the universal power unit.",
         "Sit it in a pool of lava for free, passive power. Next: use that FE to run a Metallurgic Infuser."
       ],
       "icon": "mekanismgenerators:heat_generator",
@@ -22,23 +22,28 @@
       "dependencies": [],
       "tasks": [
         {
+          "id": "50000002",
           "type": "item",
-          "item": "mekanismgenerators:heat_generator",
-          "count": 1,
-          "id": "50000002"
+          "item": {
+            "count": 1,
+            "id": "mekanismgenerators:heat_generator"
+          }
         }
       ],
       "rewards": [
         {
+          "id": "50000003",
           "type": "xp_levels",
-          "xp_levels": 8,
-          "id": "50000003"
+          "xp_levels": 8
         },
         {
+          "id": "50000004",
           "type": "item",
-          "item": "minecraft:redstone",
           "count": 4,
-          "id": "50000004"
+          "item": {
+            "count": 1,
+            "id": "minecraft:redstone"
+          }
         }
       ],
       "optional": false
@@ -48,7 +53,7 @@
       "title": "Metallurgic Infuser",
       "subtitle": "Make Infused Alloy",
       "description": [
-        "The Infuser fuses materials with 'infuse types' \u2014 redstone, carbon, diamond. Infuse iron with redstone to make Infused Alloy.",
+        "The Infuser fuses materials with 'infuse types' - redstone, carbon, diamond. Infuse iron with redstone to make Infused Alloy.",
         "Infused Alloy is the building block of every Mekanism machine. Next: craft an Enrichment Chamber with it."
       ],
       "icon": "mekanism:metallurgic_infuser",
@@ -60,23 +65,28 @@
       ],
       "tasks": [
         {
+          "id": "50000006",
           "type": "item",
-          "item": "mekanism:metallurgic_infuser",
-          "count": 1,
-          "id": "50000006"
+          "item": {
+            "count": 1,
+            "id": "mekanism:metallurgic_infuser"
+          }
         }
       ],
       "rewards": [
         {
+          "id": "50000007",
           "type": "xp_levels",
-          "xp_levels": 8,
-          "id": "50000007"
+          "xp_levels": 8
         },
         {
+          "id": "50000008",
           "type": "item",
-          "item": "mekanism:alloy_infused",
           "count": 4,
-          "id": "50000008"
+          "item": {
+            "count": 1,
+            "id": "mekanism:alloy_infused"
+          }
         }
       ],
       "optional": false
@@ -98,23 +108,28 @@
       ],
       "tasks": [
         {
+          "id": "5000000A",
           "type": "item",
-          "item": "mekanism:enrichment_chamber",
-          "count": 1,
-          "id": "5000000A"
+          "item": {
+            "count": 1,
+            "id": "mekanism:enrichment_chamber"
+          }
         }
       ],
       "rewards": [
         {
+          "id": "5000000B",
           "type": "xp_levels",
-          "xp_levels": 8,
-          "id": "5000000B"
+          "xp_levels": 8
         },
         {
+          "id": "5000000C",
           "type": "item",
-          "item": "minecraft:iron_ingot",
           "count": 4,
-          "id": "5000000C"
+          "item": {
+            "count": 1,
+            "id": "minecraft:iron_ingot"
+          }
         }
       ],
       "optional": false
@@ -125,7 +140,7 @@
       "subtitle": "Smelt dust into ingots",
       "description": [
         "Smelts dust into ingots using FE instead of coal. Feed it the Enrichment Chamber's dust and you've doubled your ore.",
-        "Next: run one ore through both machines to confirm the 2x chain."
+        "Next: store the FE you're generating in a Basic Energy Cube."
       ],
       "icon": "mekanism:energized_smelter",
       "x": 0.0,
@@ -136,36 +151,41 @@
       ],
       "tasks": [
         {
+          "id": "5000000E",
           "type": "item",
-          "item": "mekanism:energized_smelter",
-          "count": 1,
-          "id": "5000000E"
+          "item": {
+            "count": 1,
+            "id": "mekanism:energized_smelter"
+          }
         }
       ],
       "rewards": [
         {
+          "id": "5000000F",
           "type": "xp_levels",
-          "xp_levels": 8,
-          "id": "5000000F"
+          "xp_levels": 8
         },
         {
+          "id": "50000010",
           "type": "item",
-          "item": "minecraft:iron_ingot",
           "count": 4,
-          "id": "50000010"
+          "item": {
+            "count": 1,
+            "id": "minecraft:iron_ingot"
+          }
         }
       ],
       "optional": false
     },
     {
       "id": "50000011",
-      "title": "Double Your First Ore",
-      "subtitle": "Confirm the 2x chain works",
+      "title": "Basic Energy Cube",
+      "subtitle": "Store your FE",
       "description": [
-        "Run one iron ore through Chamber -> Smelter and confirm you get 2 ingots from 1 ore.",
-        "This 2x chain is the foundation \u2014 Mekanism scales it to 3x and 5x later. Next: store the FE you're generating."
+        "Generators make FE constantly; machines use it in bursts. An Energy Cube smooths that out - the Basic Cube holds 1.6 million FE.",
+        "Next: take that FE with you in an Energy Tablet."
       ],
-      "icon": "mekanism:enrichment_chamber",
+      "icon": "mekanism:basic_energy_cube",
       "x": 0.0,
       "y": 4,
       "shape": "hexagon",
@@ -174,54 +194,25 @@
       ],
       "tasks": [
         {
-          "type": "ftbquests:checkmark",
-          "title": "Confirm 1 ore gives 2 ingots",
-          "id": "50000012"
+          "id": "50000012",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "mekanism:basic_energy_cube"
+          }
         }
       ],
       "rewards": [
         {
+          "id": "50000013",
           "type": "xp_levels",
-          "xp_levels": 12,
-          "id": "50000013"
+          "xp_levels": 8
         }
       ],
       "optional": false
     },
     {
       "id": "50000014",
-      "title": "Basic Energy Cube",
-      "subtitle": "Store your FE",
-      "description": [
-        "Generators make FE constantly; machines use it in bursts. An Energy Cube smooths that out \u2014 the Basic Cube holds 1.6 million FE.",
-        "Next: take that FE with you in an Energy Tablet."
-      ],
-      "icon": "mekanism:basic_energy_cube",
-      "x": 0.0,
-      "y": 5,
-      "shape": "hexagon",
-      "dependencies": [
-        "50000011"
-      ],
-      "tasks": [
-        {
-          "type": "item",
-          "item": "mekanism:basic_energy_cube",
-          "count": 1,
-          "id": "50000015"
-        }
-      ],
-      "rewards": [
-        {
-          "type": "xp_levels",
-          "xp_levels": 8,
-          "id": "50000016"
-        }
-      ],
-      "optional": false
-    },
-    {
-      "id": "50000017",
       "title": "Energy Tablet",
       "subtitle": "Carry FE in your pocket",
       "description": [
@@ -230,6 +221,49 @@
       ],
       "icon": "mekanism:energy_tablet",
       "x": 0.0,
+      "y": 5,
+      "shape": "hexagon",
+      "dependencies": [
+        "50000011"
+      ],
+      "tasks": [
+        {
+          "id": "50000015",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "mekanism:energy_tablet"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "50000016",
+          "type": "xp_levels",
+          "xp_levels": 8
+        },
+        {
+          "id": "50000017",
+          "type": "item",
+          "count": 1,
+          "item": {
+            "count": 1,
+            "id": "mekanism:energy_tablet"
+          }
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "50000018",
+      "title": "Chargepad",
+      "subtitle": "Recharge by standing on it",
+      "description": [
+        "A Chargepad recharges FE items you stand on it with. Drop your Tablet on it, wait, and pick it back up full.",
+        "Next: the ultimate all-in-one tool - the Atomic Disassembler."
+      ],
+      "icon": "mekanism:chargepad",
+      "x": 0.0,
       "y": 6,
       "shape": "hexagon",
       "dependencies": [
@@ -237,103 +271,72 @@
       ],
       "tasks": [
         {
+          "id": "50000019",
           "type": "item",
-          "item": "mekanism:energy_tablet",
-          "count": 1,
-          "id": "50000018"
+          "item": {
+            "count": 1,
+            "id": "mekanism:chargepad"
+          }
         }
       ],
       "rewards": [
         {
+          "id": "5000001A",
           "type": "xp_levels",
-          "xp_levels": 8,
-          "id": "50000019"
-        },
-        {
-          "type": "item",
-          "item": "mekanism:energy_tablet",
-          "count": 1,
-          "id": "5000001A"
+          "xp_levels": 8
         }
       ],
       "optional": false
     },
     {
       "id": "5000001B",
-      "title": "Chargepad",
-      "subtitle": "Recharge by standing on it",
+      "title": "Atomic Disassembler",
+      "subtitle": "The all-in-one tool",
       "description": [
-        "A Chargepad recharges FE items you stand on it with. Drop your Tablet on it, wait, and pick it back up full.",
-        "Next: the ultimate all-in-one tool \u2014 the Atomic Disassembler."
+        "One tool to replace pickaxe, axe, shovel, hoe, sword, and shears. Modes for speed, precision, and vein mining - it runs on FE.",
+        "Keep it charged. This completes Phase 1 - next: scale ore processing to 3x."
       ],
-      "icon": "mekanism:chargepad",
+      "icon": "mekanism:atomic_disassembler",
       "x": 0.0,
       "y": 7,
       "shape": "hexagon",
       "dependencies": [
-        "50000017"
+        "50000018"
       ],
       "tasks": [
         {
+          "id": "5000001C",
           "type": "item",
-          "item": "mekanism:chargepad",
-          "count": 1,
-          "id": "5000001C"
+          "item": {
+            "count": 1,
+            "id": "mekanism:atomic_disassembler"
+          }
         }
       ],
       "rewards": [
         {
+          "id": "5000001D",
           "type": "xp_levels",
-          "xp_levels": 8,
-          "id": "5000001D"
-        }
-      ],
-      "optional": false
-    },
-    {
-      "id": "5000001E",
-      "title": "Atomic Disassembler",
-      "subtitle": "The all-in-one tool",
-      "description": [
-        "One tool to replace pickaxe, axe, shovel, hoe, sword, and shears. Modes for speed, precision, and vein mining \u2014 it runs on FE.",
-        "Keep it charged. This completes Phase 1 \u2014 next: scale ore processing to 3x."
-      ],
-      "icon": "mekanism:atomic_disassembler",
-      "x": 0.0,
-      "y": 8,
-      "shape": "hexagon",
-      "dependencies": [
-        "5000001B"
-      ],
-      "tasks": [
-        {
-          "type": "item",
-          "item": "mekanism:atomic_disassembler",
-          "count": 1,
-          "id": "5000001F"
-        }
-      ],
-      "rewards": [
-        {
-          "type": "xp_levels",
-          "xp_levels": 12,
-          "id": "50000020"
+          "xp_levels": 12
         },
         {
+          "id": "5000001E",
           "type": "item",
-          "item": "mekanism:energy_tablet",
           "count": 1,
-          "id": "50000021"
+          "item": {
+            "count": 1,
+            "id": "mekanism:energy_tablet"
+          }
         }
       ],
       "optional": false
     },
     {
-      "id": "50000022",
+      "id": "5000001F",
       "title": "Steel Casing",
       "subtitle": "Structural part of mid-tier machines",
       "description": [
-        "Most mid-tier machines need steel casings. Craft a stack early \u2014 you'll use them constantly."
+        "Most mid-tier machines need steel casings. Craft a stack early - you'll use them constantly."
       ],
       "icon": "mekanism:steel_casing",
       "x": 1.5,
@@ -344,29 +347,34 @@
       ],
       "tasks": [
         {
+          "id": "50000020",
           "type": "item",
-          "item": "mekanism:steel_casing",
-          "count": 8,
-          "id": "50000023"
+          "item": {
+            "count": 8,
+            "id": "mekanism:steel_casing"
+          }
         }
       ],
       "rewards": [
         {
+          "id": "50000021",
           "type": "xp_levels",
-          "xp_levels": 8,
-          "id": "50000024"
+          "xp_levels": 8
         },
         {
+          "id": "50000022",
           "type": "item",
-          "item": "mekanism:steel_casing",
           "count": 8,
-          "id": "50000025"
+          "item": {
+            "count": 1,
+            "id": "mekanism:steel_casing"
+          }
         }
       ],
       "optional": false
     },
     {
-      "id": "50000026",
+      "id": "50000023",
       "title": "Configurator",
       "subtitle": "The Mekanism wrench",
       "description": [
@@ -381,23 +389,25 @@
       ],
       "tasks": [
         {
+          "id": "50000024",
           "type": "item",
-          "item": "mekanism:configurator",
-          "count": 1,
-          "id": "50000027"
+          "item": {
+            "count": 1,
+            "id": "mekanism:configurator"
+          }
         }
       ],
       "rewards": [
         {
+          "id": "50000025",
           "type": "xp_levels",
-          "xp_levels": 8,
-          "id": "50000028"
+          "xp_levels": 8
         }
       ],
       "optional": false
     },
     {
-      "id": "50000029",
+      "id": "50000026",
       "title": "Gas-Burning Generator",
       "subtitle": "Efficient ethylene power",
       "description": [
@@ -408,27 +418,29 @@
       "y": 0,
       "shape": "square",
       "dependencies": [
-        "5000003E"
+        "5000003B"
       ],
       "tasks": [
         {
+          "id": "50000027",
           "type": "item",
-          "item": "mekanismgenerators:gas_burning_generator",
-          "count": 1,
-          "id": "5000002A"
+          "item": {
+            "count": 1,
+            "id": "mekanismgenerators:gas_burning_generator"
+          }
         }
       ],
       "rewards": [
         {
+          "id": "50000028",
           "type": "xp_levels",
-          "xp_levels": 12,
-          "id": "5000002B"
+          "xp_levels": 12
         }
       ],
       "optional": false
     },
     {
-      "id": "5000002C",
+      "id": "50000029",
       "title": "Teleporter",
       "subtitle": "Cross-base fast travel",
       "description": [
@@ -439,27 +451,29 @@
       "y": 1,
       "shape": "square",
       "dependencies": [
-        "5000003E"
+        "5000003B"
       ],
       "tasks": [
         {
+          "id": "5000002A",
           "type": "item",
-          "item": "mekanism:teleporter",
-          "count": 1,
-          "id": "5000002D"
+          "item": {
+            "count": 1,
+            "id": "mekanism:teleporter"
+          }
         }
       ],
       "rewards": [
         {
+          "id": "5000002B",
           "type": "xp_levels",
-          "xp_levels": 12,
-          "id": "5000002E"
+          "xp_levels": 12
         }
       ],
       "optional": false
     },
     {
-      "id": "5000002F",
+      "id": "5000002C",
       "title": "Machine Upgrades",
       "subtitle": "Speed vs. energy",
       "description": [
@@ -474,29 +488,34 @@
       ],
       "tasks": [
         {
+          "id": "5000002D",
           "type": "item",
-          "item": "mekanism:upgrade_speed",
-          "count": 1,
-          "id": "50000030"
+          "item": {
+            "count": 1,
+            "id": "mekanism:upgrade_speed"
+          }
         }
       ],
       "rewards": [
         {
+          "id": "5000002E",
           "type": "xp_levels",
-          "xp_levels": 8,
-          "id": "50000031"
+          "xp_levels": 8
         },
         {
+          "id": "5000002F",
           "type": "item",
-          "item": "mekanism:upgrade_speed",
           "count": 4,
-          "id": "50000032"
+          "item": {
+            "count": 1,
+            "id": "mekanism:upgrade_speed"
+          }
         }
       ],
       "optional": false
     },
     {
-      "id": "50000033",
+      "id": "50000030",
       "title": "Tiered Factories",
       "subtitle": "Basic to Ultimate",
       "description": [
@@ -507,33 +526,38 @@
       "y": 2,
       "shape": "square",
       "dependencies": [
-        "5000003E"
+        "5000003B"
       ],
       "tasks": [
         {
+          "id": "50000031",
           "type": "item",
-          "item": "mekanism:ultimate_control_circuit",
-          "count": 1,
-          "id": "50000034"
+          "item": {
+            "count": 1,
+            "id": "mekanism:ultimate_control_circuit"
+          }
         }
       ],
       "rewards": [
         {
+          "id": "50000032",
           "type": "xp_levels",
-          "xp_levels": 16,
-          "id": "50000035"
+          "xp_levels": 16
         },
         {
+          "id": "50000033",
           "type": "item",
-          "item": "mekanism:basic_control_circuit",
           "count": 4,
-          "id": "50000036"
+          "item": {
+            "count": 1,
+            "id": "mekanism:basic_control_circuit"
+          }
         }
       ],
       "optional": false
     },
     {
-      "id": "50000037",
+      "id": "50000034",
       "title": "Atmospheric Suit",
       "subtitle": "Underwater breathing",
       "description": [
@@ -548,23 +572,25 @@
       ],
       "tasks": [
         {
+          "id": "50000035",
           "type": "item",
-          "item": "mekanism:scuba_mask",
-          "count": 1,
-          "id": "50000038"
+          "item": {
+            "count": 1,
+            "id": "mekanism:scuba_mask"
+          }
         }
       ],
       "rewards": [
         {
+          "id": "50000036",
           "type": "xp_levels",
-          "xp_levels": 16,
-          "id": "50000039"
+          "xp_levels": 16
         }
       ],
       "optional": false
     },
     {
-      "id": "5000003A",
+      "id": "50000037",
       "title": "Osmium Gear",
       "subtitle": "Better than iron",
       "description": [
@@ -579,29 +605,34 @@
       ],
       "tasks": [
         {
+          "id": "50000038",
           "type": "item",
-          "item": "mekanismtools:osmium_pickaxe",
-          "count": 1,
-          "id": "5000003B"
+          "item": {
+            "count": 1,
+            "id": "mekanismtools:osmium_pickaxe"
+          }
         }
       ],
       "rewards": [
         {
+          "id": "50000039",
           "type": "xp_levels",
-          "xp_levels": 16,
-          "id": "5000003C"
+          "xp_levels": 16
         },
         {
+          "id": "5000003A",
           "type": "item",
-          "item": "mekanism:ingot_osmium",
           "count": 4,
-          "id": "5000003D"
+          "item": {
+            "count": 1,
+            "id": "mekanism:ingot_osmium"
+          }
         }
       ],
       "optional": false
     },
     {
-      "id": "5000003E",
+      "id": "5000003B",
       "title": "Purification Chamber",
       "subtitle": "Start of 3x processing",
       "description": [
@@ -613,27 +644,29 @@
       "y": 0,
       "shape": "hexagon",
       "dependencies": [
-        "5000001E"
+        "5000001B"
       ],
       "tasks": [
         {
+          "id": "5000003C",
           "type": "item",
-          "item": "mekanism:purification_chamber",
-          "count": 1,
-          "id": "5000003F"
+          "item": {
+            "count": 1,
+            "id": "mekanism:purification_chamber"
+          }
         }
       ],
       "rewards": [
         {
+          "id": "5000003D",
           "type": "xp_levels",
-          "xp_levels": 16,
-          "id": "50000040"
+          "xp_levels": 16
         }
       ],
       "optional": false
     },
     {
-      "id": "50000041",
+      "id": "5000003E",
       "title": "Thermal Evaporation Plant",
       "subtitle": "Water into brine",
       "description": [
@@ -645,33 +678,38 @@
       "y": 1,
       "shape": "hexagon",
       "dependencies": [
-        "5000003E"
+        "5000003B"
       ],
       "tasks": [
         {
+          "id": "5000003F",
           "type": "item",
-          "item": "mekanism:thermal_evaporation_controller",
-          "count": 1,
-          "id": "50000042"
+          "item": {
+            "count": 1,
+            "id": "mekanism:thermal_evaporation_controller"
+          }
         }
       ],
       "rewards": [
         {
+          "id": "50000040",
           "type": "xp_levels",
-          "xp_levels": 16,
-          "id": "50000043"
+          "xp_levels": 16
         },
         {
+          "id": "50000041",
           "type": "item",
-          "item": "mekanism:steel_casing",
           "count": 8,
-          "id": "50000044"
+          "item": {
+            "count": 1,
+            "id": "mekanism:steel_casing"
+          }
         }
       ],
       "optional": false
     },
     {
-      "id": "50000045",
+      "id": "50000042",
       "title": "Electrolytic Separator",
       "subtitle": "Split water into gases",
       "description": [
@@ -683,27 +721,29 @@
       "y": 2,
       "shape": "hexagon",
       "dependencies": [
-        "50000041"
+        "5000003E"
       ],
       "tasks": [
         {
+          "id": "50000043",
           "type": "item",
-          "item": "mekanism:electrolytic_separator",
-          "count": 1,
-          "id": "50000046"
+          "item": {
+            "count": 1,
+            "id": "mekanism:electrolytic_separator"
+          }
         }
       ],
       "rewards": [
         {
+          "id": "50000044",
           "type": "xp_levels",
-          "xp_levels": 16,
-          "id": "50000047"
+          "xp_levels": 16
         }
       ],
       "optional": false
     },
     {
-      "id": "50000048",
+      "id": "50000045",
       "title": "Chemical Infuser",
       "subtitle": "Combine gases",
       "description": [
@@ -715,63 +755,67 @@
       "y": 3,
       "shape": "hexagon",
       "dependencies": [
-        "50000045"
+        "50000042"
       ],
       "tasks": [
         {
+          "id": "50000046",
           "type": "item",
-          "item": "mekanism:chemical_infuser",
-          "count": 1,
-          "id": "50000049"
+          "item": {
+            "count": 1,
+            "id": "mekanism:chemical_infuser"
+          }
         }
       ],
       "rewards": [
         {
+          "id": "50000047",
           "type": "xp_levels",
-          "xp_levels": 16,
-          "id": "5000004A"
+          "xp_levels": 16
         }
       ],
       "optional": false
     },
     {
-      "id": "5000004B",
+      "id": "50000048",
       "title": "Chemical Injection Chamber",
       "subtitle": "Acid for 4x processing",
       "description": [
         "Injects acid into ore for 4x processing. HCl + ore = 4 ingots.",
-        "Next: the Chemical Dissolution Chamber \u2014 the start of full 5x processing."
+        "Next: the Chemical Dissolution Chamber - the start of full 5x processing."
       ],
       "icon": "mekanism:chemical_injection_chamber",
       "x": 3.0,
       "y": 4,
       "shape": "hexagon",
       "dependencies": [
-        "50000048"
+        "50000045"
       ],
       "tasks": [
         {
+          "id": "50000049",
           "type": "item",
-          "item": "mekanism:chemical_injection_chamber",
-          "count": 1,
-          "id": "5000004C"
+          "item": {
+            "count": 1,
+            "id": "mekanism:chemical_injection_chamber"
+          }
         }
       ],
       "rewards": [
         {
+          "id": "5000004A",
           "type": "xp_levels",
-          "xp_levels": 16,
-          "id": "5000004D"
+          "xp_levels": 16
         }
       ],
       "optional": false
     },
     {
-      "id": "5000004E",
+      "id": "5000004B",
       "title": "Chemical Dissolution Chamber",
       "subtitle": "Dissolve ore in acid",
       "description": [
-        "Dissolves ore in sulfuric acid \u2014 the first step of 5x processing.",
+        "Dissolves ore in sulfuric acid - the first step of 5x processing.",
         "Next: a Chemical Washer to clean the dissolved slurry."
       ],
       "icon": "mekanism:chemical_dissolution_chamber",
@@ -779,27 +823,29 @@
       "y": 5,
       "shape": "hexagon",
       "dependencies": [
-        "5000004B"
+        "50000048"
       ],
       "tasks": [
         {
+          "id": "5000004C",
           "type": "item",
-          "item": "mekanism:chemical_dissolution_chamber",
-          "count": 1,
-          "id": "5000004F"
+          "item": {
+            "count": 1,
+            "id": "mekanism:chemical_dissolution_chamber"
+          }
         }
       ],
       "rewards": [
         {
+          "id": "5000004D",
           "type": "xp_levels",
-          "xp_levels": 20,
-          "id": "50000050"
+          "xp_levels": 20
         }
       ],
       "optional": false
     },
     {
-      "id": "50000051",
+      "id": "5000004E",
       "title": "Chemical Washer",
       "subtitle": "Clean the slurry",
       "description": [
@@ -811,96 +857,63 @@
       "y": 6,
       "shape": "hexagon",
       "dependencies": [
-        "5000004E"
+        "5000004B"
       ],
       "tasks": [
         {
+          "id": "5000004F",
           "type": "item",
-          "item": "mekanism:chemical_washer",
-          "count": 1,
-          "id": "50000052"
+          "item": {
+            "count": 1,
+            "id": "mekanism:chemical_washer"
+          }
         }
       ],
       "rewards": [
         {
+          "id": "50000050",
           "type": "xp_levels",
-          "xp_levels": 20,
-          "id": "50000053"
+          "xp_levels": 20
         }
       ],
       "optional": false
     },
     {
-      "id": "50000054",
+      "id": "50000051",
       "title": "Chemical Crystallizer",
       "subtitle": "Crystallize the slurry",
       "description": [
-        "Crystallizes the slurry into ore crystals \u2014 the final chemical step before smelting.",
-        "Next: run the full chain to confirm 5x processing."
+        "Crystallizes the slurry into ore crystals - the final chemical step before smelting. One ore now yields 5 ingots.",
+        "Next: automate your ore supply with a Digital Miner."
       ],
       "icon": "mekanism:chemical_crystallizer",
       "x": 3.0,
       "y": 7,
       "shape": "hexagon",
       "dependencies": [
-        "50000051"
+        "5000004E"
       ],
       "tasks": [
         {
+          "id": "50000052",
           "type": "item",
-          "item": "mekanism:chemical_crystallizer",
-          "count": 1,
-          "id": "50000055"
+          "item": {
+            "count": 1,
+            "id": "mekanism:chemical_crystallizer"
+          }
         }
       ],
       "rewards": [
         {
+          "id": "50000053",
           "type": "xp_levels",
-          "xp_levels": 20,
-          "id": "50000056"
+          "xp_levels": 20
         }
       ],
       "optional": false
     },
     {
-      "id": "50000057",
-      "title": "Five-Times Ore Processing",
-      "subtitle": "Confirm the full 5x chain",
-      "description": [
-        "Run one ore through the full chain: Dissolution -> Washer -> Crystallizer -> Injection -> Purification -> Crusher -> Enrichment -> Smelter.",
-        "1 ore -> 5 ingots. Next: a Digital Miner to automate the ore supply."
-      ],
-      "icon": "mekanism:chemical_dissolution_chamber",
-      "x": 3.0,
-      "y": 8,
-      "shape": "hexagon",
-      "dependencies": [
-        "50000054"
-      ],
-      "tasks": [
-        {
-          "type": "ftbquests:checkmark",
-          "title": "Confirm 1 ore gives 5 ingots",
-          "id": "50000058"
-        }
-      ],
-      "rewards": [
-        {
-          "type": "xp_levels",
-          "xp_levels": 24,
-          "id": "50000059"
-        },
-        {
-          "type": "item",
-          "item": "mekanism:dust_refined_obsidian",
-          "count": 8,
-          "id": "5000005A"
-        }
-      ],
-      "optional": false
-    },
-    {
-      "id": "5000005B",
+      "id": "50000054",
       "title": "Digital Miner",
       "subtitle": "Automated mining",
       "description": [
@@ -909,36 +922,41 @@
       ],
       "icon": "mekanism:digital_miner",
       "x": 3.0,
-      "y": 9,
+      "y": 8,
       "shape": "hexagon",
       "dependencies": [
-        "50000057"
+        "50000051"
       ],
       "tasks": [
         {
+          "id": "50000055",
           "type": "item",
-          "item": "mekanism:digital_miner",
-          "count": 1,
-          "id": "5000005C"
+          "item": {
+            "count": 1,
+            "id": "mekanism:digital_miner"
+          }
         }
       ],
       "rewards": [
         {
+          "id": "50000056",
           "type": "xp_levels",
-          "xp_levels": 24,
-          "id": "5000005D"
+          "xp_levels": 24
         },
         {
+          "id": "50000057",
           "type": "item",
-          "item": "mekanism:ingot_osmium",
           "count": 8,
-          "id": "5000005E"
+          "item": {
+            "count": 1,
+            "id": "mekanism:ingot_osmium"
+          }
         }
       ],
       "optional": false
     },
     {
-      "id": "5000005F",
+      "id": "50000058",
       "title": "Pressurized Reaction Chamber",
       "subtitle": "Gases, fluids, and solids",
       "description": [
@@ -947,36 +965,41 @@
       ],
       "icon": "mekanism:pressurized_reaction_chamber",
       "x": 3.0,
-      "y": 10,
+      "y": 9,
       "shape": "hexagon",
       "dependencies": [
-        "5000005B"
+        "50000054"
       ],
       "tasks": [
         {
+          "id": "50000059",
           "type": "item",
-          "item": "mekanism:pressurized_reaction_chamber",
-          "count": 1,
-          "id": "50000060"
+          "item": {
+            "count": 1,
+            "id": "mekanism:pressurized_reaction_chamber"
+          }
         }
       ],
       "rewards": [
         {
+          "id": "5000005A",
           "type": "xp_levels",
-          "xp_levels": 24,
-          "id": "50000061"
+          "xp_levels": 24
         },
         {
+          "id": "5000005B",
           "type": "item",
-          "item": "mekanism:hdpe_sheet",
           "count": 8,
-          "id": "50000062"
+          "item": {
+            "count": 1,
+            "id": "mekanism:hdpe_sheet"
+          }
         }
       ],
       "optional": false
     },
     {
-      "id": "50000063",
+      "id": "5000005C",
       "title": "Induction Matrix",
       "subtitle": "Billions of FE",
       "description": [
@@ -985,106 +1008,118 @@
       ],
       "icon": "mekanism:induction_casing",
       "x": 3.0,
-      "y": 11,
+      "y": 10,
       "shape": "hexagon",
       "dependencies": [
-        "5000005F"
+        "50000058"
       ],
       "tasks": [
         {
+          "id": "5000005D",
           "type": "item",
-          "item": "mekanism:induction_casing",
-          "count": 1,
-          "id": "50000064"
+          "item": {
+            "count": 1,
+            "id": "mekanism:induction_casing"
+          }
         }
       ],
       "rewards": [
         {
+          "id": "5000005E",
           "type": "xp_levels",
-          "xp_levels": 24,
-          "id": "50000065"
+          "xp_levels": 24
         },
         {
+          "id": "5000005F",
           "type": "item",
-          "item": "mekanism:steel_casing",
           "count": 8,
-          "id": "50000066"
+          "item": {
+            "count": 1,
+            "id": "mekanism:steel_casing"
+          }
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "50000060",
+      "title": "Seismic Surveying",
+      "subtitle": "Map the underground",
+      "description": [
+        "A Vibrator sends waves underground; a Reader reveals caves, lava, and ore veins. Find dense ore clusters for your Digital Miner.",
+        "Next: the Fission Reactor - Mekanism's nuclear power."
+      ],
+      "icon": "mekanism:seismic_vibrator",
+      "x": 3.0,
+      "y": 11,
+      "shape": "hexagon",
+      "dependencies": [
+        "5000005C"
+      ],
+      "tasks": [
+        {
+          "id": "50000061",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "mekanism:seismic_vibrator"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "50000062",
+          "type": "xp_levels",
+          "xp_levels": 16
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "50000063",
+      "title": "Fission Reactor",
+      "subtitle": "Nuclear power",
+      "description": [
+        "Nuclear power at 7 MFE/t. Multiblock: Casing + Fuel Assembly + Control Rods. Needs coolant and careful rod settings - a meltdown is possible, so build it away from your base.",
+        "It produces nuclear waste (store it safely). Next: the Fusion Reactor for zero-waste power."
+      ],
+      "icon": "mekanismgenerators:fission_reactor_casing",
+      "x": 3.0,
+      "y": 12,
+      "shape": "hexagon",
+      "dependencies": [
+        "50000060"
+      ],
+      "tasks": [
+        {
+          "id": "50000064",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "mekanismgenerators:fission_reactor_casing"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "50000065",
+          "type": "xp_levels",
+          "xp_levels": 24
+        },
+        {
+          "id": "50000066",
+          "type": "item",
+          "count": 8,
+          "item": {
+            "count": 1,
+            "id": "mekanism:ingot_uranium"
+          }
         }
       ],
       "optional": false
     },
     {
       "id": "50000067",
-      "title": "Seismic Surveying",
-      "subtitle": "Map the underground",
-      "description": [
-        "A Vibrator sends waves underground; a Reader reveals caves, lava, and ore veins. Find dense ore clusters for your Digital Miner.",
-        "Next: the Fission Reactor \u2014 Mekanism's nuclear power."
-      ],
-      "icon": "mekanism:seismic_vibrator",
-      "x": 3.0,
-      "y": 12,
-      "shape": "hexagon",
-      "dependencies": [
-        "50000063"
-      ],
-      "tasks": [
-        {
-          "type": "item",
-          "item": "mekanism:seismic_vibrator",
-          "count": 1,
-          "id": "50000068"
-        }
-      ],
-      "rewards": [
-        {
-          "type": "xp_levels",
-          "xp_levels": 16,
-          "id": "50000069"
-        }
-      ],
-      "optional": false
-    },
-    {
-      "id": "5000006A",
-      "title": "Fission Reactor",
-      "subtitle": "Nuclear power",
-      "description": [
-        "Nuclear power at 7 MFE/t. Multiblock: Casing + Fuel Assembly + Control Rods. Needs coolant and careful rod settings \u2014 a meltdown is possible, so build it away from your base.",
-        "It produces nuclear waste (store it safely). Next: the Fusion Reactor for zero-waste power."
-      ],
-      "icon": "mekanismgenerators:fission_reactor_casing",
-      "x": 3.0,
-      "y": 13,
-      "shape": "hexagon",
-      "dependencies": [
-        "50000067"
-      ],
-      "tasks": [
-        {
-          "type": "item",
-          "item": "mekanismgenerators:fission_reactor_casing",
-          "count": 1,
-          "id": "5000006B"
-        }
-      ],
-      "rewards": [
-        {
-          "type": "xp_levels",
-          "xp_levels": 24,
-          "id": "5000006C"
-        },
-        {
-          "type": "item",
-          "item": "mekanism:ingot_uranium",
-          "count": 8,
-          "id": "5000006D"
-        }
-      ],
-      "optional": false
-    },
-    {
-      "id": "5000006E",
       "title": "Boiler",
       "subtitle": "Fission heat to steam",
       "description": [
@@ -1095,57 +1130,62 @@
       "y": 3,
       "shape": "square",
       "dependencies": [
-        "5000003E"
+        "5000003B"
       ],
       "tasks": [
         {
+          "id": "50000068",
           "type": "item",
-          "item": "mekanism:boiler_casing",
-          "count": 1,
-          "id": "5000006F"
+          "item": {
+            "count": 1,
+            "id": "mekanism:boiler_casing"
+          }
         }
       ],
       "rewards": [
         {
+          "id": "50000069",
           "type": "xp_levels",
-          "xp_levels": 16,
-          "id": "50000070"
+          "xp_levels": 16
         }
       ],
       "optional": false
     },
     {
-      "id": "50000071",
+      "id": "5000006A",
       "title": "Radiation Safety",
       "subtitle": "Handle nuclear waste carefully",
       "description": [
-        "Nuclear waste is radioactive \u2014 it damages you and mutates mobs. Store it in waste barrels and never break them. Process it to Polonium with sunlight."
+        "Nuclear waste is radioactive - it damages you and mutates mobs. Store it in waste barrels and never break them. Process it to Polonium with sunlight."
       ],
       "icon": "mekanism:radioactive_waste_barrel",
       "x": 4.5,
       "y": 4,
       "shape": "square",
       "dependencies": [
-        "5000003E"
+        "5000003B"
       ],
       "tasks": [
         {
-          "type": "ftbquests:checkmark",
-          "title": "Confirm you understand radiation safety",
-          "id": "50000072"
+          "id": "5000006B",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "mekanism:radioactive_waste_barrel"
+          }
         }
       ],
       "rewards": [
         {
+          "id": "5000006C",
           "type": "xp_levels",
-          "xp_levels": 16,
-          "id": "50000073"
+          "xp_levels": 16
         }
       ],
       "optional": false
     },
     {
-      "id": "50000074",
+      "id": "5000006D",
       "title": "Chemical Processing Map",
       "subtitle": "Plan the whole flowchart",
       "description": [
@@ -1156,26 +1196,25 @@
       "y": 5,
       "shape": "square",
       "dependencies": [
-        "5000003E"
+        "5000003B"
       ],
       "tasks": [
         {
-          "type": "ftbquests:checkmark",
-          "title": "Confirm you mapped the chemical chain",
-          "id": "50000075"
+          "id": "5000006E",
+          "type": "checkmark"
         }
       ],
       "rewards": [
         {
+          "id": "5000006F",
           "type": "xp_levels",
-          "xp_levels": 24,
-          "id": "50000076"
+          "xp_levels": 24
         }
       ],
       "optional": false
     },
     {
-      "id": "50000077",
+      "id": "50000070",
       "title": "Robit",
       "subtitle": "Your robot companion",
       "description": [
@@ -1186,27 +1225,29 @@
       "y": 6,
       "shape": "square",
       "dependencies": [
-        "5000003E"
+        "5000003B"
       ],
       "tasks": [
         {
+          "id": "50000071",
           "type": "item",
-          "item": "mekanism:robit",
-          "count": 1,
-          "id": "50000078"
+          "item": {
+            "count": 1,
+            "id": "mekanism:robit"
+          }
         }
       ],
       "rewards": [
         {
+          "id": "50000072",
           "type": "xp_levels",
-          "xp_levels": 8,
-          "id": "50000079"
+          "xp_levels": 8
         }
       ],
       "optional": false
     },
     {
-      "id": "5000007A",
+      "id": "50000073",
       "title": "Fusion Reactor",
       "subtitle": "Zero-waste power",
       "description": [
@@ -1218,65 +1259,72 @@
       "y": 0,
       "shape": "hexagon",
       "dependencies": [
-        "5000006A"
+        "50000063"
       ],
       "tasks": [
         {
+          "id": "50000074",
           "type": "item",
-          "item": "mekanismgenerators:fusion_reactor_controller",
-          "count": 1,
-          "id": "5000007B"
+          "item": {
+            "count": 1,
+            "id": "mekanismgenerators:fusion_reactor_controller"
+          }
         }
       ],
       "rewards": [
         {
+          "id": "50000075",
           "type": "xp_levels",
-          "xp_levels": 32,
-          "id": "5000007C"
+          "xp_levels": 32
         },
         {
+          "id": "50000076",
           "type": "item",
-          "item": "mekanism:block_refined_obsidian",
           "count": 8,
-          "id": "5000007D"
+          "item": {
+            "count": 1,
+            "id": "mekanism:block_refined_obsidian"
+          }
         }
       ],
       "optional": false
     },
     {
-      "id": "5000007E",
+      "id": "50000077",
       "title": "Quantum Entangloporter",
       "subtitle": "Instant wireless transport",
       "description": [
         "Instant wireless items, fluids, gases, and FE across any dimension. Set the same frequency on two Entangloporters and they connect.",
-        "Next: the SPS and MekaSuit \u2014 the endgame."
+        "Next: the SPS and MekaSuit - the endgame."
       ],
       "icon": "mekanism:quantum_entangloporter",
       "x": 6.0,
       "y": 1,
       "shape": "hexagon",
       "dependencies": [
-        "5000007A"
+        "50000073"
       ],
       "tasks": [
         {
+          "id": "50000078",
           "type": "item",
-          "item": "mekanism:quantum_entangloporter",
-          "count": 1,
-          "id": "5000007F"
+          "item": {
+            "count": 1,
+            "id": "mekanism:quantum_entangloporter"
+          }
         }
       ],
       "rewards": [
         {
+          "id": "50000079",
           "type": "xp_levels",
-          "xp_levels": 32,
-          "id": "50000080"
+          "xp_levels": 32
         }
       ],
       "optional": false
     },
     {
-      "id": "50000081",
+      "id": "5000007A",
       "title": "SPS & MekaSuit",
       "subtitle": "Become a demigod",
       "description": [
@@ -1288,33 +1336,38 @@
       "y": 2,
       "shape": "hexagon",
       "dependencies": [
-        "5000007E"
+        "50000077"
       ],
       "tasks": [
         {
+          "id": "5000007B",
           "type": "item",
-          "item": "mekanism:mekasuit_bodyarmor",
-          "count": 1,
-          "id": "50000082"
+          "item": {
+            "count": 1,
+            "id": "mekanism:mekasuit_bodyarmor"
+          }
         }
       ],
       "rewards": [
         {
+          "id": "5000007C",
           "type": "xp_levels",
-          "xp_levels": 32,
-          "id": "50000083"
+          "xp_levels": 32
         },
         {
+          "id": "5000007D",
           "type": "item",
-          "item": "minecraft:dragon_breath",
           "count": 1,
-          "id": "50000084"
+          "item": {
+            "count": 1,
+            "id": "minecraft:dragon_breath"
+          }
         }
       ],
       "optional": false
     },
     {
-      "id": "50000085",
+      "id": "5000007E",
       "title": "Polonium Production",
       "subtitle": "Waste into fuel",
       "description": [
@@ -1325,26 +1378,29 @@
       "y": 0,
       "shape": "square",
       "dependencies": [
-        "5000007A"
+        "50000073"
       ],
       "tasks": [
         {
-          "type": "ftbquests:checkmark",
-          "title": "Confirm polonium production",
-          "id": "50000086"
+          "id": "5000007F",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "mekanism:pellet_polonium"
+          }
         }
       ],
       "rewards": [
         {
+          "id": "50000080",
           "type": "xp_levels",
-          "xp_levels": 24,
-          "id": "50000087"
+          "xp_levels": 24
         }
       ],
       "optional": false
     },
     {
-      "id": "50000088",
+      "id": "50000081",
       "title": "Antimatter Chain",
       "subtitle": "The full endgame chain",
       "description": [
@@ -1355,20 +1411,23 @@
       "y": 1,
       "shape": "square",
       "dependencies": [
-        "5000007A"
+        "50000073"
       ],
       "tasks": [
         {
-          "type": "ftbquests:checkmark",
-          "title": "Confirm antimatter production",
-          "id": "50000089"
+          "id": "50000082",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "mekanism:pellet_antimatter"
+          }
         }
       ],
       "rewards": [
         {
+          "id": "50000083",
           "type": "xp_levels",
-          "xp_levels": 32,
-          "id": "5000008A"
+          "xp_levels": 32
         }
       ],
       "optional": false

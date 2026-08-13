@@ -13,7 +13,7 @@
       "title": "Heat Generator",
       "subtitle": "Your first power source",
       "description": [
-        "Every machine needs power. A Heat Generator turns lava or burnable fuel into Forge Energy (FE) \u2014 the universal power unit.",
+        "Every machine needs power. A Heat Generator turns lava or burnable fuel into Forge Energy (FE) - the universal power unit.",
         "Sit it in a pool of lava for free, passive power. Next: use that FE to run a Metallurgic Infuser."
       ],
       "icon": "mekanismgenerators:heat_generator",
@@ -44,7 +44,7 @@
       "title": "Metallurgic Infuser",
       "subtitle": "Make Infused Alloy",
       "description": [
-        "The Infuser fuses materials with 'infuse types' \u2014 redstone, carbon, diamond. Infuse iron with redstone to make Infused Alloy.",
+        "The Infuser fuses materials with 'infuse types' - redstone, carbon, diamond. Infuse iron with redstone to make Infused Alloy.",
         "Infused Alloy is the building block of every Mekanism machine. Next: craft an Enrichment Chamber with it."
       ],
       "icon": "mekanism:metallurgic_infuser",
@@ -111,7 +111,7 @@
       "subtitle": "Smelt dust into ingots",
       "description": [
         "Smelts dust into ingots using FE instead of coal. Feed it the Enrichment Chamber's dust and you've doubled your ore.",
-        "Next: run one ore through both machines to confirm the 2x chain."
+        "Next: store the FE you're generating in a Basic Energy Cube."
       ],
       "icon": "mekanism:energized_smelter",
       "shape": "hexagon",
@@ -139,45 +139,18 @@
       ]
     },
     {
-      "key": "double_first_ore",
-      "title": "Double Your First Ore",
-      "subtitle": "Confirm the 2x chain works",
-      "description": [
-        "Run one iron ore through Chamber -> Smelter and confirm you get 2 ingots from 1 ore.",
-        "This 2x chain is the foundation \u2014 Mekanism scales it to 3x and 5x later. Next: store the FE you're generating."
-      ],
-      "icon": "mekanism:enrichment_chamber",
-      "shape": "hexagon",
-      "phase": 1,
-      "dependencies": [
-        "energized_smelter"
-      ],
-      "tasks": [
-        {
-          "type": "ftbquests:checkmark",
-          "title": "Confirm 1 ore gives 2 ingots"
-        }
-      ],
-      "rewards": [
-        {
-          "type": "xp_levels",
-          "xp_levels": 12
-        }
-      ]
-    },
-    {
       "key": "basic_energy_cube",
       "title": "Basic Energy Cube",
       "subtitle": "Store your FE",
       "description": [
-        "Generators make FE constantly; machines use it in bursts. An Energy Cube smooths that out \u2014 the Basic Cube holds 1.6 million FE.",
+        "Generators make FE constantly; machines use it in bursts. An Energy Cube smooths that out - the Basic Cube holds 1.6 million FE.",
         "Next: take that FE with you in an Energy Tablet."
       ],
       "icon": "mekanism:basic_energy_cube",
       "shape": "hexagon",
       "phase": 1,
       "dependencies": [
-        "double_first_ore"
+        "energized_smelter"
       ],
       "tasks": [
         {
@@ -232,7 +205,7 @@
       "subtitle": "Recharge by standing on it",
       "description": [
         "A Chargepad recharges FE items you stand on it with. Drop your Tablet on it, wait, and pick it back up full.",
-        "Next: the ultimate all-in-one tool \u2014 the Atomic Disassembler."
+        "Next: the ultimate all-in-one tool - the Atomic Disassembler."
       ],
       "icon": "mekanism:chargepad",
       "shape": "hexagon",
@@ -259,8 +232,8 @@
       "title": "Atomic Disassembler",
       "subtitle": "The all-in-one tool",
       "description": [
-        "One tool to replace pickaxe, axe, shovel, hoe, sword, and shears. Modes for speed, precision, and vein mining \u2014 it runs on FE.",
-        "Keep it charged. This completes Phase 1 \u2014 next: scale ore processing to 3x."
+        "One tool to replace pickaxe, axe, shovel, hoe, sword, and shears. Modes for speed, precision, and vein mining - it runs on FE.",
+        "Keep it charged. This completes Phase 1 - next: scale ore processing to 3x."
       ],
       "icon": "mekanism:atomic_disassembler",
       "shape": "hexagon",
@@ -292,7 +265,7 @@
       "title": "Steel Casing",
       "subtitle": "Structural part of mid-tier machines",
       "description": [
-        "Most mid-tier machines need steel casings. Craft a stack early \u2014 you'll use them constantly."
+        "Most mid-tier machines need steel casings. Craft a stack early - you'll use them constantly."
       ],
       "icon": "mekanism:steel_casing",
       "shape": "square",
@@ -646,7 +619,7 @@
       "subtitle": "Acid for 4x processing",
       "description": [
         "Injects acid into ore for 4x processing. HCl + ore = 4 ingots.",
-        "Next: the Chemical Dissolution Chamber \u2014 the start of full 5x processing."
+        "Next: the Chemical Dissolution Chamber - the start of full 5x processing."
       ],
       "icon": "mekanism:chemical_injection_chamber",
       "shape": "hexagon",
@@ -673,7 +646,7 @@
       "title": "Chemical Dissolution Chamber",
       "subtitle": "Dissolve ore in acid",
       "description": [
-        "Dissolves ore in sulfuric acid \u2014 the first step of 5x processing.",
+        "Dissolves ore in sulfuric acid - the first step of 5x processing.",
         "Next: a Chemical Washer to clean the dissolved slurry."
       ],
       "icon": "mekanism:chemical_dissolution_chamber",
@@ -729,8 +702,8 @@
       "title": "Chemical Crystallizer",
       "subtitle": "Crystallize the slurry",
       "description": [
-        "Crystallizes the slurry into ore crystals \u2014 the final chemical step before smelting.",
-        "Next: run the full chain to confirm 5x processing."
+        "Crystallizes the slurry into ore crystals - the final chemical step before smelting. One ore now yields 5 ingots.",
+        "Next: automate your ore supply with a Digital Miner."
       ],
       "icon": "mekanism:chemical_crystallizer",
       "shape": "hexagon",
@@ -753,38 +726,6 @@
       ]
     },
     {
-      "key": "ore_quintupling",
-      "title": "Five-Times Ore Processing",
-      "subtitle": "Confirm the full 5x chain",
-      "description": [
-        "Run one ore through the full chain: Dissolution -> Washer -> Crystallizer -> Injection -> Purification -> Crusher -> Enrichment -> Smelter.",
-        "1 ore -> 5 ingots. Next: a Digital Miner to automate the ore supply."
-      ],
-      "icon": "mekanism:chemical_dissolution_chamber",
-      "shape": "hexagon",
-      "phase": 2,
-      "dependencies": [
-        "chemical_crystallizer"
-      ],
-      "tasks": [
-        {
-          "type": "ftbquests:checkmark",
-          "title": "Confirm 1 ore gives 5 ingots"
-        }
-      ],
-      "rewards": [
-        {
-          "type": "xp_levels",
-          "xp_levels": 24
-        },
-        {
-          "type": "item",
-          "item": "mekanism:dust_refined_obsidian",
-          "count": 8
-        }
-      ]
-    },
-    {
       "key": "digital_miner",
       "title": "Digital Miner",
       "subtitle": "Automated mining",
@@ -796,7 +737,7 @@
       "shape": "hexagon",
       "phase": 2,
       "dependencies": [
-        "ore_quintupling"
+        "chemical_crystallizer"
       ],
       "tasks": [
         {
@@ -889,7 +830,7 @@
       "subtitle": "Map the underground",
       "description": [
         "A Vibrator sends waves underground; a Reader reveals caves, lava, and ore veins. Find dense ore clusters for your Digital Miner.",
-        "Next: the Fission Reactor \u2014 Mekanism's nuclear power."
+        "Next: the Fission Reactor - Mekanism's nuclear power."
       ],
       "icon": "mekanism:seismic_vibrator",
       "shape": "hexagon",
@@ -916,7 +857,7 @@
       "title": "Fission Reactor",
       "subtitle": "Nuclear power",
       "description": [
-        "Nuclear power at 7 MFE/t. Multiblock: Casing + Fuel Assembly + Control Rods. Needs coolant and careful rod settings \u2014 a meltdown is possible, so build it away from your base.",
+        "Nuclear power at 7 MFE/t. Multiblock: Casing + Fuel Assembly + Control Rods. Needs coolant and careful rod settings - a meltdown is possible, so build it away from your base.",
         "It produces nuclear waste (store it safely). Next: the Fusion Reactor for zero-waste power."
       ],
       "icon": "mekanismgenerators:fission_reactor_casing",
@@ -976,7 +917,7 @@
       "title": "Radiation Safety",
       "subtitle": "Handle nuclear waste carefully",
       "description": [
-        "Nuclear waste is radioactive \u2014 it damages you and mutates mobs. Store it in waste barrels and never break them. Process it to Polonium with sunlight."
+        "Nuclear waste is radioactive - it damages you and mutates mobs. Store it in waste barrels and never break them. Process it to Polonium with sunlight."
       ],
       "icon": "mekanism:radioactive_waste_barrel",
       "shape": "square",
@@ -986,8 +927,9 @@
       ],
       "tasks": [
         {
-          "type": "ftbquests:checkmark",
-          "title": "Confirm you understand radiation safety"
+          "type": "item",
+          "item": "mekanism:radioactive_waste_barrel",
+          "count": 1
         }
       ],
       "rewards": [
@@ -1012,8 +954,7 @@
       ],
       "tasks": [
         {
-          "type": "ftbquests:checkmark",
-          "title": "Confirm you mapped the chemical chain"
+          "type": "checkmark"
         }
       ],
       "rewards": [
@@ -1089,7 +1030,7 @@
       "subtitle": "Instant wireless transport",
       "description": [
         "Instant wireless items, fluids, gases, and FE across any dimension. Set the same frequency on two Entangloporters and they connect.",
-        "Next: the SPS and MekaSuit \u2014 the endgame."
+        "Next: the SPS and MekaSuit - the endgame."
       ],
       "icon": "mekanism:quantum_entangloporter",
       "shape": "hexagon",
@@ -1159,8 +1100,9 @@
       ],
       "tasks": [
         {
-          "type": "ftbquests:checkmark",
-          "title": "Confirm polonium production"
+          "type": "item",
+          "item": "mekanism:pellet_polonium",
+          "count": 1
         }
       ],
       "rewards": [
@@ -1185,8 +1127,9 @@
       ],
       "tasks": [
         {
-          "type": "ftbquests:checkmark",
-          "title": "Confirm antimatter production"
+          "type": "item",
+          "item": "mekanism:pellet_antimatter",
+          "count": 1
         }
       ],
       "rewards": [
