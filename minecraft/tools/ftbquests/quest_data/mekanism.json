@@ -16,14 +16,14 @@
         "Every machine needs power. A Heat Generator turns lava or burnable fuel into Forge Energy (FE) \u2014 the universal power unit.",
         "Sit it in a pool of lava for free, passive power. Next: use that FE to run a Metallurgic Infuser."
       ],
-      "icon": "mekanism:heat_generator",
+      "icon": "mekanismgenerators:heat_generator",
       "shape": "hexagon",
       "phase": 1,
       "dependencies": [],
       "tasks": [
         {
           "type": "item",
-          "item": "mekanism:heat_generator",
+          "item": "mekanismgenerators:heat_generator",
           "count": 1
         }
       ],
@@ -42,10 +42,10 @@
     {
       "key": "metallurgic_infuser",
       "title": "Metallurgic Infuser",
-      "subtitle": "Make Enriched Alloy",
+      "subtitle": "Make Infused Alloy",
       "description": [
-        "The Infuser fuses materials with 'infuse types' \u2014 redstone, carbon, diamond. Infuse iron with redstone to make Enriched Alloy.",
-        "Enriched Alloy is the building block of every Mekanism machine. Next: craft an Enrichment Chamber with it."
+        "The Infuser fuses materials with 'infuse types' \u2014 redstone, carbon, diamond. Infuse iron with redstone to make Infused Alloy.",
+        "Infused Alloy is the building block of every Mekanism machine. Next: craft an Enrichment Chamber with it."
       ],
       "icon": "mekanism:metallurgic_infuser",
       "shape": "hexagon",
@@ -67,7 +67,7 @@
         },
         {
           "type": "item",
-          "item": "mekanism:enriched_alloy",
+          "item": "mekanism:alloy_infused",
           "count": 4
         }
       ]
@@ -154,7 +154,8 @@
       ],
       "tasks": [
         {
-          "type": "checkmark"
+          "type": "ftbquests:checkmark",
+          "title": "Confirm 1 ore gives 2 ingots"
         }
       ],
       "rewards": [
@@ -352,7 +353,7 @@
       "description": [
         "Burns ethylene for lots of FE. More efficient than Heat Generators, but needs Phase 2 chemistry."
       ],
-      "icon": "mekanism:gas_burning_generator",
+      "icon": "mekanismgenerators:gas_burning_generator",
       "shape": "square",
       "phase": 2,
       "dependencies": [
@@ -361,7 +362,7 @@
       "tasks": [
         {
           "type": "item",
-          "item": "mekanism:gas_burning_generator",
+          "item": "mekanismgenerators:gas_burning_generator",
           "count": 1
         }
       ],
@@ -406,7 +407,7 @@
       "description": [
         "Speed upgrades (red) = faster. Energy upgrades (green) = cheaper. Install them in a machine's upgrade slots."
       ],
-      "icon": "mekanism:speed_upgrade",
+      "icon": "mekanism:upgrade_speed",
       "shape": "square",
       "phase": 1,
       "dependencies": [
@@ -415,7 +416,7 @@
       "tasks": [
         {
           "type": "item",
-          "item": "mekanism:speed_upgrade",
+          "item": "mekanism:upgrade_speed",
           "count": 1
         }
       ],
@@ -426,7 +427,7 @@
         },
         {
           "type": "item",
-          "item": "mekanism:speed_upgrade",
+          "item": "mekanism:upgrade_speed",
           "count": 4
         }
       ]
@@ -767,7 +768,8 @@
       ],
       "tasks": [
         {
-          "type": "checkmark"
+          "type": "ftbquests:checkmark",
+          "title": "Confirm 1 ore gives 5 ingots"
         }
       ],
       "rewards": [
@@ -914,10 +916,10 @@
       "title": "Fission Reactor",
       "subtitle": "Nuclear power",
       "description": [
-        "Nuclear power at 7 MFE/t. Multiblock: Frame + Controller + Fuel Assembly + Control Rods. Needs coolant and careful rod settings \u2014 a meltdown is possible, so build it away from your base.",
+        "Nuclear power at 7 MFE/t. Multiblock: Casing + Fuel Assembly + Control Rods. Needs coolant and careful rod settings \u2014 a meltdown is possible, so build it away from your base.",
         "It produces nuclear waste (store it safely). Next: the Fusion Reactor for zero-waste power."
       ],
-      "icon": "mekanism:fission_reactor_controller",
+      "icon": "mekanismgenerators:fission_reactor_casing",
       "shape": "hexagon",
       "phase": 2,
       "dependencies": [
@@ -926,7 +928,7 @@
       "tasks": [
         {
           "type": "item",
-          "item": "mekanism:fission_reactor_controller",
+          "item": "mekanismgenerators:fission_reactor_casing",
           "count": 1
         }
       ],
@@ -984,7 +986,8 @@
       ],
       "tasks": [
         {
-          "type": "checkmark"
+          "type": "ftbquests:checkmark",
+          "title": "Confirm you understand radiation safety"
         }
       ],
       "rewards": [
@@ -1009,7 +1012,8 @@
       ],
       "tasks": [
         {
-          "type": "checkmark"
+          "type": "ftbquests:checkmark",
+          "title": "Confirm you mapped the chemical chain"
         }
       ],
       "rewards": [
@@ -1054,7 +1058,7 @@
         "200 MFE/t, zero waste. Laser-initiated D-T fusion needs a big laser array plus deuterium + tritium production.",
         "Next: a Quantum Entangloporter for instant wireless transport."
       ],
-      "icon": "mekanism:fusion_reactor_controller",
+      "icon": "mekanismgenerators:fusion_reactor_controller",
       "shape": "hexagon",
       "phase": 3,
       "dependencies": [
@@ -1063,7 +1067,7 @@
       "tasks": [
         {
           "type": "item",
-          "item": "mekanism:fusion_reactor_controller",
+          "item": "mekanismgenerators:fusion_reactor_controller",
           "count": 1
         }
       ],
@@ -1155,7 +1159,8 @@
       ],
       "tasks": [
         {
-          "type": "checkmark"
+          "type": "ftbquests:checkmark",
+          "title": "Confirm polonium production"
         }
       ],
       "rewards": [
@@ -1180,7 +1185,8 @@
       ],
       "tasks": [
         {
-          "type": "checkmark"
+          "type": "ftbquests:checkmark",
+          "title": "Confirm antimatter production"
         }
       ],
       "rewards": [
