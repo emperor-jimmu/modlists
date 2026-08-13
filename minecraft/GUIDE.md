@@ -2727,7 +2727,6 @@ To remove the whole sidebar instead, set `[sidebar] enabled = false`. Either way
 | Mod                                                                                      | Role                                                                                             |
 |------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
 | [**MineColonies Questline**](https://www.curseforge.com/minecraft/mc-mods/minecolonies-questline) | Pre-written 40+ quest chain covering MineColonies from Town Hall to endgame colony    |
-| [ExtraQuests](https://modrinth.com/mod/extraquests)                                      | Additional task/reward types — key-value tracking, progressive tasks, daily/weekly quests, console command rewards |
 
 **MineColonies Questline** covers colony progression from first Town Hall through Industrial Revolution research. The pack's own quest book is pre-authored too — 10 chapters, 211 quests covering every major mod (see *Installing the Quest Book* below). No in-game editing required.
 
@@ -4301,6 +4300,37 @@ end
 
 ---
 
+<!--raw-typst #pagebreak() -->
+
+## Create World
+
+All mods installed and every wave configured — here's how to start a proper world. These settings keep the pack survival-pure, the chat clean, and the worldgen fully modded.
+
+### Before Creating
+
+1. **Install the quest book** — copy `config/ftbquests/quests/` into the instance's `config/ftbquests/` folder (merge/overwrite) so the pre-authored book is ready from world one (see *Installing the Quest Book* in Wave 4.5).
+2. **Optional data packs** — for the structure-spacing tweaks, place `rarer-better-dungeons/` and `wda-density-tweak/` in `saves/<world>/datapacks/` after creating the world (see `datapacks/README.md`).
+
+### World Creation Settings (Singleplayer → Create New World)
+
+| Setting | Value | Why |
+|---|---|---|
+| Game Mode | **Survival** | The pack is survival-only — every block placed and item crafted must be earned |
+| Difficulty | **Normal** | Easy-to-standard curve. The real difficulty ramp is Apotheosis mobs and boss fights, not vanilla mobs |
+| **Allow Commands (Cheats)** | **OFF** | Survival purity — no `/gamemode` escapes, no creative shortcuts; quest rewards stay earned. Cheats can't be enabled later without opening the world to LAN, so set everything you need now |
+| World Type | **Default** | Terralith + Tectonic overhaul the overworld automatically. Don't pick Superflat, Single Biome, or Amplified — they break modded worldgen |
+| Seed | Leave empty | Random is fine — worldgen mods guarantee interesting terrain either way |
+| Structure Generation | **ON** | YUNG's collection, When Dungeons Arise, Waystones, and every dimension need it |
+
+**Game Rules → Chat → disable all options** (Command Feedback, Command Block Output, Reduced Debug Info, Show Death Messages, Show Recipe Messages, Announce Advancements). Keeps the chat clean — progression popups still appear via Advancement Plaques and the quest book still tracks everything.
+
+### After First Launch
+
+1. Copy `config/computercraft-server.toml` into `<world>/serverconfig/` (CC:Tweaked is world-configured — see *Configuration* in Wave 8).
+2. First world load takes a few extra minutes while Terralith, Tectonic, and YUNG's generate the initial chunks — that's normal.
+
+---
+
 ## Mod Count Summary
 
 | Wave                         | Mods    | Deps   | Total   | Notes                                                                                                                                                                                                                                                                  |
@@ -4311,12 +4341,12 @@ end
 | Wave 2 — Exploration         | 34      | 5      | 39      | YUNG's (12), Terralith/Tectonic, Serene Seasons, Darker Depths, Upgrade Aquatic, dimensions (3), End overhaul (3 + Nullscape dp + 5 deps), Structory + Structory Towers, navigation, aircraft, ships, hang glider, MoMP addon, Incendium (Nether biome overhaul), Immersive Machinery (utility machines), Field Guide + 2 required companions (Immersive Overlays, Item Descriptions)                                                                          |
 | Wave 3 — Equipment Magic     | 9       | 12     | 21      | Skills Mastery Reimagined, Pufferfish's Skills, Simply Swords, Simply More, Too Many Bows, Relics, Enchanting Runes, Immersive Armors, Apotheosis + 12 deps (Placebo, Apothic modules, Patchouli, Simply Tooltips, Fzzy Config, Ranged Weapon API, Spell Engine, Bundle API, Pufferfish's Attributes, Curios API)                                               |
 | Wave 4 — Food & Farming      | 11      | —      | 11      | Farmer's Delight + 8 addon mods + Neo Bee Fix + Comfortable Campfires                                                                                                                                                                                                  |
-| Wave 4.5 — Quests            | 6       | 1      | 7       | FTB Questing ecosystem: FTB Library + FTB Quests + FTB Teams + KubeJS + FTB XMod Compat + MineColonies Questline + ExtraQuests (Modrinth). Bountiful removed.                                                                                                                                                                           |
+| Wave 4.5 — Quests            | 6       | 0      | 6       | FTB Questing ecosystem: FTB Library + FTB Quests + FTB Teams + KubeJS + FTB XMod Compat + MineColonies Questline. Bountiful removed. ExtraQuests removed (Aug 2026 — quest book uses only standard FTB Quests types; its ExtraLib dependency was never in the pack).                                                                                                                                                                           |
 | Wave 5 — Combat & Mobs       | 8       | 5      | 13      | Better Combat, L_Ender's Cataclysm, When Dungeons Arise, Enchantment Descriptions, Create Big Cannons + Advanced Technologies addon, Cut Through, Torchmaster |
 | Wave 6 — Building            | 12      | 3      | 15      | Rechiseled, Supplementaries, Macaw's (4), Building Wands, Reforged: Accurate Block Placement, Handcrafted, The Magic Mirror, Fetzi's Displays, Lili's Pottery, Laser Bridges & Doors + Rechiseled: Create, Rechiseled: AE2 + Moonlight, Resourceful, Fusion |
 | Wave 7 — Space Exploration   | 1       | 1      | 2       | Stellaris, Potentials API                                                                                                                                                                                                                                              |
 | Wave 8 — Programmable Computers | 1       | 0      | 1       | CC:Tweaked                                                                                                                                                                                                                                                             |
-| **Total**                    | **173** | **43** | **216** | All confirmed NeoForge 1.21.1 (+Real Camera; Day Counter Plus reverted — Day Counter + Hud Texts restored)                              |
+| **Total**                    | **172** | **42** | **214** | All confirmed NeoForge 1.21.1 (+Real Camera; Day Counter Plus reverted — Day Counter + Hud Texts restored)                              |
 
 ---
 

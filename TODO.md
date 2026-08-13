@@ -24,7 +24,7 @@
 
 ## Add mods
 
-[ ] 21. AMS2 (automobilista-2)
+[x] 21. AMS2 (automobilista-2)
 [ ] 22. F1 25
 [ ] 23. GTA IV
 [ ] 24. GTA V

@@ -2,6 +2,12 @@
 
 ## Completed
 
+### ExtraQuests Removal & Create World Section (Aug 2026)
+
+- [x] ExtraQuests removed from GUIDE.md (Wave 4.5 Quest Addons table, Mod Count Summary) — quest book uses only standard FTB Quests types; daily/weekly quests contradict chill living; ExtraLib dependency never in pack. Logged under Removed Mods (Aug 2026)
+- [x] GUIDE.md "Create World" section added — world creation settings (Survival, Normal difficulty, Allow Commands/Cheats OFF, Default world type, Structure Generation ON, Game Rules → Chat all disabled), quest book + data pack pre-steps, CC:Tweaked serverconfig post-step
+- [x] DRIFTWOOD-GUIDE.pdf regenerated
+
 ### GUIDE.md Conciseness Pass (Aug 2026)
 
 - [x] GUIDE.md trimmed from 4,629 → 4,300 lines (~25 KB). Removed duplicated wave intros/closings, the redundant "Performance Mods — Install and Forget" table, per-mod prose blurbs condensed to one-line bullets (Wave 0.5 What to Expect + Daily Tools, texture packs, Create Addon Details), duplicated interdependency notes (Hybrid Aquatic × Starcatcher/Better Fishtanks, Starcatcher's Delight × FD, Better Fishtanks × Create, Wave 6 trio), and fluff lines (Wave 2/3/5/6 intros, Torchmaster, Wave 7). Fixed Wave 1 broken integration table (glued `### Ores` heading), deduped Mod Count Summary (stale Wave 2 row), moved it out of the middle of Wave 7 to before Keybindings. All instructions/configs/compat notes preserved. DRIFTWOOD-GUIDE.pdf regenerated cleanly.
@@ -294,6 +300,10 @@ PUT 90.*:
 - [x] FTB Echoes — superseded by FTB Quests. Two questing systems would conflict. Hologram NPC also clashes with chill living.
 - [x] FTB JEI Extras — JEI-specific (pack uses EMI). Skipped.
 - [x] FTB Ez Crystals — simplifies AE2 crystal growth. Contradicts 200h+ progression. Skipped.
+
+### Removed Mods (Aug 2026)
+
+- [x] ExtraQuests — removed after review. The pack's quest book (211 authored quests) uses only standard FTB Quests task/reward types (`item` + `xp_levels`); daily/weekly quests contradict the chill-living pillar ("no time-limited quests"); its only required dependency, ExtraLib, was never in the pack. Quest Addons now lists MineColonies Questline only. Wave 4.5 count: 6 mods, 0 deps (Total: 172 mods, 42 deps, 214).
 
 ### Discussion Held (Jul 2026 batch 15)
 
