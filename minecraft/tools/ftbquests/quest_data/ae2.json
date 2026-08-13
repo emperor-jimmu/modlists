@@ -1,0 +1,347 @@
+{
+  "chapter": {
+    "id": "70000000",
+    "title": "Applied Energistics 2",
+    "subtitle": "Start with Certus Quartz and follow the chain",
+    "icon": "ae2:controller",
+    "group": "20000001",
+    "order_index": 6
+  },
+  "quests": [
+    {
+      "key": "certus_quartz",
+      "title": "Certus Quartz",
+      "subtitle": "AE2's silicon",
+      "description": [
+        "Certus Quartz is the crystal behind AE2. Mine it from white-blue clusters, then grow more by dropping a seed in water.",
+        "Next: an Inscriber to make processors."
+      ],
+      "icon": "ae2:certus_quartz_crystal",
+      "shape": "hexagon",
+      "phase": 1,
+      "dependencies": [],
+      "tasks": [{ "type": "item", "item": "ae2:certus_quartz_crystal", "count": 8 }],
+      "rewards": [
+        { "type": "xp_levels", "xp_levels": 8 },
+        { "type": "item", "item": "ae2:certus_quartz_crystal", "count": 8 }
+      ]
+    },
+    {
+      "key": "inscriber",
+      "title": "Inscriber",
+      "subtitle": "The processor machine",
+      "description": [
+        "The Inscriber presses circuits and processors from silicon and press plates. Find press plates in Meteorites.",
+        "Next: craft your first Logic Processor."
+      ],
+      "icon": "ae2:inscriber",
+      "shape": "hexagon",
+      "phase": 1,
+      "dependencies": ["certus_quartz"],
+      "tasks": [{ "type": "item", "item": "ae2:inscriber", "count": 1 }],
+      "rewards": [{ "type": "xp_levels", "xp_levels": 8 }]
+    },
+    {
+      "key": "logic_processor",
+      "title": "First Processor",
+      "subtitle": "Logic Processor",
+      "description": [
+        "Press Silicon with a Logic Press, then combine the printed circuit with redstone to make a Logic Processor.",
+        "Next: an ME Controller to build your network."
+      ],
+      "icon": "ae2:logic_processor",
+      "shape": "hexagon",
+      "phase": 1,
+      "dependencies": ["inscriber"],
+      "tasks": [{ "type": "item", "item": "ae2:logic_processor", "count": 1 }],
+      "rewards": [
+        { "type": "xp_levels", "xp_levels": 12 },
+        { "type": "item", "item": "ae2:logic_processor", "count": 4 }
+      ]
+    },
+    {
+      "key": "controller",
+      "title": "ME Controller",
+      "subtitle": "Brain of the network",
+      "description": [
+        "The ME Controller powers your storage network and provides channels - 32 per face. Connect a Drive and a Terminal to it.",
+        "Next: a Storage Cell to hold your items."
+      ],
+      "icon": "ae2:controller",
+      "shape": "hexagon",
+      "phase": 1,
+      "dependencies": ["logic_processor"],
+      "tasks": [{ "type": "item", "item": "ae2:controller", "count": 1 }],
+      "rewards": [
+        { "type": "xp_levels", "xp_levels": 12 },
+        { "type": "item", "item": "ae2:certus_quartz_crystal", "count": 8 }
+      ]
+    },
+    {
+      "key": "storage_cell",
+      "title": "Storage Cell",
+      "subtitle": "Store everything digitally",
+      "description": [
+        "A 1k Storage Cell holds 1024 item types in a Drive. Craft it with charged certus quartz and redstone.",
+        "This completes Phase 1. Next: Autocrafting Setup."
+      ],
+      "icon": "ae2:item_storage_cell_1k",
+      "shape": "hexagon",
+      "phase": 1,
+      "dependencies": ["controller"],
+      "tasks": [{ "type": "item", "item": "ae2:item_storage_cell_1k", "count": 1 }],
+      "rewards": [
+        { "type": "xp_levels", "xp_levels": 12 },
+        { "type": "item", "item": "ae2:item_storage_cell_1k", "count": 2 }
+      ]
+    },
+
+    {
+      "key": "smart_cable",
+      "title": "Smart Cable",
+      "subtitle": "See channel usage",
+      "description": ["Smart Cables show channel usage visually - amber when partial, green when full."],
+      "icon": "ae2:fluix_smart_cable",
+      "shape": "square",
+      "phase": 1,
+      "dependencies": ["controller"],
+      "tasks": [{ "type": "item", "item": "ae2:fluix_smart_cable", "count": 1 }],
+      "rewards": [{ "type": "xp_levels", "xp_levels": 8 }]
+    },
+    {
+      "key": "storage_bus",
+      "title": "Storage Bus",
+      "subtitle": "Attach external inventories",
+      "description": ["A Storage Bus exposes a chest, barrel, or machine output as part of your ME network."],
+      "icon": "ae2:storage_bus",
+      "shape": "square",
+      "phase": 1,
+      "dependencies": ["controller"],
+      "tasks": [{ "type": "item", "item": "ae2:storage_bus", "count": 1 }],
+      "rewards": [{ "type": "xp_levels", "xp_levels": 12 }]
+    },
+    {
+      "key": "facade",
+      "title": "Facade",
+      "subtitle": "Hide cables",
+      "description": ["Facades hide cables inside matching blocks. Four Cable Anchors plus a block makes four Facades."],
+      "icon": "ae2:facade",
+      "shape": "square",
+      "phase": 1,
+      "dependencies": ["controller"],
+      "tasks": [{ "type": "item", "item": "ae2:facade", "count": 1 }],
+      "rewards": [{ "type": "xp_levels", "xp_levels": 8 }]
+    },
+
+    {
+      "key": "autocrafting_setup",
+      "title": "Autocrafting Setup",
+      "subtitle": "Craft on demand",
+      "description": [
+        "A Crafting Accelerator plus a Molecular Assembler plus a Pattern Provider enables on-demand crafting from your terminal.",
+        "Next: encode Crafting Patterns."
+      ],
+      "icon": "ae2:crafting_accelerator",
+      "shape": "hexagon",
+      "phase": 2,
+      "dependencies": ["storage_cell"],
+      "tasks": [{ "type": "item", "item": "ae2:crafting_accelerator", "count": 1 }],
+      "rewards": [
+        { "type": "xp_levels", "xp_levels": 16 },
+        { "type": "item", "item": "ae2:crafting_accelerator", "count": 2 }
+      ]
+    },
+    {
+      "key": "crafting_pattern",
+      "title": "Crafting Patterns",
+      "subtitle": "Teach the network recipes",
+      "description": [
+        "A Crafting Pattern tells the Assembler a workbench recipe. Encode patterns at a Pattern Encoding Terminal.",
+        "Next: a Pattern Provider for processing recipes."
+      ],
+      "icon": "ae2:crafting_pattern",
+      "shape": "hexagon",
+      "phase": 2,
+      "dependencies": ["autocrafting_setup"],
+      "tasks": [{ "type": "item", "item": "ae2:crafting_pattern", "count": 1 }],
+      "rewards": [
+        { "type": "xp_levels", "xp_levels": 12 },
+        { "type": "item", "item": "ae2:blank_pattern", "count": 4 }
+      ]
+    },
+    {
+      "key": "pattern_provider",
+      "title": "Pattern Provider",
+      "subtitle": "Push items to machines",
+      "description": [
+        "A Pattern Provider pushes ingredients to a machine and receives the result. Attach it to a Mekanism or Create machine for automated processing.",
+        "Next: large-scale autocrafting."
+      ],
+      "icon": "ae2:pattern_provider",
+      "shape": "hexagon",
+      "phase": 2,
+      "dependencies": ["crafting_pattern"],
+      "tasks": [{ "type": "item", "item": "ae2:pattern_provider", "count": 1 }],
+      "rewards": [{ "type": "xp_levels", "xp_levels": 16 }]
+    },
+    {
+      "key": "large_autocrafting",
+      "title": "Large Autocrafting",
+      "subtitle": "Parallel crafting",
+      "description": [
+        "A 64k Crafting Storage plus multiple Co-Processors runs parallel crafting. Request a complex item and watch it cascade.",
+        "Next: an ME Interface to bridge your network to the world."
+      ],
+      "icon": "ae2:64k_crafting_storage",
+      "shape": "hexagon",
+      "phase": 2,
+      "dependencies": ["pattern_provider"],
+      "tasks": [{ "type": "item", "item": "ae2:64k_crafting_storage", "count": 1 }],
+      "rewards": [
+        { "type": "xp_levels", "xp_levels": 16 },
+        { "type": "item", "item": "ae2:64k_crafting_storage", "count": 1 }
+      ]
+    },
+    {
+      "key": "interface",
+      "title": "ME Interface",
+      "subtitle": "Bridge to the world",
+      "description": [
+        "An ME Interface lets belts, pipes, and machines push items into and pull items from your network, and keeps a fixed stock.",
+        "Next: P2P Tunnels to extend your network."
+      ],
+      "icon": "ae2:interface",
+      "shape": "hexagon",
+      "phase": 2,
+      "dependencies": ["large_autocrafting"],
+      "tasks": [{ "type": "item", "item": "ae2:interface", "count": 1 }],
+      "rewards": [{ "type": "xp_levels", "xp_levels": 16 }]
+    },
+    {
+      "key": "p2p_tunnel",
+      "title": "P2P Tunnels",
+      "subtitle": "Compress channels",
+      "description": [
+        "P2P Tunnels compress 32 channels into one. Link them with a Memory Card to extend your network across your base.",
+        "This completes Phase 2. Next: a Quantum Network Bridge."
+      ],
+      "icon": "ae2:me_p2p_tunnel",
+      "shape": "hexagon",
+      "phase": 2,
+      "dependencies": ["interface"],
+      "tasks": [{ "type": "item", "item": "ae2:me_p2p_tunnel", "count": 1 }],
+      "rewards": [{ "type": "xp_levels", "xp_levels": 16 }]
+    },
+
+    {
+      "key": "import_bus",
+      "title": "Import Bus",
+      "subtitle": "Pull items into the network",
+      "description": ["An Import Bus pulls items from a chest or machine into your ME network."],
+      "icon": "ae2:import_bus",
+      "shape": "square",
+      "phase": 2,
+      "dependencies": ["autocrafting_setup"],
+      "tasks": [{ "type": "item", "item": "ae2:import_bus", "count": 1 }],
+      "rewards": [{ "type": "xp_levels", "xp_levels": 8 }]
+    },
+    {
+      "key": "level_emitter",
+      "title": "Level Emitter",
+      "subtitle": "Redstone from item counts",
+      "description": ["A Level Emitter emits redstone based on item count. Use it to turn factories on when low and off when full."],
+      "icon": "ae2:level_emitter",
+      "shape": "square",
+      "phase": 2,
+      "dependencies": ["autocrafting_setup"],
+      "tasks": [{ "type": "item", "item": "ae2:level_emitter", "count": 1 }],
+      "rewards": [{ "type": "xp_levels", "xp_levels": 12 }]
+    },
+    {
+      "key": "condenser",
+      "title": "Matter Condenser",
+      "subtitle": "Trash into matter",
+      "description": ["A Matter Condenser turns trash into Matter Balls, which become Singularities for the Quantum Bridge."],
+      "icon": "ae2:condenser",
+      "shape": "square",
+      "phase": 2,
+      "dependencies": ["autocrafting_setup"],
+      "tasks": [{ "type": "item", "item": "ae2:condenser", "count": 1 }],
+      "rewards": [{ "type": "xp_levels", "xp_levels": 12 }]
+    },
+
+    {
+      "key": "quantum_link",
+      "title": "Quantum Network Bridge",
+      "subtitle": "Cross-dimension networking",
+      "description": [
+        "A Quantum Link Chamber connects two ME networks across any distance or dimension. Link the rings with Entangled Singularities.",
+        "Next: Spatial Storage to move entire rooms."
+      ],
+      "icon": "ae2:quantum_link",
+      "shape": "hexagon",
+      "phase": 3,
+      "dependencies": ["p2p_tunnel"],
+      "tasks": [{ "type": "item", "item": "ae2:quantum_link", "count": 1 }],
+      "rewards": [
+        { "type": "xp_levels", "xp_levels": 24 },
+        { "type": "item", "item": "ae2:certus_quartz_crystal", "count": 16 }
+      ]
+    },
+    {
+      "key": "spatial_storage",
+      "title": "Spatial Storage",
+      "subtitle": "Store entire rooms",
+      "description": [
+        "A Spatial Storage Cell stores entire rooms - blocks, entities, everything - inside a Spatial Pylon ring. Move your factory in one operation.",
+        "This completes the AE2 chapter."
+      ],
+      "icon": "ae2:spatial_storage_cell_2",
+      "shape": "hexagon",
+      "phase": 3,
+      "dependencies": ["quantum_link"],
+      "tasks": [{ "type": "item", "item": "ae2:spatial_storage_cell_2", "count": 1 }],
+      "rewards": [
+        { "type": "xp_levels", "xp_levels": 24 },
+        { "type": "item", "item": "minecraft:dragon_breath", "count": 1 }
+      ]
+    },
+
+    {
+      "key": "wireless_terminal",
+      "title": "Wireless Terminal",
+      "subtitle": "Access your network anywhere",
+      "description": ["A Wireless Terminal accesses your ME network from anywhere in the same dimension."],
+      "icon": "ae2:wireless_terminal",
+      "shape": "square",
+      "phase": 3,
+      "dependencies": ["quantum_link"],
+      "tasks": [{ "type": "item", "item": "ae2:wireless_terminal", "count": 1 }],
+      "rewards": [{ "type": "xp_levels", "xp_levels": 16 }]
+    },
+    {
+      "key": "cell_workbench",
+      "title": "Cell Workbench",
+      "subtitle": "Partition storage cells",
+      "description": ["A Cell Workbench partitions cells by item type so one item cannot flood all storage."],
+      "icon": "ae2:cell_workbench",
+      "shape": "square",
+      "phase": 3,
+      "dependencies": ["quantum_link"],
+      "tasks": [{ "type": "item", "item": "ae2:cell_workbench", "count": 1 }],
+      "rewards": [{ "type": "xp_levels", "xp_levels": 8 }]
+    },
+    {
+      "key": "formation_plane",
+      "title": "Formation Plane",
+      "subtitle": "Place and break blocks",
+      "description": ["Formation and Annihilation Planes place and break blocks from your ME network. Use with a Level Emitter to auto-refill materials."],
+      "icon": "ae2:formation_plane",
+      "shape": "square",
+      "phase": 3,
+      "dependencies": ["quantum_link"],
+      "tasks": [{ "type": "item", "item": "ae2:formation_plane", "count": 1 }],
+      "rewards": [{ "type": "xp_levels", "xp_levels": 12 }]
+    }
+  ]
+}
