@@ -20,8 +20,19 @@
       "shape": "hexagon",
       "phase": 1,
       "dependencies": [],
-      "tasks": [{ "type": "item", "item": "farmersdelight:flint_knife", "count": 1 }],
-      "rewards": [{ "type": "xp_levels", "xp_levels": 8 }]
+      "tasks": [
+        {
+          "type": "item",
+          "item": "farmersdelight:flint_knife",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
     },
     {
       "key": "cutting_board",
@@ -34,9 +45,22 @@
       "icon": "farmersdelight:cutting_board",
       "shape": "hexagon",
       "phase": 1,
-      "dependencies": ["flint_knife"],
-      "tasks": [{ "type": "item", "item": "farmersdelight:cutting_board", "count": 1 }],
-      "rewards": [{ "type": "xp_levels", "xp_levels": 8 }]
+      "dependencies": [
+        "flint_knife"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "farmersdelight:cutting_board",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
     },
     {
       "key": "cooking_pot",
@@ -49,9 +73,22 @@
       "icon": "farmersdelight:cooking_pot",
       "shape": "hexagon",
       "phase": 1,
-      "dependencies": ["cutting_board"],
-      "tasks": [{ "type": "item", "item": "farmersdelight:cooking_pot", "count": 1 }],
-      "rewards": [{ "type": "xp_levels", "xp_levels": 8 }]
+      "dependencies": [
+        "cutting_board"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "farmersdelight:cooking_pot",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
     },
     {
       "key": "cabbage",
@@ -64,11 +101,26 @@
       "icon": "farmersdelight:cabbage",
       "shape": "hexagon",
       "phase": 1,
-      "dependencies": ["cooking_pot"],
-      "tasks": [{ "type": "item", "item": "farmersdelight:cabbage", "count": 1 }],
+      "dependencies": [
+        "cooking_pot"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "farmersdelight:cabbage",
+          "count": 1
+        }
+      ],
       "rewards": [
-        { "type": "xp_levels", "xp_levels": 8 },
-        { "type": "item", "item": "farmersdelight:cabbage", "count": 4 }
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        },
+        {
+          "type": "item",
+          "item": "farmersdelight:cabbage",
+          "count": 4
+        }
       ]
     },
     {
@@ -82,11 +134,26 @@
       "icon": "farmersdelight:vegetable_soup",
       "shape": "hexagon",
       "phase": 1,
-      "dependencies": ["cabbage"],
-      "tasks": [{ "type": "item", "item": "farmersdelight:vegetable_soup", "count": 1 }],
+      "dependencies": [
+        "cabbage"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "farmersdelight:vegetable_soup",
+          "count": 1
+        }
+      ],
       "rewards": [
-        { "type": "xp_levels", "xp_levels": 12 },
-        { "type": "item", "item": "farmersdelight:vegetable_soup", "count": 4 }
+        {
+          "type": "xp_levels",
+          "xp_levels": 12
+        },
+        {
+          "type": "item",
+          "item": "farmersdelight:vegetable_soup",
+          "count": 4
+        }
       ]
     },
     {
@@ -100,9 +167,22 @@
       "icon": "farmersdelight:skillet",
       "shape": "hexagon",
       "phase": 1,
-      "dependencies": ["vegetable_soup"],
-      "tasks": [{ "type": "item", "item": "farmersdelight:skillet", "count": 1 }],
-      "rewards": [{ "type": "xp_levels", "xp_levels": 8 }]
+      "dependencies": [
+        "vegetable_soup"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "farmersdelight:skillet",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
     },
     {
       "key": "stove",
@@ -115,9 +195,22 @@
       "icon": "farmersdelight:stove",
       "shape": "hexagon",
       "phase": 1,
-      "dependencies": ["skillet"],
-      "tasks": [{ "type": "item", "item": "farmersdelight:stove", "count": 1 }],
-      "rewards": [{ "type": "xp_levels", "xp_levels": 12 }]
+      "dependencies": [
+        "skillet"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "farmersdelight:stove",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 12
+        }
+      ]
     },
     {
       "key": "fried_rice",
@@ -130,11 +223,26 @@
       "icon": "farmersdelight:fried_rice",
       "shape": "hexagon",
       "phase": 2,
-      "dependencies": ["stove"],
-      "tasks": [{ "type": "item", "item": "farmersdelight:fried_rice", "count": 1 }],
+      "dependencies": [
+        "stove"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "farmersdelight:fried_rice",
+          "count": 1
+        }
+      ],
       "rewards": [
-        { "type": "xp_levels", "xp_levels": 16 },
-        { "type": "item", "item": "farmersdelight:fried_rice", "count": 4 }
+        {
+          "type": "xp_levels",
+          "xp_levels": 16
+        },
+        {
+          "type": "item",
+          "item": "farmersdelight:fried_rice",
+          "count": 4
+        }
       ]
     },
     {
@@ -148,57 +256,292 @@
       "icon": "farmersdelight:organic_compost",
       "shape": "hexagon",
       "phase": 2,
-      "dependencies": ["fried_rice"],
-      "tasks": [{ "type": "item", "item": "farmersdelight:organic_compost", "count": 1 }],
-      "rewards": [{ "type": "xp_levels", "xp_levels": 16 }]
+      "dependencies": [
+        "fried_rice"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "farmersdelight:organic_compost",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 16
+        }
+      ]
     },
     {
       "key": "tomato",
       "title": "Tomato",
       "subtitle": "Grow tomatoes",
-      "description": ["Tomatoes grow on vines and are a key ingredient in many meals."],
+      "description": [
+        "Tomatoes grow on vines and are a key ingredient in many meals."
+      ],
       "icon": "farmersdelight:tomato",
       "shape": "square",
       "phase": 1,
-      "dependencies": ["cabbage"],
-      "tasks": [{ "type": "item", "item": "farmersdelight:tomato", "count": 1 }],
-      "rewards": [{ "type": "xp_levels", "xp_levels": 8 }]
+      "dependencies": [
+        "cabbage"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "farmersdelight:tomato",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
     },
     {
       "key": "onion",
       "title": "Onion",
       "subtitle": "Grow onions",
-      "description": ["Onions add flavor to soups and stews."],
+      "description": [
+        "Onions add flavor to soups and stews."
+      ],
       "icon": "farmersdelight:onion",
       "shape": "square",
       "phase": 1,
-      "dependencies": ["cabbage"],
-      "tasks": [{ "type": "item", "item": "farmersdelight:onion", "count": 1 }],
-      "rewards": [{ "type": "xp_levels", "xp_levels": 8 }]
+      "dependencies": [
+        "cabbage"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "farmersdelight:onion",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
     },
     {
       "key": "rice",
       "title": "Rice",
       "subtitle": "Grow rice",
-      "description": ["Rice grows in shallow water and is the base of rice dishes."],
+      "description": [
+        "Rice grows in shallow water and is the base of rice dishes."
+      ],
       "icon": "farmersdelight:rice",
       "shape": "square",
       "phase": 1,
-      "dependencies": ["cabbage"],
-      "tasks": [{ "type": "item", "item": "farmersdelight:rice", "count": 1 }],
-      "rewards": [{ "type": "xp_levels", "xp_levels": 8 }]
+      "dependencies": [
+        "cabbage"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "farmersdelight:rice",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
     },
     {
       "key": "diamond_knife",
       "title": "Diamond Knife",
       "subtitle": "Upgraded knife",
-      "description": ["A Diamond Knife harvests faster and lasts longer than flint."],
+      "description": [
+        "A Diamond Knife harvests faster and lasts longer than flint."
+      ],
       "icon": "farmersdelight:diamond_knife",
       "shape": "square",
       "phase": 2,
-      "dependencies": ["stove"],
-      "tasks": [{ "type": "item", "item": "farmersdelight:diamond_knife", "count": 1 }],
-      "rewards": [{ "type": "xp_levels", "xp_levels": 12 }]
+      "dependencies": [
+        "stove"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "farmersdelight:diamond_knife",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 12
+        }
+      ]
+    },
+    {
+      "key": "oceansdelight",
+      "title": "Guardian Soup",
+      "subtitle": "Ocean's Delight seafood",
+      "description": [
+        "Guardian is a Ocean's Delight seafood item - craft it to explore this addon."
+      ],
+      "icon": "oceansdelight:guardian_soup",
+      "shape": "square",
+      "phase": 1,
+      "dependencies": [
+        "cooking_pot"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "oceansdelight:guardian_soup",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
+    },
+    {
+      "key": "endersdelight",
+      "title": "Ender Paella",
+      "subtitle": "Ender's Delight food",
+      "description": [
+        "Ender is a Ender's Delight food item - craft it to explore this addon."
+      ],
+      "icon": "endersdelight:ender_paella",
+      "shape": "square",
+      "phase": 2,
+      "dependencies": [
+        "fried_rice"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "endersdelight:ender_paella",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
+    },
+    {
+      "key": "mynethersdelight",
+      "title": "Egg Soup",
+      "subtitle": "My Nether's Delight food",
+      "description": [
+        "Egg is a My Nether's Delight food item - craft it to explore this addon."
+      ],
+      "icon": "mynethersdelight:egg_soup",
+      "shape": "square",
+      "phase": 2,
+      "dependencies": [
+        "fried_rice"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "mynethersdelight:egg_soup",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
+    },
+    {
+      "key": "twilightdelight",
+      "title": "Fiery Cooking Pot",
+      "subtitle": "Twilight Forest cooking",
+      "description": [
+        "Fiery is a Twilight Forest cooking item - craft it to explore this addon."
+      ],
+      "icon": "twilightdelight:fiery_cooking_pot",
+      "shape": "square",
+      "phase": 2,
+      "dependencies": [
+        "fried_rice"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "twilightdelight:fiery_cooking_pot",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
+    },
+    {
+      "key": "brewinandchewin",
+      "title": "Beer",
+      "subtitle": "Brewin' And Chewin' drinks",
+      "description": [
+        "Beer is a Brewin' And Chewin' drinks item - craft it to explore this addon."
+      ],
+      "icon": "brewinandchewin:beer",
+      "shape": "square",
+      "phase": 1,
+      "dependencies": [
+        "cooking_pot"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "brewinandchewin:beer",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
+    },
+    {
+      "key": "storagedelight",
+      "title": "Oak Drawer",
+      "subtitle": "Storage Delight kitchen storage",
+      "description": [
+        "Oak is a Storage Delight kitchen storage item - craft it to explore this addon."
+      ],
+      "icon": "storagedelight:oak_drawer",
+      "shape": "square",
+      "phase": 1,
+      "dependencies": [
+        "cutting_board"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "storagedelight:oak_drawer",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
     }
   ]
 }

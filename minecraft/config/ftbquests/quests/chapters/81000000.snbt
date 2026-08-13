@@ -469,6 +469,204 @@
         }
       ],
       "optional": false
+    },
+    {
+      "id": "8100002B",
+      "title": "Guardian Soup",
+      "subtitle": "Ocean's Delight seafood",
+      "description": [
+        "Guardian is a Ocean's Delight seafood item - craft it to explore this addon."
+      ],
+      "icon": "oceansdelight:guardian_soup",
+      "x": 1.5,
+      "y": 3,
+      "shape": "square",
+      "dependencies": [
+        "81000007"
+      ],
+      "tasks": [
+        {
+          "id": "8100002C",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "oceansdelight:guardian_soup"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "8100002D",
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "8100002E",
+      "title": "Ender Paella",
+      "subtitle": "Ender's Delight food",
+      "description": [
+        "Ender is a Ender's Delight food item - craft it to explore this addon."
+      ],
+      "icon": "endersdelight:ender_paella",
+      "x": 4.5,
+      "y": 1,
+      "shape": "square",
+      "dependencies": [
+        "81000018"
+      ],
+      "tasks": [
+        {
+          "id": "8100002F",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "endersdelight:ender_paella"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "81000030",
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "81000031",
+      "title": "Egg Soup",
+      "subtitle": "My Nether's Delight food",
+      "description": [
+        "Egg is a My Nether's Delight food item - craft it to explore this addon."
+      ],
+      "icon": "mynethersdelight:egg_soup",
+      "x": 4.5,
+      "y": 2,
+      "shape": "square",
+      "dependencies": [
+        "81000018"
+      ],
+      "tasks": [
+        {
+          "id": "81000032",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "mynethersdelight:egg_soup"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "81000033",
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "81000034",
+      "title": "Fiery Cooking Pot",
+      "subtitle": "Twilight Forest cooking",
+      "description": [
+        "Fiery is a Twilight Forest cooking item - craft it to explore this addon."
+      ],
+      "icon": "twilightdelight:fiery_cooking_pot",
+      "x": 4.5,
+      "y": 3,
+      "shape": "square",
+      "dependencies": [
+        "81000018"
+      ],
+      "tasks": [
+        {
+          "id": "81000035",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "twilightdelight:fiery_cooking_pot"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "81000036",
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "81000037",
+      "title": "Beer",
+      "subtitle": "Brewin' And Chewin' drinks",
+      "description": [
+        "Beer is a Brewin' And Chewin' drinks item - craft it to explore this addon."
+      ],
+      "icon": "brewinandchewin:beer",
+      "x": 1.5,
+      "y": 4,
+      "shape": "square",
+      "dependencies": [
+        "81000007"
+      ],
+      "tasks": [
+        {
+          "id": "81000038",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "brewinandchewin:beer"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "81000039",
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "8100003A",
+      "title": "Oak Drawer",
+      "subtitle": "Storage Delight kitchen storage",
+      "description": [
+        "Oak is a Storage Delight kitchen storage item - craft it to explore this addon."
+      ],
+      "icon": "storagedelight:oak_drawer",
+      "x": 1.5,
+      "y": 5,
+      "shape": "square",
+      "dependencies": [
+        "81000004"
+      ],
+      "tasks": [
+        {
+          "id": "8100003B",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "storagedelight:oak_drawer"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "8100003C",
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ],
+      "optional": false
     }
   ]
 }

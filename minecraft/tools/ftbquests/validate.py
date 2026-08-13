@@ -12,6 +12,8 @@ KNOWN_MODS = {
     "computercraft", "create", "ae2", "stellaris", "tfmg",
     "createbigcannons", "apotheosis", "simplyswords",
     "railways", "createaddition", "cgs", "powergrid", "farmersdelight",
+    "oceansdelight", "endersdelight", "mynethersdelight", "twilightdelight",
+    "brewinandchewin", "storagedelight", "sliceanddice",
 }
 ITEM_RE = re.compile(r"^[a-z0-9_]+:[a-z0-9_./]+$")
 
