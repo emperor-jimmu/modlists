@@ -20,10 +20,23 @@
       "shape": "hexagon",
       "phase": 1,
       "dependencies": [],
-      "tasks": [{ "type": "item", "item": "railways:track_monorail", "count": 8 }],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "railways:track_monorail",
+          "count": 8
+        }
+      ],
       "rewards": [
-        { "type": "xp_levels", "xp_levels": 8 },
-        { "type": "item", "item": "railways:track_monorail", "count": 8 }
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        },
+        {
+          "type": "item",
+          "item": "railways:track_monorail",
+          "count": 8
+        }
       ]
     },
     {
@@ -37,9 +50,22 @@
       "icon": "railways:semaphore",
       "shape": "hexagon",
       "phase": 1,
-      "dependencies": ["monorail_track"],
-      "tasks": [{ "type": "item", "item": "railways:semaphore", "count": 1 }],
-      "rewards": [{ "type": "xp_levels", "xp_levels": 8 }]
+      "dependencies": [
+        "monorail_track"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "railways:semaphore",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
     },
     {
       "key": "conductor_whistle",
@@ -52,9 +78,22 @@
       "icon": "railways:conductor_whistle",
       "shape": "hexagon",
       "phase": 1,
-      "dependencies": ["semaphore"],
-      "tasks": [{ "type": "item", "item": "railways:conductor_whistle", "count": 1 }],
-      "rewards": [{ "type": "xp_levels", "xp_levels": 8 }]
+      "dependencies": [
+        "semaphore"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "railways:conductor_whistle",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
     },
     {
       "key": "handcar",
@@ -67,9 +106,22 @@
       "icon": "railways:handcar",
       "shape": "hexagon",
       "phase": 1,
-      "dependencies": ["conductor_whistle"],
-      "tasks": [{ "type": "item", "item": "railways:handcar", "count": 1 }],
-      "rewards": [{ "type": "xp_levels", "xp_levels": 8 }]
+      "dependencies": [
+        "conductor_whistle"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "railways:handcar",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
     },
     {
       "key": "rail_line",
@@ -82,11 +134,26 @@
       "icon": "railways:track_monorail",
       "shape": "hexagon",
       "phase": 1,
-      "dependencies": ["handcar"],
-      "tasks": [{ "type": "item", "item": "railways:track_monorail", "count": 32 }],
+      "dependencies": [
+        "handcar"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "railways:track_monorail",
+          "count": 32
+        }
+      ],
       "rewards": [
-        { "type": "xp_levels", "xp_levels": 12 },
-        { "type": "item", "item": "railways:track_monorail", "count": 16 }
+        {
+          "type": "xp_levels",
+          "xp_levels": 12
+        },
+        {
+          "type": "item",
+          "item": "railways:track_monorail",
+          "count": 16
+        }
       ]
     },
     {
@@ -100,48 +167,108 @@
       "icon": "railways:track_monorail",
       "shape": "hexagon",
       "phase": 1,
-      "dependencies": ["rail_line"],
-      "tasks": [{ "type": "item", "item": "railways:track_monorail", "count": 64 }],
+      "dependencies": [
+        "rail_line"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "railways:track_monorail",
+          "count": 64
+        }
+      ],
       "rewards": [
-        { "type": "xp_levels", "xp_levels": 16 },
-        { "type": "item", "item": "railways:track_monorail", "count": 32 }
+        {
+          "type": "xp_levels",
+          "xp_levels": 16
+        },
+        {
+          "type": "item",
+          "item": "railways:track_monorail",
+          "count": 32
+        }
       ]
     },
     {
       "key": "wide_track",
       "title": "Wide Track",
       "subtitle": "Heavy-duty rails",
-      "description": ["Wide Track is a heavier rail variant for bigger, faster trains."],
-      "icon": "railways:track_wide",
+      "description": [
+        "Wide Track is a heavier rail variant - it comes in each wood type, this one is Dark Oak."
+      ],
+      "icon": "railways:track_dark_oak_wide",
       "shape": "square",
       "phase": 1,
-      "dependencies": ["monorail_track"],
-      "tasks": [{ "type": "item", "item": "railways:track_wide", "count": 1 }],
-      "rewards": [{ "type": "xp_levels", "xp_levels": 8 }]
+      "dependencies": [
+        "monorail_track"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "railways:track_dark_oak_wide",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
     },
     {
       "key": "coupler",
       "title": "Coupler",
       "subtitle": "Join train cars",
-      "description": ["A Coupler links train cars together into longer trains."],
+      "description": [
+        "A Coupler links train cars together into longer trains."
+      ],
       "icon": "railways:track_coupler",
       "shape": "square",
       "phase": 1,
-      "dependencies": ["monorail_track"],
-      "tasks": [{ "type": "item", "item": "railways:track_coupler", "count": 1 }],
-      "rewards": [{ "type": "xp_levels", "xp_levels": 8 }]
+      "dependencies": [
+        "monorail_track"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "railways:track_coupler",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
     },
     {
       "key": "remote_lens",
       "title": "Remote Lens",
       "subtitle": "Control trains from afar",
-      "description": ["A Remote Lens lets you control trains and signals from a distance."],
+      "description": [
+        "A Remote Lens lets you control trains and signals from a distance."
+      ],
       "icon": "railways:remote_lens",
       "shape": "square",
       "phase": 1,
-      "dependencies": ["monorail_track"],
-      "tasks": [{ "type": "item", "item": "railways:remote_lens", "count": 1 }],
-      "rewards": [{ "type": "xp_levels", "xp_levels": 8 }]
+      "dependencies": [
+        "monorail_track"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "railways:remote_lens",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
     }
   ]
 }

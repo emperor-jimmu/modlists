@@ -241,9 +241,9 @@
       "title": "Wide Track",
       "subtitle": "Heavy-duty rails",
       "description": [
-        "Wide Track is a heavier rail variant for bigger, faster trains."
+        "Wide Track is a heavier rail variant - it comes in each wood type, this one is Dark Oak."
       ],
-      "icon": "railways:track_wide",
+      "icon": "railways:track_dark_oak_wide",
       "x": 1.5,
       "y": 0,
       "shape": "square",
@@ -256,7 +256,7 @@
           "type": "item",
           "item": {
             "count": 1,
-            "id": "railways:track_wide"
+            "id": "railways:track_dark_oak_wide"
           }
         }
       ],
