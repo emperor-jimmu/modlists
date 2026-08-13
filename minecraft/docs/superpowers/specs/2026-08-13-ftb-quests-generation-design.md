@@ -1,0 +1,124 @@
+# FTB Quests Automated Generation — Design
+
+**Status**: Design — approved (pending spec review)
+**Date**: 2026-08-13
+**Scope**: Automated generation of FTB Quests chapter files (SNBT); pilot = Mekanism chapter.
+
+## Context
+
+FTB Quests content in this pack was previously authored through the in-game editor. That content was removed (commit `e34de5e` "removed old FTB content") to be re-authored via automated generation.
+
+The quest **content** — chapter layout, per-mod milestone/breadcrumb lists, per-quest titles/descriptions/tasks/rewards/dependencies, and reward philosophy — is already fully specified in two prior docs and is **not** redefined here:
+
+- `docs/superpowers/specs/2026-07-27-ftb-quests-design.md` — chapter layout, milestone/breadcrumb lists, reward philosophy.
+- `docs/superpowers/plans/2026-07-27-ftb-quests-implementation.md` — per-quest titles, descriptions, task items, rewards, dependencies.
+
+This spec defines the **generation pipeline** that converts that content into loadable files, plus the **verify loop** that satisfies the "generate → re-check → fix until certain" requirement.
+
+## Decisions
+
+| Area | Decision |
+|---|---|
+| Approach | Data-driven generator + validator script (not hand-typed SNBT, not in-game editor) |
+| Content source | July design + implementation docs — reuse, do not rewrite |
+| Output format | New per-chapter layout: `config/ftbquests/quests/chapters/<id>.snbt`, plus `chapter_groups.snbt` and `data.snbt`. The old `quests.snbt` / `rewards.snbt` format is superseded in this pack's FTB Quests version. |
+| Format ground truth | `20008000.snbt` (CC:Tweaked chapter) recovered from git history via `git show 903611e:minecraft/config/ftbquests/quests/chapters/20008000.snbt` — proven to load in this pack's FTB Quests version |
+| Reward philosophy | Unchanged from July spec: XP levels + phase-scaled consumable materials; no placement/utility blocks; no gated items |
+| Task types (pilot) | `item` (obtain, `consume_items:false`) as primary. `checkmark` only where detection is unreliable; exact field shape verified against FTB Quests before use. |
+| Reward types (pilot) | `xp_levels`, `item` |
+| Scope | Pilot = Mekanism chapter only. Field Guide lore deferred (separate follow-up). MineColonies Questline untouched (the mod self-generates its chapters). |
+| Rollout | Pilot one chapter → validate end-to-end → scale to Create, AE2, Apotheosis, Stellaris |
+
+## SNBT format (proven ground truth)
+
+From the recovered `20008000.snbt`. The pack's `.snbt` is JSON-compatible (double-quoted keys, commas, arrays/objects). Every `id` is an 8-character hex string.
+
+**Chapter object:**
+
+```json
+{
+  "id": "20008000",
+  "group": "20000001",
+  "order_index": 7,
+  "title": "Programmable Computers",
+  "subtitle": "Write Lua programs to automate your world",
+  "icon": "computercraft:computer_normal",
+  "default_quest_shape": "square",
+  "quests": [ /* quest objects */ ]
+}
+```
+
+**Quest object:**
+
+```json
+{
+  "id": "20008001",
+  "title": "Build a Computer",
+  "subtitle": "Craft and boot your first computer",
+  "description": [ "line one", "line two" ],
+  "icon": "computercraft:computer_normal",
+  "x": 0, "y": 0,
+  "shape": "square",
+  "dependencies": [ "20008001" ],
+  "tasks": [ /* task objects */ ],
+  "rewards": [ /* reward objects */ ],
+  "optional": false
+}
+```
+
+**Item task:**
+
+```json
+{ "id": "20008002", "type": "item", "item": "computercraft:computer_normal", "count": 1, "consume_items": false }
+```
+
+**Rewards:**
+
+```json
+{ "id": "20008003", "type": "xp_levels", "xp_levels": 3 }
+{ "id": "20008006", "type": "item", "item": "minecraft:redstone", "count": 16, "reward_table_index": 0 }
+```
+
+**Group (`chapter_groups.snbt`):**
+
+```json
+{ "chapter_groups": [ { "id": "20000001", "title": "Main", "order_index": 0 } ] }
+```
+
+**Global settings (`data.snbt`):** `{ "version": 1, "default_reward_team": false, ... }` — emitted once, unchanged.
+
+## Generator design
+
+- **Input**: quest definitions as structured data (one record per quest), sourced verbatim from the July implementation doc (title, subtitle, description lines, task item + count, rewards, dependencies, shape, grid x/y).
+- **Emit**: `.snbt` files in the proven JSON-compatible style above — one chapter file per chapter, plus `chapter_groups.snbt` and `data.snbt`.
+- **ID assignment**: the generator maintains a global registry. Each chapter gets a reserved 8-hex base ID; quests/tasks/rewards increment from it. The registry guarantees uniqueness and explicitly avoids the regenerating MineColonies chapter IDs (`20002099`, `200020E1`, `20000077`, `200000F5`, `2000205B`) and the removed CC:Tweaked block (`20008000`).
+- **Layout**: x/y follow the July grid convention — Phase 1 milestones at x=0.0, Phase 1 breadcrumbs at x=1.5, Phase 2 milestones x=3.0, Phase 2 breadcrumbs x=4.5, Phase 3 milestones x=6.0, Phase 3 breadcrumbs x=7.5; y increments per quest in dependency order.
+- **Shapes**: milestones = `hexagon`, breadcrumbs = `square` (per July spec).
+
+## Validator + verify loop
+
+The generator output must pass these checks in order, and any failure is fixed at source and regenerated:
+
+1. **Parse** — output is valid JSON (and therefore loadable SNBT).
+2. **Uniqueness** — every `id` (chapters, quests, tasks, rewards, groups) is globally unique.
+3. **Reference closure** — every `dependencies[]` entry and every `group` resolves to an existing ID.
+4. **Completeness** — every quest has the required fields; no empty `tasks`/`rewards` where the July spec requires them; `title`/`icon` present.
+5. **Item IDs** — every `item` field matches a known item ID from the pack's mods (sourced from the July doc's item references + Mekanism registry). Any unresolved ID is surfaced and must be confirmed before the file is considered valid.
+6. **In-game checkpoint (human, required)** — place the files, run `/ftbquests reload`, confirm zero parse errors, quests render with correct shape/icon/dependency arrows, and one quest is actually completable in survival. This is the final arbiter for item-ID correctness, which static validation cannot fully prove.
+
+## Success criteria (pilot)
+
+- Mekanism chapter loads with no parse errors after `/ftbquests reload`.
+- All quests render with correct shapes, icons, and dependency arrows.
+- A fresh survival world can complete the Power Generation → Basic Metallurgy → Ore Doubling chain through item detection alone.
+- The validator passes checks 1–5 on the committed output.
+
+## Out of scope
+
+- Field Guide lore (separate follow-up).
+- Non-Mekanism chapters (Create, AE2, Apotheosis, Stellaris) — after the pilot.
+- Removing or replacing the MineColonies Questline mod.
+
+## Open question
+
+- **Mekanism chapter size**: the July design specifies 33 quests (20 milestones + 13 breadcrumbs); the GUIDE.md rough table says "~20" (milestones only). The pilot should target the **full chapter (33)** for a complete deliverable, unless milestones-only is preferred.
