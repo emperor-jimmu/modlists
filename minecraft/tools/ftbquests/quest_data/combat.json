@@ -237,6 +237,168 @@
           "xp_levels": 8
         }
       ]
+    },
+    {
+      "key": "pp_armorloadplatform",
+      "title": "Armor Load Platform",
+      "subtitle": "Protection Pixel assembly station",
+      "description": [
+        "Armor Load Platform is a Protection Pixel assembly station item."
+      ],
+      "icon": "protection_pixel:armorloadplatform",
+      "shape": "square",
+      "phase": 2,
+      "dependencies": [
+        "solid_shot"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "protection_pixel:armorloadplatform",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
+    },
+    {
+      "key": "pp_alloyarmorplate",
+      "title": "Alloy Armor Plate",
+      "subtitle": "Protection Pixel armor material",
+      "description": [
+        "Alloy Armor Plate is a Protection Pixel armor material item."
+      ],
+      "icon": "protection_pixel:alloyarmorplate",
+      "shape": "square",
+      "phase": 2,
+      "dependencies": [
+        "solid_shot"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "protection_pixel:alloyarmorplate",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
+    },
+    {
+      "key": "pp_brassarmorplate",
+      "title": "Brass Armor Plate",
+      "subtitle": "Protection Pixel brass armor",
+      "description": [
+        "Brass Armor Plate is a Protection Pixel brass armor item."
+      ],
+      "icon": "protection_pixel:brassarmorplate",
+      "shape": "square",
+      "phase": 2,
+      "dependencies": [
+        "solid_shot"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "protection_pixel:brassarmorplate",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
+    },
+    {
+      "key": "pp_breaker_chestplate",
+      "title": "Breaker Chestplate",
+      "subtitle": "Protection Pixel combat armor",
+      "description": [
+        "Breaker Chestplate is a Protection Pixel combat armor item."
+      ],
+      "icon": "protection_pixel:breaker_chestplate",
+      "shape": "square",
+      "phase": 2,
+      "dependencies": [
+        "solid_shot"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "protection_pixel:breaker_chestplate",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
+    },
+    {
+      "key": "gs_nailgun",
+      "title": "Nailgun",
+      "subtitle": "Gunsmithing tool",
+      "description": [
+        "Nailgun is a Gunsmithing tool item."
+      ],
+      "icon": "cgs:nailgun",
+      "shape": "square",
+      "phase": 1,
+      "dependencies": [
+        "gatling"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "cgs:nailgun",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
+    },
+    {
+      "key": "gs_rocket",
+      "title": "Rocket",
+      "subtitle": "Gunsmithing launcher ammo",
+      "description": [
+        "Rocket is a Gunsmithing launcher ammo item."
+      ],
+      "icon": "cgs:rocket",
+      "shape": "square",
+      "phase": 1,
+      "dependencies": [
+        "gatling"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "cgs:rocket",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
     }
   ]
 }

@@ -799,6 +799,171 @@
         }
       ],
       "optional": false
+    },
+    {
+      "id": "81000049",
+      "title": "Apple Pie",
+      "subtitle": "Farmer's Delight meal",
+      "description": [
+        "Apple Pie is a nourishing Farmer's Delight meal."
+      ],
+      "icon": "farmersdelight:apple_pie",
+      "x": 4.5,
+      "y": 6,
+      "shape": "square",
+      "dependencies": [
+        "81000018"
+      ],
+      "tasks": [
+        {
+          "id": "8100004A",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "farmersdelight:apple_pie"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "8100004B",
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "8100004C",
+      "title": "Chicken Soup",
+      "subtitle": "Farmer's Delight meal",
+      "description": [
+        "Chicken Soup is a nourishing Farmer's Delight meal."
+      ],
+      "icon": "farmersdelight:chicken_soup",
+      "x": 1.5,
+      "y": 8,
+      "shape": "square",
+      "dependencies": [
+        "8100000E"
+      ],
+      "tasks": [
+        {
+          "id": "8100004D",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "farmersdelight:chicken_soup"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "8100004E",
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "8100004F",
+      "title": "Mixed Salad",
+      "subtitle": "Farmer's Delight meal",
+      "description": [
+        "Mixed Salad is a nourishing Farmer's Delight meal."
+      ],
+      "icon": "farmersdelight:mixed_salad",
+      "x": 1.5,
+      "y": 9,
+      "shape": "square",
+      "dependencies": [
+        "8100000E"
+      ],
+      "tasks": [
+        {
+          "id": "81000050",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "farmersdelight:mixed_salad"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "81000051",
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "81000052",
+      "title": "Hamburger",
+      "subtitle": "Farmer's Delight meal",
+      "description": [
+        "Hamburger is a nourishing Farmer's Delight meal."
+      ],
+      "icon": "farmersdelight:hamburger",
+      "x": 4.5,
+      "y": 7,
+      "shape": "square",
+      "dependencies": [
+        "81000012"
+      ],
+      "tasks": [
+        {
+          "id": "81000053",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "farmersdelight:hamburger"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "81000054",
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "81000055",
+      "title": "Smoked Ham",
+      "subtitle": "Farmer's Delight meal",
+      "description": [
+        "Smoked Ham is a nourishing Farmer's Delight meal."
+      ],
+      "icon": "farmersdelight:smoked_ham",
+      "x": 4.5,
+      "y": 8,
+      "shape": "square",
+      "dependencies": [
+        "81000012"
+      ],
+      "tasks": [
+        {
+          "id": "81000056",
+          "type": "item",
+          "item": {
+            "count": 1,
+            "id": "farmersdelight:smoked_ham"
+          }
+        }
+      ],
+      "rewards": [
+        {
+          "id": "81000057",
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ],
+      "optional": false
     }
   ]
 }

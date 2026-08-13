@@ -650,6 +650,141 @@
           "xp_levels": 12
         }
       ]
+    },
+    {
+      "key": "fd_apple_pie",
+      "title": "Apple Pie",
+      "subtitle": "Farmer's Delight meal",
+      "description": [
+        "Apple Pie is a nourishing Farmer's Delight meal."
+      ],
+      "icon": "farmersdelight:apple_pie",
+      "shape": "square",
+      "phase": 2,
+      "dependencies": [
+        "fried_rice"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "farmersdelight:apple_pie",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
+    },
+    {
+      "key": "fd_chicken_soup",
+      "title": "Chicken Soup",
+      "subtitle": "Farmer's Delight meal",
+      "description": [
+        "Chicken Soup is a nourishing Farmer's Delight meal."
+      ],
+      "icon": "farmersdelight:chicken_soup",
+      "shape": "square",
+      "phase": 1,
+      "dependencies": [
+        "vegetable_soup"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "farmersdelight:chicken_soup",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
+    },
+    {
+      "key": "fd_mixed_salad",
+      "title": "Mixed Salad",
+      "subtitle": "Farmer's Delight meal",
+      "description": [
+        "Mixed Salad is a nourishing Farmer's Delight meal."
+      ],
+      "icon": "farmersdelight:mixed_salad",
+      "shape": "square",
+      "phase": 1,
+      "dependencies": [
+        "vegetable_soup"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "farmersdelight:mixed_salad",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
+    },
+    {
+      "key": "fd_hamburger",
+      "title": "Hamburger",
+      "subtitle": "Farmer's Delight meal",
+      "description": [
+        "Hamburger is a nourishing Farmer's Delight meal."
+      ],
+      "icon": "farmersdelight:hamburger",
+      "shape": "square",
+      "phase": 2,
+      "dependencies": [
+        "skillet"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "farmersdelight:hamburger",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
+    },
+    {
+      "key": "fd_smoked_ham",
+      "title": "Smoked Ham",
+      "subtitle": "Farmer's Delight meal",
+      "description": [
+        "Smoked Ham is a nourishing Farmer's Delight meal."
+      ],
+      "icon": "farmersdelight:smoked_ham",
+      "shape": "square",
+      "phase": 2,
+      "dependencies": [
+        "skillet"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "farmersdelight:smoked_ham",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
     }
   ]
 }
