@@ -20,8 +20,19 @@
       "shape": "hexagon",
       "phase": 1,
       "dependencies": [],
-      "tasks": [{ "type": "item", "item": "stellaris:rocket_station", "count": 1 }],
-      "rewards": [{ "type": "xp_levels", "xp_levels": 8 }]
+      "tasks": [
+        {
+          "type": "item",
+          "item": "stellaris:rocket_station",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
     },
     {
       "key": "fuel_refinery",
@@ -34,9 +45,22 @@
       "icon": "stellaris:fuel_refinery",
       "shape": "hexagon",
       "phase": 1,
-      "dependencies": ["rocket_station"],
-      "tasks": [{ "type": "item", "item": "stellaris:fuel_refinery", "count": 1 }],
-      "rewards": [{ "type": "xp_levels", "xp_levels": 8 }]
+      "dependencies": [
+        "rocket_station"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "stellaris:fuel_refinery",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
     },
     {
       "key": "space_suit_helmet",
@@ -49,9 +73,22 @@
       "icon": "stellaris:space_suit_helmet",
       "shape": "hexagon",
       "phase": 1,
-      "dependencies": ["fuel_refinery"],
-      "tasks": [{ "type": "item", "item": "stellaris:space_suit_helmet", "count": 1 }],
-      "rewards": [{ "type": "xp_levels", "xp_levels": 8 }]
+      "dependencies": [
+        "fuel_refinery"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "stellaris:space_suit_helmet",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
     },
     {
       "key": "space_suit_chestplate",
@@ -64,9 +101,22 @@
       "icon": "stellaris:space_suit_chestplate",
       "shape": "hexagon",
       "phase": 1,
-      "dependencies": ["space_suit_helmet"],
-      "tasks": [{ "type": "item", "item": "stellaris:space_suit_chestplate", "count": 1 }],
-      "rewards": [{ "type": "xp_levels", "xp_levels": 8 }]
+      "dependencies": [
+        "space_suit_helmet"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "stellaris:space_suit_chestplate",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
     },
     {
       "key": "oxygen_distributor",
@@ -79,9 +129,22 @@
       "icon": "stellaris:oxygen_distributor",
       "shape": "hexagon",
       "phase": 1,
-      "dependencies": ["space_suit_chestplate"],
-      "tasks": [{ "type": "item", "item": "stellaris:oxygen_distributor", "count": 1 }],
-      "rewards": [{ "type": "xp_levels", "xp_levels": 8 }]
+      "dependencies": [
+        "space_suit_chestplate"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "stellaris:oxygen_distributor",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
     },
     {
       "key": "water_separator",
@@ -94,9 +157,22 @@
       "icon": "stellaris:water_separator",
       "shape": "hexagon",
       "phase": 1,
-      "dependencies": ["oxygen_distributor"],
-      "tasks": [{ "type": "item", "item": "stellaris:water_separator", "count": 1 }],
-      "rewards": [{ "type": "xp_levels", "xp_levels": 8 }]
+      "dependencies": [
+        "oxygen_distributor"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "stellaris:water_separator",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
     },
     {
       "key": "solar_panel",
@@ -109,9 +185,22 @@
       "icon": "stellaris:solar_panel",
       "shape": "hexagon",
       "phase": 1,
-      "dependencies": ["water_separator"],
-      "tasks": [{ "type": "item", "item": "stellaris:solar_panel", "count": 1 }],
-      "rewards": [{ "type": "xp_levels", "xp_levels": 8 }]
+      "dependencies": [
+        "water_separator"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "stellaris:solar_panel",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
     },
     {
       "key": "rocket",
@@ -124,11 +213,26 @@
       "icon": "stellaris:rocket",
       "shape": "hexagon",
       "phase": 1,
-      "dependencies": ["solar_panel"],
-      "tasks": [{ "type": "item", "item": "stellaris:rocket", "count": 1 }],
+      "dependencies": [
+        "solar_panel"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "stellaris:rocket",
+          "count": 1
+        }
+      ],
       "rewards": [
-        { "type": "xp_levels", "xp_levels": 16 },
-        { "type": "item", "item": "stellaris:rocket", "count": 1 }
+        {
+          "type": "xp_levels",
+          "xp_levels": 16
+        },
+        {
+          "type": "item",
+          "item": "stellaris:rocket",
+          "count": 1
+        }
       ]
     },
     {
@@ -142,9 +246,22 @@
       "icon": "stellaris:rocket_engine",
       "shape": "hexagon",
       "phase": 2,
-      "dependencies": ["rocket"],
-      "tasks": [{ "type": "item", "item": "stellaris:rocket_engine", "count": 1 }],
-      "rewards": [{ "type": "xp_levels", "xp_levels": 16 }]
+      "dependencies": [
+        "rocket"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "stellaris:rocket_engine",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 16
+        }
+      ]
     },
     {
       "key": "desh_ingot",
@@ -157,11 +274,26 @@
       "icon": "stellaris:desh_ingot",
       "shape": "hexagon",
       "phase": 2,
-      "dependencies": ["rocket_engine"],
-      "tasks": [{ "type": "item", "item": "stellaris:desh_ingot", "count": 1 }],
+      "dependencies": [
+        "rocket_engine"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "stellaris:desh_ingot",
+          "count": 1
+        }
+      ],
       "rewards": [
-        { "type": "xp_levels", "xp_levels": 16 },
-        { "type": "item", "item": "stellaris:desh_ingot", "count": 4 }
+        {
+          "type": "xp_levels",
+          "xp_levels": 16
+        },
+        {
+          "type": "item",
+          "item": "stellaris:desh_ingot",
+          "count": 4
+        }
       ]
     },
     {
@@ -175,9 +307,22 @@
       "icon": "stellaris:rover",
       "shape": "hexagon",
       "phase": 2,
-      "dependencies": ["desh_ingot"],
-      "tasks": [{ "type": "item", "item": "stellaris:rover", "count": 1 }],
-      "rewards": [{ "type": "xp_levels", "xp_levels": 16 }]
+      "dependencies": [
+        "desh_ingot"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "stellaris:rover",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 16
+        }
+      ]
     },
     {
       "key": "tharsite_ingot",
@@ -190,72 +335,162 @@
       "icon": "stellaris:tharsite_ingot",
       "shape": "hexagon",
       "phase": 3,
-      "dependencies": ["rover"],
-      "tasks": [{ "type": "item", "item": "stellaris:tharsite_ingot", "count": 1 }],
+      "dependencies": [
+        "rover"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "stellaris:tharsite_ingot",
+          "count": 1
+        }
+      ],
       "rewards": [
-        { "type": "xp_levels", "xp_levels": 24 },
-        { "type": "item", "item": "stellaris:tharsite_ingot", "count": 4 }
+        {
+          "type": "xp_levels",
+          "xp_levels": 24
+        },
+        {
+          "type": "item",
+          "item": "stellaris:tharsite_ingot",
+          "count": 4
+        }
       ]
     },
     {
-      "key": "fuel",
-      "title": "Rocket Fuel",
-      "subtitle": "Launch propellant",
-      "description": ["Rocket Fuel powers every launch. Stockpile it from the Fuel Refinery."],
-      "icon": "stellaris:fuel",
+      "key": "fuel_bucket",
+      "title": "Fuel Bucket",
+      "subtitle": "Rocket fuel (a fluid)",
+      "description": [
+        "Fuel is a fluid produced by the Fuel Refinery. Carry it as a Fuel Bucket to fill your rockets."
+      ],
+      "icon": "stellaris:fuel_bucket",
       "shape": "square",
       "phase": 1,
-      "dependencies": ["fuel_refinery"],
-      "tasks": [{ "type": "item", "item": "stellaris:fuel", "count": 1 }],
-      "rewards": [{ "type": "xp_levels", "xp_levels": 8 }]
+      "dependencies": [
+        "fuel_refinery"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "stellaris:fuel_bucket",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
     },
     {
       "key": "oxygen_tank",
       "title": "Oxygen Tank",
       "subtitle": "Carry oxygen",
-      "description": ["An Oxygen Tank stores oxygen for your suit. Craft a few before long trips."],
+      "description": [
+        "An Oxygen Tank stores oxygen for your suit. Craft a few before long trips."
+      ],
       "icon": "stellaris:oxygen_tank",
       "shape": "square",
       "phase": 1,
-      "dependencies": ["oxygen_distributor"],
-      "tasks": [{ "type": "item", "item": "stellaris:oxygen_tank", "count": 1 }],
-      "rewards": [{ "type": "xp_levels", "xp_levels": 8 }]
+      "dependencies": [
+        "oxygen_distributor"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "stellaris:oxygen_tank",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
     },
     {
       "key": "rocket_fin",
       "title": "Rocket Fin",
       "subtitle": "Stabilize your rocket",
-      "description": ["Rocket Fins keep your rocket stable in flight."],
+      "description": [
+        "Rocket Fins keep your rocket stable in flight."
+      ],
       "icon": "stellaris:rocket_fin",
       "shape": "square",
       "phase": 1,
-      "dependencies": ["rocket"],
-      "tasks": [{ "type": "item", "item": "stellaris:rocket_fin", "count": 1 }],
-      "rewards": [{ "type": "xp_levels", "xp_levels": 8 }]
+      "dependencies": [
+        "rocket"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "stellaris:rocket_fin",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
     },
     {
       "key": "space_suit_leggings",
       "title": "Space Suit Leggings",
       "subtitle": "Complete the suit",
-      "description": ["Space Suit Leggings complete the lower half of your suit."],
+      "description": [
+        "Space Suit Leggings complete the lower half of your suit."
+      ],
       "icon": "stellaris:space_suit_leggings",
       "shape": "square",
       "phase": 1,
-      "dependencies": ["space_suit_chestplate"],
-      "tasks": [{ "type": "item", "item": "stellaris:space_suit_leggings", "count": 1 }],
-      "rewards": [{ "type": "xp_levels", "xp_levels": 8 }]
+      "dependencies": [
+        "space_suit_chestplate"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "stellaris:space_suit_leggings",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
     },
     {
       "key": "rocket_launch_pad",
       "title": "Rocket Launch Pad",
       "subtitle": "Launch infrastructure",
-      "description": ["A Rocket Launch Pad is where rockets take off. Build several for fast planet-hopping."],
+      "description": [
+        "A Rocket Launch Pad is where rockets take off. Build several for fast planet-hopping."
+      ],
       "icon": "stellaris:rocket_launch_pad",
       "shape": "square",
       "phase": 2,
-      "dependencies": ["rocket"],
-      "tasks": [{ "type": "item", "item": "stellaris:rocket_launch_pad", "count": 1 }],
-      "rewards": [{ "type": "xp_levels", "xp_levels": 12 }]
+      "dependencies": [
+        "rocket"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "stellaris:rocket_launch_pad",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 12
+        }
+      ]
     }
   ]
 }
