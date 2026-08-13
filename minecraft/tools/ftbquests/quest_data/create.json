@@ -20,10 +20,23 @@
       "shape": "hexagon",
       "phase": 1,
       "dependencies": [],
-      "tasks": [{ "type": "item", "item": "create:water_wheel", "count": 1 }],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "create:water_wheel",
+          "count": 1
+        }
+      ],
       "rewards": [
-        { "type": "xp_levels", "xp_levels": 8 },
-        { "type": "item", "item": "create:andesite_alloy", "count": 4 }
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        },
+        {
+          "type": "item",
+          "item": "create:andesite_alloy",
+          "count": 4
+        }
       ]
     },
     {
@@ -37,11 +50,26 @@
       "icon": "create:millstone",
       "shape": "hexagon",
       "phase": 1,
-      "dependencies": ["water_wheel"],
-      "tasks": [{ "type": "item", "item": "create:millstone", "count": 1 }],
+      "dependencies": [
+        "water_wheel"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "create:millstone",
+          "count": 1
+        }
+      ],
       "rewards": [
-        { "type": "xp_levels", "xp_levels": 8 },
-        { "type": "item", "item": "minecraft:iron_ingot", "count": 4 }
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        },
+        {
+          "type": "item",
+          "item": "minecraft:iron_ingot",
+          "count": 4
+        }
       ]
     },
     {
@@ -55,11 +83,26 @@
       "icon": "create:mechanical_press",
       "shape": "hexagon",
       "phase": 1,
-      "dependencies": ["millstone"],
-      "tasks": [{ "type": "item", "item": "create:mechanical_press", "count": 1 }],
+      "dependencies": [
+        "millstone"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "create:mechanical_press",
+          "count": 1
+        }
+      ],
       "rewards": [
-        { "type": "xp_levels", "xp_levels": 8 },
-        { "type": "item", "item": "minecraft:iron_ingot", "count": 4 }
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        },
+        {
+          "type": "item",
+          "item": "minecraft:iron_ingot",
+          "count": 4
+        }
       ]
     },
     {
@@ -73,11 +116,26 @@
       "icon": "create:mechanical_pump",
       "shape": "hexagon",
       "phase": 1,
-      "dependencies": ["mechanical_press"],
-      "tasks": [{ "type": "item", "item": "create:mechanical_pump", "count": 1 }],
+      "dependencies": [
+        "mechanical_press"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "create:mechanical_pump",
+          "count": 1
+        }
+      ],
       "rewards": [
-        { "type": "xp_levels", "xp_levels": 8 },
-        { "type": "item", "item": "minecraft:copper_ingot", "count": 4 }
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        },
+        {
+          "type": "item",
+          "item": "minecraft:copper_ingot",
+          "count": 4
+        }
       ]
     },
     {
@@ -91,11 +149,26 @@
       "icon": "create:fluid_tank",
       "shape": "hexagon",
       "phase": 1,
-      "dependencies": ["mechanical_pump"],
-      "tasks": [{ "type": "item", "item": "create:fluid_tank", "count": 1 }],
+      "dependencies": [
+        "mechanical_pump"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "create:fluid_tank",
+          "count": 1
+        }
+      ],
       "rewards": [
-        { "type": "xp_levels", "xp_levels": 8 },
-        { "type": "item", "item": "minecraft:copper_ingot", "count": 4 }
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        },
+        {
+          "type": "item",
+          "item": "minecraft:copper_ingot",
+          "count": 4
+        }
       ]
     },
     {
@@ -109,11 +182,26 @@
       "icon": "create:brass_ingot",
       "shape": "hexagon",
       "phase": 1,
-      "dependencies": ["fluid_tank"],
-      "tasks": [{ "type": "item", "item": "create:brass_ingot", "count": 1 }],
+      "dependencies": [
+        "fluid_tank"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "create:brass_ingot",
+          "count": 1
+        }
+      ],
       "rewards": [
-        { "type": "xp_levels", "xp_levels": 12 },
-        { "type": "item", "item": "create:brass_ingot", "count": 4 }
+        {
+          "type": "xp_levels",
+          "xp_levels": 12
+        },
+        {
+          "type": "item",
+          "item": "create:brass_ingot",
+          "count": 4
+        }
       ]
     },
     {
@@ -127,11 +215,26 @@
       "icon": "create:mechanical_crafter",
       "shape": "hexagon",
       "phase": 1,
-      "dependencies": ["brass_ingot"],
-      "tasks": [{ "type": "item", "item": "create:mechanical_crafter", "count": 1 }],
+      "dependencies": [
+        "brass_ingot"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "create:mechanical_crafter",
+          "count": 1
+        }
+      ],
       "rewards": [
-        { "type": "xp_levels", "xp_levels": 12 },
-        { "type": "item", "item": "create:precision_mechanism", "count": 1 }
+        {
+          "type": "xp_levels",
+          "xp_levels": 12
+        },
+        {
+          "type": "item",
+          "item": "create:precision_mechanism",
+          "count": 1
+        }
       ]
     },
     {
@@ -145,11 +248,26 @@
       "icon": "create:encased_fan",
       "shape": "hexagon",
       "phase": 1,
-      "dependencies": ["mechanical_crafter"],
-      "tasks": [{ "type": "item", "item": "create:encased_fan", "count": 1 }],
+      "dependencies": [
+        "mechanical_crafter"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "create:encased_fan",
+          "count": 1
+        }
+      ],
       "rewards": [
-        { "type": "xp_levels", "xp_levels": 8 },
-        { "type": "item", "item": "minecraft:iron_ingot", "count": 8 }
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        },
+        {
+          "type": "item",
+          "item": "minecraft:iron_ingot",
+          "count": 8
+        }
       ]
     },
     {
@@ -163,11 +281,26 @@
       "icon": "create:belt_connector",
       "shape": "hexagon",
       "phase": 1,
-      "dependencies": ["encased_fan"],
-      "tasks": [{ "type": "item", "item": "create:belt_connector", "count": 1 }],
+      "dependencies": [
+        "encased_fan"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "create:belt_connector",
+          "count": 1
+        }
+      ],
       "rewards": [
-        { "type": "xp_levels", "xp_levels": 8 },
-        { "type": "item", "item": "minecraft:redstone", "count": 8 }
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        },
+        {
+          "type": "item",
+          "item": "minecraft:redstone",
+          "count": 8
+        }
       ]
     },
     {
@@ -181,11 +314,26 @@
       "icon": "create:chute",
       "shape": "hexagon",
       "phase": 1,
-      "dependencies": ["belt"],
-      "tasks": [{ "type": "item", "item": "create:chute", "count": 1 }],
+      "dependencies": [
+        "belt"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "create:chute",
+          "count": 1
+        }
+      ],
       "rewards": [
-        { "type": "xp_levels", "xp_levels": 8 },
-        { "type": "item", "item": "minecraft:redstone", "count": 8 }
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        },
+        {
+          "type": "item",
+          "item": "minecraft:redstone",
+          "count": 8
+        }
       ]
     },
     {
@@ -199,11 +347,26 @@
       "icon": "create:brass_funnel",
       "shape": "hexagon",
       "phase": 1,
-      "dependencies": ["chute"],
-      "tasks": [{ "type": "item", "item": "create:brass_funnel", "count": 1 }],
+      "dependencies": [
+        "chute"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "create:brass_funnel",
+          "count": 1
+        }
+      ],
       "rewards": [
-        { "type": "xp_levels", "xp_levels": 8 },
-        { "type": "item", "item": "minecraft:redstone", "count": 8 }
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        },
+        {
+          "type": "item",
+          "item": "minecraft:redstone",
+          "count": 8
+        }
       ]
     },
     {
@@ -217,11 +380,26 @@
       "icon": "create:track",
       "shape": "hexagon",
       "phase": 1,
-      "dependencies": ["brass_funnel"],
-      "tasks": [{ "type": "item", "item": "create:track", "count": 1 }],
+      "dependencies": [
+        "brass_funnel"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "create:track",
+          "count": 1
+        }
+      ],
       "rewards": [
-        { "type": "xp_levels", "xp_levels": 12 },
-        { "type": "item", "item": "minecraft:iron_ingot", "count": 8 }
+        {
+          "type": "xp_levels",
+          "xp_levels": 12
+        },
+        {
+          "type": "item",
+          "item": "minecraft:iron_ingot",
+          "count": 8
+        }
       ]
     },
     {
@@ -235,93 +413,200 @@
       "icon": "create:controls",
       "shape": "hexagon",
       "phase": 1,
-      "dependencies": ["track"],
-      "tasks": [{ "type": "item", "item": "create:controls", "count": 1 }],
+      "dependencies": [
+        "track"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "create:controls",
+          "count": 1
+        }
+      ],
       "rewards": [
-        { "type": "xp_levels", "xp_levels": 12 },
-        { "type": "item", "item": "create:brass_ingot", "count": 4 }
+        {
+          "type": "xp_levels",
+          "xp_levels": 12
+        },
+        {
+          "type": "item",
+          "item": "create:brass_ingot",
+          "count": 4
+        }
       ]
     },
-
     {
       "key": "andesite_alloy",
       "title": "Andesite Alloy",
       "subtitle": "The base material",
-      "description": ["Andesite + iron nuggets. You will need hundreds - automate production early."],
+      "description": [
+        "Andesite + iron nuggets. You will need hundreds - automate production early."
+      ],
       "icon": "create:andesite_alloy",
       "shape": "square",
       "phase": 1,
-      "dependencies": ["water_wheel"],
-      "tasks": [{ "type": "item", "item": "create:andesite_alloy", "count": 16 }],
+      "dependencies": [
+        "water_wheel"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "create:andesite_alloy",
+          "count": 16
+        }
+      ],
       "rewards": [
-        { "type": "xp_levels", "xp_levels": 8 },
-        { "type": "item", "item": "create:andesite_alloy", "count": 8 }
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        },
+        {
+          "type": "item",
+          "item": "create:andesite_alloy",
+          "count": 8
+        }
       ]
     },
     {
       "key": "cogwheel",
       "title": "Cogwheel",
       "subtitle": "Change speed and direction",
-      "description": ["Gearboxes reverse rotation. Large cogwheels change speed by ratio - small driving large is slower, large driving small is faster."],
+      "description": [
+        "Gearboxes reverse rotation. Large cogwheels change speed by ratio - small driving large is slower, large driving small is faster."
+      ],
       "icon": "create:cogwheel",
       "shape": "square",
       "phase": 1,
-      "dependencies": ["water_wheel"],
-      "tasks": [{ "type": "item", "item": "create:cogwheel", "count": 1 }],
-      "rewards": [{ "type": "xp_levels", "xp_levels": 8 }]
+      "dependencies": [
+        "water_wheel"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "create:cogwheel",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
     },
     {
       "key": "goggles",
       "title": "Engineer's Goggles",
       "subtitle": "See stress and speed",
-      "description": ["The most important Create item. Wear them to see SU usage, speed, and stress on every Create block."],
+      "description": [
+        "The most important Create item. Wear them to see SU usage, speed, and stress on every Create block."
+      ],
       "icon": "create:goggles",
       "shape": "square",
       "phase": 1,
-      "dependencies": ["water_wheel"],
-      "tasks": [{ "type": "item", "item": "create:goggles", "count": 1 }],
-      "rewards": [{ "type": "xp_levels", "xp_levels": 12 }]
+      "dependencies": [
+        "water_wheel"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "create:goggles",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 12
+        }
+      ]
     },
     {
       "key": "redstone_link",
       "title": "Redstone Link",
       "subtitle": "Wireless redstone",
-      "description": ["Two Links on the same frequency carry redstone signals across your base. No redstone dust spaghetti."],
+      "description": [
+        "Two Links on the same frequency carry redstone signals across your base. No redstone dust spaghetti."
+      ],
       "icon": "create:redstone_link",
       "shape": "square",
       "phase": 1,
-      "dependencies": ["water_wheel"],
-      "tasks": [{ "type": "item", "item": "create:redstone_link", "count": 1 }],
+      "dependencies": [
+        "water_wheel"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "create:redstone_link",
+          "count": 1
+        }
+      ],
       "rewards": [
-        { "type": "xp_levels", "xp_levels": 8 },
-        { "type": "item", "item": "minecraft:redstone", "count": 4 }
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        },
+        {
+          "type": "item",
+          "item": "minecraft:redstone",
+          "count": 4
+        }
       ]
     },
     {
       "key": "windmill_bearing",
       "title": "Windmill Bearing",
       "subtitle": "Passive power from wind",
-      "description": ["Attach at least 8 sails to a Windmill Bearing for passive power. Needs clear sky above. Maintenance-free."],
+      "description": [
+        "Attach at least 8 sails to a Windmill Bearing for passive power. Needs clear sky above. Maintenance-free."
+      ],
       "icon": "create:windmill_bearing",
       "shape": "square",
       "phase": 1,
-      "dependencies": ["water_wheel"],
-      "tasks": [{ "type": "item", "item": "create:windmill_bearing", "count": 1 }],
-      "rewards": [{ "type": "xp_levels", "xp_levels": 8 }]
+      "dependencies": [
+        "water_wheel"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "create:windmill_bearing",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
     },
     {
       "key": "precision_mechanism",
       "title": "Precision Mechanism",
       "subtitle": "Advanced crafting component",
-      "description": ["Made via Sequenced Assembly - Deployer adds, Press stamps, Saw cuts, Spout fills, then loop. Used in most advanced Create machines."],
+      "description": [
+        "Made via Sequenced Assembly - Deployer adds, Press stamps, Saw cuts, Spout fills, then loop. Used in most advanced Create machines."
+      ],
       "icon": "create:precision_mechanism",
       "shape": "square",
       "phase": 1,
-      "dependencies": ["water_wheel"],
-      "tasks": [{ "type": "item", "item": "create:precision_mechanism", "count": 1 }],
-      "rewards": [{ "type": "xp_levels", "xp_levels": 16 }]
+      "dependencies": [
+        "water_wheel"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "create:precision_mechanism",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 16
+        }
+      ]
     },
-
     {
       "key": "steam_engine",
       "title": "Steam Engine",
@@ -333,11 +618,26 @@
       "icon": "create:steam_engine",
       "shape": "hexagon",
       "phase": 2,
-      "dependencies": ["controls"],
-      "tasks": [{ "type": "item", "item": "create:steam_engine", "count": 1 }],
+      "dependencies": [
+        "controls"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "create:steam_engine",
+          "count": 1
+        }
+      ],
       "rewards": [
-        { "type": "xp_levels", "xp_levels": 16 },
-        { "type": "item", "item": "create:brass_ingot", "count": 8 }
+        {
+          "type": "xp_levels",
+          "xp_levels": 16
+        },
+        {
+          "type": "item",
+          "item": "create:brass_ingot",
+          "count": 8
+        }
       ]
     },
     {
@@ -351,11 +651,26 @@
       "icon": "tfmg:steel_ingot",
       "shape": "hexagon",
       "phase": 2,
-      "dependencies": ["steam_engine"],
-      "tasks": [{ "type": "item", "item": "tfmg:steel_ingot", "count": 1 }],
+      "dependencies": [
+        "steam_engine"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "tfmg:steel_ingot",
+          "count": 1
+        }
+      ],
       "rewards": [
-        { "type": "xp_levels", "xp_levels": 16 },
-        { "type": "item", "item": "tfmg:steel_ingot", "count": 8 }
+        {
+          "type": "xp_levels",
+          "xp_levels": 16
+        },
+        {
+          "type": "item",
+          "item": "tfmg:steel_ingot",
+          "count": 8
+        }
       ]
     },
     {
@@ -369,11 +684,26 @@
       "icon": "create:gantry_carriage",
       "shape": "hexagon",
       "phase": 2,
-      "dependencies": ["steel_ingot"],
-      "tasks": [{ "type": "item", "item": "create:gantry_carriage", "count": 1 }],
+      "dependencies": [
+        "steel_ingot"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "create:gantry_carriage",
+          "count": 1
+        }
+      ],
       "rewards": [
-        { "type": "xp_levels", "xp_levels": 16 },
-        { "type": "item", "item": "create:brass_ingot", "count": 8 }
+        {
+          "type": "xp_levels",
+          "xp_levels": 16
+        },
+        {
+          "type": "item",
+          "item": "create:brass_ingot",
+          "count": 8
+        }
       ]
     },
     {
@@ -387,11 +717,26 @@
       "icon": "create:mechanical_piston",
       "shape": "hexagon",
       "phase": 2,
-      "dependencies": ["gantry_carriage"],
-      "tasks": [{ "type": "item", "item": "create:mechanical_piston", "count": 1 }],
+      "dependencies": [
+        "gantry_carriage"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "create:mechanical_piston",
+          "count": 1
+        }
+      ],
       "rewards": [
-        { "type": "xp_levels", "xp_levels": 16 },
-        { "type": "item", "item": "create:brass_ingot", "count": 8 }
+        {
+          "type": "xp_levels",
+          "xp_levels": 16
+        },
+        {
+          "type": "item",
+          "item": "create:brass_ingot",
+          "count": 8
+        }
       ]
     },
     {
@@ -405,47 +750,92 @@
       "icon": "create:mechanical_arm",
       "shape": "hexagon",
       "phase": 2,
-      "dependencies": ["mechanical_piston"],
-      "tasks": [{ "type": "item", "item": "create:mechanical_arm", "count": 1 }],
+      "dependencies": [
+        "mechanical_piston"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "create:mechanical_arm",
+          "count": 1
+        }
+      ],
       "rewards": [
-        { "type": "xp_levels", "xp_levels": 16 },
-        { "type": "item", "item": "create:precision_mechanism", "count": 4 }
+        {
+          "type": "xp_levels",
+          "xp_levels": 16
+        },
+        {
+          "type": "item",
+          "item": "create:precision_mechanism",
+          "count": 4
+        }
       ]
     },
     {
       "key": "pump_jack",
-      "title": "Pump Jack",
+      "title": "Pumpjack Base",
       "subtitle": "Extract crude oil",
       "description": [
-        "TFMG adds oil deposits. A Pump Jack extracts crude oil. This is your Phase 2 fuel backbone.",
-        "Next: a Distillation Controller to refine that oil."
+        "TFMG adds oil deposits. A Pumpjack Base starts the oil pump - build the multiblock to extract crude oil. This is your Phase 2 fuel backbone.",
+        "Next: a Steel Distillation Controller to refine that oil."
       ],
-      "icon": "tfmg:pump_jack",
+      "icon": "tfmg:pumpjack_base",
       "shape": "hexagon",
       "phase": 2,
-      "dependencies": ["mechanical_arm"],
-      "tasks": [{ "type": "item", "item": "tfmg:pump_jack", "count": 1 }],
+      "dependencies": [
+        "mechanical_arm"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "tfmg:pumpjack_base",
+          "count": 1
+        }
+      ],
       "rewards": [
-        { "type": "xp_levels", "xp_levels": 16 },
-        { "type": "item", "item": "tfmg:steel_ingot", "count": 8 }
+        {
+          "type": "xp_levels",
+          "xp_levels": 16
+        },
+        {
+          "type": "item",
+          "item": "tfmg:steel_ingot",
+          "count": 8
+        }
       ]
     },
     {
       "key": "distillation_controller",
-      "title": "Distillation Controller",
+      "title": "Steel Distillation Controller",
       "subtitle": "Refine oil into fuel",
       "description": [
         "The Distillation Tower is a multiblock. Crude oil enters and diesel, gasoline, kerosene, and lubricant exit from ports at different levels.",
         "Next: a Sequenced Gearshift to program rotation."
       ],
-      "icon": "tfmg:distillation_controller",
+      "icon": "tfmg:steel_distillation_controller",
       "shape": "hexagon",
       "phase": 2,
-      "dependencies": ["pump_jack"],
-      "tasks": [{ "type": "item", "item": "tfmg:distillation_controller", "count": 1 }],
+      "dependencies": [
+        "pump_jack"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "tfmg:steel_distillation_controller",
+          "count": 1
+        }
+      ],
       "rewards": [
-        { "type": "xp_levels", "xp_levels": 20 },
-        { "type": "item", "item": "tfmg:steel_ingot", "count": 8 }
+        {
+          "type": "xp_levels",
+          "xp_levels": 20
+        },
+        {
+          "type": "item",
+          "item": "tfmg:steel_ingot",
+          "count": 8
+        }
       ]
     },
     {
@@ -459,81 +849,169 @@
       "icon": "create:sequenced_gearshift",
       "shape": "hexagon",
       "phase": 2,
-      "dependencies": ["distillation_controller"],
-      "tasks": [{ "type": "item", "item": "create:sequenced_gearshift", "count": 1 }],
+      "dependencies": [
+        "distillation_controller"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "create:sequenced_gearshift",
+          "count": 1
+        }
+      ],
       "rewards": [
-        { "type": "xp_levels", "xp_levels": 16 },
-        { "type": "item", "item": "create:precision_mechanism", "count": 4 }
+        {
+          "type": "xp_levels",
+          "xp_levels": 16
+        },
+        {
+          "type": "item",
+          "item": "create:precision_mechanism",
+          "count": 4
+        }
       ]
     },
     {
       "key": "diesel_engine",
-      "title": "Diesel Engine",
+      "title": "Regular Engine",
       "subtitle": "Massive rotational power",
       "description": [
-        "TFMG's Diesel Engine burns refined diesel for massive SU. One engine powers an entire factory floor.",
+        "TFMG's Regular Engine burns diesel or other fuels for high SU. Configure it into I, V, W, U, or BOXER layouts. One engine powers an entire factory floor.",
         "This completes Phase 2. Next: Electron Tubes for advanced components."
       ],
-      "icon": "tfmg:diesel_engine",
+      "icon": "tfmg:regular_engine",
       "shape": "hexagon",
       "phase": 2,
-      "dependencies": ["sequenced_gearshift"],
-      "tasks": [{ "type": "item", "item": "tfmg:diesel_engine", "count": 1 }],
+      "dependencies": [
+        "sequenced_gearshift"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "tfmg:regular_engine",
+          "count": 1
+        }
+      ],
       "rewards": [
-        { "type": "xp_levels", "xp_levels": 24 },
-        { "type": "item", "item": "tfmg:steel_ingot", "count": 8 }
+        {
+          "type": "xp_levels",
+          "xp_levels": 24
+        },
+        {
+          "type": "item",
+          "item": "tfmg:steel_ingot",
+          "count": 8
+        }
       ]
     },
-
     {
       "key": "stockpile_switch",
       "title": "Stockpile Switch",
       "subtitle": "Detect inventory levels",
-      "description": ["Detects when an inventory is full or empty and emits redstone. Turns machines off when full to prevent overflow."],
+      "description": [
+        "Detects when an inventory is full or empty and emits redstone. Turns machines off when full to prevent overflow."
+      ],
       "icon": "create:stockpile_switch",
       "shape": "square",
       "phase": 2,
-      "dependencies": ["steam_engine"],
-      "tasks": [{ "type": "item", "item": "create:stockpile_switch", "count": 1 }],
-      "rewards": [{ "type": "xp_levels", "xp_levels": 12 }]
+      "dependencies": [
+        "steam_engine"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "create:stockpile_switch",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 12
+        }
+      ]
     },
     {
       "key": "track_station",
       "title": "Train Station",
       "subtitle": "Stop and schedule trains",
-      "description": ["A Train Station marks a stop. Train Signals prevent collisions. Schedule items route trains automatically."],
+      "description": [
+        "A Train Station marks a stop. Train Signals prevent collisions. Schedule items route trains automatically."
+      ],
       "icon": "create:track_station",
       "shape": "square",
       "phase": 2,
-      "dependencies": ["steam_engine"],
-      "tasks": [{ "type": "item", "item": "create:track_station", "count": 1 }],
-      "rewards": [{ "type": "xp_levels", "xp_levels": 12 }]
+      "dependencies": [
+        "steam_engine"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "create:track_station",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 12
+        }
+      ]
     },
     {
       "key": "rotation_speed_controller",
       "title": "Rotation Speed Controller",
       "subtitle": "Fine-tune RPM",
-      "description": ["Fine-tunes rotational speed without gear ratio math. Turn with a wrench to set precise speed."],
+      "description": [
+        "Fine-tunes rotational speed without gear ratio math. Turn with a wrench to set precise speed."
+      ],
       "icon": "create:rotation_speed_controller",
       "shape": "square",
       "phase": 2,
-      "dependencies": ["steam_engine"],
-      "tasks": [{ "type": "item", "item": "create:rotation_speed_controller", "count": 1 }],
-      "rewards": [{ "type": "xp_levels", "xp_levels": 8 }]
+      "dependencies": [
+        "steam_engine"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "create:rotation_speed_controller",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
     },
     {
       "key": "content_observer",
       "title": "Content Observer",
       "subtitle": "Read inventory contents",
-      "description": ["Outputs redstone based on inventory contents. Pair with a Stockpile Switch for self-regulating production lines."],
+      "description": [
+        "Outputs redstone based on inventory contents. Pair with a Stockpile Switch for self-regulating production lines."
+      ],
       "icon": "create:content_observer",
       "shape": "square",
       "phase": 2,
-      "dependencies": ["steam_engine"],
-      "tasks": [{ "type": "item", "item": "create:content_observer", "count": 1 }],
-      "rewards": [{ "type": "xp_levels", "xp_levels": 8 }]
+      "dependencies": [
+        "steam_engine"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "create:content_observer",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 8
+        }
+      ]
     },
-
     {
       "key": "electron_tube",
       "title": "Electron Tube",
@@ -545,11 +1023,26 @@
       "icon": "create:electron_tube",
       "shape": "hexagon",
       "phase": 3,
-      "dependencies": ["diesel_engine"],
-      "tasks": [{ "type": "item", "item": "create:electron_tube", "count": 1 }],
+      "dependencies": [
+        "diesel_engine"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "create:electron_tube",
+          "count": 1
+        }
+      ],
       "rewards": [
-        { "type": "xp_levels", "xp_levels": 24 },
-        { "type": "item", "item": "create:electron_tube", "count": 4 }
+        {
+          "type": "xp_levels",
+          "xp_levels": 24
+        },
+        {
+          "type": "item",
+          "item": "create:electron_tube",
+          "count": 4
+        }
       ]
     },
     {
@@ -563,25 +1056,54 @@
       "icon": "create:linked_controller",
       "shape": "hexagon",
       "phase": 3,
-      "dependencies": ["electron_tube"],
-      "tasks": [{ "type": "item", "item": "create:linked_controller", "count": 1 }],
+      "dependencies": [
+        "electron_tube"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "create:linked_controller",
+          "count": 1
+        }
+      ],
       "rewards": [
-        { "type": "xp_levels", "xp_levels": 32 },
-        { "type": "item", "item": "create:electron_tube", "count": 4 }
+        {
+          "type": "xp_levels",
+          "xp_levels": 32
+        },
+        {
+          "type": "item",
+          "item": "create:electron_tube",
+          "count": 4
+        }
       ]
     },
-
     {
       "key": "cannon_mount",
       "title": "Cannon Mount",
       "subtitle": "Colony defense artillery",
-      "description": ["Create Big Cannons adds artillery. A Cannon Mount holds a cannon for colony defense. Automate ammo production and guard your perimeter."],
+      "description": [
+        "Create Big Cannons adds artillery. A Cannon Mount holds a cannon for colony defense. Automate ammo production and guard your perimeter."
+      ],
       "icon": "createbigcannons:cannon_mount",
       "shape": "square",
       "phase": 3,
-      "dependencies": ["electron_tube"],
-      "tasks": [{ "type": "item", "item": "createbigcannons:cannon_mount", "count": 1 }],
-      "rewards": [{ "type": "xp_levels", "xp_levels": 16 }]
+      "dependencies": [
+        "electron_tube"
+      ],
+      "tasks": [
+        {
+          "type": "item",
+          "item": "createbigcannons:cannon_mount",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "xp_levels",
+          "xp_levels": 16
+        }
+      ]
     }
   ]
 }

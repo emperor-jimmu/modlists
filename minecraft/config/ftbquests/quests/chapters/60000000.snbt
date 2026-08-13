@@ -997,13 +997,13 @@
     },
     {
       "id": "6000005D",
-      "title": "Pump Jack",
+      "title": "Pumpjack Base",
       "subtitle": "Extract crude oil",
       "description": [
-        "TFMG adds oil deposits. A Pump Jack extracts crude oil. This is your Phase 2 fuel backbone.",
-        "Next: a Distillation Controller to refine that oil."
+        "TFMG adds oil deposits. A Pumpjack Base starts the oil pump - build the multiblock to extract crude oil. This is your Phase 2 fuel backbone.",
+        "Next: a Steel Distillation Controller to refine that oil."
       ],
-      "icon": "tfmg:pump_jack",
+      "icon": "tfmg:pumpjack_base",
       "x": 3.0,
       "y": 5,
       "shape": "hexagon",
@@ -1016,7 +1016,7 @@
           "type": "item",
           "item": {
             "count": 1,
-            "id": "tfmg:pump_jack"
+            "id": "tfmg:pumpjack_base"
           }
         }
       ],
@@ -1040,13 +1040,13 @@
     },
     {
       "id": "60000061",
-      "title": "Distillation Controller",
+      "title": "Steel Distillation Controller",
       "subtitle": "Refine oil into fuel",
       "description": [
         "The Distillation Tower is a multiblock. Crude oil enters and diesel, gasoline, kerosene, and lubricant exit from ports at different levels.",
         "Next: a Sequenced Gearshift to program rotation."
       ],
-      "icon": "tfmg:distillation_controller",
+      "icon": "tfmg:steel_distillation_controller",
       "x": 3.0,
       "y": 6,
       "shape": "hexagon",
@@ -1059,7 +1059,7 @@
           "type": "item",
           "item": {
             "count": 1,
-            "id": "tfmg:distillation_controller"
+            "id": "tfmg:steel_distillation_controller"
           }
         }
       ],
@@ -1126,13 +1126,13 @@
     },
     {
       "id": "60000069",
-      "title": "Diesel Engine",
+      "title": "Regular Engine",
       "subtitle": "Massive rotational power",
       "description": [
-        "TFMG's Diesel Engine burns refined diesel for massive SU. One engine powers an entire factory floor.",
+        "TFMG's Regular Engine burns diesel or other fuels for high SU. Configure it into I, V, W, U, or BOXER layouts. One engine powers an entire factory floor.",
         "This completes Phase 2. Next: Electron Tubes for advanced components."
       ],
-      "icon": "tfmg:diesel_engine",
+      "icon": "tfmg:regular_engine",
       "x": 3.0,
       "y": 8,
       "shape": "hexagon",
@@ -1145,7 +1145,7 @@
           "type": "item",
           "item": {
             "count": 1,
-            "id": "tfmg:diesel_engine"
+            "id": "tfmg:regular_engine"
           }
         }
       ],
