@@ -2680,6 +2680,16 @@ Authored quest book with chapters covering every major mod in the pack. Guides p
 | [KubeJS](https://www.curseforge.com/minecraft/mc-mods/kubejs)                     | JavaScript scripting engine — recipe modification, worldgen tweaks, event hooks |
 | [FTB XMod Compat](https://www.curseforge.com/minecraft/mc-mods/ftb-xmod-compat)   | Bridges FTB Quests with KubeJS, JEI/REI compat layer (works with EMI)          |
 
+**Tip — hide the FTB Teams button** (single-player): the Teams/Chunks/Quests buttons on the inventory screen are rendered by **FTB Library**, not FTB Teams — and they're pure GUI shortcuts (quest progress tracks fine without them). To hide just the Teams buttons, edit `config/ftblibrary-client.toml`:
+
+```toml
+[sidebar.buttons]
+"ftbteams:my_team" = { enabled = false, x = 0, y = 0 }
+"ftbteams:team_lives" = { enabled = false, x = 0, y = 0 }
+```
+
+To remove the whole sidebar instead, set `[sidebar] enabled = false`. Either way the quest book still opens with the `-` key.
+
 ### Quest Addons
 
 | Mod                                                                                      | Role                                                                                             |
@@ -2756,6 +2766,7 @@ The pre-authored quest book lives in the repo at `minecraft/config/ftbquests/que
 | [When Dungeons Arise](https://www.curseforge.com/minecraft/mc-mods/when-dungeons-arise)           | Roguelike combat structures with loot                                                             |
 | [Enchantment Descriptions](https://www.curseforge.com/minecraft/mc-mods/enchantment-descriptions) | Shows enchantment effects in tooltips                                                             |
 | [Create Big Cannons](https://www.curseforge.com/minecraft/mc-mods/create-big-cannons)             | Artillery engineering — siege cannons for colony defense and spectacle                            |
+| [Create Big Cannons: Advanced Technologies](https://www.curseforge.com/minecraft/mc-mods/create-big-cannons-advanced-technologies) | CBC addon — twin/heavy autocannons, rocket pods & rails, muzzle brakes, silencers, rifled barrels |
 | [Cut Through](https://www.curseforge.com/minecraft/mc-mods/cut-through)                           | Combat QoL — swing through transparent blocks (tall grass, cobwebs) without breaking them         |
 | [Torchmaster](https://www.curseforge.com/minecraft/mc-mods/torchmaster)                           | Territory pacification — Mega Torch suppresses hostile spawns in a radius; each torch gated behind a Cataclysm boss conquest (see below) |
 
@@ -2878,6 +2889,25 @@ Functional cannons built from Create materials, using rotational power for assem
 **Integration**: Gated behind bronze/steel (Create progression) + gunpowder. Mount on colony walls for defense. Redstone-controlled pulse extender for automatic salvo fire.
 
 **Dependency**: Ritchie's Projectile Library (auto-installed) — provides custom trajectories and hit detection. No separate config.
+
+### Create Big Cannons: Advanced Technologies — Bigger Guns
+
+An addon for Create Big Cannons adding 110 new cannon blocks and new ammunition, using the same casting/assembly workflow as base CBC.
+
+| Addition | What it does |
+|----------|--------------|
+| Muzzle Brake | Reduces cannon recoil |
+| Silencer / Suppressor | Reduces noise and recoil |
+| Fume Extractor | Hides the muzzle smoke cloud — good for concealed emplacements |
+| Rifled Barrel | Tighter spread than a normal barrel |
+| Twin Autocannon | Double-barreled rapid fire (vertical variant can be hidden in leaves) |
+| Heavy Autocannon | Bigger-caliber autocannon for heavier rounds |
+| Rocket Pod / Rocket Rail | Launches rockets; the medium rocket rail handles four medium rockets |
+| New ammunition | Autocannon & heavy autocannon cartridges/caseless rounds, rockets (AP / HE / HEI / Flak), medium rockets (AP / HE / HEAT / HEF), fluid shells, grapeshot |
+
+All tiers (bronze → cast iron → steel → nethersteel) follow the standard CBC casting workflow with cast moulds. No config required.
+
+**Dependency**: Create Big Cannons (above) + Create. Install the 1.21.1 NeoForge build (0.1.4c, CurseForge/Modrinth).
 
 ### Torchmaster — Conquering the Land
 
@@ -4237,10 +4267,11 @@ end
 | Wave 3 — Equipment Magic     | 9       | 12     | 21      | Skills Mastery Reimagined, Pufferfish's Skills, Simply Swords, Simply More, Too Many Bows, Relics, Enchanting Runes, Immersive Armors, Apotheosis + 12 deps (Placebo, Apothic modules, Patchouli, Simply Tooltips, Fzzy Config, Ranged Weapon API, Spell Engine, Bundle API, Pufferfish's Attributes, Curios API)                                               |
 | Wave 4 — Food & Farming      | 11      | —      | 11      | Farmer's Delight + 8 addon mods + Neo Bee Fix + Comfortable Campfires                                                                                                                                                                                                  |
 | Wave 4.5 — Quests            | 6       | 1      | 7       | FTB Questing ecosystem: FTB Library + FTB Quests + FTB Teams + KubeJS + FTB XMod Compat + MineColonies Questline + ExtraQuests (Modrinth). Bountiful removed.                                                                                                                                                                           |
+| Wave 5 — Combat & Mobs       | 9       | 6      | 15      | Better Combat, Mutant Monsters, L_Ender's Cataclysm, When Dungeons Arise, Enchantment Descriptions, Create Big Cannons + Advanced Technologies addon, Cut Through, Torchmaster |
 | Wave 6 — Building            | 12      | 3      | 15      | Rechiseled, Supplementaries, Macaw's (4), Building Wands, Reforged: Accurate Block Placement, Handcrafted, The Magic Mirror, Fetzi's Displays, Lili's Pottery, Laser Bridges & Doors + Rechiseled: Create, Rechiseled: AE2 + Moonlight, Resourceful, Fusion |
 | Wave 7 — Space Exploration   | 1       | 1      | 2       | Stellaris, Potentials API                                                                                                                                                                                                                                              |
 | Wave 8 — Programmable Computers | 1       | 0      | 1       | CC:Tweaked                                                                                                                                                                                                                                                             |
-| **Total**                    | **173** | **43** | **216** | All confirmed NeoForge 1.21.1 (+Real Camera; Day Counter Plus reverted — Day Counter + Hud Texts restored)                                                                                              |
+| **Total**                    | **174** | **43** | **217** | All confirmed NeoForge 1.21.1 (+Real Camera; Day Counter Plus reverted — Day Counter + Hud Texts restored)                                                                                              |
 
 ---
 

@@ -610,3 +610,8 @@ PUT 90.*:
 
 - [x] GUIDE.md — "Distant Horizons + Chunky — practical setup" added to First Launch Checklist §5 (Chunky — World Pregeneration): Distant Generation ON, `distantGeneratorMode: PRE_EXISTING_ONLY`, DH CPU Load Low/Balanced during Chunky, never `SURFACE`/`FEATURES`/`INTERNAL_SERVER` while Chunky is active; revert to `INTERNAL_SERVER` + Aggressive when Chunky finishes (Better Caves crash protection).
 - [x] GUIDE.md — §2 Distant Horizons tip updated with Chunky-phase pointer; Infrastructure → Chunky section cross-references the workflow. No mod or config-file changes — mode switch is a runtime setting, no tracked DH config override needed.
+
+### Added Mods (Aug 2026 batch 34 — Bigger Guns)
+
+- [x] Create Big Cannons: Advanced Technologies (Wave 5 — Combat & Mobs) — CBC addon by dsvv_modding (1.6M DL): 110 new cannon blocks (muzzle brakes, silencers/suppressors, fume extractors, rifled barrels, twin & vertical twin autocannons, heavy autocannons, rocket pods, medium rocket rails) + new ammo (autocannon/heavy autocannon cartridges & caseless rounds, rockets AP/HE/HEI/Flak, medium rockets AP/HE/HEAT/HEF, fluid shells, grapeshot). All tiers (bronze → cast iron → steel → nethersteel) follow the standard CBC casting workflow with cast moulds. Requires Create Big Cannons + Create (both in pack). 1.21.1 NeoForge 0.1.4c (2026-05-02). CurseForge-first, no public GitHub — item IDs verified by extracting the jar's `en_us.json` (namespace `cbc_at`). Installation handled by user (jar downloaded to Downloads).
+- [x] GUIDE.md updated: Wave 5 CBC AT mod row + "Create Big Cannons: Advanced Technologies — Bigger Guns" detail section. Mod counts: Wave 5 8→9 mods, 14→15 total. Grand total 173→174 (43 deps, 217 grand total).
