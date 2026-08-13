@@ -1504,6 +1504,22 @@ Rebalances YUNG's Better Dungeons density against When Dungeons Arise (Wave 5). 
 - **Install**: copy `datapacks/rarer-better-dungeons/` (or its zip) into the world's `datapacks/` folder — or `%APPDATA%\.minecraft\datapacks\` for all worlds. Applies to newly generated regions only.
 - **Verify**: `/locate structure betterdungeons:small_dungeon` should show ~22-chunk average spacing with the datapack active.
 
+**When Dungeons Arise — Rarer Minor Structures** (`datapacks/wda-density-tweak/`):
+
+The other half of the structure-density balance: WDA's minor structures (fishing huts, wishing wells, jungle tree houses, bathhouses, abandoned temples, lighthouses) get **+25% spacing**, while the major set stays at default so the big landmarks remain special destinations.
+
+| Field | Default (2.1.68) | +25% (applied) |
+|-------|------------------|----------------|
+| `spacing` | 45 | **56** |
+| `separation` | 40 | **50** |
+| `salt` | 342415935 | unchanged |
+| `exclusion_zone` | 10 chunks vs `major_structures` | unchanged |
+
+- Values verified by extracting `minor_structures.json` from the shipped `DungeonsArise-1.21.1-2.1.68` jar — older-version numbers (35/25) do not match 1.21.1.
+- The minor set on 1.21.1 holds only the 6 small builds above. Note: the **campsites** (illager_campsite, merchant_campsite, small_blimp, mushroom_house, greenwood_pub) are in the *major* set with high weights — they keep default density with this datapack. If they should also be thinned, options are scaling the whole major set or trimming those weights (see the datapack README).
+- **Install**: copy `datapacks/wda-density-tweak/` (or its zip) into the world's `datapacks/` folder — or `%APPDATA%\.minecraft\datapacks\` for all worlds. New regions only.
+- **Verify**: `/locate structure dungeons_arise:fishing_hut` should average ~56 chunks apart with the datapack active.
+
 ### Overworld
 
 #### Terrain — Terralith + Tectonic

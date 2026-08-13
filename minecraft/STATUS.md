@@ -654,3 +654,14 @@ User decision, same session as the Wave 5 review — supersedes the "KEEP, 1 [VE
 - [x] Salts/weights unchanged — placement pattern identical, just sparser.
 - [x] GUIDE.md Wave 2 Configuration documented (settings table, rationale, install + verify); `datapacks/README.md` table updated; datapack README written.
 - [ ] [VERIFY] at test launch: datapack override takes effect over mod data — new regions should show small dungeons ~22 chunks apart (`/locate structure betterdungeons:small_dungeon`). Applies to newly generated regions only.
+
+### Added Datapack (2026-08-13) — WDA Density Tweak
+
+- [x] **WDA Density Tweak datapack** (`datapacks/wda-density-tweak/`) — When Dungeons Arise minor structures +25% rarer (spacing 45 → 56, separation 40 → 50), pairing with the Rarer Better Dungeons datapack. Major set untouched.
+- [x] **Values verified against the shipped jar** (`DungeonsArise-1.21.1-2.1.68-release.jar` from Modrinth, extracted `minor_structures.json`). A draft spec for this tweak was reviewed and found factually wrong for 1.21.1:
+  - Claimed minor defaults 35/25 with salt 88371663 → actual 45/40 with salt **342415935** (88371663 is the *major* set's salt).
+  - Claimed minor set = "campsites, huts, small builds" → on 1.21.1 the minor set holds only 6 structures (fishing_hut, wishing_well, jungle_tree_house, bathhouse, abandoned_temple, lighthouse); the campsites (illager_campsite, merchant_campsite, small_blimp, mushroom_house, greenwood_pub) are in the **major** set with high weights — the old mapping matches the 1.18.x-era layout (GitHub master branch is 1.18.2).
+  - The minor set's `exclusion_zone` (10 chunks vs major) was preserved in the override.
+- [x] GUIDE.md Wave 2 Configuration documented; `datapacks/README.md` table updated; datapack README written (includes the campsite/major-set options).
+- [x] **Finding — stale WDA structure table in GUIDE.md Wave 5**: the "When Dungeons Arise — Roguelike Structures" table lists structures that do not exist in the 1.21.1 build (Small Castle, Large Castle, Barracks, Scorched Fort, Warped Fortress, Bandit Camp — these are pre-2.1-era names). Only abandoned_temple and foundry survive in the 2.1.68 jar. Table needs a rewrite against the actual 1.21.1 structure list (38 structures) — flagged, not done (separate task; user to confirm).
+- [ ] [VERIFY] at test launch: `/locate structure dungeons_arise:fishing_hut` averages ~56 chunks apart with the datapack active. New regions only.
