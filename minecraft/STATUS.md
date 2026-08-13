@@ -631,3 +631,13 @@ Reviewed all 9 Wave 5 mods (Better Combat, Mutant Monsters, L_Ender's Cataclysm,
 - [x] **Torchmaster — KEEP.** Chill-living payoff gated behind conquest (KubeJS: Ignitium Ingot + Create brass + blaze rods). Not overpowering — each torch costs a Cataclysm boss; blocks natural spawns only (WDA dungeons, Cataclysm arenas, spawners unaffected). [VERIFY] items already tracked: config key names, KubeJS item IDs.
 - [x] **Doc fix — GUIDE.md stale references:** removed Spartan Weaponry Unofficial still mentioned in Wave 3 weapon synergy (line 2154) and Wave 5 Better Combat integration (line 2792) → both updated to Simply More.
 - [ ] **New [VERIFY] (test launch):** No Creeper Grief datapack (PK V.2.0.3, pinned 1.20→1.20.1) coverage of Mutant Creeper / Creeper Minion explosions; if uncovered, decide: accept risk (Torchmaster mitigates near-base), tune Mutant spawn weight, or find a 1.21.1 anti-grief replacement.
+
+### Removed Mod (2026-08-13) — Mutant Monsters (Wave 5)
+
+User decision, same session as the Wave 5 review — supersedes the "KEEP, 1 [VERIFY]" verdict above.
+
+- [x] **Mutant Monsters REMOVED** from Wave 5 — reasons: (1) the only non-voluntary combat content in the wave (natural night spawns vs everything else opt-in/gated — violates the easy-ramp pillar); (2) Mutant Creeper + Creeper Minion use custom explosion logic reported to bypass `doMobGriefing` (Chill Rule risk — the No Creeper Grief [VERIFY] above is now moot); (3) the mini-boss niche is already covered by Apotheosis Deadly elites + WDA Easy tier; (4) drops (Hulk Hammer, Mutant Skeleton Armor, Creeper Minion) partially overlapped the Wave 3 gear chase.
+- [x] **Puzzles Lib retained** — still required by Hang Glider, Leave My Bars Alone, and Easy Anvils. Not orphaned.
+- [x] GUIDE.md updated: Wave 5 table row, "Mutant Monsters — Boss Variants" section, session plan (Session 2 removed, renumbered), Mod Count Summary (Wave 5 9→8 mods, 6→5 deps, 15→13 total; overall 174→173 mods, 216 total), Phase 2 progression mention, Easy Anvils + Hang Glider Puzzles Lib attribution notes.
+- [x] TODO.md: No Creeper Grief mutant-coverage [VERIFY] item removed (moot).
+- [x] DRIFTWOOD-GUIDE.pdf regenerated.

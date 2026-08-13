@@ -486,7 +486,7 @@ Tweak payloads directly in `config/day_counter.toml` (`[Rewards.1]`–`[Rewards.
 |-------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
 | [Easy Anvils](https://www.curseforge.com/minecraft/mc-mods/easy-anvils) | Overhauled anvils — persistent items, reduced prior work penalties, free renaming, repair with blocks |
 
-**Easy Anvils** requires **Puzzles Lib** — already in Wave 5 as a Mutant Monsters dependency. No additional mods needed.
+**Easy Anvils** requires **Puzzles Lib** — already in pack (also used by Leave My Bars Alone and Hang Glider). No additional mods needed.
 
 ### Village & Trading
 
@@ -1672,7 +1672,7 @@ Simple fabric-and-wood glider. **Phase 1 accessible** — requires only wood and
 - Equip in your hand and jump off any height to glide
 - Hold forward to maintain speed, steer with mouse
 - Dismount by pressing sneak — you'll drop safely to the ground
-- Requires **Puzzles Lib** (already in pack from Wave 5 / Easy Anvils)
+- Requires **Puzzles Lib** (already in pack — Easy Anvils, Leave My Bars Alone)
 
 **Progression**: The Hang Glider is the earliest flight option. It provides gentle gliding for early exploration before the player has Create power for the Ornithopter Glider (Wave 1) or fuel infrastructure for Immersive Aircraft. It cannot gain altitude — it's pure glide, not powered flight. Ideal for scouting Terralith biomes from mountain peaks.
 
@@ -2761,7 +2761,6 @@ The pre-authored quest book lives in the repo at `minecraft/config/ftbquests/que
 | Mod                                                                                               | Role                                                                                              |
 |---------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
 | [Better Combat](https://www.curseforge.com/minecraft/mc-mods/better-combat)                       | Melee combat animations — weapon reach, sweeping, attack speed                                    |
-| [Mutant Monsters](https://www.curseforge.com/minecraft/mc-mods/mutant-monsters)                   | Mutant zombie, skeleton, creeper, enderman — unique drops                                         |
 | [L_Ender\'s Cataclysm](https://www.curseforge.com/minecraft/mc-mods/lendercataclysm)              | Epic boss fights — Leviathan, Netherite Monstrosity, Ender Guardian (CurseForge, NeoForge 1.21.1) |
 | [When Dungeons Arise](https://www.curseforge.com/minecraft/mc-mods/when-dungeons-arise)           | Roguelike combat structures with loot                                                             |
 | [Enchantment Descriptions](https://www.curseforge.com/minecraft/mc-mods/enchantment-descriptions) | Shows enchantment effects in tooltips                                                             |
@@ -2800,21 +2799,6 @@ Hover over any enchantment in tooltip → detailed description of what it does. 
 Swing through transparent blocks (tall grass, vines, cobwebs) without breaking them. Hit the mob behind. No more breaking your grass farm or getting stuck on cobwebs while skeletons shoot you.
 
 No config. Client-side only. Works with Better Combat and all other combat mods.
-
-### Mutant Monsters — Boss Variants
-
-Tougher versions of vanilla mobs. Drop unique gear.
-
-| Mutant              | Spawns           | What to expect                                           | Drops                                         |
-|---------------------|------------------|----------------------------------------------------------|-----------------------------------------------|
-| **Mutant Zombie**   | Overworld, night | Tankier, ground-pound AoE, summons zombies               | Hulk Hammer (AoE knockback)                   |
-| **Mutant Skeleton** | Overworld, night | Rapid-fire weakness arrows, teleports                    | Mutant Skeleton Armor (projectile resist)     |
-| **Mutant Creeper**  | Overworld, night | 2× explosion radius, drops mini-creepers on death        | Creeper Minion (follows, explodes on command) |
-| **Mutant Enderman** | The End          | Aggressive teleporting, throws blocks, projectile resist | Enderman gear (teleportation items)           |
-
-**Spawn rate**: Adjust in Mod Menu → Mutant Monsters → spawn weight if too frequent/rare.
-
-**Strategy**: Same as vanilla but more extreme. Zombie → kite. Skeleton → close fast. Creeper → ranged. Enderman → water + fire resistance.
 
 ### L_Ender's Cataclysm — Epic Boss Fights
 
@@ -2928,12 +2912,11 @@ The **Mega Torch** suppresses hostile mob spawning in a 48-block radius — but 
 | Session                              | Focus                                                                                                                                    | What to Do                 |
 |--------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|----------------------------|
 | **Session 1 — Combat feel**          | Better Combat works automatically. Craft/find a Simply Swords weapon. Test daggers (fast stab) vs greatswords (wide sweep). Equip a rune | Learn your weapon          |
-| **Session 2 — First mutant**         | Find Mutant Zombie at night (listen for roar). Kite it, learn patterns. Collect unique drop                                              | First mini-boss            |
-| **Session 3 — First dungeon**        | Explorer's Compass → When Dungeons Arise small castle/abandoned temple. Clear floors                                                     | Roguelike dungeon complete |
-| **Session 4 — First Cataclysm boss** | Easiest = Leviathan (deep ocean) or Netherite Monstrosity (Nether). Prepare: good weapons, fire resistance, healing food                 | Epic boss beaten           |
-| **Session 5 — Cannons**              | Craft bronze (zinc + copper in heated mixer). Build Small Cannon. Test fire. Mount near base entrance                                    | Artillery online           |
-| **Session 6+ — Boss gauntlet**       | Remaining Cataclysm bosses. Each drops unique endgame materials. Revisit Twilight Forest bosses with Wave 5 gear                         | Full endgame gear          |
-| **Session 7 — First conquest**       | Scout a region by plane, clear its structures with guns/artillery, defeat the Cataclysm boss, craft the Mega Torch from its Ignitium Ingot, plant it. The region is yours                           | First pacified territory   |
+| **Session 2 — First dungeon**        | Explorer's Compass → When Dungeons Arise small castle/abandoned temple. Clear floors                                                     | Roguelike dungeon complete |
+| **Session 3 — First Cataclysm boss** | Easiest = Leviathan (deep ocean) or Netherite Monstrosity (Nether). Prepare: good weapons, fire resistance, healing food                 | Epic boss beaten           |
+| **Session 4 — Cannons**              | Craft bronze (zinc + copper in heated mixer). Build Small Cannon. Test fire. Mount near base entrance                                    | Artillery online           |
+| **Session 5+ — Boss gauntlet**       | Remaining Cataclysm bosses. Each drops unique endgame materials. Revisit Twilight Forest bosses with Wave 5 gear                         | Full endgame gear          |
+| **Session 6 — First conquest**       | Scout a region by plane, clear its structures with guns/artillery, defeat the Cataclysm boss, craft the Mega Torch from its Ignitium Ingot, plant it. The region is yours                           | First pacified territory   |
 
 **Tip**: Better Combat changes melee fundamentally. Don't skip Session 1 even as a ranged player.
 
@@ -4267,11 +4250,11 @@ end
 | Wave 3 — Equipment Magic     | 9       | 12     | 21      | Skills Mastery Reimagined, Pufferfish's Skills, Simply Swords, Simply More, Too Many Bows, Relics, Enchanting Runes, Immersive Armors, Apotheosis + 12 deps (Placebo, Apothic modules, Patchouli, Simply Tooltips, Fzzy Config, Ranged Weapon API, Spell Engine, Bundle API, Pufferfish's Attributes, Curios API)                                               |
 | Wave 4 — Food & Farming      | 11      | —      | 11      | Farmer's Delight + 8 addon mods + Neo Bee Fix + Comfortable Campfires                                                                                                                                                                                                  |
 | Wave 4.5 — Quests            | 6       | 1      | 7       | FTB Questing ecosystem: FTB Library + FTB Quests + FTB Teams + KubeJS + FTB XMod Compat + MineColonies Questline + ExtraQuests (Modrinth). Bountiful removed.                                                                                                                                                                           |
-| Wave 5 — Combat & Mobs       | 9       | 6      | 15      | Better Combat, Mutant Monsters, L_Ender's Cataclysm, When Dungeons Arise, Enchantment Descriptions, Create Big Cannons + Advanced Technologies addon, Cut Through, Torchmaster |
+| Wave 5 — Combat & Mobs       | 8       | 5      | 13      | Better Combat, L_Ender's Cataclysm, When Dungeons Arise, Enchantment Descriptions, Create Big Cannons + Advanced Technologies addon, Cut Through, Torchmaster |
 | Wave 6 — Building            | 12      | 3      | 15      | Rechiseled, Supplementaries, Macaw's (4), Building Wands, Reforged: Accurate Block Placement, Handcrafted, The Magic Mirror, Fetzi's Displays, Lili's Pottery, Laser Bridges & Doors + Rechiseled: Create, Rechiseled: AE2 + Moonlight, Resourceful, Fusion |
 | Wave 7 — Space Exploration   | 1       | 1      | 2       | Stellaris, Potentials API                                                                                                                                                                                                                                              |
 | Wave 8 — Programmable Computers | 1       | 0      | 1       | CC:Tweaked                                                                                                                                                                                                                                                             |
-| **Total**                    | **174** | **43** | **217** | All confirmed NeoForge 1.21.1 (+Real Camera; Day Counter Plus reverted — Day Counter + Hud Texts restored)                                                                                              |
+| **Total**                    | **173** | **43** | **216** | All confirmed NeoForge 1.21.1 (+Real Camera; Day Counter Plus reverted — Day Counter + Hud Texts restored)                              |
 
 ---
 
@@ -4302,7 +4285,7 @@ end
 
 | Phase                      | What you'll be doing                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 |----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Phase 2** (hours 40–200) | Full Create factory (conveyors, deployers, sequenced crafters, trains). Mekanism 3x–5x ore processing. AE2 ME network with autocrafting. Explore Twilight Forest bosses. Apotheosis Rare/Epic gear. Mutant Monsters. First Cataclysm boss. TFMG oil refining and diesel engines. Build with Rechiseled, Macaw's, Handcrafted. Small Ships for ocean travel. Immersive Aircraft for aerial exploration. Complete quest chapters. CC:Tweaked turtles and wireless automation. Stellaris Moon and early planets |
+| **Phase 2** (hours 40–200) | Full Create factory (conveyors, deployers, sequenced crafters, trains). Mekanism 3x–5x ore processing. AE2 ME network with autocrafting. Explore Twilight Forest bosses. Apotheosis Rare/Epic gear. First Cataclysm boss. TFMG oil refining and diesel engines. Build with Rechiseled, Macaw's, Handcrafted. Small Ships for ocean travel. Immersive Aircraft for aerial exploration. Complete quest chapters. CC:Tweaked turtles and wireless automation. Stellaris Moon and early planets |
 | **Phase 3** (hours 200+)   | Mekanism fusion reactor + MekaSuit. AE2 full autocrafting CPU chains. Endgame Apotheosis Mythic gear with perfect gem sockets. Twilight Forest final bosses. Cataclysm endgame bosses. End dimension exploration. Mars and Glacio space bases. CC:Tweaked cross-mod automation networks. Monumental building projects. Create mega-factories. Perpetual optimization                                                                                                                           |
 
 ---
