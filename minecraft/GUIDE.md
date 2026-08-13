@@ -2687,15 +2687,25 @@ Authored quest book with chapters covering every major mod in the pack. Guides p
 | [**MineColonies Questline**](https://www.curseforge.com/minecraft/mc-mods/minecolonies-questline) | Pre-written 40+ quest chain covering MineColonies from Town Hall to endgame colony    |
 | [ExtraQuests](https://modrinth.com/mod/extraquests)                                      | Additional task/reward types — key-value tracking, progressive tasks, daily/weekly quests, console command rewards |
 
-**MineColonies Questline** is the only pre-written content — it covers colony progression from first Town Hall through Industrial Revolution research. All other quests (Create, Mekanism, AE2, Apotheosis, combat, dimensions, food) must be authored using FTB Quests' in-game editor (`/ftbquests editing_mode`).
+**MineColonies Questline** covers colony progression from first Town Hall through Industrial Revolution research. The pack's own quest book is pre-authored too — 10 chapters, 211 quests covering every major mod (see *Installing the Quest Book* below). No in-game editing required.
 
 ### How It Works
 
 1. Press the quest key (configurable, default `-`) to open the quest book
-2. Chapters organized by mod: **Create**, **Mekanism**, **AE2**, **MineColonies**, **Apotheosis**, **Combat**, **Exploration**, **Food & Farming**
+2. Chapters organized by mod: **Mekanism**, **Create**, **Steam 'n' Rails**, **Electric Power**, **Combat**, **AE2**, **Apotheosis**, **Farmer's Delight**, **Stellaris**, **MineColonies**
 3. Quests auto-detect progress — craft an item, enter a dimension, kill a boss → quest completes
 4. Rewards include items, XP, and knowledge — some powerful items are quest-gated to soft-enforce progression
 5. The quest book is **always available** but **never mandatory** — ignore it when you want to chill
+
+### Installing the Quest Book
+
+The pre-authored quest book lives in the repo at `minecraft/config/ftbquests/quests/`. To load it in a Minecraft instance:
+
+1. Copy the `quests` folder into your instance's `config/ftbquests/` folder (merge/overwrite the existing `quests` folder)
+2. Start the game — or, if it's already running, run `/ftbquests reload`
+3. Press the quest key (default `-`) to open the book
+
+**Updating after a change**: re-copy the `quests` folder and run `/ftbquests reload`. The book is plain data files (SNBT) — there's nothing to edit in-game.
 
 ### Pillar Alignment
 
@@ -2704,19 +2714,22 @@ Authored quest book with chapters covering every major mod in the pack. Guides p
 - **200h+ content**: Quests surface hidden content. "Have you visited the Aether?" "Try sequenced crafting with Create." Players discover systems they might miss.
 - **Chill living**: The quest book key is configurable. There's no on-screen HUD element. No time-limited quests. No penalties for ignoring it. The book waits for you — not the other way around.
 
-### Authoring Plan
+### Chapter Coverage
 
-| Phase | Quests to Write | Effort |
-|-------|----------------|--------|
-| **MineColonies** | Pre-written (MineColonies Questline) | 0 hours — included |
-| **Create** | Water wheel → brass → sequenced crafting → trains | ~15 quests |
-| **Mekanism** | Ore doubling → tripling → quintupling → digital miner → fission → fusion | ~20 quests |
-| **AE2** | Certus quartz → ME drive → autocrafting → quantum network | ~15 quests |
-| **Apotheosis** | Affix gear → gems → enchanting → mythic tier | ~10 quests |
-| **Combat & Exploration** | Bosses (Cataclysm, Aether, Twilight Forest), dungeons, dimensions | ~15 quests |
-| **Food & Farming** | Farmer's Delight meals, brewing, fishing, animal husbandry | ~10 quests |
+| Chapter | Quests |
+|---------|--------|
+| **Mekanism** | 37 |
+| **Create** | 35 |
+| **Steam 'n' Rails** | 9 |
+| **Electric Power** | 13 |
+| **Combat** | 14 |
+| **AE2** | 22 |
+| **Apotheosis** | 12 |
+| **Farmer's Delight** | 52 |
+| **Stellaris** | 17 |
+| **MineColonies** (pre-written) | ~40 |
 
-**Total**: ~85 authored quests + ~40 pre-written colony quests = ~125 quests. Author gradually — one chapter at a time. The pack is fully playable without quests; they're enhancement, not foundation.
+**Total**: 211 authored quests + ~40 pre-written colony quests. The pack is fully playable without quests; they're enhancement, not foundation.
 
 ### Session Plan — Wave 4 & 4.5
 
