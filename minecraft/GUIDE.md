@@ -2957,7 +2957,19 @@ The **Mega Torch** suppresses hostile mob spawning in a 64-block radius — but 
 
 **The conquest loop**: scout a hostile region by air/ship/train → clear its structures → defeat the Cataclysm boss for the Ignitium Ingot → craft the Mega Torch → plant it. The area is permanently peaceful. Conquest is renewable — Cataclysm arenas re-summon bosses (Eye item), so there's no world exhaustion.
 
-**Config** (`config/torchmaster-common.toml`, defaults): Mega Torch radius 64 blocks. Feral Flare Lantern (radius 16) suppresses only dark-spawned mobs — useful for cave/ruin clearing. Mega Torch blocks natural spawning only, not spawners.
+**Config** (mod defaults — no override needed; `config/torchmaster-common.toml` is generated on first launch):
+
+| Setting | Default | Notes |
+|---|---|---|
+| `megaTorchRadius` | **64** | Cube ±64 → 129×129×129 zone: village + farms + perimeter |
+| `feralFlareRadius` | **16** | Cube ±16 → 32×32×32 zone, capped at 255 invisible lights |
+| `blockOnlyNaturalSpawns` | `true` | Spawner + structure spawns exempt — YUNG's / WDA / Cataclysm content untouched |
+
+**Why these values, and why not bigger**:
+
+- **Mega Torch 64** — the radius is a *cube* (each direction), so 64 covers a village plus its hinterland. Each torch costs one Cataclysm boss kill (KubeJS gate), and the conquest loop is designed to repeat (arenas re-summon bosses). A 96+ cube would let a single kill pacify an entire region and collapse the loop; the original 48 draft underpays the conquest.
+- **Feral Flare 16** — it's a *clearing aid*, not a territory tool: it sprinkles invisible light (level 15) in its cube until it hits the 255-light hardcap. At 16 the lights sit ~5 blocks apart, keeping block light ≥ 10; at 24 they thin to ~7.5-block spacing and dark gaps reappear — worse than 16. Raising the hardcap to compensate trips the mod's own world-corruption warning (badly compressed packet errors).
+- **Spawner exemption** — the Mega Torch never blocks `SPAWNER`/`STRUCTURE` spawns, so YUNG's dungeons, WDA structures, and Cataclysm arenas keep their mobs at *any* radius. Torches pacify the surface, never the content.
 
 ---
 
