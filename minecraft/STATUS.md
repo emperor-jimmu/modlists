@@ -8,6 +8,13 @@
 - [x] GUIDE.md "Create World" section added — world creation settings (Survival, Normal difficulty, Allow Commands/Cheats OFF, Default world type, Structure Generation ON, Game Rules → Chat all disabled), quest book + data pack pre-steps, CC:Tweaked serverconfig post-step
 - [x] DRIFTWOOD-GUIDE.pdf regenerated
 
+### Removed Mods (Aug 2026)
+
+- [x] **Reforged: Accurate Block Placement** removed from Wave 6 (GUIDE.md Core Decoration table + Mod Count Summary) — per user request; config override `config/reforged_accurate_block_placement.json` deleted
+- [x] **The Magic Mirror** removed from Wave 6 (GUIDE.md Core Decoration table, dedicated section, Mod Count Summary) — per user request
+- [x] **Recall Potions** v1.5.0 (NeoForge 1.21.1) added to Wave 0 — Storage & Travel — then **replaced** with Simple Recall Potion per user request (808K+ DL vs 43K DL)
+- [x] **Simple Recall Potion** v1.0.6 (NeoForge 1.21.1, zero deps) — Wave 0 — Storage & Travel — drink to teleport to your spawn point (same-dimension by default, interdimensional config option). Complements Waystones.
+
 ### GUIDE.md Conciseness Pass (Aug 2026)
 
 - [x] GUIDE.md trimmed from 4,629 → 4,300 lines (~25 KB). Removed duplicated wave intros/closings, the redundant "Performance Mods — Install and Forget" table, per-mod prose blurbs condensed to one-line bullets (Wave 0.5 What to Expect + Daily Tools, texture packs, Create Addon Details), duplicated interdependency notes (Hybrid Aquatic × Starcatcher/Better Fishtanks, Starcatcher's Delight × FD, Better Fishtanks × Create, Wave 6 trio), and fluff lines (Wave 2/3/5/6 intros, Torchmaster, Wave 7). Fixed Wave 1 broken integration table (glued `### Ores` heading), deduped Mod Count Summary (stale Wave 2 row), moved it out of the middle of Wave 7 to before Keybindings. All instructions/configs/compat notes preserved. DRIFTWOOD-GUIDE.pdf regenerated cleanly.
@@ -351,7 +358,6 @@ PUT 90.*:
 - [x] Mekanism (config/Mekanism/general.toml) — allowChunkloading=false (delegated to Chunk Loaders mod)
 - [x] Aether (aether-common.toml) — Curios menu=true, no portal frame, starting loot on entry, Patreon message off, freezing/ruined portal data packs off
 - [x] Comfortable Campfires (config/comfortable_campfires.json) — Regen I near campfires, Resistance I near soul campfires, 30s duration, 8-block range, 5s tick interval
-- [x] Reforged Accurate Block Placement (config/reforged_accurate_block_placement.json) — accurate placement on, fast breaking off, crouch prompt hidden, placement highlight on
 - [x] GraveStone Mod (config/gravestone-server.toml) — obituary on, owner-only break, sneak pickup, break pickup, ghost off, friendly ghost on
 - [x] Serene Seasons (config/sereneseasons-common.toml) — seasonal_crops=true, out_of_season_crop_behavior=0 (slow growth, no breakage), crop_tooltips=true
 - [x] Apotheosis module toggles (config/apotheosis/apotheosis.cfg) — all modules enabled (Deadly, Enchantment, Adventure, Spawner, Potion, Village), Garden disabled, book on first join

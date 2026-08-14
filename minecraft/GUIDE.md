@@ -479,6 +479,7 @@ Tweak payloads directly in `config/day_counter.toml` (`[Rewards.1]`–`[Rewards.
 | [Sophisticated Backpacks](https://www.curseforge.com/minecraft/mc-mods/sophisticated-backpacks) | Portable inventory            |
 | [Waystones](https://www.curseforge.com/minecraft/mc-mods/waystones)                             | Fast travel between waypoints |
 | [GraveStone Mod](https://www.curseforge.com/minecraft/mc-mods/gravestone-mod)                   | Keep inventory on death       |
+| [Simple Recall Potion](https://www.curseforge.com/minecraft/mc-mods/simple-recall-potion)         | Drink to teleport back to your spawn point — simple, stackable |
 
 ### Utility & QoL
 
@@ -663,6 +664,10 @@ Craft a waystone → right-click to claim. Use a Warp Stone (ender pearl + ameth
 #### GraveStone Mod
 
 Die → grave spawns with all your items. Right-click the grave to retrieve. No item loss, no despawning, 24-hour protection.
+
+#### Simple Recall Potion
+
+Drink to teleport straight back to your **spawn point** — the classic Terraria-style escape potion, no save points to manage. Works within your current dimension by default; enable the mod's interdimensional config option if you want it to work across the Aether, Twilight Forest, etc. Zero dependencies.
 
 ---
 
@@ -3003,9 +3008,7 @@ The **Mega Torch** suppresses hostile mob spawning in a 64-block radius — but 
 | [Macaw\'s Roofs](https://www.curseforge.com/minecraft/mc-mods/macaws-roofs)                                             | Roofing blocks                                                        |
 | [Macaw\'s Windows](https://www.curseforge.com/minecraft/mc-mods/macaws-windows)                                         | Window variants                                                       |
 | [Building Wands](https://www.curseforge.com/minecraft/mc-mods/building-wands)                                           | Faster large-scale construction                                       |
-| [\[Reforged\] Accurate Block Placement](https://www.curseforge.com/minecraft/mc-mods/reforged-accurate-block-placement) | Precision block placement — place on the exact face you're looking at |
 | [Handcrafted](https://www.curseforge.com/minecraft/mc-mods/handcrafted)                                                 | Furniture — chairs, tables, shelves, curtains                         |
-| [The Magic Mirror](https://www.curseforge.com/minecraft/mc-mods/the-magic-mirror)                                       | Reflective mirror block that shows the nearest player's reflection    |
 | [Fetzi's Displays](https://www.curseforge.com/minecraft/mc-mods/fetzis-displays)                                        | Item displays — glass cloches, katana stands, wall holders, racks     |
 | [Laser Bridges & Doors](https://www.curseforge.com/minecraft/mc-mods/laser-bridges-doors)                                     | Laser platforms, bridges, doors, and fences powered by redstone — length scales with signal strength, dye-customizable colors |
 
@@ -3125,14 +3128,6 @@ Place many blocks at once. Closest thing to WorldEdit without a server plugin.
 | **Dresser**   | Tall drawer storage               | Wood + relevant material |
 
 **Tip**: Place in your most-used rooms — kitchen, dining, bedroom. Use shelves to display favorite loot (Twilight Forest trophies, Apotheosis mythic gear, rare Simply Swords weapons).
-
-### The Magic Mirror
-
-Reflective mirror block showing the nearest player's reflection.
-
-**How**: Craft (check EMI — glass + frame materials). Place on wall. Shows your character model in real-time, including armor and held items.
-
-**Use**: Decorative vanity mirrors in bedrooms and dressing rooms. Purely aesthetic — no functional gameplay effect.
 
 ### Fetzi's Displays — Item Showcases
 
@@ -4340,7 +4335,7 @@ All mods installed and every wave configured — here's how to start a proper wo
 
 | Wave                         | Mods    | Deps   | Total   | Notes                                                                                                                                                                                                                                                                  |
 |------------------------------|---------|--------|---------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Wave 0 — Foundation          | 14      | 10     | 24      | Dependencies (12), Performance & Rendering (10), Shaderpack (1 mod: Euphoria Patches), Infrastructure (3) — all the nuts & bolts that make the game run (+1 shaderpack, +11 resource packs)                                                                            |
+| Wave 0 — Foundation          | 15      | 10     | 25      | Dependencies (12), Performance & Rendering (10), Shaderpack (1 mod: Euphoria Patches), Infrastructure (3) + Simple Recall Potion (travel) — all the nuts & bolts that make the game run (+1 shaderpack, +11 resource packs)                                                                            |
 | Wave 1 — Tech                | 19      | 5      | 24      | Create + 13 addons (incl. Power Grid, Gunsmithing, Protection Pixel, Ornithopter Glider, Train Utilities, Railways Navigator, Interiors, Train Parts, Threaded Trains), Mekanism + Generators, AE2, Advanced Finders, Advanced Chimneys + NTGL, GeckoLib, Framework, ForgeEndertech, Kleiders deps |
 | Wave 1.5 — Colony            | 9       | —      | 9       | MineColonies (4 deps counted as mods — they're library mods; CurseForge-only) + 4 addons: Byzantine Styles, Stylecolonies, Create: Colony Logistics, ColonyLink                                                                                                           |
 | Wave 2 — Exploration         | 34      | 5      | 39      | YUNG's (12), Terralith/Tectonic, Serene Seasons, Darker Depths, Upgrade Aquatic, dimensions (3), End overhaul (3 + Nullscape dp + 5 deps), Structory + Structory Towers, navigation, aircraft, ships, hang glider, MoMP addon, Incendium (Nether biome overhaul), Immersive Machinery (utility machines), Field Guide + 2 required companions (Immersive Overlays, Item Descriptions)                                                                          |
@@ -4348,10 +4343,10 @@ All mods installed and every wave configured — here's how to start a proper wo
 | Wave 4 — Food & Farming      | 11      | —      | 11      | Farmer's Delight + 8 addon mods + Neo Bee Fix + Comfortable Campfires                                                                                                                                                                                                  |
 | Wave 4.5 — Quests            | 6       | 0      | 6       | FTB Questing ecosystem: FTB Library + FTB Quests + FTB Teams + KubeJS + FTB XMod Compat + MineColonies Questline. Bountiful removed. ExtraQuests removed (Aug 2026 — quest book uses only standard FTB Quests types; its ExtraLib dependency was never in the pack).                                                                                                                                                                           |
 | Wave 5 — Combat & Mobs       | 7       | 5      | 12      | Better Combat, L_Ender's Cataclysm, When Dungeons Arise, Enchantment Descriptions, Create Big Cannons + Advanced Technologies addon, Torchmaster |
-| Wave 6 — Building            | 12      | 3      | 15      | Rechiseled, Supplementaries, Macaw's (4), Building Wands, Reforged: Accurate Block Placement, Handcrafted, The Magic Mirror, Fetzi's Displays, Lili's Pottery, Laser Bridges & Doors + Rechiseled: Create, Rechiseled: AE2 + Moonlight, Resourceful, Fusion |
+| Wave 6 — Building            | 10      | 3      | 13      | Rechiseled, Supplementaries, Macaw's (4), Building Wands, Handcrafted, Fetzi's Displays, Lili's Pottery, Laser Bridges & Doors + Rechiseled: Create, Rechiseled: AE2 + Moonlight, Resourceful, Fusion |
 | Wave 7 — Space Exploration   | 1       | 1      | 2       | Stellaris, Potentials API                                                                                                                                                                                                                                              |
 | Wave 8 — Programmable Computers | 1       | 0      | 1       | CC:Tweaked                                                                                                                                                                                                                                                             |
-| **Total**                    | **171** | **42** | **213** | All confirmed NeoForge 1.21.1 (+Real Camera; Day Counter Plus reverted — Day Counter + Hud Texts restored)                              |
+| **Total**                    | **170** | **42** | **212** | All confirmed NeoForge 1.21.1 (+Real Camera; Day Counter Plus reverted — Day Counter + Hud Texts restored)                              |
 
 ---
 
