@@ -134,6 +134,7 @@ The essentials that make the game run well. Dependencies, performance, rendering
 | Mod                                                                               | Role                                     |
 |-----------------------------------------------------------------------------------|------------------------------------------|
 | [Sodium](https://www.curseforge.com/minecraft/mc-mods/sodium)                     | Rendering engine                         |
+| [Sodium Extras](https://modrinth.com/mod/sodium-extras)                           | Sodium addon — FPS limiter, particle rendering toggles, extra video options |
 | [Iris](https://www.curseforge.com/minecraft/mc-mods/irisshaders)                  | Shader loader (v1.8.14, NeoForge native) |
 | [Lithium](https://www.curseforge.com/minecraft/mc-mods/lithium)                   | Server-side game logic optimization      |
 | [FerriteCore](https://www.curseforge.com/minecraft/mc-mods/ferritecore)           | Memory usage reduction                   |
@@ -147,6 +148,12 @@ The essentials that make the game run well. Dependencies, performance, rendering
 **ModernFix** (configurable in-game via Mod List → ModernFix → Config, or `config/modernfix-mixins.properties`):
 
 - `mixin.perf.dynamic_resources` = `true` — Load block/item models lazily instead of all at startup. **Biggest single launch-time speedup** in the pack. Reduces memory usage too. Disable if you see missing textures or broken models.
+
+**Sodium Extras** (configurable in Sodium's Video Settings → Sodium Extras section):
+
+- **FPS limiter** — independent hard FPS cap for smoother frametimes toward the 70-80 FPS target.
+- **Particle rendering overrides** — disable specific particle types (e.g., campfire smoke, torch flames) that clutter builds; complements Particle Rain / Particular Reforged (they add particles, this removes unwanted ones).
+- Requires **Sodium Options API** (new dependency).
 
 ### Shaderpack
 
@@ -2348,6 +2355,7 @@ Enabled. Adds telegraphed death-traps to the world (spikes, poison darts, instak
 | [**Twilight's Flavors & Delight**](https://www.curseforge.com/minecraft/mc-mods/twilights-flavors-delight) 3.2.2 | Twilight Forest × Farmer's Delight crossover — 35+ FD-style TF foods, 4 TF knives, maze stove, 5 potion effects, trophy dismantling |
 | [Neo Bee Fix](https://modrinth.com/mod/neo-bee-fix)                                                   | Fixes bee AI bugs — bees leave hives, don't fall from sky, no NW wander bias     |
 | [Comfortable Campfires](https://www.curseforge.com/minecraft/mc-mods/comfortable-campfires)           | Campfires grant configurable status effects — sit by the fire, get a buff        |
+| [Smarter Farmers](https://modrinth.com/mod/smarter-farmers-farmers-replant)                           | Farmer villagers replant correctly — incl. modded seeds (FD crops via tags)      |
 | [**Starcatcher**](https://www.curseforge.com/minecraft/mc-mods/starcatcher)                           | Fishing overhaul — 100+ fish, skill minigame, trophies, tournaments, catalogue   |
 | [**Starcatcher's Delight**](https://www.curseforge.com/minecraft/mc-mods/starcatchers-delight) v3.0.1 | Starcatcher × Farmer's Delight crossover — fish fillets, seafood dishes, sushi |
 | [**Better Fishtanks**](https://www.curseforge.com/minecraft/mc-mods/better-fishtanks)                 | Functional aquariums — fish bags, decorations, feeding system, Create/AE2 compat |
@@ -2525,6 +2533,12 @@ End-themed food for post-Dragon exploration:
 Fixes bee AI — bees properly leave hives, don't fall from sky, no northwest wander bias. No config. Install and forget.
 
 **Integration**: Bees produce honey for Brewin' And Chewin' mead. Farm bees near your kitchen for renewable brewing ingredients.
+
+### Smarter Farmers — Villagers Replant
+
+Fixes and upgrades villager farming: farmers replant the **correct** seed (no more wheat seeds on carrot rows) and can use **modded seeds** — Farmer's Delight crops included, via tag-based detection. A `harvest_blacklist` tag lets you exclude crops from auto-replanting.
+
+**Integration**: Keeps village farms and FD crop plots self-sustaining — less manual replanting, more chill living. Works alongside MineColonies (separate villager system — no overlap). Requires Moonlight Lib (already in pack, Wave 6).
 
 ### Starcatcher — Fishing Overhaul
 
@@ -2893,6 +2907,7 @@ The **Mega Torch** suppresses hostile mob spawning in a 64-block radius — but 
 | [Handcrafted](https://www.curseforge.com/minecraft/mc-mods/handcrafted)                                                 | Furniture — chairs, tables, shelves, curtains                         |
 | [Fetzi's Displays](https://www.curseforge.com/minecraft/mc-mods/fetzis-displays)                                        | Item displays — glass cloches, katana stands, wall holders, racks     |
 | [Laser Bridges & Doors](https://www.curseforge.com/minecraft/mc-mods/laser-bridges-doors)                                     | Laser platforms, bridges, doors, and fences powered by redstone — length scales with signal strength, dye-customizable colors |
+| [Diagonal Fences](https://modrinth.com/mod/diagonal-fences)                                                                 | Connect vanilla fences, fence gates, and walls diagonally — seamless corners       |
 
 ### Rechiseled Addons
 
@@ -2970,6 +2985,12 @@ Five modules covering structural elements in every wood type.
 **Fences**: Picket, stockade, horse, wired, highley gate. Each distinct look.
 
 **Building tip**: Macaw's roofs + Rechiseled stone + Macaw's windows = cohesive aesthetic.
+
+### Diagonal Fences — Seamless Corners
+
+Connects vanilla fences, fence gates, and walls **diagonally** — the classic corner-post look without gaps. Client-side rendering, no config.
+
+**Integration**: Complements Macaw's building set (Macaw's fences are separate blocks, unaffected) and Forgematica schematics — diagonal corners render correctly in-place. Requires Puzzles Lib (already in pack).
 
 ### Building Wands — Large-Scale Construction
 
@@ -4219,18 +4240,18 @@ All mods installed and every wave configured — here's how to start a proper wo
 
 | Wave                         | Mods    | Deps   | Total   | Notes                                                                                                                                                                                                                                                                  |
 |------------------------------|---------|--------|---------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Wave 0 — Foundation          | 14      | 10     | 24      | Dependencies (12), Performance & Rendering (10), Shaderpack (1 mod: Euphoria Patches), Infrastructure (3) + Simple Recall Potion (travel) — all the nuts & bolts that make the game run (+1 shaderpack, +11 resource packs)                                                                            |
+| Wave 0 — Foundation          | 15      | 11     | 26      | Dependencies (12), Performance & Rendering (11) + Sodium Extras + Sodium Options API, Shaderpack (1 mod: Euphoria Patches), Infrastructure (3) + Simple Recall Potion (travel) — all the nuts & bolts that make the game run (+1 shaderpack, +11 resource packs)                                                                            |
 | Wave 1 — Tech                | 19      | 5      | 24      | Create + 13 addons (incl. Power Grid, Gunsmithing, Protection Pixel, Ornithopter Glider, Train Utilities, Railways Navigator, Interiors, Train Parts, Threaded Trains), Mekanism + Generators, AE2, Advanced Finders, Advanced Chimneys + NTGL, GeckoLib, Framework, ForgeEndertech, Kleiders deps |
 | Wave 1.5 — Colony            | 9       | —      | 9       | MineColonies (4 deps counted as mods — they're library mods; CurseForge-only) + 4 addons: Byzantine Styles, Stylecolonies, Create: Colony Logistics, ColonyLink                                                                                                           |
 | Wave 2 — Exploration         | 34      | 7      | 41      | YUNG's (12), Terralith/Tectonic, Serene Seasons + Serene Seasons Plus + GlitchCore + Gabou's Libs, Darker Depths, Upgrade Aquatic, dimensions (3), End overhaul (3 + Nullscape dp + 5 deps), Structory, navigation, aircraft, ships, hang glider, MoMP addon, Incendium (Nether biome overhaul), Immersive Machinery (utility machines), Field Guide + 2 required companions (Immersive Overlays, Item Descriptions)                                                                          |
 | Wave 3 — Equipment Magic     | 9       | 12     | 21      | Skills Mastery Reimagined, Pufferfish's Skills, Simply Swords, Simply More, Too Many Bows, Relics, Enchanting Runes, Immersive Armors, Apotheosis + 12 deps (Placebo, Apothic modules, Patchouli, Simply Tooltips, Fzzy Config, Ranged Weapon API, Spell Engine, Bundle API, Pufferfish's Attributes, Curios API)                                               |
-| Wave 4 — Food & Farming      | 11      | —      | 11      | Farmer's Delight + 8 addon mods + Neo Bee Fix + Comfortable Campfires                                                                                                                                                                                                  |
+| Wave 4 — Food & Farming      | 12      | —      | 12      | Farmer's Delight + 8 addon mods + Neo Bee Fix + Comfortable Campfires + Smarter Farmers                                                                                                                                                                                                  |
 | Wave 4.5 — Quests            | 6       | 0      | 6       | FTB Questing ecosystem: FTB Library + FTB Quests + FTB Teams + KubeJS + FTB XMod Compat + MineColonies Questline. Bountiful removed. ExtraQuests removed (Aug 2026 — quest book uses only standard FTB Quests types; its ExtraLib dependency was never in the pack).                                                                                                                                                                           |
 | Wave 5 — Combat & Mobs       | 6       | 5      | 11      | Better Combat, L_Ender's Cataclysm, Enchantment Descriptions, Create Big Cannons + Advanced Technologies addon, Torchmaster |
-| Wave 6 — Building            | 10      | 3      | 13      | Rechiseled, Supplementaries, Macaw's (4), Building Wands, Handcrafted, Fetzi's Displays, Lili's Pottery, Laser Bridges & Doors + Rechiseled: Create, Rechiseled: AE2 + Moonlight, Resourceful, Fusion |
+| Wave 6 — Building            | 11      | 3      | 14      | Rechiseled, Supplementaries, Macaw's (4), Building Wands, Handcrafted, Fetzi's Displays, Lili's Pottery, Laser Bridges & Doors, Diagonal Fences + Rechiseled: Create, Rechiseled: AE2 + Moonlight, Resourceful, Fusion |
 | Wave 7 — Space Exploration   | 1       | 2      | 3       | Stellaris, Potentials API, Sky Aesthetics (sky renderer — renders Stellaris planet skies; adds "Modify Sky" pause button)                                                                                  |
 | Wave 8 — Programmable Computers | 1       | 0      | 1       | CC:Tweaked                                                                                                                                                                                                                                                             |
-| **Total**                    | **169** | **46** | **215** | All confirmed NeoForge 1.21.1 (+Real Camera; Day Counter Plus reverted — Day Counter + Hud Texts restored; +BetterGrassify + Forgified Fabric API + Sky Aesthetics; +Serene Seasons Plus + GlitchCore + Gabou's Libs - Chunky - When Dungeons Arise - Structory: Towers, Aug 2026)                              |
+| **Total**                    | **172** | **47** | **219** | All confirmed NeoForge 1.21.1 (+Real Camera; Day Counter Plus reverted — Day Counter + Hud Texts restored; +BetterGrassify + Forgified Fabric API + Sky Aesthetics; +Serene Seasons Plus + GlitchCore + Gabou's Libs - Chunky - When Dungeons Arise - Structory: Towers, Aug 2026; +Sodium Extras + Sodium Options API + Smarter Farmers + Diagonal Fences, Aug 2026 mod review)                              |
 
 ---
 
