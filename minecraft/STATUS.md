@@ -687,3 +687,12 @@ User decision, same session as the Wave 5 review — supersedes the "KEEP, 1 [VE
   - Session plan Session 2 updated to minor-set structures (abandoned temple / bathhouse)
 - [x] GUIDE.md Wave 2 density block + datapack README updated to reflect the weight trim; remaining weight-2 commons (greenwood_pub, illager_corsair, illager_galley, mushroom_house) left at default.
 - [ ] [VERIFY] at test launch: campsite finds should be visibly rarer than other major structures; if too rare, revert weights to 3.
+
+### Removed Mod (2026-08-14) — Cut Through (Wave 5)
+
+User decision — Better Combat (same wave) ships a built-in, default-enabled **"Swing thru grass"** option that covers Cut Through's core case. Verified in the mod source (`ClientConfig.java`, v2.4.0+1.21.1): `isSwingThruGrassEnabled = true`, `isSwingThruGrassSmart = true`, `isAttackInsteadOfMineWhenEnemiesCloseEnabled = true` — all default-on, no pack config override needed. Cut Through's residual coverage (vines, cobwebs, other transparent blocks beyond zero-hardness; no Farmer's Delight blacklist) judged too marginal for a mod slot in a single-player chill pack.
+
+- [x] **Cut Through REMOVED** from Wave 5 — reasons: (1) core function (swing through tall grass to hit mobs without breaking it) is built into Better Combat at defaults; (2) remaining gaps (vines/cobwebs, blocks with hardness > 0) are rare friction in this pack vs. the slot cost; (3) both are client-side QoL with no stat impact — no overpowering/conflict concerns either way, pure slot economy.
+- [x] **Puzzles Lib retained** — Cut Through's only dependency; still required by Hang Glider, Leave My Bars Alone, and Easy Anvils. Not orphaned.
+- [x] GUIDE.md updated: Wave 5 table row removed, "Cut Through — Clean Combat" section removed, Mod Count Summary (Wave 5 8→7 mods, 5 deps, 13→12 total; overall 172→171 mods, 42 deps, 214→213 total). **Bonus fix:** Better Combat link was pointing at an unrelated 349-download CurseForge mod ("A combat mod for you", MCreator) — corrected to the real Modrinth page (ZsoltMolnarrr, 15.4M DL).
+- [x] DRIFTWOOD-GUIDE.pdf regenerated.
