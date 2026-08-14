@@ -175,7 +175,7 @@ Owned "Living the world" home layer — a believable home the player lives in be
 | [Caves of Morrowind](https://www.nexusmods.com/skyrimspecialedition/mods/13745) | Hand-authored new-cave/dungeon pack in the Velothi Mountains (Dunmer smuggling operation). Self-contained cells, vanilla-asset-only (PS4-origin), no scripts/quests, navmesh + LOD generated. **Level 15+ recommended** — a somewhat challenging explorer experience. |
 | [Dungeons - Revisited](https://www.nexusmods.com/skyrimspecialedition/mods/51798) |  Improves existing ruins rather than adding new destinations.  |
 | [Iconic's Crown of Barenziah](https://www.nexusmods.com/skyrimspecialedition/mods/137469) | High-quality crown/gems/display stand. |
-| [The Ratway Passages](https://www.nexusmods.com/skyrimspecialedition/mods/138534) | New dungeon connecting the Ratway to Honeyside, Riften Jail/sewers, Hall of the Dead, Beggar's Row, and outside the city walls. **Tentative — verify cell conflicts vs the Riften stack (The City of Crossed Daggers, Caught Red Handed jail edits, Honeyside/player-home edits) before locking; confirm the sewer section is self-contained (Skyrim Sewers not in list).** |
+| [The Ratway Passages](https://www.nexusmods.com/skyrimspecialedition/mods/138534) | New dungeon connecting the Ratway to Honeyside, Riften Jail/sewers, Hall of the Dead, Beggar's Row, and outside the city walls. Adopted 2026-08-15. **Build verification:** standard xEdit quick-conflict pass vs the Riften stack (The City of Crossed Daggers 168629, Caught Red Handed 65708, Honeyside/player-home edits); confirm ESL flag + navmesh; sewer section is self-contained (Skyrim Sewers not in list); 1.6.1170 test launch per → `modlist-performance-testing.md`. |
 
 ### Alternatives
 
