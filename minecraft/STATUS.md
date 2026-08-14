@@ -2,10 +2,47 @@
 
 ## Completed
 
+### Added Mods (Aug 2026 — Seasons & Weather)
+
+- [x] **Serene Seasons Plus v5.1.1** (Wave 2 — Environment) — Serene Seasons add-on for NeoForge 1.21.1: sub-season day/night speed + improved snow piling/melting. Required deps (all already in pack): Serene Seasons, Better Days, Gabou's Libs. [Modrinth](https://modrinth.com/mod/serene-seasons-plus)
+- [x] **GlitchCore v2.1.0.2** (Wave 2 — Dependency) — loader-abstraction library, required by Serene Seasons 10.1.0.3 (verified via Modrinth API: Serene Seasons lists it as a required dep on 1.21.1). [Modrinth](https://modrinth.com/mod/glitchcore)
+- [x] **Gabou's Libs v1.8.1** (Wave 2 — Dependency) — library required by Serene Seasons Plus. No deps. [Modrinth](https://modrinth.com/mod/gabous-libs)
+- [x] **Better Days reconfigured for longer days** — `config/betterdays-common.toml` `seasonDayMinutes` 20.0 → **40.0** (2x vanilla day+night cycle, SEASON mode retained). The config had drifted to vanilla-average despite the old "2x day length" note.
+
+### Removed Mods (Aug 2026 — Desolate Overworld)
+
+- [x] **When Dungeons Arise** removed from Wave 5 — 38 roguelike structures including the ocean ships (Illager Corsair, Illager Galley, Undead Pirate Ship), blimps, lighthouses, and camps. User wants a desolate, vanilla-OG Overworld. GUIDE.md updated: Wave 5 table row, "When Dungeons Arise — Roguelike Structures" section, session plan (Session 2 → YUNG's Better Dungeons), Torchmaster notes, Structure Generation row, Mod Count Summary (Wave 5 7→6 mods, 12→11 total).
+- [x] **Structory: Towers** removed from Wave 2 — biome-themed towers/outposts. Structory kept (user wants some ground structures). GUIDE.md updated: Structures table row, "Structory & YUNG's Additions" section, Mod Count Summary.
+- [x] **Chunky** removed from Wave 0 Infrastructure — Distant Horizons team now advises against Chunky + DH (redundant; "Swiss cheese" terrain artifacts). DH's built-in Distant Generation + NoisiumForked cover far terrain/LOD. GUIDE.md updated: Infrastructure table row, First Launch Checklist §4, DH tip, "Chunky — World Pregenerator" section, Incendium/Tectonic pregen notes. Mod Count Summary Wave 0 15→14 mods, 25→24 total.
+- [x] **`datapacks/wda-density-tweak/`** deleted — obsolete (tuned When Dungeons Arise structures only). `datapacks/README.md` and `rarer-better-dungeons/README.md` reframed to the desolate-vanilla rationale (no longer "vs WDA").
+- [x] **Mod Count Summary** — grand total mods 171→169, deps 44→46, total 215 (unchanged). Wave 2 5→7 deps (39→41 total); Wave 5 7→6 mods (12→11 total).
+
 ### ExtraQuests Removal & Create World Section (Aug 2026)
 
 - [x] ExtraQuests removed from GUIDE.md (Wave 4.5 Quest Addons table, Mod Count Summary) — quest book uses only standard FTB Quests types; daily/weekly quests contradict chill living; ExtraLib dependency never in pack. Logged under Removed Mods (Aug 2026)
 - [x] GUIDE.md "Create World" section added — world creation settings (Survival, Normal difficulty, Allow Commands/Cheats OFF, Default world type, Structure Generation ON, Game Rules → Chat all disabled), quest book + data pack pre-steps, CC:Tweaked serverconfig post-step
+- [x] DRIFTWOOD-GUIDE.pdf regenerated
+
+### Added Mods (Aug 2026 — Better Grass)
+
+- [x] **BetterGrassify v1.7.0+neoforge.1.21.1** (Wave 0.5 — Visual & Client QoL) — OptiFine **Fancy + Fast** better grass for NeoForge: grass block, snowy grass, mycelium, podzol, dirt paths, warped/crimson nylium connect and blend with neighbors (Fancy) or use the top texture on sides (Fast). Bonus: Better Snow + Better Snowy Grass (Serene Seasons synergy). Client-side only, Apache-2.0, 14.3M downloads, actively maintained (updated Jun 2026). 1.21.1 now in major-bugfix-only maintenance mode; the 1.7.0 build includes the ModernFix crash fix (#58). Config via YACL (already in pack) or file; integrates with Sodium's options screen. [Modrinth](https://modrinth.com/mod/bettergrassify)
+- [x] **Forgified Fabric API** (Wave 0.5 — Dependency) — Fabric API implemented on NeoForge (Sinytra); required by BetterGrassify. Apache-2.0, 25.4M downloads, very actively maintained (updated Aug 2026). [Modrinth](https://modrinth.com/mod/forgified-fabric-api)
+- [x] **Fast Better Grass resource pack NOT added** — BetterGrassify covers the fast mode natively, so the pack is redundant; no texture/model conflicts either way. (Reviewed alongside this batch)
+- [x] Foliage review history updated: the LambdaBetterGrass "Fabric-only" gap is now closed by BetterGrassify on NeoForge.
+- [x] GUIDE.md updated: Wave 0.5 Visual & Client QoL table + What to Expect bullet + Wave 0.5 Dependencies table; Mod Count Summary Total 170→171 mods, 42→43 deps, 212→214.
+- [x] DRIFTWOOD-GUIDE.pdf regenerated
+
+### Added Resource Packs (Aug 2026 — Patrix 32x)
+
+- [x] **Patrix 32x** (Wave 0 — Texture Pack, base layer) — full 32x PBR base pack; normal/specular maps feed Complementary Unbound + Euphoria Patches' PBR pipeline. **Added per user request — already installed in the instance**; reverses the Jul 2026 skip. Loaded at the **bottom** of pack order (11th) so the 16x overlays (Smooth Font, Fresh Animations, RAY's 3D Rails, etc.) win on top. Caveats from the Jul 2026 review still stand: notably heavier at the same resolution (watch the 4K / 70-80 FPS target — reduce Shadow Resolution to 1024 first), incomplete mob/item coverage stays vanilla 16x, and OptiFine-only features (CTM, natural textures, block-state randomization) are inactive under Iris — 32x textures + PBR maps still apply. [CurseForge](https://www.curseforge.com/minecraft/texture-packs/patrix-32x)
+- [x] GUIDE.md updated: Texture Packs table + blurb + load order (11. Patrix 32x). Mod Count Summary "+11 resource packs" note now matches the 11-pack table.
+- [x] DRIFTWOOD-GUIDE.pdf regenerated
+
+### Dependency Audit (Aug 2026 — Stellaris × Sky Aesthetics)
+
+- [x] Verified **Sky Aesthetics** is a required runtime dep of Stellaris 1.4.23: the Stellaris jar ships planet skybox data (`assets/stellaris/sky_aesthetics/*.json` — earth, mars, moon, mercury, venus, jupiter + orbits) but **no renderer code** (Modrinth marks the dep "embedded", but the 1.4.23 jar does not bundle it) — the separate Sky Aesthetics install does the rendering. Removing it breaks Stellaris's custom space skies.
+- [x] "Modify Sky" pause-menu button: added by Sky Aesthetics' `PauseMenuMixin` (verified in 2.0.13-beta jar) — **no config toggle exists** (SkyConfig.java has only sky/cloud/weather render toggles). Cosmetic — keep the mod, ignore the button. (Last-resort hide: strip the mixin class + mixin.json entry from the jar; not update-safe, not recommended.)
+- [x] GUIDE.md updated: Wave 7 dependencies note (Architectury API + Potentials API + Sky Aesthetics) + "Modify Sky" button note; Mod Count Summary Wave 7 1→2 deps (Total 43→44 deps, 214→215).
 - [x] DRIFTWOOD-GUIDE.pdf regenerated
 
 ### Removed Mods (Aug 2026)
@@ -395,7 +432,7 @@ PUT 90.*:
 - [x] Alex's Mobs (Unofficial Port) — skipped (6 months unmaintained, requires unofficial Citadel port; no alternative needed — current mob lineup sufficient)
 - [x] JJThunder To The Max — **BLOCKED** (incompatible with all worldgen mods — would break Terralith/Tectonic/BetterEnd/YUNG's)
 - [x] C2ME NeoForge — skipped (NoisiumForked + ModernFix cover chunk-gen optimization; seed non-determinism risk with mod worldgen)
-- [x] Patrix 32x — skipped (stick with current 16x packs; 32x PBR too heavy, incomplete mob/item coverage)
+- [x] ~~Patrix 32x — skipped (stick with current 16x packs; 32x PBR too heavy, incomplete mob/item coverage)~~ ✅ **ADDED Aug 2026 per user request (already installed)** — caveats stand: heavier at same res (watch 4K/70-80 FPS target), incomplete mob/item coverage stays 16x, OptiFine-only features inactive under Iris; loaded as base layer under the 16x overlays
 - [x] Alex's Mobs alternatives researched: Naturalist, Critters & Companions, Friends&Foes, Ecologics — all rejected; current creature lineup sufficient
 
 ### Added Mods (Jul 2026 batch 6)
@@ -433,7 +470,7 @@ PUT 90.*:
 - [x] Bushy Pink Petals, Wildflowers & Leaf Litter — 3D ground cover, 178K downloads, Apache 2.0, actively maintained ✅ ADDED (Jul 2026 batch 11)
 - [x] (Bee's) Fancy Crops — 6.5M downloads, Farmer's Delight compatible — too popular to skip ✅ ADDED (Jul 2026 batch 11)
 - [x] Retextured Vine — still too narrow in scope (vines only, 22K downloads) ❌ STILL SKIPPED
-- [x] LambdaBetterGrass — Fabric-only. No NeoForge version exists. 9.2M downloads but on wrong modloader ❌ STILL SKIPPED
+- [x] LambdaBetterGrass — Fabric-only. No NeoForge version exists. 9.2M downloads but on wrong modloader ❌ STILL SKIPPED (feature gap now closed by BetterGrassify on NeoForge — Aug 2026)
 
 ### Mod Review — 11 Candidates (Jul 2026 batch 16)
 

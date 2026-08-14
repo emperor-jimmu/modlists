@@ -1,12 +1,12 @@
 # Rarer Better Dungeons
 
-Rebalances **YUNG's Better Dungeons** density so it stops competing with **When Dungeons Arise** (Wave 5) for Overworld exploration slots.
+Rebalances **YUNG's Better Dungeons** density for a desolate, vanilla+ Overworld — rarer dungeons that feel earned rather than common.
 
 ## Why this exists
 
 The 1.21.1 NeoForge build of YUNG's Better Dungeons **removed the old `averageSeparation` config option** (verified against the mod's source: the NeoForge config spec only exposes skulls/heads, nether blocks, chest counts, and staircase length). Dungeon spacing is now set by the mod's structure-set data files. The only way to rebalance it is a datapack that overrides those files — which is what this is.
 
-At default spacing, the classic small dungeons generate every ~10 chunks and feel common, crowding out WDA's roguelike structures as notable landmarks. Rarer finds make each dungeon feel earned and give both structure sets room.
+At default spacing, the classic small dungeons generate every ~10 chunks and feel common. Rarer finds make each dungeon feel earned and keep the Overworld desolate between landmarks.
 
 ## Changes
 
@@ -27,6 +27,6 @@ For all worlds: copy this folder (or zip it) into `%APPDATA%\.minecraft\datapack
 
 For a single world: copy into `<world>\datapacks\`, then select it in-game via World Options → Data Packs (world must be reloaded / reopened).
 
-**Note**: structure placement is decided during world generation — the change applies to newly generated regions only. Existing chunks keep their old spacing. New world or Chunky pre-generation recommended for a full effect.
+**Note**: structure placement is decided during world generation — the change applies to newly generated regions only. Existing chunks keep their old spacing. A fresh world is recommended for the full effect.
 
 **Verify at test launch**: with the datapack active, small dungeons should appear ~22 chunks apart on average (F3 + `/locate structure betterdungeons:small_dungeon`).

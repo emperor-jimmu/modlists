@@ -222,6 +222,7 @@ Distant Horizons handles far rendering — keep vanilla render distance low. DH 
 | [Bushy Pink Petals, Wildflowers & Leaf Litter](https://www.curseforge.com/minecraft/texture-packs/bushy-pink-petals-wildflowers-leaf-litter) | 3D models for pink petals, wildflowers, and leaf litter on the ground           |
 | [Fresh Animations: Extensions](https://www.curseforge.com/minecraft/texture-packs/fresh-animations-extensions)                               | Official FA extension bundle — 8 addons: Objects, Details, Emissive, Creepers, Spiders, Quivers, Classic Horses, Slamacow |
 | [MissingSoundsFix](https://modrinth.com/resourcepack/missingsoundsfix)                                                                 | Suppresses vanilla empty-sound warnings (salmon.ambient, cod.ambient, etc.) — fixes log spam from MC-97521 |
+| [Patrix 32x](https://www.curseforge.com/minecraft/texture-packs/patrix-32x)                                                           | Full 32x PBR base pack — normal/specular maps for shaders; load at bottom of pack order                    |
 
 - **Smooth Font** — 32x font based on Faithful 32x. Overrides font textures only — safe with any 16x packs.
 - **Fresh Animations** — idle animations, directional looking, sleep/blink, emotions for all vanilla mobs. Resource pack overlay (not a mod) — place high in pack order.
@@ -233,6 +234,7 @@ Distant Horizons handles far rendering — keep vanilla render distance low. DH 
 - **Bushy Pink Petals, Wildflowers & Leaf Litter** — 3D models for ground-cover flora; denser, more natural look.
 - **Fresh Animations: Extensions** — all 8 official FA addons in one download (Objects, Details, Emissive, Creepers, Spiders, Quivers, Classic Horses, Slamacow). Load above Fresh Animations.
 - **MissingSoundsFix** — silences vanilla empty-sound log spam (`salmon.ambient`, etc. — MC-97521) with dummy sound mappings; no audio changed.
+- **Patrix 32x** — full 32x PBR base pack; normal/specular maps feed Complementary Unbound + Euphoria's PBR pipeline. Load at the **bottom** of pack order as the base layer so the overlay packs above it win. Caveats: notably heavier than the 16x lineups (watch the 4K / 70-80 FPS target — drop Shadow Resolution to 1024 first), incomplete mob/item coverage stays vanilla 16x, and OptiFine-only features (CTM connected textures, natural textures, block-state randomization) are inactive under Iris — the 32x textures and PBR maps still apply.
 
 **Installation**: Install via XMCL — drop `.zip` files into the instance's Resource Packs tab, or copy them into the instance's `resourcepacks/` folder (access via instance settings). Load order (top = highest priority):
 
@@ -246,6 +248,7 @@ Distant Horizons handles far rendering — keep vanilla render distance low. DH 
 8. Bushy Pink Petals, Wildflowers & Leaf Litter
 9. Fresh Animations: Extensions
 10. MissingSoundsFix
+11. Patrix 32x (base layer — overlays above win)
 
 ### Infrastructure
 
@@ -254,7 +257,6 @@ Distant Horizons handles far rendering — keep vanilla render distance low. DH 
 | [Chunk Loaders](https://www.curseforge.com/minecraft/mc-mods/chunk-loaders)                              | Keep chunks loaded across dimensions — essential for Phase 2+ automation |
 | [SuperMartijn642's Config Lib](https://www.curseforge.com/minecraft/mc-mods/supermartijn642s-config-lib) | Config library (Chunk Loaders dependency)                                |
 | [SuperMartijn642's Core Lib](https://www.curseforge.com/minecraft/mc-mods/supermartijn642s-core-lib)     | Core library (Chunk Loaders dependency)                                  |
-| [Chunky](https://www.curseforge.com/minecraft/mc-mods/chunky)                                            | World pregenerator — generates chunks preemptively to eliminate stutter  |
 
 ### Install
 
@@ -289,8 +291,6 @@ Open **Video Settings → [colored tiles icon]** next to the FOV slider.
 || Show LOD Gen Progress      | ON         |
 
 > **Tip**: DH generates LOD data as you explore, in new chunks only. First visit to an area has temporary pop-in. Terralith + Tectonic terrain takes longer than vanilla. Monitor VRAM — shaders + DH at 4K can push past 12GB.
->
-> **During Chunky pre-generation**, switch Distant Generator Mode to `PRE_EXISTING_ONLY` and drop CPU Load to Low/Balanced so DH converts Chunky's freshly generated chunks into LODs instead of racing it — see [Chunky — World Pregenerator](#chunky--world-pregenerator). Switch back to the default mode and raise CPU Load once pre-generation is done.
 
 #### 3. Shader Setup
 
@@ -299,17 +299,6 @@ Drop **Complementary Unbound** `.zip` into `shaderpacks/`. In-game: Options → 
 **Euphoria Patches** (optional add-on): Install the patcher mod, it auto-detects Complementary and applies additional visual options. All features disabled by default. Open Shader Options → Popular Settings tab → apply the Popular Settings preset, then browse individual categories to fine-tune.
 
 Full settings table (RTX 4080 SUPER, 16GB VRAM): see [Shaderpack](#shaderpack) above. General MC: Graphics Fancy, Render Distance 10, Simulation 8, VSync OFF.
-
-#### 4. Chunky — World Pregeneration
-
-Run before exploring beyond your spawn area to avoid exploration stutter.
-
-```
-/chunky radius 5000
-/chunky start
-```
-
-Let it finish (~15-30 min), check with `/chunky status`. Full workflow — `continue-on-restart` and the Distant Horizons interplay — is in the [Chunky — World Pregenerator](#chunky--world-pregenerator) section below.
 
 ---
 
@@ -335,38 +324,6 @@ Keeps chunks loaded when you're far away or in another dimension.
 4. Other dimensions — Single per outpost
 
 No performance concern with a dozen loaders on a modern CPU.
-
----
-
-#### Chunky — World Pregenerator
-
-Chunky pregenerates chunks so your world has no exploration stutter, lag spikes from new terrain, or Distant Horizons LOD gaps. Run once per world before serious play.
-
-**First world setup**:
-
-Open chat (`T`) and run:
-
-```
-/chunky radius 5000
-/chunky start
-```
-
-This generates a 5000-block radius circle around your spawn point. On a modern CPU with NoisiumForked, this takes ~15-30 minutes. The world border expands as it works — you'll see chunk count progress in chat. Let it finish before exploring far from spawn.
-
-**Checking status**: `/chunky status` shows progress, speed, estimated time remaining.
-
-**Pausing/resuming**: `/chunky pause` and `/chunky continue`.
-
-**Continue on Restart**: If you pause or leave a generation task running, Chunky can resume automatically every time you load the world. To enable this, edit `config/chunky/config.json`:
-
-```
-"continue-on-restart": false → true
-```
-
-Any active task will now resume by itself whenever you open the world. This is the recommended approach for single-player — the task resumes the moment you load the world, no manual `/chunky continue` needed.
-
-**Distant Horizons + Chunky**: while pre-generating, set DH to Distant Generation ON, Distant Generator Mode `PRE_EXISTING_ONLY`, and CPU Load Low/Balanced so DH converts Chunky's chunks into LODs as they generate. Switch back to the default generator mode and raise CPU Load when Chunky finishes. Full workflow in the [Chunky — World Pregenerator](#chunky--world-pregenerator) section above.
-
 
 ---
 
@@ -417,6 +374,7 @@ All the visual polish, UI improvements, inventory tools, storage, travel, tradin
 | [Cosy Critters & Creepy Crawlies](https://www.curseforge.com/minecraft/mc-mods/cosy-critters)                     | Ambient atmospheric animals — birds, bugs, and critters that bring the world to life           |
 | [Foxified Dense Flowers](https://www.curseforge.com/minecraft/mc-mods/foxified-dense-flowers)                     | Renders multiple flowers per block in flower fields for denser, more natural-looking flora     |
 | [Effectual](https://www.curseforge.com/minecraft/mc-mods/effectual)                                               | Atmospheric effects and decorative particles — steam breath, footprints, cave dust, sparks     |
+| [BetterGrassify](https://modrinth.com/mod/bettergrassify)                                                         | OptiFine Fancy + Fast better grass — connected grass/podzol/path/nylium sides, better snow. Requires Forgified Fabric API |
 
 ### Inventory & UI
 
@@ -514,6 +472,7 @@ Tweak payloads directly in `config/day_counter.toml` (`[Rewards.1]`–`[Rewards.
 | [Polytone](https://www.curseforge.com/minecraft/mc-mods/polytone)                 | Custom block colors, lightmaps, biome colors — Optifine format support for resource packs | — (dependency orphaned — Rainbow's Foliage removed)                      |
 | [Lithostitched](https://www.curseforge.com/minecraft/mc-mods/lithostitched)       | Worldgen modifier API — handles village placement hooks                                   | Improved Village Placement                                               |
 | [TLib (Take's Lib)](https://www.curseforge.com/minecraft/mc-mods/tlib)            | Library for atmospheric effects                                                           | Effectual                                                                |
+| [Forgified Fabric API](https://modrinth.com/mod/forgified-fabric-api)             | Fabric API implemented on NeoForge (Sinytra) — lets Fabric-origin mods run on NeoForge    | BetterGrassify                                                            |
 
 **Lithostitched** is a worldgen library that Improved Village Placement uses to hook into the village generation system. Without it, IVP crashes at startup with a `NoClassDefFoundError` for `AddWorldgenModifiersEvent`. This mod was not declared as a dependency in IVP's metadata — install it manually.
 
@@ -548,7 +507,7 @@ Time speed can be set via three modes (`speedMethod`):
 > **⚠ CRITICAL**: These settings MUST be edited directly in `config/betterdays-common.toml`. The in-game config screen (Mod List → Better Days → Config) does not support the `SEASON` mode and **will silently overwrite** your config back to `MINUTES` mode if opened. **Do not open Better Days' in-game config.**
 
 - `speedMethod = "SEASON"` — Day length varies by Serene Seasons sub-season. Summer days are longer, winter days shorter.
-- `seasonDayMinutes = 20.0` — Total day+night cycle in real minutes (vanilla baseline). 20 = same average length as vanilla.
+- `seasonDayMinutes = 40.0` — Total day+night cycle in real minutes. 40 = 2x vanilla (20 min) average — summer days longer, winter shorter.
 - `seasonLatitude = 48.0` — Central Europe latitude. Higher values = more extreme day-length swings between seasons.
 - `dayStart = 23500` — Dawn at time 23500 (default, correct range 22300–24000).
 - `nightStart = 13000` — Dusk at time 13000 (default).
@@ -627,6 +586,7 @@ These mods change how the game looks and feels. All are client-side and work imm
 - **Cosy Critters & Creepy Crawlies** — ambient birds/bugs/critters; client-side, toggleable via `/cosycritters`. Zero perf impact.
 - **Foxified Dense Flowers** — denser flower fields; client-side.
 - **Effectual** — atmospheric particles (steam breath, bubbles, footprints, cave dust, sparks). Disable overlap with Particular Reforged in `config/effectual-client.toml`. Requires Architectury API, Cloth Config, TLib (all in pack).
+- **BetterGrassify** — OptiFine-style connected grass: grass blocks, snowy grass, podzol, mycelium, dirt paths, farmland, and both nylium blend their side textures into surrounding terrain (Fancy, default) or use the top texture (Fast). Adds Better Snow + Better Snowy Grass for snowy biomes. Ships no textures — samples your active texture pack's sprites at runtime, so it works at any resolution; resource-pack compatibility mode is on by default. Set mode in config — YACL GUI (already in pack) or `config/bettergrass.json`. Requires Forgified Fabric API.
 
 ---
 
@@ -1332,6 +1292,9 @@ MineColonies provides autonomous NPC workers that mine, farm, craft, and guard y
 | Mod                                                                           | Role                                                            |
 |-------------------------------------------------------------------------------|-----------------------------------------------------------------|
 | [Serene Seasons](https://www.curseforge.com/minecraft/mc-mods/serene-seasons) | Seasonal foliage colors, temperature shifts, crop growth cycles |
+| [Serene Seasons Plus](https://modrinth.com/mod/serene-seasons-plus) v5.1.1 | Serene Seasons add-on — sub-season day/night speed + improved snow piling/melting |
+| [GlitchCore](https://modrinth.com/mod/glitchcore) (NeoForge) v2.1.0.2 **— REQUIRED** | Library — required by Serene Seasons 10.1.0.3 |
+| [Gabou's Libs](https://modrinth.com/mod/gabous-libs) v1.8.1 | Library — required by Serene Seasons Plus |
 
 ### Underground & Ocean
 
@@ -1364,7 +1327,6 @@ MineColonies provides autonomous NPC workers that mine, farm, craft, and guard y
 | [YUNG\'s Better Nether Fortresses](https://www.curseforge.com/minecraft/mc-mods/yungs-better-nether-fortresses) | Improved nether fortresses       |
 | [YUNG\'s Better Caves](https://www.curseforge.com/minecraft/mc-mods/yungs-better-caves)                         | Larger, more varied caves        |
 | [Structory](https://www.curseforge.com/minecraft/data-packs/structory)                                          | New hand-crafted structures      |
-| [Structory: Towers](https://www.curseforge.com/minecraft/mc-mods/structory-towers) v1.0.16                    | Biome-themed towers and outposts — **use v1.0.16** (v1.0.17 crashes on NeoForge) |
 | [YUNG\'s Bridges](https://modrinth.com/mod/yungs-bridges)                                                       | 15+ natural bridges across terrain |
 | [YUNG\'s Extras](https://modrinth.com/mod/yungs-extras)                                                         | Desert wells, obelisks, ruins, pillars |
 
@@ -1377,7 +1339,7 @@ MineColonies provides autonomous NPC workers that mine, farm, craft, and guard y
 
 **Incendium** is a server-side data pack (packaged as a NeoForge mod) by Starmute that completely revamps the Nether using only vanilla blocks. The Nether generation height is extended to 192. Eight new biomes (Quartz Flats, Withered Forest, Infernal Dunes, Ash Barrens, Toxic Heap, and more) replace vanilla Nether biomes with 3D terrain — jagged mountains, twisting caves, and themed landscapes. Nine new structures range from the massive Forbidden Castle (one of Minecraft's largest random structures) to the Sanctum (illager fortress), Nether Reactor, and Quartz Kitchen. Over 25 custom weapons and items (Trailblazer flame bow, Greatsword of Sacrifice, Hefty Pickaxe, Hazmat Suit) are rewarded from mobs and structures. New mobs include Toxic Slimes, Restless Spirits, a tamable Ghastling, and the summonable Hovering Inferno boss. The optional [Sparkles](https://modrinth.com/resourcepack/sparkles) resource pack gives Incendium items custom textures — without it, they use vanilla sprites with custom behavior and remain fully functional.
 
-> **⚠️ New world or Nether reset required**: Incendium overhauls Nether terrain generation. Do not add to an existing world with an explored Nether — reset the Nether dimension or create a new world. Pre-generate Nether chunks with Chunky: enter the Nether → `/chunky radius 300` → `/chunky start`.
+> **⚠️ New world or Nether reset required**: Incendium overhauls Nether terrain generation. Do not add to an existing world with an explored Nether — reset the Nether dimension or create a new world.
 
 > **Note**: Incendium is listed as an alpha/unsupported port for 1.21.x while the Stardust Labs team works on a full rewrite. The mod is mature (34M+ downloads across all versions) and the featured v5.4.4 build is well-tested. The upcoming rewrite may require a Nether reset to upgrade — plan accordingly.
 
@@ -1489,13 +1451,13 @@ Opens a new way to experience the world. Craft a spyglass, then look at any plan
 
 **Ore generation with `min_y: -96` + `ore_fix: true`**: Lowering bedrock expands the vertical range ore must cover. `ore_fix` remaps ore distributions to the new depth envelope — diamond still clusters near the bottom, iron and coal fill the expanded crust. Without `ore_fix`, the extra stone between Y=-64 and Y=-96 would be barren.
 
-> **⚠️ New world required**: These are worldgen changes. Existing chunks keep their old terrain. Pre-generate with Chunky: fly to ocean → `/chunky radius 300` → `/chunky start`.
+> **⚠️ New world required**: These are worldgen changes. Existing chunks keep their old terrain — explore fresh areas to see the new depths.
 
 **Quick verification**: Stand at ocean surface (Y=62), look down with F3 open. Deep oceans should show the floor at Y=-28 (±5). Standard oceans at Y=17 (±5). Monuments should have their base at Y=-16 (±5) — floating ~12 blocks above the trench floor. If values are off, adjust in-game via Mod Menu → Tectonic → Configure.
 
 **YUNG's Better Dungeons — Rarer Dungeons** (`datapacks/rarer-better-dungeons/`):
 
-Rebalances YUNG's Better Dungeons density against When Dungeons Arise (Wave 5). The 1.21.1 NeoForge build no longer exposes separation in its config — dungeon spacing is set by the mod's structure-set data files, so the override ships as a small datapack (pack_format 48).
+Rebalances YUNG's Better Dungeons density for a desolate, vanilla+ Overworld. The 1.21.1 NeoForge build no longer exposes separation in its config — dungeon spacing is set by the mod's structure-set data files, so the override ships as a small datapack (pack_format 48).
 
 | Dungeon | Average separation (chunks) | Default | Recommended | Applied |
 |---------|-----------------------------|---------|-------------|---------|
@@ -1505,25 +1467,9 @@ Rebalances YUNG's Better Dungeons density against When Dungeons Arise (Wave 5). 
 | Catacombs | `spacing` in `zombie_dungeons.json` | 48 | 55–65 | **60** |
 
 - **Spacing** = average distance between structures in chunks (the old `averageSeparation` value). **Separation** (minimum distance) is raised in step to ~50% of spacing, matching the mod's own default ratio.
-- **Why**: at default spacing (10) the classic small dungeons feel common and crowd out WDA's roguelike structures as landmarks. Rarer finds make each dungeon feel earned, and the two structure sets stop competing for exploration slots.
+- **Why**: at default spacing (10) the classic small dungeons feel common. Rarer finds make each dungeon feel earned and keep the Overworld desolate between landmarks.
 - **Install**: copy `datapacks/rarer-better-dungeons/` (or its zip) into the world's `datapacks/` folder — or `%APPDATA%\.minecraft\datapacks\` for all worlds. Applies to newly generated regions only.
 - **Verify**: `/locate structure betterdungeons:small_dungeon` should show ~22-chunk average spacing with the datapack active.
-
-**When Dungeons Arise — Rarer Minor Structures** (`datapacks/wda-density-tweak/`):
-
-The other half of the structure-density balance: WDA's minor structures (fishing huts, wishing wells, jungle tree houses, bathhouses, abandoned temples, lighthouses) get **+25% spacing**, while the major set stays at default so the big landmarks remain special destinations.
-
-| Field | Default (2.1.68) | +25% (applied) |
-|-------|------------------|----------------|
-| `spacing` | 45 | **56** |
-| `separation` | 40 | **50** |
-| `salt` | 342415935 | unchanged |
-| `exclusion_zone` | 10 chunks vs `major_structures` | unchanged |
-
-- Values verified by extracting `minor_structures.json` from the shipped `DungeonsArise-1.21.1-2.1.68` jar — older-version numbers (35/25) do not match 1.21.1.
-- The minor set on 1.21.1 holds only the 6 small builds above. The **most common major-set structures** (illager_campsite, merchant_campsite, small_blimp — weight 3) are trimmed to weight 2 (~28% rarer) by the same datapack; the big landmarks keep their density. Remaining weight-2 commons (greenwood_pub, illager_corsair, illager_galley, mushroom_house) stay at default.
-- **Install**: copy `datapacks/wda-density-tweak/` (or its zip) into the world's `datapacks/` folder — or `%APPDATA%\.minecraft\datapacks\` for all worlds. New regions only.
-- **Verify**: `/locate structure dungeons_arise:fishing_hut` should average ~56 chunks apart with the datapack active.
 
 ### Overworld
 
@@ -1548,6 +1494,8 @@ Four seasons with visual foliage changes and crop growth modifiers:
 
 **Integration**: Farmer's Delight crops are affected by seasons. Build glass greenhouses or use Season Sensor blocks to track optimal planting times.
 
+**Serene Seasons Plus** (add-on): refines snow piling/melting and adds sub-season day/night speed — ties into Better Days' SEASON mode (Wave 0). Requires Serene Seasons + Better Days + Gabou's Libs (all in pack).
+
 #### YUNG's Overhauled Structures
 
 Every vanilla structure is expanded:
@@ -1564,14 +1512,13 @@ Every vanilla structure is expanded:
 | Better Nether Fortresses | Districts (blaze, wither skeleton, strider) | Nether wart, blaze rods, skulls       |
 | Better End Island        | Redesigned pillars, bell tower, new portal  | Dragon egg, gateway access            |
 
-#### Structory, Structory Towers & YUNG's Additions
+#### Structory & YUNG's Additions
 
 - **Structory** — dozens of hand-crafted structures: camps, shrines, castles, towers, walled towns
-- **Structory: Towers** — biome-themed towers, outposts, and landmarks with custom loot. Integrates with Waystones — towers often have a Waystone nearby. **Use v1.0.16** — v1.0.17 crashes on NeoForge with a config-loading race condition (`Cannot get config value before config is loaded`)
 - **YUNG's Bridges** — 15+ types of naturally generated bridges with biome-specific variants, spanning rivers and ravines
 - **YUNG's Extras** — small vanilla+ additions: improved Desert Wells (rare Wishing Wells with treasure), Desert Obelisks, Flame Outposts, scattered ruins and pillars
 
-All require **YUNG's API** (already in Wave 0.5 Dependencies). Structory and Structory: Towers are independent — install both for maximum structure variety.
+All require **YUNG's API** (already in Wave 0.5 Dependencies). Structory is independent of the YUNG's mods.
 
 **What to do**: Explore! Mark interesting structures on your JourneyMap (fullscreen map → right-click to set waypoint). Return with an Explorer's Compass.
 
@@ -2798,7 +2745,6 @@ The pre-authored quest book lives in the repo at `minecraft/config/ftbquests/que
 |---------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
 | [Better Combat](https://modrinth.com/mod/better-combat)                                           | Melee combat animations — weapon reach, sweeping, attack speed                                    |
 | [L_Ender\'s Cataclysm](https://www.curseforge.com/minecraft/mc-mods/lendercataclysm)              | Epic boss fights — Leviathan, Netherite Monstrosity, Ender Guardian (CurseForge, NeoForge 1.21.1) |
-| [When Dungeons Arise](https://www.curseforge.com/minecraft/mc-mods/when-dungeons-arise)           | Roguelike combat structures with loot                                                             |
 | [Enchantment Descriptions](https://www.curseforge.com/minecraft/mc-mods/enchantment-descriptions) | Shows enchantment effects in tooltips                                                             |
 | [Create Big Cannons](https://www.curseforge.com/minecraft/mc-mods/create-big-cannons)             | Artillery engineering — siege cannons for colony defense and spectacle                            |
 | [Create Big Cannons: Advanced Technologies](https://www.curseforge.com/minecraft/mc-mods/create-big-cannons-advanced-technologies) | CBC addon — twin/heavy autocannons, rocket pods & rails, muzzle brakes, silencers, rifled barrels |
@@ -2859,57 +2805,6 @@ Hand-animated bosses with unique mechanics. **Opt-in** — you must build a summ
 
 **Ignite**: Phase 1 — fireball barrage, block with shield or dodge behind pillars. Phase 2 (40%) — absorbs lava from arena, stay on high ground, attack when emerging. Drops fire weapons (permanent fire aspect).
 
-### When Dungeons Arise — Roguelike Structures
-
-38 unique structures (WDA 2.1.68) generated across two density sets: **Minor** (6 small builds — thinned +25% by the `wda-density-tweak` datapack) and **Major** (32 structures — the three most common camps trimmed to weight 2). Table verified against the shipped jar.
-
-| Structure | Set | Where it spawns | What to expect |
-|-----------|-----|-----------------|----------------|
-| Fishing Hut | Minor | Beaches | Small hut, fishing barrels |
-| Wishing Well | Minor | Plains, meadows | Decorative well — no loot |
-| Jungle Tree House | Minor | Jungles | Treetop hideout, chests |
-| Bathhouse | Minor | Plains, forests, taiga, snowy | Bathhouse, supply barrels |
-| Abandoned Temple | Minor | Taiga, hills, mountains | Multi-room ruin, rooftop treasure + explorer map |
-| Lighthouse | Minor | Beaches, plains | Tower, rooftop chest |
-| Bandit Village | Major | Badlands | Tent settlement, supplies |
-| Bandit Towers | Major | Badlands | Tower cluster, gardens, supply rooms |
-| Illager Campsite | Major | Plains, hills, snowy | Tent camp, map + supply |
-| Merchant Campsite | Major | Plains, meadows | Trading camp, map + supply |
-| Illager Fort | Major | Taiga, snowy | Fortified outpost, treasure |
-| Illager Windmill | Major | Plains, meadows | Windmill, treasure |
-| Greenwood Pub | Major | Forests | Tavern, barrels |
-| Mushroom House | Major | Forests | Cozy mushroom home |
-| Mushroom Village | Major | Forests | Small mushroom settlement |
-| Mushroom Mines | Major | Forests | Underground mine, ore veins + tools |
-| Monastery | Major | Taiga, hills, mountains | Stone monastery, map + barrels |
-| Coliseum | Major | Plains, meadows | Arena ruin — combat only, no chest loot |
-| Ceryneian Hind | Major | Deserts | Giant stag monument, hidden treasure |
-| Typhon | Major | Oceans | Sea monster, treasure |
-| Illager Corsair | Major | Oceans | Illager pirate ship |
-| Illager Galley | Major | Oceans | Illager war galley |
-| Undead Pirate Ship | Major | Oceans | Haunted ship, enchanted gear |
-| Small Blimp | Major | Deserts, plains, savannas, forests, taiga | Tiny airship (redstone chamber, coal storage) |
-| Scorched Mines | Major | Deserts | Burnt-out mining settlement |
-| Mining Complex | Major | Deserts, plains, savannas | Underground facility (dripstone/lush caves) |
-| Foundry | Major | Deserts, plains, savannas | Industrial forge with lava pit |
-| Infested Temple | Major | Taiga, hills, snowy, cherry | Temple with ominous vaults (trial-chamber style) |
-| Kisegi Sanctuary | Major | Plains, hills, cherry | Shrine complex with ominous vaults |
-| Plague Asylum | Major | Forests, mountains | Asylum with potion lab and cells |
-| Keep Kayra | Major | Swamps, mangrove | Fortress keep with gardens and library |
-| Mechanical Nest | Major | Swamps, mangrove | Giant mechanical bird nest |
-| Thornborn Towers | Major | Forests | Thorn-covered towers |
-| Shiraz Palace | Major | Deserts | Grand palace, elite guards |
-| Heavenly Rider | Major | Deserts, plains, savannas + End | Sky fortress |
-| Heavenly Conqueror | Major | Deserts, plains, savannas + End | Sky fortress |
-| Heavenly Challenger | Major | Deserts, plains, savannas + End | Sky fortress |
-| Aviary | Major | End midlands & highlands | Colossal bird-nest tower in the End |
-
-**Finding**: Explorer's Compass → "When Dungeons Arise" filter → select structure.
-
-**Strategy**: Minor-set builds are Phase-1 friendly — light combat, early loot. Major-set dungeons range from camps (low threat) to palaces and sky fortresses (Phase 2+ — bring real gear, blocks to pillar, torches, and healing food). Structures without chest loot (Coliseum, Wishing Well) are pure exploration stops.
-
-**Note**: Structures are finite — once looted, they don't respawn unless chunks reset. Mark looted ones on JourneyMap. `giant_mushroom` and `mining_system` exist in the mod's files but are not registered in either structure set in 2.1.68 — they do not generate.
-
 ### Create Big Cannons — Artillery Engineering
 
 Functional cannons built from Create materials, using rotational power for assembly and gunpowder for ammo.
@@ -2968,13 +2863,13 @@ The **Mega Torch** suppresses hostile mob spawning in a 64-block radius — but 
 |---|---|---|
 | `megaTorchRadius` | **64** | Cube ±64 → 129×129×129 zone: village + farms + perimeter |
 | `feralFlareRadius` | **16** | Cube ±16 → 32×32×32 zone, capped at 255 invisible lights |
-| `blockOnlyNaturalSpawns` | `true` | Spawner + structure spawns exempt — YUNG's / WDA / Cataclysm content untouched |
+| `blockOnlyNaturalSpawns` | `true` | Spawner + structure spawns exempt — YUNG's dungeons and Cataclysm content untouched |
 
 **Why these values, and why not bigger**:
 
 - **Mega Torch 64** — the radius is a *cube* (each direction), so 64 covers a village plus its hinterland. Each torch costs one Cataclysm boss kill (KubeJS gate), and the conquest loop is designed to repeat (arenas re-summon bosses). A 96+ cube would let a single kill pacify an entire region and collapse the loop; the original 48 draft underpays the conquest.
 - **Feral Flare 16** — it's a *clearing aid*, not a territory tool: it sprinkles invisible light (level 15) in its cube until it hits the 255-light hardcap. At 16 the lights sit ~5 blocks apart, keeping block light ≥ 10; at 24 they thin to ~7.5-block spacing and dark gaps reappear — worse than 16. Raising the hardcap to compensate trips the mod's own world-corruption warning (badly compressed packet errors).
-- **Spawner exemption** — the Mega Torch never blocks `SPAWNER`/`STRUCTURE` spawns, so YUNG's dungeons, WDA structures, and Cataclysm arenas keep their mobs at *any* radius. Torches pacify the surface, never the content.
+- **Spawner exemption** — the Mega Torch never blocks `SPAWNER`/`STRUCTURE` spawns, so YUNG's dungeons and Cataclysm arenas keep their mobs at *any* radius. Torches pacify the surface, never the content.
 
 ---
 
@@ -2983,7 +2878,7 @@ The **Mega Torch** suppresses hostile mob spawning in a 64-block radius — but 
 | Session                              | Focus                                                                                                                                    | What to Do                 |
 |--------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|----------------------------|
 | **Session 1 — Combat feel**          | Better Combat works automatically. Craft/find a Simply Swords weapon. Test daggers (fast stab) vs greatswords (wide sweep). Equip a rune | Learn your weapon          |
-| **Session 2 — First dungeon**        | Explorer's Compass → When Dungeons Arise minor set: abandoned temple or bathhouse. Clear it                                                                    | Roguelike dungeon complete |
+| **Session 2 — First dungeon**        | Explorer's Compass → YUNG's Better Dungeons: clear a dungeon or spider cave                                                                                      | Dungeon complete           |
 | **Session 3 — First Cataclysm boss** | Easiest = Leviathan (deep ocean) or Netherite Monstrosity (Nether). Prepare: good weapons, fire resistance, healing food                 | Epic boss beaten           |
 | **Session 4 — Cannons**              | Craft bronze (zinc + copper in heated mixer). Build Small Cannon. Test fire. Mount near base entrance                                    | Artillery online           |
 | **Session 5+ — Boss gauntlet**       | Remaining Cataclysm bosses. Each drops unique endgame materials. Revisit Twilight Forest bosses with Wave 5 gear                         | Full endgame gear          |
@@ -3224,6 +3119,8 @@ Futuristic laser barriers created by powering Laser Source blocks with redstone.
 | [**Stellaris**](https://www.curseforge.com/minecraft/mc-mods/stellaris) 1.4.23 | Space exploration — rockets, Moon/Mars/Venus/Mercury/Glacio, oxygen system, machines, energy |
 
 Stellaris (by ExodusTeam) is the successor to Beyond Earth and the premier space mod for NeoForge 1.21.1. It features 4 rocket tiers, a rover, oxygen management, custom gravity per planet, oil/water/fuel processing, radioactives, and alien mobs. Machines include the Oxygen Distributor, Water Separator, Solar Panel, Fuel Refinery, and Pump Jack. 250+ building blocks across planet-specific sets.
+
+**Dependencies**: Architectury API (already in pack), [Potentials API](https://modrinth.com/mod/potentials), and [Sky Aesthetics](https://modrinth.com/mod/sky-aesthetics) (client-side sky renderer). Sky Aesthetics renders Stellaris's planet skyboxes — Stellaris ships only the sky data (`assets/stellaris/sky_aesthetics/*.json`), so Sky Aesthetics must be installed. Note: Sky Aesthetics adds a "Modify Sky" button to the pause menu (opens an in-game sky editor) with no config option to hide it — it's cosmetic, ignore it; do not remove the mod or Stellaris's space skies lose their custom rendering.
 
 ### Integration with Tech Mods
 | Layer          | Stellaris ↔ Tech Mod Interaction                                                                        |
@@ -4309,7 +4206,7 @@ All mods installed and every wave configured — here's how to start a proper wo
 ### Before Creating
 
 1. **Install the quest book** — copy `config/ftbquests/quests/` into the instance's `config/ftbquests/` folder (merge/overwrite) so the pre-authored book is ready from world one (see *Installing the Quest Book* in Wave 4.5).
-2. **Optional data packs** — for the structure-spacing tweaks, place `rarer-better-dungeons/` and `wda-density-tweak/` in `saves/<world>/datapacks/` after creating the world (see `datapacks/README.md`).
+2. **Optional data packs** — for the structure-spacing tweak, place `rarer-better-dungeons/` in `saves/<world>/datapacks/` after creating the world (see `datapacks/README.md`).
 
 ### World Creation Settings (Singleplayer → Create New World)
 
@@ -4320,7 +4217,7 @@ All mods installed and every wave configured — here's how to start a proper wo
 | **Allow Commands (Cheats)** | **OFF** | Survival purity — no `/gamemode` escapes, no creative shortcuts; quest rewards stay earned. Cheats can't be enabled later without opening the world to LAN, so set everything you need now |
 | World Type | **Default** | Terralith + Tectonic overhaul the overworld automatically. Don't pick Superflat, Single Biome, or Amplified — they break modded worldgen |
 | Seed | Leave empty | Random is fine — worldgen mods guarantee interesting terrain either way |
-| Structure Generation | **ON** | YUNG's collection, When Dungeons Arise, Waystones, and every dimension need it |
+| Structure Generation | **ON** | YUNG's collection, Waystones, and every dimension need it |
 
 **Game Rules → Chat → disable all options** (Command Feedback, Command Block Output, Reduced Debug Info, Show Death Messages, Show Recipe Messages, Announce Advancements). Keeps the chat clean — progression popups still appear via Advancement Plaques and the quest book still tracks everything.
 
@@ -4335,18 +4232,18 @@ All mods installed and every wave configured — here's how to start a proper wo
 
 | Wave                         | Mods    | Deps   | Total   | Notes                                                                                                                                                                                                                                                                  |
 |------------------------------|---------|--------|---------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Wave 0 — Foundation          | 15      | 10     | 25      | Dependencies (12), Performance & Rendering (10), Shaderpack (1 mod: Euphoria Patches), Infrastructure (3) + Simple Recall Potion (travel) — all the nuts & bolts that make the game run (+1 shaderpack, +11 resource packs)                                                                            |
+| Wave 0 — Foundation          | 14      | 10     | 24      | Dependencies (12), Performance & Rendering (10), Shaderpack (1 mod: Euphoria Patches), Infrastructure (3) + Simple Recall Potion (travel) — all the nuts & bolts that make the game run (+1 shaderpack, +11 resource packs)                                                                            |
 | Wave 1 — Tech                | 19      | 5      | 24      | Create + 13 addons (incl. Power Grid, Gunsmithing, Protection Pixel, Ornithopter Glider, Train Utilities, Railways Navigator, Interiors, Train Parts, Threaded Trains), Mekanism + Generators, AE2, Advanced Finders, Advanced Chimneys + NTGL, GeckoLib, Framework, ForgeEndertech, Kleiders deps |
 | Wave 1.5 — Colony            | 9       | —      | 9       | MineColonies (4 deps counted as mods — they're library mods; CurseForge-only) + 4 addons: Byzantine Styles, Stylecolonies, Create: Colony Logistics, ColonyLink                                                                                                           |
-| Wave 2 — Exploration         | 34      | 5      | 39      | YUNG's (12), Terralith/Tectonic, Serene Seasons, Darker Depths, Upgrade Aquatic, dimensions (3), End overhaul (3 + Nullscape dp + 5 deps), Structory + Structory Towers, navigation, aircraft, ships, hang glider, MoMP addon, Incendium (Nether biome overhaul), Immersive Machinery (utility machines), Field Guide + 2 required companions (Immersive Overlays, Item Descriptions)                                                                          |
+| Wave 2 — Exploration         | 34      | 7      | 41      | YUNG's (12), Terralith/Tectonic, Serene Seasons + Serene Seasons Plus + GlitchCore + Gabou's Libs, Darker Depths, Upgrade Aquatic, dimensions (3), End overhaul (3 + Nullscape dp + 5 deps), Structory, navigation, aircraft, ships, hang glider, MoMP addon, Incendium (Nether biome overhaul), Immersive Machinery (utility machines), Field Guide + 2 required companions (Immersive Overlays, Item Descriptions)                                                                          |
 | Wave 3 — Equipment Magic     | 9       | 12     | 21      | Skills Mastery Reimagined, Pufferfish's Skills, Simply Swords, Simply More, Too Many Bows, Relics, Enchanting Runes, Immersive Armors, Apotheosis + 12 deps (Placebo, Apothic modules, Patchouli, Simply Tooltips, Fzzy Config, Ranged Weapon API, Spell Engine, Bundle API, Pufferfish's Attributes, Curios API)                                               |
 | Wave 4 — Food & Farming      | 11      | —      | 11      | Farmer's Delight + 8 addon mods + Neo Bee Fix + Comfortable Campfires                                                                                                                                                                                                  |
 | Wave 4.5 — Quests            | 6       | 0      | 6       | FTB Questing ecosystem: FTB Library + FTB Quests + FTB Teams + KubeJS + FTB XMod Compat + MineColonies Questline. Bountiful removed. ExtraQuests removed (Aug 2026 — quest book uses only standard FTB Quests types; its ExtraLib dependency was never in the pack).                                                                                                                                                                           |
-| Wave 5 — Combat & Mobs       | 7       | 5      | 12      | Better Combat, L_Ender's Cataclysm, When Dungeons Arise, Enchantment Descriptions, Create Big Cannons + Advanced Technologies addon, Torchmaster |
+| Wave 5 — Combat & Mobs       | 6       | 5      | 11      | Better Combat, L_Ender's Cataclysm, Enchantment Descriptions, Create Big Cannons + Advanced Technologies addon, Torchmaster |
 | Wave 6 — Building            | 10      | 3      | 13      | Rechiseled, Supplementaries, Macaw's (4), Building Wands, Handcrafted, Fetzi's Displays, Lili's Pottery, Laser Bridges & Doors + Rechiseled: Create, Rechiseled: AE2 + Moonlight, Resourceful, Fusion |
-| Wave 7 — Space Exploration   | 1       | 1      | 2       | Stellaris, Potentials API                                                                                                                                                                                                                                              |
+| Wave 7 — Space Exploration   | 1       | 2      | 3       | Stellaris, Potentials API, Sky Aesthetics (sky renderer — renders Stellaris planet skies; adds "Modify Sky" pause button)                                                                                  |
 | Wave 8 — Programmable Computers | 1       | 0      | 1       | CC:Tweaked                                                                                                                                                                                                                                                             |
-| **Total**                    | **170** | **42** | **212** | All confirmed NeoForge 1.21.1 (+Real Camera; Day Counter Plus reverted — Day Counter + Hud Texts restored)                              |
+| **Total**                    | **169** | **46** | **215** | All confirmed NeoForge 1.21.1 (+Real Camera; Day Counter Plus reverted — Day Counter + Hud Texts restored; +BetterGrassify + Forgified Fabric API + Sky Aesthetics; +Serene Seasons Plus + GlitchCore + Gabou's Libs - Chunky - When Dungeons Arise - Structory: Towers, Aug 2026)                              |
 
 ---
 
