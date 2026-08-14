@@ -165,6 +165,7 @@ Custom fully-voiced follower additions with authored dialogue, quest commentary,
 | [Miraak Follower Expansion](https://www.nexusmods.com/skyrimspecialedition/mods/160275)                  | 3200+ | Post-Dragonborn-quest Miraak follower: quest/world awareness, spouse dialogue, NPC banter. | Full ESP slot (not ESL since v1.5). Verify NFF integration and quest-stage conditions against Dragonborn DLC quests. |
 | [Caesia Follower — Borne of Magic (Revamped)](https://www.nexusmods.com/skyrimspecialedition/mods/13389) | 730+ | Anbeegod's custom mage follower (Morthal inn). Disposition system, romanceable regardless of sex/race, Shezarrine-lore hints. | Older (v2.0, 2017) — verify 1.6.1170; uses RaceMenu, KS Hairdos, Brows, Ordinary Women/SG textures. |
 | [Livia Salvian Revamped — Custom-Voiced Follower](https://www.nexusmods.com/skyrimspecialedition/mods/33318) | 1500+ | Imperial knight in Dragonsreach; personal romance quest, custom armor, singing, banter with Onmund. Anbeegod's "Fate of Tamriel"/Shezarrine universe. | Original v1 ([mod 20143](https://www.nexusmods.com/skyrimspecialedition/mods/20143)) superseded — install Revamped only. Verify 1.6.1170. |
+| [Ashe — Crystal Heart](https://www.nexusmods.com/skyrimspecialedition/mods/135085) | 3000+ | DLC-sized fully-voiced Breton follower: personal quest (vengeance → introspection), new lands, slow-burn romance. No hard requirements; optional integrations map to baselines (OAR, FSMP, HPH, SkyPatcher, OStim, BFCO). **Tentative** — verify script overhead, tone (anime/Nier-influenced vs grim-dark), and NPC/worldspace edit conflicts; contact author (collection permission). | Recruit in Winking Skeever (Solitude), 200 gold. Install near bottom of load order. Custom follower system — do not assign via NFF/AFT. Asherana banter patch (167123) pairs with SDA baseline. |
 
 ### Tone & Genre Fit (anbeegod profile)
 anbeegod's profile also hosts Final-Fantasy-styled custom followers (Aerith/Tifa-style characters). They contradict the grim-dark, Elder Scrolls-native direction of the list; if wanted, they belong as clearly-labeled Optional/off-dial entries, not in the core list.
@@ -184,6 +185,7 @@ anbeegod's profile also hosts Final-Fantasy-styled custom followers (Aerith/Tifa
 | Kaidan 2 | **No** | Custom AI — use built-in track/summon powers. |
 | Caesia | Verify | Original uses EFF/AFT-friendly dispos system; Revamped dispositions may work under NFF — verify. |
 | Livia Salvian | Verify | No own follower system; original v1 explicitly expects EFF or AFT. Verify NFF driver lines. |
+| Ashe | **No** | Custom follower system — do not assign via NFF/AFT. |
 
 - Verify cross-follower banter: Remiel + Auri have Inigo patches; Kaidan 2 has extended banter with Remiel.
 - `Backported Extended ESL Support` listed for Majestic Auri does not apply to AE 1.6.1170 — do not install.

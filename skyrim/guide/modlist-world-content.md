@@ -175,6 +175,7 @@ Owned "Living the world" home layer — a believable home the player lives in be
 | [Caves of Morrowind](https://www.nexusmods.com/skyrimspecialedition/mods/13745) | Hand-authored new-cave/dungeon pack in the Velothi Mountains (Dunmer smuggling operation). Self-contained cells, vanilla-asset-only (PS4-origin), no scripts/quests, navmesh + LOD generated. **Level 15+ recommended** — a somewhat challenging explorer experience. |
 | [Dungeons - Revisited](https://www.nexusmods.com/skyrimspecialedition/mods/51798) |  Improves existing ruins rather than adding new destinations.  |
 | [Iconic's Crown of Barenziah](https://www.nexusmods.com/skyrimspecialedition/mods/137469) | High-quality crown/gems/display stand. |
+| [The Ratway Passages](https://www.nexusmods.com/skyrimspecialedition/mods/138534) | New dungeon connecting the Ratway to Honeyside, Riften Jail/sewers, Hall of the Dead, Beggar's Row, and outside the city walls. **Tentative — verify cell conflicts vs the Riften stack (The City of Crossed Daggers, Caught Red Handed jail edits, Honeyside/player-home edits) before locking; confirm the sewer section is self-contained (Skyrim Sewers not in list).** |
 
 ### Alternatives
 
