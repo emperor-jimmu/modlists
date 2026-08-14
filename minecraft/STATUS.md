@@ -504,11 +504,11 @@ PUT 90.*:
 
 ### Added Mods (Aug 2026 batch 25 — Territory Conquest)
 
-- [x] Torchmaster (Wave 5 — Combat & Mobs) — Mega Torch suppresses hostile spawns in a 48-block radius; Feral Flare Lantern (24-block) for cave/ruin clearing. NeoForge 1.21.1 native (`torchmaster-neoforge-1.21.1-21.1.9`), no deps. By xalcon.
+- [x] Torchmaster (Wave 5 — Combat & Mobs) — Mega Torch suppresses hostile spawns in a 64-block radius; Feral Flare Lantern (16-block) for cave/ruin clearing. NeoForge 1.21.1 native (`torchmaster-neoforge-1.21.1-21.1.9`), no deps. By xalcon.
 - [x] KubeJS recipe gate `kubejs/server_scripts/wave5_torchmaster.js` — Mega Torch requires Ignitium Ingot (Cataclysm Ignite drop) + Create brass + blaze rods. Every torch = one earned boss conquest, not a daytime walk. Prevents torch-hoarding loophole.
-- [x] Config override `config/torchmaster-common.toml` — mega_torch_radius=48 (village-sized zone), feral_flare_radius=24. [VERIFY] exact keys after first launch.
+- [x] No config override needed — verified defaults against mod source (`TorchmasterNeoforgeConfig.java`, mc/1.21.1 branch): `megaTorchRadius = 64`, `feralFlareRadius = 16`, `dreadLampRadius = 64`. The earlier draft override (`mega_torch_radius=48`, `feral_flare_radius=24`) used wrong key names (snake_case vs actual camelCase `megaTorchRadius`/`feralFlareRadius` under `[General]`), so it never applied — removed.
 - [x] GUIDE.md Wave 5: Torchmaster mod row, "Torchmaster — Conquering the Land" section (5-step conquest loop: scout → clear → harvest → craft → plant), config notes, Chill Rule check. Wave 5 session plan Session 7 (First Conquest). Mod counts: Wave 5 7→8 mods, 13→14 total. Grand total 164→165.
-- [ ] Verify Torchmaster config key names against generated `torchmaster-common.toml` after test launch; reconcile with documented override.
+- [x] Verify Torchmaster config key names against generated `torchmaster-common.toml` after test launch — **RESOLVED (2026-08-14)**: verified against mod source (`TorchmasterNeoforgeConfig.java`, Xalcon/TorchMaster `mc/1.21.1` branch, the pack's version line). Actual keys are camelCase (`megaTorchRadius`, `feralFlareRadius`, `dreadLampRadius`) under `[General]`, defaults 64/16/64. The draft override used snake_case under `[misc]` and never applied — file removed; defaults stand.
 
 ### Added Mods (Aug 2026 batch 26 — Mod Review)
 

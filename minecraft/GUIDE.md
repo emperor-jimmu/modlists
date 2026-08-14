@@ -2949,7 +2949,7 @@ All tiers (bronze → cast iron → steel → nethersteel) follow the standard C
 
 ### Torchmaster — Conquering the Land
 
-The **Mega Torch** suppresses hostile mob spawning in a 48-block radius — but each torch is **earned**: crafting requires an Ignitium Ingot from a Cataclysm boss (KubeJS gate, `kubejs/server_scripts/wave5_torchmaster.js`):
+The **Mega Torch** suppresses hostile mob spawning in a 64-block radius — but each torch is **earned**: crafting requires an Ignitium Ingot from a Cataclysm boss (KubeJS gate, `kubejs/server_scripts/wave5_torchmaster.js`):
 
 | Item | Gated Recipe | Gate |
 |---|---|---|
@@ -2957,7 +2957,7 @@ The **Mega Torch** suppresses hostile mob spawning in a 48-block radius — but 
 
 **The conquest loop**: scout a hostile region by air/ship/train → clear its structures → defeat the Cataclysm boss for the Ignitium Ingot → craft the Mega Torch → plant it. The area is permanently peaceful. Conquest is renewable — Cataclysm arenas re-summon bosses (Eye item), so there's no world exhaustion.
 
-**Config** (`config/torchmaster-common.toml`): Mega Torch radius 48 blocks. Feral Flare Lantern (radius 24) suppresses only dark-spawned mobs — useful for cave/ruin clearing. Mega Torch blocks natural spawning only, not spawners.
+**Config** (`config/torchmaster-common.toml`, defaults): Mega Torch radius 64 blocks. Feral Flare Lantern (radius 16) suppresses only dark-spawned mobs — useful for cave/ruin clearing. Mega Torch blocks natural spawning only, not spawners.
 
 ---
 
