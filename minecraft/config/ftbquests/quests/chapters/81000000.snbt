@@ -1599,7 +1599,7 @@
       "description": [
         "Pumpkin Pie is a classic dessert pie item."
       ],
-      "icon": "farmersdelight:pumpkin_pie",
+      "icon": "minecraft:pumpkin_pie",
       "x": 4.5,
       "y": 13,
       "shape": "square",
@@ -1612,7 +1612,7 @@
           "type": "item",
           "item": {
             "count": 1,
-            "id": "farmersdelight:pumpkin_pie"
+            "id": "minecraft:pumpkin_pie"
           }
         }
       ],

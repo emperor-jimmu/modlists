@@ -1306,7 +1306,7 @@
       "description": [
         "Pumpkin Pie is a classic dessert pie item."
       ],
-      "icon": "farmersdelight:pumpkin_pie",
+      "icon": "minecraft:pumpkin_pie",
       "shape": "square",
       "phase": 2,
       "dependencies": [
@@ -1315,7 +1315,7 @@
       "tasks": [
         {
           "type": "item",
-          "item": "farmersdelight:pumpkin_pie",
+          "item": "minecraft:pumpkin_pie",
           "count": 1
         }
       ],
