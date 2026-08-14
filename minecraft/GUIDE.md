@@ -494,36 +494,9 @@ Tweak payloads directly in `config/day_counter.toml` (`[Rewards.1]`–`[Rewards.
 
 **Better Days** (`config/betterdays-common.toml`):
 
-Time speed can be set via three modes (`speedMethod`):
+Better Days is the *engine* that lengthens the day/night cycle, but it's installed at **default** and isn't where you set the length. Its real modes are `RATIO`, `MINUTES`, and `REALTIME` — there is no `SEASON` mode. **Serene Seasons Plus** (Wave 2) drives Better Days at runtime through its `[seasonalDaylightCycle]` config (see *Serene Seasons Plus* in Wave 2) and overwrites `daySpeed`/`nightSpeed` automatically — leave Better Days' own config untouched.
 
-| Mode                | How it works                                                              | Best for                                                |
-|---------------------|---------------------------------------------------------------------------|---------------------------------------------------------|
-| `MINUTES` (default) | Set `daySpeedMinutes` and `nightSpeedMinutes` in real minutes             | Simple: 10 min day / 10 min night                       |
-| `RATIO`             | Multiplier relative to vanilla (1.0 = vanilla 20min cycle)                | Fine control: 0.5 = 40 min, 2.0 = 10 min                |
-| `SEASON`            | Day length varies by season using `seasonDayMinutes` and `seasonLatitude` | Immersive — day shortens in winter, lengthens in summer |
-
-**Recommended settings** (`speedMethod = "SEASON"`):
-
-> **⚠ CRITICAL**: These settings MUST be edited directly in `config/betterdays-common.toml`. The in-game config screen (Mod List → Better Days → Config) does not support the `SEASON` mode and **will silently overwrite** your config back to `MINUTES` mode if opened. **Do not open Better Days' in-game config.**
-
-- `speedMethod = "SEASON"` — Day length varies by Serene Seasons sub-season. Summer days are longer, winter days shorter.
-- `seasonDayMinutes = 40.0` — Total day+night cycle in real minutes. 40 = 2x vanilla (20 min) average — summer days longer, winter shorter.
-- `seasonLatitude = 48.0` — Central Europe latitude. Higher values = more extreme day-length swings between seasons.
-- `dayStart = 23500` — Dawn at time 23500 (default, correct range 22300–24000).
-- `nightStart = 13000` — Dusk at time 13000 (default).
-
-**Sleep** — smooth time acceleration:
-
-- `enableSleepFeature = true` — Smooth acceleration while in bed.
-
-**Time effects** — all disabled. Leave them off:
-
-- `weatherEffect = "SLEEPING"` — Lets rain/storms finish faster when sleeping.
-- `potionEffect = "NEVER"` — Keep off. Speeding potion timers is confusing.
-- `hungerEffect = "NEVER"` — Keep off. Speeding hunger is annoying.
-- `blockEntityEffect = "NEVER"` — Keep off. Speeding furnaces/hoppers desyncs items and wastes fuel.
-- `cropEffect = "NEVER"` — Keep off. Conflicts with Serene Seasons crop cycle timers.
-- `randomTickEffect = "NEVER"` — Keep off. Avoids crop desync and random tick inconsistencies.
+Better Days' "time effects" all default to `NEVER` (except `weatherEffect = "SLEEPING"`), which is exactly the pack's intent — no crop or block-entity desync with Serene Seasons.
 
 **Dynamic Crosshair** (configurable in-game via Mod List → Dynamic Crosshair → Config, or `config/dynamiccrosshair.json`):
 
@@ -1494,7 +1467,21 @@ Four seasons with visual foliage changes and crop growth modifiers:
 
 **Integration**: Farmer's Delight crops are affected by seasons. Build glass greenhouses or use Season Sensor blocks to track optimal planting times.
 
-**Serene Seasons Plus** (add-on): refines snow piling/melting and adds sub-season day/night speed — ties into Better Days' SEASON mode (Wave 0). Requires Serene Seasons + Better Days + Gabou's Libs (all in pack).
+**Serene Seasons Plus** (add-on): refines snow piling/melting and adds sub-season day/night speed — drives Better Days via its `[seasonalDaylightCycle]` config (below). Requires Serene Seasons + Better Days + Gabou's Libs (all in pack).
+
+**Serene Seasons Plus config** (`config/sereneseasonsplus-common.toml`):
+
+Day/night length lives here, not in Better Days. For a fixed **40-minute cycle** (2× vanilla → ~20 min day + ~20 min night):
+
+| Setting | Value | Why |
+|---|---|---|
+| `enableSeasonalDaylightCycle` | `false` | Fixed length, not seasonal variation |
+| `enableBetterDaysDynamicTimeCompat` | `true` | Let SSP write `daySpeed`/`nightSpeed` into Better Days (reflection) |
+| `customCycleLength` | `true` | Use the custom day/night values below |
+| `customDayLength` | `0.5` | Better Days day-speed ratio (1.0 = vanilla 10 min day) → 0.5 = 20 min day |
+| `customNightLength` | `0.5` | Better Days night-speed ratio (1.0 = vanilla 10 min night) → 0.5 = 20 min night |
+
+`customDayLength`/`customNightLength` are **speed ratios, not "ticks"** (the in-file comment is misleading): 1.0 = vanilla, lower = longer. Leave Better Days and Serene Seasons at their defaults — Serene Seasons Plus owns day/night length.
 
 #### YUNG's Overhauled Structures
 

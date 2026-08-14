@@ -7,7 +7,7 @@
 - [x] **Serene Seasons Plus v5.1.1** (Wave 2 — Environment) — Serene Seasons add-on for NeoForge 1.21.1: sub-season day/night speed + improved snow piling/melting. Required deps (all already in pack): Serene Seasons, Better Days, Gabou's Libs. [Modrinth](https://modrinth.com/mod/serene-seasons-plus)
 - [x] **GlitchCore v2.1.0.2** (Wave 2 — Dependency) — loader-abstraction library, required by Serene Seasons 10.1.0.3 (verified via Modrinth API: Serene Seasons lists it as a required dep on 1.21.1). [Modrinth](https://modrinth.com/mod/glitchcore)
 - [x] **Gabou's Libs v1.8.1** (Wave 2 — Dependency) — library required by Serene Seasons Plus. No deps. [Modrinth](https://modrinth.com/mod/gabous-libs)
-- [x] **Better Days reconfigured for longer days** — `config/betterdays-common.toml` `seasonDayMinutes` 20.0 → **40.0** (2x vanilla day+night cycle, SEASON mode retained). The config had drifted to vanilla-average despite the old "2x day length" note.
+- [x] **Day length ownership corrected — moved to Serene Seasons Plus.** Better Days is the *engine* but is installed at **default** (RATIO mode); Serene Seasons Plus drives it at runtime via `[seasonalDaylightCycle]`. Verified from the 5.1.1 jar source (`SereneSeasonPlusCommon.onTick` → `ConfigHacks.setTimeSpeeds` reflects into Better Days `ConfigHandler.COMMON.daySpeed`/`nightSpeed`; Better Days 3.3.6.3 has no `SEASON` mode). Created `config/sereneseasonsplus-common.toml` (40-min cycle: `customCycleLength=true`, `customDayLength=0.5`, `customNightLength=0.5`); deleted the bogus `config/betterdays-common.toml` (invented `SEASON` mode + `cropEffect`).
 
 ### Removed Mods (Aug 2026 — Desolate Overworld)
 
@@ -232,6 +232,7 @@ PUT 90.*:
 ## Pending
 
 - [ ] Test launch with Waves 0-8 — generate default configs for all mods
+- [ ] **[KNOWN — cosmetic]** Serene Seasons × Distant Horizons: far-LOD foliage stays the color of the season it was generated in (near chunks are correct). The only dedicated fix (`Serene Seasons X Distant Horizons`) is Fabric-only — rejected on the pack's no-Sinytra-Connector precedent (Continuity, Antique Atlas, etc.). Cosmetic + far-distance only; self-heals as DH regenerates LODs. Accept — no action.
 - [ ] Verify no mod conflicts
 - [ ] Cross-wave integration testing
 - [ ] Config tuning per mod
