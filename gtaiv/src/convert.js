@@ -9,56 +9,84 @@ if (!fs.existsSync(chapterDir)) {
   fs.mkdirSync(chapterDir, { recursive: true });
 }
 
-// Get all .md files in guide/, sorted by name for correct order
-const files = fs.readdirSync(guideDir)
-  .filter(f => f.endsWith('.md'))
-  .sort();
+// Inline markdown -> Typst inline markup.
+function inline(md) {
+  // Bold: protect with placeholders so the italic pass can't mangle it.
+  let s = md.replace(/\*\*(.+?)\*\*/g, '\u0001$1\u0002');
+  // Italic: *text* -> _text_
+  s = s.replace(/(?<!\*)\*(?!\*)(.+?)(?<!\*)\*(?!\*)/g, '_$1_');
+  // Bold: restore placeholders as Typst bold (single asterisk).
+  s = s.replace(/\u0001([\s\S]+?)\u0002/g, '*$1*');
+  // Links: [text](url) -> #link("url")[text]; #anchor links stripped.
+  s = s.replace(/\[([^\]]+)\]\(([^)]+)\)/g, (m, text, url) => {
+    if (url.startsWith('#')) return `[${text}]`;
+    return `#link("${url}")[${text}]`;
+  });
+  return s;
+}
+
+function isTableRow(line) {
+  return /^\s*\|.*\|\s*$/.test(line);
+}
+
+function isSeparatorRow(line) {
+  return /^\s*\|(\s*:?-+:?\s*\|)+\s*$/.test(line);
+}
+
+function parseCells(line) {
+  return line.trim().replace(/^\|/, '').replace(/\|$/, '').split('|').map(c => c.trim());
+}
+
+const files = fs.readdirSync(guideDir).filter(f => f.endsWith('.md')).sort();
 
 for (const file of files) {
-  const mdPath = path.join(guideDir, file);
-  let content = fs.readFileSync(mdPath, 'utf8');
-
-  // Convert markdown heading syntax (# ## ###) to Typst heading syntax (= == ===)
-  // Must handle carefully: not all # are headings (e.g., in code blocks or tables)
-  // Process line by line
+  const content = fs.readFileSync(path.join(guideDir, file), 'utf8');
   const lines = content.split(/\r\n|\r|\n/);
-  const converted = lines.map(line => {
-    // Only convert # at the start of a line (after optional whitespace)
-    const headingMatch = line.match(/^(\s*)(#{1,6})\s+(.*)$/);
-    if (headingMatch) {
-      const indent = headingMatch[1];
-      const level = headingMatch[2].length;
-      let text = headingMatch[3];
-      text = text.replace(/\*\*(.+?)\*\*/g, '*$1*');
-      text = text.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '#link("$2")[$1]');
-      const typstPrefix = '='.repeat(level);
-      return `${indent}${typstPrefix} ${text}`;
+  const out = [];
+  let i = 0;
+
+  while (i < lines.length) {
+    const line = lines[i];
+
+    // Markdown table -> Typst table
+    if (isTableRow(line) && i + 1 < lines.length && isSeparatorRow(lines[i + 1])) {
+      const header = parseCells(line);
+      const colCount = header.length;
+      i += 2; // skip header + separator
+      const rows = [];
+      while (i < lines.length && isTableRow(lines[i])) {
+        rows.push(parseCells(lines[i]));
+        i++;
+      }
+      out.push('#table(');
+      out.push(`  columns: ${colCount},`);
+      out.push(`  table.header(${header.map(c => `[${inline(c)}]`).join(', ')}),`);
+      for (const row of rows) {
+        out.push(`  ${row.map(c => `[${inline(c)}]`).join(', ')},`);
+      }
+      out.push(')');
+      continue;
     }
 
-    // Convert **bold** to *bold* (Typst uses single asterisk for bold)
-    let processed = line.replace(/\*\*(.+?)\*\*/g, '*$1*');
-
-    // Convert *italic* to _italic_ (Typst uses underscore for italic)
-    // But don't convert ** (already handled) or lines inside code blocks
-    processed = processed.replace(/(?<!\*)\*(?!\*)(.+?)(?<!\*)\*(?!\*)/g, '_$1_');
-
-    // Convert [text](url) markdown links to Typst link syntax
-    processed = processed.replace(/\[([^\]]+)\]\((#?[^)]+)\)/g, (match, text, url) => {
-      if (url.startsWith('#')) {
-        // Internal anchor: strip link entirely — Typst uses @label references
-        return `[${text}]`;
+    // Heading: # -> =
+    const heading = line.match(/^(\s*)(#{1,6})\s+(.*)$/);
+    if (heading) {
+      out.push(`${heading[1]}${'='.repeat(heading[2].length)} ${inline(heading[3])}`);
+    } else {
+      // Blockquote: > text -> #quote(block: true)[text]
+      const bq = line.match(/^\s*>\s?(.*)$/);
+      if (bq) {
+        out.push(`#quote(block: true)[${inline(bq[1])}]`);
+      } else {
+        out.push(inline(line));
       }
-      // External URL: use Typst link syntax
-      return `#link("${url}")[${text}]`;
-    });
+    }
+    i++;
+  }
 
-    return processed;
-  });
-
-  const typFileName = file.replace('.md', '.typ');
-  const typPath = path.join(chapterDir, typFileName);
-  fs.writeFileSync(typPath, converted.join('\n'), 'utf8');
-  console.log(`Converted: ${file} -> ${typFileName}`);
+  const typName = file.replace('.md', '.typ');
+  fs.writeFileSync(path.join(chapterDir, typName), out.join('\n'), 'utf8');
+  console.log(`Converted: ${file} -> ${typName}`);
 }
 
 console.log('All chapters converted successfully.');

@@ -44,6 +44,13 @@
 - [x] Rejected **RTX Remix** (xoxor4d) — Complete Edition 1.2.0.59-only.
 - [x] Rejected **iCEnhancer 4.0** — requires 1.0.4.0.
 
+### Curation batch 4 — audio + UI (2026-08-20)
+- [x] Adopted **Pineapple's Realistic Gun Sounds** (MrPayneapple) — weapon audio, 1.0.8.0 compatible.
+- [x] Adopted **IV Radio Editor** (ZSabakh) — custom radio songs, 1.0.8.0 compatible.
+- [x] Documented **Independence FM** as the no-mod custom-music option.
+- [x] Resolved the UI gap: FusionFix is the UI layer; no maintained standalone UI/HUD mod for 1.0.8.0 (GTA-V-style HUDs are unstable).
+- [x] Fixed `convert.js` table + bold conversion (tables were emitting raw `|` pipes into the PDF; bold was mangled to italic).
+
 ## Decisions
 
 - **Version target stays 1.0.8.0** (per AGENTS.md). Rationale: 1.0.8.0 is the only build that runs IV-SDK .NET content/mechanics scripts and the legacy mod catalog. Caveat recorded: FusionFix officially supports only the Complete Edition; on 1.0.8.0 it runs via the Legacy Addon with best-effort (not officially supported) status.
@@ -55,11 +62,13 @@
 - **Rejected (CE-only):** First Degree 154 Vehicle Addon Pack — built for the Complete Edition; the 1.0.8.0 target keeps it out. Popular CE content packs will not drop into a downgraded install.
 - **Adopted (batch 3 — graphics):** Various Fixes, Higher Resolution Vehicle Pack, DayL's Natural Timecycle — all 1.0.8.0-compatible; versions recorded as "latest (see source)" where a hard number could not be pinned without fabrication.
 - **Rejected (CE/legacy-only graphics):** RTX Remix (CE 1.2.0.59, custom FusionFix fork) and iCEnhancer 4.0 (1.0.4.0). Both are the wrong patch target for this 1.0.8.0 modlist.
+- **Adopted (batch 4 — audio):** Pineapple's Realistic Gun Sounds and IV Radio Editor — both 1.0.8.0-compatible. UI is deliberately not padded with a standalone HUD mod: FusionFix already covers UI/display/controls, and the surviving standalone HUD mods are old and unstable.
+- **Build fix:** `convert.js` now converts Markdown tables to Typst tables and correctly maps `**bold**` to Typst bold; the prior converter emitted literal `|`/`---` and mangled bold into italic.
 
 ## Pending / user inputs
 
 - Standalone UI/QoL mods (Wave 0) — "user to provide".
-- Content mods (Wave 1) — "user to provide"; most vehicle packs are CE-only, so verify patch target. Audio mods (Wave 1) — "user to provide".
+- Content mods (Wave 1) — "user to provide"; most vehicle packs are CE-only, so verify patch target.
 - In-game verification: confirm the FusionFix menu appears and the Legacy Addon loads on the user's 1.0.8.0 install before a full playthrough.
 
 ## Notes
@@ -80,3 +89,5 @@
   - https://libertycity.net/files/gta-4/236950-higher-resolution-vehicle-pack-15th.html (Higher Resolution Vehicle Pack)
   - https://www.gtaall.com/gta-4/mods/147781-dayls-natural-timecycle.html (DayL's Natural Timecycle)
   - https://github.com/xoxor4d/gta4-rtx (RTX Remix — CE 1.2.0.59 only)
+  - https://www.nexusmods.com/gta4/mods/437 (Pineapple's Realistic Gun Sounds)
+  - https://github.com/ZSabakh/IVRadioEditor (IV Radio Editor)

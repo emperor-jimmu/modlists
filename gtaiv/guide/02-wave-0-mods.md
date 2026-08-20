@@ -50,21 +50,15 @@ The features below are this wave's UI/QoL content — no separate mods are neede
 
 ---
 
-## Additional UI / QoL Mods (user to provide)
+## UI & Audio — where they live
 
-> **Why these are open:** standalone GTA IV UI/QoL mods have largely been absorbed into FusionFix. Adding a separate QoL mod now risks redundancy or conflict — add only mods that do something FusionFix does not.
+**UI is covered by FusionFix.** The UI/display/controls features in the section above are this wave's UI layer. There is no maintained standalone UI/HUD mod for 1.0.8.0, and older "GTA V style" HUD replacements are unstable — not recommended.
 
-### User to provide — UI improvement
+**Audio lives in Wave 1.** Weapon sounds, custom radio, and soundtrack restoration are content, not QoL, so they are documented in the Wave 1 → Audio section rather than here.
 
-| Field | Value |
-|-------|-------|
-| **Version** | — |
-| **Dependencies** | FusionFix |
-| **System Impact** | — |
+If a future standalone QoL/UI mod is needed, it goes here:
 
-Slot for a standalone UI mod not covered by FusionFix.
-
-### User to provide — Audio / QoL
+### User to provide — standalone QoL / UI
 
 | Field | Value |
 |-------|-------|
@@ -72,7 +66,7 @@ Slot for a standalone UI mod not covered by FusionFix.
 | **Dependencies** | FusionFix |
 | **System Impact** | — |
 
-Slot for a standalone audio or quality-of-life mod not covered by FusionFix.
+Slot reserved for a QoL/UI mod that does something FusionFix does not (currently none needed).
 
 ---
 

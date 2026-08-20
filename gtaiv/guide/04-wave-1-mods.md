@@ -164,7 +164,31 @@ Slot for further mechanics mods (e.g. police-response or economy systems) that r
 
 The Complete Edition removed ~50 songs in 2018 when licences expired. The Downgrader's **radio downgrade** option restores the original stations. Enable it during Step 2 of the installation guide.
 
-### User to provide — audio mod(s)
+### [Pineapple's Realistic Gun Sounds](https://www.nexusmods.com/gta4/mods/437)
+
+| Field | Value |
+|-------|-------|
+| **Version** | latest (Nexus / GTAinside) |
+| **Author** | MrPayneapple |
+| **Dependencies** | OpenIV (or FusionFix `update` folder) |
+| **System Impact** | Weapon fire, reload, casing, explosion audio |
+
+Replaces the vanilla weapon audio with higher-fidelity samples (gunshots, reloads, shell casings, explosions). Version-agnostic — it swaps `.ivaud` audio, so it works on 1.0.8.0. Install via OpenIV (`pc/audio/sfx`) or the FusionFix `update` folder.
+
+### [IV Radio Editor](https://github.com/ZSabakh/IVRadioEditor)
+
+| Field | Value |
+|-------|-------|
+| **Version** | latest (GitHub releases) |
+| **Author** | ZSabakh |
+| **Dependencies** | FusionFix (recommended) |
+| **System Impact** | Custom radio-station songs (preserves DJ commentary) |
+
+A desktop tool that replaces songs on existing radio stations while keeping the game's audio format and DJ chatter. Explicitly compatible with 1.0.8.0. Uses the FusionFix `update` folder so original files stay untouched.
+
+> **Custom music (no mod needed):** use the built-in **Independence FM** station — drop MP3s into `Documents\Rockstar Games\GTA IV\User Music` and run an in-game audio scan.
+
+### User to provide — additional audio
 
 | Field | Value |
 |-------|-------|
@@ -172,4 +196,4 @@ The Complete Edition removed ~50 songs in 2018 when licences expired. The Downgr
 | **Dependencies** | FusionFix |
 | **System Impact** | Radio content, sound effects |
 
-Slot for additional audio mods not covered by the radio restoration.
+Slot for further audio mods not covered above.
