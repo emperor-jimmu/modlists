@@ -6,12 +6,15 @@ Wave 1 uses many of the same save files as Wave 0, but mods can corrupt saves. B
 
 `Documents\Rockstar Games\GTA V\Profiles\<your-profile-id>\`
 
-== Removing Wave 0 Mods
+== Building on Wave 0
 
-Some Wave 0 QoL mods may conflict with Wave 1 mechanics mods. When in doubt:
-1. Clear the `/mods/` folder
-2. Reinstall only Wave 1 mods
-3. Keep ScriptHookV and OpenIV — they're shared
+Wave 1 *keeps* every Wave 0 mod — you are layering on top, not replacing:
+
+1. Keep ScriptHookV, OpenIV, HeapAdjuster, Packfile Limit Adjuster, and Bugstar Fixes installed.
+2. Add Wave 1 mods in order: graphics → content → mechanics.
+3. Apply a custom `gameconfig.xml` (below) before heavy content packs.
+
+Only remove a Wave 0 mod if a specific Wave 1 mod's documentation says it conflicts — none in this list do.
 
 == New Dependencies
 
@@ -25,6 +28,7 @@ Wave 1 mods often require additional frameworks:
   [LemonUI], [Alternative UI framework],
   [MapEditor], [Map/content editing],
   [HeapAdjuster], [Memory limit adjustment for heavy mods],
+  [SirenSetting Limit Adjuster], [Siren limit for add-on emergency vehicles],
 )
 
 == Gameconfig.xml

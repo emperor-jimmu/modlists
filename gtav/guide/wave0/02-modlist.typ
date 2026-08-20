@@ -60,3 +60,7 @@ A community patch collection that corrects engine glitches and broken vehicle/pe
 == User to provide
 
 If you want a standalone HUD/UI mod that changes the interface (rather than fixing it), verify it targets Legacy 1.0.3889.0 and add it here. None are included by default because Wave 0 keeps the vanilla UI.
+
+== Carried into Wave 1
+
+Every mod in this wave stays installed in Wave 1. Wave 1 layers graphics, content, and mechanics on top of this foundation — nothing here is removed when you migrate.

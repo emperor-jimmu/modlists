@@ -52,12 +52,27 @@ High-resolution, real Los Angeles-style road surfaces. The single biggest visual
 
 Adds realistic freeway signs, the Hollywood sign, and other iconic Los Angeles landmarks. Distributed on GTA5-Mods.com as a work-in-progress — combine carefully with other map or graphics mods.
 
+=== #link("https://www.gta5-mods.com/misc/real-rage-4k-water-overhaul")[Real | RAGE V - 4K Water Overhaul]
+- *Category:* Graphics (water textures)
+- *Author:* Real_Gabe
+- *Version:* latest (see source)
+- *Dependencies:* OpenIV (mods folder)
+- *Install path:* `/mods/` (OpenIV)
+- *System Impact:* Replaces water textures with 4K versions
+- *Installation:* Install via OpenIV; check the page's comments for current-build compatibility.
+
+High-resolution water textures with custom caustics and foam, making shorelines and shallow water look far more realistic. Stacks with VisualV — it only replaces `water.ytd`.
+
 == Alternative (not selected)
 
 === NaturalVision Evolved (NVE)
 - *Status:* Not adopted
 - *Author:* Razed (Razed Mods)
 - *Reason:* Photorealistic overhaul distributed through Patreon; conflicts with VisualV (both rewrite lighting, weather, and textures). A premium alternative if you want photorealism instead of vanilla-plus — but do not install it alongside VisualV.
+
+=== QuantV
+- *Status:* Not adopted
+- *Reason:* Another industry-leading lighting/weather overhaul, distributed through its own channels. Same conflict class as NVE — rewrites lighting and weather, so choose at most one overhaul.
 
 == User to provide
 

@@ -24,6 +24,17 @@ New vehicles, unlocked interiors, and a more varied street population. Content p
 
 Brings a lore-friendly fleet of GTA IV vehicles (cars, bikes, SUVs, trucks, emergency, taxi) into Los Santos without replacing vanilla cars — a clean add-on that coexists with the base traffic.
 
+=== #link("https://www.gta5-mods.com/vehicles/vanillaworks-extended-pack-add-on-oiv-tuning-liveries-vanillaworks-and-other-modders")[VanillaWorks Extended Pack]
+- *Category:* Content (vehicles, add-on)
+- *Author:* VanillaWorks & other modders
+- *Version:* latest (see source)
+- *Dependencies:* OpenIV, custom `gameconfig.xml`, HeapAdjuster, Packfile Limit Adjuster, SirenSetting Limit Adjuster
+- *Install path:* `/mods/update/x64/dlcpacks/` + `dlclist.xml` entry
+- *System Impact:* Adds a large lore-friendly vehicle fleet with tuning and liveries
+- *Installation:* Install the OpenIV package; add it to `dlclist.xml`.
+
+A community-built lore-friendly vehicle expansion: a large fleet of fictional-brand cars, tuning options, and liveries that blend into the base game's world. A "heavy" add-on — keep the SirenSetting Limit Adjuster installed alongside the other limit adjusters to avoid crashes.
+
 == Interiors
 
 === #link("https://www.gta5-mods.com/scripts/enable-all-interiors-wip")[Enable All Interiors]
@@ -55,6 +66,11 @@ Adds variety to the pedestrians and vehicles that populate the streets — a mai
 - *Status:* Rejected
 - *Author:* Cass
 - *Reason:* Deprecated/outdated for current builds and conflicts with add-on vehicle packs (both edit `popgroups.ymt`, `popcycle.dat`, and `vehiclemodelsets.meta`). *Dispatch of Variety* covers the same ground while being maintained.
+
+=== LA Revo 2.0
+- *Status:* Not adopted (alternative)
+- *Author:* Adnr Studio
+- *Reason:* All-in-one map + graphics overhaul distributed through Patreon. Replaces roads, buildings, signage, vegetation, and lighting wholesale, so it conflicts with the curated graphics/content stack (VisualV, LA Roads, Real California Architecture, IVPack). A premium choice if you want a single "real Los Angeles" overhaul instead of this list — but not alongside it.
 
 == User to provide
 

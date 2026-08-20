@@ -4,7 +4,7 @@ A curated GTA V modlist and game guide for **Legacy version 1.0.3889.0** (July 1
 
 Two progressive playthrough waves:
 - **Wave 0 — Getting By:** Vanilla+ experience with UI/QoL mods. Complete beginner's guide.
-- **Wave 1 — Untold Stories:** Post-story, heavy modding. New content, graphics, mechanics.
+- **Wave 1 — Untold Stories:** Builds on Wave 0 — adds graphics, content, and mechanics on top of the Wave 0 mods.
 
 ## Quick start
 

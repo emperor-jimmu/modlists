@@ -40,6 +40,24 @@ Use this file to track mods that cannot coexist in the same wave.
 - **Resolution:** Designed to coexist (different systems), but check each mod's `.ini` if handling feels wrong.
 - **Status:** Resolved (compatible, verify config)
 
+### VanillaWorks Extended Pack + IVPack
+- **Category conflict:** None — both are add-on DLC packs (`dlclist.xml` entries), so they coexist.
+- **Wave:** 1
+- **Resolution:** Install both; they need the custom `gameconfig.xml` + limit adjusters to avoid memory crashes.
+- **Status:** Resolved (compatible, heavy install)
+
+### VisualV + LA Revo 2.0
+- **Category conflict:** Same files — LA Revo replaces roads, buildings, signage, vegetation, and lighting wholesale.
+- **Wave:** 1
+- **Resolution:** LA Revo 2.0 rejected (also paywalled). Use the curated VisualV + LA Roads + RCA stack instead.
+- **Status:** Resolved (LA Revo rejected)
+
+### VisualV + QuantV
+- **Category conflict:** Same files — both rewrite lighting and weather.
+- **Wave:** 1
+- **Resolution:** Choose at most one lighting/weather overhaul (VisualV, NVE, or QuantV).
+- **Status:** Resolved (VisualV adopted)
+
 ## Cross-Wave Conflicts
 
 *None documented yet.*

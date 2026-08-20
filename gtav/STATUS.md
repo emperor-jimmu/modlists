@@ -34,6 +34,8 @@
 - [x] Adopted **Manual Transmission** (ikt) — manual shifting + wheel support.
 - [x] Adopted **Simple Fuel** (LeFix) — fuel system.
 - [x] Adopted **Rebalanced Dispatch Enhanced (RDE)** (Yard1 & team) — police/emergency overhaul.
+- [x] Adopted **Real | RAGE V - 4K Water Overhaul** (Real_Gabe) — water textures.
+- [x] Adopted **VanillaWorks Extended Pack** (VanillaWorks & other modders) — lore-friendly vehicle add-on.
 
 ## Decisions
 
@@ -44,6 +46,9 @@
 - **Excluded (content):** World of Variety (Cass) — deprecated for current builds and conflicts with IVPack (shared spawn-config files). Replaced by Dispatch of Variety.
 - **Replaced (mechanics):** Realistic Driving V (Killatomate) was abandoned in 2018; Drive V (PermissionToLand) is the maintained successor.
 - **Adult mods:** none listed by default; per project rules they require explicit per-mod user approval. The section documents the policy only.
+- **Wave 1 builds on Wave 0.** The migration guide was rewritten: Wave 1 keeps every Wave 0 mod and layers graphics/content/mechanics on top (no more "clear the mods folder" step).
+- **Excluded (content):** LA Revo 2.0 (Adnr Studio) — all-in-one map + graphics overhaul behind a Patreon paywall that conflicts with the curated stack. Documented as an alternative.
+- **Excluded (graphics):** QuantV — paywalled lighting/weather overhaul; same conflict class as NVE (choose at most one overhaul).
 
 ## Pending / user inputs
 
@@ -72,3 +77,5 @@
   - https://www.gta5-mods.com/scripts/simple-fuel (Simple Fuel)
   - https://www.lcpdfr.com/downloads/gta5mods/misc/9266-rebalanced-dispatch-enhanced/ (Rebalanced Dispatch Enhanced)
   - https://razedmods.com/ (NaturalVision Evolved — alternative)
+  - https://www.gta5-mods.com/misc/real-rage-4k-water-overhaul (Real | RAGE V - 4K Water Overhaul)
+  - https://www.gta5-mods.com/vehicles/vanillaworks-extended-pack-add-on-oiv-tuning-liveries-vanillaworks-and-other-modders (VanillaWorks Extended Pack)
