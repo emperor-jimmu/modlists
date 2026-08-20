@@ -192,6 +192,15 @@ Wave 1 introduces visual upgrades, additional content, vehicles, and mild gamepl
   "Updates Better Electronics to work on B42.15 and later. Install alongside Better Electronics.",
 )
 
+#mod-entry(
+  "Plysken Attachments Reborn",
+  "3749848348",
+  "Items / Gear",
+  "None",
+  "Strap weapons, tools, flashlights, masks, and small containers to the outside of your backpack, visible in 3D on your character. Items stay in your inventory.",
+  "Visual and organizational upgrade for carrying gear. Sew extra attachment slots with Tailoring, then adjust where each item hangs. Works with most vanilla backpacks and auto-adds slots to modded bags. SP & MP.",
+)
+
 == UI & Quality of Life
 
 #mod-entry(
@@ -608,6 +617,15 @@ Wave 1 introduces visual upgrades, additional content, vehicles, and mild gamepl
   "Makes harvesting faster and clearer. Shows what each plant yields before you pick it.",
 )
 
+#mod-entry(
+  "Plysken Irrigation Pipes",
+  "3739173520",
+  "QoL / Farming",
+  "None",
+  "Automated watering for your crops. Build a pipe network from rain collectors to farming plots; barrels water every plant to its optimal level, no more hand-watering.",
+  "Metal and clay pipes, optional fertigation (compost or fertilizer doses), a network view that lights up connected pipes and barrels, and full sandbox control. Works with vanilla rain collectors. SP & MP. Complements the Water Pipes plumbing mod in Wave 2.",
+)
+
 == Visual & Environment
 
 #mod-entry(
@@ -958,5 +976,5 @@ Wave 1 introduces visual upgrades, additional content, vehicles, and mild gamepl
 ]
 
 #tip[
-  Total mods in Wave 1: 99 (including Mod Manager, UI Framework, and all libraries). Wave 0 adds 4 more, for 103 total across both profiles. Create a "Wave 1" profile in Mod Manager and enable all Wave 1 mods on top of the Wave 0 base.
+  Total mods in Wave 1: 102 (including Mod Manager, UI Framework, and all libraries). Wave 0 adds 4 more, for 106 total across both profiles. Create a "Wave 1" profile in Mod Manager and enable all Wave 1 mods on top of the Wave 0 base.
 ]

@@ -249,6 +249,15 @@ Wave 2 is the full apocalypse. Over 40 mods across every category -- realism, di
 )
 
 #mod-entry(
+  "Plysken Solar Revolution",
+  "3725311427",
+  "Realism / Electricity",
+  "None",
+  "Complete off-grid solar system: solar panels, battery banks, and a Solar Computer for per-device power management, plus an automatic backup generator relay.",
+  "Magazine-gated recipes, batteries that degrade, and linked banks that share one charge pool. A running bank powers the whole building with no generator noise or fuel. Standalone B42 rewrite of Immersive Solar Arrays -- no ISA needed. SP & MP.",
+)
+
+#mod-entry(
   "Burnt Ground Recultivation [B42]",
   "3767187217",
   "Realism / Farming",
@@ -584,14 +593,25 @@ Wave 2 is the full apocalypse. Over 40 mods across every category -- realism, di
   "A subtle UI indicator when zombies are close but hidden behind walls or objects. No wallhacks, just awareness.",
 )
 
+== Building & Base
+
+#mod-entry(
+  "Plysken Underground Revolution",
+  "3776279483",
+  "Building / Base",
+  "None",
+  "Dig your own bunker one shovel pass at a time: sink the shaft, ladder down, widen rooms underground, and close a trapdoor behind you. Single-player only, B42.20+.",
+  "End-game base security with real effort -- you haul every sack of spoil out yourself. Caveat: the engine borrows a nearby cellar interior to make your gallery count as indoors, so bunkers far from any town may not hold. Test it before making it your only defence.",
+)
+
 == Summary
 
 #danger[
-  Wave 2's mod list is massive -- over 62 mods across 9 categories. Follow the Installation chapter's load order rules carefully. Incorrect load order WILL cause crashes. The Mod Manager's conflict detection is your friend. Test your load order before committing to a long run.
+  Wave 2's mod list is massive -- over 63 mods across 10 categories. Follow the Installation chapter's load order rules carefully. Incorrect load order WILL cause crashes. The Mod Manager's conflict detection is your friend. Test your load order before committing to a long run.
 ]
 
 #tip[
-  Total mods in Wave 2: 62 (including Mod Manager and 4 frameworks). Each wave is its own profile -- do not combine waves. You are not expected to run all three waves simultaneously. Each wave is a separate profile and a separate game.
+  Total mods in Wave 2: 63 (including Mod Manager and 4 frameworks). Each wave is its own profile -- do not combine waves. You are not expected to run all three waves simultaneously. Each wave is a separate profile and a separate game.
 ]
 
 == Load Order
@@ -603,11 +623,11 @@ Wave 2 is the full apocalypse. Over 40 mods across every category -- realism, di
   2. Frameworks & Libraries (Profession Framework, MDTF, Skill Recovery Journal, Distillery & Biofuel)
   3. Survival Overhauls (Recipes of Death, Lifestyle, Temperature, Weather, Death Burden, Hygiene, Plumbing, Immersive Water/Blackout, Exercise With Corpses, Rats & Mice, Exercise With Gear)
   4. Zombie Overhauls (Horde Night, Horde Filter, Thriller Time, Raining Zombies, Wake Them Up)
-  5. Realism Systems (Firearms Fix, Shoot Through Barricades, Water Pipes, PlumbingPlus, Burnt Ground, Propane, Realistic Weights, Adrenaline)
+  5. Realism Systems (Firearms Fix, Shoot Through Barricades, Water Pipes, PlumbingPlus, Burnt Ground, Propane, Realistic Weights, Adrenaline, Solar)
   6. Professions & Traits (New Professions, Seinar's Extended, Survivor Contracts, Custom Start)
   7. Crafting Expansions (Practice Crafting, Vehicle Restoration, Lanterns, Propane, Rain Barrel, Become Desensitized, Industrial Works, Long Term Preservation, Backpack Upgrades)
   8. Maps & Locations (Bridge Detonation, Predators, Helicopter, Chimera)
   9. Immersion & Atmosphere (Nuclear Protocol, Clothing, Armor, Hazmat, UI, Checklist, Weapons, Vehicle Repair, Brighter Headlights, Taillights, Stairs Alert, Danger Awareness)
-  10. Building & Base (Buildable Garage Doors, Repairable Windows)
+  10. Building & Base (Buildable Garage Doors, Repairable Windows, Underground Bunker)
   11. Compatibility patches (if any)
 ]
