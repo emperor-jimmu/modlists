@@ -24,54 +24,108 @@ CurseForge: https://www.curseforge.com/minecraft/mc-mods/northstar-redux (fork o
 
 Version pin: **0.6.4** (2026-07-22), latest for 1.21.1 NeoForge. Item/block IDs verified from the `1.21.1/dev` branch source (`MOD_ID = "northstar"`).
 
-**Stellaris compat-mod audit (2026-08-20)**: no Stellaris compatibility/addon mods are installed. The only one ever considered — TFMG-Stellaris Compatibility — was already removed in an earlier session (STATUS.md). Apothic Compats does not include Stellaris (covers AE2, Aether, Cataclysm, Create, Curios, Deep Aether, Deeper and Darker, Farmer's Delight, Mekanism Tools, Supplementaries, Twilight Forest). Nothing further to remove.
+**Stellaris compat-mod audit (2026-08-20, reproducible)**: searched the full GUIDE.md mod tables (241 rows) and STATUS.md for any Stellaris/Beyond-Earth addon or compatibility mod (patterns: `stellaris`, `beyond.earth`, `beyond_earth`, `compat` rows referencing space mods). Result: **none installed.** The only one ever considered — TFMG-Stellaris Compatibility — was already removed in an earlier session (STATUS.md). Apothic Compats does not include Stellaris (covers AE2, Aether, Cataclysm, Create, Curios, Deep Aether, Deeper and Darker, Farmer's Delight, Mekanism Tools, Supplementaries, Twilight Forest). Nothing further to remove.
 
 **Mod count effect**: Wave 7 `1 mod / 2 deps` → `1 mod / 0 new deps`. Wave 8 (CC:Tweaked, 1 mod) removed. Totals `178/49/227` → **`177/47/224`**.
 
 ## 3. GUIDE.md changes
 
-1. **Stellaris section** (≈lines 3151–3268): replace with a Northstar Redux section:
-   - Rocket construction: Launch Pad blocks (player-built), Rocket Station (assembly + destination), Rocket Controls, Rocket Thruster, Rocket Waypoint (precise landing), superglue/Create contraption mechanics.
+1. **Stellaris section** (locate by heading `### Stellaris — Interplanetary Travel`): replace with a Northstar Redux section:
+   - Rocket construction: Rocket Station (assembly + destination), Rocket Controls, Rocket Thruster, Rocket Combustion Chamber; rockets are superglued Create contraptions. Note: the `LaunchPadBlock` class exists in the 0.6.4 source but is **not registered** (WIP) — do not reference a "Launch Pad" item in the guide or quests.
    - Science unlocks: Telescope produces Astronomical Readings → Astronomy Table spends them as science points → Space Atlas selects planets. Return Ticket for return trips.
    - Oxygen loop: Oxygen Separator (item) → Oxygen Filler (contraption-capable) + Oxygen Sealer (pressurize rooms) + Oxygen Detector; Atmospheric Concentrator; Temperature Regulator for heat/cold; heat shielding requirement scales with rocket size.
    - Suits: Iron Space Suit (base) → Martian Steel Space Suit (heat resistant). Broken suit variants repaired.
-   - Planets: Moon (lunar sapphire, glowstone, Lunargrade/Snail/Eel mobs) → Mars (Martian Steel, Wilter/Argyre/Coiler flora, Mars Echo Worm/Toad/Cobra/Moth) → Mercury (tungsten, extreme heat, Raptor/Roach/Tortoise) → Venus (acid/plume hazards, Mimic/Scorpion/Stone Bull/Vulture). Each requires more science + better heat shielding.
-   - Materials chain: Titanium (raw → ingot → sheet) for advanced crafting; Martian Steel (ingot/sheet/block); Tungsten; Lunar Sapphire (shard → polished).
-   - **Integration with Tech Mods** table rewritten: Mekanism cables power machines; AE2 stores ores + autocrafts rocket parts; Create supplies rotational power and the rocket itself; TFMG fuel/diesel compatibility; Farmer's Delight meals edible in space with oxygen.
-   - Dependencies note: no new deps (Create 6.0+ and GeckoLib already in pack); no worldgen structures; early-development caveat (0.6.x active development, breaking changes possible — back up worlds before updating).
-2. **Wave 7 row**: `Stellaris, Potentials API, Sky Aesthetics` → `Northstar Redux (GeckoLib already in Wave 1)`.
+   - Planets: Moon (lunar sapphire, glowstone, Lunargrade/Snail/Eel mobs) → Mars (Martian Steel, Wilter/Argyre/Coiler flora, Echo Worm/Toad/Cobra/Moth) → Mercury (tungsten, extreme heat, Raptor/Roach/Tortoise) → Venus (acid plumes, Mimic/Scorpion/Stone Bull/Vulture).
+   - Materials chain: Titanium (raw → ingot → sheet); Martian Steel; Tungsten; Lunar Sapphire (shard → polished).
+   - **Integration with Tech Mods** table (rewritten): Mekanism (cables power machines, 5x processing on Northstar ores), AE2 (ME drives store materials, autocraft rocket parts), Create (rotational power + the rocket itself), TFMG (fuel/diesel compat), Farmer's Delight (meals edible in space with oxygen).
+   - **Instance swap checklist** (user-facing): in the mod instance — remove `stellaris` jar, `potentials` jar, `sky-aesthetics` jar; add `northstar-redux` 0.6.4 jar (Create 6.0+ and GeckoLib already present); do not install "Create: Northstar - Structures".
+   - **Update policy**: Northstar is early-development (0.6.x active, breaking changes possible — updates may change item IDs and invalidate return tickets). Pin 0.6.4; before updating, back up the world and re-run the quest validation pipeline (`generate.py`/`validate.py`) so stale IDs surface immediately.
+   - **World/save migration note**: removing Stellaris from an existing save leaves already-generated dishes as inert blocks and removes its items (rockets, suits, desh ore) from inventories — recommend a fresh world for the swap, or accept the leftovers. Northstar adds no worldgen, so a fresh world stays pristine.
+2. **Wave 7 row**: `Stellaris, Potentials API, Sky Aesthetics` → `Northstar Redux (Create 6.0+ and GeckoLib already in pack — no new dependencies; no worldgen structures)`.
 3. **Totals row**: `178/49/227` → `177/47/224`; append changelog annotation `−Stellaris −Potentials API −Sky Aesthetics −CC:Tweaked +Northstar Redux, Aug 2026`.
-4. **CC:Tweaked removal**: delete the Wave 8 section (mod table, source note, recipe gates table, config table, "Crafting Your First Computer", Lua tutorial ≈3306–3338 and ≈3602+, Integration Recipes section ≈4106+ incl. Stellaris Launch Sequencer, interdependency notes ≈4210–4215, Progression Placement ≈4217+, world-creation step at ≈4263, Wave 8 row, "Program your base" row ≈4365).
-5. **Quest chapter list** (≈2714) and **quest counts** (≈2746–2749): Stellaris → Northstar; total 211 → **213** (17 out, 19 in).
-6. **Phase tables** (≈4317–4318): "Stellaris Moon and early planets" → "Northstar Redux Moon and early planets"; "Mars and Glacio space bases" → "Mars and Venus space bases"; drop CC:Tweaked clauses ("CC:Tweaked turtles and wireless automation", "CC:Tweaked cross-mod automation networks").
-7. **Tech-loop row** (≈4363): "Stellaris desh/ostranium → Mekanism 5x" → "Northstar titanium/martian steel → Mekanism 5x".
+4. **CC:Tweaked removal**: delete the Wave 8 section (mod table, source note, recipe gates table, config table, "Crafting Your First Computer"), the Lua tutorial, the Integration Recipes section (incl. the Stellaris Launch Sequencer), all `CC:Tweaked × …` interdependency notes, the CC:Tweaked Progression Placement subsection, the world-creation step referencing `config/computercraft-server.toml`, and the "Program your base" tech-loop row.
+5. **Quest chapter list** and **quest counts**: Stellaris → Northstar; total 211 → **212** (17 out, 18 in).
+6. **Phase tables**: Phase 2 — drop the CC:Tweaked clause, `Stellaris Moon and early planets` → `Northstar Redux Moon and early planets`; Phase 3 — drop the CC:Tweaked clause, `Mars and Glacio space bases` → `Mars and Venus space bases`.
+7. **Tech-loop row**: `Stellaris desh/ostranium → Mekanism 5x line → AE2 storage` → `Northstar titanium/martian steel → Mekanism 5x line → AE2 storage`.
 
 ## 4. FTB Quests
 
-- **New** `tools/ftbquests/quest_data/northstar.json` — 19 quests (16 milestones + 3 breadcrumbs), chapter id `90000000` (replaces Stellaris slot; Main group `20000001`, order_index 9). Item IDs verified from source:
-  - Phase 1 milestones (x=0.0): Space Program (`northstar:rocket_station`), Rocket Parts (`northstar:rocket_thruster` + `northstar:rocket_combustion_chamber` + `northstar:rocket_controls`), Oxygen System (`northstar:oxygen_separator` + `northstar:oxygen_filler` + `northstar:oxygen_sealer`), Space Suit (`northstar:iron_space_suit_helmet` + `northstar:iron_space_suit_chestpiece`), Science Unlocked (`northstar:telescope` + `northstar:astronomical_reading`), First Launch (checkmark), Moon Landing (dimension task `northstar:moon` + fallback checkmark).
-  - Phase 2 milestones (x=3.0): Martian Steel (`northstar:martian_steel_ingot`), Mars (item-detect `northstar:mars_stone`), Titanium (`northstar:titanium_ingot`), Mercury (item-detect `northstar:mercury_stone` — [VERIFY] exists, else `northstar:raw_tungsten_ore`), Tungsten (`northstar:tungsten_ingot`), Venus (item-detect `northstar:venus_stone`), Martian Steel Space Suit (`northstar:martian_steel_space_suit_chestpiece`).
-  - Phase 3 milestones (x=6.0): Space Atlas (`northstar:space_atlas`), Interplanetary Empire (checkmark).
-  - Breadcrumbs: Return Ticket (`northstar:return_ticket`), Rocket Waypoint (`northstar:rocket_waypoint`), Temperature Regulator (`northstar:temperature_regulator`).
-  - **Planet-visit detection uses planet-exclusive items, not dimension tasks**: the 2026-08-13 generation pipeline (`generate.py` `build_task`) supports only `item` and `checkmark` task types — a `dimension` task would emit an invalid quest. Detecting a planet's native block item (e.g. `northstar:moon_stone`, only obtainable on the Moon) is the proven pipeline path and cannot brick. Exact planet block IDs confirmed from source during implementation.
-- **Delete** `tools/ftbquests/quest_data/stellaris.json` and generated `config/ftbquests/quests/chapters/90000000.snbt`.
-- **Regenerate**: `python tools/ftbquests/generate.py northstar` (pipeline proven 2026-08-13; per-chapter `<id>.snbt` + `chapter_groups.snbt` + `data.snbt`).
-- **validate.py**: KNOWN_MODS − `stellaris`, − `computercraft`, + `northstar`. Run `pytest` (test_generate.py / test_validate.py) + `python tools/ftbquests/validate.py`.
-- **Test fixtures**: if `test_generate.py` / `test_validate.py` fixtures reference `stellaris` or `computercraft` namespaces, update them to `northstar` (clean cutover — no stale namespace references in live tooling).
-- Chapter layout convention preserved: milestones = hexagon, breadcrumbs = square; x columns per phase (0.0/1.5/3.0/4.5/6.0/7.5), y increments in dependency order; rewards = XP levels + phase-scaled consumables only.
+### 4.1 Pipeline extension (small, tested)
+
+`generate.py` `build_task` currently emits only `item`/`checkmark` tasks. Extend it to support real detection:
+
+```python
+def build_task(t):
+    out = {"id": t["id"], "type": t["type"]}
+    if t["type"] == "item":
+        out["item"] = {"count": t.get("count", 1), "id": t["item"]}
+    elif t["type"] == "dimension":
+        out["dimension"] = t["dimension"]
+    if t.get("optional"):
+        out["optional"] = True
+    return out
+```
+
+- `dimension` is a standard FTB Quests task type ("enter a dimension"); this pack's FTB Quests version was smoke-tested with dimension tasks in the July Stellaris chapter.
+- Task-level `optional` is a standard FTB Quests task flag. Design works even if a future version ignores it (see 4.3).
+- Add pytest coverage for both (`test_generate.py`).
+
+### 4.2 Quest chapter — single source of truth
+
+**New** `tools/ftbquests/quest_data/northstar.json` — **18 quests** (15 milestones + 3 breadcrumbs), chapter id **`82000000`** (fresh slot — the retired `90000000` Stellaris id is deleted, not inherited), Main group `20000001`, order_index 9. Milestones = hexagon, breadcrumbs = square; x/y computed by the pipeline from `phase`/`shape`.
+
+The complete quest table with descriptions lives in **`docs/superpowers/plans/2026-08-20-northstar-redux-swap.md` Task 1** (full JSON, verbatim). Item IDs below are all verified from the `1.21.1/dev` source this session:
+
+| key | title | shape | phase | tasks (icon = first) | reward | depends on |
+|---|---|---|---|---|---|---|
+| `space_program` | Space Program | hexagon | 1 | item `northstar:rocket_station` | XP 20 + 8 `minecraft:iron_ingot` | — |
+| `rocket_parts` | Rocket Parts | hexagon | 1 | item `northstar:rocket_thruster`, `northstar:rocket_controls`, `northstar:rocket_combustion_chamber` | XP 24 + 8 `minecraft:copper_ingot` | `space_program` |
+| `oxygen_system` | Oxygen System | hexagon | 1 | item `northstar:oxygen_separator`, `northstar:oxygen_filler` | XP 24 + 8 `northstar:durable_fabric` | `rocket_parts` |
+| `space_suit` | Space Suit | hexagon | 1 | item `northstar:iron_space_suit_helmet`, `northstar:iron_space_suit_chestpiece` | XP 24 + 8 `minecraft:paper` | `oxygen_system` |
+| `science` | Science Unlocked | hexagon | 1 | item `northstar:telescope`, `northstar:astronomical_reading` | XP 20 + 8 `minecraft:iron_ingot` | `space_suit` |
+| `moon_landing` | Moon Landing | hexagon | 1 | dimension `northstar:moon` + optional item `northstar:moon_stone` | XP 36 + 8 `northstar:lunar_sapphire_shard` | `science` |
+| `oxygen_sealer` | Oxygen Sealer | square | 1 | item `northstar:oxygen_sealer` | XP 12 | `oxygen_system` |
+| `martian_steel` | Martian Steel | hexagon | 2 | item `northstar:martian_steel_ingot` | XP 40 + 8 `northstar:martian_steel_ingot` | `moon_landing` |
+| `mars` | Mars | hexagon | 2 | dimension `northstar:mars` + optional item `northstar:mars_stone` | XP 40 + 8 `northstar:raw_martian_iron_ore` | `martian_steel` |
+| `titanium` | Titanium | hexagon | 2 | item `northstar:titanium_ingot` | XP 40 + 8 `northstar:titanium_ingot` | `mars` |
+| `mercury` | Mercury | hexagon | 2 | dimension `northstar:mercury` + optional item `northstar:mercury_stone` | XP 44 + 8 `northstar:raw_tungsten_ore` | `titanium` |
+| `tungsten` | Tungsten | hexagon | 2 | item `northstar:tungsten_ingot` | XP 44 + 8 `northstar:tungsten_ingot` | `mercury` |
+| `venus` | Venus | hexagon | 2 | dimension `northstar:venus` + optional item `northstar:venus_stone` | XP 48 + 8 `northstar:volcanic_ash_item` | `tungsten` |
+| `martian_space_suit` | Martian Steel Space Suit | hexagon | 2 | item `northstar:martian_steel_space_suit_chestpiece` | XP 48 + 8 `northstar:martian_steel_sheet` | `venus` |
+| `temperature_regulator` | Temperature Regulator | square | 2 | item `northstar:temperature_regulator` | XP 16 | `oxygen_system` |
+| `space_atlas` | Space Atlas | hexagon | 3 | item `northstar:space_atlas` | XP 56 + 8 `northstar:durable_fabric` | `martian_space_suit` |
+| `rocket_waypoint` | Rocket Waypoint | square | 3 | item `northstar:rocket_waypoint` | XP 16 | `space_atlas` |
+| `interplanetary_empire` | Interplanetary Empire | hexagon | 3 | item `northstar:return_ticket` | XP 64 + 8 `northstar:polished_lunar_sapphire` | `space_atlas` |
+
+**No checkmark milestones.** Every milestone detects something real: items for crafts, `dimension` tasks for arrivals (with an optional planet-exclusive item task — e.g. `northstar:moon_stone`, only obtainable on the Moon — as a fallback that also verifies presence).
+
+### 4.3 Cannot-brick guarantees
+
+- **Item IDs**: every one verified from source this session (including `mercury_stone`, which exists at `NorthstarBlocks.java:2987`). `northstar:launch_pad` is deliberately NOT used (LaunchPadBlock is unregistered WIP in 0.6.4).
+- **Dimension IDs**: `northstar:moon|mars|mercury|venus` are datapack-registered at runtime (not in the repo source — verified absent). Expected names match the mod's namespace convention. The optional item task means a visit completes the quest even if the dimension task is ignored; if a dimension ID is wrong, the quest shows an error and the **post-install checklist** catches it — escape hatch: swap the task to item-only (item IDs are verified), regenerate, done.
+- **Rewards**: XP levels + phase-scaled consumable materials only, each chosen to feed the next quest (iron → rocket parts, copper → oxygen machines, fabric → suit, paper → science, shards → moon economy, raw ores → next metal). No placement/utility blocks, no gated items.
+
+### 4.4 Files and tooling
+
+- **Delete** `tools/ftbquests/quest_data/stellaris.json` and the generated `config/ftbquests/quests/chapters/90000000.snbt` (Stellaris chapter).
+- **Modify** `tools/ftbquests/generate.py` (4.1) and `tools/ftbquests/validate.py` (KNOWN_MODS: − `stellaris`, − `computercraft`, + `northstar`).
+- **Regenerate**: `python tools/ftbquests/generate.py northstar` → writes `chapters/82000000.snbt` + rewrites `chapter_groups.snbt`/`data.snbt` from constants (safe).
+- **Tests**: `pytest` (test_generate.py / test_validate.py, fixtures updated to drop `stellaris`/`computercraft`) + `python tools/ftbquests/validate.py`.
 
 ## 5. File deletions
 
 - `config/computercraft-server.toml` (CC:Tweaked override)
 - `kubejs/server_scripts/wave8_cc_tweaked.js` (CC:Tweaked recipe gates)
 - `tools/ftbquests/quest_data/stellaris.json`
-- `config/ftbquests/quests/chapters/90000000.snbt` (replaced by Northstar chapter)
+- `config/ftbquests/quests/chapters/90000000.snbt` (Stellaris chapter; replaced by `82000000.snbt`)
 
 ## 6. STATUS.md
 
-- New entry under Added/Removed: Stellaris → Northstar Redux 0.6.4 (reason: worldgen), CC:Tweaked removed (user request), deps Potentials API + Sky Aesthetics removed, totals 178/49/227 → 177/47/224, quest total 211 → 213. Note the compat-mod audit result (no Stellaris addons/compat mods present; TFMG-Stellaris Compatibility already removed earlier).
-- Update the "Dependency Audit (Aug 2026 — Stellaris × Sky Aesthetics)" block: mark superseded (Sky Aesthetics + Potentials removed with Stellaris).
-- Update Wave 7 and Wave 8 sections; note the pending in-game verification item (Northstar quest detection + dimension IDs at next launch).
+- New entry under Added/Removed: Stellaris → Northstar Redux 0.6.4 (reason: worldgen), CC:Tweaked removed (user request), deps Potentials API + Sky Aesthetics removed, totals 178/49/227 → 177/47/224, quest total 211 → 212. Compat-mod audit result recorded with the search terms used (no Stellaris addons/compat mods; TFMG-Stellaris Compatibility already removed earlier).
+- Dependency-audit block (Stellaris × Sky Aesthetics): mark superseded — both deps removed with Stellaris.
+- Wave 7 section: rewritten to Northstar Redux (no new deps, no worldgen). Wave 8 section: rewritten to a removal note.
+- **Symmetric sweep**: after this task, STATUS.md contains zero `stellaris`/`computercraft` strings (the Wave 7 and audit sections are rewritten cleanly; historical strikethrough mentions are replaced, not kept).
+- **Post-install verification checklist** (recorded, not just "test me"): after the user swaps jars in the instance — (1) launch; (2) open the quest book, verify the Northstar chapter renders and quests detect crafted items (`/ftbquests` if needed); (3) craft a Rocket Station and confirm the quest completes; (4) confirm planet dimension IDs by entering the Moon and checking Moon Landing completes (if the dimension task errors, report back — escape hatch in §4.3); (5) check EMI for Northstar recipes; (6) if updating Northstar later, re-run `generate.py`/`validate.py`.
 
 ## 7. AGENTS.md
 
@@ -79,21 +133,10 @@ Version pin: **0.6.4** (2026-07-22), latest for 1.21.1 NeoForge. Item/block IDs 
 
 ## 8. PDF
 
-- Regenerate `rendered/DRIFTWOOD-GUIDE.pdf` via `generate-pdf.ps1` (Typst, `templates/guide.typ`).
+- Regenerate `rendered/DRIFTWOOD-GUIDE.pdf` via `generate-pdf.ps1` (Typst, `templates/guide.typ`), folded into final verification.
 
-## 9. World / save migration note (documented in GUIDE.md)
-
-Removing Stellaris from an existing save leaves already-generated dishes as inert blocks and removes its items (rockets, suits, desh ore) from inventories — recommend a fresh world for the swap, or accept the leftovers. Northstar installs cleanly onto the current pack; no worldgen leftovers.
-
-## 10. Verification
-
-- `generate.py` + `validate.py` + pytest pass.
-- `grep -i stellaris` and `grep -i computercraft` clean across live docs (GUIDE.md, STATUS.md, AGENTS.md, config/, kubejs/, tools/) — historical files under `docs/superpowers/plans|specs/` intentionally retain references as dated snapshots.
-- PDF regenerates.
-- User in-game pass: quest detection, planet dimension IDs, Northstar recipes via EMI.
-
-## 11. Out of scope
+## 9. Out of scope
 
 - Historical plan/spec docs (2026-07-27 ftb-quests, 2026-08-06 cc-tweaked-wave-8, 2026-08-13 ftb-quests-generation) — kept as-is.
 - Adding "Create: Northstar - Structures" addon — explicitly not installed.
-- Replacing `GETTING-STARTED.md` content unless a grep finds stale references during implementation.
+- The user's game instance (XMCL) — the jar swap happens outside this repo; the GUIDE.md Northstar section ships the instance-swap checklist.
