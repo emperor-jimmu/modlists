@@ -547,13 +547,16 @@ Dynamic Crosshair uses **YACL** (already in the pack) for its in-game config scr
 
 No keybind changes needed — the mod works fully through context detection. YACL provides a searchable settings screen.
 
-**Mindful Darkness** (`config/mindfuldarkness-client.toml` — Puzzles Lib config; defaults are pack-approved, no tracked override):
+**Mindful Darkness** (`config/mindfuldarkness-client.toml` — tracked override, user-tuned Aug 2026):
 
-- `texture_darkness` = `0.5` (default) — Percentage of original GUI brightness to apply; lower = darker (range 0.0–1.0). DME's old "medium" level ≈ this default.
-- `font_brightness` = `0.75` (default) — Minimum font brightness while dark mode is on (protects text legibility).
-- `darkening_algorithm` = `grayscale_and_hsp` (default) — darkening math; alternatives: `hsp`, `grayscale_and_hsl`. Change if colors look off on a specific screen.
-- `hide_in_game_switcher` = `false` (default) — adds a small dark-mode toggle button to every menu (`dark_mode_toggle_screens` = `both` = title + pause screens).
-- `paths` / `menu_blacklist` / `font_color_blacklist` — fine-grained control over which GUI textures, menus, and screens are affected (chat/sign/book screens are pre-excluded).
+| Key | Value | Effect |
+|---|---|---|
+| `texture_darkness` | `0.353102992` (default 0.5) | GUI texture brightness — ~35% of original, noticeably darker than the default half-brightness |
+| `font_brightness` | `0.8043705985915491` (default 0.75) | Font brightness floor — text stays clearly readable on the darker surfaces |
+| `darkening_algorithm` | `"GRAYSCALE_AND_HSL"` (default `GRAYSCALE_AND_HSP`) | HSL-based darkening (allowed: GRAYSCALE_AND_HSP / HSP / GRAYSCALE_AND_HSL / HSL / GRAYSCALE_AND_LINEAR / LINEAR) |
+| `paths` | full 27-entry default list **+ `!minecraft:textures/gui/sprites/hud/heart/*`** | Hearts excluded from darkening — the health bar stays bright/readable at the darker texture level. The full default list is carried in the override because ModConfigSpec replaces `paths` wholesale (an exclusion-only list would wipe the defaults) |
+
+The override carries only these keys — `hide_in_game_switcher`, `dark_mode_toggle_screens`, `menu_blacklist`, `font_color_blacklist` stay at defaults (toggle buttons on title/pause screens; chat/sign/book screens pre-excluded). NeoForge fills the rest on first save.
 
 No shaders involved — unlike Dark Mode Everywhere (removed in the Aug 2026 swap), it recolors GUI rendering directly, so DME's shader quirks (double text on shadowed screens, `methodShaderDump`) don't exist here. If a specific screen ever looks wrong, add it to `menu_blacklist` or `font_color_blacklist`.
 
@@ -615,7 +618,7 @@ These mods change how the game looks and feels. All are client-side and work imm
 - **Cosy Critters & Creepy Crawlies** — ambient birds/bugs/critters; client-side, toggleable via `/cosycritters`. Zero perf impact.
 - **Foxified Dense Flowers** — denser flower fields; client-side.
 - **Effectual** — atmospheric particles (steam breath, bubbles, footprints, sparks, sand/gravel placement). **Cave dust is disabled** in `config/effectual-client.toml` (`caveDust = false` — duplicated by Particular Reforged's cave dust; tracked override, Aug 2026 review). Requires Architectury API, Cloth Config, TLib (all in pack).
-- **Mindful Darkness** — automatic dark mode for every GUI (replaces Dark Mode Everywhere, Aug 2026). No shaders, no texture changes — recolors GUI rendering in place; toggle button in the title/pause screens; intensity + algorithm configurable. Requires Puzzles Lib (already in pack).
+- **Mindful Darkness** — automatic dark mode for every GUI (replaces Dark Mode Everywhere, Aug 2026). No shaders, no texture changes — recolors GUI rendering in place; toggle button in the title/pause screens; intensity + algorithm configurable. User-tuned override: darker textures (0.353), brighter fonts (0.804), HSL algorithm, hearts excluded from darkening. Requires Puzzles Lib (already in pack).
 - **BetterGrassify** — OptiFine-style connected grass: grass blocks, snowy grass, podzol, mycelium, dirt paths, farmland, and both nylium blend their side textures into surrounding terrain (Fancy, default) or use the top texture (Fast). Adds Better Snow + Better Snowy Grass for snowy biomes. Ships no textures — samples your active texture pack's sprites at runtime, so it works at any resolution; resource-pack compatibility mode is on by default. Set mode in config — YACL GUI (already in pack) or `config/bettergrass.json`. Requires Forgified Fabric API.
 
 ---
