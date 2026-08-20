@@ -1,0 +1,7 @@
+# Inventory Essentials — tracked override (Aug 2026 Wave 0.5 review)
+# IE ships its own middle-click inventory sorting (modes: consolidate_only /
+# retain_order / alphabetical / creative; default creative) which would
+# duplicate ClientSort's reordering. Set to consolidate_only: middle-click
+# only merges partial stacks, never reorders — ClientSort owns all sorting.
+# All transfer features stay at defaults. NeoForge fills remaining keys on save.
+inventorySorting = "consolidate_only"
