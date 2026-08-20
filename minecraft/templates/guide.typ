@@ -15,7 +15,7 @@
 #set page(numbering: none)
 #align(center + horizon, [
   #block(height: 1.5cm)
-  #image(logo-path, width: 60%)
+  #image(logo-path, width: 80%)
   #block(height: 1cm)
   #text(size: 36pt, weight: "bold", fill: rgb("#604020"))[Driftwood]
   #block(height: 0.5cm)
