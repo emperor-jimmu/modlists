@@ -169,6 +169,26 @@ The essentials that make the game run well. Dependencies, performance, rendering
 
 **Recommended baseline (NVIDIA RTX 4080 SUPER, 16GB VRAM, 4K — target stable 70-80 FPS)**: start with the **High** quality preset and the shader's defaults. If FPS dips below 70: drop the preset one step, then reduce Shadow Resolution to **1024**, then Shadow Distance to **8 chunks** (see Distant Horizons below).
 
+#### Bliss Shader Settings — Recommended
+
+Start from the **High** preset, then apply the table below. All options are in the shader's own settings screen: Options → Video Settings → Shaderpacks → Bliss → **Shader Settings**. Values are tuned for the pack's target (RTX 4080 SUPER, 4K, 70–80 FPS, DH LODs at 128–256).
+
+| Settings screen | Option | Recommended | Why |
+|---|---|---|---|
+| **Ambient Light** | **Indirect Lighting** | **SSAO** (default) | ⚠ the one that matters — see note below |
+| Ambient Light | AO Multiplier | 1.0 (default) | baseline occlusion strength |
+| Ambient Light | GI Multiplier | 1.0 (default) | only affects SSRT modes |
+| Ambient Light | Long Range Marching (SSRT) · High Quality Ambient Light (SSRT) · sample 1/4 resolution depth (SSRT) | leave at defaults | SSRT-only toggles — inert while Indirect Lighting = SSAO |
+| Direct Light → Shadows | Shadow Resolution | 2048 (default) → **1024** if FPS < 70 | documented baseline lever |
+| Direct Light → Shadows | Shadow Distance | 8 chunks (128) | DH handles far shading; drop to 8 if needed |
+| Direct Light → Shadows | Shadows for Entities | ON | your own shadow always renders |
+| Post Processing → Anti-Aliasing | TAA | ON (default) | SSAO sampling is temporal — TAA is what cleans the dither |
+| Post Processing → Anti-Aliasing | Temporal Upscaling | leave at defaults | free 4K headroom: renders lower, TAA-upscales; keep Scale Factor ≥ 0.75 |
+| Mod Support → Distant Horizons | ambient occlusion on LOD chunks · sub-surface scattering · screen-space reflections | ON (defaults) | LODs render through the shader pipeline |
+| Mod Support → Distant Horizons | DH shadowmap support | **OFF — never enable** | shader's own red warning: destroys performance, blocky/flickery shadows |
+
+> **Indirect Lighting — user-tested rule**: keep it on **SSAO**. Any other mode — **GTAO**, **SSRT (AO only)**, **SSRT (AO + GI)** — introduces visible noise in the distance. Bliss's own UI marks both SSRT modes "LOTS OF VISUAL NOISE", and screen-space techniques can't sample DH LOD geometry, so distant areas get the noisy fallback; SSAO is the only mode with a dedicated Distant Horizons code path. If you want the GI look, only run it indoors/in caves — expect noise in open terrain. (If you ever see dithering noise specifically on LOD chunks even on SSAO, the DH settings screen has a noise texture — NOISE_INTENSITY / NOISE_DROPOFF.)
+
 **General MC settings**: Graphics **Fancy**, Render Distance **10 chunks**, Simulation Distance **8 chunks**, Biome Blend **2 blocks**, Mipmap Levels **4x**, Entity Distance **100%**, Fullscreen ON, VSync OFF, Max Framerate **120**. Always Defer Chunk Updates **Enabled**, Use No Error Context **Enabled**.
 
 Distant Horizons handles far rendering — keep vanilla render distance low. DH LODs render through the shader pipeline; start LOD distance at **128** and push to **256** if the FPS budget allows. Monitor VRAM usage (shaders + DH + high-res texture packs can peak past 12GB at 4K). If you experience dips below 70 FPS, first reduce Shadow Resolution to **1024**, then lower Shadow Distance to **8 chunks**.
@@ -294,7 +314,7 @@ Drop **Bliss Shaders** `.zip` into `shaderpacks/`. In-game: Options → Video Se
 
 Bliss needs no add-on mods — it fully replaces the previous Complementary Unbound + Euphoria Patches setup.
 
-Recommended baseline (RTX 4080 SUPER, 16GB VRAM): High preset, tune from there — see [Shaderpack](#shaderpack) above. General MC: Graphics Fancy, Render Distance 10, Simulation 8, VSync OFF.
+Recommended baseline (RTX 4080 SUPER, 16GB VRAM): High preset, tune from there — see the [Bliss Shader Settings](#bliss-shader-settings--recommended) table in [Shaderpack](#shaderpack) above (incl. the **Indirect Lighting = SSAO** rule). General MC: Graphics Fancy, Render Distance 10, Simulation 8, VSync OFF.
 
 ---
 

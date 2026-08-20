@@ -2,6 +2,12 @@
 
 ## Completed
 
+### Bliss Shader Settings Section (Aug 2026)
+
+- [x] **User report**: any Indirect Lighting mode besides SSAO (GTAO, SSRT AO, SSRT AO+GI) introduces noise in the distance. Verified against Bliss source (Stable branch, v2.1.2): `indirect_effect` values 0–4 = Vanilla AO / SSAO / GTAO / SSRT (AO only) / SSRT (AO + GI); the shader's own lang file marks both SSRT modes "LOTS OF VISUAL NOISE" (red UI warning). SSAO (default 1) is the only mode with a dedicated Distant Horizons code path (`dhDepthTex1` in `shaders/lib/indirect_lighting_effects.glsl`).
+- [x] **GUIDE.md**: new `#### Bliss Shader Settings — Recommended` subsection under Shaderpack — settings table (Ambient Light → Indirect Lighting = **SSAO**; AO/GI multipliers; SSRT toggles inert under SSAO; Shadow Resolution 2048→1024 lever; Shadow Distance 8 chunks; entity shadows ON; TAA ON — temporal SSAO cleaner; Temporal Upscaling for 4K headroom; DH LOD AO/SSS/SSR; DH shadowmap support OFF — shader's red warning), user-tested Indirect Lighting note, DH noise-texture footnote. Shader Setup section now cross-references the table (incl. the SSAO rule).
+- [x] DRIFTWOOD-GUIDE.pdf regenerated
+
 ### FA Extensions Removal — Animal Model Corruption (Aug 2026)
 
 - [x] **User bug report**: vanilla animals rendered with only some polygons visible (partially "culled" models). Diagnosis: the **Details** addon inside Fresh Animations: Extensions — the only addon that adds extra model geometry to animals (ears, tusks, etc.) — was corrupting animal models in the EMF/Fresh Animations path. Known issue class: EMF/Fresh Animations + Sodium "missing parts / broken polygons" reports ([EMF GitHub #340](https://github.com/Traben-0/Entity_Model_Features/issues/340)). User confirmed: removing the pack → animals render correctly.
