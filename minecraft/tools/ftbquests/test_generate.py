@@ -70,6 +70,19 @@ def test_build_reward_uses_nested_item():
     reward = {"id": "50000003", "type": "item", "item": "minecraft:redstone", "count": 4}
     out = generate.build_reward(reward)
     assert out == {"id": "50000003", "type": "item", "count": 4, "item": {"count": 1, "id": "minecraft:redstone"}}
+
+
+def test_build_task_emits_dimension():
+    task = {"id": "82000002", "type": "dimension", "dimension": "northstar:moon"}
+    out = generate.build_task(task)
+    assert out == {"id": "82000002", "type": "dimension", "dimension": "northstar:moon"}
+
+
+def test_build_task_emits_optional_flag():
+    task = {"id": "82000003", "type": "item", "item": "northstar:moon_stone", "count": 1, "optional": True}
+    out = generate.build_task(task)
+    assert out["optional"] is True
+    assert out["item"] == {"count": 1, "id": "northstar:moon_stone"}
 if __name__ == "__main__":
     import traceback
     _tests = [v for k, v in sorted(globals().items()) if k.startswith("test_") and callable(v)]

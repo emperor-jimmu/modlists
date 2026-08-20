@@ -72,6 +72,10 @@ def build_task(t):
     out = {"id": t["id"], "type": t["type"]}
     if t["type"] == "item":
         out["item"] = {"count": t.get("count", 1), "id": t["item"]}
+    elif t["type"] == "dimension":
+        out["dimension"] = t["dimension"]
+    if t.get("optional"):
+        out["optional"] = True
     return out
 
 

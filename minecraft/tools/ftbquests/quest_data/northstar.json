@@ -1,0 +1,349 @@
+{
+  "chapter": {
+    "id": "82000000",
+    "title": "Northstar",
+    "subtitle": "Start with the Rocket Station and follow the chain",
+    "icon": "northstar:rocket_station",
+    "group": "20000001",
+    "order_index": 9
+  },
+  "quests": [
+    {
+      "key": "space_program",
+      "title": "Space Program",
+      "subtitle": "Assemble the heart of your launch site",
+      "description": [
+        "Craft the Rocket Station and Rocket Controls. Rockets are Create contraptions - build the hull from Create blocks and Northstar rocket parts, then superglue the whole assembly.",
+        "Next: craft a Rocket Thruster and a Rocket Combustion Chamber."
+      ],
+      "icon": "northstar:rocket_station",
+      "shape": "hexagon",
+      "phase": 1,
+      "dependencies": [],
+      "tasks": [{"type": "item", "item": "northstar:rocket_station", "count": 1}],
+      "rewards": [
+        {"type": "xp_levels", "xp_levels": 20},
+        {"type": "item", "item": "minecraft:iron_ingot", "count": 8}
+      ]
+    },
+    {
+      "key": "rocket_parts",
+      "title": "Rocket Parts",
+      "subtitle": "Thrusters, controls, and a combustion chamber",
+      "description": [
+        "Thrusters, controls, and a combustion chamber turn a pile of blocks into a rocket. The Rocket Station assembles the rocket and sets its destination.",
+        "Next: build the oxygen loop so you survive the trip."
+      ],
+      "icon": "northstar:rocket_thruster",
+      "shape": "hexagon",
+      "phase": 1,
+      "dependencies": ["space_program"],
+      "tasks": [
+        {"type": "item", "item": "northstar:rocket_thruster", "count": 1},
+        {"type": "item", "item": "northstar:rocket_controls", "count": 1},
+        {"type": "item", "item": "northstar:rocket_combustion_chamber", "count": 1}
+      ],
+      "rewards": [
+        {"type": "xp_levels", "xp_levels": 24},
+        {"type": "item", "item": "minecraft:copper_ingot", "count": 8}
+      ]
+    },
+    {
+      "key": "oxygen_system",
+      "title": "Oxygen System",
+      "subtitle": "Life support before liftoff",
+      "description": [
+        "Space has no air. The Oxygen Separator extracts breathable oxygen; the Oxygen Filler refills suits and contraptions. Sealed rooms need an Oxygen Sealer.",
+        "Next: craft the Iron Space Suit."
+      ],
+      "icon": "northstar:oxygen_separator",
+      "shape": "hexagon",
+      "phase": 1,
+      "dependencies": ["rocket_parts"],
+      "tasks": [
+        {"type": "item", "item": "northstar:oxygen_separator", "count": 1},
+        {"type": "item", "item": "northstar:oxygen_filler", "count": 1}
+      ],
+      "rewards": [
+        {"type": "xp_levels", "xp_levels": 24},
+        {"type": "item", "item": "northstar:durable_fabric", "count": 8}
+      ]
+    },
+    {
+      "key": "space_suit",
+      "title": "Space Suit",
+      "subtitle": "Sealed, warm, and breathing",
+      "description": [
+        "The Iron Space Suit seals you from vacuum and carries a small oxygen reserve. Wear the full set before launching.",
+        "Next: build a telescope and start taking astronomical readings."
+      ],
+      "icon": "northstar:iron_space_suit_helmet",
+      "shape": "hexagon",
+      "phase": 1,
+      "dependencies": ["oxygen_system"],
+      "tasks": [
+        {"type": "item", "item": "northstar:iron_space_suit_helmet", "count": 1},
+        {"type": "item", "item": "northstar:iron_space_suit_chestpiece", "count": 1}
+      ],
+      "rewards": [
+        {"type": "xp_levels", "xp_levels": 24},
+        {"type": "item", "item": "minecraft:paper", "count": 8}
+      ]
+    },
+    {
+      "key": "science",
+      "title": "Science Unlocked",
+      "subtitle": "Telescopes unlock the sky",
+      "description": [
+        "Astronomical Readings earned with the Telescope are spent at the Astronomy Table as science points. Enough science unlocks new planets in the Space Atlas.",
+        "Next: launch for the Moon."
+      ],
+      "icon": "northstar:telescope",
+      "shape": "hexagon",
+      "phase": 1,
+      "dependencies": ["space_suit"],
+      "tasks": [
+        {"type": "item", "item": "northstar:telescope", "count": 1},
+        {"type": "item", "item": "northstar:astronomical_reading", "count": 1}
+      ],
+      "rewards": [
+        {"type": "xp_levels", "xp_levels": 20},
+        {"type": "item", "item": "minecraft:iron_ingot", "count": 8}
+      ]
+    },
+    {
+      "key": "moon_landing",
+      "title": "Moon Landing",
+      "subtitle": "One small launch for a demigod",
+      "description": [
+        "Fuel the rocket at the station, climb in, and launch. The Moon has no atmosphere, low gravity, and no mobs - a safe first landing.",
+        "Mine lunar sapphire and moon stone. Next: smelt martian iron into Martian Steel."
+      ],
+      "icon": "northstar:moon_stone",
+      "shape": "hexagon",
+      "phase": 1,
+      "dependencies": ["science"],
+      "tasks": [
+        {"type": "dimension", "dimension": "northstar:moon"},
+        {"type": "item", "item": "northstar:moon_stone", "count": 1, "optional": true}
+      ],
+      "rewards": [
+        {"type": "xp_levels", "xp_levels": 36},
+        {"type": "item", "item": "northstar:lunar_sapphire_shard", "count": 8}
+      ]
+    },
+    {
+      "key": "oxygen_sealer",
+      "title": "Oxygen Sealer",
+      "subtitle": "Pressurize your first base",
+      "description": [
+        "Sealed rooms hold their air: place an Oxygen Sealer and it pressurizes the enclosed space. Build a small sealed moon base with a filler."
+      ],
+      "icon": "northstar:oxygen_sealer",
+      "shape": "square",
+      "phase": 1,
+      "dependencies": ["oxygen_system"],
+      "tasks": [{"type": "item", "item": "northstar:oxygen_sealer", "count": 1}],
+      "rewards": [{"type": "xp_levels", "xp_levels": 12}]
+    },
+    {
+      "key": "martian_steel",
+      "title": "Martian Steel",
+      "subtitle": "The workhorse metal of the space age",
+      "description": [
+        "Martian Steel is tougher than iron and heat-resistant - the backbone of rockets and bases alike.",
+        "Next: land on Mars and mine raw martian iron."
+      ],
+      "icon": "northstar:martian_steel_ingot",
+      "shape": "hexagon",
+      "phase": 2,
+      "dependencies": ["moon_landing"],
+      "tasks": [{"type": "item", "item": "northstar:martian_steel_ingot", "count": 1}],
+      "rewards": [
+        {"type": "xp_levels", "xp_levels": 40},
+        {"type": "item", "item": "northstar:martian_steel_ingot", "count": 8}
+      ]
+    },
+    {
+      "key": "mars",
+      "title": "Mars",
+      "subtitle": "Red deserts and hungry worms",
+      "description": [
+        "Mars has a thin atmosphere, orange deserts, and hostile life - Echo Worms, Root Toads, Cobras, Devil Moths. Bring weapons.",
+        "Next: mine titanium, which powers the next rocket tier."
+      ],
+      "icon": "northstar:mars_stone",
+      "shape": "hexagon",
+      "phase": 2,
+      "dependencies": ["martian_steel"],
+      "tasks": [
+        {"type": "dimension", "dimension": "northstar:mars"},
+        {"type": "item", "item": "northstar:mars_stone", "count": 1, "optional": true}
+      ],
+      "rewards": [
+        {"type": "xp_levels", "xp_levels": 40},
+        {"type": "item", "item": "northstar:raw_martian_iron_ore", "count": 8}
+      ]
+    },
+    {
+      "key": "titanium",
+      "title": "Titanium",
+      "subtitle": "Lighter, stronger, essential",
+      "description": [
+        "Titanium replaces iron sheets for advanced crafting and is mined on Mars and Mercury.",
+        "Next: survive Mercury's heat and mine tungsten."
+      ],
+      "icon": "northstar:titanium_ingot",
+      "shape": "hexagon",
+      "phase": 2,
+      "dependencies": ["mars"],
+      "tasks": [{"type": "item", "item": "northstar:titanium_ingot", "count": 1}],
+      "rewards": [
+        {"type": "xp_levels", "xp_levels": 40},
+        {"type": "item", "item": "northstar:titanium_ingot", "count": 8}
+      ]
+    },
+    {
+      "key": "mercury",
+      "title": "Mercury",
+      "subtitle": "Closest to the sun, and it shows",
+      "description": [
+        "Mercury is scorching - heat shielding scales with your rocket's size, and the Martian Steel suit helps. Tungsten ore is here.",
+        "Next: smelt tungsten for harder alloys."
+      ],
+      "icon": "northstar:mercury_stone",
+      "shape": "hexagon",
+      "phase": 2,
+      "dependencies": ["titanium"],
+      "tasks": [
+        {"type": "dimension", "dimension": "northstar:mercury"},
+        {"type": "item", "item": "northstar:mercury_stone", "count": 1, "optional": true}
+      ],
+      "rewards": [
+        {"type": "xp_levels", "xp_levels": 44},
+        {"type": "item", "item": "northstar:raw_tungsten_ore", "count": 8}
+      ]
+    },
+    {
+      "key": "tungsten",
+      "title": "Tungsten",
+      "subtitle": "Holds up where everything else melts",
+      "description": [
+        "Tungsten alloys hold up where everything else melts.",
+        "Next: Venus - acid plumes, searing heat, and stranger life."
+      ],
+      "icon": "northstar:tungsten_ingot",
+      "shape": "hexagon",
+      "phase": 2,
+      "dependencies": ["mercury"],
+      "tasks": [{"type": "item", "item": "northstar:tungsten_ingot", "count": 1}],
+      "rewards": [
+        {"type": "xp_levels", "xp_levels": 44},
+        {"type": "item", "item": "northstar:tungsten_ingot", "count": 8}
+      ]
+    },
+    {
+      "key": "venus",
+      "title": "Venus",
+      "subtitle": "The gauntlet",
+      "description": [
+        "Venus is the gauntlet: volcanic ash, exhaust plumes, and mimics hiding among the rocks.",
+        "Next: craft the Martian Steel Space Suit for the outer planets."
+      ],
+      "icon": "northstar:venus_stone",
+      "shape": "hexagon",
+      "phase": 2,
+      "dependencies": ["tungsten"],
+      "tasks": [
+        {"type": "dimension", "dimension": "northstar:venus"},
+        {"type": "item", "item": "northstar:venus_stone", "count": 1, "optional": true}
+      ],
+      "rewards": [
+        {"type": "xp_levels", "xp_levels": 48},
+        {"type": "item", "item": "northstar:volcanic_ash_item", "count": 8}
+      ]
+    },
+    {
+      "key": "martian_space_suit",
+      "title": "Martian Steel Space Suit",
+      "subtitle": "Heat-proof everything",
+      "description": [
+        "The Martian Steel suit resists heat far better than iron. With it, the inner planets become routine.",
+        "Next: build the Space Atlas and plan your empire."
+      ],
+      "icon": "northstar:martian_steel_space_suit_chestpiece",
+      "shape": "hexagon",
+      "phase": 2,
+      "dependencies": ["venus"],
+      "tasks": [{"type": "item", "item": "northstar:martian_steel_space_suit_chestpiece", "count": 1}],
+      "rewards": [
+        {"type": "xp_levels", "xp_levels": 48},
+        {"type": "item", "item": "northstar:martian_steel_sheet", "count": 8}
+      ]
+    },
+    {
+      "key": "temperature_regulator",
+      "title": "Temperature Regulator",
+      "subtitle": "Keep your bases habitable",
+      "description": [
+        "Regulate heat and cold in sealed bases - essential for Mercury, Venus, and any planet you want to call home."
+      ],
+      "icon": "northstar:temperature_regulator",
+      "shape": "square",
+      "phase": 2,
+      "dependencies": ["oxygen_system"],
+      "tasks": [{"type": "item", "item": "northstar:temperature_regulator", "count": 1}],
+      "rewards": [{"type": "xp_levels", "xp_levels": 16}]
+    },
+    {
+      "key": "space_atlas",
+      "title": "Space Atlas",
+      "subtitle": "The map of your empire",
+      "description": [
+        "The Space Atlas tracks every unlocked celestial body and coordinates precise return trips with Return Tickets.",
+        "Next: connect your worlds into one empire."
+      ],
+      "icon": "northstar:space_atlas",
+      "shape": "hexagon",
+      "phase": 3,
+      "dependencies": ["martian_space_suit"],
+      "tasks": [{"type": "item", "item": "northstar:space_atlas", "count": 1}],
+      "rewards": [
+        {"type": "xp_levels", "xp_levels": 56},
+        {"type": "item", "item": "northstar:durable_fabric", "count": 8}
+      ]
+    },
+    {
+      "key": "rocket_waypoint",
+      "title": "Rocket Waypoint",
+      "subtitle": "Land where you mean to",
+      "description": [
+        "Rocket Waypoints let you land exactly where you want instead of wherever the descent takes you. Mark your bases."
+      ],
+      "icon": "northstar:rocket_waypoint",
+      "shape": "square",
+      "phase": 3,
+      "dependencies": ["space_atlas"],
+      "tasks": [{"type": "item", "item": "northstar:rocket_waypoint", "count": 1}],
+      "rewards": [{"type": "xp_levels", "xp_levels": 16}]
+    },
+    {
+      "key": "interplanetary_empire",
+      "title": "Interplanetary Empire",
+      "subtitle": "The system is yours",
+      "description": [
+        "Bases on Earth, the Moon, Mars, Mercury, and Venus. Ores flow home through Mekanism, AE2 spans the system, and Return Tickets make every trip two-way.",
+        "The system is yours."
+      ],
+      "icon": "northstar:return_ticket",
+      "shape": "hexagon",
+      "phase": 3,
+      "dependencies": ["space_atlas"],
+      "tasks": [{"type": "item", "item": "northstar:return_ticket", "count": 1}],
+      "rewards": [
+        {"type": "xp_levels", "xp_levels": 64},
+        {"type": "item", "item": "northstar:polished_lunar_sapphire", "count": 8}
+      ]
+    }
+  ]
+}
