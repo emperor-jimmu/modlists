@@ -16,6 +16,8 @@ This modpack is built around four pillars that must coexist in every design deci
 
 4. **Chill living** — at any point, the player can stop optimizing and just build a home, tend a garden, exist. The pack never punishes you for logging off, ignoring progression, or spending a session decorating. Cozy is always a valid game state.
 
+**Combat & weapons — the power fantasy's edge.** Battles and powerful weapons are a core expression of the power fantasy, deliberately **late-game** (Phase 2+, peaking in Phase 3) so the early ramp stays forgiving. Weapons — not escalating enemy spawns — are the focus. The weapon ceiling is **steampunk / Create-native**: Create: Gunsmithing (personal firearms), Create: Big Cannons + Advanced Technologies (artillery), and Apotheosis-forged melee via Simply Swords / Simply More. Modern ballistic firearm mods (TACZ, Scorched Guns) are **out of scope** — they duplicate Gunsmithing's role and break the aesthetic. The goal: worthy battles with worthy weapons, never bullet-sponge hordes.
+
 ---
 
 ## Progression System

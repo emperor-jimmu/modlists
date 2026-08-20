@@ -143,7 +143,9 @@ The essentials that make the game run well. Dependencies, performance, rendering
 | [ImmediatelyFast](https://www.curseforge.com/minecraft/mc-mods/immediatelyfast)   | Immediate-mode rendering                 |
 | [Entity Culling](https://www.curseforge.com/minecraft/mc-mods/entityculling)      | Hide off-screen entities                 |
 | [Dynamic FPS](https://www.curseforge.com/minecraft/mc-mods/dynamic-fps)           | Background FPS reduction                 |
-| [NoisiumForked](https://www.curseforge.com/minecraft/mc-mods/noisiumforked)       | Worldgen optimization (active fork)      |
+| [FastWorkbench](https://modrinth.com/mod/fastworkbench) 1.21.1-9.1.3              | Caches crafting-table recipes — eliminates late-game crafting lag spikes               |
+| [MoreCulling](https://modrinth.com/mod/moreculling) v1.0.9                          | Block-face culling — skips rendering hidden faces (complements Entity Culling)          |
+| [BadOptimizations](https://modrinth.com/mod/badoptimizations) 2.4.1                  | Bundle of small perf fixes — removes stutter and redundant entity/block logic            |
 
 **ModernFix** (configurable in-game via Mod List → ModernFix → Config, or `config/modernfix-mixins.properties`):
 
@@ -161,6 +163,7 @@ The essentials that make the game run well. Dependencies, performance, rendering
 |---------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
 | [Complementary Unbound](https://www.curseforge.com/minecraft/customization/complementary-unbound) | Realistic visual style, Potato→Ultra profiles, block-specific effects                                  |
 | [Euphoria Patches](https://www.curseforge.com/minecraft/mc-mods/euphoria-patches)                 | Optional add-on for Complementary Shaders — extends with handcrafted features, all disabled by default |
+| [Bliss](https://modrinth.com/shader/bliss-shader)                                               | Optional alternative shaderpack — softer stylized look, iris-native, v2.1.0+ recommended for Distant Horizons |
 
 **Euphoria Patches** is a shader add-on, not a standalone shaderpack. It patches Complementary Shaders (Reimagined or Unbound) with additional visual options. Install via its patcher mod (requires NeoForge, no additional mod dependencies). All features are disabled by default and can be individually enabled from the shader options menu.
 
@@ -382,6 +385,8 @@ All the visual polish, UI improvements, inventory tools, storage, travel, tradin
 | [Foxified Dense Flowers](https://www.curseforge.com/minecraft/mc-mods/foxified-dense-flowers)                     | Renders multiple flowers per block in flower fields for denser, more natural-looking flora     |
 | [Effectual](https://www.curseforge.com/minecraft/mc-mods/effectual)                                               | Atmospheric effects and decorative particles — steam breath, footprints, cave dust, sparks     |
 | [BetterGrassify](https://modrinth.com/mod/bettergrassify)                                                         | OptiFine Fancy + Fast better grass — connected grass/podzol/path/nylium sides, better snow. Requires Forgified Fabric API |
+| [Loot Beams: Refork](https://modrinth.com/mod/loot-beams-refork) neoforge-1.21.1-3.4.7                            | Colored rarity-tinted beams on item drops — makes Apotheosis rare gear visibly pop. Client-side                         |
+| [Auto HUD](https://modrinth.com/mod/autohud) 8.11+1.21.1-neoforge                                                  | Auto-hides idle HUD elements (full health bar, status effects) for a cleaner screen; toggle the whole HUD with a keybind |
 
 ### Inventory & UI
 
@@ -435,6 +440,7 @@ Tweak payloads directly in `config/day_counter.toml` (`[Rewards.1]`–`[Rewards.
 | [Traveler Tool Belt](https://www.curseforge.com/minecraft/mc-mods/traveler-tool-belt)         | Tool radial menu — hold R for quick-swap, 2→9 slots via upgrades   |
 | [Controlling](https://www.curseforge.com/minecraft/mc-mods/controlling)                       | Search keybinds by name, show only conflicting binds, list available keys — no dependencies   |
 | [EMIffect](https://www.curseforge.com/minecraft/mc-mods/emiffect)                             | Status effects in EMI browser — descriptions, sources, colors for all modded effects |
+| [Searchables](https://modrinth.com/mod/searchables) 1.0.2                                  | Search bars in creative menu, JEI/EMI-style browsers, and other GUIs — find items by name instantly |
 
 ### Storage & Travel
 
@@ -480,6 +486,8 @@ Tweak payloads directly in `config/day_counter.toml` (`[Rewards.1]`–`[Rewards.
 | [Lithostitched](https://www.curseforge.com/minecraft/mc-mods/lithostitched)       | Worldgen modifier API — handles village placement hooks                                   | Improved Village Placement                                               |
 | [TLib (Take's Lib)](https://www.curseforge.com/minecraft/mc-mods/tlib)            | Library for atmospheric effects                                                           | Effectual                                                                |
 | [Forgified Fabric API](https://modrinth.com/mod/forgified-fabric-api)             | Fabric API implemented on NeoForge (Sinytra) — lets Fabric-origin mods run on NeoForge    | BetterGrassify                                                            |
+| [Nirvana Library](https://modrinth.com/mod/nirvana-library) 2.2.0                  | Library for config + networking abstraction                                                | Loot Beams: Refork                                                       |
+| [Common Network](https://modrinth.com/mod/common-network) 1.0.21-1.21.1           | Networking library (Nirvana Library dependency)                                             | Nirvana Library                                                          |
 
 **Lithostitched** is a worldgen library that Improved Village Placement uses to hook into the village generation system. Without it, IVP crashes at startup with a `NoClassDefFoundError` for `AddWorldgenModifiersEvent`. This mod was not declared as a dependency in IVP's metadata — install it manually.
 
@@ -683,12 +691,14 @@ The classic tech trio. Create handles mechanical automation, Mekanism handles in
 | [Create Slice & Dice](https://www.curseforge.com/minecraft/mc-mods/slice-and-dice)                                                    | Create + Farmer's Delight automation — Slicer (auto Cutting Board), automatic FD Cooking Pot via heated mixing, Sprinkler for fluid-based farming                                       |
 | [Create: Dragons Plus](https://www.curseforge.com/minecraft/mc-mods/create-dragons-plus) 1.11.2b                                      | Fan processing expansion — Bulk Coloring, Bulk Freezing, Bulk Ending, Bulk Sanding. Fluid Hatch for tanks. Adds Aether Bulk Enchanting. Library mod for Create addon devs                |
 | [Create: Protection Pixel](https://www.curseforge.com/minecraft/mc-mods/protection-pixel)                                           | Create-themed power armor — brass/alloy tiers, per-piece active abilities (AoE, debuff clear, speed→damage), combustion reactor (blaze rods + water). Bridges gear between Mekanism Tools and MekaSuit |
+| [Create: Central Kitchen](https://modrinth.com/mod/create-central-kitchen) 2.6.0                                                        | Mechanical Arm integration for Farmer's Delight blocks — automate Cooking Pot, Cutting Board, Stove via Arms; extends to Brewin' And Chewin' kegs. Requires Create: Dragons Plus |
 ### Create Addon Details
 
 - **Create Better FPS** — Create rendering optimization (addon models, speed controllers, gauges, schematic previews). Benchmarked 7→35 FPS with 512 waterwheels under shaders. Pairs with ColorWheel, which handles Flywheel–Iris compatibility.
 - **ColorWheel** — required for Create contraptions to render under Iris shaders; install it before Create Better FPS.
 - **Create Slice & Dice** — automates Farmer's Delight: Slicer (auto Cutting Board), FD Cooking Pot recipes as Create heated mixing, Sprinkler for fluid farming (water, lava, potions, Liquid Fertilizer). Meal production becomes fully pipeable in Phase 2.
 - **Create: Dragons Plus** — fan-processing expansion (Bulk Coloring, Freezing, Ending, Sanding), Fluid Hatch for tank I/O, Aether Bulk Enchanting. Features toggleable in config; required by Create: Shimmer.
+- **Create: Central Kitchen** — Mechanical Arms drive existing Farmer's Delight blocks directly (Cooking Pot, Cutting Board, Stove), plus Brewin' And Chewin' kegs and other Delight-ecosystem stations. Complements (not replaces) Create Slice & Dice: Slice & Dice converts recipes into new Create machines, Central Kitchen automates the FD blocks themselves. Requires Create: Dragons Plus (in pack).
 
 
 #### Create: Protection Pixel
@@ -982,6 +992,8 @@ Steampunk firearms crafted using Create machines. Animated guns with attachments
 **Attachments**: Scopes, extended magazines, suppressors, bayonets. Attach at the Gunsmithing Table.
 
 **Compatibility**: Built-in Better Combat support — guns use appropriate animations.
+
+**Expansion path — NTGL gun packs**: Create: Gunsmithing runs on NTGL, and the library supports *gun packs* (datapack-style content packs that add new guns, stats, and models via a `registry.json`). In practice, **no curated NTGL gun pack ecosystem exists** for 1.21.1 — the only published items are micro-fixes (renewable lead, breakable framed-glass trapdoors, an Alloyed compat pack, each a few hundred downloads at most). Authoring a custom gun pack is a DIY datapack task (NTGL wiki), not a drop-in download. Do not reach for TACZ/Scorched Guns to fill this gap — that violates the pack's steampunk-only weapon rule.
 
 **Dependencies**: NTGL (gun framework), GeckoLib (3D animation), Framework (utility library) — all auto-installed.
 
@@ -2049,6 +2061,7 @@ If you've never built anything beyond a dirt hut, follow these steps for your fi
 | Mod                                                                       | Role                                                                                                           |
 |---------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
 | [**Apotheosis**](https://www.curseforge.com/minecraft/mc-mods/apotheosis) | Rarity tiers, random affixes, gem socketing, enchanting overhaul. Replaces Savaru's Affixology with more depth |
+| [Apothic Compats](https://www.curseforge.com/minecraft/mc-mods/apothic-compats) 0.2.4.2 | Datapack-driven Apotheosis bridges — affixed loot, gear sets, affixes, and invaders for 11 in-pack mods (AE2, Aether, Cataclysm, Create, Curios, Deep Aether, Deeper and Darker, Farmer's Delight, Mekanism Tools, Supplementaries, Twilight Forest). Requires Apotheosis |
 
 ### Configuration — Wave 3
 
@@ -2097,6 +2110,7 @@ This cost curve encourages the player to settle for "good enough" gear until the
 - **Spell Engine** is required by Relics (RPG Series) — it was previously considered for removal but must be retained as a mandatory dependency of this core RPG mod.
 - **Ranged Weapon API** is shared between Relics (RPG Series) and Pufferfish's Skills ecosystem — install once, used by both.
 - **Curios API** provides the accessory slot system used by Relics (RPG Series) and Immersive Armors. Adds an equipment GUI (keybind `Y`) with ring, amulet, belt, gloves, back, and charm slots. Auto-installed dependency — no separate config needed.
+- **Apothic Compats** extends the affix/gem/gear-set/invader system to other in-pack mods' gear and loot: AE2 (affixed loot + gear sets), The Aether (affixes, gear sets, invaders, affixable dart shooters), Cataclysm (affixed loot + gear sets + invaders), Create (affixable potato cannons), Curios (per-slot loot categories + special affixed curio chest loot), Deep Aether + Deeper and Darker + Twilight Forest (affixes, gear sets, invaders), Farmer's Delight (affixed loot), Mekanism Tools (affixed loot + gear sets), and Supplementaries (enchanting stats on candle holders). Each bridge is a datapack that activates only when its target mod is present — so only the 11 in-pack targets take effect; the rest stay inert. This widens the Apotheosis loot chase across tech, food, and exploration without adding any standalone content that conflicts with the pack's own progression.
 
 **Immersive Armors** adds 40+ unique armor sets with custom effects: Wooden (arrow/explosion protection), Skeleton (speed, Wither variant, skeleton neutrality), Divine (dyeable, blocks 1 attack/min), Heavy (high armor, anti-knockback, slow), Slime (bounce attackers), Warrior (berserk — more damage at low HP), Robe (dyeable wool, fire thorns, fireproof), Steampunk (hostile radar, enhanced UI, double jump, no fall damage), and Prismarine (spikes, depth strider). All sets are enchantable, repairable, and dyeable where applicable. Recipes in vanilla recipe book and EMI. **Apotheosis affixes and gems apply to all Immersive Armors pieces.** Mekanism Tools fills the material-tier progression (Osmium→Bronze→Steel→MekaSuit); Immersive Armors fills the unique-effect side grade slot — different armor sets for different situations rather than linear upgrades.
 
@@ -2360,10 +2374,13 @@ Enabled. Adds telegraphed death-traps to the world (spikes, poison darts, instak
 | [**Starcatcher**](https://www.curseforge.com/minecraft/mc-mods/starcatcher)                           | Fishing overhaul — 100+ fish, skill minigame, trophies, tournaments, catalogue   |
 | [**Starcatcher's Delight**](https://www.curseforge.com/minecraft/mc-mods/starcatchers-delight) v3.0.1 | Starcatcher × Farmer's Delight crossover — fish fillets, seafood dishes, sushi |
 | [**Better Fishtanks**](https://www.curseforge.com/minecraft/mc-mods/better-fishtanks)                 | Functional aquariums — fish bags, decorations, feeding system, Create/AE2 compat |
+| [Spice of Life: Carrot Edition](https://www.curseforge.com/minecraft/mc-mods/spice-of-life-carrot-edition) solcarrot-1.21.1-1.16.6 | Food-variety reward — eating new foods permanently raises max health up to a cap. No punishment, only reward |
 
 **Interdependency note — Better Fishtanks + Hybrid Aquatic (Wave 2)**: Better Fishtanks can house any fish mod's creatures. Use Fish Bags to catch Hybrid Aquatic mobs and place them in tanks as living displays.
 
 **Interdependency note — Twilight's Flavors & Delight + Twilight Forest (Wave 2) + Farmer's Delight**: Bridges TF and Farmer's Delight — TF mob drops and foraged items cook into 35+ FD-style meals, 4 TF-material knives with unique abilities, Maze Stove accelerates cooking in TF biomes, boss trophies dismantle into precious loot.
+
+**Spice of Life: Carrot Edition** — the *gentle* variant of food variety: each distinct food eaten once permanently raises your max health (up to a configurable cap of hearts), and it never *reduces* nutrition for repeat meals (unlike the original Spice of Life). This pairs directly with the pack's Farmer's Delight ecosystem — 100+ distinct meals = steady, voluntary max-HP growth feeding the power-fantasy pillar, with zero chill penalty for eating the same thing. **Config lives in `saves/<world>/serverconfig/` (per-world), not the tracked global `config/` folder** — tune `solcarrot-server.toml` (milestone cap, heart counts) after first world launch; set the cap so the bonus stops short of feeling mandatory.
 
 ### Farmer's Delight — Cooking Hub
 
@@ -4247,18 +4264,18 @@ All mods installed and every wave configured — here's how to start a proper wo
 
 | Wave                         | Mods    | Deps   | Total   | Notes                                                                                                                                                                                                                                                                  |
 |------------------------------|---------|--------|---------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Wave 0 — Foundation          | 15      | 11     | 26      | Dependencies (12), Performance & Rendering (11) + Sodium Extras + Sodium Options API, Shaderpack (1 mod: Euphoria Patches), Infrastructure (3) + Simple Recall Potion (travel) — all the nuts & bolts that make the game run (+1 shaderpack, +11 resource packs)                                                                            |
-| Wave 1 — Tech                | 19      | 5      | 24      | Create + 13 addons (incl. Power Grid, Gunsmithing, Protection Pixel, Ornithopter Glider, Train Utilities, Railways Navigator, Interiors, Train Parts, Threaded Trains), Mekanism + Generators, AE2, Advanced Finders, Advanced Chimneys + NTGL, GeckoLib, Framework, ForgeEndertech, Kleiders deps |
+| Wave 0 — Foundation          | 18      | 11     | 29      | Dependencies (12), Performance & Rendering (14) + Sodium Extras + Sodium Options API + FastWorkbench + MoreCulling + BadOptimizations, Shaderpack (1 mod: Euphoria Patches), Infrastructure (3) + Simple Recall Potion (travel) — all the nuts & bolts that make the game run (+2 shaderpacks, +11 resource packs)                                                                            |
+| Wave 1 — Tech                | 20      | 5      | 25      | Create + 14 addons (incl. Power Grid, Gunsmithing, Protection Pixel, Ornithopter Glider, Train Utilities, Railways Navigator, Interiors, Train Parts, Threaded Trains, Central Kitchen), Mekanism + Generators, AE2, Advanced Finders, Advanced Chimneys + NTGL, GeckoLib, Framework, ForgeEndertech, Kleiders deps |
 | Wave 1.5 — Colony            | 9       | —      | 9       | MineColonies (4 deps counted as mods — they're library mods; CurseForge-only) + 4 addons: Byzantine Styles, Stylecolonies, Create: Colony Logistics, ColonyLink                                                                                                           |
 | Wave 2 — Exploration         | 34      | 7      | 41      | YUNG's (12), Terralith/Tectonic, Serene Seasons + Serene Seasons Plus + GlitchCore + Gabou's Libs, Darker Depths, Upgrade Aquatic, dimensions (3), End overhaul (3 + Nullscape dp + 5 deps), Structory, navigation, aircraft, ships, hang glider, MoMP addon, Incendium (Nether biome overhaul), Immersive Machinery (utility machines), Field Guide + 2 required companions (Immersive Overlays, Item Descriptions)                                                                          |
-| Wave 3 — Equipment Magic     | 9       | 12     | 21      | Skills Mastery Reimagined, Pufferfish's Skills, Simply Swords, Simply More, Too Many Bows, Relics, Enchanting Runes, Immersive Armors, Apotheosis + 12 deps (Placebo, Apothic modules, Patchouli, Simply Tooltips, Fzzy Config, Ranged Weapon API, Spell Engine, Bundle API, Pufferfish's Attributes, Curios API)                                               |
-| Wave 4 — Food & Farming      | 13      | —      | 13      | Farmer's Delight + 8 addon mods + Neo Bee Fix + Comfortable Campfires + Smarter Farmers + Create: Café                                                                                                                                                                                                  |
+| Wave 3 — Equipment Magic     | 10      | 12     | 22      | Skills Mastery Reimagined, Pufferfish's Skills, Simply Swords, Simply More, Too Many Bows, Relics, Enchanting Runes, Immersive Armors, Apotheosis, Apothic Compats + 12 deps (Placebo, Apothic modules, Patchouli, Simply Tooltips, Fzzy Config, Ranged Weapon API, Spell Engine, Bundle API, Pufferfish's Attributes, Curios API)                                               |
+| Wave 4 — Food & Farming      | 14      | —      | 14      | Farmer's Delight + 8 addon mods + Neo Bee Fix + Comfortable Campfires + Smarter Farmers + Create: Café + Spice of Life: Carrot Edition                                                                                                                                                                                                  |
 | Wave 4.5 — Quests            | 6       | 0      | 6       | FTB Questing ecosystem: FTB Library + FTB Quests + FTB Teams + KubeJS + FTB XMod Compat + MineColonies Questline. Bountiful removed. ExtraQuests removed (Aug 2026 — quest book uses only standard FTB Quests types; its ExtraLib dependency was never in the pack).                                                                                                                                                                           |
 | Wave 5 — Combat & Mobs       | 6       | 5      | 11      | Better Combat, L_Ender's Cataclysm, Enchantment Descriptions, Create Big Cannons + Advanced Technologies addon, Torchmaster |
 | Wave 6 — Building            | 11      | 3      | 14      | Rechiseled, Supplementaries, Macaw's (4), Building Wands, Handcrafted, Fetzi's Displays, Lili's Pottery, Laser Bridges & Doors, Diagonal Fences + Rechiseled: Create, Rechiseled: AE2 + Moonlight, Resourceful, Fusion |
 | Wave 7 — Space Exploration   | 1       | 2      | 3       | Stellaris, Potentials API, Sky Aesthetics (sky renderer — renders Stellaris planet skies; adds "Modify Sky" pause button)                                                                                  |
 | Wave 8 — Programmable Computers | 1       | 0      | 1       | CC:Tweaked                                                                                                                                                                                                                                                             |
-| **Total**                    | **173** | **47** | **220** | All confirmed NeoForge 1.21.1 (+Real Camera; Day Counter Plus reverted — Day Counter + Hud Texts restored; +BetterGrassify + Forgified Fabric API + Sky Aesthetics; +Serene Seasons Plus + GlitchCore + Gabou's Libs - Chunky - When Dungeons Arise - Structory: Towers, Aug 2026; +Sodium Extras + Sodium Options API + Smarter Farmers + Diagonal Fences + Create: Café, Aug 2026 mod review)                              |
+| **Total**                    | **182** | **49** | **231** | All confirmed NeoForge 1.21.1 (+Real Camera; Day Counter Plus reverted — Day Counter + Hud Texts restored; +BetterGrassify + Forgified Fabric API + Sky Aesthetics; +Serene Seasons Plus + GlitchCore + Gabou's Libs - Chunky - When Dungeons Arise - Structory: Towers, Aug 2026; +Sodium Extras + Sodium Options API + Smarter Farmers + Diagonal Fences + Create: Café, Aug 2026 mod review; +FastWorkbench + MoreCulling + BadOptimizations + Searchables + Loot Beams Refork + Nirvana Library + Common Network + Auto HUD + Create Central Kitchen + Spice of Life Carrot + Apothic Compats + Bliss shader, Aug 2026 weapon-QoL review; -Create: Misc and Things, removed by user) |
 
 ---
 

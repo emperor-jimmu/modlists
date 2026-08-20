@@ -2,6 +2,32 @@
 
 ## Completed
 
+### Combat Vision + Weapon-QoL Review (Aug 2026)
+
+**Pillar clarification (AGENTS.md Core Vision).** User wants late-game battles with powerful weapons as an explicit power-fantasy expression — *deferred* to Phase 2+ (peaking Phase 3) so the early ramp stays forgiving. Three decisions locked: (1) **steampunk/Create-only weapons** — Create: Gunsmithing (personal firearms) + Create: Big Cannons + Advanced Technologies (artillery) + Apotheosis-forged melee define the ceiling; (2) **weapons, not enemy scaling** — current bosses (Cataclysm, Twilight Forest, Incendium, Apotheosis elites) stay the target set, no new invasion/boss mods; (3) **Mekanism stays the tech spine** — Modern Industrialization / GregTech / Oritech / Immersive Engineering / Voltex rejected (Voltex is also Forge 1.20.1, wrong loader). AGENTS.md "Combat & weapons — the power fantasy's edge" paragraph added.
+
+**Adopted — 9 mods + 2 deps + 1 shaderpack** (all NeoForge 1.21.1 verified via Modrinth API):
+
+- [x] **FastWorkbench 1.21.1-9.1.3** (Wave 0 — Performance) — caches crafting-table recipes, kills late-game crafting lag. Requires Placebo (in pack). MIT, 67K DL. [Modrinth](https://modrinth.com/mod/fastworkbench)
+- [x] **MoreCulling v1.0.9** (Wave 0 — Performance) — block-face culling, complements Entity Culling (entities vs block faces). Requires Cloth Config API (in pack). GPL-3.0, 61M DL. [Modrinth](https://modrinth.com/mod/moreculling)
+- [x] **BadOptimizations 2.4.1** (Wave 0 — Performance) — bundle of small perf fixes. Zero deps. MIT, 39M DL. [Modrinth](https://modrinth.com/mod/badoptimizations)
+- [x] **Searchables 1.0.2** (Wave 0.5 — Inventory & UI) — search bars in creative/EMI-style GUIs. Zero deps. MIT, 36M DL. [Modrinth](https://modrinth.com/mod/searchables)
+- [x] **Loot Beams: Refork neoforge-1.21.1-3.4.7** (Wave 0.5 — Visual) — rarity-tinted drop beams, makes Apotheosis gear pop. Client-side. MIT, 345K DL. [Modrinth](https://modrinth.com/mod/loot-beams-refork)
+- [x] **Nirvana Library 2.2.0** (Wave 0.5 — Dependency) — config+networking lib required by Loot Beams Refork. Requires Fzzy Config (in pack) + Common Network. [Modrinth](https://modrinth.com/mod/nirvana-library)
+- [x] **Common Network 1.0.21-1.21.1** (Wave 0.5 — Dependency) — networking lib required by Nirvana Library. Zero deps. MIT, 3.3M DL. [Modrinth](https://modrinth.com/mod/common-network)
+- [x] **Auto HUD 8.11+1.21.1-neoforge** (Wave 0.5 — Visual) — auto-hides idle HUD elements. Native NeoForge build — **no Sinytra Connector, no Fabric API** (verified; the Fabric API dep in Modrinth metadata is Fabric-loader-only). LGPL-3.0, 1.5M DL. [Modrinth](https://modrinth.com/mod/autohud)
+- [x] **Create: Central Kitchen 2.6.0** (Wave 1 — Create Addons) — Mechanical Arm automation of FD blocks (Cooking Pot, Cutting Board, Stove) + B&C kegs. Complements Create Slice & Dice (Slice & Dice adds new machines; Central Kitchen automates the FD blocks themselves). Requires Create + Create: Dragons Plus (both in pack). LGPL-3.0, 4.8M DL. [Modrinth](https://modrinth.com/mod/create-central-kitchen)
+- [x] **Spice of Life: Carrot Edition solcarrot-1.21.1-1.16.6** (Wave 4 — Food) — *gentle* food-variety reward (max HP per distinct food, never a repeat-meal penalty). Zero deps. CurseForge-only. Config in `saves/<world>/serverconfig/`, NOT tracked `config/`. [CurseForge](https://www.curseforge.com/minecraft/mc-mods/spice-of-life-carrot-edition)
+- [x] **Bliss shader** (Wave 0 — Shaderpack, alternative) — optional stylized shaderpack alongside Complementary Unbound. Not a mod — documented as an alternative. [Modrinth](https://modrinth.com/shader/bliss-shader)
+- [x] **Apothic Compats 0.2.4.2** (Wave 3 — Loot & Affixes) — datapack-driven Apotheosis bridges. **Initially mis-rejected as "orphan"** (research surfaced only the Amendments/Ancient Reforging slice); corrected after the full CurseForge support list confirmed **11 in-pack targets**: AE2, Aether, Cataclysm, Create, Curios, Deep Aether, Deeper and Darker, Farmer's Delight, Mekanism Tools, Supplementaries, Twilight Forest (affixed loot, affixes, gear sets, invaders, affixable potato cannons/dart shooters, Curios loot categories). Requires Apotheosis. CurseForge-only. [CurseForge](https://www.curseforge.com/minecraft/mc-mods/apothic-compats)
+
+**Skipped after deeper review:**
+
+- [x] **NTGL gun packs — none suitable.** Create: Gunsmithing's NTGL framework supports datapack-style gun packs (`registry.json` + assets), but **no curated NTGL gun-pack ecosystem exists for 1.21.1** — only micro-fixes (renewable lead, breakable framed-glass trapdoors, Alloyed compat, each a few hundred DL). Custom packs are a DIY datapack task (NTGL wiki), not a drop-in download. Documented in GUIDE.md §Create: Gunsmithing; steampunk-only rule reaffirmed (don't reach for TACZ/Scorched Guns to fill the gap).
+
+- [x] GUIDE.md updated: Wave 0 Performance table (+3), Wave 0.5 Visual/Inventory/Dependencies tables (+5), Wave 1 Create Addons table + detail blurbs (+2), Wave 3 Loot & Affixes table + interdependency note (+Apothic Compats), Wave 4 food table + Spice of Life note (+1), Shaderpack table (+Bliss alternative), Create: Gunsmithing expansion-path note. Mod Count Summary: Wave 0 15→18 mods (26→29), Wave 1 19→21 (24→26), Wave 3 9→10 (21→22), Wave 4 13→14, Total 173→183 mods, 47→49 deps, 220→232.
+- [x] **Create: Misc and Things REMOVED** (user request, same session) — not a fit after first look; removed from Wave 1 table + detail blurb + STATUS. Wave 1 21→20 mods (26→25), Total 183→182 mods, 232→231.
+
 ### Added Mods (Aug 2026 — Seasons & Weather)
 
 - [x] **Serene Seasons Plus v5.1.1** (Wave 2 — Environment) — Serene Seasons add-on for NeoForge 1.21.1: sub-season day/night speed + improved snow piling/melting. Required deps (all already in pack): Serene Seasons, Better Days, Gabou's Libs. [Modrinth](https://modrinth.com/mod/serene-seasons-plus)
