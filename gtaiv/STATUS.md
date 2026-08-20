@@ -30,18 +30,27 @@
 - [x] Adopted **Radio Restoration** via the Downgrader's radio-downgrade option (restores ~50 songs removed in 2018).
 - [x] Added "user to provide" slots for specific content/mechanics/audio mods.
 
+### Curation batch 2 (2026-08-20)
+- [x] Adopted **OpenIV** (openiv.com) — asset-install tool for vehicles/weapons/textures.
+- [x] Adopted **Potential Grim** (iiCriminnaaL) — realism/mechanics overhaul; 1.0.7.0/1.0.8.0 compatible.
+- [x] Adopted **Responsive Plus** (iiCriminnaaL) — combat/weapon/vehicle balance; pairs with Potential Grim.
+- [x] Rejected **First Degree 154 Vehicle Addon Pack** — Complete Edition-only; does not target 1.0.8.0.
+- [x] Reconsidered **ZolikaPatch** — unmaintained (author retired) and redundant with FusionFix; exclusion stands (see Decisions).
+
 ## Decisions
 
 - **Version target stays 1.0.8.0** (per AGENTS.md). Rationale: 1.0.8.0 is the only build that runs IV-SDK .NET content/mechanics scripts and the legacy mod catalog. Caveat recorded: FusionFix officially supports only the Complete Edition; on 1.0.8.0 it runs via the Legacy Addon with best-effort (not officially supported) status.
 - **No-fabrication rule applied.** Only mods verified against a live source (GitHub repo/release) were written into the guide. Unverifiable content/mechanics/audio picks are "user to provide", not padded.
 - **Excluded (redundant):** IV Centered Vehicle Cam and IV Centered OnFoot Cam (gennariarmando) — both merged into FusionFix.
-- **Excluded (conflict):** ZolikaPatch — overlaps FusionFix; using both requires disabling ~30 overlapping options; violates the "no conflicting/redundant mods" rule.
+- **Excluded (conflict + unmaintained):** ZolikaPatch — overlaps FusionFix (~30 options) and is no longer maintained (author Zolika1351 retired); FusionFix is the actively-maintained standard, so ZolikaPatch stays out.
 - **Excluded (non-standalone):** GTAIV.EFLC.FusionShaders (Parallellines0451) is the shader source repo of FusionFix, not a separate user-facing mod.
+- **Adopted (batch 2):** OpenIV, Potential Grim, Responsive Plus — verified via community/GTAForums sources. Exact version numbers are not pinned for the GTAForums-hosted mods (threads are Cloudflare-blocked to direct reads); versions are recorded as "latest (see thread)" rather than fabricated.
+- **Rejected (CE-only):** First Degree 154 Vehicle Addon Pack — built for the Complete Edition; the 1.0.8.0 target keeps it out. Popular CE content packs will not drop into a downgraded install.
 
 ## Pending / user inputs
 
 - Standalone UI/QoL mods (Wave 0) — "user to provide".
-- Specific content/mechanics/audio mods (Wave 1) — "user to provide"; install via IV-SDK .NET (scripts) or asset replacement.
+- Content mods (Wave 1) — "user to provide"; most vehicle packs are CE-only, so verify patch target. Audio mods (Wave 1) — "user to provide".
 - In-game verification: confirm the FusionFix menu appears and the Legacy Addon loads on the user's 1.0.8.0 install before a full playthrough.
 
 ## Notes
@@ -54,3 +63,7 @@
   - https://github.com/gennariarmando/iv-centered-vehicle-cam (merged into FusionFix)
   - https://github.com/gennariarmando/iv-centered-onfoot-cam (merged into FusionFix)
   - https://github.com/Parallellines0451/GTAIV.EFLC.FusionShaders (FusionFix shader source)
+  - https://openiv.com/ (OpenIV tool)
+  - https://gtaforums.com/topic/945227-iveflc-potential-grim/ (Potential Grim)
+  - https://gtaforums.com/topic/931069-iveflc-responsive-plus/ (Responsive Plus)
+  - https://zolika1351.pages.dev/games/gtaiv (ZolikaPatch — unmaintained)

@@ -3,7 +3,9 @@
 
 # Entries added 2026-08-20 (mod curation):
 
-# ZolikaPatch | FusionFix | Overlapping bugfix/QoL features (~30 options duplicate FusionFix) | Excluded from list — use FusionFix only
+# ZolikaPatch | FusionFix | Overlapping bugfix/QoL features + unmaintained (author retired) | Excluded from list — use FusionFix only
 # IV Centered Vehicle Cam | FusionFix | Merged into FusionFix | Redundant — do not install separately
 # IV Centered OnFoot Cam | FusionFix | Merged into FusionFix | Redundant — do not install separately
 # GTAIV.EFLC.FusionShaders | FusionFix | Shader source repo of FusionFix | Not a separate mod — shipped inside FusionFix
+# First Degree 154 Vehicle Addon Pack | 1.0.8.0 target | Complete Edition-only | Not included — use a 1.0.8.0-compatible pack or retarget to CE
+# Vehicle packs (handling tweaks) | Potential Grim / Responsive Plus | Both edit vehicle handling | Keep a single handling source

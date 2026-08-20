@@ -54,6 +54,8 @@ When installing mods, follow this order to avoid conflicts:
 6. **Audio mods** — radio, sound effects.
 7. **Configuration edits** — `.ini` and `.xml` tweaks.
 
+Asset mods (vehicles, weapons, textures) are installed with [OpenIV](https://openiv.com/), the standard editor for GTA IV's `.img`/`.wdr` archives. Install OpenIV once, then use it to open and edit the game's archive files per each mod's instructions.
+
 ## Step 5: First Launch
 
 1. Launch the game executable.
