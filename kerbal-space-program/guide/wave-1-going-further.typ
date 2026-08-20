@@ -186,33 +186,21 @@ Wave 1 expands KSP with graphics overhauls, parts packs, and light mechanical ad
   description: [PBR (Physically Based Rendering) shader framework for KSP parts. Enables metallic, reflective, and roughness-based textures on supported parts. A separate concept from TextureReplacer — TU changes how parts render, while TR replaces texture files. Required by some parts mods for their reflective/textured materials.],
   dependencies: ("ModuleManager"),
   impact_types: (Graphics),
-  impact_description: [Adds PBR shader support to KSP's rendering pipeline. Parts default to standard KSP shaders — only mods that ship TU-compatible textures use PBR. Required by Textures Unlimited Recolour Depot (TURD) for in-editor part recoloring.],
+  impact_description: [Adds PBR shader support to KSP's rendering pipeline. Parts default to standard KSP shaders — only mods that ship TU-compatible textures use PBR. Required by Reforged Materials for in-editor part painting and recoloring.],
   conflicts: none,
-  version_pin: [Compatible with KSP 1.12.x. Framework mod — no visual change on its own. Install TURD (Textures Unlimited Recolour Depot) or TU-compatible texture packs to see PBR effects.],
+  version_pin: [Compatible with KSP 1.12.x. Framework mod — no visual change on its own. Install Reforged Materials or TU-compatible texture packs to see PBR effects.],
 )
 
 #mod-entry(
-  name: [Textures Unlimited Recolour Depot (TURD)],
-  ckan_id: "TURD",
-  url: "https://forum.kerbalspaceprogram.com/topic/174188-112x-textures-unlimited-recolour-depot/",
-  description: [In-editor part recoloring using Textures Unlimited's PBR shaders. Select any supported part in the VAB/SPH and recolor it with preset palettes or custom colors — make your rockets any color you want while maintaining the PBR material quality. Works with stock parts and mod packs that ship TURD configs.],
-  dependencies: ("TexturesUnlimited", "ModuleManager"),
+  name: [Reforged Materials],
+  ckan_id: "ReforgedMaterials",
+  url: "https://forum.kerbalspaceprogram.com/topic/231032-1125-reforged-materials-recoded-and-massively-expanded-custom-textures-colors-and-shine-to-any-part-now-fully-universal/",
+  description: [Universal in-editor and in-flight part painting and material system. Recolor any part with presets or full custom RGB, apply real PBR finishes from matte to chrome, and choose from 60+ textures and materials with normal maps. Weather parts with soot, scorch, rust, grime, scratches, paint peel, heat tiles, camouflage, and more. Runtime-based — parts stay 100% stock until you paint them, keeping load times light and covering almost any stock or modded part with no per-mod configs.],
+  dependencies: ("TexturesUnlimited", "ModuleManager", "Deferred"),
   impact_types: (Graphics, UI),
-  impact_description: [Adds a part recoloring GUI in the editor. Parts must have TURD-compatible textures — stock parts and many mod parts have community configs available. The recolor is saved with the craft file and visible in flight. Pure visual — no gameplay impact.],
+  impact_description: [Adds a part painting GUI in the editor and in flight. Paint whole parts, specific regions, or individual meshes; save custom colors, finishes, and material combos; live preview with undo/redo. Pure visual — no gameplay impact. Supersedes the old TURD + SimpleRepaint combo with automatic support for stock and modded parts.],
   conflicts: none,
-  version_pin: [Compatible with KSP 1.12.x. Manual install from forum thread — not on CKAN. Requires TexturesUnlimited. TURD for DLC, B9, and MkIV recolor packs are available on the same forum thread for additional part support.],
-)
-
-#mod-entry(
-  name: [Simple Repaint],
-  ckan_id: "SimpleRepaint",
-  url: "https://github.com/Electrocutor/SimpleRepaint",
-  description: [Part re-shader for parts that lack TURD support. Provides basic color/reflectivity adjustments for mod parts that don't have full PBR texture configs — a lighter-weight alternative to TURD for quick visual customization. Complements TURD by covering parts TURD doesn't support.],
-  dependencies: ("TexturesUnlimited", "ModuleManager"),
-  impact_types: (Graphics),
-  impact_description: [Adds basic shader-based repainting for parts without TURD configs. Uses TexturesUnlimited's PBR framework. Not a replacement for TURD — use both: TURD for parts with full configs, SimpleRepaint for everything else.],
-  conflicts: none,
-  version_pin: [Compatible with KSP 1.12.x. Requires TexturesUnlimited. Complements TURD — install both for maximum part customization coverage.],
+  version_pin: [Compatible with KSP 1.12.x. Manual install from SpaceDock — not on CKAN. Requires TexturesUnlimited, ModuleManager, and Deferred (all already in this modlist). Reset any painted part back to stock at any time.],
 )
 
 #mod-entry(
@@ -1100,7 +1088,7 @@ Wave 1 adds a full visual overhaul stack. Here's how to configure each layer:
 - *Waterfall + Restock Waterfall Expansion:* Engine plumes. Automatic — no config needed. The plumes respond to atmospheric pressure (expand in vacuum, contract in atmosphere). Purely visual.
 - *Rocket Sound Enhancement:* Audio overhaul. Sonic boom effects, distance-based attenuation. Configurable in settings — disable sonic booms if they startle you during timewarp transitions.
 - *Distant Object Enhancement:* Renders distant planets and vessels as points of light. The toolbar menu lets you toggle vessel flares and adjust sky-dimming intensity.
-- *Textures Unlimited + TURD + Simple Repaint:* PBR shading framework and part recoloring. TURD adds a repaint GUI in the VAB/SPH — right-click any supported part to change its color. Simple Repaint covers parts without TURD configs. Both are visual only.
+- *Textures Unlimited + Reforged Materials:* PBR shading framework and universal part painting. Reforged adds a paint GUI in the VAB/SPH and in flight — recolor any part or region, apply PBR finishes and weathering. Parts stay stock until you paint them. Purely visual.
 
 #section-heading([New Parts Overview])
 

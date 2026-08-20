@@ -154,7 +154,7 @@ Wave 0.5 adds advanced planning tools, editor enhancements, and visual indicator
   description: [Apply customized flags and decals directly onto part surfaces. Decals conform to curved surfaces and can be scaled, rotated, and positioned anywhere on your craft. Purely cosmetic — the Kerbal equivalent of nose art and mission patches on real spacecraft.],
   dependencies: (),
   impact_types: (UI, Graphics),
-  impact_description: [Adds decal parts that project your chosen flag onto any surface. Decals are physicsless — no mass, no drag, no gameplay impact. Complements TURD (recoloring) and SimpleRepaint (re-shading) for complete visual customization.],
+  impact_description: [Adds decal parts that project your chosen flag onto any surface. Decals are physicsless — no mass, no drag, no gameplay impact. Complements Reforged Materials (recoloring) for complete visual customization.],
   conflicts: none,
   version_pin: [Compatible with KSP 1.12.x. Works on any part surface. Decals are purely visual — no effect on vessel performance.],
 )
