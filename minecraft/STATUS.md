@@ -2,6 +2,19 @@
 
 ## Completed
 
+### Modern UI Adoption & UI Cleanup (Aug 2026)
+
+- [x] **Modern UI v3.13.0.1 (NeoForge 1.21.1)** added (Wave 0.5 — Visual & Client QoL) — full UI framework: modernized screens, own text engine (TTF/OTF fonts via Action Center `Ctrl+K` → Preferences), fancy rounded tooltips, Gaussian blur + fade-in backgrounds, borderless fullscreen, GUI-scale slider, OptiFine-style zoom (ships on `C` — **disable in Action Center**, Sodium owns the key). Client-only, zero deps, LGPL-3.0, 20M DL. [Modrinth](https://modrinth.com/mod/modern-ui). 1.21.1 actively maintained; compat list: Sodium/Iris OK, mods with replaced functions: Blur/Controlling/TipTheScales/Inventory Pause/Emojiful/Ding-class.
+- [x] **Removed — Smooth GUI** (Wave 0.5 Visual) — Modern UI covers its blur + fade-in feature set ("full functional coverage" per Modern UI docs); keeping both = double blur/animation.
+- [x] **Removed — Tooltip Overhaul** (Wave 0.5 Visual) — Modern UI ships its own fancy tooltip renderer; same conflict class as Legendary Tooltips per Modern UI docs. Equipment-compare is the lost feature.
+- [x] **Removed — Controlling** (Wave 0.5 Inventory & UI) — Modern UI lists it under "mods with similar functions are replaced" ("another way of implementation").
+- [x] **Removed — Immersive UI** (Wave 0.5 Visual) — overlapping UI-overhaul scope with Modern UI (both hook the GUI rendering layer); kept **Immersive Hotbar** (animates slot contents — different mechanism, works alongside).
+- [x] **Removed — Smooth Font texture pack** — redundant under Modern UI's font stack; load order renumbered 11 → 10 packs.
+- [x] **ImmediatelyFast config override created** (`config/immediatelyfast.json`) — `hud_batching`, `font_atlas_resizing`, `fast_text_lookup` set `false` per Modern UI's 1.21.1 compat requirement ("random game crashes" otherwise). Option names + JSON format verified against ImmediatelyFast 1.21 branch source (`ImmediatelyFastConfig.java` — Gson JSON, NOT TOML).
+- [x] GUIDE.md updated: Wave 0.5 Visual & Client QoL table (+Modern UI, −Immersive UI −Smooth GUI −Tooltip Overhaul), Inventory & UI table (−Controlling), What to Expect blurbs, Configuration section (Modern UI + ImmediatelyFast block), Texture Packs table + load order (−Smooth Font), Keybindings (+Open Action Center `Ctrl+K` row, C-zoom conflict note). Mod Count Summary: Wave 0 18→15 mods (29→26), Total 182→179 mods, 49 deps, 231→228.
+- [ ] **Instance action (XMCL)** — remove the 4 jars (Smooth GUI, Tooltip Overhaul, Controlling, Immersive UI) + Smooth Font pack; add `ModernUI-NeoForge-1.21.1-3.13.0.1-universal.jar`; copy `config/immediatelyfast.json`; disable Modern UI zoom in Action Center. [VERIFY] at next launch: no crashes with ImmediatelyFast + Modern UI, tooltips render via Modern UI, hotbar animations still work (Immersive Hotbar).
+- [x] DRIFTWOOD-GUIDE.pdf regenerated
+
 ### Combat Vision + Weapon-QoL Review (Aug 2026)
 
 **Pillar clarification (AGENTS.md Core Vision).** User wants late-game battles with powerful weapons as an explicit power-fantasy expression — *deferred* to Phase 2+ (peaking Phase 3) so the early ramp stays forgiving. Three decisions locked: (1) **steampunk/Create-only weapons** — Create: Gunsmithing (personal firearms) + Create: Big Cannons + Advanced Technologies (artillery) + Apotheosis-forged melee define the ceiling; (2) **weapons, not enemy scaling** — current bosses (Cataclysm, Twilight Forest, Incendium, Apotheosis elites) stay the target set, no new invasion/boss mods; (3) **Mekanism stays the tech spine** — Modern Industrialization / GregTech / Oritech / Immersive Engineering / Voltex rejected (Voltex is also Forge 1.20.1, wrong loader). AGENTS.md "Combat & weapons — the power fantasy's edge" paragraph added.

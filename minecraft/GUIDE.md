@@ -222,7 +222,6 @@ Distant Horizons handles far rendering — keep vanilla render distance low. DH 
 
 | Pack                                                                                                                                         | Role                                                                            |
 |----------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
-| [Smooth Font](https://www.curseforge.com/minecraft/texture-packs/smooth-font)                                                                | 32x smooth font — clean modern typeface, Faithful 32x-based                     |
 | [Fresh Animations](https://www.curseforge.com/minecraft/texture-packs/fresh-animations)                                                      | Living entity animation overhaul — mobs blink, look around, show emotion        |
 | [Enhanced Boss Bars](https://www.curseforge.com/minecraft/texture-packs/enhanced-boss-bars)                                                  | Redesigned boss bars with themed designs for vanilla and modded bosses          |
 | [RAY's 3D Rails](https://www.curseforge.com/minecraft/texture-packs/rays-3d-rails)                                                           | 3D block & item textures for all rail types                                     |
@@ -234,7 +233,6 @@ Distant Horizons handles far rendering — keep vanilla render distance low. DH 
 | [MissingSoundsFix](https://modrinth.com/resourcepack/missingsoundsfix)                                                                 | Suppresses vanilla empty-sound warnings (salmon.ambient, cod.ambient, etc.) — fixes log spam from MC-97521 |
 | [Patrix 32x](https://www.curseforge.com/minecraft/texture-packs/patrix-32x)                                                           | Full 32x PBR base pack — normal/specular maps for shaders; load at bottom of pack order                    |
 
-- **Smooth Font** — 32x font based on Faithful 32x. Overrides font textures only — safe with any 16x packs.
 - **Fresh Animations** — idle animations, directional looking, sleep/blink, emotions for all vanilla mobs. Resource pack overlay (not a mod) — place high in pack order.
 - **Enhanced Boss Bars** — themed boss bar designs for vanilla + Twilight Forest. For Cataclysm/Aether bars (custom rendering), also install the companion [Enhanced Boss Bars mod](https://www.curseforge.com/minecraft/mc-mods/enhanced-boss-bars-mod).
 - **RAY's 3D Rails** — 3D rail models; shader support since v3.0. Compatible with Steam 'n' Rails and Create rails.
@@ -248,17 +246,16 @@ Distant Horizons handles far rendering — keep vanilla render distance low. DH 
 
 **Installation**: Install via XMCL — drop `.zip` files into the instance's Resource Packs tab, or copy them into the instance's `resourcepacks/` folder (access via instance settings). Load order (top = highest priority):
 
-1. Smooth Font
-2. Fresh Animations
-3. Enhanced Boss Bars
-4. RAY's 3D Rails
-5. Better Lanterns
-6. (Bee's) Fancy Crops
-7. Fire Rekindled
-8. Bushy Pink Petals, Wildflowers & Leaf Litter
-9. Fresh Animations: Extensions
-10. MissingSoundsFix
-11. Patrix 32x (base layer — overlays above win)
+1. Fresh Animations
+2. Enhanced Boss Bars
+3. RAY's 3D Rails
+4. Better Lanterns
+5. (Bee's) Fancy Crops
+6. Fire Rekindled
+7. Bushy Pink Petals, Wildflowers & Leaf Litter
+8. Fresh Animations: Extensions
+9. MissingSoundsFix
+10. Patrix 32x (base layer — overlays above win)
 
 ### Infrastructure
 
@@ -352,16 +349,14 @@ All the visual polish, UI improvements, inventory tools, storage, travel, tradin
 | [Sound Physics Remastered](https://www.curseforge.com/minecraft/mc-mods/sound-physics-remastered)                 | Realistic sound                                                                                |
 | [AmbientSounds](https://www.curseforge.com/minecraft/mc-mods/ambientsounds)                                       | Nature ambiance (birds, wind, water)                                                           |
 | [The Immersive Music Mod](https://www.curseforge.com/minecraft/mc-mods/the-immersive-music-mod)                   | 147 new biome/structure-based songs, vanilla silence gaps preserved                            |
-| [Immersive UI](https://www.curseforge.com/minecraft/mc-mods/immersive-ui)                                         | Animated UI, smooth hotbar, item particles                                                     |
+| [Modern UI](https://modrinth.com/mod/modern-ui)                                                              | Full UI framework — modernized screens, own text engine, fancy tooltips, Gaussian blur            |
 | [Immersive Hotbar](https://www.curseforge.com/minecraft/mc-mods/immersive-hotbar)                                 | Animated hotbar slot transitions on pickup/use/swap, XP bar + level-up effects, tooltip animations |
-| [Smooth GUI](https://www.curseforge.com/minecraft/mc-mods/smooth-gui)                                             | Slide-in animation when opening GUIs, fade-in background overlay + blur                        |
 | [Dark Mode Everywhere](https://www.curseforge.com/minecraft/mc-mods/dark-mode-everywhere)                         | Shader-based dark mode for all GUIs — 3 darkness levels, toggleable in-game                    |
 | [Status Effect Bars Reforged](https://www.curseforge.com/minecraft/mc-mods/status-effect-bars-reforged)           | Duration bars on status effect icons in HUD and inventory                                      |
 | [Traveler's Titles](https://www.curseforge.com/minecraft/mc-mods/travelers-titles-neoforge)                       | RPG-style titles entering biomes/dimensions                                                    |
 | [Better Modlist](https://www.curseforge.com/minecraft/mc-mods/better-modlist-neoforge)                            | Enhanced mod list screen with badges/categories                                                |
 | [Better Third Person](https://www.curseforge.com/minecraft/mc-mods/better-third-person)                           | Independent 360° camera rotation in third-person view                                          |
 | [Countered's Smooth F5](https://modrinth.com/mod/countereds-smooth-f5)                                           | Smooth third-person camera transitions on F5 — cinematic, configurable                         |
-| [Tooltip Overhaul](https://www.curseforge.com/minecraft/mc-mods/tooltip-overhaul)                                 | Modern, sharp tooltip rendering with equipment compare                                         |
 | [First Person Model](https://www.curseforge.com/minecraft/mc-mods/first-person-model)                             | Full body rendering in first-person view (requires Not Enough Animations)                      |
 | [3D Skin Layers](https://www.curseforge.com/minecraft/mc-mods/skin-layers-3d)                                     | Renders player skin layers (jackets, hats) with 3D depth                                       |
 | [Presence Footsteps](https://www.curseforge.com/minecraft/mc-mods/presence-footsteps-neoforge)                    | Block-aware footstep sounds for every surface type                                             |
@@ -438,7 +433,6 @@ Tweak payloads directly in `config/day_counter.toml` (`[Rewards.1]`–`[Rewards.
 | [Better Advancements](https://www.curseforge.com/minecraft/mc-mods/better-advancements)       | Overhauled advancements UI with editor/pan/zoom                    |
 | [Polymorph+](https://www.curseforge.com/minecraft/mc-mods/polymorph-plus)                     | Choose crafting result when recipes conflict                       |
 | [Traveler Tool Belt](https://www.curseforge.com/minecraft/mc-mods/traveler-tool-belt)         | Tool radial menu — hold R for quick-swap, 2→9 slots via upgrades   |
-| [Controlling](https://www.curseforge.com/minecraft/mc-mods/controlling)                       | Search keybinds by name, show only conflicting binds, list available keys — no dependencies   |
 | [EMIffect](https://www.curseforge.com/minecraft/mc-mods/emiffect)                             | Status effects in EMI browser — descriptions, sources, colors for all modded effects |
 | [Searchables](https://modrinth.com/mod/searchables) 1.0.2                                  | Search bars in creative menu, JEI/EMI-style browsers, and other GUIs — find items by name instantly |
 
@@ -536,6 +530,18 @@ No keybind changes needed — the mod works fully through context detection. YAC
 
 **Known issue — double text**: Some mods render text shadows that get doubled by the dark shader. Fix: edit `darkmodeeverywhereshaders.json` (create in `config/` or via a resource pack) and change `darkColorRecplacement` from `16777215` to `4868682` (all 3 occurrences). Only needed if you see doubled text on specific screens.
 
+**Modern UI + ImmediatelyFast** (`config/immediatelyfast.json` — tracked override):
+
+Modern UI requires three ImmediatelyFast mixins disabled on 1.21.1 (Modern UI compat notes — otherwise random game crashes). The tracked `config/immediatelyfast.json` ships with these flipped; ImmediatelyFast's other options stay at defaults:
+
+| Setting               | Value   | Why                                                                 |
+|-----------------------|---------|---------------------------------------------------------------------|
+| `hud_batching`        | `false` | Modern UI requirement — HUD text batching conflicts with its tooltip/text rendering |
+| `font_atlas_resizing` | `false` | Modern UI requirement — font atlas resize conflicts with its text engine            |
+| `fast_text_lookup`    | `false` | Modern UI requirement — fast glyph lookup conflicts with its text engine            |
+
+Modern UI itself runs on defaults. Tune it in-game via **Action Center** (`Ctrl+K`): fonts (Preferences), disable its zoom (Sodium owns `C`), background blur/colors. Its configs write to `config/ModernUI/`.
+
 ### Visual & Client QoL — What to Expect
 
 These mods change how the game looks and feels. All are client-side and work immediately.
@@ -545,14 +551,12 @@ These mods change how the game looks and feels. All are client-side and work imm
 - **Sound Physics Remastered** — sound muffled by walls, echoes in caves, directional. Works automatically.
 - **AmbientSounds** — biome-aware ambience (birds, wind, water). No config.
 - **The Immersive Music Mod** — 147 biome/structure-aware songs with natural silence gaps.
-- **Immersive UI** — smooth hotbar sliding, pickup particles, animated tooltips, menu transitions.
-- **Immersive Hotbar** — animated slot contents on pickup/use/swap, animated XP bar. Complements Immersive UI (which animates the selector bar). Configurable via YACL.
-- **Smooth GUI** — slide-in GUI animations with blur. No config.
+- **Immersive Hotbar** — animated slot contents on pickup/use/swap, animated XP bar. Configurable via YACL.
+- **Modern UI** — full UI framework: modernized screens, own text engine (fonts via Action Center `Ctrl+K` → Preferences), fancy rounded tooltips, Gaussian blur + fade-in backgrounds, borderless fullscreen, GUI-scale slider. Ships an OptiFine-style `C` zoom — disable it in the Action Center since Sodium owns `C`. Requires the ImmediatelyFast config override below.
 - **Status Effect Bars Reforged** — duration bars on effect icons; auto-hides beacon effects. Config via Cloth Config.
 - **Traveler's Titles** — RPG-style title cards entering biomes/dimensions. No config.
 - **Better Modlist** — mod list with badges (library/core/addon), categories, search.
 - **Better Third Person** — independent camera in third-person; bind a toggle key in Controls.
-- **Tooltip Overhaul** — rounded, scrollable tooltips with 3D item previews. No config.
 - **First Person Model + 3D Skin Layers** — full body in first person with skin-layer depth. Requires Not Enough Animations (auto-installed).
 - **Presence Footsteps** — block-aware footstep sounds; works with Sound Physics.
 - **Particular Reforged** — ambient particles (splashes, fireflies, leaves, cave dust, cascades). Toggle per-effect in `config/particular.json`.
@@ -594,7 +598,6 @@ These mods change how the game looks and feels. All are client-side and work imm
 - **Advancement Plaques** — glowing plaques (copper/silver/gold per tier). Requires Iceberg (auto-installed).
 - **Polymorph+** — when recipes conflict, click the button next to the crafting output to cycle. Persists per ingredient combination.
 - **Traveler Tool Belt** — hold `R` for a radial quick-swap menu; 2 slots, expandable to 9. Integrates with the Curios belt slot.
-- **Controlling** — search keybinds, show only conflicts, list unbound keys. Essential in a 150+ mod pack.
 - **EMIffect** — browse any status effect in EMI (description, source mod, colors) — a built-in wiki for Apotheosis/Relics/Runes effects. Complements Status Effect Bars Reforged.
 
 ### Storage & Travel
@@ -4264,7 +4267,7 @@ All mods installed and every wave configured — here's how to start a proper wo
 
 | Wave                         | Mods    | Deps   | Total   | Notes                                                                                                                                                                                                                                                                  |
 |------------------------------|---------|--------|---------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Wave 0 — Foundation          | 18      | 11     | 29      | Dependencies (12), Performance & Rendering (14) + Sodium Extras + Sodium Options API + FastWorkbench + MoreCulling + BadOptimizations, Shaderpack (1 mod: Euphoria Patches), Infrastructure (3) + Simple Recall Potion (travel) — all the nuts & bolts that make the game run (+2 shaderpacks, +11 resource packs)                                                                            |
+| Wave 0 — Foundation          | 15      | 11     | 26      | Dependencies (12), Performance & Rendering (14) + Sodium Extras + Sodium Options API + FastWorkbench + MoreCulling + BadOptimizations, Shaderpack (1 mod: Euphoria Patches), Infrastructure (3) + Simple Recall Potion (travel) — all the nuts & bolts that make the game run (+2 shaderpacks, +10 resource packs). Wave 0.5 UI swap: −Immersive UI −Smooth GUI −Tooltip Overhaul −Controlling +Modern UI                                                                             |
 | Wave 1 — Tech                | 20      | 5      | 25      | Create + 14 addons (incl. Power Grid, Gunsmithing, Protection Pixel, Ornithopter Glider, Train Utilities, Railways Navigator, Interiors, Train Parts, Threaded Trains, Central Kitchen), Mekanism + Generators, AE2, Advanced Finders, Advanced Chimneys + NTGL, GeckoLib, Framework, ForgeEndertech, Kleiders deps |
 | Wave 1.5 — Colony            | 9       | —      | 9       | MineColonies (4 deps counted as mods — they're library mods; CurseForge-only) + 4 addons: Byzantine Styles, Stylecolonies, Create: Colony Logistics, ColonyLink                                                                                                           |
 | Wave 2 — Exploration         | 34      | 7      | 41      | YUNG's (12), Terralith/Tectonic, Serene Seasons + Serene Seasons Plus + GlitchCore + Gabou's Libs, Darker Depths, Upgrade Aquatic, dimensions (3), End overhaul (3 + Nullscape dp + 5 deps), Structory, navigation, aircraft, ships, hang glider, MoMP addon, Incendium (Nether biome overhaul), Immersive Machinery (utility machines), Field Guide + 2 required companions (Immersive Overlays, Item Descriptions)                                                                          |
@@ -4275,7 +4278,7 @@ All mods installed and every wave configured — here's how to start a proper wo
 | Wave 6 — Building            | 11      | 3      | 14      | Rechiseled, Supplementaries, Macaw's (4), Building Wands, Handcrafted, Fetzi's Displays, Lili's Pottery, Laser Bridges & Doors, Diagonal Fences + Rechiseled: Create, Rechiseled: AE2 + Moonlight, Resourceful, Fusion |
 | Wave 7 — Space Exploration   | 1       | 2      | 3       | Stellaris, Potentials API, Sky Aesthetics (sky renderer — renders Stellaris planet skies; adds "Modify Sky" pause button)                                                                                  |
 | Wave 8 — Programmable Computers | 1       | 0      | 1       | CC:Tweaked                                                                                                                                                                                                                                                             |
-| **Total**                    | **182** | **49** | **231** | All confirmed NeoForge 1.21.1 (+Real Camera; Day Counter Plus reverted — Day Counter + Hud Texts restored; +BetterGrassify + Forgified Fabric API + Sky Aesthetics; +Serene Seasons Plus + GlitchCore + Gabou's Libs - Chunky - When Dungeons Arise - Structory: Towers, Aug 2026; +Sodium Extras + Sodium Options API + Smarter Farmers + Diagonal Fences + Create: Café, Aug 2026 mod review; +FastWorkbench + MoreCulling + BadOptimizations + Searchables + Loot Beams Refork + Nirvana Library + Common Network + Auto HUD + Create Central Kitchen + Spice of Life Carrot + Apothic Compats + Bliss shader, Aug 2026 weapon-QoL review; -Create: Misc and Things, removed by user) |
+| **Total**                    | **179** | **49** | **228** | All confirmed NeoForge 1.21.1 (+Real Camera; Day Counter Plus reverted — Day Counter + Hud Texts restored; +BetterGrassify + Forgified Fabric API + Sky Aesthetics; +Serene Seasons Plus + GlitchCore + Gabou's Libs - Chunky - When Dungeons Arise - Structory: Towers, Aug 2026; +Sodium Extras + Sodium Options API + Smarter Farmers + Diagonal Fences + Create: Café, Aug 2026 mod review; +FastWorkbench + MoreCulling + BadOptimizations + Searchables + Loot Beams Refork + Nirvana Library + Common Network + Auto HUD + Create Central Kitchen + Spice of Life Carrot + Apothic Compats + Bliss shader, Aug 2026 weapon-QoL review; -Create: Misc and Things, removed by user; +Modern UI -Smooth GUI -Tooltip Overhaul -Controlling -Immersive UI -Smooth Font texture pack, Aug 2026 Modern UI adoption) |
 
 ---
 
@@ -4290,6 +4293,7 @@ All mods installed and every wave configured — here's how to start a proper wo
 | Open Waystone Menu    | `Ctrl+Shift+W`        | Waystones               | 0    |
 | Open Backpack         | `B`                   | Sophisticated Backpacks | 0    |
 | Zoom                  | `C`                   | Sodium                  | 0    |
+| Open Action Center    | `Ctrl+K`              | Modern UI               | 0.5  |
 | Toggle Dynamic Lights | `Ctrl+L`              | LambDynamicLights       | 0    |
 | Open Curios Inventory | `Y`                   | Curios API              | 0    |
 | Open Skill Tree       | `K`                   | Pufferfish's Skills     | 3    |
@@ -4299,6 +4303,8 @@ All mods installed and every wave configured — here's how to start a proper wo
 | Open Town Hall GUI    | Right-click           | MineColonies            | 1.5  |
 
 > **Pro tip**: Open **Options → Controls → Key Binds** and browse categories at the bottom. Every mod's binds are grouped under its name. Set the ones above first, then explore others as you install new waves.
+
+> **Modern UI note**: it also binds zoom to `C` (OptiFine-style). Disable it in the Action Center (`Ctrl+K`) so Sodium's zoom keeps the key.
 
 ---
 

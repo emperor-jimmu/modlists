@@ -97,9 +97,8 @@ Mod Management       Add mods one wave at a time, test launch after each wave
                          - Loot Journal (pickup notifications)
                          - Advancement Plaques (advancement plaques)
 
-                         - Immersive UI (animated UI, smooth hotbar, item particles)
+                         - Modern UI (modernized UI framework — text engine, fancy tooltips, GUI blur)
                          - Traveler's Titles (biome/dimension entry titles)
-                          - Tooltip Overhaul (modern tooltip rendering)
                           - Sound (UI/action sound effects)
                          - Tiny Item Animations (inventory item float/pulse)
 
