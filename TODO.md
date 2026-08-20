@@ -25,7 +25,7 @@
 ## Add mods
 
 [x] 21. AMS2 (automobilista-2)
-[ ] 22. F1 25
+[x] 22. F1 25
 [ ] 23. GTA IV
 [ ] 24. GTA V
 [ ] 25. Monster Hunter Rise

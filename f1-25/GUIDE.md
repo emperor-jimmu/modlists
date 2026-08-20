@@ -947,11 +947,59 @@ Strategic decisions during a race happen fast. Use this framework:
 
 ### Wave 1 Mods
 
-*Strategy, Cameras, Telemetry, AI, Liveries*
+*Telemetry, Dashboards, Overlays, Liveries*
 
-Wave 1 introduces your first gameplay mods. These enhance the experience without fundamentally changing the game's mechanics.
+Wave 1 introduces your first gameplay mods. These enhance the experience without fundamentally changing the game's mechanics. Before installing content mods, set up the two framework tools below — they are the shared foundation most community mods build on.
 
-> **Mods to be inserted here by Task 5.** Categories: Telemetry/Dashboards, Cameras, Liveries, AI Tweaks. Each entry uses the standard format from AGENTS.md.
+#### [SERPs Base Files for F1 25](https://www.overtake.gg/downloads/serps-base-files-for-f1-25-simplified-erps-serps-use-to-play-f1-25-with-serps-compatible-mods.77448/)
+
+| Detail | Value |
+|--------|-------|
+| **Version** | Base framework (managed by Simplified Launcher) |
+| **Author** | Team Simplified |
+| **Dependencies** | None |
+| **What It Changes** | The mandatory framework that lets SERPs-compatible mods (liveries, My Team packages, performance mods) work without permanently replacing core game files. Not a standalone mod — it is the shared foundation most content mods require. |
+| **Installation** | Download and install through the Simplified Launcher (set up in Wave 0). The launcher auto-detects mods that need these base files and handles installation and conflict resolution. |
+
+#### [EGO GameDatabases Editor](https://www.overtake.gg/downloads/ego-gamedatabases-editor.84903/)
+
+| Detail | Value |
+|--------|-------|
+| **Version** | 1.3.0 |
+| **Author** | PavelGames |
+| **Dependencies** | None |
+| **What It Changes** | A powerful, portable database editor for F1 games with safe, one-click mod activation. Required by database-driven mods such as the More Driver Models extension in Wave 2. |
+| **Installation** | Download and extract to any folder. Run the editor to activate database mods. |
+
+#### [AIO DASHBOARD](https://www.overtake.gg/downloads/aio-dashboard.81686/)
+
+| Detail | Value |
+|--------|-------|
+| **Version** | 7.8 |
+| **Author** | thekingm249 |
+| **Dependencies** | SimHub (external, free) |
+| **What It Changes** | Your all-in-one dashboard for all major simracing games supported by SimHub. Gives you a single telemetry screen alongside F1 25. |
+| **Installation** | Install SimHub first (free), then import the dashboard into SimHub and run it alongside F1 25. |
+
+#### [Project Aeternum – F1 Overlays [FREE]](https://www.overtake.gg/downloads/project-aeternum-%E2%80%93-f1-overlays-free.81335/)
+
+| Detail | Value |
+|--------|-------|
+| **Version** | 0.2.5 |
+| **Author** | Threefold |
+| **Dependencies** | None |
+| **What It Changes** | Customizable broadcast-style overlays for F1 26 and older games. Replaces the default HUD with TV-style leaderboard, timing, and position graphics. |
+| **Installation** | Download and extract, then run the overlay alongside F1 25. |
+
+#### [Retro Williams](https://www.overtake.gg/downloads/retro-williams.84914/)
+
+| Detail | Value |
+|--------|-------|
+| **Version** | 1.2 |
+| **Author** | KawhiLover |
+| **Dependencies** | None |
+| **What It Changes** | A tribute livery reimagining Williams in their 1992 title-winning colours, replacing the Williams car skin. |
+| **Installation** | Install via Simplified Launcher. This is one example — hundreds more liveries live in the F1 25 Skins and F1 25 My Team categories. |
 
 
 ## Wave 2 — Apex Predator
@@ -1287,11 +1335,69 @@ Telemetry doesn't just find driving errors — it validates setup changes:
 - **Tyre overheating diagnosis:** If your lap times drop off faster than the reference's over a stint, compare tyre temperature traces. If your tyres hit red (overheating) earlier, you're either sliding too much (driving) or have insufficient cooling (setup — more wing, less aggressive camber).
 
 
-### Wave 2 Mods — Physics, Career, Visuals, Audio
+### Wave 2 Mods — Physics, Career, Visuals, Mechanics
 
 Wave 2 introduces deeper mods that change game mechanics and visuals.
 
-> **Mods to be inserted here by Task 5.** Categories: Physics/Handling, Career Enhancement, Graphics/Visual, Audio. Each entry uses the standard format from AGENTS.md.
+#### [F1 2026 Handling Revamp](https://www.overtake.gg/downloads/f1-2026-handling-revamp.85225/)
+
+| Detail | Value |
+|--------|-------|
+| **Version** | 1.2 |
+| **Author** | ShelbyEra |
+| **Dependencies** | None |
+| **What It Changes** | A comprehensive suspension, tyre, and steering physics overhaul that recreates the mechanical grip, weight, and progressive handling character of F1 23 within the F1 26 physics engine, applied across the full 11-car grid. Restores heavier steering, progressive load buildup, and strips out 2026's built-in steering assists. |
+| **Installation** | Install via Simplified Launcher. Cars feel heavier and slightly slower than default — retune your setups to match. |
+
+#### [Paddocklabs - Toolbox](https://www.overtake.gg/downloads/paddocklabs-toolbox.83224/)
+
+| Detail | Value |
+|--------|-------|
+| **Version** | 0.3.10 |
+| **Author** | HowwFR |
+| **Dependencies** | None |
+| **What It Changes** | Career Mode editor for F1 25. A plugin that lets you modify your career save and progression. |
+| **Installation** | Download and extract, then run it alongside your career save. |
+
+#### [More Driver Models // F1 25 Extension for PaddockLabs and EGO GameDatabases Editor](https://www.overtake.gg/downloads/more-driver-models-f1-25-extension-for-paddocklabs-and-ego-gamedatabases-editor.84139/)
+
+| Detail | Value |
+|--------|-------|
+| **Version** | v1.2 |
+| **Author** | MildtDesign |
+| **Dependencies** | Paddocklabs - Toolbox, EGO GameDatabases Editor |
+| **What It Changes** | Add more driver models to your game saves from previous F1 games. |
+| **Installation** | Requires PaddockLabs - Toolbox and the EGO GameDatabases Editor (both listed above). Install through Simplified Launcher. |
+
+#### [ERS is Now Gone](https://www.overtake.gg/downloads/ers-is-now-gone.85379/)
+
+| Detail | Value |
+|--------|-------|
+| **Version** | 2.1.5 |
+| **Author** | Picklepopper |
+| **Dependencies** | None |
+| **What It Changes** | Removes the ERS management system so full push laps are back in business. |
+| **Installation** | Install via Simplified Launcher. |
+
+#### [Pirelli Tyres Remaster Seasons 2025-2026](https://www.overtake.gg/downloads/pirelli-tyres-remaster-seasons-2025-2026.84758/)
+
+| Detail | Value |
+|--------|-------|
+| **Version** | 1.24 |
+| **Author** | P Zero |
+| **Dependencies** | None |
+| **What It Changes** | Remasters the Pirelli tyre visuals for the 2025–2026 seasons. |
+| **Installation** | Install via Simplified Launcher. |
+
+#### [Closer to IRL Rev Lights](https://www.overtake.gg/downloads/closer-to-irl-rev-lights.84748/)
+
+| Detail | Value |
+|--------|-------|
+| **Version** | 1.2 |
+| **Author** | PF126p |
+| **Dependencies** | None |
+| **What It Changes** | Reworks the in-car rev lights so the LEDs sit closer to the real-world layout. |
+| **Installation** | Install via Simplified Launcher. |
 
 
 ### F1 Glossary — Essential Terms
