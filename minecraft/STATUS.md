@@ -2,6 +2,14 @@
 
 ## Completed
 
+### RAY's 3D Ladders Re-added — Rails Pack Doesn't Cover Ladders (Aug 2026)
+
+- [x] **User report**: RAY's 3D Ladders missing from the pack. [Modrinth](https://modrinth.com/resourcepack/rays-3d-ladders)
+- [x] **Verified — the Jul 2026 "redundant" claim was wrong**: RAY's 3D Rails is rails-only ("3D Block & Item Textures for **Rails**"; supported mods: Create, vanilla rails, rail-focused mods — no ladders). RAY's 3D Ladders is a **separate** pack ("3D Block & Item Textures for **Ladders**") covering vanilla + **Create** ladders (plus Chipped/Quark/others not in pack), shader support (LabPBR) since v2.0, same author (xR4YM0ND). 2.53M DL, MIT, updated 2026-08-13, 1.21.1 ✅. The guide's claim — "Also covers 3D ladders — RAY's 3D Ladders is redundant" (table row, blurb, load order) — was factually false and is removed.
+- [x] **GUIDE.md**: Texture Packs table (+RAY's 3D Ladders row; Rails row drops "(incl. 3D ladders)"), blurb (Rails = rails only; new Ladders blurb — pairs with Rails, disjoint assets), Resource Pack Load Order (20 → **21** items; Ladders at #9 directly under Rails), Mod Count Summary ("+20" → "+21 resource packs").
+- [ ] **Instance action (XMCL)** — add `RAYs-3D-Ladders` zip to the instance's resource packs (Modrinth or CurseForge). [VERIFY] at next launch: vanilla + Create ladders render 3D; no conflicts with RAY's 3D Rails (disjoint assets).
+- [x] DRIFTWOOD-GUIDE.pdf regenerated
+
 ### Shader Swap — Solas Shader as Main (Aug 2026)
 
 - [x] **Main shader switched: Bliss Shaders → Solas Shader** (user request). Solas becomes the pack's **only** shaderpack.

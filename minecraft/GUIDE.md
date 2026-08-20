@@ -216,7 +216,8 @@ Distant Horizons handles far rendering — keep vanilla render distance low. DH 
 | [Fresh Animations](https://www.curseforge.com/minecraft/texture-packs/fresh-animations)                                                      | Living entity animation overhaul — mobs blink, look around, show emotion                                                  |
 | [Enhanced Boss Bars](https://www.curseforge.com/minecraft/texture-packs/enhanced-boss-bars)                                                  | Redesigned boss bars with themed designs for vanilla and modded bosses                                                    |
 | [Faithful 32x AppleSkin Addon](https://modrinth.com/resourcepack/faithful-32x-appleskin-addon)                                               | AppleSkin HUD icons (hunger, saturation) at 32x in Faithful style — syncs the food bar to the 32x base                    |
-| [RAY's 3D Rails](https://www.curseforge.com/minecraft/texture-packs/rays-3d-rails)                                                           | 3D block & item textures for all rail types (incl. 3D ladders)                                                            |
+| [RAY's 3D Rails](https://www.curseforge.com/minecraft/texture-packs/rays-3d-rails)                                                           | 3D block & item textures for all rail types                                                                                |
+| [RAY's 3D Ladders](https://www.curseforge.com/minecraft/texture-packs/rays-3d-ladders)                                                       | 3D block & item textures for ladders — vanilla + Create; separate pack from 3D Rails (same author)                         |
 | [Better Lanterns](https://www.curseforge.com/minecraft/texture-packs/better-lanterns)                                                        | Enhanced 3D look for lanterns and chains                                                                                  |
 | [(Bee's) Fancy Crops](https://modrinth.com/resourcepack/fancy-crops)                                                                         | Reworked crop models with texture variations — compatible with Farmer's Delight                                           |
 | [Rekindled CTM](https://modrinth.com/resourcepack/rekindled-ctm)                                                                             | Connected textures for Fire/Soul Fire + moss carpet overhangs — official Fire Rekindled addon (needs Continuity)          |
@@ -237,7 +238,8 @@ Distant Horizons handles far rendering — keep vanilla render distance low. DH 
 - **Fresh Animations** — idle animations, directional looking, sleep/blink, emotions for all vanilla mobs. Resource pack overlay (not a mod) — place high in pack order.
 - **Enhanced Boss Bars** — themed boss bar designs for vanilla + Twilight Forest. For Cataclysm/Aether bars (custom rendering), also install the companion [Enhanced Boss Bars mod](https://www.curseforge.com/minecraft/mc-mods/enhanced-boss-bars-mod).
 - **Faithful 32x AppleSkin Addon** — AppleSkin's hunger/saturation HUD icons redrawn at 32x to match Faithful's style. AppleSkin ships 16x icons from the mod, so this keeps the food bar crisp on the 32x base. Zero deps; order-independent (only touches AppleSkin's own icons) — grouped with the UI tier.
-- **RAY's 3D Rails** — 3D rail models; shader support since v3.0. Compatible with Steam 'n' Rails and Create rails. Also covers 3D ladders — RAY's 3D Ladders is redundant.
+- **RAY's 3D Rails** — 3D rail models; shader support since v3.0. Compatible with Steam 'n' Rails and Create rails. Rails only — ladders are covered by the separate **RAY's 3D Ladders** pack below.
+- **RAY's 3D Ladders** — 3D ladder models (vanilla + Create); shader support (LabPBR) since v2.0. Same author as RAY's 3D Rails, but a separate pack — Rails does **not** cover ladders. Updated Aug 2026.
 - **Better Lanterns** — 3D lanterns + connected chain models. Compatible with Arcane Lanterns and Thin Air.
 - **(Bee's) Fancy Crops** — vanilla crop rework with texture variations; built to work with Farmer's Delight (Wave 4).
 - **Rekindled CTM** — official Fire Rekindled addon: connected textures for fire and soul fire (plus moss-carpet overhangs). Requires Continuity — already in the pack (Wave 0.5, for Overlay's), so zero new mods. **Load above Fire Rekindled**. Pairs well with Incendium's Nether (connected soul fire across the transformed biomes). If fire textures look desynced from their neighbors, disable Sodium's **"Animate Only Visible Textures"**. Slime/honey connected textures live in a separate pack (Viscous CTM) — not added.
@@ -264,19 +266,20 @@ Top = highest priority. Packs only win where they have content, so packs touchin
 5. Fresh Animations
 6. Enhanced Boss Bars
 7. Faithful 32x AppleSkin Addon (AppleSkin HUD icons — 32x Faithful style)
-8. RAY's 3D Rails (3D rails + ladders)
-9. Better Lanterns
-10. (Bee's) Fancy Crops
-11. Rekindled CTM (Fire Rekindled addon — load above it)
-12. Fire Rekindled
-13. Motsch's Better Leaves (pair with Cull Leaves mod)
-14. Bushy Pink Petals, Wildflowers & Leaf Litter
-15. Modded Omelet (spawn egg items)
-16. Mace Fusion (mace item model)
-17. Fresh Waystones Texture (Waystones block + item)
-18. Overlay's — needs Continuity + Sinytra Connector mods
-19. MissingSoundsFix — no visual impact, order irrelevant
-20. Faithful 32x — base layer (overlays above win)
+8. RAY's 3D Rails (3D rails)
+9. RAY's 3D Ladders (3D ladders — pair with 3D Rails; disjoint assets)
+10. Better Lanterns
+11. (Bee's) Fancy Crops
+12. Rekindled CTM (Fire Rekindled addon — load above it)
+13. Fire Rekindled
+14. Motsch's Better Leaves (pair with Cull Leaves mod)
+15. Bushy Pink Petals, Wildflowers & Leaf Litter
+16. Modded Omelet (spawn egg items)
+17. Mace Fusion (mace item model)
+18. Fresh Waystones Texture (Waystones block + item)
+19. Overlay's — needs Continuity + Sinytra Connector mods
+20. MissingSoundsFix — no visual impact, order irrelevant
+21. Faithful 32x — base layer (overlays above win)
 
 ### Infrastructure
 
@@ -3393,7 +3396,7 @@ All mods installed and every wave configured — here's how to start a proper wo
 
 | Wave                            | Mods    | Deps   | Total   | Notes                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 |---------------------------------|---------|--------|---------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Wave 0 — Foundation             | 12      | 10     | 22      | Dependencies (12), Performance & Rendering (12) + FastWorkbench −Sodium Extras −Sodium Options API (Aug 2026 — broken dep chain: sodiumoptionsapi→RSO→Sodium 0.8.12+→incompatible with sodiumoptionsapi), Infrastructure (3) + Simple Recall Potion (travel) — all the nuts & bolts that make the game run (+1 shaderpack, +20 resource packs). Wave 0.5 UI swap: −Immersive UI −Smooth GUI −Tooltip Overhaul −Controlling −First Person Model +Modern UI                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| Wave 0 — Foundation             | 12      | 10     | 22      | Dependencies (12), Performance & Rendering (12) + FastWorkbench −Sodium Extras −Sodium Options API (Aug 2026 — broken dep chain: sodiumoptionsapi→RSO→Sodium 0.8.12+→incompatible with sodiumoptionsapi), Infrastructure (3) + Simple Recall Potion (travel) — all the nuts & bolts that make the game run (+1 shaderpack, +21 resource packs). Wave 0.5 UI swap: −Immersive UI −Smooth GUI −Tooltip Overhaul −Controlling −First Person Model +Modern UI                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | Wave 0.5 — Resource Packs       | 5       | 0      | 5       | EMF + ETF + Continuity + Sinytra Connector + Cull Leaves — client-side support mods for Armored Legacy (EMF/ETF), Overlay's (Continuity/Connector), Better Leaves perf (Cull Leaves); +11 resource packs −Patrix +Faithful −FA Extensions (Aug 2026 resource pack review; removed — Details addon corrupted animal models, user report)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | Wave 1 — Tech                   | 20      | 5      | 25      | Create + 14 addons (incl. Power Grid, Gunsmithing, Protection Pixel, Ornithopter Glider, Train Utilities, Railways Navigator, Interiors, Train Parts, Threaded Trains, Central Kitchen), Mekanism + Generators, AE2, Advanced Finders, Advanced Chimneys + NTGL, GeckoLib, Framework, ForgeEndertech, Kleiders deps                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | Wave 1.5 — Colony               | 9       | —      | 9       | MineColonies (4 deps counted as mods — they're library mods; CurseForge-only) + 4 addons: Byzantine Styles, Stylecolonies, Create: Colony Logistics, ColonyLink                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
