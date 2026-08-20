@@ -357,7 +357,6 @@ All the visual polish, UI improvements, inventory tools, storage, travel, tradin
 | [Better Modlist](https://www.curseforge.com/minecraft/mc-mods/better-modlist-neoforge)                            | Enhanced mod list screen with badges/categories                                                |
 | [Better Third Person](https://www.curseforge.com/minecraft/mc-mods/better-third-person)                           | Independent 360° camera rotation in third-person view                                          |
 | [Countered's Smooth F5](https://modrinth.com/mod/countereds-smooth-f5)                                           | Smooth third-person camera transitions on F5 — cinematic, configurable                         |
-| [First Person Model](https://www.curseforge.com/minecraft/mc-mods/first-person-model)                             | Full body rendering in first-person view (requires Not Enough Animations)                      |
 | [3D Skin Layers](https://www.curseforge.com/minecraft/mc-mods/skin-layers-3d)                                     | Renders player skin layers (jackets, hats) with 3D depth                                       |
 | [Presence Footsteps](https://www.curseforge.com/minecraft/mc-mods/presence-footsteps-neoforge)                    | Block-aware footstep sounds for every surface type                                             |
 | [Particular Reforged](https://www.curseforge.com/minecraft/mc-mods/particular-reforged)                           | Ambient particles: 3D water splashes, fireflies, falling leaves, cave dust, waterfall cascades |
@@ -474,7 +473,7 @@ Tweak payloads directly in `config/day_counter.toml` (`[Rewards.1]`–`[Rewards.
 
 | Mod                                                                               | Role                                                                                      | Required By                                                              |
 |-----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
-| [Architectury API](https://www.curseforge.com/minecraft/mc-mods/architectury-api) | Cross-loader compatibility — lets Fabric mods run on NeoForge                             | First Person Model, Eating Animation, Effectual, multiple Wave 1-3+ mods |
+| [Architectury API](https://www.curseforge.com/minecraft/mc-mods/architectury-api) | Cross-loader compatibility — lets Fabric mods run on NeoForge                             | Eating Animation, Effectual, multiple Wave 1-3+ mods                        |
 | [Iceberg](https://www.curseforge.com/minecraft/mc-mods/iceberg)                   | Library for config-driven UI mods                                                         | Advancement Plaques                                                      |
 | [Polytone](https://www.curseforge.com/minecraft/mc-mods/polytone)                 | Custom block colors, lightmaps, biome colors — Optifine format support for resource packs | — (dependency orphaned — Rainbow's Foliage removed)                      |
 | [Lithostitched](https://www.curseforge.com/minecraft/mc-mods/lithostitched)       | Worldgen modifier API — handles village placement hooks                                   | Improved Village Placement                                               |
@@ -485,7 +484,7 @@ Tweak payloads directly in `config/day_counter.toml` (`[Rewards.1]`–`[Rewards.
 
 **Lithostitched** is a worldgen library that Improved Village Placement uses to hook into the village generation system. Without it, IVP crashes at startup with a `NoClassDefFoundError` for `AddWorldgenModifiersEvent`. This mod was not declared as a dependency in IVP's metadata — install it manually.
 
-**Architectury API** is a lightweight library with no user-visible features — install once and forget. It provides the abstraction layer that lets Fabric-origin client QoL mods (First Person Model, Eating Animation) run seamlessly on NeoForge. Without it, these mods crash at startup with a missing-dependency error.
+**Architectury API** is a lightweight library with no user-visible features — install once and forget. It provides the abstraction layer that lets Fabric-origin client QoL mods (Eating Animation) run seamlessly on NeoForge. Without it, these mods crash at startup with a missing-dependency error.
 
 **Install**: In XMCL, search `Architectury API` in the Mods tab and add it. Alternatively, download from CurseForge and drop the `.jar` into `mods/`. No config needed. The game loads it silently — you'll never see it in-game, but EMI's mod list confirms it's present.
 
@@ -540,6 +539,8 @@ Modern UI requires three ImmediatelyFast mixins disabled on 1.21.1 (Modern UI co
 | `font_atlas_resizing` | `false` | Modern UI requirement — font atlas resize conflicts with its text engine            |
 | `fast_text_lookup`    | `false` | Modern UI requirement — fast glyph lookup conflicts with its text engine            |
 
+**Known conflict to avoid**: **Legendary Tooltips** (ver 1.16 ~ 1.21.4) fights Modern UI's tooltip renderer — if it's ever added, disable Modern UI's tooltip via the config screen (Action Center) instead. The pack's tooltip rendering is Modern UI's own; no tooltip-overhaul mod needed.
+
 Modern UI itself runs on defaults. Tune it in-game via **Action Center** (`Ctrl+K`): fonts (Preferences), disable its zoom (Sodium owns `C`), background blur/colors. Its configs write to `config/ModernUI/`.
 
 ### Visual & Client QoL — What to Expect
@@ -547,7 +548,7 @@ Modern UI itself runs on defaults. Tune it in-game via **Action Center** (`Ctrl+
 These mods change how the game looks and feels. All are client-side and work immediately.
 
 - **LambDynamicLights** — held light sources emit light around you; off-hand works. Pro tip: torch in off-hand while mining. Toggle `Ctrl+L`.
-- **BetterF3** — cleaner debug HUD; toggle FPS, coords, biome, light level. Customize in Mod Menu → BetterF3.
+- **BetterF3** — cleaner debug HUD; toggle FPS, coords, biome, light level. Customize in the Mods screen → BetterF3 → Config.
 - **Sound Physics Remastered** — sound muffled by walls, echoes in caves, directional. Works automatically.
 - **AmbientSounds** — biome-aware ambience (birds, wind, water). No config.
 - **The Immersive Music Mod** — 147 biome/structure-aware songs with natural silence gaps.
@@ -557,7 +558,7 @@ These mods change how the game looks and feels. All are client-side and work imm
 - **Traveler's Titles** — RPG-style title cards entering biomes/dimensions. No config.
 - **Better Modlist** — mod list with badges (library/core/addon), categories, search.
 - **Better Third Person** — independent camera in third-person; bind a toggle key in Controls.
-- **First Person Model + 3D Skin Layers** — full body in first person with skin-layer depth. Requires Not Enough Animations (auto-installed).
+- **3D Skin Layers** — renders player skin layers (jackets, hats) with 3D depth.
 - **Presence Footsteps** — block-aware footstep sounds; works with Sound Physics.
 - **Particular Reforged** — ambient particles (splashes, fireflies, leaves, cave dust, cascades). Toggle per-effect in `config/particular.json`.
 - **Particle Rain** — particle-based weather (angled rain, sandstorms, fog). `/particlerain` or Mod List → Config.
@@ -573,7 +574,7 @@ These mods change how the game looks and feels. All are client-side and work imm
 - **Day Counter** — "Day N" ActionBar flash at dawn + milestone gifts (days 100–2000). Config: `config/day_counter.toml`.
 - **Eating Animation** — first-person eating/drinking animation; works with Farmer's Delight foods.
 - **Camera Overhaul** — camera tilt, screen shake, mouselook roll, idle sway. Config: `config/cameraoverhaul-client.toml`.
-- **Real Camera** — first-person body view bound to your head; `F6` toggles. Version pin `0.7.8-beta`. Compatible with First Person Model, Not Enough Animations, Better Combat; GeckoLib-rendered armor incompatible (none in pack). [VERIFY] Protection Pixel armor with model binding after test launch.
+- **Real Camera** — first-person body view bound to your head; `F6` toggles. Version pin `0.7.8-beta`. Compatible with Better Combat, Camera Overhaul; GeckoLib-rendered armor incompatible (none in pack). [VERIFY] Protection Pixel armor with model binding after test launch.
 - **[DLS] Dark Loading Screen** — dark loading screen. No config.
 - **Cosy Critters & Creepy Crawlies** — ambient birds/bugs/critters; client-side, toggleable via `/cosycritters`. Zero perf impact.
 - **Foxified Dense Flowers** — denser flower fields; client-side.
@@ -1448,7 +1449,7 @@ Opens a new way to experience the world. Craft a spyglass, then look at any plan
 
 > **⚠️ New world required**: These are worldgen changes. Existing chunks keep their old terrain — explore fresh areas to see the new depths.
 
-**Quick verification**: Stand at ocean surface (Y=62), look down with F3 open. Deep oceans should show the floor at Y=-28 (±5). Standard oceans at Y=17 (±5). Monuments should have their base at Y=-16 (±5) — floating ~12 blocks above the trench floor. If values are off, adjust in-game via Mod Menu → Tectonic → Configure.
+**Quick verification**: Stand at ocean surface (Y=62), look down with F3 open. Deep oceans should show the floor at Y=-28 (±5). Standard oceans at Y=17 (±5). Monuments should have their base at Y=-16 (±5) — floating ~12 blocks above the trench floor. If values are off, adjust in-game via the Mods screen → Tectonic → Configure.
 
 **YUNG's Better Dungeons — Rarer Dungeons** (`datapacks/rarer-better-dungeons/`):
 
@@ -2795,7 +2796,7 @@ Replaces Minecraft's single swing with weapon-specific movesets:
 | Hammers      | Slow      | 3.5 blocks | Overhead slam           | Knockback, stun            |
 | Greathammers | Very slow | 4 blocks   | Ground pound            | AoE knockback              |
 
-**Config**: Mod Menu → Better Combat. Tweak reach, sweep radius, attack speed, visual effects per weapon type.
+**Config**: Mods screen → Better Combat → Config. Tweak reach, sweep radius, attack speed, visual effects per weapon type.
 
 **Integration**: Simply Swords weapons have built-in Better Combat data files — each category uses correct animation, reach, and speed automatically. Too Many Bows and Simply More also integrate.
 
@@ -4267,7 +4268,7 @@ All mods installed and every wave configured — here's how to start a proper wo
 
 | Wave                         | Mods    | Deps   | Total   | Notes                                                                                                                                                                                                                                                                  |
 |------------------------------|---------|--------|---------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Wave 0 — Foundation          | 15      | 11     | 26      | Dependencies (12), Performance & Rendering (14) + Sodium Extras + Sodium Options API + FastWorkbench + MoreCulling + BadOptimizations, Shaderpack (1 mod: Euphoria Patches), Infrastructure (3) + Simple Recall Potion (travel) — all the nuts & bolts that make the game run (+2 shaderpacks, +10 resource packs). Wave 0.5 UI swap: −Immersive UI −Smooth GUI −Tooltip Overhaul −Controlling +Modern UI                                                                             |
+| Wave 0 — Foundation          | 14      | 11     | 25      | Dependencies (12), Performance & Rendering (14) + Sodium Extras + Sodium Options API + FastWorkbench + MoreCulling + BadOptimizations, Shaderpack (1 mod: Euphoria Patches), Infrastructure (3) + Simple Recall Potion (travel) — all the nuts & bolts that make the game run (+2 shaderpacks, +10 resource packs). Wave 0.5 UI swap: −Immersive UI −Smooth GUI −Tooltip Overhaul −Controlling −First Person Model +Modern UI                                                                             |
 | Wave 1 — Tech                | 20      | 5      | 25      | Create + 14 addons (incl. Power Grid, Gunsmithing, Protection Pixel, Ornithopter Glider, Train Utilities, Railways Navigator, Interiors, Train Parts, Threaded Trains, Central Kitchen), Mekanism + Generators, AE2, Advanced Finders, Advanced Chimneys + NTGL, GeckoLib, Framework, ForgeEndertech, Kleiders deps |
 | Wave 1.5 — Colony            | 9       | —      | 9       | MineColonies (4 deps counted as mods — they're library mods; CurseForge-only) + 4 addons: Byzantine Styles, Stylecolonies, Create: Colony Logistics, ColonyLink                                                                                                           |
 | Wave 2 — Exploration         | 34      | 7      | 41      | YUNG's (12), Terralith/Tectonic, Serene Seasons + Serene Seasons Plus + GlitchCore + Gabou's Libs, Darker Depths, Upgrade Aquatic, dimensions (3), End overhaul (3 + Nullscape dp + 5 deps), Structory, navigation, aircraft, ships, hang glider, MoMP addon, Incendium (Nether biome overhaul), Immersive Machinery (utility machines), Field Guide + 2 required companions (Immersive Overlays, Item Descriptions)                                                                          |
@@ -4278,7 +4279,7 @@ All mods installed and every wave configured — here's how to start a proper wo
 | Wave 6 — Building            | 11      | 3      | 14      | Rechiseled, Supplementaries, Macaw's (4), Building Wands, Handcrafted, Fetzi's Displays, Lili's Pottery, Laser Bridges & Doors, Diagonal Fences + Rechiseled: Create, Rechiseled: AE2 + Moonlight, Resourceful, Fusion |
 | Wave 7 — Space Exploration   | 1       | 2      | 3       | Stellaris, Potentials API, Sky Aesthetics (sky renderer — renders Stellaris planet skies; adds "Modify Sky" pause button)                                                                                  |
 | Wave 8 — Programmable Computers | 1       | 0      | 1       | CC:Tweaked                                                                                                                                                                                                                                                             |
-| **Total**                    | **179** | **49** | **228** | All confirmed NeoForge 1.21.1 (+Real Camera; Day Counter Plus reverted — Day Counter + Hud Texts restored; +BetterGrassify + Forgified Fabric API + Sky Aesthetics; +Serene Seasons Plus + GlitchCore + Gabou's Libs - Chunky - When Dungeons Arise - Structory: Towers, Aug 2026; +Sodium Extras + Sodium Options API + Smarter Farmers + Diagonal Fences + Create: Café, Aug 2026 mod review; +FastWorkbench + MoreCulling + BadOptimizations + Searchables + Loot Beams Refork + Nirvana Library + Common Network + Auto HUD + Create Central Kitchen + Spice of Life Carrot + Apothic Compats + Bliss shader, Aug 2026 weapon-QoL review; -Create: Misc and Things, removed by user; +Modern UI -Smooth GUI -Tooltip Overhaul -Controlling -Immersive UI -Smooth Font texture pack, Aug 2026 Modern UI adoption) |
+| **Total**                    | **178** | **49** | **227** | All confirmed NeoForge 1.21.1 (+Real Camera; Day Counter Plus reverted — Day Counter + Hud Texts restored; +BetterGrassify + Forgified Fabric API + Sky Aesthetics; +Serene Seasons Plus + GlitchCore + Gabou's Libs - Chunky - When Dungeons Arise - Structory: Towers, Aug 2026; +Sodium Extras + Sodium Options API + Smarter Farmers + Diagonal Fences + Create: Café, Aug 2026 mod review; +FastWorkbench + MoreCulling + BadOptimizations + Searchables + Loot Beams Refork + Nirvana Library + Common Network + Auto HUD + Create Central Kitchen + Spice of Life Carrot + Apothic Compats + Bliss shader, Aug 2026 weapon-QoL review; -Create: Misc and Things, removed by user; +Modern UI -Smooth GUI -Tooltip Overhaul -Controlling -Immersive UI -Smooth Font texture pack -First Person Model, Aug 2026 Modern UI adoption) |
 
 ---
 
@@ -4323,8 +4324,8 @@ All mods installed and every wave configured — here's how to start a proper wo
 
 - **EMI (`R`/`U`)** — always your first stop. Hover any item, press R for recipe, U for uses
 - **Ponder (`W` over Create blocks)** — interactive animated tutorials. Better than any wiki
-- **Mod Menu / Configured** — every installed mod's config screen
-- Most mods link to their wiki or Discord from Mod Menu entry
+- **Mods screen** — every installed mod's config button (Better Modlist adds badges/search)
+- Most mods link to their wiki or Discord from their Mods screen entry
 
 ### Losing Progress
 

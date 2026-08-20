@@ -15,6 +15,14 @@
 - [ ] **Instance action (XMCL)** — remove the 4 jars (Smooth GUI, Tooltip Overhaul, Controlling, Immersive UI) + Smooth Font pack; add `ModernUI-NeoForge-1.21.1-3.13.0.1-universal.jar`; copy `config/immediatelyfast.json`; disable Modern UI zoom in Action Center. [VERIFY] at next launch: no crashes with ImmediatelyFast + Modern UI, tooltips render via Modern UI, hotbar animations still work (Immersive Hotbar).
 - [x] DRIFTWOOD-GUIDE.pdf regenerated
 
+### Modern UI Follow-up (Aug 2026)
+
+- [x] **First Person Model removed** (Wave 0.5 — Visual & Client QoL) — per user request (doesn't like the feel). Its dependency **Not Enough Animations** goes with it (verified: FPM was NEA's only consumer in-pack — Eating Animation on 1.21.1 lists zero deps via Modrinth API). **3D Skin Layers stays** (standalone). GUIDE.md updated: table row, What-to-Expect bullet (now 3D Skin Layers only), Architectury API dependency row + blurb, Real Camera compat list (dropped FPM + NEA). Mod Count Summary: Wave 0 15→14 mods (26→25), Total 179→178 mods, 49 deps, 228→227.
+- [x] **Legendary Tooltips conflict noted** in GUIDE.md Modern UI block — "ver 1.16 ~ 1.21.4; solution: disable Modern UI tooltip via config screen". Not in pack — documentation only, prevents a future re-add mistake.
+- [x] **Mod Menu question resolved — NOT installed, nothing to remove**: Mod Menu is Fabric/Quilt-only (no NeoForge build); pack runs NeoForge 1.21.1. GUIDE's "Mod Menu" references were generic shorthand for the in-game mods screen — standardized to "Mods screen" wording (BetterF3, Tectonic, Better Combat, quick-links bullets). Pack's actual mod-list tool: **Better Modlist** (already in pack); config GUIs via YACL/Cloth.
+- [ ] **Instance action (XMCL)** — remove First Person Model + Not Enough Animations jars.
+- [x] DRIFTWOOD-GUIDE.pdf regenerated
+
 ### Combat Vision + Weapon-QoL Review (Aug 2026)
 
 **Pillar clarification (AGENTS.md Core Vision).** User wants late-game battles with powerful weapons as an explicit power-fantasy expression — *deferred* to Phase 2+ (peaking Phase 3) so the early ramp stays forgiving. Three decisions locked: (1) **steampunk/Create-only weapons** — Create: Gunsmithing (personal firearms) + Create: Big Cannons + Advanced Technologies (artillery) + Apotheosis-forged melee define the ceiling; (2) **weapons, not enemy scaling** — current bosses (Cataclysm, Twilight Forest, Incendium, Apotheosis elites) stay the target set, no new invasion/boss mods; (3) **Mekanism stays the tech spine** — Modern Industrialization / GregTech / Oritech / Immersive Engineering / Voltex rejected (Voltex is also Forge 1.20.1, wrong loader). AGENTS.md "Combat & weapons — the power fantasy's edge" paragraph added.
