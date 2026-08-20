@@ -2,6 +2,17 @@
 
 ## Completed
 
+### Space Mod Swap — Northstar Redux + CC:Tweaked Removal (Aug 2026)
+
+- [x] **Stellaris 1.4.23 removed** (Wave 7 — Space Exploration) — user dislike of its Overworld worldgen (satellite dishes, operation bases). Replaced by **Northstar Redux 0.6.4** (Create-based space mod: player-built rockets, science unlocks, oxygen/temperature systems, Moon/Mars/Mercury/Venus). Northstar generates **no Overworld structures** (the "Structures" addon is not installed).
+- [x] **CC:Tweaked removed** (Wave 8 — Programmable Computers) — per user request. Wave 8 docs, Lua tutorial, KubeJS recipe gates, config override all deleted; its quest chapter was already absent since the 2026-08-13 quest regeneration.
+- [x] Dependencies removed with Stellaris: **Potentials API**, **Sky Aesthetics** (dependency audit below superseded). Northstar needs no new deps — Create 6.0+ and GeckoLib already in pack.
+- [x] **Compat-mod audit** (patterns: `stellaris`, `beyond.earth`, space-mod `compat` rows): no Stellaris addon/compat mods installed; TFMG fuel compat is native; Apothic Compats unaffected.
+- [x] **Quests**: new Northstar chapter (18 quests, id `82000000`) with real detection — item tasks for crafts, `dimension` tasks for planet arrivals + optional planet-stone fallback. Pipeline extended (`generate.py` now emits `dimension` and task-level `optional`; 2 new pytest tests). Stellaris chapter `90000000` + its quest data deleted.
+- [x] **Counts**: totals 178/49/227 → **177/47/224**; quests 211 → **212** (17 out, 18 in). GUIDE.md wave table, phase tables, tech-loop rows, quest chapter list updated.
+- [x] **Instance swap checklist** delivered in GUIDE.md (remove the old space-mod jars; add northstar-redux 0.6.4; do not install the Structures addon). Existing worlds keep inert Stellaris blocks and lose its items — fresh world recommended.
+- [ ] **Pending in-game verification** (post instance swap): (1) quest book — Northstar chapter renders, crafted items detect; (2) craft Rocket Station → quest completes; (3) reach the Moon → Moon Landing completes (if the `northstar:moon` dimension task errors, report back — escape hatch: item-only task, item IDs are verified); (4) EMI recipe review; (5) after any Northstar update, re-run `generate.py`/`validate.py`.
+
 ### Modern UI Adoption & UI Cleanup (Aug 2026)
 
 - [x] **Modern UI v3.13.0.1 (NeoForge 1.21.1)** added (Wave 0.5 — Visual & Client QoL) — full UI framework: modernized screens, own text engine (TTF/OTF fonts via Action Center `Ctrl+K` → Preferences), fancy rounded tooltips, Gaussian blur + fade-in backgrounds, borderless fullscreen, GUI-scale slider, OptiFine-style zoom (ships on `C` — **disable in Action Center**, Sodium owns the key). Client-only, zero deps, LGPL-3.0, 20M DL. [Modrinth](https://modrinth.com/mod/modern-ui). 1.21.1 actively maintained; compat list: Sodium/Iris OK, mods with replaced functions: Blur/Controlling/TipTheScales/Inventory Pause/Emojiful/Ding-class.
@@ -68,7 +79,7 @@
 ### ExtraQuests Removal & Create World Section (Aug 2026)
 
 - [x] ExtraQuests removed from GUIDE.md (Wave 4.5 Quest Addons table, Mod Count Summary) — quest book uses only standard FTB Quests types; daily/weekly quests contradict chill living; ExtraLib dependency never in pack. Logged under Removed Mods (Aug 2026)
-- [x] GUIDE.md "Create World" section added — world creation settings (Survival, Normal difficulty, Allow Commands/Cheats OFF, Default world type, Structure Generation ON, Game Rules → Chat all disabled), quest book + data pack pre-steps, CC:Tweaked serverconfig post-step
+- [x] GUIDE.md "Create World" section added — world creation settings (Survival, Normal difficulty, Allow Commands/Cheats OFF, Default world type, Structure Generation ON, Game Rules → Chat all disabled), quest book + data pack pre-steps
 - [x] DRIFTWOOD-GUIDE.pdf regenerated
 
 ### Added Mods (Aug 2026 — Better Grass)
@@ -86,12 +97,9 @@
 - [x] GUIDE.md updated: Texture Packs table + blurb + load order (11. Patrix 32x). Mod Count Summary "+11 resource packs" note now matches the 11-pack table.
 - [x] DRIFTWOOD-GUIDE.pdf regenerated
 
-### Dependency Audit (Aug 2026 — Stellaris × Sky Aesthetics)
+### Dependency Audit (superseded Aug 2026)
 
-- [x] Verified **Sky Aesthetics** is a required runtime dep of Stellaris 1.4.23: the Stellaris jar ships planet skybox data (`assets/stellaris/sky_aesthetics/*.json` — earth, mars, moon, mercury, venus, jupiter + orbits) but **no renderer code** (Modrinth marks the dep "embedded", but the 1.4.23 jar does not bundle it) — the separate Sky Aesthetics install does the rendering. Removing it breaks Stellaris's custom space skies.
-- [x] "Modify Sky" pause-menu button: added by Sky Aesthetics' `PauseMenuMixin` (verified in 2.0.13-beta jar) — **no config toggle exists** (SkyConfig.java has only sky/cloud/weather render toggles). Cosmetic — keep the mod, ignore the button. (Last-resort hide: strip the mixin class + mixin.json entry from the jar; not update-safe, not recommended.)
-- [x] GUIDE.md updated: Wave 7 dependencies note (Architectury API + Potentials API + Sky Aesthetics) + "Modify Sky" button note; Mod Count Summary Wave 7 1→2 deps (Total 43→44 deps, 214→215).
-- [x] DRIFTWOOD-GUIDE.pdf regenerated
+- [x] Superseded 2026-08-20 — both audited dependencies (the sky renderer and the API lib shipped with the removed space mod) were removed with their mod; the replacement requires no extra dependencies. See the Space Mod Swap section above.
 
 ### Removed Mods (Aug 2026)
 
@@ -116,13 +124,9 @@
 - [x] Waves 0-8 fully documented with mod tables, dependency tables, and config sections
 PUT 90.*:
 
-### Wave 8 — Programmable Computers (1 mod)
+### Wave 8 — Programmable Computers (removed Aug 2026)
 
-- [x] CC:Tweaked added as programmable computer mod (Modrinth — dev-recommended platform for NeoForge builds)
-- [x] KubeJS recipe script: `kubejs/server_scripts/wave8_cc_tweaked.js` — gates turtles (TFMG steel), Advanced Computer (Mekanism Enriched Alloy), Wireless Modem (Create brass)
-- [x] Config override: `config/computercraft-server.toml` — HTTP disabled, command computers disabled, turtle fuel limit 200000
-- [x] GUIDE.md Wave 8 section written — mod table, config, Lua tutorial (shell, editor, syntax primer, event loop, peripherals, turtles, redstone, wireless networking, 5 integration scripts), interdependency notes, 7-session plan
-- [x] FTB Quests: 6 CC:Tweaked quests in new "Programmable Computers" chapter
+- [x] Wave 8 (Programmable Computers) removed from the modlist on 2026-08-20 — see the Space Mod Swap section above.
 
 - [x] Interdependency notes for every wave noting cross-mod interactions
 
@@ -213,20 +217,14 @@ PUT 90.*:
 - [x] Lili's Pottery (decorative pots, vases, urns, amphores, clay variants)
 - [x] Dependencies: Moonlight Library (Supplementaries), Resourceful Lib (Handcrafted), Fusion (Rechiseled)
 
-### Wave 7 — Space Exploration (~1 mod)
+### Wave 7 — Space Exploration (1 mod)
 
-- [x] Stellaris 1.4.23 as core space mod
+- [x] Northstar Redux 0.6.4 as core space mod (Create-based; no worldgen; no new deps — Create 6.0+ and GeckoLib already present)
+- [x] TFMG fuel compat is native — no compatibility bridge needed
 
-- [x] Dependency: Potentials API
-- [x] ~~TFMG-Stellaris Compatibility~~ removed (not needed, Stellaris has native fuel system)
+### Wave 8 — Programmable Computers (removed Aug 2026)
 
-### Wave 8 — Programmable Computers (1 mod)
-
-- [x] CC:Tweaked added as programmable computer mod (Modrinth — dev-recommended platform for NeoForge builds)
-- [x] KubeJS recipe script: `kubejs/server_scripts/wave8_cc_tweaked.js` — gates turtles (TFMG steel), Advanced Computer (Mekanism Enriched Alloy), Wireless Modem (Create brass)
-- [x] Config override: `config/computercraft-server.toml` — HTTP disabled, command computers disabled, turtle fuel limit 200000
-- [x] GUIDE.md Wave 8 section written — mod table, config, Lua tutorial (shell, editor, syntax primer, event loop, peripherals, turtles, redstone, wireless networking, 5 integration scripts), interdependency notes, 7-session plan
-- [x] FTB Quests: 6 CC:Tweaked quests in new "Programmable Computers" chapter
+- [x] Wave 8 (Programmable Computers) removed from the modlist on 2026-08-20 — see the Space Mod Swap section above.
 
 ### Design choices
 
@@ -234,7 +232,7 @@ PUT 90.*:
 - [x] Skipped Hybrid Delights (no NeoForge 1.21.1), Jungle Treehouse Village (no NeoForge 1.21.1), The Bumblezone (dimension overload — 4th dimension doesn't integrate with progression)
 - [x] Switched all mod links from Modrinth to CurseForge (July 2026)
 - [x] Updated installation instructions to use XMCL instead of GDLauncher (July 2026)
-- [x] Removed TFMG-Stellaris Compatibility (not on CurseForge, Stellaris has native fuel system)
+- [x] TFMG fuel compat handled natively by the space mod — no compatibility bridge needed
 - [x] Added Advanced Finders + Advanced Chimneys to Wave 1 (Mekanism addons for ore detection and factory smoke)
 - [x] Added ForgeEndertech as dependency for Advanced Finders and Advanced Chimneys
 - [x] Removed Regions Unexplored (FPS concerns with Terralith/Tectonic overlap, no global-tag structure compat)
