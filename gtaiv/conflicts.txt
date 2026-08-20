@@ -1,8 +1,9 @@
 # Enhanced Liberty — Mod Conflict Registry
 # Format: <mod_a> | <mod_b> | <issue> | <resolution>
 
-# This file tracks known incompatible mod pairs and their resolutions.
-# Entries are added as conflicts are discovered during mod testing.
+# Entries added 2026-08-20 (mod curation):
 
-# Example:
-# ProjectileFix | RealisticWeapons | Weapon damage overrides | Use RealisticWeapons, disable ProjectileFix
+# ZolikaPatch | FusionFix | Overlapping bugfix/QoL features (~30 options duplicate FusionFix) | Excluded from list — use FusionFix only
+# IV Centered Vehicle Cam | FusionFix | Merged into FusionFix | Redundant — do not install separately
+# IV Centered OnFoot Cam | FusionFix | Merged into FusionFix | Redundant — do not install separately
+# GTAIV.EFLC.FusionShaders | FusionFix | Shader source repo of FusionFix | Not a separate mod — shipped inside FusionFix

@@ -2,75 +2,75 @@
 
 ## Prerequisites
 
-- A legitimate copy of GTA IV (Steam or retail)
-- GTA IV must be patched to **version 1.0.8.0** (November 29, 2016)
-- ~20 GB free disk space
-- Windows 7 or later
+- A legitimate copy of GTA IV — Steam "Grand Theft Auto IV: The Complete Edition" (v1.2.0.30+), Rockstar Games Launcher, or a retail copy.
+- Target patch: **1.0.8.0** (the modlist's compatibility target).
+- ~20 GB free disk space.
+- Windows 7 or later (Windows 10/11 recommended).
 
-## Step 1: Clean Installation
+## Step 1: Install GTA IV
 
-If you already have GTA IV installed, verify your version:
+Install the game normally (Steam or Rockstar Games Launcher). The Complete Edition ships as 1.2.0.30+; the modlist targets **1.0.8.0**, so most players downgrade first (Step 2).
 
-1. Right-click `GTAIV.exe` → Properties → Details
-2. File version should read `1.0.8.0`
+## Step 2: Downgrade to 1.0.8.0 (Complete Edition owners)
 
-### Downgrading (if needed)
+Use the [GTA IV Downgrader](https://github.com/ClonkAndre/GTAIVDowngrader) by ClonkAndre (v2.2):
 
-If you are on a newer version (e.g., Complete Edition) you will need to downgrade. Follow the [GTA IV Downgrade Guide](https://gtaforums.com/topic/980300-guide-downgrading-gta-iv-from-1020-to-1080/) to get to 1.0.8.0.
+1. Download the latest release from [GitHub](https://github.com/ClonkAndre/GTAIVDowngrader/releases) (also on [Nexus Mods](https://www.nexusmods.com/gta4/mods/516) and [GTAForums](https://gtaforums.com/topic/976691-gta-iv-downgrader)).
+2. Run the tool and point it at your GTA IV installation.
+3. In the version-selection step, choose **1.0.8.0** (selected by default).
+4. Recommended: enable the **radio downgrade** to restore the songs cut from the Complete Edition (see Wave 1 → Audio).
+5. Complete the downgrade. The tool offers automatic backup and an optional `commandline.txt`.
 
-### Clean Install
+If you already own a retail copy patched to 1.0.8.0, skip this step.
 
-1. Uninstall any existing GTA IV installation
-2. Delete the remaining GTA IV folder (usually `C:\Program Files (x86)\Rockstar Games\Grand Theft Auto IV`)
-3. Delete `Documents\Rockstar Games\GTA IV` (backup saves first)
-4. Reinstall GTA IV
-5. Patch to 1.0.8.0 if your installer doesn't include it
+## Step 3: FusionFix (required for both waves)
 
-## Step 2: FusionFix Installation
+[FusionFix](https://github.com/ThirteenAG/GTAIV.EFLC.FusionFix) by ThirteenAG (**v5.0.1**) is the base compatibility, bug-fix, and QoL framework.
 
-[FusionFix](https://github.com/ClonkAndre/GTAIVFusionFix/) is a comprehensive compatibility and bug-fix framework. It is **required** for both waves.
+> **Important:** FusionFix fully supports the Complete Edition. On **1.0.8.0** it additionally requires the **Legacy Addon**.
 
-**Current tested version:** `v3.18.0`
+1. Download `GTAIV.EFLC.FusionFix.zip` from the [latest release](https://github.com/ThirteenAG/GTAIV.EFLC.FusionFix/releases/latest).
+2. Download `GTAIV.EFLC.FusionFixLegacyAddon.zip` from the same release page.
+3. Extract the main archive to your GTA IV root folder (where the game executable lives), overwriting when prompted.
+4. Extract the Legacy Addon to the same folder, overwriting when prompted.
+5. Launch the game once to verify.
 
-1. Download version v3.18.0 from the [FusionFix releases page](https://github.com/ClonkAndre/GTAIVFusionFix/releases/tag/v3.18.0)
-2. Extract the archive to your GTA IV root folder (where `GTAIV.exe` lives)
-3. When prompted, **overwrite all files**
-4. Launch the game once to verify it works
+FusionFix bundles the [Ultimate ASI Loader](https://github.com/ThirteenAG/Ultimate-ASI-Loader) (ThirteenAG), so no separate ASI loader is needed.
 
 ### Verifying FusionFix is working
 
-- Launch GTA IV
-- You should see the FusionFix version number in the bottom-right corner of the main menu
-- Open the in-game console (~ key) — if it opens, FusionFix is active
+- Launch GTA IV, pause, and open **Settings**. A new FusionFix options screen (Display / Graphics / Game / Audio / Controls) should be present.
+- Quick checks: the **FOV** slider and the **FPS Limiter** are both present and functional.
 
-## Step 3: Mod Installation Order
+## Step 4: Mod Installation Order
 
-When installing mods, always follow this order to avoid conflicts:
+When installing mods, follow this order to avoid conflicts:
 
-1. **FusionFix** — always first (handles compatibility)
-2. **Script hook / mod loaders** — any dependencies that mods require
-3. **Graphics mods** — ENB, textures, lighting (applied last to avoid overwrites)
-4. **Content mods** — vehicles, weapons, map additions
-5. **Mechanics mods** — physics, AI, damage models
-6. **Audio mods** — radio, sound effects
-7. **Configuration edits** — `.ini` and `.xml` tweaks
+1. **FusionFix** (+ Legacy Addon) — always first.
+2. **Script frameworks** — IV-SDK .NET (Wave 1) and any dependency mods.
+3. **Graphics mods** — texture packs, shaders (applied last to avoid overwrites).
+4. **Content mods** — vehicles, weapons, map additions.
+5. **Mechanics mods** — physics, AI, damage models.
+6. **Audio mods** — radio, sound effects.
+7. **Configuration edits** — `.ini` and `.xml` tweaks.
 
-## Step 4: First Launch
+## Step 5: First Launch
 
-1. Launch `GTAIV.exe` (or `PlayGTAIV.exe` depending on your install)
-2. Go to **Graphics** settings and set:
-   - Resolution: your monitor's native
-   - Texture Quality: High
-   - View Distance: 30-40 (adjust based on performance)
-3. Go to **Controls** and configure key bindings to your preference
-4. Start a new game to verify everything works
+1. Launch the game executable.
+2. Open **Graphics** settings and set:
+   - Resolution: your monitor's native resolution.
+   - Texture Quality: High.
+   - View Distance: 30–40 (adjust for performance).
+3. Open **Controls** and configure bindings to preference.
+4. Start a new game to verify everything works.
 
 ## Troubleshooting
 
 | Problem | Solution |
 |---------|----------|
-| Game crashes on startup | Verify FusionFix is installed correctly. Check `Documents\Rockstar Games\GTA IV\Logs\` |
-| Black screen on launch | Try windowed mode (`-windowed` launch parameter) |
-| Low FPS | Reduce View Distance and Shadow Quality in graphics settings |
-| Missing textures | Set Texture Quality to High or Medium |
-| Controls not working | Verify control bindings in Settings → Controls, then reinstall FusionFix |
+| Game crashes on startup | Confirm FusionFix **and** the Legacy Addon are installed (1.0.8.0 needs both). Check `Documents\Rockstar Games\GTA IV\` for logs. |
+| No FusionFix menu in Settings | The Legacy Addon is missing, or the wrong game version was selected during downgrade. |
+| Black screen on launch | Try windowed mode (`-windowed` launch parameter). |
+| Low FPS | Reduce View Distance and Shadow Quality; lower the FusionFix FPS limiter. |
+| Missing textures | Set Texture Quality to High or Medium. |
+| Controls not working | Verify bindings in Settings → Controls, then reinstall FusionFix. |

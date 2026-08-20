@@ -21,14 +21,16 @@ for (const file of files) {
   // Convert markdown heading syntax (# ## ###) to Typst heading syntax (= == ===)
   // Must handle carefully: not all # are headings (e.g., in code blocks or tables)
   // Process line by line
-  const lines = content.split('\n');
+  const lines = content.split(/\r\n|\r|\n/);
   const converted = lines.map(line => {
     // Only convert # at the start of a line (after optional whitespace)
     const headingMatch = line.match(/^(\s*)(#{1,6})\s+(.*)$/);
     if (headingMatch) {
       const indent = headingMatch[1];
       const level = headingMatch[2].length;
-      const text = headingMatch[3];
+      let text = headingMatch[3];
+      text = text.replace(/\*\*(.+?)\*\*/g, '*$1*');
+      text = text.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '#link("$2")[$1]');
       const typstPrefix = '='.repeat(level);
       return `${indent}${typstPrefix} ${text}`;
     }
