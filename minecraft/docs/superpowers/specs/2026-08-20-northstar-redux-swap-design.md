@@ -42,13 +42,13 @@ Version pin: **0.6.4** (2026-07-22), latest for 1.21.1 NeoForge. Item/block IDs 
 2. **Wave 7 row**: `Stellaris, Potentials API, Sky Aesthetics` → `Northstar Redux (GeckoLib already in Wave 1)`.
 3. **Totals row**: `178/49/227` → `177/47/224`; append changelog annotation `−Stellaris −Potentials API −Sky Aesthetics −CC:Tweaked +Northstar Redux, Aug 2026`.
 4. **CC:Tweaked removal**: delete the Wave 8 section (mod table, source note, recipe gates table, config table, "Crafting Your First Computer", Lua tutorial ≈3306–3338 and ≈3602+, Integration Recipes section ≈4106+ incl. Stellaris Launch Sequencer, interdependency notes ≈4210–4215, Progression Placement ≈4217+, world-creation step at ≈4263, Wave 8 row, "Program your base" row ≈4365).
-5. **Quest chapter list** (≈2714) and **quest counts** (≈2746–2749): Stellaris → Northstar; total 211 → **210** (17 out, ~16 in).
+5. **Quest chapter list** (≈2714) and **quest counts** (≈2746–2749): Stellaris → Northstar; total 211 → **213** (17 out, 19 in).
 6. **Phase tables** (≈4317–4318): "Stellaris Moon and early planets" → "Northstar Redux Moon and early planets"; "Mars and Glacio space bases" → "Mars and Venus space bases"; drop CC:Tweaked clauses ("CC:Tweaked turtles and wireless automation", "CC:Tweaked cross-mod automation networks").
 7. **Tech-loop row** (≈4363): "Stellaris desh/ostranium → Mekanism 5x" → "Northstar titanium/martian steel → Mekanism 5x".
 
 ## 4. FTB Quests
 
-- **New** `tools/ftbquests/quest_data/northstar.json` — ~16 quests, chapter id `90000000` (replaces Stellaris slot; Main group `20000001`, order_index 9). Item IDs verified from source:
+- **New** `tools/ftbquests/quest_data/northstar.json` — 19 quests (16 milestones + 3 breadcrumbs), chapter id `90000000` (replaces Stellaris slot; Main group `20000001`, order_index 9). Item IDs verified from source:
   - Phase 1 milestones (x=0.0): Space Program (`northstar:rocket_station`), Rocket Parts (`northstar:rocket_thruster` + `northstar:rocket_combustion_chamber` + `northstar:rocket_controls`), Oxygen System (`northstar:oxygen_separator` + `northstar:oxygen_filler` + `northstar:oxygen_sealer`), Space Suit (`northstar:iron_space_suit_helmet` + `northstar:iron_space_suit_chestpiece`), Science Unlocked (`northstar:telescope` + `northstar:astronomical_reading`), First Launch (checkmark), Moon Landing (dimension task `northstar:moon` + fallback checkmark).
   - Phase 2 milestones (x=3.0): Martian Steel (`northstar:martian_steel_ingot`), Mars (item-detect `northstar:mars_stone`), Titanium (`northstar:titanium_ingot`), Mercury (item-detect `northstar:mercury_stone` — [VERIFY] exists, else `northstar:raw_tungsten_ore`), Tungsten (`northstar:tungsten_ingot`), Venus (item-detect `northstar:venus_stone`), Martian Steel Space Suit (`northstar:martian_steel_space_suit_chestpiece`).
   - Phase 3 milestones (x=6.0): Space Atlas (`northstar:space_atlas`), Interplanetary Empire (checkmark).
@@ -69,7 +69,7 @@ Version pin: **0.6.4** (2026-07-22), latest for 1.21.1 NeoForge. Item/block IDs 
 
 ## 6. STATUS.md
 
-- New entry under Added/Removed: Stellaris → Northstar Redux 0.6.4 (reason: worldgen), CC:Tweaked removed (user request), deps Potentials API + Sky Aesthetics removed, totals 178/49/227 → 177/47/224, quest total 211 → 210. Note the compat-mod audit result (no Stellaris addons/compat mods present; TFMG-Stellaris Compatibility already removed earlier).
+- New entry under Added/Removed: Stellaris → Northstar Redux 0.6.4 (reason: worldgen), CC:Tweaked removed (user request), deps Potentials API + Sky Aesthetics removed, totals 178/49/227 → 177/47/224, quest total 211 → 213. Note the compat-mod audit result (no Stellaris addons/compat mods present; TFMG-Stellaris Compatibility already removed earlier).
 - Update the "Dependency Audit (Aug 2026 — Stellaris × Sky Aesthetics)" block: mark superseded (Sky Aesthetics + Potentials removed with Stellaris).
 - Update Wave 7 and Wave 8 sections; note the pending in-game verification item (Northstar quest detection + dimension IDs at next launch).
 
