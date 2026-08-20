@@ -168,33 +168,38 @@ The essentials that make the game run well. Dependencies, performance, rendering
 
 | Shaderpack | Description                                                                                                   |
 |---------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| [Bliss Shaders](https://modrinth.com/shader/bliss-shader)                                         | Main shader — fantasy-styled Chocapic13 V9 edit; scene variation, LabPBR + Distant Horizons support, iris-native |
+| [Solas Shader](https://modrinth.com/shader/solas-shader)                                           | Main shader — modern fantasy look by Septonious; colored lighting, ray-marched volumetrics, generated PBR + Distant Horizons support, iris-native |
 
-**Bliss Shaders** is the pack's main shader (X0nk's large edit of Chocapic13 V9) — a well-performing fantasy look built around scene variation and customization. Runs on Iris (NeoForge) with zero extra mods. Use **v2.1.0+** — required for full Distant Horizons support (DH LODs render through the shader pipeline). Quality presets run Low → Medium → High; colored lighting; LabPBR support (specular f0/reflectance, roughness/metalness, subsurface scattering, emissive, parallax occlusion) when the active resource pack ships PBR maps.
+**Solas Shader** is the pack's main shader (Septonious) — a modern fantasy-stylized look: smooth, saturated lighting, 3D volumetric clouds, volumetric light, colored block lighting, aurora/Milky Way skies, and an integrated generated-PBR system. Runs on Iris (NeoForge) with zero extra mods. Use **V3.7** — Distant Horizons support is native (dedicated LOD programs, no shader-side setup; V3.7 fixed DH/Voxy translucency blending). Quality profiles run Low → Medium → **High (default)** → Ultra; LabPBR/SEUS resourcepack PBR is supported alongside the internally generated PBR.
 
-> **PBR note**: Faithful 32x (the base layer) ships no PBR maps, so Bliss's LabPBR features idle on the base textures — the flat 32x look is the intended baseline. Pack-provided PBR maps (Fire Rekindled's Normal/Specular, RAY's 3D Rails' shader support) still apply where present.
+> **PBR note**: Faithful 32x (the base layer) ships no PBR maps, so Solas's **generated PBR** (on by default at High) provides the depth on vanilla blocks — the flat 32x look remains the intended baseline. Pack-provided maps (Fire Rekindled's Normal/Specular, RAY's 3D Rails' shader support) only apply when **PBR → Material → Advanced Materials** is enabled (Material Format: **LabPBR 1.3**, the default). If you enable it, also turn **Generated Specular** OFF — the shader's own warning says not to use it with an external PBR resourcepack (only a handful of blocks carry maps, so this is a small, optional win).
 
-**Recommended baseline (NVIDIA RTX 4080 SUPER, 16GB VRAM, 4K — target stable 70-80 FPS)**: start with the **High** quality preset and the shader's defaults. If FPS dips below 70: drop the preset one step, then reduce Shadow Resolution to **1024**, then Shadow Distance to **8 chunks** (see Distant Horizons below).
+**Recommended baseline (NVIDIA RTX 4080 SUPER, 16GB VRAM, 4K — target stable 70-80 FPS)**: start with the **High** profile — the shader's own default — and keep its settings. If FPS dips below 70: reduce **Colored Lighting (Voxel Volume Size)** 192 → 128, then **Volumetric Light Samples** 8 → 7, then **Shadow Resolution** 2048 → 1024, then **Shadow Distance** 192 → 128 (see the table below).
 
-#### Bliss Shader Settings — Recommended
+#### Solas Shader Settings — Recommended
 
-Start from the **High** preset, then apply the table below. All options are in the shader's own settings screen: Options → Video Settings → Shaderpacks → Bliss → **Shader Settings**. Values are tuned for the pack's target (RTX 4080 SUPER, 4K, 70–80 FPS, DH LODs at 128–256).
+Start from the **High** profile (the shader's default), then apply the table below. All options are in the shader's own settings screen: Options → Video Settings → Shaderpacks → Solas Shader → **Shader Settings** (profile picker at the top; screens: Atmospherics, Water, PBR, Lighting, Colors, Cinematic Effects & Post Processing, Other). Values are tuned for the pack's target (RTX 4080 SUPER, 4K, 70–80 FPS, DH LODs at 128–256).
 
 | Settings screen | Option | Recommended | Why |
 |---|---|---|---|
-| **Ambient Light** | **Indirect Lighting** | **SSAO** (default) | ⚠ the one that matters — see note below |
-| Ambient Light | AO Multiplier | 1.0 (default) | baseline occlusion strength |
-| Ambient Light | GI Multiplier | 1.0 (default) | only affects SSRT modes |
-| Ambient Light | Long Range Marching (SSRT) · High Quality Ambient Light (SSRT) · sample 1/4 resolution depth (SSRT) | leave at defaults | SSRT-only toggles — inert while Indirect Lighting = SSAO |
-| Direct Light → Shadows | Shadow Resolution | 2048 (default) → **1024** if FPS < 70 | documented baseline lever |
-| Direct Light → Shadows | Shadow Distance | 8 chunks (128) | DH handles far shading; drop to 8 if needed |
-| Direct Light → Shadows | Shadows for Entities | ON | your own shadow always renders |
-| Post Processing → Anti-Aliasing | TAA | ON (default) | SSAO sampling is temporal — TAA is what cleans the dither |
-| Post Processing → Anti-Aliasing | Temporal Upscaling | leave at defaults | free 4K headroom: renders lower, TAA-upscales; keep Scale Factor ≥ 0.75 |
-| Mod Support → Distant Horizons | ambient occlusion on LOD chunks · sub-surface scattering · screen-space reflections | ON (defaults) | LODs render through the shader pipeline |
-| Mod Support → Distant Horizons | DH shadowmap support | **OFF — never enable** | shader's own red warning: destroys performance, blocky/flickery shadows |
+| (shader settings top) | **Profile** | **High** (default) | Solas's shipped default — volumetric clouds, volumetric light, generated PBR, aurora. Ultra's extras (entity shadows, 4096 shadow maps) blow the 70–80 FPS 4K budget for little visible gain |
+| Lighting | Colored Lighting (Voxel Volume Size) | 192 (default) → **128** if FPS < 70 | voxelization distance for colored lighting — the shader's own warning: "higher values greatly decrease performance". First lever |
+| Lighting → Shadows Config | Shadow Resolution | 2048 (default) → **1024** if FPS < 70 | the classic first shadow lever (1024 = Medium profile's value) |
+| Lighting → Shadows Config | Shadow Distance | 192 (default) → **128** if needed | DH shades the distance anyway (128 = Medium's value) |
+| Lighting → Shadows Config | Entity Shadows | OFF (default) | Ultra-only feature; the player's own shadow always renders regardless |
+| Lighting | Screen Space Shadows | **ON** (default) | ⚠ the DH-relevant one — shadows keep rendering past the realtime distance; the shader's own comment: "Very useful with Voxy and Distant Horizons" |
+| Lighting | Screen Space AO (SSAO) | ON (default) | baseline occlusion; AO Strength 1.0 |
+| Atmospherics → Volumetric Light Config | Volumetric Light | ON (default) | sun rays — Solas signature |
+| Atmospherics → Volumetric Light Config | Samples | 8 (default) → **7** if FPS < 70 | ray samples per frame (7 = Medium's value) |
+| Atmospherics → Volumetric Clouds Config | Volumetric Clouds | ON (default) | 3D clouds — the pack's sky. Last resort if FPS < 70: turn OFF, or drop Render Distance 400 → 200 |
+| PBR → Integrated PBR | Generated Normals · Generated Specular · Generated Emission | ON (defaults) | procedural depth on Faithful's flat 32x — the intended baseline |
+| Water | Water Reflections · Normals (Perlin-Worley) · Caustics · Light Refraction | ON (defaults) | Solas water look; all cheap at 4K |
+| Cinematic Effects & Post Processing | TAA | ON (default) | temporal SSAO / screen-space-shadows cleaner |
+| Cinematic Effects & Post Processing | FXAA | OFF (default) | TAA supersedes it |
+| Cinematic Effects & Post Processing | Depth of Field · Motion Blur | OFF (defaults) | keep off — build & mine clarity, and both cost frames at 4K |
+| Cinematic Effects & Post Processing | Bloom · Lens Flare | ON (defaults) | cheap; part of the signature glow |
 
-> **Indirect Lighting — user-tested rule**: keep it on **SSAO**. Any other mode — **GTAO**, **SSRT (AO only)**, **SSRT (AO + GI)** — introduces visible noise in the distance. Bliss's own UI marks both SSRT modes "LOTS OF VISUAL NOISE", and screen-space techniques can't sample DH LOD geometry, so distant areas get the noisy fallback; SSAO is the only mode with a dedicated Distant Horizons code path. If you want the GI look, only run it indoors/in caves — expect noise in open terrain. (If you ever see dithering noise specifically on LOD chunks even on SSAO, the DH settings screen has a noise texture — NOISE_INTENSITY / NOISE_DROPOFF.)
+> **Distant Horizons — no shader-side setup**: unlike Bliss, Solas has no DH settings screen — DH support is native (the shader ships dedicated `dh_terrain`/`dh_water` LOD programs, and V3.7 fixed DH/Voxy translucency blending). Two options interact with LODs: **Screen Space Shadows ON** (above — shades LOD terrain past the realtime shadow distance) and **PBR → Material → Specular & Reflections → LOD Reflection: Fancy (default)** — "determines the quality of DH and Voxy chunks in reflections". DH cloud rendering stays OFF (shader default) — Solas draws its own volumetric clouds. If you ever see dithering noise on LOD chunks, the DH settings screen's noise texture (NOISE_INTENSITY / NOISE_DROPOFF) still applies.
 
 **General MC settings**: Graphics **Fancy**, Render Distance **10 chunks**, Simulation Distance **8 chunks**, Biome Blend **2 blocks**, Mipmap Levels **4x**, Entity Distance **100%**, Fullscreen ON, VSync OFF, Max Framerate **120**. Always Defer Chunk Updates **Enabled**, Use No Error Context **Enabled**.
 
@@ -317,11 +322,11 @@ Open **Video Settings → [colored tiles icon]** next to the FOV slider.
 
 #### 3. Shader Setup
 
-Drop **Bliss Shaders** `.zip` into `shaderpacks/`. In-game: Options → Video Settings → Shaderpacks → select Bliss. Works with Iris on NeoForge. Use **v2.1.0+** for full Distant Horizons support.
+Drop **Solas Shader** `.zip` into `shaderpacks/`. In-game: Options → Video Settings → Shaderpacks → select Solas Shader. Works with Iris on NeoForge. Use **V3.7** — current release with native Distant Horizons support and ColorWheel compatibility fixes.
 
-Bliss needs no add-on mods — it fully replaces the previous Complementary Unbound + Euphoria Patches setup.
+Solas needs no add-on mods — it fully replaces the previous Complementary Unbound + Euphoria Patches setup.
 
-Recommended baseline (RTX 4080 SUPER, 16GB VRAM): High preset, tune from there — see the [Bliss Shader Settings](#bliss-shader-settings--recommended) table in [Shaderpack](#shaderpack) above (incl. the **Indirect Lighting = SSAO** rule). General MC: Graphics Fancy, Render Distance 10, Simulation 8, VSync OFF.
+Recommended baseline (RTX 4080 SUPER, 16GB VRAM): High profile, tune from there — see the [Solas Shader Settings](#solas-shader-settings--recommended) table in [Shaderpack](#shaderpack) above (incl. the **Screen Space Shadows ON** rule for DH). General MC: Graphics Fancy, Render Distance 10, Simulation 8, VSync OFF.
 
 ---
 
@@ -667,7 +672,7 @@ Forces villages to spawn on flat terrain. No more cliff-side or underwater villa
 
 | Session                         | Goal                                                                                                                                                                                               |
 |---------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Session 1 — Setup**           | Launch, set keybinds, configure Distant Horizons (LOD 128-256, Medium quality). Install Bliss shader. Enable Fresh Animations texture pack. Walk around spawn to generate LOD data |
+| **Session 1 — Setup**           | Launch, set keybinds, configure Distant Horizons (LOD 128-256, Medium quality). Install Solas shader. Enable Fresh Animations texture pack. Walk around spawn to generate LOD data |
 | **Session 2 — Survival basics** | Punch trees, build a starter shack, find food, get iron. Place your first Waystone. Craft a Sophisticated Storage barrel. Craft a backpack                                                         |
 | **Session 3 — Comfort**         | Explore nearby terrain. Find a village. Set up a bed. Light up your base perimeter. Start noticing Traveler's Titles when entering new biomes                                                      |
 
@@ -1180,7 +1185,7 @@ These schematics complement the Driftwood progression. All are free Litematica-f
 - **Forgematica × MineColonies**: Castle and wall schematics make excellent colony defense perimeters. Wall + Tower (ID:8559) segments can be tiled to enclose an entire colony. Rebuild colony buildings inside them for a unified architectural style.
 - **Forgematica × AE2**: The Warehouse Auto-sorting schematic (ID:11682) is designed for pre-AE2 storage. Once you transition to ME drives, repurpose it as bulk item overflow or decorative archive hall.
 - **Forgematica × Apotheosis**: The Wizard Watchtower (ID:12509) includes space for an enchanting setup — drop your Apotheosis enchanting table and bookshelves in the top room.
-- **Shader caveat**: Forgematica hologram rendering may flicker with Bliss shaders. Toggle shaders off (`K`) while placing schematics, then re-enable. The 1.21.1 compatibility is better than newer MC versions — distortion is usually minor.
+- **Shader caveat**: Forgematica hologram rendering may flicker with Solas shaders. Toggle shaders off (`K`) while placing schematics, then re-enable. The 1.21.1 compatibility is better than newer MC versions — distortion is usually minor.
 - **Survival constraint**: Forgematica is purely a visual guide. No blocks are auto-placed. Every resource must be gathered and placed by the player in survival mode. This respects the pack's survival-only constraint.
 
 **Install**: In XMCL, search `Forgematica` in the Mods tab, or download the `.jar` from CurseForge and drop into `mods/`. Create a `schematics/` folder in your instance directory, then drop downloaded `.litematic` files there. Forgematica will pick them up automatically on next launch.
@@ -1820,7 +1825,7 @@ A cozy bee-themed dimension entered directly from any **bee nest or beehive** �
 - **Neo Bee Fix** (Wave 4) — its vanilla bee AI repairs apply inside the dimension too (Bumblezone's bees are vanilla bees at heart)
 - **Farmer's Delight** — honey, royal jelly, and bee bread feed FD honey recipes (e.g., Honey Glazed Ham)
 - **Field Guide** — auto-catalogs Bumblezone mobs and plants
-- **Bundled resource packs** (from the mod, enable in Resource Packs): **Bumblezone - Shader Emissive** for glowing blocks under Bliss (works with ETF/Continuity now in the pack); **Bumblezone - Anti Tripophobia** replaces the trippy honey patterns with plain textures — enable if they bother you
+- **Bundled resource packs** (from the mod, enable in Resource Packs): **Bumblezone - Shader Emissive** for glowing blocks under Solas (works with ETF/Continuity now in the pack); **Bumblezone - Anti Tripophobia** replaces the trippy honey patterns with plain textures — enable if they bother you
 
 **Chill fit**: fully opt-in, no gates, no structure hunting — enter any hive whenever you like. Honey/wax builds a cozy supply chain; deeper structures (Mite Fortress) reward mid-game gear.
 
@@ -3399,7 +3404,7 @@ All mods installed and every wave configured — here's how to start a proper wo
 | Wave 5 — Combat & Mobs          | 6       | 5      | 11      | Better Combat, L_Ender's Cataclysm, Enchantment Descriptions, Create Big Cannons + Advanced Technologies addon, Torchmaster                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | Wave 6 — Building               | 11      | 3      | 14      | Rechiseled, Supplementaries, Macaw's (4), Building Wands, Handcrafted, Fetzi's Displays, Lili's Pottery, Laser Bridges & Doors, Diagonal Fences + Rechiseled: Create, Rechiseled: AE2 + Moonlight, Resourceful, Fusion                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | Wave 7 — Space Exploration      | 1       | 0      | 1       | Northstar Redux (Create 6.0+ and GeckoLib already in pack — no new dependencies; no worldgen structures)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| **Total**                       | **181** | **47** | **228** | All confirmed NeoForge 1.21.1 (−Stellaris −Potentials API −Sky Aesthetics −CC:Tweaked +Northstar Redux, Aug 2026; +Real Camera; Day Counter Plus reverted — Day Counter + Hud Texts restored; +BetterGrassify + Forgified Fabric API + Sky Aesthetics; +Serene Seasons Plus + GlitchCore + Gabou's Libs - Chunky - When Dungeons Arise - Structory: Towers, Aug 2026; +Smarter Farmers (Sodium Extras + Sodium Options API removed Aug 2026 — broken dep chain on NeoForge 1.21.1) + Diagonal Fences + Create: Café, Aug 2026 mod review; +FastWorkbench + MoreCulling + BadOptimizations + Searchables + Loot Beams Refork + Nirvana Library + Common Network + Auto HUD + Create Central Kitchen + Spice of Life Carrot + Apothic Compats + Bliss shader, Aug 2026 weapon-QoL review; -Create: Misc and Things, removed by user; +Modern UI -Smooth GUI -Tooltip Overhaul -Controlling -Immersive UI -Smooth Font texture pack -First Person Model, Aug 2026 Modern UI adoption; +EMF +ETF +Continuity +Sinytra Connector +Cull Leaves +9 resource packs −Patrix +Faithful, Aug 2026 resource pack review; −Complementary Unbound −Euphoria Patches +Bliss as main shader, Aug 2026 shader swap; +Rekindled CTM (Fire Rekindled CTM addon), Aug 2026; +Faithful 32x AppleSkin Addon, Aug 2026; +Mod Descriptions (Field Guide companion), Aug 2026; +Bumblezone +Resourceful Lib, Aug 2026; −The RCP (1.21.1 pack_format incompatible), Aug 2026) |
+| **Total**                       | **181** | **47** | **228** | All confirmed NeoForge 1.21.1 (−Stellaris −Potentials API −Sky Aesthetics −CC:Tweaked +Northstar Redux, Aug 2026; +Real Camera; Day Counter Plus reverted — Day Counter + Hud Texts restored; +BetterGrassify + Forgified Fabric API + Sky Aesthetics; +Serene Seasons Plus + GlitchCore + Gabou's Libs - Chunky - When Dungeons Arise - Structory: Towers, Aug 2026; +Smarter Farmers (Sodium Extras + Sodium Options API removed Aug 2026 — broken dep chain on NeoForge 1.21.1) + Diagonal Fences + Create: Café, Aug 2026 mod review; +FastWorkbench + MoreCulling + BadOptimizations + Searchables + Loot Beams Refork + Nirvana Library + Common Network + Auto HUD + Create Central Kitchen + Spice of Life Carrot + Apothic Compats + Bliss shader, Aug 2026 weapon-QoL review; -Create: Misc and Things, removed by user; +Modern UI -Smooth GUI -Tooltip Overhaul -Controlling -Immersive UI -Smooth Font texture pack -First Person Model, Aug 2026 Modern UI adoption; +EMF +ETF +Continuity +Sinytra Connector +Cull Leaves +9 resource packs −Patrix +Faithful, Aug 2026 resource pack review; −Complementary Unbound −Euphoria Patches −Bliss +Solas Shader as main shader, Aug 2026 shader swaps (CU+Euphoria → Bliss → Solas); +Rekindled CTM (Fire Rekindled CTM addon), Aug 2026; +Faithful 32x AppleSkin Addon, Aug 2026; +Mod Descriptions (Field Guide companion), Aug 2026; +Bumblezone +Resourceful Lib, Aug 2026; −The RCP (1.21.1 pack_format incompatible), Aug 2026) |
 
 ---
 
