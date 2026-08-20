@@ -3273,6 +3273,7 @@ In the game instance:
 || **Backpacks**      | Netherite-upgraded backpacks carry oxygen tanks and supplies                                                       |
 || **Food**           | Farmer's Delight meals eatable in space with oxygen present                                                        |
 || **Gear**           | Apotheosis affixes may apply to space suit (if item tags align)                                                    |
+|| **MekaSuit**       | Pending compat bridge — modules make the MekaSuit a space suit once it tracks Redux 0.6.4+                        |
 
 ### Progression Placement
 
@@ -3297,7 +3298,7 @@ Start with Moon missions and a sealed Moon base, then Mars. Mercury and Venus ar
 || **Session 4 — Mars**         | Smelt Martian Steel. Land on Mars, mine martian iron and titanium. Temp base + weapons for hostile mobs | New resources              |
 || **Session 5+ — Deep space**  | Mercury (tungsten, heat). Venus (endgame). Martian Steel Space Suit. Space Atlas + Return Tickets       | Interplanetary logistics   |
 
-**Tip**: Space is the most resource-intensive activity. Don't rush it. Each planet should feel like a meaningful expansion. MekaSuit trivializes spacewalks — jetpack flight + environmental protection = no oxygen worries.
+**Tip**: Space is the most resource-intensive activity. Don't rush it. Each planet should feel like a meaningful expansion. Note: the MekaSuit is **not** a Northstar space suit by default — you still need the Iron/Martian Steel suits for oxygen. The *Mekanism × Create: Northstar* compat mod adds MekaSuit space-suit modules; it's queued for the pack once it tracks Redux 0.6.4+.
 
 ---
 

@@ -12,6 +12,7 @@
 - [x] **Counts**: totals 178/49/227 → **177/47/224**; quests 211 → **212** (17 out, 18 in). GUIDE.md wave table, phase tables, tech-loop rows, quest chapter list updated.
 - [x] **Instance swap checklist** delivered in GUIDE.md (remove the old space-mod jars; add northstar-redux 0.6.4; do not install the Structures addon). Existing worlds keep inert Stellaris blocks and lose its items — fresh world recommended.
 - [ ] **Pending in-game verification** (post instance swap): (1) quest book — Northstar chapter renders, crafted items detect; (2) craft Rocket Station → quest completes; (3) reach the Moon → Moon Landing completes (if the `northstar:moon` dimension task errors, report back — escape hatch: item-only task, item IDs are verified); (4) EMI recipe review; (5) after any Northstar update, re-run `generate.py`/`validate.py`.
+- [ ] **Compat pending — Mekanism × Create: Northstar** (Wolfieboy09, 1.21.1 NeoForge) — MekaSuit space-suit modules (Space Suit Unit, Oxygen Tank Unit, Oxygen Tank Expansion, Space Suit Insulation, Heat Resistive Unit) + Mekanism liquid O₂/H₂ as rocket fuel + liquid-O₂ life support. Latest 1.21.1 build (1.2.0) targets Redux 0.6.1; we pin 0.6.4 — the author's own issues confirm Redux updates break the bridge until a matching build ships. Add when a 0.6.4+ build lands; no new deps (Mekanism + Redux both in pack).
 
 ### Modern UI Adoption & UI Cleanup (Aug 2026)
 
