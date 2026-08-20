@@ -27,7 +27,7 @@
 [x] 21. AMS2 (automobilista-2)
 [x] 22. F1 25
 [x] 23. GTA IV
-[ ] 24. GTA V
+[x] 24. GTA V
 [ ] 25. Monster Hunter Rise
 [x] 26. No Man's Sky
 [ ] 27. Oxygen Not Included

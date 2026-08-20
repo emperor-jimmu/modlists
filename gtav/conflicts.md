@@ -14,11 +14,31 @@ Use this file to track mods that cannot coexist in the same wave.
 
 ## Wave 0 Conflicts
 
-*None documented yet.*
+### HeapAdjuster + Packfile Limit Adjuster
+- **Category conflict:** None — they patch different engine limits (memory heap vs packfile count).
+- **Wave:** 0
+- **Resolution:** Install both; they are designed to coexist.
+- **Status:** Resolved (compatible by design)
 
 ## Wave 1 Conflicts
 
-*None documented yet.*
+### VisualV + NaturalVision Evolved (NVE)
+- **Category conflict:** Same files — both rewrite timecycles, lighting, weather, and colour grading.
+- **Wave:** 1
+- **Resolution:** Choose one. VisualV is the adopted vanilla-plus base; NVE is a photorealism alternative. Never both.
+- **Status:** Resolved (VisualV adopted, NVE excluded)
+
+### IVPack + World of Variety (WoV)
+- **Category conflict:** Same spawn-config files (`popgroups.ymt`, `popcycle.dat`, `vehiclemodelsets.meta`).
+- **Wave:** 1
+- **Resolution:** WoV rejected (also deprecated). Use IVPack with Dispatch of Variety.
+- **Status:** Resolved (WoV rejected)
+
+### Drive V + Manual Transmission
+- **Category conflict:** Partial — both touch vehicle behaviour (handling vs transmission).
+- **Wave:** 1
+- **Resolution:** Designed to coexist (different systems), but check each mod's `.ini` if handling feels wrong.
+- **Status:** Resolved (compatible, verify config)
 
 ## Cross-Wave Conflicts
 

@@ -38,12 +38,14 @@ The most common paths:
 
 == ScriptHookV
 
-#link("http://dev-c.com/gtaiv/scripthookv/")[ScriptHookV] is required by almost every mod.
+#link("http://www.dev-c.com/gtav/scripthookv/")[ScriptHookV] is required by almost every mod.
 
-1. Download ScriptHookV (v1.73 compatible version)
-2. Extract *ScriptHookV.dll* and *dsound.dll* into your GTA V root folder
-3. Download #link("https://github.com/crosire/scripthookvdotnet")[ScriptHookVDotNet] if a mod requires it
+1. Download ScriptHookV (v3889.0, compatible with Legacy 1.0.3889.0)
+2. Extract *ScriptHookV.dll* and *dinput8.dll* into your GTA V root folder
+3. Download #link("https://github.com/scripthookvdotnet/scripthookvdotnet")[ScriptHookVDotNet] if a mod requires it
 4. Extract the .asi and .dll files into the same folder
+
+*Note:* For game version 1.0.3258.0 and later (which includes Legacy 1.0.3889.0), use the ScriptHookVDotNet *nightly* build (v3.6.0-nightly.89 or later) — the stable v3.6.0 and v3.5.1 have a compatibility bug on newer game versions.
 
 *Verify:* Launch the game. If you see the ScriptHookV loading text in the top-left corner, it's working.
 
@@ -51,14 +53,14 @@ The most common paths:
 
 ASI mods use the OpenIV.asi loader:
 - Copy the *.asi* file to your GTA V root folder (*not* the *mods* folder)
-- ScriptHookV's *dsound.dll* acts as the ASI loader — no extra steps needed
+- ScriptHookV's *dinput8.dll* acts as the ASI loader — no extra steps needed
 
 == Safety Checklist
 
 Run through this checklist before starting the game with new mods:
 
 - [ ] Mods folder exists and is named *mods* (not *mods_off*)
-- [ ] ScriptHookV.dll and dsound.dll in game root
+- [ ] ScriptHookV.dll and dinput8.dll in game root
 - [ ] All mod files installed to correct paths
 - [ ] Backups created for any replaced .rpf files
 - [ ] GTA Online not launched with mods active (rename the *mods* folder to *mods_off* before launching Online)

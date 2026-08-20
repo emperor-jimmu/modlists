@@ -30,6 +30,6 @@ Wave 1 mods often require additional frameworks:
 == Gameconfig.xml
 
 Many graphics and content mods require a custom *Gameconfig.xml* to increase memory limits:
-1. Download a v1.73-compatible Gameconfig.xml
+1. Download a 1.0.3889.0-compatible Gameconfig.xml
 2. Install to: `/mods/update/update.rpf/common/data/gameconfig.xml`
 3. Without this, the game crashes when loading heavy mods

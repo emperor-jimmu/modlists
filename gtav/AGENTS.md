@@ -1,6 +1,6 @@
 # Santos Supreme — Agent Instructions
 
-This project produces a curated GTA V v1.73 modlist and game guide called **Santos Supreme**, organized into progressive waves with roleplaying backstories.
+This project produces a curated GTA V Legacy modlist and game guide called **Santos Supreme**, organized into progressive waves with roleplaying backstories.
 
 ## Project structure
 - `guide/wave0/` — Wave 0 "Getting By": vanilla+/first playthrough. UI/QoL mods only.
@@ -11,7 +11,7 @@ This project produces a curated GTA V v1.73 modlist and game guide called **Sant
 - `mod-ideas.md` — Future mod ideas (NOT in PDF).
 
 ## Mod rules
-- All mods must be compatible with GTA V v1.73 (July 14, 2026).
+- All mods must be compatible with GTA V Legacy 1.0.3889.0 (July 14, 2026 update).
 - No conflicting mods (same .rpf or ScriptHookV hook = conflict).
 - No porn. Adult/nude allowed where relevant with per-mod user approval.
 - No cheating/overpowered/all-knowing mods.
