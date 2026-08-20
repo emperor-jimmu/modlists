@@ -2,6 +2,15 @@
 
 ## Completed
 
+### Added Mods (Aug 2026 — Bumblezone Re-adopted)
+
+- [x] **The Bumblezone v7.15.3+1.21.1-neoforge re-added** (Wave 2 — Dimensions) — user request (was installed in the instance but undocumented; user confirmed it should be part of the pack). Reverses the Jul 2026 skip ("dimension overload — 4th dimension doesn't integrate with progression"); user instruction supersedes the prior policy call (precedent: Day Counter Plus override). NeoForge 1.21.1 build verified via Modrinth API, updated 2026-07-31, 3.85M DL, All Rights Reserved, client+server. [Modrinth](https://modrinth.com/mod/the-bumblezone)
+- [x] **Dependency audit** — the current 1.21.1 NeoForge build requires **only Resourceful Lib** (MIT, 32.9M DL, NeoForge 1.21.1 ✅). The old Wave 7 spec's MidnightLib requirement is outdated — no longer needed. Bumblezone's **optional** dep (Better Advancements) is already in the pack (Wave 0.5). Counts: 181→**182** mods, 47→**48** deps, 228→**230** total (Wave 2 34→35 / 7→8 / 41→44).
+- [x] **Fit notes**: cozy, fully opt-in dimension (enter by right-clicking any bee nest/hive — no structure hunting) fits the chill pillar; vanilla-bee AI repaired by Neo Bee Fix (Wave 4) applies inside; honey/royal jelly/bee bread feed Farmer's Delight honey recipes; Field Guide auto-catalogs its mobs; bundles 2 resource packs — **Shader Emissive** (now functional under Bliss with ETF/Continuity) and **Anti Tripophobia** (comfort option) — both documented in the guide.
+- [x] GUIDE.md updated: Dimensions table (+Bumblezone), new "#### The Bumblezone — Bee Dimension" subsection (entry, content, integrations, bundled packs), Wave 2 interdependency note (× Neo Bee Fix × FD), Wave 0.5 Dependencies table (+Resourceful Lib), Mod Count Summary.
+- [ ] **Instance action (XMCL)** — add `the_bumblezone-7.15.3+1.21.1-neoforge.jar` + Resourceful Lib (1.21.1 NeoForge build); enable the Bumblezone Shader Emissive resource pack (Anti Tripophobia optional). [VERIFY] at next launch: right-click a bee nest/hive → dimension entry works; bees behave normally (Neo Bee Fix); no worldgen crashes; emissive blocks glow under Bliss.
+- [x] DRIFTWOOD-GUIDE.pdf regenerated
+
 ### Shader Swap — Bliss as Main (Aug 2026)
 
 - [x] **Main shader switched: Complementary Unbound + Euphoria Patches → Bliss Shaders** (user request). Bliss was already in the pack as the optional alternative (Aug 2026 weapon-QoL review); it now becomes the **only** shaderpack.
