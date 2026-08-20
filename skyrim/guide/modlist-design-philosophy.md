@@ -1,6 +1,8 @@
 # World Progression Philosophy
 
 > **Adopted Combination:** `#1` — **Static with Hard Threat** (see [Suggested Combinations](#suggested-combinations)). The static-with-threat dial is the base; the "Living the World" pillar is layered on top — the home is a real anchor (survival warmth, food, rest, family), and the player quests when they want, not on the main quest's clock.
+>
+> **Progression stance (confirmed 2026-08-20):** normal leveling mechanics with a power-fantasy arc — leveling starts at a normal (vanilla) pace, then the player's power ramps as content-fed XP and the static world stop scaling let them surpass almost everyone; level cap raised to **500** to give the ramp room. Use-based stat growth and fatigue/regen-cap systems are **not** on-dial; the growth fantasy comes from leveling itself. → [Character & Progression](modlist-expanded-character.md) owns the concrete XP config; → [Survival, Difficulty, and Balance](modlist-survival-combat.md) owns encounter zones and difficulty.
 
 This document owns the design dial that connects four concerns: **leveling**, **encounter zones**, **loot distribution**, and **difficulty**. They are not independent picks — change one and the other three shift. The modlist's section files cite this document when they need to justify a concrete pick.
 
@@ -155,19 +157,19 @@ These are **suggestions for different list identities**, not a ranking. The owni
 
 ### 1. "Big, Dark, Awe-Inspiring World" — Deleveled Or Static With Hard Threat
 
-**Suggested dial:** Static leveling (preferred) or deleveled (committed), encounter-zone overhaul (`Arena` baseline or RiS Encounter Zones), harsher difficulty, deliberate loot scarcity at tier 1-2, **heavy perks overhaul (Simonrim-class depth) with slow-to-moderate XP** so the player's power growth comes from build choices against a flat world, not from gear inflation. Survival framework (cold, hunger, fatigue, disease) is on-dial — it makes the home a real anchor.
+**Suggested dial:** Static leveling (preferred) or deleveled (committed), encounter-zone overhaul (`Arena` baseline or RiS Encounter Zones), harsher difficulty, deliberate loot scarcity at tier 1-2, **heavy perks overhaul (Simonrim-class depth) with normal leveling mechanics at a power-fantasy XP pace** (high level cap, rewarding quest/discovery XP, no skill grinding) — the player starts small against a flat, structured world and levels into a legend. Survival framework (cold, hunger, fatigue, disease) is on-dial — it makes the home a real anchor.
 
 **What it serves:** Exploration that makes Skyrim feel vast and threatening. The player feels small, the world feels dangerous, gear feels earned, and the perks tree is the primary expression of "I'm getting stronger." Pairs naturally with `Legacy of the Dragonborn` because the museum becomes the player's long-term reward ladder. The "Living the World" layer sits on top: a player home with a family, choosing when to quest, living a life in between the dragon-born moments.
 
-**Trade-offs:** High curation overhead for content mods if deleveled. Risk of over-gating early-game if survival and encounter overhaul stack. Late-game power curve depends heavily on the perks tree carrying it; a shallow perks overhaul breaks the fantasy.
+**Trade-offs:** High curation overhead for content mods if deleveled. Risk of over-gating early-game if survival and encounter overhaul stack. The power curve is carried by leveling (power-fantasy XP pace, high cap) with the perks tree adding shape — a shallow perks overhaul makes the climb less interesting, not broken (progression stance, 2026-08-20).
 
 **Owned by:** → [Crafting & Economy](modlist-expanded-crafting.md) for the loot-distribution mod, → [Survival, Difficulty, and Balance](modlist-survival-combat.md) for encounter-zone and difficulty mods.
 
 ### 2. "Living The World / Museum-And-Collection" — Vanilla With Curated Lists
 
-**Suggested dial:** Vanilla with curated lists, light or no encounter-zone intervention, balanced difficulty (Simply Balanced tier), LoTD-anchored progression carrying the long-term reward ladder, **moderate perks overhaul (Path of the Berserker or Adamant tier) with vanilla-or-slightly-slow XP** to preserve Bethesda's growth pacing while giving the build a little more shape.
+**Suggested dial:** Vanilla with curated lists, light or no encounter-zone intervention, balanced difficulty (Simply Balanced tier), LoTD-anchored progression carrying the long-term reward ladder, **moderate perks overhaul (Path of the Berserker or Adamant tier) with normal leveling mechanics at a power-fantasy XP pace** — the player levels into a legend rather than being held to Bethesda's growth pacing (progression stance, 2026-08-20).
 
-**What it serves:** A list that wants to add modern systems and lots of new content on top of a Skyrim that still feels like Skyrim. The museum is the meta-progression; the loot dial is "vanilla with polish, not overhaul." Honors Bethesda's pacing intent while modernizing everything around it.
+**What it serves:** A list that wants to add modern systems and lots of new content on top of a Skyrim that still feels like Skyrim. The museum is the meta-progression; the loot dial is "vanilla with polish, not overhaul." The growth fantasy runs at a power-fantasy pace — the player eventually becomes incredibly strong — while the world around them stays familiar.
 
 **Trade-offs:** Late-game loot inflation is the canonical failure mode — mitigation is required curation of any new gear mods. Exploration incentive is weak; LoTD and content mods have to carry it. Distinctiveness depends on what you put on top. A heavy perks overhaul (Simonrim) here can overpower the "Skyrim that still feels like Skyrim" intent — the perks tree starts to feel like it's from a different game.
 

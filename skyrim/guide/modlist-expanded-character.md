@@ -12,7 +12,6 @@ How `Elder Wilds` begins: a grounded alternate start, a utility-first start, or 
 | [Why I Came to Skyrim - Skyrim Unbound Reborn patch](https://www.nexusmods.com/skyrimspecialedition/mods/167577)  | Add-on | all            | Patch for Origin Stories + Skyrim Unbound Reborn. |
 | [Skyrim Unbound Reborn - New started room](https://www.nexusmods.com/skyrimspecialedition/mods/118648)            | Add-on | all            | Start room improvement for Skyrim Unbound Reborn. |
 | [Dealing with Backstories](https://www.nexusmods.com/skyrimspecialedition/mods/61106)                             | Alternative | #1, #2, #3, #4 | Origins companion — background-driven starting skills, bonuses, drawbacks, gear. |
-| [Take Notes — Journal of the Dragonborn SSE](https://www.nexusmods.com/skyrimspecialedition/mods/13570)           | Alternative | #1, #2, #3, #4 | Persistent in-game journal. Low-risk roleplay companion. |
 | [Roleplaying In Skyrim — Origins](https://www.nexusmods.com/skyrimspecialedition/mods/150186)                     | Alternative | #1, #2, #3, #4 | Origin-driven flavor and bonuses. Requires SKSE + Papyrus Ini Manipulator; soft-requires Actor Value Generator + SkyUI. |
 | [Choose Your Starting Skills and Stats](https://www.nexusmods.com/skyrimspecialedition/mods/25630)                | Add-on      | all            | New-game dialogue to pick starting skills/perks before the run begins. Complements the Skyrim Unbound Reborn + Why I Came to Skyrim start; sets starting state only, does not fight the locked Experience/Static Skill Leveling dial. |
 | [Choose Your Starting Skills — Oathvein UI](https://www.nexusmods.com/skyrimspecialedition/mods/170671)           | Add-on      | all            | UI skin for the above matching the locked Oathvein UI baseline (→ `Modernized UI`). Install with 25630. |
@@ -160,11 +159,11 @@ How the player gains levels and skill points.
 
 ### Experience Configuration For #1 (Static With Hard Threat)
 
-Settings tuned for the adopted combination: power fantasy XP pace, high level cap, rewarding discovery and quest completion, no skill grinding.
+Settings tuned for the adopted combination (direction refined 2026-08-20): **leveling starts at a normal (vanilla) pace** — the early game feels like Skyrim; the power ramp comes from content-fed XP (quests, discovery, clearing, Skyshards) against a static world (Arena encounter zones stop scaling), so the player eventually surpasses almost everyone; level cap raised to **500** to give the ramp room.
 
 | Setting                             | Value           | Notes                                                                      |
 |-------------------------------------|-----------------|----------------------------------------------------------------------------|
-| `iMaxPlayerLevel` | 250 | Very high cap for content-heavy list — quest mods, discovery, clearing, Skyshards. Room to keep growing through all major quest content. |
+| `iMaxPlayerLevel`                   | 500             | Much higher cap (250 → 500, 2026-08-20) for the power-fantasy ramp — quest mods, discovery, clearing, Skyshards keep feeding XP while the static world stops scaling, so the player outgrows nearly everyone by mid/late game. Tunable upward (e.g. 1000) for an even steeper fantasy. |
 | `fSkillCapBase`                     | 18              | Default — skills cap relative to player level.                             |
 | `fSkillCapMult`                     | 2               | Default — +2 skill cap per player level. Reaches skill 100 at level 41.    |
 | `bEnableKilling`                    | true (default)  | Kill XP enabled. Use the Synthesis Patcher for compatibility.              |
@@ -174,6 +173,6 @@ Settings tuned for the adopted combination: power fantasy XP pace, high level ca
 | `iXPQuestObjectives`                | 10 (default)    | Partial completion still awards progress.                                  |
 | All discovery XP                    | Default         | Location discovery awards modest XP.                                       |
 | All clear XP                        | Default         | Location clearing awards meaningful XP.                                    |
-| `fXPLevelUpBase` / `fXPLevelUpMult` | Vanilla         | Uses the default Skyrim leveling curve (no change needed).                 |
+| `fXPLevelUpBase` / `fXPLevelUpMult` | Vanilla         | Default Skyrim leveling curve — deliberately kept so the early game levels at a normal pace; the ramp comes from content-fed XP and the high cap, not from a faster curve. |
 | `bUseRacialCaps`                    | true (default)  | Racial skill bonuses matter.                                               |
 | `bEnableSkillXP`                    | false (default) | No skill grinding — XP comes from doing, not training.                     |

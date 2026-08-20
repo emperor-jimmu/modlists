@@ -180,6 +180,11 @@ These are confirmed from the current modlist state. When evaluating armor/body/p
 
 - **Dragon War (51310):** Locked dragon combat overhaul. Structured encounter tempo. Complements Dragons Use Thu'um (87085, baseline dragon AI).
 
+### Progression & Stats (2026-08-20)
+
+- **Progression direction (user instruction):** leveling starts at a normal (vanilla) pace, then the player's power ramps and eventually surpasses almost everyone — static world (Arena) + content-fed XP + a much higher level cap (**`iMaxPlayerLevel` 500**, raised from 250, 2026-08-20). Vanilla-style level-up and attribute growth; use-based stat growth and fatigue/regen-cap systems are NOT on-dial.
+- **Exhaustion (94574) / Exercise (94663) / Skyrim Skill Uncapper (82558):** NOT adopted — removed after interim adoption (2026-08-20, user instruction). Starfrost (97536, locked) alone owns the fatigue axis. See STATUS.md (2026-08-20).
+
 ### UI
 
 - **STB Active Effects (140002) + Widescreen Scale Removed for 1.6.1130+ (136793):** Locked prerequisites of Oathvein UI (160916) (user instruction 2026-08-12). Oathvein's Nexus page lists STB as soft requirement and WSR as hard requirement for 1.6.1130+ (list target 1.6.1170). STB requires SKSE Menu Framework (120352, promoted to UI baseline — DBVO2 already assumed it); WSR supersedes SWF unsquish fixes — do not combine with Complete Widescreen Fix (1778). See `modlist-ui.md` → UI Framework Prerequisites.
