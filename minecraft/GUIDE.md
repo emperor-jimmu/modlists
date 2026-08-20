@@ -236,7 +236,9 @@ Distant Horizons handles far rendering — keep vanilla render distance low. DH 
 - **Armored Legacy** — vanilla armor remodel with working armor trims (all styles/materials) and interchangeable helmet variants. Requires the [EMF](https://modrinth.com/mod/entity-model-features) + [ETF](https://modrinth.com/mod/entitytexturefeatures) mods (Wave 0.5). Place above other packs.
 - **Mod Descriptions** — Field Guide companion (resource pack, lang-only): adds lore descriptions for modded entries in the catalog — 200+ mods, incl. full coverage for Farmer's Delight, Brewin' And Chewin', Supplementaries, Spice of Life: Carrot Edition, Explorer's Compass, Waystones and partial for Cataclysm, Simply Swords, Upgrade Aquatic. Requires the Item Descriptions mod (already in pack as a required Field Guide companion). Load position irrelevant.
 - **Fresh Animations** — idle animations, directional looking, sleep/blink, emotions for all vanilla mobs. Resource pack overlay (not a mod) — place high in pack order.
-- **Enhanced Boss Bars** — themed boss bar designs for vanilla + Twilight Forest. For Cataclysm/Aether bars (custom rendering), also install the companion [Enhanced Boss Bars mod](https://www.curseforge.com/minecraft/mc-mods/enhanced-boss-bars-mod).
+- **Enhanced Boss Bars** — themed boss bar designs for vanilla + Twilight Forest. For Cataclysm/Aether bars (custom rendering), also install the companion [Enhanced Boss Bars mod](https://www.curseforge.com/minecraft/mc-mods/enhanced-boss-bars-mod). **On install, set Jade's boss-bar options** (Main Menu ➜ Mods ➜ Jade ➜ Config ➜ Mod Settings):
+  - **Display Bosses** → **OFF** (Jade's vanilla boss-bar overlay would fight the pack's themed bars)
+  - **Boss Bars Overlap** → **Push Down Tooltip** (Jade tooltips push below the bar instead of covering it)
 - **Faithful 32x AppleSkin Addon** — AppleSkin's hunger/saturation HUD icons redrawn at 32x to match Faithful's style. AppleSkin ships 16x icons from the mod, so this keeps the food bar crisp on the 32x base. Zero deps; order-independent (only touches AppleSkin's own icons) — grouped with the UI tier.
 - **RAY's 3D Rails** — 3D rail models; shader support since v3.0. Compatible with Steam 'n' Rails and Create rails. Rails only — ladders are covered by the separate **RAY's 3D Ladders** pack below.
 - **RAY's 3D Ladders** — 3D ladder models (vanilla + Create); shader support (LabPBR) since v2.0. Same author as RAY's 3D Rails, but a separate pack — Rails does **not** cover ladders. Updated Aug 2026.
@@ -616,7 +618,7 @@ These mods change how the game looks and feels. All are client-side and work imm
 ### Inventory & UI — Your Daily Tools
 
 - **EMI** — your primary learning tool: hover any item, `R` for recipe, `U` for uses. Recipe trees break complex crafts (Create sequenced assembly, Mekanism ore chains) into every step.
-- **Jade + Jade Addons** — block name, mod source, machine status, crop growth, chest contents; Addons adds Create (SU/RPM), Mekanism (energy/gas), AE2 (channel) panels. Keep enabled. Conflict fix: Jade → Config → Mod Settings → Display Bosses → OFF (avoids Enhanced Boss Bars conflict).
+- **Jade + Jade Addons** — block name, mod source, machine status, crop growth, chest contents; Addons adds Create (SU/RPM), Mekanism (energy/gas), AE2 (channel) panels. Keep enabled. Conflict fix: Jade → Config → Mod Settings → **Display Bosses** → OFF, **Boss Bars Overlap** → Push Down Tooltip (avoids Enhanced Boss Bars conflict).
 - **JourneyMap + Integration** — minimap with entity dots, fullscreen map (`J`), waypoints (`B` to set), entity radar. Waystones appear as icons via the Integration mod. `J` → right-click sets a temporary waypoint.
 - **AppleSkin** — hover food for exact hunger/saturation; dashed outlines preview a meal. No config.
 - **Immersive Armor HUD** — armor icons + durability above the bar; works with modded armor. No config.
