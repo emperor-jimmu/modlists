@@ -159,60 +159,15 @@ The essentials that make the game run well. Dependencies, performance, rendering
 
 ### Shaderpack
 
-| Shaderpack                                                                                        | Description                                                                                                   |
+| Shaderpack | Description                                                                                                   |
 |---------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| [Complementary Unbound](https://www.curseforge.com/minecraft/customization/complementary-unbound) | Realistic visual style, Potato→Ultra profiles, block-specific effects                                         |
-| [Euphoria Patches](https://www.curseforge.com/minecraft/mc-mods/euphoria-patches)                 | Optional add-on for Complementary Shaders — extends with handcrafted features, all disabled by default        |
-| [Bliss](https://modrinth.com/shader/bliss-shader)                                                 | Optional alternative shaderpack — softer stylized look, iris-native, v2.1.0+ recommended for Distant Horizons |
+| [Bliss Shaders](https://modrinth.com/shader/bliss-shader)                                         | Main shader — fantasy-styled Chocapic13 V9 edit; scene variation, LabPBR + Distant Horizons support, iris-native |
 
-**Euphoria Patches** is a shader add-on, not a standalone shaderpack. It patches Complementary Shaders (Reimagined or Unbound) with additional visual options. Install via its patcher mod (requires NeoForge, no additional mod dependencies). All features are disabled by default and can be individually enabled from the shader options menu.
+**Bliss Shaders** is the pack's main shader (X0nk's large edit of Chocapic13 V9) — a well-performing fantasy look built around scene variation and customization. Runs on Iris (NeoForge) with zero extra mods. Use **v2.1.0+** — required for full Distant Horizons support (DH LODs render through the shader pipeline). Quality presets run Low → Medium → High; colored lighting; LabPBR support (specular f0/reflectance, roughness/metalness, subsurface scattering, emissive, parallax occlusion) when the active resource pack ships PBR maps.
 
-**Recommended Euphoria Patches settings to enable** (Shader Options → Popular Settings tab, then apply the preset):
+> **PBR note**: Faithful 32x (the base layer) ships no PBR maps, so Bliss's LabPBR features idle on the base textures — the flat 32x look is the intended baseline. Pack-provided PBR maps (Fire Rekindled's Normal/Specular, RAY's 3D Rails' shader support) still apply where present.
 
-Performance impact is rated for the RTX 4080 SUPER (16GB VRAM, 4K, High profile) targeting 70-80 FPS. The base Complementary settings already leave headroom (no Entity Shadows, Shadow Res 2048, DH LOD 128-256 chunks), so Euphoria's overhead should be absorbed without dropping below the target. If FPS dips occur, disable the Heavy-impact features first.
-
-| Category    | Setting                          | Value  | Perf      | Why                                                                  |
-|-------------|----------------------------------|--------|-----------|----------------------------------------------------------------------|
-| World       | Colored Lighting                 | ON     | Moderate  | Dynamic block light colors — glowstone, redstone, sea lanterns       |
-| World       | Seasons                          | ON     | None      | Leaves/grass shift colors with Serene Seasons calendar               |
-| World       | Darkness Desaturation            | ON     | None      | Colors desaturate in darkness for more atmospheric nights            |
-| World       | Better Bedrock Noise             | ON     | None      | Smoother, more natural bedrock layer pattern                         |
-| Atmosphere  | Better Clouds                    | ON     | **Heavy** | Volumetric cloud improvements over base Complementary (High quality) |
-| Atmosphere  | No Rain Above Clouds             | ON     | None      | Rain only falls below cloud layer (Iris-only)                        |
-| Atmosphere  | Aurora Colors                    | Custom | None      | Fine-tune aurora hue/saturation for personal taste                   |
-| Water       | Better Water                     | ON     | **Heavy** | Improved water reflections and wave animation                        |
-| Effects     | Lava Edge Effect                 | ON     | Low       | Glowing edge on lava blocks for depth (Iris-only)                    |
-| Effects     | End Portal Rays                  | ON     | Low       | Light rays emanate from End portal frames (Iris-only)                |
-| Effects     | Epic Thunderstorm                | ON     | Moderate  | More dramatic lightning visuals (Iris-only); cost only during storms |
-| Effects     | Soul Sand Valley Overhaul        | ON     | Moderate  | Richer fog and particle atmosphere in soul sand valleys              |
-| Effects     | Dragon Death Effect              | ON     | Low       | Spectacular visual during Ender Dragon death                         |
-| Entities    | Better Waving Vines/Sugar Cane   | ON     | None      | Smoother plant waving animation (Iris-only)                          |
-| Entities    | Third-Person Interactive Foliage | ON     | Low       | Foliage reacts to player in third person (Iris-only)                 |
-| Entities    | Third-Person Soul Sand Eyes      | ON     | Low       | Soul sand valley eyes track player in third person (Iris-only)       |
-| Mod Support | Better Modded SSBL               | ON     | Moderate  | Auto-emissive modded light sources at correct light levels           |
-
-> **Tip**: The Popular Settings preset applies the most impactful options in one click. Browse individual categories afterward to fine-tune. Features marked "Iris-only" require Iris (not Oculus) — this pack uses Iris on NeoForge, so all features work.
-
-**Settings for NVIDIA RTX 4080 SUPER (16GB VRAM, 4K) — target: stable 70-80 FPS**:
-
-| Setting                    | Value           |
-|----------------------------|-----------------|
-| Visual Style               | Unbound         |
-| Profile                    | High            |
-| RP Support                 | Integrated PBR+ |
-| Shadow Resolution          | 2048            |
-| Shadow Distance            | 12 chunks       |
-| Real-Time Shadows          | High            |
-| Light Shaft Quality        | Medium          |
-| Entity Shadows             | OFF             |
-| Detail Quality             | High            |
-| Cloud Quality              | High            |
-| Water Reflection Quality   | Medium (max)    |
-| Block Reflection Quality   | Medium          |
-| Anti-Aliasing (FXAA)       | ON              |
-| Edge Shadow (SSAO) Quality | Medium          |
-| Advanced Colored Lighting  | 8 chunks        |
-| Texture Filtering          | 8x              |
+**Recommended baseline (NVIDIA RTX 4080 SUPER, 16GB VRAM, 4K — target stable 70-80 FPS)**: start with the **High** quality preset and the shader's defaults. If FPS dips below 70: drop the preset one step, then reduce Shadow Resolution to **1024**, then Shadow Distance to **8 chunks** (see Distant Horizons below).
 
 **General MC settings**: Graphics **Fancy**, Render Distance **10 chunks**, Simulation Distance **8 chunks**, Biome Blend **2 blocks**, Mipmap Levels **4x**, Entity Distance **100%**, Fullscreen ON, VSync OFF, Max Framerate **120**. Always Defer Chunk Updates **Enabled**, Use No Error Context **Enabled**.
 
@@ -222,40 +177,80 @@ Distant Horizons handles far rendering — keep vanilla render distance low. DH 
 
 | Pack                                                                                                                                         | Role                                                                                                                      |
 |----------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
+| [Improved Create 32x](https://www.curseforge.com/minecraft/texture-packs/improved-create-32x)                                                | 32x32 texture extension for Create — items, blocks, GUI; designed to pair with Faithful 32x                               |
+| [Improved Applied Energistics 2](https://www.curseforge.com/minecraft/texture-packs/improved-applied-energistics-2)                          | 32x32 texture extension for AE2 — items, blocks, GUI; designed to pair with Faithful 32x                                  |
+| [Armored Legacy](https://modrinth.com/resourcepack/armored-legacy)                                                                           | Custom armor models + working armor trims for vanilla sets (requires EMF + ETF mods)                                      |
+| [The RCP — Rename Compat Project](https://www.curseforge.com/minecraft/texture-packs/the-rcp)                                                | Language-only pack — fixes duplicate/inconsistent names across 300+ mods; no textures                                     |
+| [Mod Descriptions](https://modrinth.com/resourcepack/mod-descriptions)                                                                       | Field Guide companion — lore descriptions for 200+ mods' entries (lang-only, order irrelevant)                            |
 | [Fresh Animations](https://www.curseforge.com/minecraft/texture-packs/fresh-animations)                                                      | Living entity animation overhaul — mobs blink, look around, show emotion                                                  |
+| [Fresh Animations: Extensions](https://www.curseforge.com/minecraft/texture-packs/fresh-animations-extensions)                               | Official FA extension bundle — 8 addons: Objects, Details, Emissive, Creepers, Spiders, Quivers, Classic Horses, Slamacow |
 | [Enhanced Boss Bars](https://www.curseforge.com/minecraft/texture-packs/enhanced-boss-bars)                                                  | Redesigned boss bars with themed designs for vanilla and modded bosses                                                    |
-| [RAY's 3D Rails](https://www.curseforge.com/minecraft/texture-packs/rays-3d-rails)                                                           | 3D block & item textures for all rail types                                                                               |
+| [Faithful 32x AppleSkin Addon](https://modrinth.com/resourcepack/faithful-32x-appleskin-addon)                                               | AppleSkin HUD icons (hunger, saturation) at 32x in Faithful style — syncs the food bar to the 32x base                    |
+| [RAY's 3D Rails](https://www.curseforge.com/minecraft/texture-packs/rays-3d-rails)                                                           | 3D block & item textures for all rail types (incl. 3D ladders)                                                            |
 | [Better Lanterns](https://www.curseforge.com/minecraft/texture-packs/better-lanterns)                                                        | Enhanced 3D look for lanterns and chains                                                                                  |
 | [(Bee's) Fancy Crops](https://modrinth.com/resourcepack/fancy-crops)                                                                         | Reworked crop models with texture variations — compatible with Farmer's Delight                                           |
+| [Rekindled CTM](https://modrinth.com/resourcepack/rekindled-ctm)                                                                             | Connected textures for Fire/Soul Fire + moss carpet overhangs — official Fire Rekindled addon (needs Continuity)          |
 | [Fire Rekindled](https://modrinth.com/resourcepack/fire-rekindled)                                                                           | Animated fire, lava, water, and portal textures — includes Create mod support                                             |
+| [Motsch's Better Leaves](https://www.curseforge.com/minecraft/texture-packs/motschens-better-leaves)                                         | Bushier, denser leaves with explicit mod support — pair with Cull Leaves for FPS                                          |
 | [Bushy Pink Petals, Wildflowers & Leaf Litter](https://www.curseforge.com/minecraft/texture-packs/bushy-pink-petals-wildflowers-leaf-litter) | 3D models for pink petals, wildflowers, and leaf litter on the ground                                                     |
-| [Fresh Animations: Extensions](https://www.curseforge.com/minecraft/texture-packs/fresh-animations-extensions)                               | Official FA extension bundle — 8 addons: Objects, Details, Emissive, Creepers, Spiders, Quivers, Classic Horses, Slamacow |
+| [Modded Omelet — Modern Spawn Eggs](https://modrinth.com/resourcepack/modded-omelet)                                                         | 1.21.5-style spawn eggs backported + restyled for 204 mods — matches pack mob lineup                                      |
+| [Mace Fusion](https://modrinth.com/resourcepack/mace-fusion)                                                                                 | Cleaner 3D model + 32x texture for the vanilla mace                                                                       |
+| [Fresh Waystones Texture](https://www.curseforge.com/minecraft/texture-packs/fresh-waystones-texture)                                        | Improved textures for the Waystones mod block + item                                                                      |
+| [Overlay's](https://modrinth.com/resourcepack/overlays)                                                                                      | Dynamic CTM overlays — dirt moisture, cracks, smooth block transitions (requires Continuity + Connector)                  |
 | [MissingSoundsFix](https://modrinth.com/resourcepack/missingsoundsfix)                                                                       | Suppresses vanilla empty-sound warnings (salmon.ambient, cod.ambient, etc.) — fixes log spam from MC-97521                |
-| [Patrix 32x](https://www.curseforge.com/minecraft/texture-packs/patrix-32x)                                                                  | Full 32x PBR base pack — normal/specular maps for shaders; load at bottom of pack order                                   |
+| [Faithful 32x](https://modrinth.com/resourcepack/faithful-32x)                                                                               | Full 32x base pack — complete coverage, cohesive palette; load at bottom of pack order                                    |
 
+- **Improved Create 32x** — 32x32 textures for Create (items, blocks, GUI); partly based on Faithful 32x assets — designed to pair with it. Coverage still incomplete; author requires top placement.
+- **Improved Applied Energistics 2** — 32x32 textures for AE2 (items, blocks, GUI); same author + Faithful pairing as Improved Create 32x. Coverage still incomplete; author requires top placement.
+- **Armored Legacy** — vanilla armor remodel with working armor trims (all styles/materials) and interchangeable helmet variants. Requires the [EMF](https://modrinth.com/mod/entity-model-features) + [ETF](https://modrinth.com/mod/entitytexturefeatures) mods (Wave 0.5). Place above other packs. ETF also powers Fresh Animations Extensions' Emissive addon under Iris.
+- **The RCP (Rename Compat Project)** — language-only pack (no textures): renames duplicate/inconsistent item, mob, block, and biome names across 300+ mods (incl. Mekanism, AE2, Create, TFMG, Twilight Forest, Aether, MineColonies, Farmer's Delight family). Registry IDs unchanged — safe for quests, recipes, and KubeJS. Load position irrelevant.
+- **Mod Descriptions** — Field Guide companion (resource pack, lang-only): adds lore descriptions for modded entries in the catalog — 200+ mods, incl. full coverage for Farmer's Delight, Brewin' And Chewin', Supplementaries, Spice of Life: Carrot Edition, Explorer's Compass, Waystones and partial for Cataclysm, Simply Swords, Upgrade Aquatic. Requires the Item Descriptions mod (already in pack as a required Field Guide companion). Load position irrelevant — grouped with The RCP.
 - **Fresh Animations** — idle animations, directional looking, sleep/blink, emotions for all vanilla mobs. Resource pack overlay (not a mod) — place high in pack order.
+- **Fresh Animations: Extensions** — all 8 official FA addons in one download (Objects, Details, Emissive, Creepers, Spiders, Quivers, Classic Horses, Slamacow). **Load above Fresh Animations** (the Extensions files must win).
 - **Enhanced Boss Bars** — themed boss bar designs for vanilla + Twilight Forest. For Cataclysm/Aether bars (custom rendering), also install the companion [Enhanced Boss Bars mod](https://www.curseforge.com/minecraft/mc-mods/enhanced-boss-bars-mod).
-- **RAY's 3D Rails** — 3D rail models; shader support since v3.0. Compatible with Steam 'n' Rails and Create rails.
+- **Faithful 32x AppleSkin Addon** — AppleSkin's hunger/saturation HUD icons redrawn at 32x to match Faithful's style. AppleSkin ships 16x icons from the mod, so this keeps the food bar crisp on the 32x base. Zero deps; order-independent (only touches AppleSkin's own icons) — grouped with the UI tier.
+- **RAY's 3D Rails** — 3D rail models; shader support since v3.0. Compatible with Steam 'n' Rails and Create rails. Also covers 3D ladders — RAY's 3D Ladders is redundant.
 - **Better Lanterns** — 3D lanterns + connected chain models. Compatible with Arcane Lanterns and Thin Air.
 - **(Bee's) Fancy Crops** — vanilla crop rework with texture variations; built to work with Farmer's Delight (Wave 4).
-- **Fire Rekindled** — animated fire, lava, water, portal textures with Normal/Specular maps for PBR shaders; supports Create (honey, steam particles). Optional CTM addon available.
+- **Rekindled CTM** — official Fire Rekindled addon: connected textures for fire and soul fire (plus moss-carpet overhangs). Requires Continuity — already in the pack (Wave 0.5, for Overlay's), so zero new mods. **Load above Fire Rekindled**. Pairs well with Incendium's Nether (connected soul fire across the transformed biomes). If fire textures look desynced from their neighbors, disable Sodium's **"Animate Only Visible Textures"**. Slime/honey connected textures live in a separate pack (Viscous CTM) — not added.
+- **Fire Rekindled** — animated fire, lava, water, portal textures with Normal/Specular maps for PBR shaders; supports Create (honey, steam particles). CTM addon: Rekindled CTM (previous bullet).
+- **Motsch's Better Leaves** — extra layers on leaf blocks for denser, bushier foliage; explicit mod support (Aether, Deep Aether, Twilight Forest, Deeper and Darker, Upgrade Aquatic). Pair with [Cull Leaves](https://www.curseforge.com/minecraft/mc-mods/cull-leaves) (Wave 0.5) for the FPS win. v9 ships static overlays — recompile the custom version if the 16x-on-32x leaf mismatch bothers you.
 - **Bushy Pink Petals, Wildflowers & Leaf Litter** — 3D models for ground-cover flora; denser, more natural look.
-- **Fresh Animations: Extensions** — all 8 official FA addons in one download (Objects, Details, Emissive, Creepers, Spiders, Quivers, Classic Horses, Slamacow). Load above Fresh Animations.
+- **Modded Omelet — Modern Spawn Eggs** — backports the 1.21.5-style spawn eggs to 1.21.1 and restyles modded eggs to match; 204 mods supported, incl. ~9 in this pack (Aether, Twilight Forest, Cataclysm, Hybrid Aquatic, Upgrade Aquatic, Darker Depths, MineColonies, Northstar Redux, Guard Villagers). Zero dependencies.
+- **Mace Fusion** — refined 3D model + 32x texture for the vanilla mace; subtle, vanilla-like, no conflicts.
+- **Fresh Waystones Texture** — improved textures for the Waystones block + item (Waystones is Wave 2); no conflicts, no dependencies.
+- **Overlay's** — dynamic OptiFine-format CTM overlays: dirt moisture, cracks, smooth block transitions. Requires [Continuity](https://modrinth.com/mod/continuity) + [Sinytra Connector](https://modrinth.com/mod/connector) (Forgified Fabric API already in pack). Fills the CTM gap Patrix couldn't deliver under Iris.
 - **MissingSoundsFix** — silences vanilla empty-sound log spam (`salmon.ambient`, etc. — MC-97521) with dummy sound mappings; no audio changed.
-- **Patrix 32x** — full 32x PBR base pack; normal/specular maps feed Complementary Unbound + Euphoria's PBR pipeline. Load at the **bottom** of pack order as the base layer so the overlay packs above it win. Caveats: notably heavier than the 16x lineups (watch the 4K / 70-80 FPS target — drop Shadow Resolution to 1024 first), incomplete mob/item coverage stays vanilla 16x, and OptiFine-only features (CTM connected textures, natural textures, block-state randomization) are inactive under Iris — the 32x textures and PBR maps still apply.
+- **Faithful 32x** — full 32x base pack with complete coverage (blocks, items, mobs, GUI, fonts). Replaces Patrix 32x: no PBR normal/specular maps, but lighter, complete, and cohesive. Load at the **bottom** of pack order as the base layer. BetterGrassify samples the active pack at runtime — connected grass works at 32x automatically.
 
-**Installation**: Install via XMCL — drop `.zip` files into the instance's Resource Packs tab, or copy them into the instance's `resourcepacks/` folder (access via instance settings). Load order (top = highest priority):
+**Installation**: Install via XMCL — drop `.zip` files into the instance's Resource Packs tab, or copy them into the instance's `resourcepacks/` folder (access via instance settings).
 
-1. Fresh Animations
-2. Enhanced Boss Bars
-3. RAY's 3D Rails
-4. Better Lanterns
-5. (Bee's) Fancy Crops
-6. Fire Rekindled
-7. Bushy Pink Petals, Wildflowers & Leaf Litter
-8. Fresh Animations: Extensions
-9. MissingSoundsFix
-10. Patrix 32x (base layer — overlays above win)
+#### Resource Pack Load Order
+
+Top = highest priority. Packs only win where they have content, so packs touching different assets (armor vs. blocks vs. items vs. language files) are order-independent; the constraints that matter are called out per item. The 32x base pack sits at the **bottom** so every overlay above it wins.
+
+1. Improved Create 32x — author requires top placement; only overlaps the base pack
+2. Improved Applied Energistics 2 — author requires top placement; only overlaps the base pack
+3. Armored Legacy — author requires top placement; needs EMF + ETF mods
+4. The RCP — language-only; any position works — high is safe
+5. Mod Descriptions — Field Guide companion, lang-only; any position works — grouped with The RCP
+6. Fresh Animations: Extensions — **must stay above Fresh Animations**
+7. Fresh Animations
+8. Enhanced Boss Bars
+9. Faithful 32x AppleSkin Addon (AppleSkin HUD icons — 32x Faithful style)
+10. RAY's 3D Rails (3D rails + ladders)
+11. Better Lanterns
+12. (Bee's) Fancy Crops
+13. Rekindled CTM (Fire Rekindled addon — load above it)
+14. Fire Rekindled
+15. Motsch's Better Leaves (pair with Cull Leaves mod)
+16. Bushy Pink Petals, Wildflowers & Leaf Litter
+17. Modded Omelet (spawn egg items)
+18. Mace Fusion (mace item model)
+19. Fresh Waystones Texture (Waystones block + item)
+20. Overlay's — needs Continuity + Sinytra Connector mods
+21. MissingSoundsFix — no visual impact, order irrelevant
+22. Faithful 32x — base layer (overlays above win)
 
 ### Infrastructure
 
@@ -301,11 +296,11 @@ Open **Video Settings → [colored tiles icon]** next to the FOV slider.
 
 #### 3. Shader Setup
 
-Drop **Complementary Unbound** `.zip` into `shaderpacks/`. In-game: Options → Video Settings → Shaderpacks → select Complementary Unbound. Works with Iris on NeoForge.
+Drop **Bliss Shaders** `.zip` into `shaderpacks/`. In-game: Options → Video Settings → Shaderpacks → select Bliss. Works with Iris on NeoForge. Use **v2.1.0+** for full Distant Horizons support.
 
-**Euphoria Patches** (optional add-on): Install the patcher mod, it auto-detects Complementary and applies additional visual options. All features disabled by default. Open Shader Options → Popular Settings tab → apply the Popular Settings preset, then browse individual categories to fine-tune.
+Bliss needs no add-on mods — it fully replaces the previous Complementary Unbound + Euphoria Patches setup.
 
-Full settings table (RTX 4080 SUPER, 16GB VRAM): see [Shaderpack](#shaderpack) above. General MC: Graphics Fancy, Render Distance 10, Simulation 8, VSync OFF.
+Recommended baseline (RTX 4080 SUPER, 16GB VRAM): High preset, tune from there — see [Shaderpack](#shaderpack) above. General MC: Graphics Fancy, Render Distance 10, Simulation 8, VSync OFF.
 
 ---
 
@@ -381,6 +376,10 @@ All the visual polish, UI improvements, inventory tools, storage, travel, tradin
 | [BetterGrassify](https://modrinth.com/mod/bettergrassify)                                                         | OptiFine Fancy + Fast better grass — connected grass/podzol/path/nylium sides, better snow. Requires Forgified Fabric API |
 | [Loot Beams: Refork](https://modrinth.com/mod/loot-beams-refork) neoforge-1.21.1-3.4.7                            | Colored rarity-tinted beams on item drops — makes Apotheosis rare gear visibly pop. Client-side                           |
 | [Auto HUD](https://modrinth.com/mod/autohud) 8.11+1.21.1-neoforge                                                 | Auto-hides idle HUD elements (full health bar, status effects) for a cleaner screen; toggle the whole HUD with a keybind  |
+| [[EMF] Entity Model Features](https://modrinth.com/mod/entity-model-features)                                     | OptiFine-format custom entity models — powers Armored Legacy's armor models; works with Fresh Animations; requires ETF    |
+| [[ETF] Entity Texture Features](https://modrinth.com/mod/entitytexturefeatures)                                   | Emissive/random/custom entity textures — required by EMF; also activates FA Extensions' Emissive addon under Iris         |
+| [Continuity](https://modrinth.com/mod/continuity)                                                                 | CTM connected textures (OptiFine format) — enables Overlay's; runs on NeoForge via Connector + Forgified Fabric API       |
+| [Cull Leaves](https://www.curseforge.com/minecraft/mc-mods/cull-leaves)                                           | Culls leaf interior faces — big FPS win in forests; recommended companion for Motsch's Better Leaves                      |
 
 ### Inventory & UI
 
@@ -481,6 +480,7 @@ Tweak payloads directly in `config/day_counter.toml` (`[Rewards.1]`–`[Rewards.
 | [Forgified Fabric API](https://modrinth.com/mod/forgified-fabric-api)             | Fabric API implemented on NeoForge (Sinytra) — lets Fabric-origin mods run on NeoForge    | BetterGrassify                                       |
 | [Nirvana Library](https://modrinth.com/mod/nirvana-library) 2.2.0                 | Library for config + networking abstraction                                               | Loot Beams: Refork                                   |
 | [Common Network](https://modrinth.com/mod/common-network) 1.0.21-1.21.1           | Networking library (Nirvana Library dependency)                                           | Nirvana Library                                      |
+| [Sinytra Connector](https://modrinth.com/mod/connector)                           | Lets Fabric mods run on NeoForge — translation/compat layer                               | Continuity                                           |
 
 **Lithostitched** is a worldgen library that Improved Village Placement uses to hook into the village generation system. Without it, IVP crashes at startup with a `NoClassDefFoundError` for `AddWorldgenModifiersEvent`. This mod was not declared as a dependency in IVP's metadata — install it manually.
 
@@ -645,7 +645,7 @@ Forces villages to spawn on flat terrain. No more cliff-side or underwater villa
 
 | Session                         | Goal                                                                                                                                                                                               |
 |---------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Session 1 — Setup**           | Launch, set keybinds, configure Distant Horizons (LOD 128-256, Medium quality). Install Complementary Unbound shader. Enable Fresh Animations texture pack. Walk around spawn to generate LOD data |
+| **Session 1 — Setup**           | Launch, set keybinds, configure Distant Horizons (LOD 128-256, Medium quality). Install Bliss shader. Enable Fresh Animations texture pack. Walk around spawn to generate LOD data |
 | **Session 2 — Survival basics** | Punch trees, build a starter shack, find food, get iron. Place your first Waystone. Craft a Sophisticated Storage barrel. Craft a backpack                                                         |
 | **Session 3 — Comfort**         | Explore nearby terrain. Find a village. Set up a bed. Light up your base perimeter. Start noticing Traveler's Titles when entering new biomes                                                      |
 
@@ -691,7 +691,7 @@ The classic tech trio. Create handles mechanical automation, Mekanism handles in
 | [Create Train Parts](https://www.curseforge.com/minecraft/mc-mods/create-train-parts) 0.4.1                                           | Crossing gates, sliding windows, train steps, slides — decorative and functional blocks for trains and stations                                                                                        |
 | [Create: Threaded Trains](https://www.curseforge.com/minecraft/mc-mods/create-threaded-trains)                                        | Performance — runs train pathfinding on a separate thread, prevents tick lag on complex rail networks                                                                                                  |
 | [Create Better FPS](https://www.curseforge.com/minecraft/mc-mods/create-better-fps)                                                   | Create rendering optimization — up to 50% FPS gain with shaders. Handles addon models, speed controllers, factory gauges, and schematic previews                                                       |
-| [ColorWheel](https://www.curseforge.com/minecraft/mc-mods/colorwheel)                                                                 | Flywheel + Iris compatibility — renders Create contraptions under shaders. Required for Create to work with Iris. Both Complementary Unbound and Euphoria Patches have official support                |
+| [ColorWheel](https://www.curseforge.com/minecraft/mc-mods/colorwheel)                                                                 | Flywheel + Iris compatibility — renders Create contraptions under shaders. Required for Create to work with Iris (shader-agnostic)   |
 | [Create Slice & Dice](https://www.curseforge.com/minecraft/mc-mods/slice-and-dice)                                                    | Create + Farmer's Delight automation — Slicer (auto Cutting Board), automatic FD Cooking Pot via heated mixing, Sprinkler for fluid-based farming                                                      |
 | [Create: Dragons Plus](https://www.curseforge.com/minecraft/mc-mods/create-dragons-plus) 1.11.2b                                      | Fan processing expansion — Bulk Coloring, Bulk Freezing, Bulk Ending, Bulk Sanding. Fluid Hatch for tanks. Adds Aether Bulk Enchanting. Library mod for Create addon devs                              |
 | [Create: Protection Pixel](https://www.curseforge.com/minecraft/mc-mods/protection-pixel)                                             | Create-themed power armor — brass/alloy tiers, per-piece active abilities (AoE, debuff clear, speed→damage), combustion reactor (blaze rods + water). Bridges gear between Mekanism Tools and MekaSuit |
@@ -1158,7 +1158,7 @@ These schematics complement the Driftwood progression. All are free Litematica-f
 - **Forgematica × MineColonies**: Castle and wall schematics make excellent colony defense perimeters. Wall + Tower (ID:8559) segments can be tiled to enclose an entire colony. Rebuild colony buildings inside them for a unified architectural style.
 - **Forgematica × AE2**: The Warehouse Auto-sorting schematic (ID:11682) is designed for pre-AE2 storage. Once you transition to ME drives, repurpose it as bulk item overflow or decorative archive hall.
 - **Forgematica × Apotheosis**: The Wizard Watchtower (ID:12509) includes space for an enchanting setup — drop your Apotheosis enchanting table and bookshelves in the top room.
-- **Shader caveat**: Forgematica hologram rendering may flicker with complementary shaders. Toggle shaders off (`K`) while placing schematics, then re-enable. The 1.21.1 compatibility is better than newer MC versions — distortion is usually minor.
+- **Shader caveat**: Forgematica hologram rendering may flicker with Bliss shaders. Toggle shaders off (`K`) while placing schematics, then re-enable. The 1.21.1 compatibility is better than newer MC versions — distortion is usually minor.
 - **Survival constraint**: Forgematica is purely a visual guide. No blocks are auto-placed. Every resource must be gathered and placed by the player in survival mode. This respects the pack's survival-only constraint.
 
 **Install**: In XMCL, search `Forgematica` in the Mods tab, or download the `.jar` from CurseForge and drop into `mods/`. Create a `schematics/` folder in your instance directory, then drop downloaded `.litematic` files there. Forgematica will pick them up automatically on next launch.
@@ -1386,13 +1386,13 @@ MineColonies provides autonomous NPC workers that mine, farm, craft, and guard y
 
 Opens a new way to experience the world. Craft a spyglass, then look at any plant, animal, or monster to catalog it in your Field Guide. Each entry you discover adds to your collection with lore about the creature or plant. Works with modded mobs and biomes — automatically discovers content from every mod in the pack.
 
-**Companion mods** — the two mods below are **required dependencies** of the NeoForge 1.21.1 build: install them alongside Field Guide. Mod Descriptions is an optional resource pack:
+**Companion mods** — Immersive Overlays and Item Descriptions are **required dependencies** of the NeoForge 1.21.1 build: install them alongside Field Guide. **Mod Descriptions is an optional resource pack** — not a mod: it's language data only (no textures); it's listed in the [Resource Pack Load Order](#resource-pack-load-order) (position irrelevant, grouped with The RCP):
 
 | Mod                                                                                    | Feature Added                                         |
 |----------------------------------------------------------------------------------------|-------------------------------------------------------|
 | [Immersive Overlays](https://modrinth.com/mod/immersive-overlays)                      | Biome displays — shows spawn details for entities     |
 | [Item Descriptions](https://modrinth.com/mod/item-descriptions)                        | Entry descriptions — auto-fills entry lore            |
-| [Mod Descriptions](https://modrinth.com/resourcepack/mod-descriptions) (resource pack) | Modded support — adds descriptions for modded entries |
+| [Mod Descriptions](https://modrinth.com/resourcepack/mod-descriptions) (resource pack) | Optional — lore descriptions for 200+ mods' entries   |
 
 **Interdependency note — Field Guide + pack content**: Field Guide auto-discovers entities, plants, and biomes from every mod in the pack — Aether and Twilight Forest mobs, Hybrid Aquatic creatures, and Incendium's Nether life are all catalogable with zero configuration. The optional Cloth Config API dependency is already in the pack (Wave 0.5) — nothing extra to install.
 
@@ -3336,7 +3336,8 @@ All mods installed and every wave configured — here's how to start a proper wo
 
 | Wave                            | Mods    | Deps   | Total   | Notes                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 |---------------------------------|---------|--------|---------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Wave 0 — Foundation             | 14      | 11     | 25      | Dependencies (12), Performance & Rendering (14) + Sodium Extras + Sodium Options API + FastWorkbench + MoreCulling + BadOptimizations, Shaderpack (1 mod: Euphoria Patches), Infrastructure (3) + Simple Recall Potion (travel) — all the nuts & bolts that make the game run (+2 shaderpacks, +10 resource packs). Wave 0.5 UI swap: −Immersive UI −Smooth GUI −Tooltip Overhaul −Controlling −First Person Model +Modern UI                                                                                                                                                                                                                                                                                                                                                                                                            |
+| Wave 0 — Foundation             | 13      | 11     | 24      | Dependencies (12), Performance & Rendering (14) + Sodium Extras + Sodium Options API + FastWorkbench + MoreCulling + BadOptimizations, Infrastructure (3) + Simple Recall Potion (travel) — all the nuts & bolts that make the game run (+1 shaderpack, +22 resource packs). Wave 0.5 UI swap: −Immersive UI −Smooth GUI −Tooltip Overhaul −Controlling −First Person Model +Modern UI                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| Wave 0.5 — Resource Packs       | 5       | 0      | 5       | EMF + ETF + Continuity + Sinytra Connector + Cull Leaves — client-side support mods for Armored Legacy (EMF/ETF), Overlay's (Continuity/Connector), Better Leaves perf (Cull Leaves); +12 resource packs −Patrix +Faithful (Aug 2026 resource pack review)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | Wave 1 — Tech                   | 20      | 5      | 25      | Create + 14 addons (incl. Power Grid, Gunsmithing, Protection Pixel, Ornithopter Glider, Train Utilities, Railways Navigator, Interiors, Train Parts, Threaded Trains, Central Kitchen), Mekanism + Generators, AE2, Advanced Finders, Advanced Chimneys + NTGL, GeckoLib, Framework, ForgeEndertech, Kleiders deps                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | Wave 1.5 — Colony               | 9       | —      | 9       | MineColonies (4 deps counted as mods — they're library mods; CurseForge-only) + 4 addons: Byzantine Styles, Stylecolonies, Create: Colony Logistics, ColonyLink                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | Wave 2 — Exploration            | 34      | 7      | 41      | YUNG's (12), Terralith/Tectonic, Serene Seasons + Serene Seasons Plus + GlitchCore + Gabou's Libs, Darker Depths, Upgrade Aquatic, dimensions (3), End overhaul (3 + Nullscape dp + 5 deps), Structory, navigation, aircraft, ships, hang glider, MoMP addon, Incendium (Nether biome overhaul), Immersive Machinery (utility machines), Field Guide + 2 required companions (Immersive Overlays, Item Descriptions)                                                                                                                                                                                                                                                                                                                                                                                                                     |
@@ -3346,7 +3347,7 @@ All mods installed and every wave configured — here's how to start a proper wo
 | Wave 5 — Combat & Mobs          | 6       | 5      | 11      | Better Combat, L_Ender's Cataclysm, Enchantment Descriptions, Create Big Cannons + Advanced Technologies addon, Torchmaster                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | Wave 6 — Building               | 11      | 3      | 14      | Rechiseled, Supplementaries, Macaw's (4), Building Wands, Handcrafted, Fetzi's Displays, Lili's Pottery, Laser Bridges & Doors, Diagonal Fences + Rechiseled: Create, Rechiseled: AE2 + Moonlight, Resourceful, Fusion                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | Wave 7 — Space Exploration      | 1       | 0      | 1       | Northstar Redux (Create 6.0+ and GeckoLib already in pack — no new dependencies; no worldgen structures)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| **Total**                       | **177** | **47** | **224** | All confirmed NeoForge 1.21.1 (−Stellaris −Potentials API −Sky Aesthetics −CC:Tweaked +Northstar Redux, Aug 2026; +Real Camera; Day Counter Plus reverted — Day Counter + Hud Texts restored; +BetterGrassify + Forgified Fabric API + Sky Aesthetics; +Serene Seasons Plus + GlitchCore + Gabou's Libs - Chunky - When Dungeons Arise - Structory: Towers, Aug 2026; +Sodium Extras + Sodium Options API + Smarter Farmers + Diagonal Fences + Create: Café, Aug 2026 mod review; +FastWorkbench + MoreCulling + BadOptimizations + Searchables + Loot Beams Refork + Nirvana Library + Common Network + Auto HUD + Create Central Kitchen + Spice of Life Carrot + Apothic Compats + Bliss shader, Aug 2026 weapon-QoL review; -Create: Misc and Things, removed by user; +Modern UI -Smooth GUI -Tooltip Overhaul -Controlling -Immersive UI -Smooth Font texture pack -First Person Model, Aug 2026 Modern UI adoption) |
+| **Total**                       | **181** | **47** | **228** | All confirmed NeoForge 1.21.1 (−Stellaris −Potentials API −Sky Aesthetics −CC:Tweaked +Northstar Redux, Aug 2026; +Real Camera; Day Counter Plus reverted — Day Counter + Hud Texts restored; +BetterGrassify + Forgified Fabric API + Sky Aesthetics; +Serene Seasons Plus + GlitchCore + Gabou's Libs - Chunky - When Dungeons Arise - Structory: Towers, Aug 2026; +Sodium Extras + Sodium Options API + Smarter Farmers + Diagonal Fences + Create: Café, Aug 2026 mod review; +FastWorkbench + MoreCulling + BadOptimizations + Searchables + Loot Beams Refork + Nirvana Library + Common Network + Auto HUD + Create Central Kitchen + Spice of Life Carrot + Apothic Compats + Bliss shader, Aug 2026 weapon-QoL review; -Create: Misc and Things, removed by user; +Modern UI -Smooth GUI -Tooltip Overhaul -Controlling -Immersive UI -Smooth Font texture pack -First Person Model, Aug 2026 Modern UI adoption; +EMF +ETF +Continuity +Sinytra Connector +Cull Leaves +9 resource packs −Patrix +Faithful, Aug 2026 resource pack review; −Complementary Unbound −Euphoria Patches +Bliss as main shader, Aug 2026 shader swap; +Rekindled CTM (Fire Rekindled CTM addon), Aug 2026; +Faithful 32x AppleSkin Addon, Aug 2026; +Mod Descriptions (Field Guide companion), Aug 2026) |
 
 ---
 
