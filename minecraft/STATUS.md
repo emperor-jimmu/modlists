@@ -2,6 +2,16 @@
 
 ## Completed
 
+### Dark Mode Everywhere → Mindful Darkness Swap (Aug 2026)
+
+- [x] **Dark Mode Everywhere removed; Mindful Darkness adopted** (user request). DME (shader-based GUI darkening) had been the pack's GUI dark-mode mod since V3; Mindful Darkness (`v21.1.0-1.21.1-NeoForge`, 2025-07-07, Modrinth) is the replacement: **automatic dark mode for every GUI with no shaders and no texture changes** — recolors GUI rendering directly, in-game toggle buttons (title/pause screens), configurable intensity (`texture_darkness` 0.0–1.0, default 0.5 ≈ DME's old "medium"), font brightness floor (0.75), darkening algorithms (grayscale_and_hsp default / hsp / grayscale_and_hsl), plus `paths`/`menu_blacklist`/`font_color_blacklist` for fine-grained control (chat/sign/book screens pre-excluded). MPL-2.0, 4.76M DL, Fuzss (same author as Easy Anvils/Shulker Box Tooltip). [Modrinth](https://modrinth.com/mod/mindful-darkness)
+- [x] **Dependency**: requires **Puzzles Lib** (already in pack — Leave My Bars Alone, Hang Glider, Diagonal Fences). **Puzzles Lib added as a documented row in the Wave 0.5 Dependencies table** — it was previously referenced inline only and uncounted (3 consumers now). Deps 49→**50**.
+- [x] **Modern UI watch item resolved**: the Aug 2026 review's "Modern UI × Dark Mode Everywhere" watch (both hook the GUI rendering layer) is moot with the swap — Mindful Darkness uses no shaders, so there's no GUI-shader pipeline fight; guide note rewritten accordingly.
+- [x] GUIDE.md updated: Wave 0.5 Visual & Client QoL table row, What-to-Expect bullet (+Mindful Darkness), Configuration section (DME block + double-text note → Mindful Darkness block; Modern UI note), Wave 0.5 Dependencies (+Puzzles Lib row), Mod Count Summary (Wave 0 10/11/21 → **10/12/22**; Total **179/49/228 → 179/50/229** — mods unchanged, 1:1 swap).
+- [x] `config/darkmodeeverywhere-client.toml` deleted (override moot).
+- [ ] **Instance action (XMCL)** — remove `darkmodeeverywhere-*.jar` from `mods/` + delete `config/darkmodeeverywhere-client.toml` from the instance's `config/`; add `MindfulDarkness-v21.1.0-1.21.1-NeoForge.jar` (Puzzles Lib already installed). [VERIFY] at next launch: every GUI is darkened (no shader artifacts — the old DME double-text issue gone); dark-mode toggle button appears on title/pause screens; chat/sign/book screens stay unaffected; modern UI screens darken cleanly; no conflicts with Modern UI.
+- [x] DRIFTWOOD-GUIDE.pdf regenerated
+
 ### Wave 0.5 Review — Conflicts / Overrides / Redundancy (Aug 2026)
 
 - [x] **Full Wave 0.5 review** (all ~70 Player Experience mods + 10 deps) against primary sources — Modrinth API version/dependency metadata, mod READMEs, author compat lists, GitHub issues. Scope: conflicts, overriding, redundant mods, dependency documentation gaps.
