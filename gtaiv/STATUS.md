@@ -37,6 +37,13 @@
 - [x] Rejected **First Degree 154 Vehicle Addon Pack** — Complete Edition-only; does not target 1.0.8.0.
 - [x] Reconsidered **ZolikaPatch** — unmaintained (author retired) and redundant with FusionFix; exclusion stands (see Decisions).
 
+### Curation batch 3 — graphics (2026-08-20)
+- [x] Adopted **Various Fixes** (valentyn-l) — texture LOD/prop/shader fixes + console restoration.
+- [x] Adopted **Higher Resolution Vehicle Pack** — HD vehicle textures (1.0.8.0 compatible).
+- [x] Adopted **DayL's Natural Timecycle** — vanilla-plus lighting/weather.
+- [x] Rejected **RTX Remix** (xoxor4d) — Complete Edition 1.2.0.59-only.
+- [x] Rejected **iCEnhancer 4.0** — requires 1.0.4.0.
+
 ## Decisions
 
 - **Version target stays 1.0.8.0** (per AGENTS.md). Rationale: 1.0.8.0 is the only build that runs IV-SDK .NET content/mechanics scripts and the legacy mod catalog. Caveat recorded: FusionFix officially supports only the Complete Edition; on 1.0.8.0 it runs via the Legacy Addon with best-effort (not officially supported) status.
@@ -46,6 +53,8 @@
 - **Excluded (non-standalone):** GTAIV.EFLC.FusionShaders (Parallellines0451) is the shader source repo of FusionFix, not a separate user-facing mod.
 - **Adopted (batch 2):** OpenIV, Potential Grim, Responsive Plus — verified via community/GTAForums sources. Exact version numbers are not pinned for the GTAForums-hosted mods (threads are Cloudflare-blocked to direct reads); versions are recorded as "latest (see thread)" rather than fabricated.
 - **Rejected (CE-only):** First Degree 154 Vehicle Addon Pack — built for the Complete Edition; the 1.0.8.0 target keeps it out. Popular CE content packs will not drop into a downgraded install.
+- **Adopted (batch 3 — graphics):** Various Fixes, Higher Resolution Vehicle Pack, DayL's Natural Timecycle — all 1.0.8.0-compatible; versions recorded as "latest (see source)" where a hard number could not be pinned without fabrication.
+- **Rejected (CE/legacy-only graphics):** RTX Remix (CE 1.2.0.59, custom FusionFix fork) and iCEnhancer 4.0 (1.0.4.0). Both are the wrong patch target for this 1.0.8.0 modlist.
 
 ## Pending / user inputs
 
@@ -67,3 +76,7 @@
   - https://gtaforums.com/topic/945227-iveflc-potential-grim/ (Potential Grim)
   - https://gtaforums.com/topic/931069-iveflc-responsive-plus/ (Responsive Plus)
   - https://zolika1351.pages.dev/games/gtaiv (ZolikaPatch — unmaintained)
+  - https://github.com/valentyn-l/GTAIV.EFLC.Various.Fixes (Various Fixes)
+  - https://libertycity.net/files/gta-4/236950-higher-resolution-vehicle-pack-15th.html (Higher Resolution Vehicle Pack)
+  - https://www.gtaall.com/gta-4/mods/147781-dayls-natural-timecycle.html (DayL's Natural Timecycle)
+  - https://github.com/xoxor4d/gta4-rtx (RTX Remix — CE 1.2.0.59 only)

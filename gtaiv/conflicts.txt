@@ -9,3 +9,6 @@
 # GTAIV.EFLC.FusionShaders | FusionFix | Shader source repo of FusionFix | Not a separate mod — shipped inside FusionFix
 # First Degree 154 Vehicle Addon Pack | 1.0.8.0 target | Complete Edition-only | Not included — use a 1.0.8.0-compatible pack or retarget to CE
 # Vehicle packs (handling tweaks) | Potential Grim / Responsive Plus | Both edit vehicle handling | Keep a single handling source
+# RTX Remix (xoxor4d) | 1.0.8.0 target | Complete Edition 1.2.0.59-only + custom FusionFix fork | Not included — wrong patch target
+# iCEnhancer 4.0 | 1.0.8.0 target | requires 1.0.4.0 | Not included — wrong patch target
+# Higher Resolution Vehicle Pack | other vehicle .img/.wtd mods | Both edit vehicles.img textures | Use one vehicle texture source

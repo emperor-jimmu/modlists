@@ -24,7 +24,42 @@ Provides the wave's graphical overhaul: ambient occlusion, tone mapping, restore
 
 No separate install — enable the options in the in-game FusionFix menu (see `06-fusionfix-config.md`).
 
-### User to provide — texture / visual overhaul
+### [Various Fixes](https://github.com/valentyn-l/GTAIV.EFLC.Various.Fixes)
+
+| Field | Value |
+|-------|-------|
+| **Version** | latest (see GitHub releases) |
+| **Author** | valentyn-l |
+| **Dependencies** | FusionFix (Fusion Overloader) |
+| **System Impact** | Texture LODs, prop placement, shaders, console restoration |
+
+Complements FusionFix with hundreds of visual fixes: broken texture LODs, misplaced props, wrong shaders/materials, missing shadows, and restored console content (shop signs, ads, beta textures). Installs via the Fusion Overloader `update` folder.
+
+Start a new save after installing — the mod warns that an old save can show "flying buildings" if the map fixes conflict with prior state.
+
+### [Higher Resolution Vehicle Pack](https://libertycity.net/files/gta-4/236950-higher-resolution-vehicle-pack-15th.html)
+
+| Field | Value |
+|-------|-------|
+| **Version** | latest (LibertyCity) |
+| **Dependencies** | OpenIV (or FusionFix `update` folder) |
+| **System Impact** | HD vehicle textures |
+
+Replaces the game's vehicle textures with higher-resolution versions. Version-agnostic (edits `vehicles.img` `.wtd` files), so it works on 1.0.8.0. Install via OpenIV or drop into FusionFix's `update` folder.
+
+Note: raise `VehicleBudget` in `GTAIV.EFLC.FusionFix.ini` to avoid the "taxi bug" (cars spawning as low-quality taxis).
+
+### [DayL's Natural Timecycle](https://www.gtaall.com/gta-4/mods/147781-dayls-natural-timecycle.html)
+
+| Field | Value |
+|-------|-------|
+| **Version** | latest (GTAall) |
+| **Dependencies** | None (no ENB needed) |
+| **System Impact** | Lighting, sky, weather colour |
+
+A "vanilla-plus" timecycle that improves lighting, sunsets, and weather without an ENB/ReShade injector — stable and performance-friendly on 1.0.8.0. Install by copying its `common`/`pc` folders into the game root. An autumn-themed alternative ("Sweet Autumn") is also available.
+
+### User to provide — further visual overhaul
 
 | Field | Value |
 |-------|-------|
@@ -32,7 +67,9 @@ No separate install — enable the options in the in-game FusionFix menu (see `0
 | **Dependencies** | FusionFix |
 | **System Impact** | Visual quality |
 
-Slot for a standalone texture or visual overhaul not covered by FusionFix.
+Slot for additional graphics mods not covered above.
+
+> **Not for this 1.0.8.0 target:** RTX Remix (path tracing, by xoxor4d) and iCEnhancer 4.0 are Complete Edition / 1.0.4.0-specific and will not run on 1.0.8.0.
 
 ---
 
