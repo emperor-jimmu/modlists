@@ -6,11 +6,10 @@ A curated modlist and game guide for X4 Foundations v9.0, organized in 4 progres
 
 ## Structure
 
-- `guide/mod-data/wave-N.yaml` — mod entries per wave (cumulative: wave N includes waves 0–N)
+- `guide/mod-data/wave-N.typ` — mod entries per wave, written directly in Typst (cumulative: wave N includes waves 0–N)
 - `guide/*.typ` — guide prose written in Typst
 - `typst/template.typ` — main PDF template
-- `generate-pdf.bat` — builds the PDF (Node.js preprocessing + Typst compile)
-- `scripts/convert-data.js` — YAML → JSON for Typst consumption
+- `generate-pdf.bat` — builds the PDF (single Typst compile)
 
 ## Wave System
 

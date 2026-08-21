@@ -1,0 +1,53 @@
+// Wave 3: Stellar Dominion — endgame war, economy and content
+#let wave-3-mods = (
+  (
+    name: "Foundation of Conquest and War",
+    url: "https://forum.egosoft.com/viewtopic.php?f=181&t=403357",
+    category: "overhaul",
+    description: "The definitive war overhaul: per-faction configurable ship production quotas that make the galaxy actually fight — factions build real fleets, conquer sectors and can collapse. Customise every faction's aggression in the focwsetup file.",
+    mechanics: "Manual install from the Egosoft forum thread (not on Nexus). Read the XML configuration carefully before boosting factions — cranking the Xenon too far can snowball out of control. Save-game compatible and removable.",
+  ),
+  (
+    name: "Reactive Factions Retribution",
+    url: "https://www.nexusmods.com/x4foundations/mods/746",
+    category: "overhaul",
+    description: "Makes diplomacy consequential: as your empire grows, supporting one faction angers its enemies and befriending everyone becomes impossible. Wars become inevitable, keeping the endgame interesting.",
+  ),
+  (
+    name: "Landlord",
+    url: "https://www.nexusmods.com/x4foundations/mods/428",
+    category: "overhaul",
+    description: "Adds a maintenance tax on stations built in sectors you don't own — paid to the sector owner — and you collect tax from NPC stations in your own sectors. Sector ownership finally has ongoing value.",
+  ),
+  (
+    name: "Recycle Ships and Stations",
+    url: "https://www.nexusmods.com/x4foundations/mods/72",
+    category: "standalone",
+    description: "Reverse-engineer captured ships at your wharf or shipyard for a chance at their blueprints, and build a dedicated module to do this before you own a shipyard. Enables blueprint acquisition without buying them.",
+    mechanics: "VRO's internal shield generators have a much lower reverse-engineering chance — budget for buying those blueprints instead.",
+  ),
+  (
+    name: "Reemergence",
+    url: "https://www.nexusmods.com/x4foundations/mods/1166",
+    category: "standalone",
+    description: "Adds a fleet of X Rebirth-era ships — including several new capital ships — designed to work alongside VRO. Check the mod page's Files/Requirements tab for the version matching your game build and any patches.",
+  ),
+  (
+    name: "Hazard Rework",
+    url: "https://www.nexusmods.com/x4foundations/mods/770",
+    category: "utility",
+    description: "Hazard regions (such as the infamous Boron one) damage shields instead of hull, so AI ships stop flying into hazard zones, getting stuck and dying.",
+  ),
+  (
+    name: "Disable Encounters",
+    url: "https://www.nexusmods.com/x4foundations/mods/85",
+    category: "utility",
+    description: "Stops the game spawning random ships around you purely to generate content; the universe feels more consistent. Side-effect: patrol side-missions can look quiet as no new ships will spawn.",
+  ),
+  (
+    name: "Galaxy Remake STARS",
+    url: "https://www.nexusmods.com/x4foundations/mods/507",
+    category: "visual",
+    description: "Replaces the skyboxes with sharper starfields and unique nebulae per sector. Purely visual and standalone — it does not change the galaxy map or sector layout.",
+  ),
+)

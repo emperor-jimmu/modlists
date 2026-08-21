@@ -1,19 +1,19 @@
 #import "styles.typ": *
 #import "cover.typ": cover-page
 
-// Load mod data (converted JSON)
-#let wave-0-data = json("../guide/mod-data-converted/wave-0.json")
-#let wave-1-data = json("../guide/mod-data-converted/wave-1.json")
-#let wave-2-data = json("../guide/mod-data-converted/wave-2.json")
-#let wave-3-data = json("../guide/mod-data-converted/wave-3.json")
+// Load mod data (Typst sources in guide/mod-data)
+#import "../guide/mod-data/wave-0.typ": wave-0-mods
+#import "../guide/mod-data/wave-1.typ": wave-1-mods
+#import "../guide/mod-data/wave-2.typ": wave-2-mods
+#import "../guide/mod-data/wave-3.typ": wave-3-mods
 
 // Cumulative mod fetching: all mods with wave <= N
 // Uses sequential let rebinding since Typst for-loop scope is isolated
 #let mods-up-to(wave-n) = {
-  let s0 = wave-0-data
-  let s1 = if 1 <= wave-n { s0 + wave-1-data } else { s0 }
-  let s2 = if 2 <= wave-n { s1 + wave-2-data } else { s1 }
-  let s3 = if 3 <= wave-n { s2 + wave-3-data } else { s2 }
+  let s0 = wave-0-mods
+  let s1 = if 1 <= wave-n { s0 + wave-1-mods } else { s0 }
+  let s2 = if 2 <= wave-n { s1 + wave-2-mods } else { s1 }
+  let s3 = if 3 <= wave-n { s2 + wave-3-mods } else { s2 }
   s3
 }
 
