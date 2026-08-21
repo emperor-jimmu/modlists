@@ -1,11 +1,11 @@
 = Wave 1: Content Mods
 
-New vehicles, unlocked interiors, and a more varied street population. Content packs use the add-on DLC method, so install the custom `gameconfig.xml` (see the migration guide) before anything else here.
+New vehicles, unlocked interiors, and a more varied street population. Content packs use the add-on DLC method, so install the custom `gameconfig.xml` (see the migration guide) before anything else here. On Enhanced, use each mod's Enhanced build where one exists.
 
 == Mod Entry Format
 
 - *Category:* Content
-- *Version:* Compatible with GTA V Legacy 1.0.3889.0
+- *Version:* Compatible with GTA V Enhanced 1.0.1158.13
 - *Dependencies:* Required tools or mods
 - *Install path:* Where files go
 - *System Impact:* What it adds
@@ -16,11 +16,11 @@ New vehicles, unlocked interiors, and a more varied street population. Content p
 === #link("https://www.gta5-mods.com/vehicles/ivpack-gtaiv-vehicles-in-gtav")[IVPack]
 - *Category:* Content (vehicles, add-on)
 - *Author:* CP
-- *Version:* 1.0.280
-- *Dependencies:* OpenIV, custom `gameconfig.xml`, Packfile Limit Adjuster
+- *Version:* 1.0.280 (Enhanced build available)
+- *Dependencies:* CodeWalker, custom `gameconfig.xml`, Packfile Limit Adjuster
 - *Install path:* `/mods/update/x64/dlcpacks/` + `dlclist.xml` entry
 - *System Impact:* Adds GTA IV vehicles as add-on DLC
-- *Installation:* Install the add-on via OpenIV; add it to `dlclist.xml`.
+- *Installation:* Install the Enhanced build via CodeWalker; add it to `dlclist.xml`.
 
 Brings a lore-friendly fleet of GTA IV vehicles (cars, bikes, SUVs, trucks, emergency, taxi) into Los Santos without replacing vanilla cars — a clean add-on that coexists with the base traffic.
 
@@ -28,10 +28,10 @@ Brings a lore-friendly fleet of GTA IV vehicles (cars, bikes, SUVs, trucks, emer
 - *Category:* Content (vehicles, add-on)
 - *Author:* VanillaWorks & other modders
 - *Version:* latest (see source)
-- *Dependencies:* OpenIV, custom `gameconfig.xml`, HeapAdjuster, Packfile Limit Adjuster, SirenSetting Limit Adjuster
+- *Dependencies:* CodeWalker, custom `gameconfig.xml`, HeapAdjuster, Packfile Limit Adjuster, SirenSetting Limit Adjuster
 - *Install path:* `/mods/update/x64/dlcpacks/` + `dlclist.xml` entry
 - *System Impact:* Adds a large lore-friendly vehicle fleet with tuning and liveries
-- *Installation:* Install the OpenIV package; add it to `dlclist.xml`.
+- *Installation:* Install via CodeWalker (Enhanced); add it to `dlclist.xml`.
 
 A community-built lore-friendly vehicle expansion: a large fleet of fictional-brand cars, tuning options, and liveries that blend into the base game's world. A "heavy" add-on — keep the SirenSetting Limit Adjuster installed alongside the other limit adjusters to avoid crashes.
 
@@ -41,7 +41,7 @@ A community-built lore-friendly vehicle expansion: a large fleet of fictional-br
 - *Category:* Content (interiors)
 - *Author:* HKH191
 - *Version:* latest (WIP)
-- *Dependencies:* ScriptHookV, ScriptHookVDotNet
+- *Dependencies:* ScriptHookV, ScriptHookVDotNet (Enhanced)
 - *Install path:* `/scripts/` (ScriptHookVDotNet)
 - *System Impact:* Unlocks interiors normally closed in singleplayer
 - *Installation:* Drop the script into `/scripts/`.
@@ -53,10 +53,10 @@ Unlocks interiors that the base game keeps locked (police stations, hospitals, s
 === #link("https://www.gta5-mods.com/misc/dispatch-of-variety")[Dispatch of Variety]
 - *Category:* Content (population / traffic)
 - *Version:* latest (see source)
-- *Dependencies:* OpenIV (mods folder)
-- *Install path:* `/mods/` (OpenIV)
+- *Dependencies:* CodeWalker (mods folder)
+- *Install path:* `/mods/` (via CodeWalker)
 - *System Impact:* Diversifies pedestrian and vehicle spawning
-- *Installation:* Install via OpenIV.
+- *Installation:* Install via CodeWalker.
 
 Adds variety to the pedestrians and vehicles that populate the streets — a maintained alternative to the older *World of Variety*.
 
@@ -74,4 +74,4 @@ Adds variety to the pedestrians and vehicles that populate the streets — a mai
 
 == User to provide
 
-Slot for mission packs and large map additions. Verify each targets Legacy 1.0.3889.0 and uses the add-on DLC method.
+Slot for mission packs and large map additions. Verify each targets Enhanced 1.0.1158.13 and uses the add-on DLC method.

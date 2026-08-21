@@ -5,7 +5,7 @@ Wave 1 rebuilds the look of Los Santos. A single base overhaul (VisualV) handles
 == Mod Entry Format
 
 - *Category:* Graphics
-- *Version:* Compatible with GTA V Legacy 1.0.3889.0
+- *Version:* Compatible with GTA V Enhanced 1.0.1158.13
 - *Dependencies:* Required tools or mods
 - *Install path:* Where files go
 - *System Impact:* Visual changes to environment, lighting, textures
@@ -16,11 +16,11 @@ Wave 1 rebuilds the look of Los Santos. A single base overhaul (VisualV) handles
 === #link("https://www.gta5-mods.com/misc/visualv")[VisualV]
 - *Category:* Graphics (lighting / weather / colour)
 - *Author:* CP & robi29
-- *Version:* 1.0.630 (Legacy)
-- *Dependencies:* OpenIV (mods folder), ScriptHookV (optional scripts)
-- *Install path:* `/mods/` via OpenIV package installer
+- *Version:* 2.0.640 (Enhanced)
+- *Dependencies:* CodeWalker, OpenRPF (mods folder), ScriptHookV (optional scripts)
+- *Install path:* `mods\update\update.rpf` (via CodeWalker)
 - *System Impact:* Rewrites weather, lighting, colour grading, fog, clouds
-- *Installation:* OpenIV → Tools → Package Installer → `VisualV.oiv` → install to `mods` folder.
+- *Installation:* Manual — use CodeWalker to place the mod's files into `mods\update\update.rpf` (see *Before You Begin*).
 
 The gold-standard *vanilla-plus* overhaul: weather rewritten from hundreds of real Los Angeles references, fixed colour grading, higher-quality vehicle shadows, corrected moon size and movement, improved volumetric fog and clouds, and removal of chromatic aberration and vignette. Performance-friendly by design — the look improves without tanking FPS.
 
@@ -34,10 +34,10 @@ These stack on top of VisualV (they touch textures, not lighting).
 - *Category:* Graphics (road textures)
 - *Author:* CRYHD (2.0 patch by Reyser)
 - *Version:* 2.0 (latest)
-- *Dependencies:* OpenIV (mods folder)
-- *Install path:* `/mods/` (OpenIV)
+- *Dependencies:* CodeWalker (mods folder)
+- *Install path:* `/mods/` (via CodeWalker)
 - *System Impact:* Replaces road surfaces with high-quality Los Angeles textures
-- *Installation:* Install via OpenIV; enable in `dlclist.xml` if distributed as an add-on.
+- *Installation:* Install via CodeWalker; enable in `dlclist.xml` if distributed as an add-on.
 
 High-resolution, real Los Angeles-style road surfaces. The single biggest visual upgrade for street-level driving. Distributed on GTA5-Mods.com.
 
@@ -45,10 +45,10 @@ High-resolution, real Los Angeles-style road surfaces. The single biggest visual
 - *Category:* Graphics (signage / landmarks)
 - *Author:* RCA (add-on maintained by Reyser)
 - *Version:* latest (WIP)
-- *Dependencies:* OpenIV (mods folder)
-- *Install path:* `/mods/` (OpenIV)
+- *Dependencies:* CodeWalker (mods folder)
+- *Install path:* `/mods/` (via CodeWalker)
 - *System Impact:* Adds real-world California signage and landmarks
-- *Installation:* Install via OpenIV; a work-in-progress, so read its compatibility notes before combining with other map edits.
+- *Installation:* Install via CodeWalker; a work-in-progress, so read its compatibility notes before combining with other map edits.
 
 Adds realistic freeway signs, the Hollywood sign, and other iconic Los Angeles landmarks. Distributed on GTA5-Mods.com as a work-in-progress — combine carefully with other map or graphics mods.
 
@@ -56,10 +56,10 @@ Adds realistic freeway signs, the Hollywood sign, and other iconic Los Angeles l
 - *Category:* Graphics (water textures)
 - *Author:* Real_Gabe
 - *Version:* latest (see source)
-- *Dependencies:* OpenIV (mods folder)
-- *Install path:* `/mods/` (OpenIV)
+- *Dependencies:* CodeWalker (mods folder)
+- *Install path:* `/mods/` (via CodeWalker)
 - *System Impact:* Replaces water textures with 4K versions
-- *Installation:* Install via OpenIV; check the page's comments for current-build compatibility.
+- *Installation:* Install via CodeWalker; check the page's comments for current-build compatibility.
 
 High-resolution water textures with custom caustics and foam, making shorelines and shallow water look far more realistic. Stacks with VisualV — it only replaces `water.ytd`.
 
@@ -76,4 +76,4 @@ High-resolution water textures with custom caustics and foam, making shorelines 
 
 == User to provide
 
-Slot for additional texture packs (vegetation, water, particle effects). Verify each targets Legacy 1.0.3889.0.
+Slot for additional texture packs (vegetation, particle effects). Verify each targets Enhanced 1.0.1158.13.

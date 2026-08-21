@@ -9,7 +9,7 @@ The guide reserves this section so approved adult mods can be documented without
 == Approval process
 
 1. Propose a specific mod (name + source) for review.
-2. Confirm it targets GTA V Legacy 1.0.3889.0 and doesn't conflict with any adopted mod.
+2. Confirm it targets GTA V Enhanced 1.0.1158.13 and doesn't conflict with any adopted mod.
 3. On approval, it is documented here with the same entry format as the other waves.
 
 *No adult mods are currently listed.*

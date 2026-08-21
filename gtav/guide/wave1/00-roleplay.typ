@@ -17,6 +17,6 @@ This wave introduces mods that expand the world:
 
 Before starting Wave 1:
 - Complete the main story in Wave 0
-- Familiarity with OpenIV mod management
+- Familiarity with CodeWalker / OpenRPF mod management
 - Understanding of ScriptHookV and ASI mods
 - Strong PC recommended (graphics mods are demanding)

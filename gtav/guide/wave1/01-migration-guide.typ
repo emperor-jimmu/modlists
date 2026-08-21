@@ -10,7 +10,7 @@ Wave 1 uses many of the same save files as Wave 0, but mods can corrupt saves. B
 
 Wave 1 *keeps* every Wave 0 mod — you are layering on top, not replacing:
 
-1. Keep ScriptHookV, OpenIV, HeapAdjuster, Packfile Limit Adjuster, and Bugstar Fixes installed.
+1. Keep ScriptHookV, OpenRPF, CodeWalker, HeapAdjuster, Packfile Limit Adjuster, and Bugstar Fixes installed.
 2. Add Wave 1 mods in order: graphics → content → mechanics.
 3. Apply a custom `gameconfig.xml` (below) before heavy content packs.
 
@@ -34,6 +34,6 @@ Wave 1 mods often require additional frameworks:
 == Gameconfig.xml
 
 Many graphics and content mods require a custom *Gameconfig.xml* to increase memory limits:
-1. Download a 1.0.3889.0-compatible Gameconfig.xml
+1. Download an Enhanced-compatible Gameconfig.xml (targeting 1.0.1158.13)
 2. Install to: `/mods/update/update.rpf/common/data/gameconfig.xml`
 3. Without this, the game crashes when loading heavy mods

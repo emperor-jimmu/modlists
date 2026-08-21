@@ -5,7 +5,7 @@ These mods deepen driving, fuel management, and police response. All require Scr
 == Mod Entry Format
 
 - *Category:* Mechanics
-- *Version:* Compatible with GTA V Legacy 1.0.3889.0
+- *Version:* Compatible with GTA V Enhanced 1.0.1158.13
 - *Dependencies:* Required tools or mods
 - *Install path:* Where files go
 - *System Impact:* What gameplay system changes
@@ -54,13 +54,13 @@ Vehicles consume fuel, and you must refuel at stations or with jerry cans — ru
 - *Category:* Mechanics (police / emergency services)
 - *Author:* Yard1 & team (rebalanced community release)
 - *Version:* 4.1.2+ (see source)
-- *Dependencies:* OpenIV (mods folder), ScriptHookVDotNet
-- *Install path:* `/mods/` (OpenIV)
+- *Dependencies:* CodeWalker (mods folder), ScriptHookVDotNet Enhanced
+- *Install path:* `/mods/` (via CodeWalker)
 - *System Impact:* Overhauls police, military, and emergency dispatch
 - *Installation:* Large install — follow the page's guide; use the `mods` folder.
 
-The continuation of *Realism Dispatch Enhanced*: lore-friendly police/military/emergency vehicles, realistic AI and dispatch behaviour, and region-correct agencies. Requires an up-to-date `gameconfig.xml`, ScriptHookV, and ScriptHookVDotNet nightly.
+The continuation of *Realism Dispatch Enhanced*: lore-friendly police/military/emergency vehicles, realistic AI and dispatch behaviour, and region-correct agencies. Requires an up-to-date `gameconfig.xml`, ScriptHookV, and ScriptHookVDotNet Enhanced.
 
 == User to provide
 
-Slot for further mechanics mods (economy, gang systems, needs). Verify each targets Legacy 1.0.3889.0.
+Slot for further mechanics mods (economy, gang systems, needs). Verify each targets Enhanced 1.0.1158.13.

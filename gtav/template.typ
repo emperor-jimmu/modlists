@@ -19,7 +19,7 @@
   #v(1.5cm)
   #text(size: 16pt, fill: rgb("#C0B090"), weight: "regular")[A Curated GTA V Modlist & Guide]
   #v(0.4cm)
-  #text(size: 12pt, fill: rgb("#A09080"))[GTA V Legacy 1.0.3889.0 — July 2026]
+  #text(size: 12pt, fill: rgb("#A09080"))[GTA V Enhanced 1.0.1158.13 — July 2026]
 ])
 
 // ── Table of Contents ───────────────────────────

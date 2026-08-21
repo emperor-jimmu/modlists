@@ -1,66 +1,61 @@
 = Before You Begin
 
-This guide assumes you have GTA V installed and can launch it successfully in singleplayer.
+This guide targets the *GTA V Expanded & Enhanced* edition (build 1.0.1158.13). Enhanced uses a different modding toolchain from Legacy — the tools below are the Enhanced-compatible set.
 
-== Installing OpenIV
+== The Enhanced Toolchain
 
-#link("https://openiv.com/")[OpenIV] is the standard mod management tool for GTA V.
+=== ScriptHookV
 
-1. Download the latest version from #link("https://openiv.com/")[openiv.com]
-2. Run the installer (default settings are fine)
-3. Launch OpenIV — it will scan for your GTA V installation automatically
-4. Switch OpenIV to *Edit Mode* when prompted (this enables file modification)
+#link("http://www.dev-c.com/gtav/scripthookv/")[ScriptHookV] is required by almost every mod. As of v3889.0/1158.13 it supports the Enhanced build.
 
-*Always back up files before editing.* OpenIV can create backups automatically — use this feature.
+1. Download ScriptHookV (v3889.0/1158.13 — the Enhanced build).
+2. Extract *ScriptHookV.dll* and *dinput8.dll* into your GTA V root folder.
+3. *dinput8.dll* is the ASI loader — it loads every `.asi` mod; no separate loader is needed.
 
-== Mod Management with OpenIV
+=== ScriptHookVDotNet (Enhanced)
 
-OpenIV organizes mods through two mechanisms:
+For .NET script mods, install the *Enhanced* build of #link("https://www.gta5-mods.com/tools/script-hook-v-net-enhanced")[ScriptHookVDotNet]:
 
-=== Mods Folder (Recommended)
+1. Download the Enhanced build from its GTA5-Mods page.
+2. Extract the `.asi` and `.dll` files into the GTA V root folder.
 
-OpenIV's *mods* folder creates a virtual override system:
+=== OpenRPF (mods folder)
 
-1. In OpenIV, go to *Tools > Package Installer*
-2. Set the install path to your GTA V directory
-3. Most mod packages will install into `/mods/` automatically
+#link("https://www.gta5-mods.com/tools/openrpf-openiv-asi-for-gta-v-enhanced")[OpenRPF] is the Enhanced-edition OpenIV.asi — it enables the `mods` folder override that plain OpenIV.asi does not fully support on Enhanced.
 
-The *mods* folder keeps the original game files untouched. To disable all mods for GTA Online, rename the *mods* folder to *mods_off*.
+1. Download OpenRPF from its GTA5-Mods page.
+2. Extract it to the GTA V root folder.
 
-=== Direct .rpf Editing
+=== CodeWalker (archive editor)
 
-Some older mods require direct editing of game archives (.rpf files). Only do this if the mod's install guide explicitly requires it. Always back up the original .rpf first.
+#link("https://discord.gg/codewalker")[CodeWalker] is the archive/asset editor for the Enhanced (Gen9) format. Enhanced texture and model mods are installed through CodeWalker rather than OpenIV's Package Installer.
 
-The most common paths:
-- `update/update.rpf` — DLC content, most common target
-- `x64/` — Base game textures and models
-- `common.rpf` — Shared data and scripts
+1. Download CodeWalker (release 30 / dev48 or newer) from the CodeWalker Discord.
+2. Use it to open and edit the `update.rpf` inside your `mods` folder.
 
-== ScriptHookV
+== The mods Folder
 
-#link("http://www.dev-c.com/gtav/scripthookv/")[ScriptHookV] is required by almost every mod.
+Enhanced uses the same `mods` override concept as Legacy:
 
-1. Download ScriptHookV (v3889.0, compatible with Legacy 1.0.3889.0)
-2. Extract *ScriptHookV.dll* and *dinput8.dll* into your GTA V root folder
-3. Download #link("https://github.com/scripthookvdotnet/scripthookvdotnet")[ScriptHookVDotNet] if a mod requires it
-4. Extract the .asi and .dll files into the same folder
+1. Create a `mods` folder in the GTA V root (next to `GTA5.exe`).
+2. Copy the `update` folder from the game root into `mods` (giving `mods\update\update.rpf`).
+3. Make every archive edit inside `mods` — never touch the originals.
 
-*Note:* For game version 1.0.3258.0 and later (which includes Legacy 1.0.3889.0), use the ScriptHookVDotNet *nightly* build (v3.6.0-nightly.89 or later) — the stable v3.6.0 and v3.5.1 have a compatibility bug on newer game versions.
-
-*Verify:* Launch the game. If you see the ScriptHookV loading text in the top-left corner, it's working.
+Rename the `mods` folder to `mods_off` to disable all mods.
 
 == ASI Mods
 
-ASI mods use the OpenIV.asi loader:
-- Copy the *.asi* file to your GTA V root folder (*not* the *mods* folder)
-- ScriptHookV's *dinput8.dll* acts as the ASI loader — no extra steps needed
+ASI mods load through ScriptHookV's `dinput8.dll`:
+- Copy the `.asi` file to your GTA V root folder (*not* the `mods` folder).
+- No extra loader is needed.
 
 == Safety Checklist
 
 Run through this checklist before starting the game with new mods:
 
-- [ ] Mods folder exists and is named *mods* (not *mods_off*)
-- [ ] ScriptHookV.dll and dinput8.dll in game root
+- [ ] `mods` folder exists (named *mods*, not *mods_off*)
+- [ ] OpenRPF installed (mods folder override active)
+- [ ] ScriptHookV.dll and dinput8.dll in the game root
 - [ ] All mod files installed to correct paths
-- [ ] Backups created for any replaced .rpf files
-- [ ] GTA Online not launched with mods active (rename the *mods* folder to *mods_off* before launching Online)
+- [ ] Backups created for any replaced `.rpf` files
+- [ ] GTA Online not launched with mods active (rename `mods` to *mods_off* before going online)

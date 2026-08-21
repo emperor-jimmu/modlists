@@ -1,12 +1,12 @@
 = Wave 0: Modlist
 
-Wave 0 is *vanilla plus*: quality-of-life, interface, and bug-fix mods only. No graphics overhauls, no new content, no gameplay changes. The foundation (OpenIV, ScriptHookV, ScriptHookVDotNet) is installed per the *Before You Begin* guide.
+Wave 0 is *vanilla plus*: quality-of-life, interface, and bug-fix mods only. No graphics overhauls, no new content, no gameplay changes. The foundation (ScriptHookV, ScriptHookVDotNet, OpenRPF, CodeWalker) is installed per the *Before You Begin* guide.
 
 == Mod Entry Format
 
 Each entry shows:
 - *Category:* UI / QoL / Bugfix
-- *Version:* Compatible with GTA V Legacy 1.0.3889.0
+- *Version:* Compatible with GTA V Enhanced 1.0.1158.13
 - *Dependencies:* Required tools or mods
 - *Install path:* Where files go
 - *System Impact:* What the mod changes
@@ -14,12 +14,12 @@ Each entry shows:
 
 == Stability & QoL
 
-These two tools prevent the most common modded-game crashes. They change nothing visually or mechanically — they only raise engine limits so the game doesn't fall over.
+These two tools prevent the most common modded-game crashes. They change nothing visually or mechanically — they only raise engine limits so the game doesn't fall over. On Enhanced, use the *Enhanced* builds of both.
 
 === #link("https://www.gta5-mods.com/tools/heapadjuster")[HeapAdjuster]
 - *Category:* QoL / stability
 - *Author:* Dilapidated
-- *Version:* latest (see source)
+- *Version:* latest Enhanced build (see source)
 - *Dependencies:* None
 - *Install path:* Game root (`HeapAdjuster.asi` + `HeapAdjuster.ini`)
 - *System Impact:* Raises the memory-heap limit
@@ -27,11 +27,9 @@ These two tools prevent the most common modded-game crashes. They change nothing
 
 Fixes `ERR_MEM_EMBEDDEDALLOC_ALLOC` crashes, which happen when the game loads too many custom assets (high-poly vehicles, add-on DLC). The bundled `.ini` lets you raise the heap size; the default is fine for Wave 0 and only needs raising in Wave 1.
 
-Also on #link("https://github.com/Dilapidated/gtav-HeapAdjuster-ini")[GitHub].
-
 === #link("https://www.gta5-mods.com/tools/packfile-limit-adjuster")[Packfile Limit Adjuster]
 - *Category:* QoL / stability
-- *Version:* latest (see source)
+- *Version:* latest Enhanced build (see source)
 - *Dependencies:* None
 - *Install path:* Game root (`.asi`)
 - *System Impact:* Raises the packfile (`.rpf`) limit
@@ -44,11 +42,11 @@ Fixes `ERR_FIL_PACK_1` crashes by raising the number of `.rpf` archives the game
 === #link("https://www.gta5-mods.com/misc/fixes-improvements")[Bugstar Fixes]
 - *Category:* Bugfix
 - *Author:* Alex106
-- *Version:* 7.0 (Legacy)
-- *Dependencies:* OpenIV (mods folder)
-- *Install path:* `/mods/` (via OpenIV)
+- *Version:* 7.0 (Enhanced build available)
+- *Dependencies:* CodeWalker (mods folder)
+- *Install path:* `/mods/` (via CodeWalker)
 - *System Impact:* Fixes long-standing engine and world bugs
-- *Installation:* Install the OpenIV package into the `mods` folder.
+- *Installation:* Install the Enhanced build into the `mods` folder via CodeWalker.
 
 A community patch collection that corrects engine glitches and broken vehicle/pedestrian/world configuration left in the base game. Keeps the vanilla experience intact while removing annoyances — no new content or balance changes.
 
@@ -59,7 +57,7 @@ A community patch collection that corrects engine glitches and broken vehicle/pe
 
 == User to provide
 
-If you want a standalone HUD/UI mod that changes the interface (rather than fixing it), verify it targets Legacy 1.0.3889.0 and add it here. None are included by default because Wave 0 keeps the vanilla UI.
+If you want a standalone HUD/UI mod that changes the interface (rather than fixing it), verify it targets Enhanced 1.0.1158.13 and add it here. None are included by default because Wave 0 keeps the vanilla UI.
 
 == Carried into Wave 1
 
