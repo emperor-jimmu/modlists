@@ -2,6 +2,13 @@
 
 ## Completed
 
+### Dynamic Crosshair Removed — Vanilla-Coupled, Context Features Unreliable (Aug 2026)
+
+- [x] **User request: remove Dynamic Crosshair** — the mod's own note ("This mod is very strongly coupled to vanilla Minecraft and has to hardcode a lot of interaction rules. Thus, playing on a non-vanilla world will make the advanced features (context-dependent style) unreliable") makes its whole purpose — context-aware crosshair styling — unreliable in a 180-mod pack. The fix would be DynamicCrosshairCompat, but it's **Fabric-only** (verified across the full Modrinth version history — every release since 2022 is `fabric`, no NeoForge/Forge build), so it can't be added on the pack's no-Sinytra-Connector precedent. Removal loses nothing: the vanilla crosshair remains, and no other mod depends on Dynamic Crosshair (YACL is shared and stays).
+- [x] GUIDE.md updated: Wave 0.5 Visual & Client QoL table row removed; Dynamic Crosshair config section removed; Mod Count Summary (Wave 0 10/12/22 → **9/12/21**; Total 180/50/230 → **179/50/229** — mods −1, deps unchanged). No tracked config override existed (`config/dynamiccrosshair.json` was never tracked — settings were recommended in-game, not overridden).
+- [ ] **Instance action (XMCL)** — remove `dynamiccrosshair*.jar` from `mods/` (plus any generated `config/dynamiccrosshair.json` in the instance). [VERIFY] at next launch: vanilla crosshair renders normally; no missing-dependency errors; Mindful Darkness unaffected (its carried default `paths` list keeps a `!dynamiccrosshair:...` exclusion that's a harmless dangling path — left untouched).
+- [x] DRIFTWOOD-GUIDE.pdf regenerated
+
 ### Vehicle Upgrade Adopted — Wave 2 Mobility (Aug 2026)
 
 - [x] **User request: add Vehicle Upgrade** ([CurseForge](https://www.curseforge.com/minecraft/mc-mods/vehicle-upgrade)) — vanilla mount/boat QoL by Fuzs (Lunapixel; MPL-2.0; ~52K CF + ~38K Modrinth DL): saddled mounts stop wandering, mounts swim and ride through leaves, full mining speed + sprint + interaction-range bonus while mounted, translucent mount view, held items while rowing, boat step height, fixed passenger collisions. Native NeoForge, pinned **v21.1.0** (1.21.1 build, 2026-05-21). Actively maintained (project updated 2026-06-18).
