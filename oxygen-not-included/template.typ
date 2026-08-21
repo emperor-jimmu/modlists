@@ -24,7 +24,7 @@
 
 // == Cover Page
 #v(2.5cm)
-#align(center)[#image("assets/logo.jpg", width: 34%)]
+#align(center)[#image("assets/logo.jpg", width: 50%)]
 #v(2.5cm)
 #align(center)[
   #text(size: 36pt, weight: "bold", fill: rgb("#1fa2a0"), font: "Cinzel", "Primordial Outpost Reborn")
@@ -38,8 +38,6 @@
 #pagebreak()
 
 // == Table of Contents
-== Table of Contents
-#v(0.5em)
 #outline(depth: 3)
 #pagebreak()
 

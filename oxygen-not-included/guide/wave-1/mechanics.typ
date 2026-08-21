@@ -13,13 +13,22 @@
 
 Mechanics mods change how the *systems* behave — the automation that runs your loops, the heat transfer your base lives with, the behavior of the geysers and vents you tame. These are the first Wave 1 mods allowed to touch simulation values, so every one must clear the power-spike gate: no free resources, no free heat deletion, no skipped work. A mechanics mod should make taming deeper or clearer, never cheaper.
 
-// ============================================================================
-// MOD CARDS GO HERE — added by the user (per project decision, this project
-// does not research or select mods). Paste one #mod-entry(...) call per mod.
-// Requirements (spec §4, §5): verified workshop URL; STAT-CHANGING mods are
-// allowed in Wave 1 ONLY if they pass the power-spike gate (no ex-nihilo
-// resources, no free heat deletion, no tech/labor bypass, no morale/skill
-// breaks, no all-knowing info incl. geyser reveal); DLC must be owned (Base /
-// Spaced Out! / Bionic Booster Pack; NOT Aquatic/Frosty/Prehistoric); record
-// the power-spike verdict in each card's Notes.
-// ============================================================================
+#mod-entry(
+  "Piped Everything",
+  "https://steamcommunity.com/sharedfiles/filedetails/?id=3033409170",
+  version: "2026-08-16 · STAT-CHANGING",
+  verified: "YES · Steam API + Workshop page (2026-08-21) · 15,141 subscribers",
+  deps: "Base Game + Spaced Out! + Bionic Booster Pack",
+  impact: "Adds liquid, gas, and solid pipe ports to many buildings so outputs can be plumbed directly instead of hauled.",
+  notes: "Gate: PASS — proportionate cost (you still build the pipe network; a blocked output fills internal storage, then disables the building). Config lives in PipedEverything.json.",
+)
+
+#mod-entry(
+  "Waste Not, Want Not",
+  "https://steamcommunity.com/sharedfiles/filedetails/?id=2567122431",
+  version: "2025-04-06 · STAT-CHANGING",
+  verified: "YES · Steam API + Workshop page (2026-08-21) · 100,196 subscribers",
+  deps: "Base Game + Spaced Out! + Bionic Booster Pack (all owned packs tagged)",
+  impact: "Dupes prefer eating the stalest leftovers first, and refrigerators/ration boxes gain a freshness-control slider.",
+  notes: "Gate: PASS — reduces spoilage waste, creates no food and changes no nutrition values.",
+)
