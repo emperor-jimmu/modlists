@@ -45,7 +45,7 @@ Launch the game once to generate configuration files. This creates the `dx12file
 
 == Mod Manager Setup
 
-#info-box(ititle: "The Witcher 3 Mod Manager", body: [
+#info-box(ititle: link("https://www.nexusmods.com/witcher3/mods/2678")[The Witcher 3 Mod Manager], body: [
   Download from #link("https://www.nexusmods.com/witcher3/mods/2678")[Nexus Mods (ID: 2678)]. This is the recommended tool for this modlist.
 ])
 

@@ -14,7 +14,7 @@
 
 #let title-page(ttl: "", sbtl: "", logo-path: "logo.png") = {
   page(paper: "a4", margin: (top: 5cm, bottom: 2.5cm, left: 2.5cm, right: 2.5cm))[
-    #align(center, image(logo-path, height: 6.5cm))
+    #align(center, image(logo-path, height: 7.5cm))
     #v(2.5cm)
     #align(center, text(size: 34pt, weight: "bold", fill: c.heading)[#ttl])
     #v(0.4cm)
