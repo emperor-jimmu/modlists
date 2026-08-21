@@ -28,42 +28,46 @@
 
 == Wave 3 — Modlist: Full Chaos
 
-This wave activates ALL mods from Waves 0–3 simultaneously. This is the complete modlist.
+This wave activates ALL mods from Waves 0–3 simultaneously. This is the complete modlist. Activate in wave order: QoL (below), graphics (below + Wave 3 graphics section), then content and mechanics from the Wave 1/2 sections.
 
 == UI / QoL (Wave 0 Carryover)
 
-#mod-entry("Improved Campaign UI", "https://example.com/mod-campaign-ui", "v1.0", "", "Improves tooltip readability and streamlines the campaign map interface.")
+#mod-entry("Better Camera Mod", "https://steamcommunity.com/sharedfiles/filedetails/?id=2789858755", "v8.1 (Jul 2026)", "", "Unlocked camera heights in battles and campaign; zoom without unit culling.")
 
-#mod-entry("Streamlined Army Management", "https://example.com/mod-army-ui", "v0.9", "Improved Campaign UI", "Reduces clicks needed to manage army reinforcement, auto-sort, and embark.")
+#mod-entry("Cpecific's Skill Queue: Jazzed Edition", "https://steamcommunity.com/sharedfiles/filedetails/?id=3720243387", "v8.1 (Jul 2026)", "Memreader (win64)", "Skill presets that auto-assign points to new lords/heroes.")
 
-#mod-entry("Better Turn Flow", "https://example.com/mod-turnflow", "v1.2", "", "Speeds up non-combat turn processing and adds batch-end-turn functionality.")
+#mod-entry("Memreader (win64)", "https://steamcommunity.com/sharedfiles/filedetails/?id=2789863945", "v8.1", "", "Memory library required by Skill Queue.")
 
-#mod-entry("Enhanced Notification Panel", "https://example.com/mod-notifications", "v1.1", "", "Consolidates in-game notifications into a single, sortable panel.")
+#mod-entry("The Tooltip Project", "https://steamcommunity.com/sharedfiles/filedetails/?id=3588380343", "v8.1 (Jul 2026)", "", "Rewrites unit/spell tooltips with hidden stats and mechanics.")
 
-#mod-entry("Quick Select Toolbar", "https://example.com/mod-quickselect", "v0.8", "Better Turn Flow", "Customizable quick-access toolbar for frequently used commands.")
+#mod-entry("Building Progression Icons III", "https://steamcommunity.com/sharedfiles/filedetails/?id=2790007728", "v8.1 (Dec 2025)", "", "Building icons change as buildings upgrade.")
+
+#mod-entry("Speedy Turn Camera", "https://steamcommunity.com/sharedfiles/filedetails/?id=2792727547", "v8.1 (May 2026)", "", "Faster end-turn camera pan between factions.")
+
+#mod-entry("High Resolution UI Improvements", "https://steamcommunity.com/sharedfiles/filedetails/?id=2790774407", "v8.1 (Dec 2025)", "", "Resizes UI panels for 1440p+ monitors.")
+
+#mod-entry("Skip Intro", "https://steamcommunity.com/sharedfiles/filedetails/?id=2811310125", "v8.1 (May 2026)", "", "Skips startup intros and the epilepsy warning.")
 
 == Graphics (Waves 0–2 Carryover)
 
-#mod-entry("High-Res Unit Textures", "https://example.com/mod-hires-textures", "v2.0", "", "Replace default unit textures with higher-resolution models.")
+#mod-entry("Colourless' Radious HD Texture Pack", "https://steamcommunity.com/sharedfiles/filedetails/?id=3051876615", "v8.1 (Jul 2026)", "", "Comprehensive HD texture replacement across all base races.")
 
-#mod-entry("Enhanced Ambient Lighting", "https://example.com/mod-ambience", "v1.3", "", "Adjusts campaign map lighting for better atmosphere.")
+#mod-entry("Warhammer 1 Texture Update Project", "https://steamcommunity.com/sharedfiles/filedetails/?id=3237873696", "v8.1", "", "Upgrades WH1 legacy race textures to WH3 standards.")
 
-#mod-entry("Seasonal Map Overlay", "https://example.com/mod-seasons", "v1.0", "", "Adds seasonal visual changes to the campaign map.")
+#mod-entry("Campaign Map Lighting", "https://steamcommunity.com/sharedfiles/filedetails/?id=2818403447", "v8.1", "", "Warmer campaign map lighting with deeper shadows and day/night contrast.")
 
-#mod-entry("Faction-Specific Banners", "https://example.com/mod-banners", "v1.5", "", "Custom battle banners for all factions including sub-factions.")
+#mod-entry("ULTIMATE LIGHTING 2.0", "https://steamcommunity.com/sharedfiles/filedetails/?id=2922534576", "v2.0", "", "Complete battle lighting overhaul with deeper shadows and better ambient occlusion.")
 
-#mod-entry("Enhanced Siege Battle Assets", "https://example.com/mod-siege-vfx", "v1.0", "", "Improved siege battle visuals and destruction physics.")
+#mod-entry("Details Matter: True Grit Textures (The Empire)", "https://steamcommunity.com/sharedfiles/filedetails/?id=2961327160", "v8.1", "", "High-detail Empire texture upgrade with realistic wear and battle damage.")
 
-#mod-entry("Atmospheric Weather Pack", "https://example.com/mod-weather", "v1.2", "", "Dynamic weather effects including blizzards, storms, and volcanic ash.")
+#mod-entry("Lore Soldiers: Units Reskin as Miniatures and Books", "https://steamcommunity.com/sharedfiles/filedetails/?id=2789877586", "v8.1", "", "Tabletop-miniature-accurate reskins across multiple factions.")
 
-#mod-entry("Apocalyptic Atmosphere Pack", "https://example.com/mod-apocalypse-vfx", "v1.0", "", "Darker skies, blood-red sunsets, and permanent overcast for End Times setting.")
+#mod-entry("Grim Lighting", "https://steamcommunity.com/sharedfiles/filedetails/?id=3363516919", "v8.1", "", "Dark, oppressive battle lighting with reduced saturation — the End Times look.")
 
-#mod-entry("Destroyed Province Visuals", "https://example.com/mod-destruction", "v1.2", "Apocalyptic Atmosphere Pack", "Province borders show destruction — burnt fields, shattered walls, skeletal forests.")
+#mod-entry("Chaos Visual Overhaul", "https://steamcommunity.com/sharedfiles/filedetails/?id=2791113369", "v8.1", "", "Comprehensive visual overhaul for all Chaos factions.")
 
-#mod-entry("Chaos Corruption Overlays", "https://example.com/mod-chaos-overlays", "v0.9", "Destroyed Province Visuals", "Visual corruption overlays spreading across affected regions.")
-
-
+#mod-entry("Better Chaos Waste Lighting Effect", "https://steamcommunity.com/sharedfiles/filedetails/?id=2853785889", "v8.1", "Chaos Visual Overhaul", "Unique atmospheric lighting for Chaos Waste regions.")
 
 == Notes
 
-Wave 3 is the final wave. All mods from Waves 0–3 are active. Respect all dependency chains. Check conflicts.conf before activation — some mods may conflict even if not within the same wave.
+Wave 3 is the final wave. All mods from Waves 0–3 are active. Respect all dependency chains: Skill Queue needs Memreader, VCO needs its SFO patch, Wave 1 content needs MIXER and its SFO patches. Check conflicts.conf before activation — some mods may conflict even if not within the same wave.

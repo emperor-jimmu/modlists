@@ -28,26 +28,28 @@
 
 == Wave 1 — Modlist: Content
 
-This wave expands the game with new factions, units, and campaign features.
+This wave expands the game with new factions, units, legendary characters, and campaign features. Everything in this wave builds on the MIXER startpos framework, so install MIXER first and keep every dependency chain active.
+
+== Required Framework
+
+#mod-entry("MIXER - Mixu's Unlocker", "https://steamcommunity.com/sharedfiles/filedetails/?id=2859968660", "v8.1 (Jul 2026)", "Mod Configuration Tool (recommended)", "The startpos unlocker that makes all factions playable (458 lords in Immortal Empires) and the modder framework nearly every content mod in this wave is built on. Activate this first — content mods will not function without it. Note: single-player only for now; Aug 2026 CA update broke multiplayer.")
 
 == New Factions
 
-#mod-entry("Kislev Expedition Pack", "https://example.com/mod-kislev", "v1.4", "", "Adds Kislev as a playable faction with unique lord choices and the Ice Court mechanics. Introduces the harsh northern climate as a gameplay factor.")
+#mod-entry("Cataph's Southern Realms (TEB) [It Works in 8.1]", "https://steamcommunity.com/sharedfiles/filedetails/?id=2927296206", "v8.1 (Dec 2025)", "MIXER - Mixu's Unlocker; free WH3 Jade/Grey/Amethyst Wizard packs", "Turns Tilea, Estalia, the Border Princes and New World Colonies into a full culture: 8 playable factions, 10 legendary lords and 1 legendary hero, 30+ new units, custom tech and building trees, landmarks, and the Plutocracy and mercenary-camp mechanics. Not for the Realms of Chaos campaign.")
 
-#mod-entry("Vampire Coast Expansion", "https://example.com/mod-vampcoast", "v2.1", "Kislev Expedition Pack", "Adds the Vampire Coast faction with sea-based campaign mechanics, necromantic army roster, and coastal raiding system.")
+#mod-entry("OvN Lost Factions: Fimir", "https://steamcommunity.com/sharedfiles/filedetails/?id=2899955636", "v8.1 (Jul 2026)", "MIXER - Mixu's Unlocker (required); not multiplayer-campaign compatible", "Adds the Fimir as a complete new playable race: full custom roster, 2 playable factions (Tendrils of Doom, Rancor Hold), and custom mechanics including Godhood Ascension, Gifts of Chaos and the Death Quest.")
 
-== New Units & Army Rosters
+#mod-entry("Cataph's Kraka Drak: the Norse Dwarfs [It Works in 8.1]", "https://steamcommunity.com/sharedfiles/filedetails/?id=2878423760", "v8.1 (Dec 2025)", "MIXER - Mixu's Unlocker (required)", "Adds the Norse Dwarf sub-faction under Great King Thorgard Cromson: 11+ new units, 8 Regiments of Renown, a custom legendary lord type, and new tech tree, buildings and landmarks. For Immortal Empires / The Old World campaigns.")
 
-#mod-entry("Empire War Machine Pack", "https://example.com/mod-war-machines", "v1.2", "", "Adds siege engines and war machines to the Empire roster. Includes cannons of increased caliber and new rocket batteries.")
+== New Legendary Lords & Characters
 
-#mod-entry("Chaos Warrior Variants", "https://example.com/mod-chaos-variants", "v0.9", "", "Adds three new Chaos Warrior unit variants with unique loadouts. Each variant fills a different tactical role: frontline anchor, flanker, or terror unit.")
+#mod-entry("Mixu's Legendary Lords", "https://steamcommunity.com/sharedfiles/filedetails/?id=2802810577", "v8.1 (Jul 2026)", "Mixu's Legendary Lords: Asset Pack", "The community-standard legendary lord pack: 50+ lore-accurate legendary lords and heroes across existing races, with custom skill trees and new start positions. MIXER is recommended to play the added lords.")
 
-== Campaign Features
+#mod-entry("Mixu's Legendary Lords: Asset Pack", "https://steamcommunity.com/sharedfiles/filedetails/?id=2802811244", "v8.1 (Jul 2026)", "", "Required asset pack for Mixu's Legendary Lords — without it you will get missing character models and other broken assets. Install alongside the main mod.")
 
-#mod-entry("Relic Hunting System", "https://example.com/mod-relics", "v1.0", "Kislev Expedition Pack", "Adds a dedicated relic-hunting mechanic across the campaign map. Relics provide gameplay bonuses and trigger unique events.")
-
-#mod-entry("Trade Route Overhaul", "https://example.com/mod-traderoutes", "v1.3", "Empire War Machine Pack", "Revamps the trade system with new trade nodes and route-building mechanics. Income now scales with controlled trade infrastructure.")
+#mod-entry("[DEER24] Walk with the Dragon (Cathay Units Patch)", "https://steamcommunity.com/sharedfiles/filedetails/?id=2789903784", "v8.1 (Aug 2026)", "Mixu's faction unlocker (required); optional English-patch submod", "Cathay mega-pack: 14 legendary lords, 11 legendary heroes, 2 new hero types, 60+ new units and a 50-turn event chain. Chinese-language text by default (English patch submod exists). Immortal Empires only.")
 
 == Notes
 
-Wave 1 mods add significant content. Some mods have dependencies — ensure all dependency chains are active before launching the game.
+Wave 1 mods add significant content. MIXER is the mandatory hub — activate it before anything else. Mixu's Legendary Lords requires its Asset Pack. All mods here are single-player focused; check conflicts.conf for startpos interactions (e.g. Immortal Empires Expanded + Landmarks of Eternity pairing is covered in the content section).

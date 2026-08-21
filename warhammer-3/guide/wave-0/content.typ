@@ -28,12 +28,12 @@
 
 == Wave 0 — Content Mods
 
-Additional content additions that expand the vanilla experience without disrupting balance.
+Light, lore-friendly content additions that expand the vanilla experience without disrupting balance. Nothing here adds new factions, units, or mechanics — these enrich the world you already know.
 
-#mod-entry("Expanded Empire Units", "https://example.com/mod-empire-units", "v1.0", "", "Adds two new unit variants to the Empire roster: a heavy cavalry line and a specialist hero unit. No new factions or mechanics.")
+#mod-entry("Legendary Lore", "https://steamcommunity.com/sharedfiles/filedetails/?id=2789857945", "v8.1 (May 2026)", "", "Adds lore-flavoured narrative text to the campaign: travel to significant locations to learn your lord's story, conquer racial capitals to trigger loreful events, and discover regional lore by building settlements and recruiting units. No gameplay impact whatsoever — pure flavour for the Old World.")
 
-#mod-entry("Province Flavor Events", "https://example.com/mod-events", "v0.7", "", "Adds lore-appropriate random events for each Empire province. Expands the narrative without changing gameplay systems.")
+#mod-entry("Recruit Defeated Legendary Lords", "https://steamcommunity.com/sharedfiles/filedetails/?id=2854819509", "v8.1 (Jul 2026)", "", "When a faction is destroyed, its legendary/immortal lords and heroes become available to surviving factions of the same race (player preferred, AI also benefits). Adds a refugee dilemma so you choose who joins you. A small campaign convenience that prevents lost lords from vanishing forever.")
 
 == Notes
 
-Content mods in Wave 0 add small, vanilla-compatible additions. They do not introduce new mechanics or faction-specific systems.
+Content mods in Wave 0 add flavour and light conveniences. They do not introduce new mechanics or faction-specific systems — heavy content arrives with Wave 1.

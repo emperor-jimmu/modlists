@@ -28,14 +28,12 @@
 
 == Wave 2 — Mechanics Mods (continued)
 
-Additional mechanics overhauls that deepen End Times gameplay.
+Additional mechanics that tie the Wave 2 systems together under SFO.
 
-#mod-entry("Faction Collapse System", "https://example.com/mod-collapse", "v1.0", "Loyalty & Mutiny System", "Factions now have a collapse mechanic. Lose too many provinces and the faction enters terminal decline — unable to recruit, trade, or negotiate. Adds urgency to every battle.")
-
-#mod-entry("Hero Permadeath Mode", "https://example.com/mod-permadeath", "v0.8", "Veteran Retention Pack", "Heroes killed in battle are gone permanently for that campaign. Adds weight to every tactical decision and every unit deployment.")
-
-#mod-entry("Dynamic War Exhaustion", "https://example.com/mod-exhaustion", "v1.1", "Scarce Resources Overhaul", "A fatigue system that affects the entire war effort. Prolonged campaigns cause war exhaustion — reduced recruitment capacity, increased unrest, and economic penalties scaling with time at war.")
+#mod-entry("Victory Conditions Overhaul - SFO Compatibility Patch", "https://steamcommunity.com/sharedfiles/filedetails/?id=3742809144", "v8.1 (Jul 2026)", "Victory Conditions Overhaul; SFO: Grimhammer III; (optional) Tabletop Caps: Reborn", "Updates VCO rewards, reward units, effects and script support for current SFO balance while preserving the route-based campaign structure. Adds guarded Tabletop Caps support for VCO reward units. Load order (top to bottom): this patch, VCO, SFO, Tabletop Caps.")
 
 == Notes
 
 These mechanics mods are the most impactful in the modlist. They are designed to be used together but can be activated selectively if you want a lighter challenge.
+
+The VCO-SFO patch is required whenever Victory Conditions Overhaul and SFO are active together. Do not use multiple VCO-SFO patches at once. A new campaign is recommended after any major update to VCO, SFO, Tabletop Caps or the game.

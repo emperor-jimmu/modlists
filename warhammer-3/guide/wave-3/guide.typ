@@ -20,27 +20,28 @@ Wave 3 is the culmination of the entire modlist. Every mod from Waves 0–3 is a
 == Combined Mod Impact
 
 With all waves active, the following compound effects exist:
-1. *Loyalty + Chaos Corruption* — Armies near corrupted regions suffer loyalty penalties, creating internal threats while external invasions escalate.
-2. *Resource Scarcity + Destruction* — The economy is under constant pressure. Rebuilding costs more than you can earn.
-3. *New Content + Mechanics Overhaul* — New units must be managed under loyalty and fatigue systems. Fresh armies are fragile.
-4. *Graphics + Atmosphere* — The visual overhaul makes the campaign map a bleak, hostile place. No visual respite.
+1. *SFO + Victory Routes* — SFO's rebalanced pacing drives every campaign decision, while VCO routes give you a long-term goal worth fighting for.
+2. *Content + Unit Caps* — New factions, lords and units from Wave 1 must be managed under Tabletop Caps. Fresh armies are fragile; elite units are precious.
+3. *Smarter AI + Sieges* — AI Recruitment and the Siege AI Overhaul make every war a fight against balanced, thematic armies attacking your walls.
+4. *Graphics + Atmosphere* — The full visual stack makes the campaign map a bleak, hostile place. No visual respite.
 
 == Difficulty Expectations
 
 Wave 3 is designed to be the hardest possible campaign experience in TWWH3. Expect:
 - Enemy factions with all content and mechanics bonuses active
+- SFO-length battles where every mistake is punished
 - No forgiveness for tactical errors
-- Constant catastrophic events
-- Rapid faction collapse creating chaotic power vacuums
+- Army compositions constrained by caps — for you and the AI alike
 - A campaign that tests every system simultaneously
 
 == Recommended Approach
 
 1. Start in the most defensible position possible.
-2. Prioritize loyalty above all else — a mutiny at the wrong time is a campaign-ending event.
-3. Economy first, military second. You cannot afford a standing army you cannot maintain.
-4. Accept that losses are inevitable. Focus on managing the rate of loss, not preventing it.
-5. Keep save files religiously before major battles.
+2. Commit to a VCO victory route early — a faction without direction is a faction that dies.
+3. Build armies around the cap structure; do not waste Rare slots on redundancy.
+4. Economy first, military second. You cannot afford a standing army you cannot maintain.
+5. Accept that losses are inevitable. Focus on managing the rate of loss, not preventing it.
+6. Keep save files religiously before major battles.
 
 == Final Note
 
