@@ -1,7 +1,57 @@
-# Wave 2: The Warlord — heavy mods, new mechanics
-- name: "Example Standalone Mod"
-  url: "https://nexusmods.com/x4foundations/mods/000"
-  category: "standalone"
-  wave: 2
-  mechanics: "Adds new sector with unique resources"
-  description: "Placeholder — replace with actual mods."
+- name: VRO — Variety and Rebalance Overhaul
+  url: https://www.nexusmods.com/x4foundations/mods/305
+  category: overhaul
+  description: >-
+    The gold-standard combat overhaul: rebalances every ship, weapon, shield and
+    missile, adds new ships and weapons, increases engagement ranges and makes
+    capital ships feel like capitals. The game becomes harder and far more
+    tactical — small fighters no longer threaten capital ships.
+  mechanics: >-
+    Requires a NEW GAME START — it cannot be installed into an existing save or
+    removed mid-playthrough. Do not pair with other combat-rebalance mods unless
+    they have an explicit VRO patch (Reemergence in Wave 3 is designed for VRO).
+  dlc_required: All DLCs
+- name: KUDA AI Tweaks
+  url: https://www.nexusmods.com/x4foundations/mods/839
+  category: utility
+  description: >-
+    Combines kuertee's Attack AI Tweaks with DeadAir's AI Tweaks: combat AI
+    behaves smarter — ships fall back when their shields are down, pick better
+    targets and stop suicide-rushing.
+- name: Better Piracy
+  url: https://www.nexusmods.com/x4foundations/mods/491
+  category: standalone
+  description: >-
+    Replaces the pure RNG of small-ship piracy with a predictable,
+    time-based harassment system and rebalances capital-ship boarding. Highly
+    configurable — set it harder or easier to taste.
+  mechanics: >-
+    Persistently harassing a ship with shields up eventually yields the
+    capture; the boarding side of the mod is optional. S/M piracy with NPC
+    pilots can be unreliable — fly the pirate ship yourself.
+- name: Reaction Force
+  url: https://www.nexusmods.com/x4foundations/mods/703
+  category: standalone
+  description: >-
+    Adds configurable patrol commands so your defence fleets actually respond
+    to distress signals from your ships, stations and allies instead of
+    ignoring them. Essential once you own sectors. Use the Nexus version.
+- name: X4 Fire and Smoke
+  url: https://www.nexusmods.com/x4foundations/mods/433
+  category: visual
+  description: >-
+    Flashier explosions and engine effects for combat — purely cosmetic, makes
+    space battles look dramatic.
+- name: Paintjobs Galore!
+  url: https://www.nexusmods.com/x4foundations/mods/481
+  category: visual
+  description: >-
+    Adds dozens of new paintjobs for your ships, so every fleet can wear its
+    own livery.
+- name: Legacy Music
+  url: https://www.nexusmods.com/x4foundations/mods/56
+  category: audio
+  description: >-
+    Expands the in-game soundtrack with music from previous X games. Pick the
+    variant you prefer (Extended, Extended Lite, or Vanilla-matching) on the
+    mod page.

@@ -76,4 +76,46 @@ Example naming:
 
 = Stellar Dominion Mod Order
 
-// This section will list the exact load order once mods are selected
+X4 loads extensions alphabetically by folder name, so MO2 renames each mod folder with the priority prefix below. Install in this order (lowest prefix first); UI mods load last.
+
+#table(
+  columns: (auto, auto, auto),
+  inset: 8pt,
+  stroke: 1pt + rgb("#4A7C9B"),
+  [*Priority*], [*Mod*], [*Group*],
+  [01], [Mod Support APIs], [Libraries & Utilities],
+  [02], [UI Extensions and HUD], [Libraries & Utilities],
+  [03], [Options Helper], [Libraries & Utilities],
+  [10], [VRO — Variety and Rebalance Overhaul], [Overhauls],
+  [11], [Foundation of Conquest and War], [Overhauls],
+  [12], [Reactive Factions Retribution], [Overhauls],
+  [13], [Landlord], [Overhauls],
+  [14], [KUDA AI Tweaks], [Overhauls],
+  [20], [Learning All The Things], [Utilities],
+  [21], [Sector Satellites], [Utilities],
+  [22], [Apologise for Attack], [Utilities],
+  [23], [Friendly Fire Tweaks], [Utilities],
+  [24], [Mimic Repeat Orders], [Utilities],
+  [25], [Mules, Supply and Warehouses Extended], [Utilities],
+  [26], [Hazard Rework], [Utilities],
+  [27], [Disable Encounters], [Utilities],
+  [30], [Better Piracy], [Standalone Content],
+  [31], [Reaction Force], [Standalone Content],
+  [32], [Recycle Ships and Stations], [Standalone Content],
+  [33], [Reemergence], [Standalone Content],
+  [40], [X4 Fire and Smoke], [Visual & Audio],
+  [41], [Paintjobs Galore!], [Visual & Audio],
+  [42], [Galaxy Remake STARS], [Visual & Audio],
+  [43], [Legacy Music], [Visual & Audio],
+  [50], [Custom Tabs], [UI],
+  [51], [Better Scan Colors], [UI],
+  [52], [Notification Filter], [UI],
+  [53], [Event Driven News], [UI],
+)
+
+Wave notes:
+
+- _Wave 0:_ install only the 01–03 and 50–53 entries (UI and libraries).
+- _Wave 1:_ add the 20–25 entries.
+- _Wave 2:_ add the 10, 14, 30, 31, 40, 41 and 43 entries, then start a NEW GAME (VRO requires it).
+- _Wave 3:_ add the remaining 11, 12, 13, 26, 27, 32, 33 and 42 entries — i.e., everything. When upgrading from Wave 2, keep all previously installed mods enabled.
