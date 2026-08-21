@@ -2,6 +2,12 @@
 
 ## Completed
 
+### JadeColonies Moved to Wave 1.5 (Aug 2026)
+
+- [x] **JadeColonies moved Wave 0.5 Inventory & UI → Wave 1.5 Colony Addons** — it's a MineColonies-specific Jade tooltip addon, so it belongs with the colony wave, not the generic UI wave. No net mod-count change (Total stays 179/50/229): Wave 0 9/12/21 → **8/12/20**, Wave 1.5 9/—/9 → **10/—/10**.
+- [x] GUIDE.md updated: row moved from Wave 0.5 Inventory & UI table to Wave 1.5 Colony Addons table; Mod Count Summary updated (Wave 0 + Wave 1.5 counts, "4 addons" → "5 addons … JadeColonies").
+- [x] DRIFTWOOD-GUIDE.pdf regenerated
+
 ### Dynamic Crosshair Removed — Vanilla-Coupled, Context Features Unreliable (Aug 2026)
 
 - [x] **User request: remove Dynamic Crosshair** — the mod's own note ("This mod is very strongly coupled to vanilla Minecraft and has to hardcode a lot of interaction rules. Thus, playing on a non-vanilla world will make the advanced features (context-dependent style) unreliable") makes its whole purpose — context-aware crosshair styling — unreliable in a 180-mod pack. The fix would be DynamicCrosshairCompat, but it's **Fabric-only** (verified across the full Modrinth version history — every release since 2022 is `fabric`, no NeoForge/Forge build), so it can't be added on the pack's no-Sinytra-Connector precedent. Removal loses nothing: the vanilla crosshair remains, and no other mod depends on Dynamic Crosshair (YACL is shared and stays).
@@ -521,7 +527,7 @@ PUT 90.*:
 
 ### Added Mods (Jul 2026 batch 14 — MineColonies Addons)
 
-- [x] JadeColonies (Wave 0 — Inventory & UI) — Jade tooltips for MineColonies huts, workers, and Domum Ornamentum blocks. 5.4M DL, NeoForge 1.21.1.
+- [x] JadeColonies (Wave 1.5 — Colony Addons) — Jade tooltips for MineColonies huts, workers, and Domum Ornamentum blocks. 5.4M DL, NeoForge 1.21.1.
 - [x] Byzantine Styles Pack (Wave 1.5 — Colony Addons) — 3 build styles: Byzantine, Shogun, Nile. 12.4M DL, updated May 2026.
 - [x] Stylecolonies (Wave 1.5 — Colony Addons) — Official MineColonies blueprint addon by Raycoms. 10+ styles: Steampunk, Frontier, Aquatica, High Magic, Antique, Crimson Keep, etc. 27.6M DL, updated Jul 2026. FairyTale style unavailable (requires Quark, not in pack).
 - [x] Create: Colony Logistics (Wave 1.5 — Colony Addons) — bridges MineColonies to Create logistics (belts, chutes, trains). 54K DL, updated Jul 2026.
