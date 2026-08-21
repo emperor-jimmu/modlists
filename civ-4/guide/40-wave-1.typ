@@ -63,4 +63,4 @@ Open borders with everyone early: trade routes add gold to every connected city,
 The best war is the one that never starts. Stay at rough military parity so the AI sees no soft target, trade fairly, and answer requests you can afford. A friendly neighbor is a steady source of gold, techs, and peace of mind.
 
 == Mods for this wave
-_See the Modlist chapter. Mod entries are supplied by the project owner — none are added by tooling._
+_Wave 1 mods: K-Mod 1.46, RevolutionDCM 2.90 — full entries in the Modlist chapter._

@@ -49,4 +49,4 @@ Every city earns one label and one job. A science city stacks libraries and univ
 The endgame is a courtroom as much as a battlefield. Once defensive pacts unlock, sign one with a partner who likes you — an attack on either of you is a war on both. At the United Nations, votes are population, so keep yours highest and vote down resolutions that could crown a rival. At the Apostolic Palace, watch who built it and in which holy city, then weigh the religion's influence against its resident. And watch the scoreboard: a rival pulling ahead on land, population, and wonders is climbing toward your throne.
 
 == Mods for this wave
-_See the Modlist chapter. Mod entries are supplied by the project owner — none are added by tooling._
+_Wave 3 mod: Caveman 2 Cosmos — the full entry is in the Modlist chapter._

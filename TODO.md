@@ -34,7 +34,7 @@
 [x] 28. Starfield
 [x] 29. X-COM 2
 [x] 30. X4: Foundations
-[ ] 31. Civilization IV (only Caveman 2 Cosmos in Wave 3)
+[x] 31. Civilization IV (only Caveman 2 Cosmos in Wave 3)
 
 ## Needs work
 

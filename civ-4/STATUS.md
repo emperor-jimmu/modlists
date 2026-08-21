@@ -21,11 +21,11 @@ Living decision log: design notes, open questions, and user instructions. No mod
 | 2026-08-05 | PDF: A4, cream/bronze/gold theme, cover with `assets/logo.jpg`, clickable TOC, footer page numbers, built by `build-pdf.bat` → `output/Throne-of-Titans.pdf`. |
 | 2026-08-05 | `conflicts-mods.md` and `mod-ideas.md` are user trackers, excluded from the PDF. |
 | 2026-08-05 | Initial build verified: 16-page A4 PDF — cover (logo + title) + clickable TOC + installation (All Mod Chooser + manual) + modlist template + waves 0–3 + glossary. Regenerated cleanly via `build-pdf.bat`. |
+| 2026-08-21 | User asked tooling to fill the modlist (root TODO #31 — "Civilization IV (only Caveman 2 Cosmos in Wave 3)"). Research carve-out applied: entries researched from each mod's own material (CivFanatics threads/resources, SourceForge, kael.civfanatics.net, anewdawn.sourceforge.io) and recorded with a sourcing note in `guide/20-modlist.typ`; user remains final authority. Wave 0 = BUG 4.4, BULL 1.2, Blue Marble 4.50 Gold; Wave 1 = K-Mod 1.46, RevolutionDCM 2.90; Wave 2 = RFC 1.187, Fall from Heaven II 0.40, Realism Invictus, Rise of Mankind: A New Dawn; Wave 3 unchanged (C2C only). Wave chapters' "Mods for this wave" footers updated; `conflicts-mods.md` populated. |
 
 ## Open questions
 
 - [ ] Mod chooser: confirm the exact download thread/version in use (guide references CivFanatics "Tool - CIV 4 - All Mod Chooser 2025"; v2.9+).
-- [ ] Mods for all waves: user to provide (name + URL, dependencies, impact, notes, wave).
 - [ ] Wave themes and per-wave game setups: confirm or adjust.
 - [ ] Cover art: `assets/logo.jpg` in use — swap any time.
 
@@ -38,3 +38,4 @@ Living decision log: design notes, open questions, and user instructions. No mod
 - 2026-08-05: First mod supplied by user — **Caveman 2 Cosmos** (https://forums.civfanatics.com/threads/caveman-2-cosmos.288570/). Placed in **Wave 3** (the latest wave, per "one of the latest waves"). Dependencies, impact, and notes left as "user to provide" per the mod policy.
 - 2026-08-05: User requested retrieving C2C details from the official thread (browser automation). Entry fields filled from the thread's OP, FAQ, and credits posts: Version 43 (Jan 2023), 734+ technologies, Prehistoric→Galactic eras, BTS 3.19 requirement, suggested PC specs, RoM 2.2 base with RevolutionDCM merged, English-only, resources download link. User remains the final authority on the entry.
 - 2026-08-05: User approved adding a research carve-out to the mod policy in `AGENTS.md`: fields may be filled from the mod's own material when the user explicitly asks (recorded with attribution; user remains final authority). Applied to the "user to provide" bullet and the compatibility bullet.
+- 2026-08-21: User requested filling the next root TODO item — Civilization IV modlist (only Caveman 2 Cosmos was in Wave 3). Tooling researched and added 10 mods across waves 0–2 (BUG 4.4, BULL 1.2, Blue Marble 4.50 Gold / K-Mod 1.46, RevolutionDCM 2.90 / RFC 1.187, Fall from Heaven II 0.40, Realism Invictus, Rise of Mankind: A New Dawn), every field sourced from the mods' own material per the carve-out; sourcing note added to the modlist chapter; Wave 3 left as C2C only. TODO #31 marked done; PDF rebuilt and verified.

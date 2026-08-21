@@ -117,4 +117,4 @@ When you meet another civilization, the diplomacy screen opens a conversation: t
 
 == Mods for this wave
 
-_See the Modlist chapter. Mod entries are supplied by the project owner — none are added by tooling._
+_Wave 0 mods: BUG Mod 4.4, BULL 1.2, Blue Marble 4.50 Gold — full entries in the Modlist chapter._

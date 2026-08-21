@@ -35,7 +35,9 @@ Live editing: `typst watch guide/main.typ output/Throne-of-Titans.pdf`
 
 ## How to contribute mods
 
-The mod list is maintained exclusively by the project owner. For each mod, provide:
+The mod list is owned by the project owner. On 2026-08-21 the owner asked tooling to research and fill waves 0–2 (root TODO #31); every entry was sourced from each mod's own material (CivFanatics threads/resources, SourceForge, official sites) and recorded with a sourcing note in `guide/20-modlist.typ`. The owner remains the final authority and can amend or remove any entry.
+
+To add or change a mod, provide:
 
 1. Mod name + URL
 2. Dependencies
@@ -43,4 +45,4 @@ The mod list is maintained exclusively by the project owner. For each mod, provi
 4. Notes (load order, configuration, etc.)
 5. Which wave (0–3) it belongs to
 
-Entries are recorded verbatim in `guide/20-modlist.typ`. Missing fields are marked **user to provide** — they are never filled in or researched by the tooling.
+Missing fields are marked **user to provide** — they are never filled in or researched by the tooling unless the owner explicitly asks.

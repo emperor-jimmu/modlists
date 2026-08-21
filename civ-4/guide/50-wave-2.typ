@@ -59,4 +59,4 @@ Build *counter units*, not just hammers: pikemen stop mounted, macemen and cross
 ]
 
 == Mods for this wave
-_See the Modlist chapter. Mod entries are supplied by the project owner — none are added by tooling._
+_Wave 2 mods: Rhye's and Fall of Civilization, Fall from Heaven II, Realism Invictus, Rise of Mankind: A New Dawn — full entries in the Modlist chapter._
