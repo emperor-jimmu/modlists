@@ -1,8 +1,4 @@
-= Roleplaying Backgrounds & Game Setup
-
 Each wave is designed as a fresh playthrough with its own backstory, difficulty, and recommended settings.
-
-#pagebreak()
 
 == Wave 0: The Uncharted
 

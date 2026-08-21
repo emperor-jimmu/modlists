@@ -9,25 +9,35 @@
     {
       set text(fill: color-white)
 
-      // Background decorative elements
-      block(height: 100%, width: 100%, {
-        // Top-right accent
-        curve(
-          fill: color-steel.transparentize(80%),
-          curve.move((100%, 0%)),
-          curve.line((100%, 30%)),
-          curve.line((70%, 0%)),
-          curve.close(),
-        )
-        // Bottom-left accent
-        curve(
-          fill: color-gold.transparentize(85%),
-          curve.move((0%, 100%)),
-          curve.line((30%, 100%)),
-          curve.line((0%, 70%)),
-          curve.close(),
-        )
-      })
+      // Background decorative elements (placed, out of layout flow)
+      place(
+        top + right,
+        block(
+          width: 9cm,
+          height: 9cm,
+          curve(
+            fill: color-steel.transparentize(80%),
+            curve.move((100%, 0%)),
+            curve.line((100%, 30%)),
+            curve.line((70%, 0%)),
+            curve.close(),
+          ),
+        ),
+      )
+      place(
+        bottom + left,
+        block(
+          width: 9cm,
+          height: 9cm,
+          curve(
+            fill: color-gold.transparentize(85%),
+            curve.move((0%, 100%)),
+            curve.line((30%, 100%)),
+            curve.line((0%, 70%)),
+            curve.close(),
+          ),
+        ),
+      )
 
       set align(center + horizon)
 

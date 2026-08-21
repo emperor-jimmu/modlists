@@ -1,7 +1,3 @@
-# Build output
-output/
-*.pdf
-
 # Design docs (superpowers skill artifacts)
 docs/
 

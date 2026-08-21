@@ -26,7 +26,7 @@
     },
     numbering: "1",
   )
-  set text(font: ("Source Serif Pro", "Noto Serif", "Georgia"), size: 11pt, fill: color-dark-text)
+  set text(font: ("Source Serif Pro", "Noto Serif", "Georgia"), size: 12pt, fill: color-dark-text)
   set heading(numbering: "1.1")
 }
 
@@ -35,7 +35,7 @@
   fill: color-navy,
   inset: 12pt,
   radius: 4pt,
-  text(color-white, size: 18pt, weight: "bold", body)
+  text(color-white, size: 20pt, weight: "bold", body)
 )
 
 // Mod card
@@ -50,27 +50,27 @@
     below: 8pt,
     [
       #if is-link {
-        link(mod-url)[#text(size: 12pt, weight: "bold", fill: color-steel, mod.name)]
+        link(mod-url)[#text(size: 13pt, weight: "bold", fill: color-steel, mod.name)]
       } else {
-        text(size: 12pt, weight: "bold", mod.name)
+        text(size: 13pt, weight: "bold", mod.name)
       }
       #h(1em)
-      #text(size: 9pt, fill: color-muted, style: "italic")[#mod.category]
+      #text(size: 10pt, fill: color-muted, style: "italic")[#mod.category]
       #linebreak()
       #mod.description
       #if "mechanics" in mod {
         linebreak()
-        text(size: 10pt, fill: color-navy, weight: "semibold")[Mechanics: ]
+        text(size: 11pt, fill: color-navy, weight: "semibold")[Mechanics: ]
         mod.mechanics
       }
       #if "dependencies" in mod and mod.dependencies.len() > 0 {
         linebreak()
-        text(size: 10pt, fill: color-steel)[Dependencies: ]
+        text(size: 11pt, fill: color-steel)[Dependencies: ]
         mod.dependencies.join(", ")
       }
       #if "dlc_required" in mod and mod.dlc_required != "" {
         linebreak()
-        text(size: 9pt, fill: color-gold)[DLC Required: #mod.dlc_required]
+        text(size: 10pt, fill: color-gold)[DLC Required: #mod.dlc_required]
       }
     ],
   )
