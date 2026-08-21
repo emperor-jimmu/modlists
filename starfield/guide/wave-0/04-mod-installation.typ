@@ -2,24 +2,26 @@
 
 === Prerequisites
 
-Ensure you have completed the setup guide (MO2, SFSE, INI tweaks) before continuing.
+Ensure you have completed the setup guide (MO2, SFSE, Address Library, INI tweaks) before continuing. Frameworks from setup — SFSE, Address Library for SFSE Plugins, Baka Achievement Enabler, and Plugins.txt Enabler — are required by this wave.
 
 === Installation Order
 
-1. Install UI and QoL mods first (foundation for other mods).
-2. Install graphics mods second.
-3. Apply load order per each mod's instructions.
+1. Framework mods first (already covered in setup).
+2. UI mods: the StarUI suite, then the Compact UI series, then Undelayed Menus and BetterHUD.
+3. Graphics mods: Neutral LUTs, then Starfield HD Reworked Project (optional).
 
 === Load Order
 
-- UI framework mods load before UI improvement mods.
-- Texture replacers can conflict — load higher-quality ones later.
-- Specific load order is listed per-mod in the sections above.
+- Frameworks load first (SFSE plugins, Address Library).
+- UI mods load after frameworks; keep the StarUI and Compact suites adjacent for readability.
+- Texture replacers load last in the left pane so they override vanilla assets.
+- Archive invalidation (`bInvalidateOlderFiles=1`) must be set for the texture mods.
 
 === Verification
 
 Launch the game via SFSE. Verify:
 
-1. The UI mods appear and function.
-2. Graphics mods are visible on characters and environments.
-3. No crashes on save or load.
+1. The StarUI and Compact menus appear and are compact/sortable.
+2. BetterHUD hides the elements you configured.
+3. Neutral LUTs removes the color cast (interiors look neutral, not green).
+4. No crashes on save or load.

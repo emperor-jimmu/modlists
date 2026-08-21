@@ -23,5 +23,19 @@ In MO2:
 
 Required by many SFSE plugins. Installs like any other mod in MO2.
 
-1. Download from #link("https://www.nexusmods.com/starfield/mods/325")[Nexus Mods — Address Library].
+1. Download from #link("https://www.nexusmods.com/starfield/mods/3256")[Nexus Mods — Address Library].
 2. Install via MO2 (drag the archive into the downloads tab and double-click).
+
+=== Baka Achievement Enabler (SFSE)
+
+Keeps Steam achievements enabled while mods are active. Required by this modlist — most of these mods flag the game's mod-detection.
+
+1. Download from #link("https://www.nexusmods.com/starfield/mods/658")[Nexus Mods — Baka Achievement Enabler].
+2. Install via MO2.
+
+=== Plugins.txt Enabler
+
+Lets Starfield read a `Plugins.txt` load order, which several mods and patchers rely on.
+
+1. Download from #link("https://www.nexusmods.com/starfield/mods/4157")[Nexus Mods — Plugins.txt Enabler].
+2. Install via MO2.

@@ -30,8 +30,8 @@
 [x] 24. GTA V
 [x] 25. Monster Hunter Rise
 [x] 26. No Man's Sky
-[ ] 27. Oxygen Not Included
-[ ] 28. Starfield
+[x] 27. Oxygen Not Included
+[x] 28. Starfield
 [x] 29. X-COM 2
 [ ] 30. X4: Foundations
 [ ] 31. Civilization IV (only Caveman 2 Cosmos in Wave 3)

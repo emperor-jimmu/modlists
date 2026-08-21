@@ -2,7 +2,7 @@
 
 === Prerequisites
 
-Complete the Wave 0 playthrough first. Create a new MO2 profile for Wave 1 — do not carry over Wave 0 mods.
+Complete the Wave 0 playthrough first. Create a new MO2 profile for Wave 1 — do not carry over Wave 0 mods. Frameworks (SFSE, Address Library, Baka Achievement Enabler, Plugins.txt Enabler) are re-installed in this profile.
 
 === Creating a New MO2 Profile
 
@@ -12,27 +12,33 @@ Complete the Wave 0 playthrough first. Create a new MO2 profile for Wave 1 — d
 
 === Installation Order
 
-1. Framework mods (SFSE plugins, Address Library, other extenders)
-2. Content mods (quests, locations)
-3. Mechanics mods (survival, economy, crafting)
-4. Graphics mods (enhanced)
-5. Patches and compatibility fixes
+1. Framework mods (SFSE plugins, Address Library, enablers).
+2. Ship Builder Categories (SBC) — before other ship mods.
+3. Content mods (quests, weapons, armor, companions).
+4. Mechanics mods (Royal Galaxy, Starvival, POI mods, ship flips/snaps).
+5. Graphics mods (Starfield HD Reworked Project, optional ReShade).
+6. Patches and compatibility fixes.
 
 === Load Order
 
-Wave 1 has more moving parts. Follow each mod's load order instructions carefully.
+Priority, top to bottom:
 
-Priority:
-- Masters and frameworks first
-- Framework patches second
-- Quest mods third
-- Mechanics mods fourth
-- Graphics last
-- Comprehensive patches last
+- Masters and frameworks first (SFSE, Address Library, SBC).
+- Framework patches second.
+- Quest and content mods third.
+- Mechanics mods fourth (Royal Galaxy and Starvival before smaller mechanics tweaks).
+- Graphics last (texture replacers lowest in the left pane).
+- Comprehensive patches last.
+
+Specific notes:
+
+- Ship Builder Categories loads high; Better Ship Part Flips and Snaps load after it.
+- Do not combine Better Ship Part Flips/Snaps with Ship Module Snap Expansion (SMSEX).
+- Don't stack Starvival with another survival overhaul, or Royal Galaxy with another total gameplay overhaul.
 
 === Verification
 
 1. Launch via SFSE.
-2. Check mod configuration menus for configurable mods.
+2. Check each configurable mod's options (Starvival's config book, BetterHUD, The Gang's All Here terminal).
 3. Test a save-load cycle.
-4. Visit a new location from a content mod to verify it loads correctly.
+4. Visit a new location (a Dark Universe base or a restored landmark quest) to confirm content mods load.
