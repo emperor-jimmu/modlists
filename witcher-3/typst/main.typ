@@ -8,7 +8,7 @@
   numbering: "1",
 )
 
-#set text(font: c.body-font, size: 11pt, fill: c.body)
+#set text(font: c.body-font, size: 12pt, fill: c.body)
 #set par(justify: true, leading: 0.7em)
 #show heading: it => {
   set text(font: c.heading-font, weight: "bold", fill: c.heading)

@@ -14,7 +14,7 @@
 
 #let title-page(ttl: "", sbtl: "", logo-path: "logo.png") = {
   page(paper: "a4", margin: (top: 5cm, bottom: 2.5cm, left: 2.5cm, right: 2.5cm))[
-    #align(center, image(logo-path, height: 4.5cm))
+    #align(center, image(logo-path, height: 6.5cm))
     #v(2.5cm)
     #align(center, text(size: 34pt, weight: "bold", fill: c.heading)[#ttl])
     #v(0.4cm)
@@ -24,7 +24,7 @@
     #v(0.3cm)
     #align(center, text(size: 10pt, fill: c.muted)[A Witcher 3 Modlist & Game Guide])
     #v(3cm)
-    #align(center, text(size: 9pt, fill: c.muted)[Generated #datetime.today().display("[day] [month repr:long] [year]")])
+    #align(center, text(size: 10pt, fill: c.muted)[Generated #datetime.today().display("[day] [month repr:long] [year]")])
   ]
 }
 
@@ -58,7 +58,7 @@
       gutter: 8pt,
       {
         par(leading: 0.6em)[
-          #text(size: 12pt, weight: "bold", fill: c.heading)[#name]
+          #text(size: 13pt, weight: "bold", fill: c.heading)[#name]
         ]
       },
       {
@@ -67,7 +67,7 @@
           radius: 3pt,
           fill: rgb("#e8e0d0"),
         )[
-          #link(url)[#text(size: 8pt, weight: "medium", fill: c.link)[Download]]
+          #link(url)[#text(size: 9pt, weight: "medium", fill: c.link)[Download]]
         ]
       },
     )
@@ -77,40 +77,40 @@
       gutter: (12pt, 4pt),
       [
         #par(leading: 0.5em)[
-          #text(size: 9pt, fill: c.muted)[Author:] #text(size: 9pt, fill: c.body)[#author]
+          #text(size: 10pt, fill: c.muted)[Author:] #text(size: 9pt, fill: c.body)[#author]
         ]
       ],
       [
         #par(leading: 0.5em)[
-          #text(size: 9pt, fill: c.muted)[Category:] #text(size: 9pt, fill: c.body)[#category]
+          #text(size: 10pt, fill: c.muted)[Category:] #text(size: 9pt, fill: c.body)[#category]
         ]
       ],
       [
         #par(leading: 0.5em)[
-          #text(size: 9pt, fill: c.muted)[Version:] #text(size: 9pt, fill: c.body)[#version]
+          #text(size: 10pt, fill: c.muted)[Version:] #text(size: 9pt, fill: c.body)[#version]
         ]
       ],
       [
         #par(leading: 0.5em)[
-          #text(size: 9pt, fill: c.muted)[Wave:] #text(size: 9pt, fill: c.body)[#wave]
+          #text(size: 10pt, fill: c.muted)[Wave:] #text(size: 9pt, fill: c.body)[#wave]
         ]
       ],
     )
     #if dependencies.len() > 0 [
       #v(4pt)
       #par(leading: 0.5em)[
-        #text(size: 9pt, fill: c.muted)[*Dependencies:*] #text(size: 9pt, fill: c.body)[#dependencies.join(", ")]
+        #text(size: 10pt, fill: c.muted)[*Dependencies:*] #text(size: 9pt, fill: c.body)[#dependencies.join(", ")]
       ]
     ]
     #if mechanic-impact != none [
       #v(4pt)
       #par(leading: 0.5em)[
-        #text(size: 9pt, fill: c.muted)[*Mechanic Impact:*] #text(size: 9pt, fill: c.body)[#mechanic-impact]
+        #text(size: 10pt, fill: c.muted)[*Mechanic Impact:*] #text(size: 9pt, fill: c.body)[#mechanic-impact]
       ]
     ]
     #v(6pt)
     #par(leading: 0.6em)[
-      #text(size: 9.5pt, fill: c.body)[#body]
+      #text(size: 10.5pt, fill: c.body)[#body]
     ]
   ]
   v(8pt)
@@ -138,7 +138,7 @@
     stroke: 0.5pt + c.amber,
     radius: 3pt,
   )[
-    #text(size: 9pt, fill: c.amber)[*Tip:* ]#body
+    #text(size: 10pt, fill: c.amber)[*Tip:* ]#body
   ]
   v(6pt)
 }
