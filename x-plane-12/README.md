@@ -4,8 +4,9 @@ A flight guide and modlist scaffold for **X-Plane 12** (version 12.4.3), organiz
 progressively harder "waves" (0-5), each with its own roleplaying backstory and aircraft to
 study, rendered as a colorful PDF via Typst.
 
-- Modlist: **mods added by the user** - the guide ships with mod-card scaffolds
-  (`guide/wave-*/`, `guide/foundational.typ`); the user pastes mod cards there
+- Modlist: **user-directed and verified mod cards** fill the wave chapters — a curation
+  round (2026-08-21, see `STATUS.md`) filled the open slots with training aids, QoL, and
+  graphics mods; remaining slots stay "user to provide" and can be added any time
   (rules in `AGENTS.md` / `STATUS.md`)
 - Mod organizer: XFast Manager (verified from its official GitHub - see `STATUS.md`)
 - Foundational plugins (user-supplied): Navigraph, LittleNavMap, AutoOrtho, X-Camera, AviTab,
@@ -16,12 +17,12 @@ study, rendered as a colorful PDF via Typst.
 
 | Wave | Theme | Aircraft | Status |
 |---|---|---|---|
-| 0 - First Solo | Complete beginners; vanilla + UI/QoL only | Cessna 172 (stock) | complete |
-| 1 - The Ferry | Glass cockpit, cross-country, weather decisions | SR22 G1000 (Take Command - user addon) | complete; SR22 + XPRealistic supplied |
-| 2 - The Charter | Turbofan, FMS, learning IFR | Challenger 650 (Hot Start - user addon) | complete; URL supplied |
-| 3 - The Dash Ace | High-speed turboprop, regional ops | Dash 8 Q400 (FlyJSim Q4XP - user addon) | complete; URL supplied |
-| 4 - The Line | Airline operations, FMC, automation | 737-800X (Zibo Mod - user addon) | complete; URL supplied |
-| 5 - The Heavy Ace | Heavy long-haul, oceanic, night ops | 777-200ERF (FlightFactor 777F - user addon) | complete; URL supplied |
+| 0 - First Solo | Complete beginners; vanilla + UI/QoL only | Cessna 172 (stock); DA20-SV as optional alternate trainer | complete; modlist filled (training/QoL/graphics) |
+| 1 - The Ferry | Glass cockpit, cross-country, weather decisions | SR22 G1000 (Take Command - user addon) | complete; modlist filled (REP, X-KeyPad, X-World, BAAC) |
+| 2 - The Charter | Turbofan, FMS, learning IFR | Challenger 650 (Hot Start - user addon) | complete; modlist filled (WebFMC, OpenSceneryX) |
+| 3 - The Dash Ace | High-speed turboprop, regional ops | Dash 8 Q400 (FlyJSim Q4XP - user addon) | complete; modlist filled (XChecklist, AEP) |
+| 4 - The Line | Airline operations, FMC, automation | 737-800X (Zibo Mod - user addon); A320neo (ToLiss - user addon) | complete; modlist filled (LiveTraffic) |
+| 5 - The Heavy Ace | Heavy long-haul, oceanic, night ops | 777-200ERF (FlightFactor 777F - user addon) | complete; modlist filled (SimBrief) |
 
 Waves 1-5 add content and mechanics but **no pure power spikes**.
 

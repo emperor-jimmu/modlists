@@ -12,4 +12,12 @@ Wave 3's centerpiece is a *user-supplied aircraft addon*: the Dash 8 Q400 in the
   notes: "User-supplied aircraft (payware addon). Current version and any dependencies: user to provide. Per project rule, nothing here validates compatibility — confirm against 12.4.3 with the release-date heuristic.",
 )
 
-#mod-entry("user to provide")
+One further mod was added at your direction on 2026-08-21 — the regional pilot's flow coach.
+
+#mod-entry(
+  "XChecklist",
+  url: "https://forums.x-plane.org/files/file/20785-xchecklist-linwinmac/",
+  deps: none,
+  impact: "Interactive in-cockpit checklists with an optional co-pilot voice — the Q400's flows read to you while you fly the minute game.",
+  notes: "Freeware. The plugin goes in Resources/plugins/; each aircraft's checklist file (clist.txt) sits in that aircraft's folder — community files exist for most addons. Current version: user to provide.",
+)

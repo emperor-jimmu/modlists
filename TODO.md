@@ -40,4 +40,4 @@
 
 [x] 32. Witcher 3 (wave 0 + waves 1-2 modlists complete)
 [x] 33. Warhammer 3 (wave 0 + waves 1-2 modlists complete)
-[ ] 34. X-Plane 12 (waves 1-5 partly done; wave 0 empty, open slots)
+[x] 34. X-Plane 12 (waves 0-5 modlists filled: training aids / QoL / graphics, incl. X-Clouds Enhancer, ToLiss A320, DA20-SV)

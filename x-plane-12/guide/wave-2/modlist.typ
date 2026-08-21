@@ -14,6 +14,12 @@ The wave's centerpiece is a *user-supplied aircraft addon*: the Challenger 650 i
   notes: "User-supplied aircraft (payware addon). Current version and any dependencies: user to provide. Per project rule, nothing here validates compatibility — confirm against 12.4.3 with the release-date heuristic.",
 )
 
-Per project rule, further wave-specific mods come from you — cards below are *pending addition*, with the fields this guide's rules demand. Anything you do not supply stays *"user to provide"*.
+One further mod was added at your direction on 2026-08-21 — the FMS you already know, in your hand.
 
-#mod-entry("user to provide")
+#mod-entry(
+  "WebFMC Pro",
+  url: "https://greenarcstudios.com/",
+  deps: none,
+  impact: "Puts the aircraft's FMS/CDU in any web browser on your network — plan, monitor, and fly the approach from a tablet or second screen.",
+  notes: "Payware plugin; the free version covers only the Zibo 737. The Pro version supports this wave's Hot Start Challenger 650 (all three CDUs) and later waves' aircraft (Q4XP, Zibo, ToLiss, 777v2). Current version: user to provide.",
+)

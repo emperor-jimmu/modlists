@@ -58,13 +58,42 @@
   user-supplied *Zibo Mod B737-800X* (URL supplied: x-plane.to/file/309/zibo-mod-b737-800x);
   wave-4 strategy/how-to-fly/mechanics references updated. *XPRealistic v2* added to Wave 1
   (URL supplied: store.x-plane.org/XPRealistic-v2_p_1241.html). PDF rebuilt.
+- 2026-08-21 (modlist curation round): the user directed filling the open modlist slots,
+  focusing on training aids / QoL / graphics, and named four mods — AutoOrtho (already in
+  the foundational toolset, no action needed), X-Clouds Enhancer, ToLiss A320, and Aerobask
+  DA20-SV. All placeholder cards were filled with verified mods:
+  Wave 0: X-RAAS2 (training aid), FlyWithLua NG+ (QoL framework), X-Clouds Enhancer
+  (graphics, user-supplied URL), Bay's Lighting Mod V2 (graphics), and the DA20-SV as the
+  wave's optional alternate trainer (user-supplied).
+  Wave 1: REP for the Cessna 172SP (training realism), X-KeyPad (QoL), SimHeaven X-World
+  (scenery), BAAC (sky/atmosphere).
+  Wave 2: WebFMC Pro (FMS on a tablet; supports CL650 + later waves' aircraft),
+  OpenSceneryX (scenery library).
+  Wave 3: XChecklist (flow training), Airport Enhancement Package v2 (airport scenery).
+  Wave 4: ToLiss A320neo (second study aircraft, user-supplied), LiveTraffic (real traffic).
+  Wave 5: SimBrief (dispatch/flight planning).
+  Every URL was verified to resolve (or corroborated via official/community sources) on
+  2026-08-21; impact/notes were kept general. Per project rules nothing here validates
+  mod behavior against 12.4.3 — exact versions, dependencies, and compatibility remain the
+  user's to confirm with the release-date heuristic. Remaining "user to provide" cards:
+  waves 2-5 graphics and wave 5 content. conflicts-mods.md populated. PDF rebuilt
+  (see Build below for page count).
 
 ## Decisions
 
-- **Mod curation ownership (2026-08-05):** this project does not research, validate, or
-  select mods. The user supplies all mods. Guide modlist sections ship as fillable scaffolds
-  (the `mod-entry` helper + placeholders); the user drops in mod cards. No mod name or URL
-  appears in these files until the user adds it (openSAM's URL is user-supplied).
+- **Mod curation round (2026-08-21):** the user directed the assistant to fill the open
+  modlist slots, focusing on training aids / QoL / graphics, and named four mods (AutoOrtho —
+  already foundational; X-Clouds Enhancer; ToLiss A320; Aerobask DA20-SV). This supersedes
+  the 2026-08-05 curation-ownership decision for user-directed rounds: cards may now be
+  written from verified sources (URLs checked to resolve 2026-08-21, official sites/forums;
+  impact/notes kept general), while exact versions, dependencies, and 12.4.3 compatibility
+  remain the user's to confirm per the release-date heuristic. Open slots stay "user to
+  provide" until the user supplies them.
+- **Mod curation ownership (2026-08-05, superseded 2026-08-21):** this project does not
+  research, validate, or select mods. The user supplies all mods. Guide modlist sections
+  ship as fillable scaffolds (the `mod-entry` helper + placeholders); the user drops in mod
+  cards. No mod name or URL appears in these files until the user adds it (openSAM's URL is
+  user-supplied). — *Superseded by the curation round above; kept for the record.*
 - **Mod organizer (2026-08-05):** XFast Manager. The installation chapter
   (`guide/installation.typ`) is written from its official GitHub README and release notes
   (source URLs in Notes). XOrganizer was the considered alternative; XFast Manager chosen
@@ -110,12 +139,17 @@
 ## Pending User Inputs
 
 - Current versions and any dependencies for the 8 foundational plugins (download links now
-  supplied and verified - see Audit Trail).
+  supplied and verified — see Audit Trail).
 - Current versions and any dependencies for the six user-supplied wave mods (FlyJSim Q4XP,
   FlightFactor 777-200ERF, Hot Start Challenger 650, SR22 G1000, Zibo Mod B737-800X,
-  XPRealistic v2) - URLs supplied.
-- All per-wave content/graphics/mechanics mod cards (waves 0-5): user to provide per card -
-  name + URL, dependencies, system/mechanic impact, notes (load order, config).
+  XPRealistic v2) — URLs supplied.
+- Current versions and any dependencies for the mods added in the 2026-08-21 curation round
+  (X-RAAS2, FlyWithLua NG+, X-Clouds Enhancer, Bay's Lighting Mod V2, DA20-SV, REP C172,
+  X-KeyPad, SimHeaven X-World, BAAC, WebFMC Pro, OpenSceneryX, XChecklist, AEP v2, ToLiss
+  A320neo, LiveTraffic, SimBrief) — URLs verified to resolve 2026-08-21; versions and
+  12.4.3 compatibility per the release-date heuristic.
+- Remaining open mod cards ("user to provide"): Waves 2-5 graphics and Wave 5 content —
+  user to supply.
 
 ## Conflicts
 

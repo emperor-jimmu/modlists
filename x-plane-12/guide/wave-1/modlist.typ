@@ -24,6 +24,20 @@ The second is the immersion plugin you added to this wave: XPRealistic.
   notes: "User-supplied plugin (payware). Pairs naturally with X-Camera from the foundational toolset (the developer documents the integration). Current version and any dependencies: user to provide.",
 )
 
-Per project rule, further wave-specific mods come from you — cards below are *pending addition*, with the fields this guide's rules demand. Anything you do not supply stays *"user to provide"*.
+Two further mods were added at your direction on 2026-08-21 — one that makes the 172 you trained in behave like the machine it is, and one that gives your hands a proper panel.
 
-#mod-entry("user to provide")
+#mod-entry(
+  "Reality Expansion Pack (REP) for the Cessna 172SP",
+  url: "https://www.simcoders.com/reality-expansion-pack/laminar-cessna-172/",
+  deps: "The stock Laminar Cessna 172SP",
+  impact: "Deepens the Wave 0 trainer: a custom engine model, realistic wear and failures, a walkaround and maintenance hangar, and more accurate flight dynamics — the 172 grows up.",
+  notes: "Payware addon. XP12 requires REP 4.7.0 or newer; install on a fresh XP12 Cessna (do not copy an XP11 install) and update via the SkunkCrafts Updater. It adds plenty to learn and manage — exactly this wave's rule. Current version: user to provide.",
+)
+
+#mod-entry(
+  "X-KeyPad",
+  url: "https://www.stickandrudderstudios.com/x-keypad/",
+  deps: none,
+  impact: "Drives the sim from a Stream Deck (or X-Touch Mini, X-Keys): radios, autopilot, views, and custom panels with live state — capability that costs configuration to learn.",
+  notes: "Freeware plugin by Stick and Rudder Studios (the X-Camera developer). Two-part install: the sim plugin plus the companion Stream Deck plugin. Current version: user to provide.",
+)

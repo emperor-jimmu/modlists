@@ -12,4 +12,12 @@ Wave 5's centerpiece is a *user-supplied aircraft addon*: the Boeing 777 Freight
   notes: "User-supplied aircraft (payware addon). Current version and any dependencies: user to provide. Per project rule, nothing here validates compatibility — confirm against 12.4.3 with the release-date heuristic.",
 )
 
-#mod-entry("user to provide")
+One further mod was added at your direction on 2026-08-21 — the dispatcher's desk.
+
+#mod-entry(
+  "SimBrief",
+  url: "https://www.simbrief.com",
+  deps: "A free Navigraph account (sign-in is required); a Navigraph subscription unlocks current AIRAC data",
+  impact: "Dispatch-grade flight planning: routes, fuel planning for 120+ aircraft profiles, weather, NOTAMs, and ETOPS — the long-haul briefing desk the 777F's operation runs on.",
+  notes: "Free web service by Navigraph. Plans load into the 777F's EFB (and the Wave 4 Zibo/ToLiss aircraft) via SimBrief uplink or the FMS Downloader. Current version: user to provide.",
+)

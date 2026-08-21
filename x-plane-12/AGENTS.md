@@ -20,6 +20,14 @@ Mod organizer: **XFast Manager**. Decisions and open questions live in `STATUS.m
   `guide/helpers.typ`): clickable name + URL, dependencies, system/mechanic impact, notes
   (load order, config). Missing fields render as *"user to provide"* - never invent or
   research missing data.
+- Curation round (2026-08-21): the user directed filling the open modlist slots, focusing
+  on training aids / QoL / graphics, and named four mods (AutoOrtho - already in the
+  foundational toolset - X-Clouds Enhancer, ToLiss A320, Aerobask DA20-SV). Cards added
+  that day were written from sources verified to resolve on 2026-08-21 (official sites,
+  X-Plane.org forums/store, GitHub, simheaven.com, greenarcstudios.com); impact/notes stay
+  general, and exact versions, dependencies, and 12.4.3 compatibility remain the user's to
+  confirm with the release-date heuristic. Remaining "user to provide" cards stay open
+  until supplied.
 - The *Foundational Plugins* chapter (`guide/foundational.typ`) documents the eight plugins
   the user supplied (Navigraph, LittleNavMap, AutoOrtho, X-Camera, AviTab, X-ATC-Chatter,
   openSAM, Better Pushback). Usage/install prose there is general guidance from general
