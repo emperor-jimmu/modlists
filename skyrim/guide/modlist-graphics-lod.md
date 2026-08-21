@@ -158,3 +158,5 @@ When using **Seasons of Skyrim SKSE** + **Turn of the Seasons**, DynDOLOD and xL
 **DynDOLOD seasonal:** Tick the **Seasons** checkbox, the **Snow** checkbox, and select the desired seasons in DynDOLOD's GUI. Generation time scales with the number of seasons selected.
 
 Rebuild seasonal LOD whenever the underlying terrain, tree, or landscape seasonal-swap data changes.
+
+AutoSeasons (→ `World Feel` seasonal baseline) generates the seasonal swap plugin + `Data/Seasons/*.ini` data scanned from the load order — re-run it, then rebuild seasonal LOD, whenever seasonal texture/mesh variants change.

@@ -396,6 +396,7 @@ Weapons, armor, artifacts, and clothing content has been consolidated into its o
 
 **Alternative:** **Boethiah for Good Guys** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/329)) — older alternative that allows completing Boethiah's Calling without sacrificing a follower. Incompatible with Boethiah's Calling - Alternate Questline — choose one.
 | [Dungeon Quests are not Miscellaneous](https://www.nexusmods.com/skyrimspecialedition/mods/123559) | Converts 7 misc dungeon quests to full side quests with journal entries. |
+| [Miscellaneous Plus Plus](https://www.nexusmods.com/skyrimspecialedition/mods/188168) | Quest-logic overhaul of "A Return to Your Roots" (Crimson Nirnroot) — killable quest-giver, droppable Sinderion's Journal, refined nirnroot counting, journal-gated progression. Flowrifto (same author as adopted A Chance Arrangement Plus Plus 175885). Verify USSEP record overlap + killable-quest-giver quest-flow in testing. |
 
 ### Standalone Adventures
 
