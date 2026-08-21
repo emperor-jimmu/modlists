@@ -13,12 +13,12 @@ Wave 2 introduces mechanics mods that fundamentally change gameplay:
 
 ### Combat Overhauls
 - **Damage rebalance** -- enemies hit harder, but so do you. Fights are shorter and more lethal. Preparation determines victory, not stat checks.
-- **Stamina matters** -- dodging and Sign-casting share a stamina pool. No more spamming dodge -> Igni -> dodge. Every action must be intentional.
-- **Parry windows tighten** -- humanoid enemies feint and vary their timing. Parrying requires reading the enemy's body language.
+- **Stamina matters** -- stamina and posture are reworked. No more spamming dodge -> Igni -> dodge: relentless attack and dodge spam leaves you winded and open to hit-stun. Every action must be intentional.
+- **Parry windows tighten** -- reworked parry and active-parry windows demand precise timing. Parrying requires reading the enemy's attack, not holding the button.
 
 ### Economy Changes
-- **Reduced loot** -- bandits carry fewer crowns. Merchants have less gold to trade. Earn your coin through contracts, not looting.
-- **Crafting requires more** -- witcher gear diagrams demand rare monster parts. You must hunt specific monsters for their drops.
+- **Gold is scarcer** -- loot sells for little and merchants have less coin to trade. Earn your coin through contracts, not looting.
+- **Crafting is more consequential** -- recipes demand rarer components and limited ingredients, so you must hunt specific monsters for their drops.
 - **Weight matters** -- encumbrance is stricter. You cannot carry three full armor sets. Choose carefully.
 
 ## Adapting to Higher Difficulty

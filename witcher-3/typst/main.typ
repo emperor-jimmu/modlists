@@ -349,7 +349,220 @@ Slot 3 same-color skills adjacent to a matching mutagen for a 3x multiplier. Upg
 
 All Wave 0 mods plus graphics, content, and enhanced UI mods:
 
-<!-- Mod entries will be added here once the modlist is finalized. -->
+== Graphics & Visuals
+
+#mod-card(
+  name: "HD Reworked Project NextGen Edition",
+  url: "https://www.nexusmods.com/witcher3/mods/9963",
+  author: "HalkHogan",
+  category: "Graphics",
+  version: "20.0-fixed",
+  wave: "1",
+  dependencies: (),
+  mechanic-impact: none,
+)[4K texture and asset overhaul of terrain, water, foliage, and meshes. CDPR integrated an older version into the base Next-Gen update; this standalone edition goes far beyond it. Installs to the game root via its installer.]
+
+#mod-card(
+  name: "Characters Reworked Project",
+  url: "https://www.nexusmods.com/witcher3/mods/7840",
+  author: "cnfilmm",
+  category: "Graphics",
+  version: "4.0",
+  wave: "1",
+  dependencies: ("Hearts of Stone", "Blood and Wine"),
+  mechanic-impact: none,
+)[4K face/skin textures and normal maps for 100+ characters across the main game and both expansions. Complements HD Reworked Project.]
+
+#mod-card(
+  name: "HD Monsters Reworked (HDMR)",
+  url: "https://www.nexusmods.com/witcher3/mods/3580",
+  author: "Denroth",
+  category: "Graphics",
+  version: "5.0 Next Gen",
+  wave: "1",
+  dependencies: (),
+  mechanic-impact: none,
+)[High-resolution textures and meshes for every monster. Install the Part 1 + Part 2 + LOD Optimization files.]
+
+#mod-card(
+  name: "HD Animals Reworked (HDAR)",
+  url: "https://www.nexusmods.com/witcher3/mods/5405",
+  author: "Denroth",
+  category: "Graphics",
+  version: "3.1",
+  wave: "1",
+  dependencies: (),
+  mechanic-impact: none,
+)[High-resolution wildlife textures. Companion to HD Monsters Reworked.]
+
+#mod-card(
+  name: "Meadows Remastered - A Cross-Gen Grass Overhaul",
+  url: "https://www.nexusmods.com/witcher3/mods/11762",
+  author: "Maidenfan724",
+  category: "Graphics",
+  version: "1.0",
+  wave: "1",
+  dependencies: (),
+  mechanic-impact: none,
+)[Replaces nearly all grass and vegetation textures across every region, including Toussaint. Standalone \u{2014} do not combine with any other grass overhaul.]
+
+#mod-card(
+  name: "UHD Oaks Redux",
+  url: "https://www.nexusmods.com/witcher3/mods/8013",
+  author: "Ridog8 & lufusol",
+  category: "Graphics",
+  version: "1.0",
+  wave: "1",
+  dependencies: (),
+  mechanic-impact: none,
+)[Remastered bark and moss textures for all oak trees.]
+
+#mod-card(
+  name: "New Clouds",
+  url: "https://www.nexusmods.com/witcher3/mods/3315",
+  author: "Hyadum27",
+  category: "Graphics",
+  version: "3.0",
+  wave: "1",
+  dependencies: (),
+  mechanic-impact: none,
+)[Higher-quality cloud textures. Texture-only, no scripts.]
+
+#mod-card(
+  name: "Promotional Atmosphere Lighting Mod (PALM)",
+  url: "https://www.nexusmods.com/witcher3/mods/10322",
+  author: "BoneDoctor21",
+  category: "Graphics",
+  version: "2.0",
+  wave: "1",
+  dependencies: (),
+  mechanic-impact: none,
+)[Restores the pre-release/E3 promotional art style, built for Next-Gen. Use only one lighting mod \u{2014} classic lighting overhauls (STLM, Phoenix Lighting, Wiedzmin) are broken on 4.04.]
+
+#mod-card(
+  name: "True Rain",
+  url: "https://www.nexusmods.com/witcher3/mods/11603",
+  author: "Jaxonic",
+  category: "Graphics",
+  version: "6",
+  wave: "1",
+  dependencies: ("DirectX 12",),
+  mechanic-impact: none,
+)[Rain rebuilt from scratch with real-time refraction \u{2014} torchlight scatters through raindrops. Requires DX12. Do not combine with other rain mods.]
+
+#mod-card(
+  name: "Improved Sign Effects Next Gen",
+  url: "https://www.nexusmods.com/witcher3/mods/7369",
+  author: "lacmac & Lunayah",
+  category: "Graphics",
+  version: "4.01",
+  wave: "1",
+  dependencies: (),
+  mechanic-impact: none,
+)[Visual overhaul of all Sign effects for the Next-Gen engine. Install the Next-Gen file, not the classic one. Script mod \u{2014} run Script Merger.]
+
+#mod-card(
+  name: "No Dirty Lens Effect",
+  url: "https://www.nexusmods.com/witcher3/mods/347",
+  author: "RumenWest",
+  category: "Graphics",
+  version: "1.0",
+  wave: "1",
+  dependencies: (),
+  mechanic-impact: none,
+)[Removes the lens-dirt overlay from the camera. Texture-only.]
+
+== Content
+
+#mod-card(
+  name: "Tales of The Witcher - Cintra",
+  url: "https://www.nexusmods.com/witcher3/mods/9745",
+  author: "Gerwant",
+  category: "Content",
+  version: "0.6a (Early Access)",
+  wave: "1",
+  dependencies: (),
+  mechanic-impact: "Standalone world \u{2014} new region, quests, and economy",
+)[Expansion-sized standalone world in the Kingdom of Cintra, set long before the books and games. Won 2nd place in CDPR's official REDkit Modding Contest. Early Access \u{2014} new content is still being added.]
+
+#mod-card(
+  name: "A Witcher Can Hide Another",
+  url: "https://www.nexusmods.com/witcher3/mods/9453",
+  author: "nikich340, lindrole, SieeleLushen, Culorin, glassfish777",
+  category: "Content",
+  version: "1.1.1",
+  wave: "1",
+  dependencies: (),
+  mechanic-impact: "New playable character, new mechanics, multiple endings",
+)[Won 1st place in CDPR's REDkit Modding Contest. Fully voiced questline with multiple endings; you play a brand-new character to rescue Geralt. Recommended level 40+. Starts at a noticeboard in Novigrad.]
+
+#mod-card(
+  name: "The Spider and The Wolf",
+  url: "https://www.nexusmods.com/witcher3/mods/9803",
+  author: "Dwhyx & Beoronick",
+  category: "Content",
+  version: "2.0",
+  wave: "1",
+  dependencies: (),
+  mechanic-impact: "2+ hours of quests, choices and endings",
+)[Two hours of interconnected quests in Velen: a dark conspiracy within the Order of the Flaming Rose. Custom cinematics, multiple choices, reimagined boss fights. Recommended level ~17. Play on a regular new game (first quest has a looting bug on NG+ saves).]
+
+#mod-card(
+  name: "Impostor Community DLC",
+  url: "https://www.nexusmods.com/witcher3/mods/9812",
+  author: "WildXipster",
+  category: "Content",
+  version: "1.0",
+  wave: "1",
+  dependencies: ("Hearts of Stone", "Blood and Wine"),
+  mechanic-impact: "3 quests, 2 new boss encounters",
+)[DLC-quality storyline of 3 quests (~3 hours) plus 2 new boss encounters. Starts by talking to the armor merchant in Oxenfurt.]
+
+#mod-card(
+  name: "The Great Arena - Shadow of Lawlessness",
+  url: "https://www.nexusmods.com/witcher3/mods/9554",
+  author: "Drunk_Steep",
+  category: "Content",
+  version: "1.2.1",
+  wave: "1",
+  dependencies: (),
+  mechanic-impact: "30 escalating arena fights with boss rounds",
+)[1.5 hours of new arena combat near Rogne in Skellige: 30 escalating fights with boss rounds, unique rewards, and a debt-driven storyline.]
+
+== UI & Quality of Life
+
+#mod-card(
+  name: "All Quest Objectives On Map",
+  url: "https://www.nexusmods.com/witcher3/mods/943",
+  author: "Wolfmark",
+  category: "UI",
+  version: "4.03.13",
+  wave: "1",
+  dependencies: (),
+  mechanic-impact: none,
+)[Shows every active quest objective on the map at once. Script mod \u{2014} run Script Merger.]
+
+#mod-card(
+  name: "Upscaled UI - HUD Elements (Next-Gen)",
+  url: "https://www.nexusmods.com/witcher3/mods/9001",
+  author: "Tinnaib",
+  category: "UI",
+  version: "1.2",
+  wave: "1",
+  dependencies: (),
+  mechanic-impact: none,
+)[Upscaled HUD textures so health bars, icons, and menus stay sharp on 1440p/4K displays. Texture-only. Do not combine with mods that alter HUD .redswf files.]
+
+#mod-card(
+  name: "Better Torches Next-Gen",
+  url: "https://www.nexusmods.com/witcher3/mods/7186",
+  author: "Phaz42",
+  category: "QoL",
+  version: "4.4.0",
+  wave: "1",
+  dependencies: (),
+  mechanic-impact: none,
+)[Ride Roach, cast Signs, attack, sail, block, and climb while holding a torch. Script mod \u{2014} run Script Merger.]
 
 = Advanced Strategy
 
@@ -524,7 +737,53 @@ Fully explore White Orchard before leaving \u2014 it becomes partially inaccessi
 
 All previous mods plus mechanics overhauls and advanced gameplay mods:
 
-<!-- Mod entries will be added here once the modlist is finalized. -->
+#mod-card(
+  name: "Eternal Hunt",
+  url: "https://www.nexusmods.com/witcher3/mods/8449",
+  author: "apokryphos",
+  category: "Overhaul",
+  version: "7.22",
+  wave: "2",
+  dependencies: ("Hearts of Stone", "Blood and Wine"),
+  mechanic-impact: "Combat, stamina/posture, economy of combat, 40+ new encounters",
+)[Massive combat and content overhaul: reworked stamina/posture and parry windows, lethal damage rebalance, new dodges and finishers, 40+ new encounters and bosses, real-time meditation, weather, gear durability, and a fear system. Not for first playthroughs. Designed to pair with Spectre.]
+
+#mod-card(
+  name: "Spectre",
+  url: "https://www.nexusmods.com/witcher3/mods/9657",
+  author: "apokryphos",
+  category: "Overhaul",
+  version: "0.87",
+  wave: "2",
+  dependencies: ("Hearts of Stone", "Blood and Wine", "Eternal Hunt (recommended)"),
+  mechanic-impact: "Economy, alchemy, inventory weight, crafting",
+)[Economy, alchemy, and inventory overhaul built on the design concepts of Ghost Mode and the Alchemy mod: scarce resources, meaningful carry weight, less gold inflation, more consequential crafting. Designed to be used with Eternal Hunt \u{2014} without it the game becomes relatively easy. Must start a new game.]
+
+#mod-card(
+  name: "SCAAR - Smooth Combat And Animations Redux",
+  url: "https://www.nexusmods.com/witcher3/mods/5800",
+  author: "WolvenWorkshop",
+  category: "Combat",
+  version: "2.2.4",
+  wave: "2",
+  dependencies: (),
+  mechanic-impact: "Combat and movement animations only",
+)[Replaces Geralt's combat and movement animations with fluid, responsive sets (four animation packages). Pure feel layer \u{2014} does not rebalance stats. Optional; install DLC-style files into the dlc/ folder.]
+
+#mod-card(
+  name: "Stronger Monster Status Effects",
+  url: "https://www.nexusmods.com/witcher3/mods/3883",
+  author: "Partoutatix, Akatoshka7, Flash_in_the_flesh",
+  category: "Difficulty",
+  version: "5.4.2",
+  wave: "2",
+  dependencies: (),
+  mechanic-impact: "Monster-inflicted status effects (poison, bleed, burning, stun)",
+)[Monsters now inflict the status effects their bestiary entries describe: poison, bleed, burning, blindness, and stun. Makes monster fights genuinely dangerous without touching player power.]
+
+== Alternatives Not Included
+
+#tip-box(body: [Combat Redux (#8515), Blood And Steel (#9674), and Lore-Friendly Economy (#7691) deliver similar effects but must not be stacked with the picks above. W3EE Redux \u{2014} the iconic total overhaul \u{2014} is excluded because its distribution is no longer reliably hosted on Nexus Mods.])
 
 = Roleplay Background
 
@@ -551,12 +810,12 @@ You've walked the Path for decades. The Trial of the Grasses is a distant memory
 == Combat Changes
 
 - Damage rebalance \u2014 fights are shorter and more lethal
-- Stamina matters \u2014 dodging and Signs share a pool
-- Parry windows tighten \u2014 enemies feint and vary timing
+- Stamina matters \u2014 stamina and posture are reworked; attack and dodge spam leaves you exposed
+- Parry windows tighten \u2014 reworked parry and active-parry windows demand precise timing
 
 == Economy Changes
 
-- Reduced loot \u2014 earn coin through contracts, not looting
+- Reduced loot \u2014 gold is scarcer and junk sells for little; earn coin through contracts, not looting
 - Crafting costs more \u2014 hunt specific monsters for rare parts
 - Weight matters \u2014 carry less, choose carefully
 
@@ -616,7 +875,40 @@ Complete the main quest (level 30+). Finish both expansions first \u2014 mutatio
 
 == Complete Mod Reference
 
-<!-- Full mod metadata table will be populated once the modlist is finalized. -->
+#tbl(cols: 6,
+  [*\#*], [*Mod*], [*Author*], [*Category*], [*Wave*], [*Version*],
+  [0], [#link("https://github.com/ThirteenAG/Ultimate-ASI-Loader/releases")[Ultimate ASI Loader]], [ThirteenAG], [Utilities], [0], [x64],
+  [1], [#link("https://www.nexusmods.com/witcher3/mods/3711")[Mod Limit Adjuster]], [LHSQ & sedmelluq], [Utilities], [0], [1.0],
+  [2], [#link("https://www.nexusmods.com/witcher3/mods/484")[Script Merger]], [AnotherSymbiote], [Utilities], [0], [0.6.4],
+  [3], [#link("https://www.nexusmods.com/witcher3/mods/2110")[Community Patch - Shared Imports]], [rmemr], [Utilities], [0], [v0.6],
+  [4], [#link("https://www.nexusmods.com/witcher3/mods/3650")[Community Patch - Menu Strings]], [wghost81], [Utilities], [0], [1.0],
+  [5], [#link("https://www.nexusmods.com/witcher3/mods/2109")[Community Patch - Bootstrap and Utilities]], [rmemr], [Utilities], [0], [0.5-NG],
+  [6], [#link("https://www.nexusmods.com/witcher3/mods/11260")[Brothers In Arms - Ultimate Edition]], [MerseyRockoff et al.], [Bug Fixes], [0], [3.1.2],
+  [7], [#link("https://www.nexusmods.com/witcher3/mods/12271")[Clever Main Menu (Redux)]], [RovanFrost], [UI], [0], [1.1],
+  [8], [#link("https://www.nexusmods.com/witcher3/mods/9963")[HD Reworked Project NextGen Edition]], [HalkHogan], [Graphics], [1], [20.0-fixed],
+  [9], [#link("https://www.nexusmods.com/witcher3/mods/7840")[Characters Reworked Project]], [cnfilmm], [Graphics], [1], [4.0],
+  [10], [#link("https://www.nexusmods.com/witcher3/mods/3580")[HD Monsters Reworked (HDMR)]], [Denroth], [Graphics], [1], [5.0 NG],
+  [11], [#link("https://www.nexusmods.com/witcher3/mods/5405")[HD Animals Reworked (HDAR)]], [Denroth], [Graphics], [1], [3.1],
+  [12], [#link("https://www.nexusmods.com/witcher3/mods/11762")[Meadows Remastered]], [Maidenfan724], [Graphics], [1], [1.0],
+  [13], [#link("https://www.nexusmods.com/witcher3/mods/8013")[UHD Oaks Redux]], [Ridog8 & lufusol], [Graphics], [1], [1.0],
+  [14], [#link("https://www.nexusmods.com/witcher3/mods/3315")[New Clouds]], [Hyadum27], [Graphics], [1], [3.0],
+  [15], [#link("https://www.nexusmods.com/witcher3/mods/10322")[Promotional Atmosphere Lighting Mod (PALM)]], [BoneDoctor21], [Graphics], [1], [2.0],
+  [16], [#link("https://www.nexusmods.com/witcher3/mods/11603")[True Rain]], [Jaxonic], [Graphics], [1], [6],
+  [17], [#link("https://www.nexusmods.com/witcher3/mods/7369")[Improved Sign Effects Next Gen]], [lacmac & Lunayah], [Graphics], [1], [4.01],
+  [18], [#link("https://www.nexusmods.com/witcher3/mods/347")[No Dirty Lens Effect]], [RumenWest], [Graphics], [1], [1.0],
+  [19], [#link("https://www.nexusmods.com/witcher3/mods/9745")[Tales of The Witcher - Cintra]], [Gerwant], [Content], [1], [0.6a],
+  [20], [#link("https://www.nexusmods.com/witcher3/mods/9453")[A Witcher Can Hide Another]], [nikich340 et al.], [Content], [1], [1.1.1],
+  [21], [#link("https://www.nexusmods.com/witcher3/mods/9803")[The Spider and The Wolf]], [Dwhyx & Beoronick], [Content], [1], [2.0],
+  [22], [#link("https://www.nexusmods.com/witcher3/mods/9812")[Impostor Community DLC]], [WildXipster], [Content], [1], [1.0],
+  [23], [#link("https://www.nexusmods.com/witcher3/mods/9554")[The Great Arena - Shadow of Lawlessness]], [Drunk_Steep], [Content], [1], [1.2.1],
+  [24], [#link("https://www.nexusmods.com/witcher3/mods/943")[All Quest Objectives On Map]], [Wolfmark], [UI], [1], [4.03.13],
+  [25], [#link("https://www.nexusmods.com/witcher3/mods/9001")[Upscaled UI - HUD Elements]], [Tinnaib], [UI], [1], [1.2],
+  [26], [#link("https://www.nexusmods.com/witcher3/mods/7186")[Better Torches Next-Gen]], [Phaz42], [QoL], [1], [4.4.0],
+  [27], [#link("https://www.nexusmods.com/witcher3/mods/8449")[Eternal Hunt]], [apokryphos], [Overhaul], [2], [7.22],
+  [28], [#link("https://www.nexusmods.com/witcher3/mods/9657")[Spectre]], [apokryphos], [Overhaul], [2], [0.87],
+  [29], [#link("https://www.nexusmods.com/witcher3/mods/5800")[SCAAR - Smooth Combat And Animations Redux]], [WolvenWorkshop], [Combat], [2], [2.2.4],
+  [30], [#link("https://www.nexusmods.com/witcher3/mods/3883")[Stronger Monster Status Effects]], [Partoutatix, Akatoshka7, Flash_in_the_flesh], [Difficulty], [2], [5.4.2],
+)
 
 == Load Order Guidelines
 

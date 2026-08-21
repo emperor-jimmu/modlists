@@ -38,6 +38,6 @@
 
 ## Needs work
 
-[ ] 32. Witcher 3 (wave 0 done; waves 1-2 modlists still placeholders)
+[x] 32. Witcher 3 (wave 0 + waves 1-2 modlists complete)
 [ ] 33. Warhammer 3 (graphics mods done; content/mechanics/modlist still placeholders)
 [ ] 34. X-Plane 12 (waves 1-5 partly done; wave 0 empty, open slots)
