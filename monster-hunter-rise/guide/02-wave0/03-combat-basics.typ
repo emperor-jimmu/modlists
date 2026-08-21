@@ -19,10 +19,9 @@ Every weapon is a complete fighting style. Pick the one that clicks, not the "be
   stroke: 0.4pt + LINE,
   fill: (x, y) => if y == 0 { EMBER_DK } else { white },
   table.header(
-  )[
-    [#text(fill: SNOW, weight: "bold", font: DISPLAY, size: 9.5pt)[Weapon]]
-    [#text(fill: SNOW, weight: "bold", font: DISPLAY, size: 9.5pt)[One-line verdict]]
-  ],
+    [#text(fill: SNOW, weight: "bold", font: DISPLAY, size: 9.5pt)[Weapon]],
+    [#text(fill: SNOW, weight: "bold", font: DISPLAY, size: 9.5pt)[One-line verdict]],
+  ),
   [*Great Sword*], [Big charged hits; slow, deliberate, devastating punishes. The patience weapon.],
   [*Long Sword*], [Flow and counters; build the spirit gauge, spend it on powerful combo finishers.],
   [*Sword & Shield*], [Fast, flexible, can use items while unsheathed; the friendliest weapon to learn.],

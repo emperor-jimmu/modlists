@@ -88,11 +88,10 @@ Many Monster Hunter Rise mods — especially script-based ones — list a depend
   stroke: 0.4pt + LINE,
   fill: (x, y) => if y == 0 { EMBER_DK } else { white },
   table.header(
-  )[
-    [#text(fill: SNOW, weight: "bold", font: DISPLAY, size: 9.5pt)[Symptom]]
-    [#text(fill: SNOW, weight: "bold", font: DISPLAY, size: 9.5pt)[Likely cause]]
-    [#text(fill: SNOW, weight: "bold", font: DISPLAY, size: 9.5pt)[Fix]]
-  ],
+    [#text(fill: SNOW, weight: "bold", font: DISPLAY, size: 9.5pt)[Symptom]],
+    [#text(fill: SNOW, weight: "bold", font: DISPLAY, size: 9.5pt)[Likely cause]],
+    [#text(fill: SNOW, weight: "bold", font: DISPLAY, size: 9.5pt)[Fix]],
+  ),
   [Game not detected at first launch], [Manager searched the wrong drive], [Re-add the game and point at the folder containing `MonsterHunterRise.exe`],
   [Mod does not appear in the list], [Wrong mods folder, or archive is corrupt], [Move the archive into `Games\MHRISE\Mods\`; re-download if corrupt],
   [Mod is installed but has no effect], [Missing dependency; wrong game version; or the mod needs config], [Check the card's dependencies; confirm version 16.0.3.1; read the mod's own instructions],

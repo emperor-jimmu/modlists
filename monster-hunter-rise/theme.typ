@@ -35,7 +35,7 @@
   stroke: (left: 3pt + accent, bottom: 0.5pt + LINE),
   above: 0.7em, below: 0.7em,
 )[
-  #set text(size: 10pt)
+  #set text(size: 11pt)
   #text(weight: "bold", fill: accent-dk)[#title]
   #v(2pt)
   #body
@@ -61,10 +61,10 @@
   fill: rgb("#FBE3D7"), inset: 10pt, radius: 4pt, width: 100%,
   stroke: (left: 3pt + EMBER), above: 0.6em, below: 0.6em,
 )[
-  #set text(size: 10pt)
+  #set text(size: 11pt)
   #text(weight: "bold", fill: EMBER_DK)[#what]
   #v(2pt)
-  Pending user input. Per this project's rules, the mod list is supplied entirely by the owner — the project itself never researches, validates, or adds mods.
+  Pending owner input. These entries are added only at the owner's direction — the owner may supply them, or direct the project to research them (as it did for Wave 0).
 ]
 
 // ---- Mod card ----------------------------------------------------------------------
@@ -80,7 +80,7 @@
   stroke: (left: 3pt + EMBER, bottom: 0.6pt + LINE),
   above: 0.6em, below: 0.6em,
 )[
-  #set text(size: 10pt)
+  #set text(size: 11pt)
   #if url != none [
     #link(url)[#text(weight: "bold", size: 11.5pt, fill: EMBER_DK)[#name]]
   ] else [

@@ -2,7 +2,7 @@
 
 == How the Modlist Works
 
-The modlist is *the owner's list*. This project never researches, validates, or adds mods — every entry below is supplied by the owner, and every entry is treated as authoritative. What this chapter does is define the rules the list plays by, and show exactly how an entry is written.
+The modlist is *the owner's list*. Entries are added only at the owner's direction — and when the owner asks the project to research mods (as it did for Wave 0's UI/UX + graphics focus), every entry is a real, verifiable mod with a real link; nothing is ever invented. This chapter defines the rules the list plays by and shows exactly how an entry is written.
 
 === Wave Rules
 
@@ -19,32 +19,10 @@ Each wave has its own mod philosophy, and it is a hard rule:
 
 Everything in this list targets game version *16.0.3.1* (latest 16.x patch on PC/Steam). The owner records version or release-date information on each card when available; per project rule, that information is used as the compatibility heuristic against the target — the project itself performs no verification.
 
-=== Entry Format
-
-Each mod is one card with four fields. Missing fields are marked "User to provide" — never invented:
-
-- *Name + URL* — clickable link to the mod's page, exactly as the owner supplies it.
-- *Dependencies* — mods or frameworks that must be installed first (in FM5000, install these before the mod itself).
-- *System / mechanic impact* — what the mod changes and how it affects play.
-- *Notes* — load order, configuration, quirks, anything else worth knowing.
-
-Cards are written in the wave files that follow using the `modcard` helper. When the owner adds a mod, it is one function call:
-
-```typ
-#modcard(
-  "Mod name",
-  url: "https://example.com/mod-page",
-  version: "1.2.3 (optional)",
-  deps: "REFramework — install first (user-supplied)",
-  impact: "What the mod changes in play.",
-  notes: "Load order / config notes, or leave out.",
-)
-```
-
 === Conflicts
 
 If two mods collide (they overwrite the same files, or must never be enabled together), the resolution is recorded in `conflicts-mods.md` — a user-owned note file that is *not* included in this PDF. Load-order fixes are applied in Fluffy Manager 5000 (lower in the list wins) and noted on the affected cards.
 
 === Current State
 
-The wave modlist sections below currently contain *templates only* — the entries themselves are pending owner input. The cards are placeholders; the rules above are already in force for whatever the owner adds.
+Wave 0 is populated (UI/UX + graphics). Waves 1 and 2 below still contain templates only — their entries await the owner's direction.

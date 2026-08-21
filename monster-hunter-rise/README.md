@@ -15,7 +15,7 @@ A structured modlist + game guide for **Monster Hunter Rise** with the **Sunbrea
 ## Status
 
 - Guide, layout, and build pipeline: **done**
-- Mod list: **pending — supplied by the owner**. The project never researches, validates, or adds mods; every entry is user-supplied and authoritative.
+- Wave 0 modlist (UI/UX + graphics): **done** — populated with verifiable mods. Waves 1–2 modlists: **pending — owner's direction**.
 - See `STATUS.md` for the decision log and open questions.
 
 ## Project layout

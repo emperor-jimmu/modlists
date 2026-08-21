@@ -18,10 +18,9 @@ The palico is a support cat with a *role* that defines its behavior:
   stroke: 0.4pt + LINE,
   fill: (x, y) => if y == 0 { EMBER_DK } else { white },
   table.header(
-  )[
-    [#text(fill: SNOW, weight: "bold", font: DISPLAY, size: 9.5pt)[Role]]
-    [#text(fill: SNOW, weight: "bold", font: DISPLAY, size: 9.5pt)[What it does]]
-  ],
+    [#text(fill: SNOW, weight: "bold", font: DISPLAY, size: 9.5pt)[Role]],
+    [#text(fill: SNOW, weight: "bold", font: DISPLAY, size: 9.5pt)[What it does]],
+  ),
   [Fighter], [Aggressive, high damage],
   [Assist], [Sets traps, uses items on you],
   [Defender], [Taunts, takes hits, buffs defenses],

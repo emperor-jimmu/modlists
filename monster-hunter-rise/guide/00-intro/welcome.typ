@@ -28,7 +28,7 @@ Every mod in this guide is presented as a card with four fields:
 - *Notes* — load order, configuration, or anything else worth knowing.
 - Optionally *Version* — the specific mod release this entry refers to.
 
-The list is curated entirely by the owner. Per project rules, this project never researches, validates, or adds mods — every card records exactly what the owner supplied.
+The list is curated at the owner's direction — the owner may supply entries, or direct the project to research and add them. Either way, every card records only what is verifiable, never invented.
 
 #note[
   Wave-specific mods may change mechanics this guide describes. When a mod touches something explained here, its card is the authority — trust the card, and test in-game after installing.

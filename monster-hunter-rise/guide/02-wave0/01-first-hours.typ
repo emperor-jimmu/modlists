@@ -30,10 +30,9 @@ The game ships with sensible defaults for both keyboard + mouse and gamepad, and
   stroke: 0.4pt + LINE,
   fill: (x, y) => if y == 0 { EMBER_DK } else { white },
   table.header(
-  )[
-    [#text(fill: SNOW, weight: "bold", font: DISPLAY, size: 9.5pt)[Action group]]
-    [#text(fill: SNOW, weight: "bold", font: DISPLAY, size: 9.5pt)[What it does]]
-  ],
+    [#text(fill: SNOW, weight: "bold", font: DISPLAY, size: 9.5pt)[Action group]],
+    [#text(fill: SNOW, weight: "bold", font: DISPLAY, size: 9.5pt)[What it does]],
+  ),
   [Move / Camera], [Movement and look — the camera is your main tool; keep it comfortable],
   [Attack (primary / special)], [Your weapon's two main attacks, plus weapon-specific inputs],
   [Guard / Dodge], [The defensive buttons every weapon gets (some block, some roll)],

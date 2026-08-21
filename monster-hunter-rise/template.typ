@@ -26,7 +26,7 @@
   },
 )
 
-#set text(font: BODY, size: 10.5pt, fill: INK, lang: "en")
+#set text(font: BODY, size: 11.5pt, fill: INK, lang: "en")
 #set par(justify: true, leading: 0.64em, spacing: 0.55em)
 
 // ---- Headings ----------------------------------------------------------------
@@ -69,16 +69,14 @@
   margin: (x: 24mm, y: 18mm), footer: none,
 )[
   #set text(font: DISPLAY)
-  #v(2.8cm)
+  #v(1.2cm)
   #align(center)[
     #box(fill: white, radius: 10pt, inset: (x: 16pt, y: 12pt))[
-      #image("assets/logo.jpg", height: 34mm)
+      #image("assets/logo.jpg", width: 60%)
     ]
   ]
-  #v(2cm)
+  #v(1.2cm)
   #align(center)[
-    #text(size: 42pt, weight: "bold", fill: GOLD)[PRIMAL QUARRY]
-    #v(8pt)
     #text(size: 16pt, fill: SNOW)[Monster Hunter Rise — Sunbreak]
     #v(4pt)
     #text(size: 13pt, fill: FOG)[Modded Game Guide & Modlist]
