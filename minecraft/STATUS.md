@@ -2,6 +2,15 @@
 
 ## Completed
 
+### MekaJadeUpgrades Added — Wave 1 (Aug 2026)
+
+- [x] **User request: add MekaJadeUpgrades** ([CurseForge](https://www.curseforge.com/minecraft/mc-mods/mekajadeupgrades)) — Mekanism addon that shows installed upgrades (speed/energy/etc.) in Jade's tooltip. Pinned **v1.3 (1.3-21.1)** NeoForge 1.21.1, file `mekajadeupgrade-1.3.jar`, by DevDyna (MIT; 333K DL on this build; updated Mar 2026). Client-side Jade plugin, 9.2 KB.
+- [x] **Dependency**: requires **Mekanism** + **Jade** — both already in pack. Zero new dependencies, client-only.
+- [x] **Fit verified — no duplication**: the pack's Jade Addons covers Create goggle info; nothing surfaces Mekanism upgrade lists. Brings info already in Mekanism's GUI into the world HUD. Placed in Wave 1 Core Tech after the Mekanism group (consistent with the JadeColonies → Wave 1.5 precedent).
+- [x] GUIDE.md updated: Wave 1 Core Tech table row (+MekaJadeUpgrades); Mod Count Summary (Wave 1 20/5/25 → **21/5/26**; Total 179/50/229 → **180/50/230** — mods +1, deps unchanged).
+- [ ] **Instance action (XMCL)** — add `mekajadeupgrade-1.3.jar` to `mods/`. [VERIFY] at next launch: Jade tooltip on a Mekanism machine with upgrades shows the installed upgrade list; no missing-dependency errors.
+- [x] DRIFTWOOD-GUIDE.pdf regenerated
+
 ### JadeColonies Moved to Wave 1.5 (Aug 2026)
 
 - [x] **JadeColonies moved Wave 0.5 Inventory & UI → Wave 1.5 Colony Addons** — it's a MineColonies-specific Jade tooltip addon, so it belongs with the colony wave, not the generic UI wave. No net mod-count change (Total stays 179/50/229): Wave 0 9/12/21 → **8/12/20**, Wave 1.5 9/—/9 → **10/—/10**.
