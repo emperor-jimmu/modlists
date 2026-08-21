@@ -2,6 +2,16 @@
 
 ## Completed
 
+### Vehicle Upgrade Adopted — Wave 2 Mobility (Aug 2026)
+
+- [x] **User request: add Vehicle Upgrade** ([CurseForge](https://www.curseforge.com/minecraft/mc-mods/vehicle-upgrade)) — vanilla mount/boat QoL by Fuzs (Lunapixel; MPL-2.0; ~52K CF + ~38K Modrinth DL): saddled mounts stop wandering, mounts swim and ride through leaves, full mining speed + sprint + interaction-range bonus while mounted, translucent mount view, held items while rowing, boat step height, fixed passenger collisions. Native NeoForge, pinned **v21.1.0** (1.21.1 build, 2026-05-21). Actively maintained (project updated 2026-06-18).
+- [x] **Dependency**: requires **Puzzles Lib** (already in pack — 6th consumer; dep row updated 5 → 6). Client + server required — non-issue for single-player (integrated server loads it automatically). Zero new dependencies.
+- [x] **Fit verified — no duplication**: the pack's mobility stack (Immersive Aircraft, Small Ships, Hang Glider, Man of Many Planes, Immersive Machinery) adds *new* vehicles; nothing polishes vanilla horses/camels/boats. Pure QoL, no worldgen/content — aligns with chill living (less friction) + power fantasy (more capable mounts).
+- [x] **New watch item** (documented in GUIDE.md): **Vehicle Upgrade × Small Ships** — Vehicle Upgrade's boat features target *vanilla* boats; Small Ships' custom ships are a separate entity class and are unaffected — expect harmless layering, but verify once in-game if boat behavior ever looks doubled.
+- [x] GUIDE.md updated: Wave 2 Mobility table row, Mobility detail subsection (+ watch note), Puzzles Lib dependency row (5 → 6 consumers), Mod Count Summary (Wave 2 35/8/44 → **36/8/45**; Total **179/50/229 → 180/50/230**).
+- [ ] **Instance action (XMCL)** — add `VehicleUpgrade-v21.1.0-mc1.21.1-NeoForge.jar` to `mods/`. [VERIFY] at next launch: no dependency errors (Puzzles Lib present); mounts no longer wander after dismount; mining/sprint/reach bonuses work while mounted; Small Ships boats unaffected (watch item).
+- [x] DRIFTWOOD-GUIDE.pdf regenerated
+
 ### Stylish Effects Adopted — Status Effect Bars Reforged Removed (Aug 2026)
 
 - [x] **User request: add Stylish Effects** ([CurseForge](https://www.curseforge.com/minecraft/mc-mods/stylish-effects)) — client-only status-effect **display overhaul** by Fuzss (same author as Mindful Darkness; MPL-2.0; 1.86M DL): the vanilla HUD effect icons become compact icons showing the remaining-time **timer + amplifier**, and the same compact display follows into the **inventory and every container**; effect-name tooltips (JEED-compatible); multiple display modes + extensive config. Native NeoForge, pinned **v21.1.3-1.21.1-NeoForge** (2026-06-25 — current 1.21.1 line). Requires **Puzzles Lib** (already in pack — 5th consumer; dep row updated 3 → 5).
