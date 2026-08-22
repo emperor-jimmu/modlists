@@ -12,10 +12,12 @@ font_brightness = 0.8043705985915491
 # Allowed Values: GRAYSCALE_AND_HSP, HSP, GRAYSCALE_AND_HSL, HSL, GRAYSCALE_AND_LINEAR, LINEAR
 darkening_algorithm = "GRAYSCALE_AND_HSL"
 
-# Full default path list (27 entries) + heart exclusion appended at the end
+# Full default path list (27 entries) + exclusions appended at the end
 # ("!..." exclusions must come after the entries that would otherwise include
 # them — "textures/gui/sprites/hud/*" is entry 10). Hearts stay bright so the
-# health bar stays readable at the darker texture level.
+# health bar stays readable at the darker texture level. Loot Journal's pickup
+# notification panels (loot_journal:textures/gui/panel_*.png etc.) are exempt
+# too — they'd otherwise match the bare "textures/gui/" entry and render dark.
 paths = [
     "minecraft:textures/gui/advancements/window.png",
     "textures/gui/",
@@ -45,4 +47,5 @@ paths = [
     "quark:textures/misc/matrix_enchanting.png",
     "quark:textures/misc/shulker_widget.png",
     "!minecraft:textures/gui/sprites/hud/heart/*",
+    "!loot_journal:textures/gui/*",
 ]

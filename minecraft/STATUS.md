@@ -2,6 +2,19 @@
 
 ## Completed
 
+### Mindful Darkness — Loot Journal Panels Exempted (Aug 2026)
+
+- [x] **User report**: the Loot Journal pickup notifications ("new receipts" popup) render dark — Mindful Darkness' bare `textures/gui/` paths entry includes `loot_journal:textures/gui/panel_*.png` (darkening happens at texture-load time, verified in the 6.2.1 jar + Mindful Darkness `ColorChangingResourceHandler` source: last matching `paths` entry wins, so a `!` exclusion after the include overrides it).
+- [x] `config/mindfuldarkness-client.toml` updated: `paths` += `!loot_journal:textures/gui/*` (covers all 5 panel themes + experience/glow textures). GUIDE.md Mindful Darkness config table + What-to-Expect bullet updated. DRIFTWOOD-GUIDE.pdf regenerated.
+- [ ] **Instance action** — copy the updated `config/mindfuldarkness-client.toml` to the instance's `config/` (replace). [VERIFY] at next launch / after F3+T: Loot Journal pickup notifications render at full brightness; hearts still bright; rest of GUI still darkens.
+
+### Day Counter Removed — Minimap Labels Show the Day (Aug 2026)
+
+- [x] **User request: remove Day Counter** (Wave 0.5 — Inventory & UI) — the day is now read from the JourneyMap minimap labels, so the HUD day flash is redundant. Day Counter removed along with its tracked override `config/day_counter.toml`; **Hud Texts removed too** (Wave 0.5 — its only consumer was Day Counter; orphaned, same precedent as Searchables).
+- [x] GUIDE.md updated: Inventory & UI table rows (−Day Counter −Hud Texts; table now rejoins its split rows), Day Counter config section + milestone-rewards block removed, What-to-Expect bullet removed, Mod Count Summary (Wave 0 row 8/12/20 → **7/11/19**; Total **185/50/235 → 184/49/233** — mods −1, deps −1). TODO.md day-counter config item closed (moot).
+- [x] **Related research — no HUD-hiding mod added** (user wanted the JourneyMap minimap to hide with the rest of the HUD; Auto HUD only manages vanilla components + its own compat list, no JourneyMap entry). Researched NeoForge 1.21.1 candidates, all rejected: **HideHUD** (best generic candidate, MIT, zero deps) — **cannot hide JourneyMap**, verified in both jars: it cancels vanilla GUI layers and mod-registered layers (`RegisterGuiLayersEvent`), but JourneyMap 6.0.5 draws its minimap inside its own `RenderGuiLayerEvent$Pre` / `RenderGuiEvent$Post` listeners on vanilla layers with no cancellation checks and registers no custom layer; **HUD Manager** (94K DL) — vanilla elements only; **HudToggle** — Forge 1.20.x only, no NeoForge build; **Clean HUD** / **Auto Hide HUD** — idle-fade mods duplicating Auto HUD's core purpose (pack rule). JourneyMap's own `Ctrl+J` minimap toggle remains the control; it also ignores vanilla F1 (`hideGui` — zero hits in jar).
+- [ ] **Instance action (XMCL)** — remove the Day Counter jar (`daycounter*.jar` / `day-counter*.jar`) from `mods/` (plus any generated `ags_day_counter*` config in the instance). [VERIFY] at next launch: no "Day N" ActionBar flash at dawn; no missing-dependency errors (Hud Texts gone too); JourneyMap minimap label still shows the day.
+
 ### Mod Review — Crops Love Rain + Bookshelf Inspector (Aug 2026)
 
 - [x] **User request: review [Crops Love Rain](https://www.curseforge.com/minecraft/mc-mods/crops-love-rain) + [Bookshelf Inspector](https://modrinth.com/mod/bookshelf-inspector)** (Aug 22, 2026).
@@ -989,3 +1002,9 @@ Reviewed AppleSkin, Aquaculture, Sodium Dynamic Lights, Sodium Extras, Artifacts
 - [x] **Attract to Sound — REJECTED (pillar conflict)** — mob-AI stealth overhaul ("hunted by what they see, hear, and sense"); noise-attracted mobs add non-voluntary pressure while mining/building. Violates Chill Rule (no invasive mob behavior) + easy-ramp pillar (same rationale as the Mutant Monsters removal). Technically viable (6.3.8d, Jul 2026, zero deps) — pure design-fit rejection.
 - [x] GUIDE.md updated: Performance & Rendering table + Sodium Extras note, Wave 4 table + Smarter Farmers + Create: Café sections, Wave 6 table + Diagonal Fences section, Mod Count Summary (Wave 0 14→15 mods / 10→11 deps / 24→26; Wave 4 11→13; Wave 6 10→11 / 13→14; Total 169→173 mods, 46→47 deps, 215→220).
 - [x] DRIFTWOOD-GUIDE.pdf regenerated.
+
+### Mod Review — Mouse Tweaks (2026-08-22)
+
+Evaluated as a candidate replacement for Inventory Essentials (Wave 0 — Inventory & UI). User decision: keep IE; no pack changes. Version/loader data verified live via Modrinth API + CurseForge.
+
+- [x] **Mouse Tweaks — REJECTED (not a replacement)** — MT is gesture-complementary, not equivalent: multi-stack LMB drag, RMB split, scroll movement, drag-scroll — but has **no** Ctrl+click single-item or Shift+Ctrl+click move-all-of-type (IE's marquee transfer gestures in an AE2/Sophisticated Storage pack). Latest NeoForge 1.21.1 build is 2.26.1 (Aug 2024, ~2y stale); IE is actively maintained by Blay, and its Balm dependency is already in the pack. The IE×ClientSort sort overlap was already resolved via `config/inventoryessentials-common.toml` (`consolidate_only`) and is unaffected by this decision. Kept IE (status quo): no GUIDE.md, config, or PDF changes.
