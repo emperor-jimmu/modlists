@@ -2,6 +2,17 @@
 
 ## Completed
 
+### Obscure Tooltips Adopted — Tooltip Surface Swap (Aug 2026)
+
+- [x] **User request: add Obscure Tooltips** ([CurseForge](https://www.curseforge.com/minecraft/mc-mods/obscure-tooltips)) — client-side tooltip overhaul: animated effects/particles, rarity emphasis ("making rarer items more vibrant"), labels/shadows, auto-wrap, scrolling, armor + tool preview panels, registry-driven per-item/mod/enchantment style definitions. Pin **4.2.4** (NeoForge 1.21.1, 2026-08-19 — actively maintained), 2.19M DL, client-only. License: Obscuria Ecosystem (same as Fragmentum — accepted precedent).
+- [x] **Dependency: Fragmentum only** — already in pack (Obscuria ecosystem). **Doc gap fixed**: Fragmentum is REQUIRED by Loot Journal (jar-verified `neoforge.mods.toml`) but was undocumented/uncounted — missing from Wave 0.5 Dependencies table (same gap class as the Prism fix). Added row; deps 49→**50**.
+- [x] **Decision — tooltip-surface swap (user-confirmed)**: Obscure Tooltips and Modern UI both replace the vanilla tooltip renderer (jar-verified `MixinGuiGraphics` cancels the vanilla render; Modern UI docs acknowledge the conflict). Modern UI's tooltip feature is **disabled via the Action Center** (`Ctrl+K`) — OT becomes the sole tooltip owner. Pack rule "no duplicated core purpose" satisfied via the documented "configured lower" lever (same escape hatch the Legendary Tooltips note used). ModernObscure bridge considered and declined (3rd mod, community-maintained).
+- [x] **Compatibility checked**: no EMI/JEI hooks in the current jar (the old "Obscure Tooltips Fix" targets older versions — low risk); Jade tooltip unaffected (separate overlay); Apotheosis's appended tooltip components (gem/affix lines) still render inside OT's tooltip (it renders the full component list).
+- [x] **New watch item** (documented in GUIDE.md): **Apotheosis × Obscure Tooltips** — OT emphasizes item rarity; verify in-game that Apotheosis custom rarities map onto OT's styling (fallback: OT's per-item/mod filters can style Apotheosis gear explicitly). [VERIFY] at next launch.
+- [x] GUIDE.md updated: Inventory & UI table row (+Obscure Tooltips), Wave 0.5 Dependencies table (+Fragmentum), tooltip-surface note rewritten (Modern UI tooltips OFF), What-to-Expect bullet (+ watch), Mod Count Summary (Wave 0 7/11/19 → **8/12/20**; Total **184/49/233 → 185/50/235** — mods +1, deps +1).
+- [ ] **Instance action (XMCL)** — add `obscure_tooltips-neoforge-1.21.1-4.2.4.jar` to `mods/` (Fragmentum already present). In-game: Action Center (`Ctrl+K`) → disable Modern UI tooltips. [VERIFY] at next launch: stylized tooltips render with rarity flair on Apotheosis gear (watch item); no missing-dependency errors; no tooltip double-render (Modern UI feature off); EMI/Jade tooltips unaffected.
+- [x] DRIFTWOOD-GUIDE.pdf regenerated
+
 ### Mindful Darkness — Loot Journal Panels Exempted (Aug 2026)
 
 - [x] **User report**: the Loot Journal pickup notifications ("new receipts" popup) render dark — Mindful Darkness' bare `textures/gui/` paths entry includes `loot_journal:textures/gui/panel_*.png` (darkening happens at texture-load time, verified in the 6.2.1 jar + Mindful Darkness `ColorChangingResourceHandler` source: last matching `paths` entry wins, so a `!` exclusion after the include overrides it).
