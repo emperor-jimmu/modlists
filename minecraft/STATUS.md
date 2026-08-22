@@ -6,6 +6,7 @@
 
 - [x] **User request**: exempt the entire HUD from darkening (experience, level, food, health, hotbar). `config/mindfuldarkness-client.toml` `paths` exclusion widened: `!minecraft:textures/gui/sprites/hud/heart/*` → **`!minecraft:textures/gui/sprites/hud/*`** — covers hearts, food, experience bar, hotbar, armor, air, mount health, jump bar (all vanilla HUD sprites; wildcard includes `/`, so nested sprite dirs are exempt too; sits after the `textures/gui/sprites/hud/*` include → last-match-wins).
 - [x] **Level number — no change needed** (verified in `FontColorHandler.tryAdjustColor`): font darkening only lifts colors BELOW the 0.804 font-brightness floor; pure-white text (brightness 1.0) like the level number is untouched.
+- [x] **User follow-up: toasts exempted too** — `paths` += `!minecraft:textures/gui/sprites/toast/*` (vanilla toasts: recipe unlocks, tutorial, system) and `!advancementplaques:textures/gui/*` (Advancement Plaques popup — jar-verified `plaques.png`/`plaqueeffect.png` under `advancementplaques:textures/gui/`, previously caught by the bare `textures/gui/` entry).
 - [x] GUIDE.md Mindful Darkness config table + What-to-Expect bullet updated; DRIFTWOOD-GUIDE.pdf regenerated.
 - [ ] **Instance action** — copy the updated `config/mindfuldarkness-client.toml` to the instance's `config/` (replace). [VERIFY] at next launch / after F3+T: HUD cluster (XP bar, food, hearts, hotbar, armor) at full brightness; GUI panels/containers still darken; Loot Journal panels still bright.
 

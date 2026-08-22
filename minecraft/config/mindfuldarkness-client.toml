@@ -19,6 +19,8 @@ darkening_algorithm = "GRAYSCALE_AND_HSL"
 # darkening applies to GUI panels/containers instead. Loot Journal's pickup
 # notification panels (loot_journal:textures/gui/panel_*.png etc.) are exempt
 # too — they'd otherwise match the bare "textures/gui/" entry and render dark.
+# Vanilla toasts (minecraft:textures/gui/sprites/toast/*) and Advancement Plaques
+# popups (advancementplaques:textures/gui/*) are exempt too — same reason.
 paths = [
     "minecraft:textures/gui/advancements/window.png",
     "textures/gui/",
@@ -49,4 +51,6 @@ paths = [
     "quark:textures/misc/shulker_widget.png",
     "!minecraft:textures/gui/sprites/hud/*",
     "!loot_journal:textures/gui/*",
+    "!minecraft:textures/gui/sprites/toast/*",
+    "!advancementplaques:textures/gui/*",
 ]
