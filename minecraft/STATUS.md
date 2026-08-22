@@ -2,6 +2,12 @@
 
 ## Completed
 
+### Dependencies Section Removed from Guide (Aug 2026)
+
+- [x] **User request: remove the "Dependencies — Wave 0.5" section from GUIDE.md** — dependency library mods (Architectury API, Iceberg, Polytone, Lithostitched, TLib, Forgified Fabric API, Nirvana Library, Puzzles Lib, Common Network, Prism, Fragmentum, Sinytra Connector, Resourceful Lib) auto-install via XMCL from their parent mod pages, so the manual-install table is unnecessary. Section (table + Lithostitched/Architectury notes + install note) removed.
+- [x] GUIDE.md updated: section removed, Wave 0 intro no longer lists "Dependencies", dangling references fixed (Deep Aether interdependency note + YUNG's structures note now say "already in the pack"). Mod Count Summary untouched — the Deps counts reflect the installed set, which is unchanged.
+- [x] DRIFTWOOD-GUIDE.pdf regenerated
+
 ### EMIffect → JEED Swap + MEED Added (Aug 2026)
 
 - [x] **User decision: swap EMIffect → JEED + add MEED** (Wave 0.5 — Inventory & UI). EMIffect 2.1.6 (last release Sep 2025, ~11 mo stale) is EMI-only; **JEED** is the upstream original (EMIffect's descriptions were taken from it), actively maintained (1.21-2.3.3, Jul 2026) by MehVahdJukaar (Supplementaries author — already in pack). JEED 1.21.1: **zero required deps**, EMI is a native optional integration (no JEI — pack stays EMI-only), optional Stylish Effects integration adds description tooltips to the pack's effect widgets. License ARR (EMIffect was MIT) — fine for a personal pack. **MEED** (8.0.6, Aug 12 2026) is a JEED/EMIffect addon: curated descriptions + effect providers (items/mobs/blocks/fluids applying each effect) for 100+ mods / 600+ effects — covers pack mods Aether, Deep Aether, Cataclysm, Relics (8.0.2 hotfixed newer Relics parsing), Simply Swords, Too Many Bows, Deeper and Darker, Ranged Weapon API. CC-BY-NC-SA-4.0 (non-commercial — fine, personal pack).

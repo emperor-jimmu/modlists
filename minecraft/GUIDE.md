@@ -141,7 +141,7 @@ Open **Options → Controls → Key Binds** and set these before anything else:
 
 ## Wave 0 — Foundation
 
-The essentials that make the game run well. Dependencies, performance, rendering, shaders, chunk loading, and texture packs. Install everything in this wave before launching.
+The essentials that make the game run well. Performance, rendering, shaders, chunk loading, and texture packs. Install everything in this wave before launching.
 
 ### Performance & Rendering
 
@@ -459,30 +459,6 @@ All the visual polish, UI improvements, inventory tools, storage, travel, tradin
 - `refresh_delay` = `1` (recommended, default 0) — Number of restocks between trade changes. `1` means trades change every other restock, giving you time to use existing trades before they rotate. Trades always change on level-up regardless.
 - `no_book_duplicates` = `true` — Prevents librarians from selling the same enchant at different levels simultaneously.
 - `enchant_repair_compat` = `false` — Adds Curse of Vanishing to every book sold by librarians (for Enchant & Repair compatibility). Keep disabled unless that mod is added.
-
-### Dependencies — Wave 0.5
-
-| Mod                                                                               | Role                                                                                      | Required By                                          |
-|-----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|------------------------------------------------------|
-| [Architectury API](https://www.curseforge.com/minecraft/mc-mods/architectury-api) | Cross-loader compatibility — lets Fabric mods run on NeoForge                             | Eating Animation, Effectual, multiple Wave 1-3+ mods |
-| [Iceberg](https://www.curseforge.com/minecraft/mc-mods/iceberg)                   | Library for config-driven UI mods                                                         | Advancement Plaques                                  |
-| [Polytone](https://www.curseforge.com/minecraft/mc-mods/polytone)                 | Custom block colors, lightmaps, biome colors — Optifine format support for resource packs | — (dependency orphaned — Rainbow's Foliage removed)  |
-| [Lithostitched](https://www.curseforge.com/minecraft/mc-mods/lithostitched)       | Worldgen modifier API — handles village placement hooks                                   | Improved Village Placement                           |
-| [TLib (Take's Lib)](https://www.curseforge.com/minecraft/mc-mods/tlib)            | Library for atmospheric effects                                                           | Effectual                                            |
-| [Forgified Fabric API](https://modrinth.com/mod/forgified-fabric-api)             | Fabric API implemented on NeoForge (Sinytra) — lets Fabric-origin mods run on NeoForge    | BetterGrassify                                       |
-| [Nirvana Library](https://modrinth.com/mod/nirvana-library) 2.2.0                 | Library for config + networking abstraction                                               | Loot Beams: Refork                                   |
-| [Puzzles Lib](https://www.curseforge.com/minecraft/mc-mods/puzzles-lib)            | Config + utility library (Fuzss) — required by six pack mods                              | Leave My Bars Alone, Mindful Darkness, Hang Glider (Wave 2), Vehicle Upgrade (Wave 2), Diagonal Fences (Wave 6), Stylish Effects |
-| [Common Network](https://modrinth.com/mod/common-network) 1.0.21-1.21.1           | Networking library (Nirvana Library dependency)                                           | Nirvana Library                                      |
-| [Prism](https://modrinth.com/mod/prism-lib) 1.0.11                                 | Library for item rendering/tooltip features (Obscuria ecosystem)                           | Item Borders (required since 1.2+)                   |
-| [Fragmentum](https://modrinth.com/mod/fragmentum)                                   | Obscuria ecosystem library — item rendering/tooltip + config framework (Loot Journal already required it; doc gap fixed Aug 2026) | Loot Journal, Obscure Tooltips |
-| [Sinytra Connector](https://modrinth.com/mod/connector)                           | Lets Fabric mods run on NeoForge — translation/compat layer                               | Continuity                                           |
-| [Resourceful Lib](https://modrinth.com/mod/resourceful-lib)                       | Cross-loader utilities/API library (TeamResourceful)                                      | The Bumblezone                                       |
-
-**Lithostitched** is a worldgen library that Improved Village Placement uses to hook into the village generation system. Without it, IVP crashes at startup with a `NoClassDefFoundError` for `AddWorldgenModifiersEvent`. **IVP 1.2.0 (Jul 2026) now declares Lithostitched as a required dependency in its own metadata** — XMCL auto-installs it; the old "install it manually" note is obsolete.
-
-**Architectury API** is a lightweight library with no user-visible features — install once and forget. It provides the abstraction layer that lets Fabric-origin client QoL mods (Eating Animation) run seamlessly on NeoForge. Without it, these mods crash at startup with a missing-dependency error.
-
-**Install**: In XMCL, search `Architectury API` in the Mods tab and add it. Alternatively, download from CurseForge and drop the `.jar` into `mods/`. No config needed. The game loads it silently — you'll never see it in-game, but EMI's mod list confirms it's present.
 
 ### Configuration — Wave 0.5
 
@@ -1406,7 +1382,7 @@ Opens a new way to experience the world. Craft a spyglass, then look at any plan
 - `"Add Temporary Freezing automatically"` = `false` — Disables Aether's temporary freezing datapack.
 - `"Add Ruined Portals automatically"` = `false` — Disables ruined portal datapack.
 
-**Interdependency note — Deep Aether + Aether**: Deep Aether is an addon that expands the Aether dimension with 5 new biomes, Skyjade/Stratus gear, and new mobs. It requires The Aether and Aeroblender (worldgen biome API) — Aeroblender comes **pre-bundled** with Deep Aether, no separate install needed. Aeroblender itself depends on TerraBlender (already in Wave 0.5 dependencies). Stratus armor grants slow-fall and dash abilities, extending the Aether's power fantasy progression. All content is within the Aether dimension — no new dimension added.
+**Interdependency note — Deep Aether + Aether**: Deep Aether is an addon that expands the Aether dimension with 5 new biomes, Skyjade/Stratus gear, and new mobs. It requires The Aether and Aeroblender (worldgen biome API) — Aeroblender comes **pre-bundled** with Deep Aether, no separate install needed. Aeroblender itself depends on TerraBlender (already in the pack). Stratus armor grants slow-fall and dash abilities, extending the Aether's power fantasy progression. All content is within the Aether dimension — no new dimension added.
 
 **Interdependency note — Umbral Skies + Aether + Twilight Forest**: Umbral Skies connects Aether and Twilight Forest. Aether-styled Druid Huts and Wells generate in Twilight Forest. Aether boss trophies appear in TF's trophy display style. Gloves can be crafted from TF materials (ironwood, fiery, knightmetal, phantom). No config needed — install and both dimensions gain crossover content.
 
@@ -1527,7 +1503,7 @@ Every vanilla structure is expanded:
 - **YUNG's Bridges** — 15+ types of naturally generated bridges with biome-specific variants, spanning rivers and ravines
 - **YUNG's Extras** — small vanilla+ additions: improved Desert Wells (rare Wishing Wells with treasure), Desert Obelisks, Flame Outposts, scattered ruins and pillars
 
-All require **YUNG's API** (already in Wave 0.5 Dependencies). Structory is independent of the YUNG's mods.
+All require **YUNG's API** (already in the pack). Structory is independent of the YUNG's mods.
 
 **What to do**: Explore! Mark interesting structures on your JourneyMap (fullscreen map → right-click to set waypoint). Return with an Explorer's Compass.
 
