@@ -2,4 +2,4 @@
 
 ## Mods to review
 
-<!-- Last batch reviewed 2026-08-21 → STATUS.md (AutoSeasons + Miscellaneous Plus Plus ADOPTED by user instruction; AutoBlend, BOSPriority tentative; Promises To Keep Plus Plus rejected; Hammet D.P.III Unique Rewards chain-moot) -->
+<!-- Last batch reviewed 2026-08-22 → STATUS.md (Embers XD PBR + Nordic Faces + TMD Dirt Roads + TMD Dirt Roads PBR + CS Water ADOPTED; TMD Epic Waterfalls + Flicker Fix + Lux CS rejected; 5 already-in-list lines removed) -->

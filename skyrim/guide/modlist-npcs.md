@@ -12,6 +12,7 @@ Face, hair, and presentation direction for Skyrim's named NPCs. Does not re-deci
 | [The Men of Winter SSE](https://www.nexusmods.com/skyrimspecialedition/mods/10902)                            | Baseline    | Dedicated male coverage. Last updated Aug 2020 — verify 1.6.1170. |
 | [Children of the First — Altmer NPC Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/122167)     | Baseline    | Race-specific modular overlay for Altmer.                         |
 | [Children of the Ash — Dunmer NPC Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/122165)       | Baseline    | Race-specific modular overlay for Dunmer.                         |
+| [Nordic Faces - Immersive Characters Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/40658)   | Baseline    | Plugin-less unified base layer — textures, meshes, FaceGen only (zero record edits, no black-face risk). Vanilla-faithful modern-texture overhaul for player + all NPCs incl. beastfolk. Loads under the regional/race-specific stack; BnP skins installed after still win. Re-run FacegenBaseline. |
 | [High Poly True to Vanilla NPC Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/74226)           | Alternative | Vanilla-faithful fallback. Broad NPC coverage.                    |
 | [Pandorable's NPCs (AIO)](https://www.nexusmods.com/skyrimspecialedition/mods/78524)                          | Alternative | Beauty-forward branch. Broad female coverage.                     |
 | [DIbella's Blessing](https://www.nexusmods.com/skyrimspecialedition/mods/82606)                               | Alternative | 233 female characters.                                            |
@@ -29,7 +30,7 @@ Face, hair, and presentation direction for Skyrim's named NPCs. Does not re-deci
 
 Stack broad-coverage mods first, then region/race-specific, then single-NPC overhauls last. The later mod wins for any NPC it covers.
 
-1. **Broad base layer** — Choose one male and one female branch: `High Poly True to Vanilla`, `Pandorable's`, `DIbella's Blessing`, `Males of Skyrim`, or `Pride of Skyrim`.
+1. **Broad base layer** — `Nordic Faces` (locked base) or one male + one female branch: `High Poly True to Vanilla`, `Pandorable's`, `DIbella's Blessing`, `Males of Skyrim`, `Pride of Skyrim`.
 2. **Region or gender-specific** — `Northbourne NPCs of Whiterun Hold` (Whiterun only), `The Men of Winter SSE` (males broadly). Override specific holds or gender groups on top of the base layer.
 3. **Race-specific overlays** — `Children of the First` (Altmer), `Children of the Ash` (Dunmer) — load after general overhauls so race-specific facegen wins for their target NPCs.
 4. **Single-NPC finishers** — `The Wolven Widow` (Elisif) — load last so named individuals use the intended facegen.

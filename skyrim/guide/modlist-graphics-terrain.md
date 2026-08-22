@@ -41,6 +41,8 @@ Treat terrain, roads, and snow as one connected presentation layer. Must stay co
 | [HD Remastered Blended Roads](https://www.nexusmods.com/skyrimspecialedition/mods/63674)         | HD hand-made rework. Choose 2K for performance, 4K for visual sweet spot. Requires Blended Roads base. |
 | [Simplest Roads](https://www.nexusmods.com/skyrimspecialedition/mods/111255)                     | Minimal road texture replacer. Alternative to Blended Roads.                                           |
 | [Simple Complex Parallax Roads](https://www.nexusmods.com/skyrimspecialedition/mods/173826)      | Parallax road textures requiring CS Complex Material. Alternative to Blended Roads.                    |
+| [TMD Dirt Roads](https://www.nexusmods.com/skyrimspecialedition/mods/145119)                    | Region-varied dirt road meshes replacing vanilla stone roads. ESM-flagged. Coexists with Blended Roads (its roads still used where TMD doesn't edit). |
+| [TMD Dirt Roads PBR Restart](https://www.nexusmods.com/skyrimspecialedition/mods/174071)        | PBR remake of the deprecated TMD Dirt Roads PBR — all-new textures, region-varied. Requires TMD Dirt Roads + CS + PGPatcher + CS Water (172959, → [Weather & Water](modlist-graphics-weather.md)). Load before PBR landscape overhauls. **TomatoRim PBR Landscapes patch is "Coming soon" — blend with the locked TomatoRim baseline is unfinished (accepted 2026-08-22).** |
 
 ### Snow And Support
 

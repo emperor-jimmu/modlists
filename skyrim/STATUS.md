@@ -632,3 +632,32 @@ Three Cl3mus toolchain utilities (**AutoSeasons**, **AutoBlend**, **BOSPriority*
 ### TODO cleanup
 
 All 6 lines cleared from `TODO.md`. (3 tentative toolchain monitors, 1 tentative quest mod, 1 rejected, 1 chain-moot.)
+## Mods for review — VERDICTS (2026-08-22, 12-mod TODO batch)
+
+Reviewed the 12 submitted mods from `TODO.md` against Elder Wilds pillars (CS-exclusive, PBR-native, locked-baseline conflicts, third-person/gamepad, maintenance signal). Sources: Nexus pages (read tool + browser after HTTP 403s on direct fetch), repo section files, prior STATUS.md verdicts.
+
+### Already in modlist / already decided (remove TODO lines only)
+
+- **Tomato's PBR Vanilla Trees (139375)** — Already in `modlist-graphics-terrain.md:151` (Alternative). Remove from TODO.
+- **Nature of the Wild Lands - PBR (150319)** — Already in `modlist-graphics-terrain.md:162` (Alternative). Remove from TODO.
+- **Skydreamus CS Presets (171145)** — Already in `modlist-graphics-weather.md:27` (Alternative). Remove from TODO.
+- **Faultier's PBR Armors and Clothes (175319)** — Already in `modlist-graphics-textures.md:140` + `modlist-graphics-characters.md:126`. Remove from TODO.
+- **Faultier's PBR Skyrim (125308)** — Already decided 2026-08-11: AIO forbidden alongside VPBR; only the standalone `PBR Windows` and `PBR Road Signs` optional files are adopted. Remove from TODO.
+
+### Adopted (entry added to owning section file)
+
+- **Embers XD - PBR (186037)** — ADOPTED. leostevano, v1.0.0 (Jul 2026), 196 endorsements. PBR material conversion of the locked **Embers XD** baseline (`modlist-graphics-lighting.md:34`). Requires Embers XD + PGPatcher + CS — all baseline. Same pattern as Faultier's PBR Armors: a PBR companion layered onto a locked baseline. `modlist-graphics-textures.md` → PBR Support. Install after Embers XD, run PGPatcher, verify fire/ember reads correctly under CS.
+- **Nordic Faces - Immersive Characters Overhaul (40658)** — ADOPTED (base layer, user instruction). deletepch, v5.0, 6,331 endorsements. Plugin-less (textures + meshes + FaceGen only, zero record edits, no black-face risk), vanilla-faithful modern-texture overhaul for player + all NPCs incl. beastfolk. Serves as the unified broad base layer under the confirmed regional/race-specific stack (Northbourne, Men of Winter, Children of First/Ash) and DF Edit single-NPC finishers; BnP skins installed after still win (plugin-less). Re-run `FacegenBaseline` via Synthesis. `modlist-npcs.md` → NPC Appearance Overhauls (base layer).
+- **TMD Dirt Roads (145119)** — ADOPTED. themilkdrinker, v1.1 (Oct 2025), 728 endorsements. Replaces vanilla stone road meshes with region-varied dirt road models (ESM-flagged; BEES only needed pre-1.6.1170 — list is current). Author confirms coexistence with Blended Roads ("its roads are still used in places I didn't mod"). `modlist-graphics-terrain.md` → Roads.
+- **TMD Dirt Roads PBR Restart (174071)** — ADOPTED (user instruction, incl. unfinished-blend caveat). Julio005, v1.0.3 (May 2026), 27 endorsements. Complete PBR remake of the deprecated TMD Dirt Roads PBR — all-new textures, region-varied, optional moss shader. Requires TMD Dirt Roads + CS + PGPatcher + **CS Water (172959)**. Load before PBR landscape overhauls. **Caveats:** TomatoRim PBR Landscapes patch is listed "Coming soon" — blend with the locked TomatoRim baseline is unfinished and accepted for now; CS Water chain supersedes the Simplicity of Sea water baseline. `modlist-graphics-terrain.md` → Roads.
+- **CS Water — A Water Made For CS in mind (172959)** — CHAIN-ADOPTED (prerequisite of 174071). Julio005/Nymph Nerds, v1.0.5, 99 endorsements. Full CS-optimized water overhaul with PBR textures where CS supports them (author explicitly: partial, not universal PBR). Already mapped in the Synthesis patcher config (`A Water Made For CS in mind.esp` → `C.Water`, `modlist-performance-patches.md:138`). **Water baseline change: supersedes Simplicity of Sea** — both edit all water records and CS Water is authored to win conflicts; verify SoS removal and water-stack testing. `modlist-graphics-weather.md` → Water Visuals.
+
+### Rejected
+
+- **TMD Epic Waterfalls (106210)** — REJECTED. themilkdrinker, 924 endorsements, v1.2.2. Page states **"ENB Required!"** — needs ENB complex material + dynamic cubemap. Hard ENB dependency violates the CS-exclusive rule. Redundant with WAVY Waterfalls (Alternative) and Natural Waterfalls (Alternative).
+- **TMD Epic Waterfalls - Flicker Fix (170502)** — REJECTED (chain-moot). v1.0, 0 views. Fix for the ENB-bound TMD water/waterfall ecosystem; base rejected above.
+- **Lux CS (153919)** — REJECTED. Bottle, 6,216 endorsements, v2.6.0. Tonemapping/ISL edit for Lux — Lux family is a hard exclusion, and the page itself states "NOT compatible with Window Shadows Ultimate" (locked lighting baseline). Tonemapping already owned by True Light.
+
+### TODO cleanup
+
+All 12 lines cleared from `TODO.md`. (5 already-in-modlist/decided, 5 adopted incl. 1 chain-adopted, 3 rejected.)

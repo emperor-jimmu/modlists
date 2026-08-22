@@ -159,7 +159,7 @@ The `Parallax version` of each city requires a parallax retexture (`_p` textures
 | Riften Architectural Details      | No      | Not installed (Riften outdoor coverage comes from the Snazzy AIO series).                                                                                                                          |
 | Skyrim 202X by Pfuscher           | No      | Textures are PBR (Tomato's pack etc.), not 202X.                                                                                                                                                   |
 | Skyrim - A Mountainous Experience | No      | Not installed.                                                                                                                                                                                     |
-| Water for ENB                     | No      | No ENB; water stack is CS (Simplicity of Sea + Water Effects CS). Also skipped when using Realistic Water Two.                                                                                     |
+| Water for ENB                     | No      | No ENB; water stack is CS (CS Water — A Water Made For CS in mind + Water Effects CS). Also skipped when using Realistic Water Two.                                                                                     |
 
 **Overwrite rule:** let it win over Assorted Mesh Fixes and city-mesh mods; here, keep the list's `Whiterun Has Walls`/city overrides on top with the city-mesh mods winning per-section order, and `Flickering Meshes Fix` winning the vanilla-based meshes it targets — aligned with the author: "compatible with almost everything... let this overwrite them when required".
 
