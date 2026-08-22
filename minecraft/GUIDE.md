@@ -448,19 +448,17 @@ All the visual polish, UI improvements, inventory tools, storage, travel, tradin
 
 | Mod                                                                                                                     | Role                                                                                                                               |
 |-------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
-| [Dynamic Villager Trades Neoforge](https://www.curseforge.com/minecraft/mc-mods/dynamic-villager-trades-neoforge) 1.0.0 | Dynamically changing villager trades — villagers specialize in what you buy from them, reducing the need for massive trading halls |
+| [Dynamic Villager Trades](https://www.curseforge.com/minecraft/mc-mods/dynamic-villager-trades) 1.4.0 (Fabric via Sinytra Connector) | Dynamically changing villager trades — villagers specialize in what you buy from them, reducing the need for massive trading halls |
 | [Improved Village Placement](https://www.curseforge.com/minecraft/mc-mods/improved-village-placement)                   | Forces villages to spawn on flat terrain — prevents cliff-side and underwater villages                                             |
 
-### Configuration — Village & Trading
+### Configuration — Wave 0.5
 
-**Dynamic Villager Trades** (`config/dynamicvillagertraders.properties`):
+**Dynamic Villager Trades** (`config/dynamicvillagertrades.properties` — Fabric build runs via Sinytra Connector, already in pack):
 
 - `global_randomness` = `0.7` (recommended, default 1.0) — Lower values make villagers settle on specific trades faster; higher values increase time to get desired trades. Multiplied by group randomness in the datapack.
 - `refresh_delay` = `1` (recommended, default 0) — Number of restocks between trade changes. `1` means trades change every other restock, giving you time to use existing trades before they rotate. Trades always change on level-up regardless.
 - `no_book_duplicates` = `true` — Prevents librarians from selling the same enchant at different levels simultaneously.
 - `enchant_repair_compat` = `false` — Adds Curse of Vanishing to every book sold by librarians (for Enchant & Repair compatibility). Keep disabled unless that mod is added.
-
-### Configuration — Wave 0.5
 
 **Waystones** (`config/waystones-common.toml`):
 
@@ -471,12 +469,6 @@ All the visual polish, UI improvements, inventory tools, storage, travel, tradin
 
 - `trackItemPickups` = `true` — Logs all item pickups for per-session statistics.
 - `trackXpPickups` = `true` — Logs all XP pickups for per-session statistics.
-
-**Better Days** (`config/betterdays-common.toml`):
-
-Better Days is the *engine* that lengthens the day/night cycle, but it's installed at **default** and isn't where you set the length. Its real modes are `RATIO`, `MINUTES`, and `REALTIME` — there is no `SEASON` mode. **Serene Seasons Plus** (Wave 2) drives Better Days at runtime through its `[seasonalDaylightCycle]` config (see *Serene Seasons Plus* in Wave 2) and overwrites `daySpeed`/`nightSpeed` automatically — leave Better Days' own config untouched.
-
-Better Days' "time effects" all default to `NEVER` (except `weatherEffect = "SLEEPING"`), which is exactly the pack's intent — no crop or block-entity desync with Serene Seasons.
 
 **Mindful Darkness** (`config/mindfuldarkness-client.toml` — tracked override, user-tuned Aug 2026):
 
@@ -493,11 +485,11 @@ No shaders involved — unlike Dark Mode Everywhere (removed in the Aug 2026 swa
 
 **Inventory Essentials** (`config/inventoryessentials-common.toml` — tracked override):
 
-- `inventorySorting` = `"consolidate_only"` — IE's middle-click sort only merges partial stacks, never reorders. **ClientSort owns all reordering** (this is the "configured lower" resolution of the sort-feature overlap between the two mods). All transfer features stay at defaults (single transfer, bulk transfer, shift-drag, tool/stack refill). ⚠ [VERIFY] key name at first launch — Balm writes it on save; NeoForge fills missing keys.
+- `inventorySorting` = `"CONSOLIDATE_ONLY"` — IE's middle-click sort only merges partial stacks, never reorders. **ClientSort owns all reordering** (this is the "configured lower" resolution of the sort-feature overlap between the two mods). All transfer features stay at defaults (single transfer, bulk transfer, shift-drag, tool/stack refill). Value verified (enum name `CONSOLIDATE_ONLY` — Balm writes enum names to TOML; `consolidate_only` also parses case-insensitively).
 
-**Effectual** (`config/effectual-client.toml` — tracked override):
+**Effectual** (`config/effectual.json` — tracked override; JSON, not TOML — Effectual uses a Gson config file):
 
-- `caveDust` = `false` — Cave dust is Particular Reforged's effect; disabling it here removes the only duplicate particle. Everything else stays at defaults (steam breath, bubbles, sand/gravel placement sparks, footprints, etc.).
+- `"caveDust"` = `false` — Cave dust is Particular Reforged's effect; disabling it here removes the only duplicate particle. Everything else stays at defaults (steam breath, bubbles, sand/gravel placement sparks, footprints, etc.).
 
 **Modern UI + ImmediatelyFast** (`config/immediatelyfast.json` — tracked override):
 
@@ -547,7 +539,7 @@ These mods change how the game looks and feels. All are client-side and work imm
 - **[DLS] Dark Loading Screen** — dark loading screen. No config.
 - **Cosy Critters & Creepy Crawlies** — ambient birds/bugs/critters; client-side, toggleable via `/cosycritters`. Zero perf impact.
 - **Foxified Dense Flowers** — denser flower fields; client-side.
-- **Effectual** — atmospheric particles (steam breath, bubbles, footprints, sparks, sand/gravel placement). **Cave dust is disabled** in `config/effectual-client.toml` (`caveDust = false` — duplicated by Particular Reforged's cave dust; tracked override, Aug 2026 review). Requires Architectury API, Cloth Config, TLib (all in pack).
+- **Effectual** — atmospheric particles (steam breath, bubbles, footprints, sparks, sand/gravel placement). **Cave dust is disabled** in `config/effectual.json` (`"caveDust": false` — duplicated by Particular Reforged's cave dust; tracked override, Aug 2026 review). Requires Architectury API, Cloth Config, TLib (all in pack).
 - **Mindful Darkness** — automatic dark mode for every GUI (replaces Dark Mode Everywhere, Aug 2026). No shaders, no texture changes — recolors GUI rendering in place; toggle button in the title/pause screens; intensity + algorithm configurable. User-tuned override: darker textures (0.353), brighter fonts (0.804), HSL algorithm; **entire vanilla HUD** (hearts, food, XP bar, hotbar, armor), **toasts** (vanilla + Advancement Plaques) and Loot Journal notification panels excluded from darkening. The HUD level number is white font text — above the 0.804 font floor, so never darkened. Requires Puzzles Lib (already in pack).
 - **Obscure Tooltips** — stylized tooltips: animated effects/particles, rarity-tinted flair, labels/shadows, auto-wrap, scrolling, armor + tool previews. **Owns the tooltip surface** — Modern UI's tooltip feature is off (Action Center `Ctrl+K`). Config: `config/obscuria/` (Fragmentum). ⚠ **Apotheosis watch**: OT emphasizes item rarity — verify Apotheosis custom rarities map onto its styling in-game (fallback: OT's per-item/mod filters can style Apotheosis gear explicitly).
 - **BetterGrassify** — OptiFine-style connected grass: grass blocks, snowy grass, podzol, mycelium, dirt paths, farmland, and both nylium blend their side textures into surrounding terrain (Fancy, default) or use the top texture (Fast). Adds Better Snow + Better Snowy Grass for snowy biomes. Ships no textures — samples your active texture pack's sprites at runtime, so it works at any resolution; resource-pack compatibility mode is on by default. Set mode in config — YACL GUI (already in pack) or `config/bettergrass.json`. Requires Forgified Fabric API.
@@ -561,7 +553,7 @@ These mods change how the game looks and feels. All are client-side and work imm
 - **JourneyMap + Integration** — minimap with entity dots, fullscreen map (`J`), waypoints (`B` to set), entity radar. Waystones appear as icons via the Integration mod. `J` → right-click sets a temporary waypoint.
 - **AppleSkin** — hover food for exact hunger/saturation; dashed outlines preview a meal. No config.
 - **Immersive Armor HUD** — armor icons + durability above the bar; works with modded armor. No config.
-- **Inventory Essentials** — drag-to-transfer and single-item moves: `Ctrl+click` moves one item, `Shift+Ctrl+click` moves all of a type. ⚠ **Sorting overlap — configured lower**: IE ships its own middle-click sorting (modes: consolidate-only / retain-order / alphabetical / creative — default creative) which would duplicate ClientSort. The tracked override `config/inventoryessentials-common.toml` sets `inventorySorting = "consolidate_only"` — middle-click merges partial stacks without reordering, and **ClientSort owns all reordering** (4 modes + button).
+- **Inventory Essentials** — drag-to-transfer and single-item moves: `Ctrl+click` moves one item, `Shift+Ctrl+click` moves all of a type. ⚠ **Sorting overlap — configured lower**: IE ships its own middle-click sorting (modes: consolidate-only / retain-order / alphabetical / creative — default creative) which would duplicate ClientSort. The tracked override `config/inventoryessentials-common.toml` sets `inventorySorting = "CONSOLIDATE_ONLY"` — middle-click merges partial stacks without reordering, and **ClientSort owns all reordering** (4 modes + button).
 - **ClientSort** — sorting with 4 modes (creative order, quantity, alphabetical, item ID) plus Fill Stacks, Transfer Matching, and a Button Editor. The pack's sort tool — IE's middle-click sort is set to consolidate-only so ClientSort owns reordering.
 - **Shulker Box Tooltip** — hover a shulker for a contents preview. No config.
 - **Item Borders** — rarity-colored borders (gray → gold) to spot drops instantly.
@@ -598,13 +590,14 @@ Drink to teleport straight back to your **spawn point** — the classic Terraria
 
 #### Dynamic Villager Trades
 
-Villager trades change dynamically — villagers specialize in what you buy from them. No more massive trading halls.
+Villager trades change dynamically — villagers specialize in what you buy from them. No more massive trading halls. The actual mod by **orlouge** (3.3M DL); the 1.21.1 build is Fabric-only, so it runs via **Sinytra Connector** (already in pack).
 
-**Config** (`config/dynamicvillagertraders.properties`):
+**Config** (`config/dynamicvillagertrades.properties`):
 
 - `global_randomness = 0.7` — faster specialization
 - `refresh_delay = 1` — trades change every other restock
 - `no_book_duplicates = true` — no duplicate enchantment books
+- `enchant_repair_compat = false` — no Curse of Vanishing on librarian books (for Enchant & Repair compatibility; keep off unless that mod is added)
 
 #### Improved Village Placement
 

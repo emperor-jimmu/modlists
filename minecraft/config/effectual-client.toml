@@ -1,5 +1,0 @@
-# Effectual — tracked override (Aug 2026 Wave 0.5 review)
-# Cave dust is Particular Reforged's effect (same feature, duplicated here).
-# Disabled to avoid double particles; everything else stays at defaults.
-# NeoForge fills remaining keys on first save.
-caveDust = false
