@@ -2,6 +2,13 @@
 
 ## Completed
 
+### Mindful Darkness — Full HUD Exempted (Aug 2026)
+
+- [x] **User request**: exempt the entire HUD from darkening (experience, level, food, health, hotbar). `config/mindfuldarkness-client.toml` `paths` exclusion widened: `!minecraft:textures/gui/sprites/hud/heart/*` → **`!minecraft:textures/gui/sprites/hud/*`** — covers hearts, food, experience bar, hotbar, armor, air, mount health, jump bar (all vanilla HUD sprites; wildcard includes `/`, so nested sprite dirs are exempt too; sits after the `textures/gui/sprites/hud/*` include → last-match-wins).
+- [x] **Level number — no change needed** (verified in `FontColorHandler.tryAdjustColor`): font darkening only lifts colors BELOW the 0.804 font-brightness floor; pure-white text (brightness 1.0) like the level number is untouched.
+- [x] GUIDE.md Mindful Darkness config table + What-to-Expect bullet updated; DRIFTWOOD-GUIDE.pdf regenerated.
+- [ ] **Instance action** — copy the updated `config/mindfuldarkness-client.toml` to the instance's `config/` (replace). [VERIFY] at next launch / after F3+T: HUD cluster (XP bar, food, hearts, hotbar, armor) at full brightness; GUI panels/containers still darken; Loot Journal panels still bright.
+
 ### Obscure Tooltips Adopted — Tooltip Surface Swap (Aug 2026)
 
 - [x] **User request: add Obscure Tooltips** ([CurseForge](https://www.curseforge.com/minecraft/mc-mods/obscure-tooltips)) — client-side tooltip overhaul: animated effects/particles, rarity emphasis ("making rarer items more vibrant"), labels/shadows, auto-wrap, scrolling, armor + tool preview panels, registry-driven per-item/mod/enchantment style definitions. Pin **4.2.4** (NeoForge 1.21.1, 2026-08-19 — actively maintained), 2.19M DL, client-only. License: Obscuria Ecosystem (same as Fragmentum — accepted precedent).
