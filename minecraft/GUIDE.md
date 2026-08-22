@@ -430,7 +430,7 @@ All the visual polish, UI improvements, inventory tools, storage, travel, tradin
 | [Obscure Tooltips](https://www.curseforge.com/minecraft/mc-mods/obscure-tooltips) 4.2.4      | Stylized tooltips — animated effects/particles, rarity emphasis, labels/shadows, scrolling, armor + tool previews. Owns the tooltip surface (Modern UI tooltips off, Aug 2026 swap) |
 | [Loot Journal](https://www.curseforge.com/minecraft/mc-mods/loot-journal-neoforge)            | Animated item pickup notifications                                                                                                                     |
 | [Better Advancements](https://www.curseforge.com/minecraft/mc-mods/better-advancements)       | Overhauled advancements UI with editor/pan/zoom                    |
-| [Polymorph+](https://www.curseforge.com/minecraft/mc-mods/polymorph-plus)                     | Choose crafting result when recipes conflict                       |
+| [Polymorph](https://www.curseforge.com/minecraft/mc-mods/polymorph)                           | Choose crafting result when recipes conflict                       |
 | [Traveler Tool Belt](https://www.curseforge.com/minecraft/mc-mods/traveler-tool-belt)         | Tool radial menu — hold R for quick-swap, 2→9 slots via upgrades   |
 | [EMIffect](https://www.curseforge.com/minecraft/mc-mods/emiffect)                             | Status effects in EMI browser — descriptions, sources, colors for all modded effects |
 
@@ -592,7 +592,7 @@ These mods change how the game looks and feels. All are client-side and work imm
 - **Loot Journal** — animated pickup notifications; session summary on disconnect. Config: `trackItemPickups`, `trackXpPickups`, `showSummaryOnDisconnect`.
 - **Better Advancements** — overhauled advancements UI, open with `L`. Pairs with Advancement Plaques.
 - **Advancement Plaques** — glowing plaques (copper/silver/gold per tier). Requires Iceberg (auto-installed).
-- **Polymorph+** — when recipes conflict, click the button next to the crafting output to cycle. Persists per ingredient combination.
+- **Polymorph** — when recipes conflict, click the button next to the crafting output to cycle. Persists per ingredient combination.
 - **Traveler Tool Belt** — hold `R` for a radial quick-swap menu; 2 slots, expandable to 9. Integrates with the Curios belt slot.
 - **EMIffect** — browse any status effect in EMI (description, source mod, colors) — a built-in wiki for Apotheosis/Relics/Runes effects. Complements Stylish Effects (EMI lookup vs HUD/container display).
 
