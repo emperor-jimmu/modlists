@@ -2,6 +2,19 @@
 
 ## Completed
 
+### EMIffect → JEED Swap + MEED Added (Aug 2026)
+
+- [x] **User decision: swap EMIffect → JEED + add MEED** (Wave 0.5 — Inventory & UI). EMIffect 2.1.6 (last release Sep 2025, ~11 mo stale) is EMI-only; **JEED** is the upstream original (EMIffect's descriptions were taken from it), actively maintained (1.21-2.3.3, Jul 2026) by MehVahdJukaar (Supplementaries author — already in pack). JEED 1.21.1: **zero required deps**, EMI is a native optional integration (no JEI — pack stays EMI-only), optional Stylish Effects integration adds description tooltips to the pack's effect widgets. License ARR (EMIffect was MIT) — fine for a personal pack. **MEED** (8.0.6, Aug 12 2026) is a JEED/EMIffect addon: curated descriptions + effect providers (items/mobs/blocks/fluids applying each effect) for 100+ mods / 600+ effects — covers pack mods Aether, Deep Aether, Cataclysm, Relics (8.0.2 hotfixed newer Relics parsing), Simply Swords, Too Many Bows, Deeper and Darker, Ranged Weapon API. CC-BY-NC-SA-4.0 (non-commercial — fine, personal pack).
+- [x] GUIDE.md updated: Inventory & UI table rows (−EMIffect +JEED +MEED), What-to-Expect bullets (JEED + MEED), Mod Count Summary (Wave 0 7/12/19 → **8/12/20**; Total **184/50/234 → 185/50/235** — mods +1, deps unchanged).
+- [ ] **Instance action (XMCL)** — remove `emiffect*.jar`; add `jeed-1.21-2.3.3.jar` + `meed-1.21.1-8.0.6.jar` to `mods/`. [VERIFY] at next launch: status effects appear in the EMI sidebar with description/source/color info; MEED adds curated descriptions + providers for Relics/Aether/Cataclysm effects; Stylish Effects widget hover shows description tooltips (JEED integration); no missing-dependency errors.
+- [x] DRIFTWOOD-GUIDE.pdf regenerated
+
+### Traveler Tool Belt Removed (Aug 2026)
+
+- [x] **User request: remove Traveler Tool Belt** (Wave 0.5 — Inventory & UI) — tool radial menu (hold `R`, 2→9 slots via upgrades, Curios belt slot integration). Removed from GUIDE.md (Inventory & UI table row + What-to-Expect bullet); Mod Count Summary (Wave 0 8/12/20 → **7/12/19**; Total **185/50/235 → 184/50/234** — mods −1, deps unchanged). STATUS batch-16 entry marked **REMOVED**. Curios API stays — still required by Relics + Immersive Armors.
+- [ ] **Instance action (XMCL)** — remove `travelertoolbelt*.jar` from `mods/` (no tracked config override existed). [VERIFY] at next launch: no missing-dependency errors; `R` opens EMI recipe view only (no radial menu).
+- [x] DRIFTWOOD-GUIDE.pdf regenerated
+
 ### Mindful Darkness — Full HUD Exempted (Aug 2026)
 
 - [x] **User request**: exempt the entire HUD from darkening (experience, level, food, health, hotbar). `config/mindfuldarkness-client.toml` `paths` exclusion widened: `!minecraft:textures/gui/sprites/hud/heart/*` → **`!minecraft:textures/gui/sprites/hud/*`** — covers hearts, food, experience bar, hotbar, armor, air, mount health, jump bar (all vanilla HUD sprites; wildcard includes `/`, so nested sprite dirs are exempt too; sits after the `textures/gui/sprites/hud/*` include → last-match-wins).
@@ -351,7 +364,7 @@ PUT 90.*:
 
 - [x] Performance: Sodium, Iris, Lithium, Distant Horizons, ModernFix, ImmediatelyFast, Entity Culling, Dynamic FPS, NoisiumForked
 - [x] Visual/Client QoL: LambDynamicLights, BetterF3, Sound Physics Remastered, AmbientSounds, The Immersive Music Mod, Immersive UI, Status Effect Bars Reforged, Traveler's Titles, Better Modlist, First Person Model, 3D Skin Layers, Better Safe Bed, Presence Footsteps, Particular Reforged, Wakes Reforged, Cosy Critters, Foxified Dense Flowers
-- [x] Inventory/UI: EMI, Jade, Jade Addons, JourneyMap + Integration, AppleSkin, Inventory Essentials, Advancement Plaques, Tooltip Overhaul, Loot Journal, Better Advancements, Polymorph, Shulker Box Tooltip, Item Borders, EMIffect
+- [x] Inventory/UI: EMI, Jade, Jade Addons, JourneyMap + Integration, AppleSkin, Inventory Essentials, Advancement Plaques, Tooltip Overhaul, Loot Journal, Better Advancements, Polymorph, Shulker Box Tooltip, Item Borders, JEED, MEED
 - [x] Storage & Travel: Sophisticated Storage, Sophisticated Backpacks, Waystones, GraveStone Mod
 - [x] Dependencies: Cloth Config, Architectury API, YACL, Curios API, CreativeCore, OctoLib (ShatterLib), Fragmentum, M.R.U, Balm, Iceberg
 - [x] Added YUNG's API to New Dependencies
@@ -738,7 +751,7 @@ PUT 90.*:
 
 ### Mod Review — 11 Candidates (Jul 2026 batch 16)
 
-- [x] Traveler Tool Belt — **ADDED** (Wave 0.5 — Inventory & UI) — tool radial menu, 2→9 slots, Curios integration. By Tiviacz1337. NeoForge 26.1.2.
+- [x] ~~Traveler Tool Belt — **ADDED** (Wave 0.5 — Inventory & UI) — tool radial menu, 2→9 slots, Curios integration. By Tiviacz1337. NeoForge 26.1.2.~~ ❌ REMOVED (Aug 2026 — per user request)
 - [x] Field Guide — **ADDED** (Wave 2 — Field Guide) — spyglass-based creature/plant catalog. Exploration doc mod. By evanbones. NeoForge 26.1.2.
 - [x] Create Deep Seas — **REMOVED** (was Wave 2) — requires Sable ecosystem (Create Aeronautics dep). Alpha/Early Access. Iris shader incompatibility concern. Dropped alongside Create Aeronautics.
 - [x] Kaleidoscope Tavern — skipped (overlaps with Brewin' And Chewin' FD ecosystem — FD integration more valuable)
@@ -820,7 +833,7 @@ PUT 90.*:
 
 ### Added Mods (Aug 2026 batch 26 — Mod Review)
 
-- [x] EMIffect (Wave 0.5 — Inventory & UI) — status effects in EMI browser with descriptions, sources, and colors. Client-side only, zero deps beyond EMI, MIT license. Complements Status Effect Bars Reforged (HUD display vs EMI lookup).
+- [x] ~~EMIffect (Wave 0.5 — Inventory & UI) — status effects in EMI browser with descriptions, sources, and colors. Client-side only, zero deps beyond EMI, MIT license. Complements Status Effect Bars Reforged (HUD display vs EMI lookup).~~ ❌ REMOVED (Aug 2026 — swapped to JEED + MEED)
 - [x] Fresh Animations: Extensions (Wave 0 — Texture Packs) — official FA all-in-one bundle by FreshLX: 8 extensions (Objects, Details, Emissive, Creepers, Spiders, Quivers, Classic Horses, Slamacow). Replaces individual Objects addon. 16x, vanilla-friendly. Load above Fresh Animations. 20.5M DL.
 
 
