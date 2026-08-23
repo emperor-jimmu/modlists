@@ -1,3 +1,11 @@
+### Forgematica Schematic List Refresh (Aug 2026)
+
+- [x] **User request: replace the schematic download list** (Aug 23, 2026) — swapped the Wave 1.1 recommended list (18 → 21 schematics): 16 from Abfielder.com + 5 from PhantomMarket (market.phantom-node.com), in the order given.
+- [x] **New "Blocks (Volume)" column** added to the schematic table — non-air block count + bounding-box volume (X×Y×Z) per row. No-fabrication data: Abfielder product pages publish Dimensions + Total blocks; PhantomMarket posts expose no stats, so every `.litematic`/`.schem` was downloaded and parsed (gzip NBT) for TotalBlocks / TotalVolume.
+- [x] GUIDE.md updated: section intro (two sources), 21-row table, Download instructions (.litematic + .schem — Forgematica loads both), Finding more (+ PhantomMarket explore), style guide (modern builds now in scope), Interdependency Notes + Session Plan re-pointed at the new list (removed IDs 8559/11682/12509/2818/10955/10587 no longer referenced), tip refreshed.
+- [x] STATUS.md Wave 1.1 + batch-23 entries updated (18 → 21 schematics, two sources).
+- [x] DRIFTWOOD-GUIDE.pdf regenerated
+
 ### Mod Review — Create Aircraft & Train Batch (Aug 2026)
 
 - [x] **User request: review 7 mods for addition** (Aug 23, 2026): Create Deco, Create Better FPS (replace-or-add vs Create Threaded Trains), Create Man of Many Planes (datapack), Create Immersive Aircrafts (resource pack), Create Immersive Aircrafts - Recipes (data pack), Create: Pantographs & Wires, Create Waystones Recipes. Verdicts: **1 already in pack** (Create Better FPS — and Threaded Trains is complementary, not a substitute; keep both → TT removed below), **1 rejected** (Create Waystones Recipes — chill + phase violation), **4 adopt candidates forming one package** (Create Deco; MoMP datapack; IA resource pack; IA data pack — the aircraft trio requires an IA 1.1.5 → 1.4.x bump), **1 adopt-if-wanted** (Create: Pantographs & Wires — beta line + new DragonLib dep). Adoptions finalized same session: **Create Deco + Create Aircraft package** (below); Pantographs left adopt-if-wanted (revisit when a release build lands).
@@ -461,13 +469,14 @@ PUT 90.*:
 - [x] All interdependency notes written (Create→Mekanism→AE2 integration, colony tech gating)
 - [x] Create train addons: Train Utilities, Railways Navigator, Interiors, Train Parts, Threaded Trains
 
-### Wave 1.1 — Megabuilding (1 mod + 18 schematics)
+### Wave 1.1 — Megabuilding (1 mod + 21 schematics)
 
 - [x] Forgematica 0.4.3+mc1.21.11 — client-side schematic mod (Litematica unofficial Forge/NeoForge port)
 - [x] No dependencies (standalone — no MaLiLib required)
-- [x] 18 recommended schematics curated from abfielder.com covering all three progression phases
-- [x] Schematics span: starter homes (4), farms/windmills (3), factories/warehouses (5), underground bases (1), castles (2), bridges/walls/towers (3)
-- [x] All schematics are free .litematic downloads, survival-compatible (Forgematica is visual guide only)
+- [x] 21 recommended schematics curated from Abfielder.com (16) + PhantomMarket (5) covering all three progression phases
+- [x] Schematics span: starter/medieval/modern homes, farmsteads, a trading hall, a mountain chalet, mansions, and a desert oasis settlement
+- [x] All schematics are free downloads (.litematic and .schem), survival-compatible (Forgematica is visual guide only)
+- [x] Schematic table includes block count + volume per build (from product pages and parsed .litematic/.schem files)
 - [x] Shader caveat noted: toggle shaders off while placing schematics if flickering occurs
 - [x] Interdependency notes written (Forgematica × Create / MineColonies / AE2 / Apotheosis)
 - [x] Session plan written (5 progressive building sessions)
@@ -885,8 +894,8 @@ PUT 90.*:
 ### Added Mods (Jul 2026 batch 23 — Megabuilding)
 
 - [x] Forgematica 0.4.3+mc1.21.11 (Wave 1.1 — Megabuilding) — Litematica unofficial Forge/NeoForge port. Client-side schematic rendering, holographic overlay, material list, layer-by-layer placement. Standalone (no MaLiLib), 1.6M DL, LGPLv3.
-- [x] 18 schematics curated from abfielder.com — 4 Phase 1 starters, 3 farms/windmills, 5 factories/warehouses, 1 underground base, 2 castles, 3 bridges/walls/towers. All free, all .litematic format.
-- [x] Wave 1.1 section written in GUIDE.md — mod entry, keybinds, usage guide, schematic table (18 rows), interdependence notes, session plan.
+- [x] 21 schematics curated from Abfielder.com (16) + PhantomMarket (5) — starter/medieval/modern homes, farmsteads, a trading hall, a mountain chalet, mansions, and a desert oasis settlement. All free (.litematic and .schem).
+- [x] Wave 1.1 section written in GUIDE.md — mod entry, keybinds, usage guide, schematic table (21 rows + Blocks/Volume column), interdependence notes, session plan.
 - [x] Shader compatibility caveat documented (toggle shaders off while placing schematics if flickering)
 
 ### Added Mods (Aug 2026 batch 24 — Mod Review Adoption)
