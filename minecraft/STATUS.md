@@ -1,3 +1,12 @@
+### MNS - Moog's Nether Structures Adopted (Aug 24, 2026)
+
+- [x] **User decision: adopt MNS 3.0.0** (MNS - Moog's Nether Structures) into Wave 2 — Nether Worldgen, following comparison with Incendium. Zero new dependencies (Moog's Structure Lib already in pack via Moog's End Structures 2.0.3; MNS 3.0.0 requires lib ≥3.0.0, current release 3.0.3 satisfies both).
+- [x] **Comparison summary**: Incendium = Nether biome overhaul (8 biomes, 192 height) + 9 signature structures + 25+ weapons + Hovering Inferno boss. MNS = pure vanilla-style structure variety (~40 ruins, houses, bridges, towers, arenas, Mega Fortress, wrecked train). Different core purposes — no duplicate functionality. MNS structures target `#minecraft:is_nether`; Incendium biomes are in that tag → MNS generates inside Incendium's Nether without conflict.
+- [x] **Vehicle check (user constraint)**: The "train" is a wrecked wagon (campfire, skulls, cracked bricks, hay) — a ruin, not a functional vehicle. Same category as Moog's End Structures "crashed ships" (kept per user decision). No boats/airships.
+- [x] **Fit**: Ruins-first inventory + combat arenas feeds "wild, exploration, ruins" vision and Apotheosis loot chase. Official config pack available for density tuning. Server-side OK. LGPL-3.0.
+- [x] **GUIDE.md updated**: Nether Worldgen table row added, MNS description + interdependency note with Incendium/YUNG's added. Mod Count Summary: Wave 2 **36→37** mods, **44→45** total; Total **181→182** mods, **230→231** total.
+- [x] DRIFTWOOD-GUIDE.pdf regenerated
+
 ### Worldgen Review — No Generated Vehicles (Aug 24, 2026)
 
 - [x] **User request: review all worldgen mods (Wave 2 focus)** against the pack vision ("wild, exploration, ruins") and a new hard constraint: **no boats or vehicles the player did not craft**. All ~30 worldgen mods source-verified (official Modrinth/CurseForge pages, GitHub source trees, official wikis — 6 parallel research agents). Results:
