@@ -1134,10 +1134,10 @@ These schematics complement the Driftwood progression. All are free downloads �
 
 ### Interdependency Notes — Wave 1.1
 
-- **Forgematica × Create**: Big interior shells — the Cozy Mountain Chalet and Modern Mansion — are built to house Create machinery and Mekanism lines; they provide the structure, you wire the automation. The Large Farmhouse pairs well with Create water-wheel power for a farm-to-tech compound.
-- **Forgematica × MineColonies**: The Oasis Sanctuary makes a landmark-scale colony centerpiece; the Simple Medieval House and Large Farmhouse work as early colony housing, and the Trading Hall with Basement (ID:3396) anchors a villager economy beside the colony.
-- **Forgematica × AE2**: The Cozy Mountain Chalet's large storage room is built for pre-AE2 bulk storage — once you transition to ME drives, repurpose it as overflow or a decorative archive hall.
-- **Forgematica × Apotheosis**: The Survival Friendly Cherry House has an enchanting room and the Cozy Mountain Chalet an enchanting corner — drop your Apotheosis enchanting table and bookshelves in one of them.
+- **Forgematica × Create**: Big interior shells — the Cozy Mountain Chalet (`13-Snowy Chalet-from-abfielder.litematic`) and Modern Mansion (`16-Modern Mansion-from-abfielder.litematic`) — are built to house Create machinery and Mekanism lines; they provide the structure, you wire the automation. The Large Farmhouse (`7-Large_Farmhouse-from-abfielder.litematic`) pairs well with Create water-wheel power for a farm-to-tech compound.
+- **Forgematica × MineColonies**: The Oasis Sanctuary (`10-Oasis Sanctuary Schematic-from-abfielder.litematic`) makes a landmark-scale colony centerpiece; the Simple Medieval House (`4-use this-from-abfielder.litematic`) and Large Farmhouse (`7-Large_Farmhouse-from-abfielder.litematic`) work as early colony housing, and the Trading Hall with Basement (`6-Trading-Hall-from-abfielder.litematic`, ID:3396) anchors a villager economy beside the colony.
+- **Forgematica × AE2**: The Cozy Mountain Chalet's (`13-Snowy Chalet-from-abfielder.litematic`) large storage room is built for pre-AE2 bulk storage — once you transition to ME drives, repurpose it as overflow or a decorative archive hall.
+- **Forgematica × Apotheosis**: The Cozy Mountain Chalet (`13-Snowy Chalet-from-abfielder.litematic`) has a built-in enchanting corner, and the Simple Medieval House (`4-use this-from-abfielder.litematic`), Ultimate Survival Base (`5-Ultimate Survival Base by Emik-from-abfielder.litematic`), Large Farmhouse (`7-Large_Farmhouse-from-abfielder.litematic`), and Modern Stone and Wood House (`20-casa-moderna-de-qdkqmx4d.litematic`) each include an enchanting table — base your Apotheosis enchanting setup on whichever room you like best.
 - **Shader caveat**: Forgematica hologram rendering may flicker with Solas shaders. Toggle shaders off (`K`) while placing schematics, then re-enable. The 1.21.1 compatibility is better than newer MC versions — distortion is usually minor.
 - **Survival constraint**: Forgematica is purely a visual guide. No blocks are auto-placed. Every resource must be gathered and placed by the player in survival mode. This respects the pack's survival-only constraint.
 
@@ -1149,13 +1149,13 @@ These schematics complement the Driftwood progression. All are free downloads �
 
 | Session                        | Focus                                                                                                                        | What to Build                                 |
 |--------------------------------|------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------|
-| **Session 1 — Pick a starter** | Download 3 Phase 1 schematics. Place Stone Medieval Tiny House (ID:13580).                                                      | First schematic build, learn Forgematica flow |
-| **Session 2 — Farm hub**       | Place Large Farmhouse (ID:2539) and Survival Friendly Cherry House (ID:13576). Plant Farmer's Delight crops around them.        | Farm-to-table setup next to base              |
-| **Session 3 — Trading hub**    | Place Trading Hall with Basement (ID:3396) beside the colony and stock villagers.                                               | Villager economy + Guard Villagers synergy    |
-| **Session 4+ — Mansion prep**  | Download Phase 2 schematics (Minecraft Wooden Mansion, Cozy Mountain Chalet). Scout a flat area for the big build.              | Site planning for industrial ascent           |
-| **Ongoing**                    | As your tech tree advances, place larger schematics. Oasis Sanctuary for a desert kingdom. Luxury Waterfront Villa for a coast. | Megabuilding scales with progression          |
+| **Session 1 — Pick a starter** | Download 3 Phase 1 schematics. Place Stone Medieval Tiny House (ID:13580 — `1-Stone Medieval Tiny House (RottaNog) -from-abfielder.litematic`).                                                      | First schematic build, learn Forgematica flow |
+| **Session 2 — Farm hub**       | Place Large Farmhouse (ID:2539 — `7-Large_Farmhouse-from-abfielder.litematic`) and Survival Friendly Cherry House (ID:13576 — `8-Cherry House without Interior-from-abfielder.litematic`). Plant Farmer's Delight crops around them.        | Farm-to-table setup next to base              |
+| **Session 3 — Trading hub**    | Place Trading Hall with Basement (ID:3396 — `6-Trading-Hall-from-abfielder.litematic`) beside the colony and stock villagers.                                               | Villager economy + Guard Villagers synergy    |
+| **Session 4+ — Mansion prep**  | Download Phase 2 schematics (Minecraft Wooden Mansion — `11-house mouintain-from-abfielder.litematic`, Cozy Mountain Chalet — `13-Snowy Chalet-from-abfielder.litematic`). Scout a flat area for the big build.              | Site planning for industrial ascent           |
+| **Ongoing**                    | As your tech tree advances, place larger schematics. Oasis Sanctuary (`10-Oasis Sanctuary Schematic-from-abfielder.litematic`) for a desert kingdom. Luxury Waterfront Villa (`19-luxury-waterfro-0dd5wxfh.schem`) for a coast. | Megabuilding scales with progression          |
 
-**Tip**: Schematics eat materials fast — the Minecraft Wooden Mansion alone runs ~17,000 blocks. Set up a Create tree farm and cobblestone generator early; you'll need them. Treat schematic building as a multi-session project, not a speedrun.
+**Tip**: Schematics eat materials fast — the Minecraft Wooden Mansion (`11-house mouintain-from-abfielder.litematic`) alone runs ~17,000 blocks. Set up a Create tree farm and cobblestone generator early; you'll need them. Treat schematic building as a multi-session project, not a speedrun.
 
 ---
 

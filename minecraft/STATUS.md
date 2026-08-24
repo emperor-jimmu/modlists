@@ -1,3 +1,12 @@
+### Interdependency Notes Aligned to Actual Schematic Files (Aug 24, 2026)
+
+- [x] **21 schematic files added to `schematics/`** (user action, previously untracked) — one file per table row, verified 1:1 by parsing every `.litematic`/`.schem` (gzip NBT): block counts/volumes match the table rows (19 exact; rows 6/19/21 stats were previously sourced from the Abfielder product page / PhantomMarket slugs — same schematics). Authors corroborate the mapping (rows 9/12/14 = Raekon_, rows 4/8 = xMsBean).
+- [x] **Interdependency Notes — Wave 1.1 aligned to actual file names** — every referenced schematic now carries its Forgematica file name: Cozy Mountain Chalet → `13-Snowy Chalet`, Modern Mansion → `16-Modern Mansion`, Large Farmhouse → `7-Large_Farmhouse`, Oasis Sanctuary → `10-Oasis Sanctuary Schematic`, Simple Medieval House → `4-use this`, Trading Hall → `6-Trading-Hall`.
+- [x] **Apotheosis bullet corrected (palette-verified)** — the old claim "Survival Friendly Cherry House has an enchanting room" was false for the shipped file: `8-Cherry House without Interior` is an empty shell (palette = barrels/lanterns only, no interior). Replaced with file-verified enchanting-table schematics: Simple Medieval House, Ultimate Survival Base, Large Farmhouse, Modern Stone and Wood House (`20-casa-moderna-de-qdkqmx4d`), plus the Chalet's built-in enchanting corner.
+- [x] **Session Plan + tip aligned** — file names added for Stone Medieval Tiny House, Large Farmhouse, Cherry House, Trading Hall, Minecraft Wooden Mansion (`11-house mouintain`), Cozy Mountain Chalet, Oasis Sanctuary, Luxury Waterfront Villa (`19-luxury-waterfro-0dd5wxfh.schem`).
+- [ ] **Open question for user**: table row 8 Purpose column still reads "Farm, kitchen, storage and enchanting room in one build" — the shipped file has no interior. Awaiting decision: reword Purpose or swap in a different schematic.
+- [x] DRIFTWOOD-GUIDE.pdf regenerated
+
 ### Forgematica Schematic List Refresh (Aug 2026)
 
 - [x] **User request: replace the schematic download list** (Aug 23, 2026) — swapped the Wave 1.1 recommended list (18 → 21 schematics): 16 from Abfielder.com + 5 from PhantomMarket (market.phantom-node.com), in the order given.
