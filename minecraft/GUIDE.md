@@ -1257,8 +1257,9 @@ MineColonies provides autonomous NPC workers that mine, farm, craft, and guard y
 
 | Mod                                                                                       | Role                                                                                       |
 |-------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
+| [Terralith](https://modrinth.com/mod/terralith) 2.4.6                                     | Overworld biome/terrain overhaul — 85+ biomes, new landforms, Canyons, Painted Mountains, Volcanic regions |
+| [Tectonic](https://www.curseforge.com/minecraft/mc-mods/tectonic) v9.0+                   | Terrain overhaul — deeper oceans, abyssal trenches, taller mountains, cave/noise tuning. Requires TerraBlender |
 | [Dynamic Waters](https://modrinth.com/mod/dynamic-waters-realistic-flowing-rivers) 11.1.2 | Realistic flowing rivers — true currents, fractal river networks, deltas, mountain streams |
-
 **Dynamic Waters** replaces vanilla's static rivers with genuinely flowing water — visible current and direction, fractal networks that split into 1st–3rd degree branches, river deltas at the coast, and mountain streams that pathfind uphill from sea level to feed the main rivers. Tested against **Terralith + Tectonic** (both in pack; Tectonic from v9.0+) and **Create — water wheels placed in these rivers generate rotational power normally** (a natural Wave 1 synergy). Pin **11.1.2** (Modrinth; the 12.0 line is still test builds), zero dependencies, CC-BY-4.0.
 
 > **⚠️ New world required**: Dynamic Waters is a worldgen mod. Do **not** add it to an existing world — already-generated terrain won't regenerate correctly. Plan it into a fresh world. First world load takes a bit longer (river layouts pre-generate asynchronously on a background thread pool).
@@ -1279,13 +1280,6 @@ MineColonies provides autonomous NPC workers that mine, farm, craft, and guard y
 | [Upgrade Aquatic](https://www.curseforge.com/minecraft/mc-mods/upgrade-aquatic)                              | Ocean expansion — Thrasher mob, Ocean Ravines, Prismarine Coral, renewable sand   |
 | [Hybrid Aquatic](https://www.curseforge.com/minecraft/mc-mods/hybrid-aquatic)                                | Marine creatures — sharks, crustaceans, otters, nautiluses, diving armor, corals  |
 
-**Interdependency note — Hybrid Aquatic + Upgrade Aquatic**: Both expand oceans but cover different niches. Upgrade Aquatic adds mob mechanics (Thrasher) and ocean-floor features. Hybrid Aquatic adds creature variety (sharks, otters, crustaceans) and diving gear. They layer without conflict — more ocean life, more reasons to dive.
-
-**Interdependency note — Darker Depths + TerraBlender**: Darker Depths 2.1+ requires a worldgen API to register its cave biomes. Either **TerraBlender** (NeoForge) or **Biolith** must be installed. TerraBlender NeoForge is the recommended choice (available for 1.21.1 on both CurseForge and Modrinth). Without it, Darker Depths crashes on startup with `Missing Worldgen API! Install TerraBlender or Biolith.`
-
-**Interdependency note — Darker Depths + YUNG's Better Caves**: Darker Depths adds its own cave biomes (Molten Cavern, Sandy Catacombs, Crystal Cavern) that generate alongside YUNG's Better Caves' enlarged cave systems. Darker Depths biomes replace vanilla cave sections with themed variants, while YUNG's Better Caves changes the shape and connectivity of caves — they layer without direct conflict.
-
-**Interdependency note — Upgrade Aquatic + YUNG's Better Ocean Monuments**: Upgrade Aquatic adds ocean mobs, coral variants, and ocean-floor features. It does not modify Ocean Monuments — YUNG's Better Ocean Monuments replaces monument structure generation without conflict. Upgrade Aquatic items (thrasher teeth, prismarine coral) integrate naturally with Ocean's Delight (Wave 4) for seafood recipes.
 
 ### Structures
 
@@ -1320,7 +1314,6 @@ MineColonies provides autonomous NPC workers that mine, farm, craft, and guard y
 
 Requires **Moog's Structure Lib** (already in the pack via Moog's End Structures). Structures generate in Incendium biomes (both target `#minecraft:is_nether`). Official config pack available for density/loot tuning. Server-side OK. LGPL-3.0.
 
-**Interdependency note — MNS + Incendium + YUNG's Better Nether Fortresses**: Incendium overhauls Nether biomes/terrain and adds its own structures; YUNG's Better Nether Fortresses overhauls the vanilla fortress; MNS adds ambient vanilla-style structure variety. All three layer without conflict — Incendium handles biomes and landmarks, YUNG's handles fortress interiors, MNS fills the gaps with ruins and combat arenas. MNS structures spawn in Incendium biomes since they target the shared `is_nether` biome tag.
 
 ### Dimensions
 
@@ -1380,7 +1373,6 @@ Opens a new way to experience the world. Craft a spyglass, then look at any plan
 | [Item Descriptions](https://modrinth.com/mod/item-descriptions)                        | Entry descriptions — auto-fills entry lore          |
 | [Mod Descriptions](https://modrinth.com/resourcepack/mod-descriptions) (resource pack) | Optional — lore descriptions for 200+ mods' entries |
 
-**Interdependency note — Field Guide + pack content**: Field Guide auto-discovers entities, plants, and biomes from every mod in the pack — Aether and Twilight Forest mobs, Hybrid Aquatic creatures, and Incendium's Nether life are all catalogable with zero configuration. The optional Cloth Config API dependency is already in the pack (Wave 0.5) — nothing extra to install.
 
 ### Configuration — Wave 2
 
@@ -1393,31 +1385,6 @@ Opens a new way to experience the world. Craft a spyglass, then look at any plan
 - `"Add Temporary Freezing automatically"` = `false` — Disables Aether's temporary freezing datapack.
 - `"Add Ruined Portals automatically"` = `false` — Disables ruined portal datapack.
 
-**Interdependency note — Deep Aether + Aether**: Deep Aether is an addon that expands the Aether dimension with 5 new biomes, Skyjade/Stratus gear, and new mobs. It requires The Aether and Aeroblender (worldgen biome API) — Aeroblender comes **pre-bundled** with Deep Aether, no separate install needed. Aeroblender itself depends on TerraBlender (already in the pack). Stratus armor grants slow-fall and dash abilities, extending the Aether's power fantasy progression. All content is within the Aether dimension — no new dimension added.
-
-**Interdependency note — Umbral Skies + Aether + Twilight Forest**: Umbral Skies connects Aether and Twilight Forest. Aether-styled Druid Huts and Wells generate in Twilight Forest. Aether boss trophies appear in TF's trophy display style. Gloves can be crafted from TF materials (ironwood, fiery, knightmetal, phantom). No config needed — install and both dimensions gain crossover content.
-
-**Interdependency note — Immersive Aircraft + Aether**: Aircraft can fly in the Aether dimension. An airship is a natural way to navigate Aether islands — it pairs well with the dimension's sky-island geography.
-
-**Interdependency note — Man of Many Planes + Immersive Aircraft**: Man of Many Planes is a direct addon for Immersive Aircraft that adds two Create-themed aircraft. It requires Immersive Aircraft to function. The addon planes share the same fuel, parking, and dimension traversal behavior as base Immersive Aircraft vehicles.
-
-**Interdependency note — Hang Glider + Create Ornithopter Glider**: The Hang Glider provides simpler, earlier flight than the Create Ornithopter Glider (Wave 1). The Hang Glider requires only wood and leather (Phase 1 accessible, no power), while the Ornithopter Glider needs Create rotational power (Phase 1.5+). Both coexist as a natural progression: Hang Glider for early-Phase-1 exploration, Ornithopter Glider once Create infrastructure is online, Immersive Aircraft for powered mid-game flight.
-
-**Interdependency note — Immersive Machinery + Immersive Aircraft**: Four Phase 1 utility machines that fill gaps before Create/Mekanism/AE2 arrive: Copperfin submarine (conduit-powered, independent of IA fuel), Bamboo Bee item drone, Redstone Sheep early farming automation, Tunnel Digger piloted mining vehicle.
-
-**Interdependency note — Twilight Forest + Apotheosis**: Apotheosis boss affixes (Wave 3) apply to Twilight Forest bosses. A Naga with the "Tough" affix is significantly harder. This is intended — it keeps dimension bosses relevant even with late-game gear. If a boss feels too strong, the player can return after better equipment or use Apotheosis gems/runes for the edge.
-
-**Interdependency note — Incendium + YUNG's Better Nether Fortresses**: Incendium replaces Nether biome terrain and adds its own structures; YUNG's Better Nether Fortresses overhauls the vanilla fortress structure generation. They don't conflict — Incendium handles biomes and new structures, YUNG's handles fortress interiors. Incendium fortresses will use YUNG's layout if the fortress is in an Incendium biome.
-
-**Interdependency note — Incendium + Apotheosis**: Incendium's custom weapons (Trailblazer, Greatsword of Sacrifice, Hefty Pickaxe, etc.) are vanilla item variants — Apotheosis affixes, gems, and reforging apply to them. Incendium mobs and the Hovering Inferno boss also receive Apotheosis boss affixes (Wave 3), scaling their difficulty with player progression.
-
-**Interdependency note — Incendium + My Nether's Delight**: Incendium's new Nether biomes introduce unique block palettes and mob drops — some may serve as My Nether's Delight ingredients. Check EMI for new recipes once both mods are installed.
-
-**Interdependency note — Incendium + Cataclysm**: L_Ender's Cataclysm's Netherite Monstrosity and Ignite bosses spawn in the Nether. Incendium's biome overhaul changes where these bosses can appear — they'll spawn in Incendium biomes instead of vanilla Nether wastes/basalt deltas. Use the Explorer's Compass to locate them in the transformed Nether.
-
-**Interdependency note — Incendium + Fire Rekindled**: Fire Rekindled's animated Nether textures (soul fire, lava, magma, nether portal) apply to Incendium's Nether terrain — the biome overhaul benefits from the enhanced visuals automatically.
-
-**Interdependency note — Bumblezone + Neo Bee Fix + Farmer's Delight**: Bumblezone's bees are vanilla bees at heart, so Neo Bee Fix's AI repairs (leave hives, no fall-from-sky, no wander bias) apply inside the dimension too. Honey, royal jelly, and bee bread from the Bumblezone feed Farmer's Delight honey recipes (e.g., Honey Glazed Ham) — a cozy resource chain with no gating. Field Guide auto-catalogs its mobs and plants.
 
 **Tectonic** (`config/tectonic.json`):
 
@@ -1473,6 +1440,12 @@ Four seasons with visual foliage changes and crop growth modifiers:
 - **Spring/Summer/Autumn/Winter** — foliage colors shift realistically
 - **Crop impact ON** — planting in wrong season reduces yield. Plan greenhouses for off-season crops
 - **Temperature damage OFF** — no freezing or heat damage (chill rule preserved)
+
+**Serene Seasons config** (`config/sereneseasons/seasons.toml`):
+
+| Setting              | Value   | Why                                                           |
+|----------------------|---------|---------------------------------------------------------------|
+| `generate_snow_ice`  | `false` | Disables water freezing and snow accumulation in winter (chill rule) |
 
 **Integration**: Farmer's Delight crops are affected by seasons. Build glass greenhouses or use Season Sensor blocks to track optimal planting times.
 
@@ -2412,9 +2385,6 @@ Enabled. Adds telegraphed death-traps to the world (spikes, poison darts, instak
 | [**Better Fishtanks**](https://www.curseforge.com/minecraft/mc-mods/better-fishtanks)                                              | Functional aquariums — fish bags, decorations, feeding system, Create/AE2 compat                                                    |
 | [Spice of Life: Carrot Edition](https://www.curseforge.com/minecraft/mc-mods/spice-of-life-carrot-edition) solcarrot-1.21.1-1.16.6 | Food-variety reward — eating new foods permanently raises max health up to a cap. No punishment, only reward                        |
 
-**Interdependency note — Better Fishtanks + Hybrid Aquatic (Wave 2)**: Better Fishtanks can house any fish mod's creatures. Use Fish Bags to catch Hybrid Aquatic mobs and place them in tanks as living displays.
-
-**Interdependency note — Twilight's Flavors & Delight + Twilight Forest (Wave 2) + Farmer's Delight**: Bridges TF and Farmer's Delight — TF mob drops and foraged items cook into 35+ FD-style meals, 4 TF-material knives with unique abilities, Maze Stove accelerates cooking in TF biomes, boss trophies dismantle into precious loot.
 
 **Spice of Life: Carrot Edition** — the *gentle* variant of food variety: each distinct food eaten once permanently raises your max health (up to a configurable cap of hearts), and it never *reduces* nutrition for repeat meals (unlike the original Spice of Life). This pairs directly with the pack's Farmer's Delight ecosystem — 100+ distinct meals = steady, voluntary max-HP growth feeding the power-fantasy pillar, with zero chill penalty for eating the same thing. **Config lives in `saves/<world>/serverconfig/` (per-world), not the tracked global `config/` folder** — tune `solcarrot-server.toml` (milestone cap, heart counts) after first world launch; set the cap so the bonus stops short of feeling mandatory.
 
