@@ -1,3 +1,10 @@
+### Wave 2 Environment Cleanup + GlitchCore Removed (Aug 24, 2026)
+
+- [x] **Duplicate headers fixed** — "### Environment" and "### Underground & Ocean" each appeared twice consecutively in Wave 2 (empty section headings). Scan confirmed no other consecutive duplicate headings in GUIDE.md.
+- [x] **GlitchCore row removed from Wave 2 Environment table** — auto-installed dependency of Serene Seasons; per user decision, no longer documented (same treatment as the Wave 1.5 MineColonies deps).
+- [x] **Mod Count Summary updated** — Wave 2 38/8/47 → **38/7/46** (deps −1); Total **182/50/232 → 182/49/231**. Changelog note appended.
+- [x] DRIFTWOOD-GUIDE.pdf regenerated
+
 ### Wave 1.5 Deps Removed + Row 8 Purpose Fixed (Aug 24, 2026)
 
 - [x] **Schematic table row 8 Purpose corrected** — "Survival Friendly Cherry House!" now reads "Cherry-blossom shell — no interior, furnish it yourself" (matches the shipped `8-Cherry House without Interior` file, palette-verified: barrels/lanterns only).
