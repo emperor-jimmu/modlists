@@ -1,3 +1,17 @@
+### Worldgen Review — No Generated Vehicles (Aug 24, 2026)
+
+- [x] **User request: review all worldgen mods (Wave 2 focus)** against the pack vision ("wild, exploration, ruins") and a new hard constraint: **no boats or vehicles the player did not craft**. All ~30 worldgen mods source-verified (official Modrinth/CurseForge pages, GitHub source trees, official wikis — 6 parallel research agents). Results:
+  - ✅ **CLEAN (keep)** — Terralith, Tectonic, Dynamic Waters, Serene Seasons + Plus, TerraBlender, Darker Depths, Upgrade Aquatic, Hybrid Aquatic, all 11 YUNG's mods (only minecart-chests in Better Mineshafts — vanilla-style loot containers), Incendium, The Aether, Deep Aether, Umbral Skies, Deeper and Darker, Twilight Forest, End Remastered, YUNG's Better End Island, Nullscape, and all 6 mobility mods (Small Ships, Immersive Aircraft, MoMP, Hang Glider, Immersive Machinery, Vehicle Upgrade — **every vehicle is player-crafted; zero worldgen spawns**).
+  - 🚩 **FLAGGED (3 generated vehicles)**:
+    - **Structory** — `structory:boat` structure: spruce boat with fisherman villager, spawns **only in oceans** (official Stardust Labs wiki + Modrinth description). Direct violation.
+    - **Moog's End Structures** — "Mega Ship" family (7 variants: basic/crashed/deepslate) + `starlight_voyager` in End biomes with ship loot (GitHub source tree + changelog).
+    - **The Bumblezone** — Pirate Ship (Sugar Water Floor biome), Hive Voyager (helicopter), Ore Balloon (official wiki + structure JSON).
+- [x] **User decision — Structory: REMOVE entirely** (generated boat in oceans violates the no-generated-vehicles rule; the pack keeps YUNG's + Bridges + Extras for structure coverage). GUIDE.md updated: Structures table row removed, "Structory & YUNG's Additions" → "YUNG's Bridges & Extras" section (Structory bullet + independence note dropped), Mod Count Summary (Wave 2 37/7/45 → **36/7/44**; Total **182/49/231 → 181/49/230** — mods −1, deps unchanged). Changelog note appended.
+- [x] **User decision — Moog's End Structures: KEEP as-is** (End ships accepted — some are "crashed" variants that read as ruins; towers/ruins/dungeons desired in End).
+- [x] **User decision — The Bumblezone: KEEP as-is** (bee pirate ship is part of the cozy opt-in dimension's charm; dimension was deliberately re-adopted Aug 2026).
+- [ ] **Instance action (XMCL)** — remove the Structory data pack from `saves/<world>/datapacks/` (or `%APPDATA%\.minecraft\datapacks\`) if present. [VERIFY] at next launch: no `structory:boat` structures spawn in oceans (fresh chunks); `/locate structure structory:boat` returns no result.
+- [x] DRIFTWOOD-GUIDE.pdf regenerated
+
 ### Hybrid Delights Adopted (Aug 24, 2026)
 
 - [x] **User request: review Hybrid Delights** (Modrinth WR49BBCu, HybridLabs — same team as Hybrid Aquatic). Verdict: **ADOPT** (Wave 4 — Food & Farming). FD recipe addon for Hybrid Aquatic drops (fish n chips, crustaceans, FD knife). MIT, 22.1K DL, `1.2.1-neoforge` (Aug 7 2026) + launch-crash hotfix (Aug 9 2026). **Zero new deps** — Kotlin for Forge (Wave 0), Hybrid Aquatic (Wave 2), Farmer's Delight (Wave 4) all in pack (API-verified dependency IDs).
@@ -526,7 +540,7 @@ PUT 90.*:
 - [x] Nether Worldgen: Incendium v5.4.4 (Modrinth — NeoForge 1.21.1 data pack wrapper)
 - [x] Environment: Serene Seasons
 - [x] Underground & Ocean: Darker Depths, Upgrade Aquatic, Hybrid Aquatic
-- [x] Structures: YUNG's full collection (12 mods: 9 Better series + Bridges + Extras + Better End Island), Structory, Structory: Towers
+- [x] Structures: YUNG's full collection (12 mods: 9 Better series + Bridges + Extras + Better End Island), Structory, Structory: Towers — **Structory REMOVED Aug 24, 2026** (generated ocean boat; see Worldgen Review entry at top)
 - [x] End Access: End Remastered, Moog's End Structures, Nullscape (data pack)
 - [x] Dimensions: The Aether, Deep Aether, Umbral Skies, Deeper and Darker, Twilight Forest
 - [x] Navigation: Explorer's Compass
