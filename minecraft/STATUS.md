@@ -1,3 +1,10 @@
+### Wave 1.5 Deps Removed + Row 8 Purpose Fixed (Aug 24, 2026)
+
+- [x] **Schematic table row 8 Purpose corrected** — "Survival Friendly Cherry House!" now reads "Cherry-blossom shell — no interior, furnish it yourself" (matches the shipped `8-Cherry House without Interior` file, palette-verified: barrels/lanterns only).
+- [x] **Wave 1.5 Colony Automation table slimmed** — Structurize, MultiPiston, BlockUI, Domum Ornamentum rows removed (auto-installed MineColonies deps; per user decision, no longer documented).
+- [x] **Mod Count Summary updated** — Wave 1.5 10/—/10 → **6/—/6**; Total **186/50/236 → 182/50/232** (deps no longer counted). Changelog note appended.
+- [x] DRIFTWOOD-GUIDE.pdf regenerated
+
 ### Interdependency Notes Aligned to Actual Schematic Files (Aug 24, 2026)
 
 - [x] **21 schematic files added to `schematics/`** (user action, previously untracked) — one file per table row, verified 1:1 by parsing every `.litematic`/`.schem` (gzip NBT): block counts/volumes match the table rows (19 exact; rows 6/19/21 stats were previously sourced from the Abfielder product page / PhantomMarket slugs — same schematics). Authors corroborate the mapping (rows 9/12/14 = Raekon_, rows 4/8 = xMsBean).
