@@ -1,3 +1,10 @@
+### Hybrid Delights Adopted (Aug 24, 2026)
+
+- [x] **User request: review Hybrid Delights** (Modrinth WR49BBCu, HybridLabs — same team as Hybrid Aquatic). Verdict: **ADOPT** (Wave 4 — Food & Farming). FD recipe addon for Hybrid Aquatic drops (fish n chips, crustaceans, FD knife). MIT, 22.1K DL, `1.2.1-neoforge` (Aug 7 2026) + launch-crash hotfix (Aug 9 2026). **Zero new deps** — Kotlin for Forge (Wave 0), Hybrid Aquatic (Wave 2), Farmer's Delight (Wave 4) all in pack (API-verified dependency IDs).
+- [x] GUIDE.md updated: Wave 4 table row (+Hybrid Delights after Ocean's Delight), new "### Hybrid Delights — Hybrid Aquatic Cooking" detail section, Hybrid Aquatic integration note (line 1604 area). Mod Count Summary (Wave 4 19/—/19 → **20/—/20**; Total **181/49/230 → 182/49/231** — mods +1, deps unchanged). Changelog note appended.
+- [ ] **Instance action (XMCL)** — add `[1.21.1-Neoforge] Hybrid Delights 1.2.1 Hotfix.jar` to `mods/`. [VERIFY] at next launch: no missing-dependency errors (Kotlin for Forge present); FD knife craftable; Hybrid Aquatic fish/crustacean recipes visible in EMI; fish n chips cookable.
+- [x] DRIFTWOOD-GUIDE.pdf regenerated
+
 ### The Great Outdoors Removed (Aug 24, 2026)
 
 - [x] **User decision: remove The Great Outdoors** (adopted Aug 23, 2026; Wave 2 — Environment). GUIDE.md updated: Environment table row + blurb removed.
