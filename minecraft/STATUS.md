@@ -11,6 +11,15 @@
 - [x] **Fix**: Corrected both occurrences in GUIDE.md (Wave 2 Configuration section and the Config reference section) to: `"Use default Accessories' menu"` = `false` — Uses Aether's own Accessories Menu instead of Curios API menu.
 - [x] **GUIDE.md updated**: Two locations fixed (lines ~1380 and ~1684).
 - [ ] **Instance action (XMCL)**: Config already correct in `C:\Users\nimro\.minecraftx\instances\Driftwood\config\aether-common.toml`. [VERIFY] at next launch: Aether uses its own Accessories Menu (Curios menu not used for Aether accessories).
+### FTB Quests Ecosystem Removed (Aug 24, 2026)
+
+- [x] **User decision: remove FTB Quests ecosystem** (Wave 4.5 — Quests) — FTB Library, FTB Quests, FTB Teams, FTB XMod Compat, MineColonies Questline, and the authored quest book (config/ftbquests/quests/). KubeJS and Rhino retained (used in Wave 1 for recipe scripting).
+- [x] **GUIDE.md updated**: 
+  - Removed entire Wave 4.5 section (Questing Foundation, Quest Addons, How It Works, Installing the Quest Book, Pillar Alignment, Chapter Coverage, Session Plan — Wave 4 & 4.5)
+  - Removed "Install the quest book" instruction from Create World section
+  - Updated Mod Count Summary: removed Wave 4.5 row (was 6 mods, 1 dep, 7 total); new Total: **176 mods, 48 deps, 224 total** (was 182/49/231)
+  - Field Guide + Immersive Overlays + Item Descriptions + Mod Descriptions resource pack **kept** (Wave 2 Exploration)
+- [ ] **Instance action (XMCL)** — remove FTB Library, FTB Quests, FTB Teams, FTB XMod Compat, MineColonies Questline jars from `mods/`; remove `config/ftbquests/` folder. [VERIFY] at next launch: no missing-dependency errors; quest book key (`-`) does nothing; MineColonies works without questline.
 - [x] DRIFTWOOD-GUIDE.pdf regenerated
 ### MNS - Moog's Nether Structures Adopted (Aug 24, 2026)
 
