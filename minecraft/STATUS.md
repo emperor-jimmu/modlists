@@ -5,7 +5,13 @@
 - [x] **Repo config restructured**: Mod uses `config/sereneseasons/seasons.toml` + `fertility.toml` (not flat `sereneseasons-common.toml`). Repo now tracks correct structure.
 - [x] **GUIDE.md updated**: Corrected config file path and setting name (`generate_snow_ice` in `config/sereneseasons/seasons.toml`).
 - [x] **Instance action (XMCL)**: Config already fixed in `C:\Users\nimro\.minecraftx\instances\Driftwood\config\sereneseasons\seasons.toml`. [VERIFY] at next launch: water no longer freezes in winter; snow does not accumulate in temperate biomes during winter.
+### Aether Config Fix (Aug 24, 2026)
 
+- [x] **Issue**: GUIDE.md had incorrect Aether config setting — `"Use default Curios' menu"` = `true` with description "Uses Curios API menu instead of Aether's separate accessories screen." The actual config file (`aether-common.toml`) uses the setting `"Use default Accessories' menu"` = `false` with the comment: "Use the default Accessories menu instead of the Aether's Accessories Menu. WARNING: Do not enable this without emptying your equipped accessories".
+- [x] **Fix**: Corrected both occurrences in GUIDE.md (Wave 2 Configuration section and the Config reference section) to: `"Use default Accessories' menu"` = `false` — Uses Aether's own Accessories Menu instead of Curios API menu.
+- [x] **GUIDE.md updated**: Two locations fixed (lines ~1380 and ~1684).
+- [ ] **Instance action (XMCL)**: Config already correct in `C:\Users\nimro\.minecraftx\instances\Driftwood\config\aether-common.toml`. [VERIFY] at next launch: Aether uses its own Accessories Menu (Curios menu not used for Aether accessories).
+- [x] DRIFTWOOD-GUIDE.pdf regenerated
 ### MNS - Moog's Nether Structures Adopted (Aug 24, 2026)
 
 - [x] **User decision: adopt MNS 3.0.0** (MNS - Moog's Nether Structures) into Wave 2 — Nether Worldgen, following comparison with Incendium. Zero new dependencies (Moog's Structure Lib already in pack via Moog's End Structures 2.0.3; MNS 3.0.0 requires lib ≥3.0.0, current release 3.0.3 satisfies both).

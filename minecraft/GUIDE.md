@@ -1376,9 +1376,9 @@ Opens a new way to experience the world. Craft a spyglass, then look at any plan
 
 ### Configuration — Wave 2
 
-**Aether** (`aether-common.toml`):
+### Aether (`aether-common.toml`):
 
-- `"Use default Curios' menu"` = `true` — Uses Curios API menu instead of Aether's separate accessories screen.
+- `"Use default Accessories' menu"` = `false` — Uses Aether's own Accessories Menu instead of Curios API menu.
 - `"Gives player Aether Portal Frame item"` = `false` — Player must build the portal manually.
 - `"Gives starting loot on entry"` = `true` — Grants Book of Lore and Golden Parachutes on first entry.
 - `"Show Patreon message"` = `false` — Removes Patreon nag screen.
@@ -1681,8 +1681,8 @@ Safe, beautiful sky islands. Gentle adventure curve.
 
 **Config** (`aether-common.toml`):
 
-- `"Use default Curios' menu"` = `true` — uses Curios API menu
-- `"Gives player Aether Portal Frame item"` = `false` — build portal manually
+- `"Use default Accessories' menu"` = `false` — Uses Aether's own Accessories Menu instead of Curios API menu.
+- `"Gives player Aether Portal Frame item"` = `false` — Player must build the portal manually.
 - `"Gives starting loot on entry"` = `true` — Book of Lore + Golden Parachutes on first entry
 - `"Show Patreon message"` = `false`
 - `"Add Temporary Freezing automatically"` = `false`
