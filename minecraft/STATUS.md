@@ -1,28 +1,24 @@
-### Advancement Plaques → Fancy Toasts Swap (Aug 25, 2026)
+### Advancement Plaques → Fancy Notify Swap (Aug 25, 2026)
 
-- [x] **User decision — swap**: remove **Advancement Plaques** (Wave 0 Inventory/UI; `AdvancementPlaques-1.21.1-neoforge-1.6.8.jar` instance-verified) and replace with **Fancy Toasts 1.5.0** (Bivrik; Modrinth `eUziWqPC`, release channel, published Aug 24 2026; client-only, MIT, zero deps). Modernized advancement popups: 8 texture styles × 4 animations (Standard/Playful/Quirky/Old-Like) + per-type sounds + two config screens (Mods screen). Pin `1.5.0-neoforge-1.21.1`; rollback path: 1.4.7 (README's current 1.21.1 pin) if the fresh release misbehaves.
-- [x] **Scope verified — advancement toasts only**: jar-verified mixins for 1.4.7 AND 1.5.0 (`fancytoasts.mixins.json` — hooks `ToastComponent`/`AdvancementToast`, **no `RecipeToast` hook**). The "filtering of vanilla toasts" removed in 1.5.0 was advancement-toast filtering (moved to companion **Fancy Notify**, which is NOT on Modrinth yet — project slug 404s). **Fancy Toasts does NOT touch the "New Recipes Unlocked" toast** — see the recipe-toast plan below.
+- [x] **User decision (final) — swap to Fancy Notify**: remove **Advancement Plaques** (Wave 0 Inventory/UI; `AdvancementPlaques-1.21.1-neoforge-1.6.8.jar` instance-verified) and replace with **Fancy Notify 1.0.0** (Bivrik; CurseForge `fancy-notify` file 8679938 → `fancynotify-1.0.0-neoforge-1.21.1.jar`, release, Aug 18 2026; client-only, MIT, zero deps). Path this session: Advancement Plaques → Fancy Toasts → **Fancy Notify**. FT (Modrinth `eUziWqPC`, 1.5.0) was the initial pick for advancement popups, but FN is the author's all-in-one successor: it overhauls **every** vanilla toast — advancements, recipes, systems, music, biomes, weather, player logins, screenshots — with unique sprites and per-type filters, covering the advancement surface AND the recipe-toast surface in one mod.
+- [x] **Jar-verified**: FN `fancynotify.mixins.json` hooks `RecipeToastMixin` (the "New Recipes Unlocked" toast), `SystemToastMixin`, `MusicManagerMixin`, `ScreenshotMixin`, `ClientPacketListenerMixin` (biome/weather/login), `ToastComponentMixin`, `ClientAdvancementsMixin` + `AdvancementToastMixinAccessor` — vs FT 1.4.7/1.5.0, whose mixins showed **no `RecipeToast` hook** (advancements only). Lang file confirms the per-type filter screen (Advancements/Recipes/Musics/Screenshots/Systems/Weathers/Biomes/Player Logins) + settings (transparency, width, anchor, List/Line orientation, animation, max amount, UI particles).
+- [x] **Config note — Biomes notifications OFF**: FN's biome toasts would duplicate **Traveler's Titles** (biome/dimension entry titles; no-duplication rule). Disable at Mods screen → Fancy Notify → Filters → Biomes. Music toasts are a deliberate complement to The Immersive Music Mod (now-playing title/artist).
 - [x] **Correction — Iceberg STAYS**: my earlier "Iceberg has no dependents" claim was wrong — **Item Borders 1.2.5 requires Iceberg** (Jul 2026 docs; instance-verified `ItemBorders-1.21-neoforge-1.2.5.jar` + `Iceberg-1.21.1-neoforge-1.3.2.jar`). Only the Advancement Plaques jar leaves; Iceberg remains for Item Borders.
-- [x] **GUIDE.md updated**: Wave 0.5 Visual & Client QoL table row (−Advancement Plaques +Fancy Toasts), What-to-Expect bullets (Better Advancements pairing + new Fancy Toasts bullet), Game Rules note (also drops the stale "quest book" reference — FTB Quests removed Aug 24). Mod Count Summary **unchanged**: 1:1 mod swap (175 mods), Iceberg dep stays (48 deps).
-- [ ] **Instance action (XMCL)** — remove `AdvancementPlaques-1.21.1-neoforge-1.6.8.jar` from `mods/`; add `fancytoasts-1.5.0-neoforge-1.21.1.jar` (Modrinth). **Keep Iceberg** (Item Borders). [VERIFY] at next launch: advancement popups render Fancy Toasts style (config via Mods screen → Fancy Toasts); no missing-dependency errors; recipe-unlock toasts unchanged (expected — plan below).
+- [x] **GUIDE.md updated**: Wave 0.5 Visual & Client QoL table row (−Advancement Plaques −Fancy Toasts +Fancy Notify), What-to-Expect bullets, Game Rules note (also drops the stale "quest book" reference — FTB Quests removed Aug 24). Mod Count Summary **unchanged**: 1:1 mod swap (175 mods), Iceberg dep stays (48 deps).
+- [ ] **Instance action (XMCL)** — remove `AdvancementPlaques-1.21.1-neoforge-1.6.8.jar` from `mods/`; add `fancynotify-1.0.0-neoforge-1.21.1.jar` (CurseForge download). **Keep Iceberg** (Item Borders). [VERIFY] at next launch: recipe/advancement/system toasts render Fancy Notify style (Mods screen → Fancy Notify → Filters: **Biomes OFF**); no missing-dependency errors; no double toasts.
 - [x] DRIFTWOOD-GUIDE.pdf regenerated
 
-### Recipe Toast Silencing / Restyling Plan (Aug 25, 2026)
+### Recipe Toasts — Solved via Fancy Notify (Aug 25, 2026)
 
-**Target**: the vanilla **"New Recipes Unlocked" toast** (`RecipeToast`) — no pack mod controls whether it appears; its sprite styling comes from Dark Coffee GUI (`minecraft:textures/gui/sprites/toast/*`).
+**Resolution**: the vanilla **"New Recipes Unlocked" toast** (`RecipeToast`) is now owned by **Fancy Notify** (jar-verified `RecipeToastMixin`). The original goal — control the recipe-toast surface — is met by the swap above: restyled with FN's unique recipe sprite, and **filtration** (Mods screen → Fancy Notify → Filters → Recipes) can hide it entirely if desired. No KubeJS script needed.
 
-**Verified constraints**:
-- Fancy Toasts does not hook `RecipeToast` (jar-verified, 1.4.7 + 1.5.0) → the swap does not change recipe toasts.
-- **Toast Control** (Shadows-of-Fire; NeoForge 1.21.1 build exists on Modrinth) can toggle recipe toasts, but is **documented incompatible with Fancy Toasts** (mod page + FT 1.4.5 changelog) → off the table while FT is installed.
-- **Fancy Notify** — Bivrik's planned companion for vanilla-toast filtering (FT 1.5.0 changelog: "check out Fancy Notify") — **not yet on Modrinth** (API 404). The cleanest mod solution when it ships: same author, designed to coexist with FT.
-- No vanilla gamerule exists for recipe toasts. `/recipe give @p *` silences them (nothing new to unlock), but the pack runs **cheats OFF** — manual runs need a temporary Open-to-LAN-with-cheats session (unlocks persist per world).
+**Abandoned alternatives (verified, on record)**:
+- **KubeJS `/recipe give @p *` login script** — moot: FN filtration replaces the need to unlock-all recipes.
+- **Toast Control** (Shadows-of-Fire) — documented incompatible with the Fancy mods (toast-renderer conflict).
+- **Restyle-only resource pack** — Dark Coffee GUI still styles vanilla toast sprites for toast types FN leaves to the vanilla system (FN compat note: unregistered toasts fall back to vanilla), but the main surfaces (recipes/advancements/systems) now use FN's own sprites.
+- **Manual `/recipe give @p *`** — still valid as a one-off if toasts are ever wanted fully gone (needs temporary cheats; unlocks persist per world).
 
-**Recommended path (zero new mods, pack-native)**: a KubeJS server script — `PlayerEvents.loggedIn` → `event.server.runCommandSilent('recipe give @p *')` — auto-grants all recipes on every login, permanently silencing the toasts. KubeJS + Rhino already in pack (Wave 1 recipe scripting; `kubejs/server_scripts/wave5_torchmaster.js` convention). Server-side command execution bypasses the cheats requirement; idempotent; single-player-safe; `/reload` applies it without a restart. Script lives in the repo + a GUIDE.md note.
-- [ ] **Pending user approval** — write `kubejs/server_scripts/recipe_toasts.js` + GUIDE.md note + STATUS log. [VERIFY] at next launch: no "New Recipes Unlocked" toast on first pickups; EMI still lists all recipes (unaffected).
-
-**Alternative — restyle only**: Dark Coffee GUI already restyles the toast sprite; a dedicated small resource pack could restyle further (e.g., recipe-unlock icon swap) without touching behavior. Silencing is NOT possible via resource pack alone.
-
-**Backup**: if a mod-based toggle is preferred once Fancy Notify ships (stable + FT-compatible), adopt it as a Wave 0.5 QoL addition and remove the KubeJS script.
+**Watch items**: FN is **v1.0.0, 7 days old, CurseForge-only** (Modrinth link 404s), 218 total DLs at adoption. Rollback path: re-add Advancement Plaques (or FT 1.4.7 — README's 1.21.1 pin) in one edit; nothing depends on FN. Re-verify + re-pin when the author ships a 1.0.x / Modrinth release.
 
 ### Expanded Delight Reviewed — SKIP (Aug 25, 2026)
 
