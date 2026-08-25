@@ -6,11 +6,11 @@
 - [x] **User decision — RPG classes: NONE** — Wizards/Archers/Paladins all returned to 1.21.1 (3.1.1, Aug 2026) but the user opted to keep magic minimal; the deferred classes TODO is CLOSED as a deliberate non-goal.
 - [x] **User decision — weapon pins: stable pair** — Simply Swords **1.63.0** + Simply More **1.2.3** (both releases). The Simply Swords 1.70 line (Aug 24, 2026) is save/config-breaking and forces Simply More onto alpha 1.3.0 — upgrade once 1.3.0 stable ships.
 - [x] **User decision — Accessories Compatibility Layer: SKIP** — pack deliberately runs Aether's own accessories menu + Curios menu side by side; the compat layer has Curios feature caveats (no active states, no ICurioSlotExtension).
-- [x] **Correction — Enchanting Runes dep is FLIB, not Bundle API** (verified: Modrinth metadata + CF slug `runes` = Lothrazar's Enchanting Runes, 1.21.1-1.0.1, Aug 6, 2026).
+- [x] **User decision — Enchanting Runes REMOVED** (same-session follow-up): duplicates Apotheosis' socketing role (no-duplication rule) and is unproven on 1.21.1 (~64 DLs, Aug 6 release). Its planned FLIB dep goes with it — the earlier "Bundle API → FLIB" correction is moot.
 - [x] **Correction — Apotheosis 8.x config plan** — 4 module mods (Apotheosis / Apothic Attributes / Apothic Spawners / Apothic Enchanting), not 5; old Deadly module content now runs through the Adventure module's World Tiers. GUIDE.md Configuration + Deadly sections rewritten.
-- [x] Re-checks re-confirmed: Knaves' Needs (SKIP — 3.0.0-beta.1, still monolithic 520+), Artifacts (SKIP — still no leveling), Marium's Soulslike Weaponry (SKIP — Fabric-only), Runes of Power / Gemancy (SKIP — redundant/immature vs Enchanting Runes), ArmorPlus / Netherite Plus (SKIP — dead).
-- [x] GUIDE.md updated: Equipment table (+Arsenal), new Arsenal section, Simply Swords/More version pins, interdependency notes (Spell Engine / Ranged Weapon API / Shield API / affix coverage), Apotheosis 8.x config section, Deadly → World Tiers, Session 3, Mod Count Summary (Wave 3 10/12/22 → **11/13/24**; Total 176/48/224 → **177/49/226**).
-- [ ] **Instance action (XMCL) — Wave 3 install** (first install of this wave): add Apotheosis 8.7.0 + Apothic Attributes + Apothic-Enchanting + Apothic-Spawners (Placebo ✓ + Patchouli ✓ already in pack), Simply Tooltips, Ranged Weapon API, Spell Engine, **Shield API**, **FLIB**, Pufferfish's Attributes (Fzzy Config ✓ + Curios ✓ + Architectury ✓ already in pack), Skills Mastery Reimagined 1.2.1, Pufferfish's Skills 0.18.3, Simply Swords **1.63.0**, Simply More **1.2.3**, Too Many Bows 3.0.0, Relics (RPG Series) 1.4.0, Enchanting Runes 1.0.1, Immersive Armors 1.7.6, Arsenal (RPG Series) 1.5.0, Apothic Compats 0.2.4.2. [VERIFY] at next launch: no missing-dependency errors; Apotheosis World Tiers active; skill tree opens on `K`; relics equip via Curios (`Y`); Arsenal weapons drop from bosses; rune socketing works at the Rune Altar.
+- [x] Re-checks re-confirmed: Knaves' Needs (SKIP — 3.0.0-beta.1, still monolithic 520+), Artifacts (SKIP — still no leveling), Marium's Soulslike Weaponry (SKIP — Fabric-only), Runes of Power / Gemancy (SKIP — redundant/immature socketing mods), ArmorPlus / Netherite Plus (SKIP — dead).
+- [x] GUIDE.md updated: Equipment table (+Arsenal), new Arsenal section, Simply Swords/More version pins, interdependency notes (Spell Engine / Ranged Weapon API / Shield API / affix coverage), Apotheosis 8.x config section, Deadly → World Tiers, Session 3, Mod Count Summary (Wave 3 → **10/12/23** after −Enchanting Runes −FLIB; Total → **176/48/225**).
+- [ ] **Instance action (XMCL) — Wave 3 install** (first install of this wave): add Apotheosis 8.7.0 + Apothic Attributes + Apothic-Enchanting + Apothic-Spawners (Placebo ✓ + Patchouli ✓ already in pack), Simply Tooltips, Ranged Weapon API, Spell Engine, **Shield API**, Pufferfish's Attributes (Fzzy Config ✓ + Curios ✓ + Architectury ✓ already in pack), Skills Mastery Reimagined 1.2.1, Pufferfish's Skills 0.18.3, Simply Swords **1.63.0**, Simply More **1.2.3**, Too Many Bows 3.0.0, Relics (RPG Series) 1.4.0, Immersive Armors 1.7.6, Arsenal (RPG Series) 1.5.0, Apothic Compats 0.2.4.2. [VERIFY] at next launch: no missing-dependency errors; Apotheosis World Tiers active; skill tree opens on `K`; relics equip via Curios (`Y`); Arsenal weapons drop from bosses.
 - [x] DRIFTWOOD-GUIDE.pdf regenerated
 
 ### Serene Seasons Water Freezing Fix (Aug 24, 2026)
@@ -594,14 +594,14 @@ PUT 90.*:
 - [x] Mobility: Immersive Aircraft, Small Ships, Hang Glider, Man of Many Planes, Immersive Machinery
 - [x] Dependencies: BCLib, WorldWeaver, WunderLib, Moog's Structure Lib, TerraBlender
 
-### Wave 3 — Equipment Magic & RPG (11 mods + 13 deps)
+### Wave 3 — Equipment Magic & RPG (10 mods + 12 deps)
 
 - [x] Apotheosis 8.x plan (4 module mods — Adventure, Attributes, Spawners, Enchanting; gems, socketing, reforging costs, World Tiers)
 - [x] Dependencies: Placebo ✓, Apothic Attributes, Apothic-Enchanting, Apothic-Spawners, Patchouli ✓
-- [x] Simply Swords 1.63.0 (stable pin) + Simply More 1.2.3 (stable pin), Too Many Bows 3.0.0, Relics (RPG Series) 1.4.0, Enchanting Runes 1.0.1, Immersive Armors 1.7.6, Arsenal (RPG Series) 1.5.0 (added Aug 25, 2026)
+- [x] Simply Swords 1.63.0 (stable pin) + Simply More 1.2.3 (stable pin), Too Many Bows 3.0.0, Relics (RPG Series) 1.4.0, Immersive Armors 1.7.6, Arsenal (RPG Series) 1.5.0 (added Aug 25, 2026)
 - [x] Simply Swords deps: Simply Tooltips, Fzzy Config ✓, Architectury ✓
 - [x] Relics / Arsenal deps: Ranged Weapon API, Spell Engine, Shield API
-- [x] Enchanting Runes dep: FLIB (Bundle API was wrong — corrected Aug 25, 2026)
+- [x] Enchanting Runes REMOVED Aug 25, 2026 (duplicates Apotheosis socketing; unproven 1.21.1 build) — its planned FLIB dep is not needed
 - [x] Skills Mastery Reimagined 1.2.1, Pufferfish's Skills 0.18.3, Pufferfish's Attributes 0.8.3
 - [x] Compat notes: Apotheosis affixes apply natively to Simply Swords/Arsenal/Too Many Bows weapons + Immersive Armors pieces; Relics accessories not affixable (by design); Apothic Compats covers 11 in-pack targets
 
@@ -1080,7 +1080,7 @@ PUT 90.*:
 - [x] Removed Spartan Weaponry Unofficial — replaced by Simply More. Spartan's traditional polearms overlapped with Simply More's more exotic weapon types (Great Katanas, Grandswords, Backhand Blades, Lances, Khopeshs, Daggers, Pernachs, Quarterstaffs, Great Spears, Deer Horns). Simply More integrates natively as a Simply Swords addon and is balanced around Better Combat (already in Wave 5).
 - [x] Added Simply More (Wave 3 — Equipment) — 10 new weapon types + 33 unique weapons. Simply Swords addon. Dependencies (Cloth Config + Architectury) already in Wave 0.5 — zero new mods required. CurseForge (NeoForge 1.21.1).
 - [x] Skipped Knaves' Needs — 520+ additional swords is overkill. Simply Swords' 60+ weapons already provide sufficient variety. Adding 520 more dilutes drop uniqueness and creates inventory bloat.
-- [x] Renamed "Runes" → "Enchanting Runes" (actual mod name). URL unchanged (slug is `runes`).
+- [x] Renamed "Runes" → "Enchanting Runes" (actual mod name). URL unchanged (slug is `runes`). — **REMOVED Aug 25, 2026** (duplicates Apotheosis socketing; unproven 1.21.1 build)
 - [x] Reclassified Curios API from Equipment table to dependency notes. Curios is an API/library (296M DL, by TheIllusiveC4) — provides accessory slot infrastructure used by Relics (RPG Series) and Immersive Armors. By default adds no content except an inventory GUI. Moved to interdependency notes alongside Spell Engine, Ranged Weapon API, and Pufferfish's Attributes.
 - [x] Kept Relics (RPG Series) — deep leveling system is the killer feature for 200h+ progression. Alternatives (Artifacts, Lost Trinkets) lack leveling mechanics. More Relics noted as potential future addon.
 - [x] Kept Better Combat in Wave 5 — combat animation mod, not a weapon mod. Enhances all weapons, doesn't compete.

@@ -165,7 +165,7 @@ This is the second-biggest upgrade. NeoForge has actual spellcasting mods:
 | Skill Tree + Pufferfish's Skills | Skill Tree + Pufferfish's Skills | Same, both on NeoForge |
 | Spell Engine + Spell Power | Spell Engine + Spell Power | Same, both on NeoForge |
 | Trinkets | **Curios API** | Standard NeoForge accessory slot mod |
-| Runes | Enchanting Runes (Lothrazar) | NeoForge 1.21.1 available (1.0.1, Aug 2026) — dep FLIB |
+| Runes | Enchanting Runes (Lothrazar) | 1.21.1 build exists (1.0.1) but NOT adopted — duplicates Apotheosis socketing; unproven (Aug 2026 review) |
 | Relics (RPG Series) | Relics (RPG Series) | NeoForge 1.21.1 available (1.4.0, Aug 2026 — Curios slots) |
 
 ### New Magic Mods
