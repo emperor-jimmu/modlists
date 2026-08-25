@@ -1,3 +1,18 @@
+### Wave 3 Mod Review (Aug 25, 2026)
+
+- [x] **User request: review Wave 3 (Equipment Magic & RPG) mods** before install — all planned mods source-verified (Modrinth API / CurseForge / GitHub, 4 parallel research agents). Verdict: all suitable — KEEP.
+- [x] **Apotheosis ecosystem healthy** — 1.21.1-8.7.0 (Aug 2, 2026), active, no open 1.21.1 blockers. **Zenith not applicable** (Fabric-only 1.20.1 port, last touched Jun 2025). Apothic Compats 0.2.4.2 (ianm1647) covers all 11 in-pack targets. Affixes apply natively by item category: Simply Swords / Arsenal / Too Many Bows weapons + Immersive Armors pieces affix out of the box; Relics accessories don't (by design).
+- [x] **User decision — ADD Arsenal (RPG Series) 1.5.0** (Wave 3 — Equipment): 40+ loot-only legendary weapons with passive spells; same RPG Series family as Relics. +1 new dep: Shield API (Spell Engine + Ranged Weapon API + GeckoLib already in/planned).
+- [x] **User decision — RPG classes: NONE** — Wizards/Archers/Paladins all returned to 1.21.1 (3.1.1, Aug 2026) but the user opted to keep magic minimal; the deferred classes TODO is CLOSED as a deliberate non-goal.
+- [x] **User decision — weapon pins: stable pair** — Simply Swords **1.63.0** + Simply More **1.2.3** (both releases). The Simply Swords 1.70 line (Aug 24, 2026) is save/config-breaking and forces Simply More onto alpha 1.3.0 — upgrade once 1.3.0 stable ships.
+- [x] **User decision — Accessories Compatibility Layer: SKIP** — pack deliberately runs Aether's own accessories menu + Curios menu side by side; the compat layer has Curios feature caveats (no active states, no ICurioSlotExtension).
+- [x] **Correction — Enchanting Runes dep is FLIB, not Bundle API** (verified: Modrinth metadata + CF slug `runes` = Lothrazar's Enchanting Runes, 1.21.1-1.0.1, Aug 6, 2026).
+- [x] **Correction — Apotheosis 8.x config plan** — 4 module mods (Apotheosis / Apothic Attributes / Apothic Spawners / Apothic Enchanting), not 5; old Deadly module content now runs through the Adventure module's World Tiers. GUIDE.md Configuration + Deadly sections rewritten.
+- [x] Re-checks re-confirmed: Knaves' Needs (SKIP — 3.0.0-beta.1, still monolithic 520+), Artifacts (SKIP — still no leveling), Marium's Soulslike Weaponry (SKIP — Fabric-only), Runes of Power / Gemancy (SKIP — redundant/immature vs Enchanting Runes), ArmorPlus / Netherite Plus (SKIP — dead).
+- [x] GUIDE.md updated: Equipment table (+Arsenal), new Arsenal section, Simply Swords/More version pins, interdependency notes (Spell Engine / Ranged Weapon API / Shield API / affix coverage), Apotheosis 8.x config section, Deadly → World Tiers, Session 3, Mod Count Summary (Wave 3 10/12/22 → **11/13/24**; Total 176/48/224 → **177/49/226**).
+- [ ] **Instance action (XMCL) — Wave 3 install** (first install of this wave): add Apotheosis 8.7.0 + Apothic Attributes + Apothic-Enchanting + Apothic-Spawners (Placebo ✓ + Patchouli ✓ already in pack), Simply Tooltips, Ranged Weapon API, Spell Engine, **Shield API**, **FLIB**, Pufferfish's Attributes (Fzzy Config ✓ + Curios ✓ + Architectury ✓ already in pack), Skills Mastery Reimagined 1.2.1, Pufferfish's Skills 0.18.3, Simply Swords **1.63.0**, Simply More **1.2.3**, Too Many Bows 3.0.0, Relics (RPG Series) 1.4.0, Enchanting Runes 1.0.1, Immersive Armors 1.7.6, Arsenal (RPG Series) 1.5.0, Apothic Compats 0.2.4.2. [VERIFY] at next launch: no missing-dependency errors; Apotheosis World Tiers active; skill tree opens on `K`; relics equip via Curios (`Y`); Arsenal weapons drop from bosses; rune socketing works at the Rune Altar.
+- [x] DRIFTWOOD-GUIDE.pdf regenerated
+
 ### Serene Seasons Water Freezing Fix (Aug 24, 2026)
 
 - [x] **Issue**: User reported water tiles freezing in new world — Serene Seasons `generate_snow_ice` defaulted to `true` in `config/sereneseasons/seasons.toml`, causing winter water freezing despite GUIDE.md stating "Temperature damage OFF — no freezing or heat damage (chill rule preserved)".
@@ -579,16 +594,16 @@ PUT 90.*:
 - [x] Mobility: Immersive Aircraft, Small Ships, Hang Glider, Man of Many Planes, Immersive Machinery
 - [x] Dependencies: BCLib, WorldWeaver, WunderLib, Moog's Structure Lib, TerraBlender
 
-### Wave 3 — Equipment Magic & RPG (~20 mods incl. 10 deps)
+### Wave 3 — Equipment Magic & RPG (11 mods + 13 deps)
 
-- [x] Apotheosis fully configured (5 modules, socketing, reforging costs, enchants, spawners, Deadly module enabled)
-- [x] Dependencies added: Placebo, Apothic Attributes, Apothic-Enchanting, Apothic-Spawners, Patchouli
-- [x] Simply Swords, Too Many Bows, Spartan Weaponry Unofficial, Relics (RPG Series), Runes, Immersive Armors
-- [x] Simply Swords deps: Simply Tooltips, Fzzy Config
-- [x] Relics (RPG Series) / Skill Tree deps: Ranged Weapon API, Spell Engine
-- [x] Runes dep: Bundle API
-- [x] Skill Tree (RPG Series), Pufferfish's Skills
-- [x] Compat notes: Apotheosis affixes apply to Simply Swords weapons, Twilight Forest bosses, Incendium weapons, and Immersive Armors pieces
+- [x] Apotheosis 8.x plan (4 module mods — Adventure, Attributes, Spawners, Enchanting; gems, socketing, reforging costs, World Tiers)
+- [x] Dependencies: Placebo ✓, Apothic Attributes, Apothic-Enchanting, Apothic-Spawners, Patchouli ✓
+- [x] Simply Swords 1.63.0 (stable pin) + Simply More 1.2.3 (stable pin), Too Many Bows 3.0.0, Relics (RPG Series) 1.4.0, Enchanting Runes 1.0.1, Immersive Armors 1.7.6, Arsenal (RPG Series) 1.5.0 (added Aug 25, 2026)
+- [x] Simply Swords deps: Simply Tooltips, Fzzy Config ✓, Architectury ✓
+- [x] Relics / Arsenal deps: Ranged Weapon API, Spell Engine, Shield API
+- [x] Enchanting Runes dep: FLIB (Bundle API was wrong — corrected Aug 25, 2026)
+- [x] Skills Mastery Reimagined 1.2.1, Pufferfish's Skills 0.18.3, Pufferfish's Attributes 0.8.3
+- [x] Compat notes: Apotheosis affixes apply natively to Simply Swords/Arsenal/Too Many Bows weapons + Immersive Armors pieces; Relics accessories not affixable (by design); Apothic Compats covers 11 in-pack targets
 
 ### Wave 4 — Food, Farming & Comfort (~10 mods)
 
@@ -686,7 +701,7 @@ PUT 90.*:
 - [ ] Verify no mod conflicts
 - [ ] Cross-wave integration testing
 - [ ] Config tuning per mod
-- [ ] After test launch, capture Apotheosis defaults (adventure.cfg, ench.cfg, enchantments.cfg, potion.cfg, village.cfg) then apply overrides per GUIDE.md §Wave 3
+- [ ] After test launch, capture Apotheosis 8.x defaults (module configs — adventure/enchanting/spawners/attributes; paths generated at first launch) then apply overrides per GUIDE.md §Wave 3
 
 ### Data Packs
 
@@ -872,7 +887,7 @@ PUT 90.*:
 
 ### Additional Mod Candidates
 
-- [ ] Additional RPG classes (Wizards, Archers, Paladins — if Spell Engine ecosystem returns)
+- [x] Additional RPG classes (Wizards, Archers, Paladins) — CLOSED Aug 25, 2026 (deliberate non-goal): the Spell Engine ecosystem returned to 1.21.1 (Wizards/Archers/Paladins 3.1.1, Aug 2026) but the user chose to keep magic minimal — no class mods
 
 ### Mod Review — 8 Candidates (Jul 2026)
 

@@ -165,8 +165,8 @@ This is the second-biggest upgrade. NeoForge has actual spellcasting mods:
 | Skill Tree + Pufferfish's Skills | Skill Tree + Pufferfish's Skills | Same, both on NeoForge |
 | Spell Engine + Spell Power | Spell Engine + Spell Power | Same, both on NeoForge |
 | Trinkets | **Curios API** | Standard NeoForge accessory slot mod |
-| Runes | Runes | Check NeoForge availability |
-| Relics (RPG Series) | Relics (RPG Series) | Check NeoForge availability |
+| Runes | Enchanting Runes (Lothrazar) | NeoForge 1.21.1 available (1.0.1, Aug 2026) — dep FLIB |
+| Relics (RPG Series) | Relics (RPG Series) | NeoForge 1.21.1 available (1.4.0, Aug 2026 — Curios slots) |
 
 ### New Magic Mods
 
@@ -183,7 +183,7 @@ This is the second-biggest upgrade. NeoForge has actual spellcasting mods:
 | Spellcasting | Ars Nouveau + Iron's Spells | Two complete magic systems — Ars for customizable glyph-crafted spells, Iron's for school-based spellbook progression |
 | Gear affixes | Apotheosis | Rarity tiers, random affixes, gem socketing on all gear. Better loot scaling |
 | Weapons | Simply Swords | 60+ unique weapons with passive abilities |
-| Skill tree | Skill Tree (RPG Series) | XP-based leveling, attribute point spending |
+| Skill tree | Skills Mastery Reimagined | 71-node tradeoff tree (replaced Skill Tree RPG Series, Jul 2026) |
 | Accessories | Curios API | Back, belt, bracelet, charm, necklace, ring slots |
 
 ---
