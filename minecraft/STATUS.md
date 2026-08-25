@@ -6,7 +6,7 @@
 - [x] **GUIDE.md updated**: table row +Fancy Toasts −Fancy Notify (revert noted in row + bullet), What-to-Expect bullets, Game Rules note. Mod Count Summary unchanged (1:1).
 - [x] **Instance action — jar swap applied directly** (repo session): removed `fancynotify-1.0.0-neoforge-1.21.1.jar`, added `fancytoasts-1.5.0-neoforge-1.21.1.jar` (Modrinth). **Iceberg stays** (Item Borders). [VERIFY] at next launch: game reaches main menu/world; advancement popups render Fancy Toasts style (Mods screen → Fancy Toasts); no MusicManager crash.
 - [x] DRIFTWOOD-GUIDE.pdf regenerated
-- [ ] **Fancy Notify re-adoption trigger**: a fix release from Bivrik (1.0.1+) addressing the null-`musicSound` NPE — re-test at next launch before any doc adoption. Bug report drafted for `Bivrik/FancyNotify` (crash log + TIM interaction); file on GitHub when convenient. Until then, recipe-toast control options remain: KubeJS `/recipe give @p *` login script (zero mods) or manual one-off.
+- [ ] **Fancy Notify re-adoption trigger**: a fix release from Bivrik (1.0.1+) addressing the null-`musicSound` NPE — re-test at next launch before any doc adoption. Bug report filed → [Bivrik/FancyNotify#3](https://github.com/Bivrik/FancyNotify/issues/3). Until then, recipe-toast control options remain: KubeJS `/recipe give @p *` login script (zero mods) or manual one-off.
 
 ### Advancement Plaques → Fancy Notify Swap (Aug 25, 2026)
 
