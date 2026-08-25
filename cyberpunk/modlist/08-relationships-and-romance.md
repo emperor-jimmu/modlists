@@ -328,5 +328,16 @@ and relationship progression.
 22. Go on a Date (Panam)
 23. Judy's Voicemail
 24. Rita Post-Romance Messages Addon
+### Judyheart - Judy Alvarez X Shadowheart
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/32004>
+- **Version:** Verify
+- **Released:** Verify
+- **Summary:** Judy overhaul.
+- **Why:** Enhances relationship depth; fits the established romance pillar.
+- **Conflicts:** Potential conflict with other Judy overhauls; hair clipping mentioned by author.
+- **Dependencies:** Verify.
+- **MO2 Notes:** Verify.
+- **Performance:** None
 
 **Note:** Requires **Deceptious Quest Core** from 07-Quests & Stories for Gone Away to work fully for Kerry/River. Hangout Romances requires Romance Hangouts Enhanced v2.1.1+. Rita Post-Romance Messages Addon requires Rita Wheeler Romanced (#9191) from 07-Quests & Stories.

@@ -212,3 +212,14 @@ These mods by The Digital Soul use the Native Interactions Framework to add inte
 15. NCH - Aldecaldo Camps
 16. NCH - 7th Hell Club
 17. Jacked In
+### Examine Anything
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/32335>
+- **Version:** Verify
+- **Released:** Verify
+- **Summary:** Increases interactivity and deepens world exploration.
+- **Why:** Enhances world interactivity, fitting the "Meaningful relationships/RPG depth" pillar.
+- **Conflicts:** None known.
+- **Dependencies:** Verify.
+- **MO2 Notes:** Verify.
+- **Performance:** None

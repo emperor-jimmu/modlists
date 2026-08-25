@@ -137,6 +137,17 @@ decorations, garage expansions, and player home systems.
 - **MO2 Notes:** Extract to game root. Smart window appears in applicable apartments (The Glen, Japantown, Corpo Plaza, Northside). News and stock tickers require Stock Market and News System for full functionality.
 - **Performance:** None
 
+### Kabuki Kitsch - Apartment and Ramen Shop
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/32446>
+- **Version:** 1
+- **Released:** 2026-08-09
+- **Summary:** Cozy kitschy apartment above ramen shop.
+- **Why:** Adds immersive, localized living world space without mechanical changes.
+- **Conflicts:** Potential mirror issues (known by author).
+- **Dependencies:** ArchiveXL, TweakXL.
+- **MO2 Notes:** Extract to game root.
+- **Performance:** None
 ---
 ---
 
