@@ -1,3 +1,14 @@
+### Advancement Plaques + Toast Control Restored (Aug 25, 2026)
+
+- [x] **User decision — return to the proven pairing**: remove **Fancy Toasts 1.5.0**; restore **Advancement Plaques 1.6.8** (CurseForge `advancement-plaques`, file 5905995 → `AdvancementPlaques-1.21.1-neoforge-1.6.8.jar`) and add **Toast Control 9.0.1** (Shadows_of_Fire; CurseForge `toast-control`, Modrinth `CnOG2wlS` → `ToastControl-1.21.1-9.0.1.jar`, release Jun 19 2026; client-only, MIT).
+- [x] **Compatibility verified — explicit on the AP mod page**: "Works with any advancements… and **fully compatible with Toast Control**. Other mods that affect advancement popups may not work." Toast Control 9.0.1 also ships **zero mixins** (jar-verified — events + ATs only), the minimal hook surface that keeps the pairing clean.
+- [x] **Recipe-toast issue SOLVED**: TC's default config **disables Recipes + Tutorials toasts** ("This mod, by default, disables toasts for Recipes and Tutorials") — no config override, no KubeJS script needed. Advancement toasts still display → AP renders them as plaques.
+- [x] **Zero new deps**: TC requires **Placebo ≥9.9.0** (pack has 9.9.2 via Apotheosis; instance-verified) and NeoForge ≥21.1.187 (pack: 21.1.248). Iceberg stays (AP + Item Borders).
+- [x] **GUIDE.md updated**: QoL table +Advancement Plaques +Toast Control −Fancy Toasts (compat note in AP row), What-to-Expect bullets, Game Rules note, Mod Count Summary (Wave 0 7→**9** mods / 19→**21**; Total 175→**177** mods / 224→**226**; deps unchanged at 48 — Placebo already counted).
+- [x] **Instance action — jar swap applied directly** (repo session): removed `fancytoasts-1.5.0-neoforge-1.21.1.jar`; added `AdvancementPlaques-1.21.1-neoforge-1.6.8.jar` + `ToastControl-1.21.1-9.0.1.jar`. [VERIFY] at next launch: no crash; advancement popups are glowing plaques (Mods screen → Advancement Plaques); **no "New Recipes Unlocked" toasts on pickups**; tutorial toasts gone.
+- [x] DRIFTWOOD-GUIDE.pdf regenerated
+- [ ] **Watch**: Fancy Notify issue [Bivrik/FancyNotify#3](https://github.com/Bivrik/FancyNotify/issues/3) stays open — revisit only when a 1.0.1+ fix ships (recipe-toast *restyle* option then; TC already handles silencing).
+
 ### Fancy Notify 1.0.0 Crash — Reverted to Fancy Toasts (Aug 25, 2026)
 
 - [x] **User-reported crash at startup** (`crash-2026-08-25_23.03.27-client.txt`, ~5s in / tick 101, during initial resource reload): `NullPointerException: Cannot invoke "Sound.getLocation()" because "musicSound" is null` at `MusicManager.handler$fancynotify$onStartedPlaying` — FN's `MusicManagerMixin` injected into `MusicManager.startPlaying`. **Not tooltips** — the music-notification hook.
