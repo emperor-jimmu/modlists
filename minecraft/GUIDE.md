@@ -690,7 +690,7 @@ Steampunk power armor built with Create materials. Each armor piece has a unique
 
 **External devices**: Additional Create-themed accessories (back-mounted) that provide utility without consuming armor slots.
 
-**Compatibility**: Works with Better Combat, Epic Fight, and backpacks (visual space reserved for backpack rendering). Apotheosis affixes and gems should apply — verify after test launch.
+**Compatibility**: Works with Better Combat, Epic Fight, and backpacks (visual space reserved for backpack rendering).
 
 **Dependencies**: [Create](https://www.curseforge.com/minecraft/mc-mods/create) (already in pack) + [Kleiders Custom Renderer API](https://www.curseforge.com/minecraft/mc-mods/kleiders-custom-renderer-api). For versions below 1.9.0, requires [Curios API](https://www.curseforge.com/minecraft/mc-mods/curios) instead (already in pack). Currently on v2.1.9+ using Kleiders.
 
@@ -732,7 +732,7 @@ Steampunk power armor built with Create materials. Each armor piece has a unique
 - **Applied Mekanistics** bridges AE2 autocrafting with Mekanism's chemical processing — ME Chemical Output Buses, ME Chemical Import Buses, and P2P tunnels for chemicals/gases enable autocrafting of Mekanism recipes (including fission/fusion products) directly through the AE2 crafting CPU. Without this mod, Mekanism chemical steps are manual bottlenecks.
 - **Create: The Factory Must Grow** adds oil drilling, distillation towers, blast furnaces, and diesel engines — expanding Create's mechanical toolkit into heavy industry. Its steel replaces Mekanism's steel (TFMG's blast furnace is the intended steel source; Mekanism's steel recipe is disabled by the Mekanism TFMG Compat mod). TFMG aluminum and plastic feed into Mekanism's advanced processing chains.
 - **Mekanism TFMG Compatibility** resolves 85+ recipe overlaps between TFMG and Mekanism — lead, sulfur, and steel are unified under TFMG's production lines, while Mekanism retains its chemical processing advantage. Both EMI item blacklist config and per-recipe toggles are available for pack tuning.
-- **Create: Protection Pixel** adds steampunk power armor that bridges Create's brass-tier infrastructure with the power fantasy of Mekanism's MekaSuit. Brass-tier armor requires Create brass (early Phase 2); alloy-tier requires additional Create alloy processing (mid-Phase 2). The Combustion Reactor's blaze rod fuel can be farmed via Mekanism spawner systems, Apotheosis spawner upgrades, or vanilla blaze grinders. Blaze automation is a natural Phase 2 milestone that unlocks full power armor capability. MekaSuit remains the Phase 3 ultimate upgrade — Protection Pixel fills the gap, it doesn't compete.
+- **Create: Protection Pixel** adds steampunk power armor that bridges Create's brass-tier infrastructure with the power fantasy of Mekanism's MekaSuit. Brass-tier armor requires Create brass (early Phase 2); alloy-tier requires additional Create alloy processing (mid-Phase 2). The Combustion Reactor's blaze rod fuel can be farmed via Mekanism spawner systems or vanilla blaze grinders. Blaze automation is a natural Phase 2 milestone that unlocks full power armor capability. MekaSuit remains the Phase 3 ultimate upgrade — Protection Pixel fills the gap, it doesn't compete.
 
 ### Core Tech
 
@@ -1006,9 +1006,9 @@ Phase 3 energy-weapon line sharing the "Meka" aesthetic: **Meka-Tana** (katana �
 
 **Progression placement — naturally Phase 3, no extra gating needed**: every weapon recipe requires **Polonium Pellets** (fission-reactor line) + **Ultimate Control Circuits** + **Basic Induction Cells**; the Meka-Tana additionally requires **Atomic Alloy**, already gated behind MineColonies "Industrial Revolution" research in this pack. The weapons arrive exactly when the power fantasy intends them.
 
-**Integration**: built-in Better Combat support (Meka-Tana uses the `bettercombat:katana` profile). Energy-based, so it does not trip the pack's ballistic-firearms ban (TACZ/Scorched Guns doctrine protects Create: Gunsmithing's role — a laser is a distinct category). Optional Curios integration (already in pack). Weapons are enchantable (config toggle, default on) — Apotheosis enchantments apply.
+**Integration**: built-in Better Combat support (Meka-Tana uses the `bettercombat:katana` profile). Energy-based, so it does not trip the pack's ballistic-firearms ban (TACZ/Scorched Guns doctrine protects Create: Gunsmithing's role — a laser is a distinct category). Optional Curios integration (already in pack). Weapons are enchantable (config toggle, default on) — vanilla enchantments apply via the enchanting table.
 
-**Config** — Mekanism-style SERVER config (`config/Mekanism/mekaweapons-server.toml`, generated on first launch): per-weapon `base_damage`, `energy_usage`, capacity/charge rate; Meka-Tana teleport reach + energy; Meka-Gun beam length, heat, cooldown; enchantability toggles. Energy is in Joules (2.5 J = 1 FE). Leave at defaults first; tune damage down only if playtesting shows it outclassing Apotheosis-mythic gear.
+**Config** — Mekanism-style SERVER config (`config/Mekanism/mekaweapons-server.toml`, generated on first launch): per-weapon `base_damage`, `energy_usage`, capacity/charge rate; Meka-Tana teleport reach + energy; Meka-Gun beam length, heat, cooldown; enchantability toggles. Energy is in Joules (2.5 J = 1 FE). Leave at defaults first; tune damage down only if playtesting shows it outclassing endgame enchanted gear.
 
 ---
 
@@ -1130,7 +1130,7 @@ These schematics complement the Driftwood progression. All are free downloads �
 - **Forgematica × Create**: Big interior shells — the Cozy Mountain Chalet (`13-Snowy Chalet-from-abfielder.litematic`) and Modern Mansion (`16-Modern Mansion-from-abfielder.litematic`) — are built to house Create machinery and Mekanism lines; they provide the structure, you wire the automation. The Large Farmhouse (`7-Large_Farmhouse-from-abfielder.litematic`) pairs well with Create water-wheel power for a farm-to-tech compound.
 - **Forgematica × MineColonies**: The Oasis Sanctuary (`10-Oasis Sanctuary Schematic-from-abfielder.litematic`) makes a landmark-scale colony centerpiece; the Simple Medieval House (`4-use this-from-abfielder.litematic`) and Large Farmhouse (`7-Large_Farmhouse-from-abfielder.litematic`) work as early colony housing, and the Trading Hall with Basement (`6-Trading-Hall-from-abfielder.litematic`, ID:3396) anchors a villager economy beside the colony.
 - **Forgematica × AE2**: The Cozy Mountain Chalet's (`13-Snowy Chalet-from-abfielder.litematic`) large storage room is built for pre-AE2 bulk storage — once you transition to ME drives, repurpose it as overflow or a decorative archive hall.
-- **Forgematica × Apotheosis**: The Cozy Mountain Chalet (`13-Snowy Chalet-from-abfielder.litematic`) has a built-in enchanting corner, and the Simple Medieval House (`4-use this-from-abfielder.litematic`), Ultimate Survival Base (`5-Ultimate Survival Base by Emik-from-abfielder.litematic`), Large Farmhouse (`7-Large_Farmhouse-from-abfielder.litematic`), and Modern Stone and Wood House (`20-casa-moderna-de-qdkqmx4d.litematic`) each include an enchanting table — base your Apotheosis enchanting setup on whichever room you like best.
+- **Forgematica × Enchanting**: The Cozy Mountain Chalet (`13-Snowy Chalet-from-abfielder.litematic`) has a built-in enchanting corner, and the Simple Medieval House (`4-use this-from-abfielder.litematic`), Ultimate Survival Base (`5-Ultimate Survival Base by Emik-from-abfielder.litematic`), Large Farmhouse (`7-Large_Farmhouse-from-abfielder.litematic`), and Modern Stone and Wood House (`20-casa-moderna-de-qdkqmx4d.litematic`) each include an enchanting table — base your enchanting setup on whichever room you like best.
 - **Shader caveat**: Forgematica hologram rendering may flicker with Solas shaders. Toggle shaders off (`K`) while placing schematics, then re-enable. The 1.21.1 compatibility is better than newer MC versions — distortion is usually minor.
 - **Survival constraint**: Forgematica is purely a visual guide. No blocks are auto-placed. Every resource must be gathered and placed by the player in survival mode. This respects the pack's survival-only constraint.
 
@@ -1714,7 +1714,7 @@ Dark, enchanted dimension with strict boss progression. Each boss kill unlocks t
 - Bring **milk buckets** for Dark Forest blindness
 - Your AE2 wireless terminal, Mekanism gear, and Create tools all work here
 
-**Integration**: Apotheosis boss affixes apply to Twilight Forest bosses. A Naga with "Tough" affix is significantly harder — intended to keep dimension bosses relevant even with late-game gear.
+**Integration**: Twilight Forest bosses are buffed encounters intended to stay relevant even with late-game gear.
 
 #### Deeper and Darker — The Otherside
 
