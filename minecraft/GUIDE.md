@@ -2053,12 +2053,11 @@ If you've never built anything beyond a dirt hut, follow these steps for your fi
 | [Relics (RPG Series)](https://www.curseforge.com/minecraft/mc-mods/relics-rpg)    | Legendary accessories with unique abilities — levels up with use                                      |
 | [Immersive Armors](https://www.curseforge.com/minecraft/mc-mods/immersive-armors) | 40+ unique armor sets with custom effects — berserk, double jump, hostile radar, spikes, divine block |
 
-### Loot & Affixes
+### Enchanting
 
-| Mod                                                                                     | Role                                                                                                                                                                                                                                                                      |
-|-----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Apotheosis**](https://www.curseforge.com/minecraft/mc-mods/apotheosis)               | Rarity tiers, random affixes, gem socketing, enchanting overhaul. Replaces Savaru's Affixology with more depth                                                                                                                                                            |
-| [Apothic Compats](https://www.curseforge.com/minecraft/mc-mods/apothic-compats) 0.2.4.2 | Datapack-driven Apotheosis bridges — affixed loot, gear sets, affixes, and invaders for 11 in-pack mods (AE2, Aether, Cataclysm, Create, Curios, Deep Aether, Deeper and Darker, Farmer's Delight, Mekanism Tools, Supplementaries, Twilight Forest). Requires Apotheosis |
+| Mod                                                                               | Role                                                                                                                                                                              |
+|-----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Easy Magic](https://modrinth.com/mod/easy-magic) v21.1.4                         | Enchanting-table QoL — items stay in the table after closing, easy re-rolls, enchantment hints in tooltips. Requires Puzzles Lib (in pack). Optional Enchantment Descriptions integration |
 
 ### Configuration — Wave 3
 
