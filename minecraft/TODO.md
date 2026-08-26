@@ -4,7 +4,7 @@ Scratch backlog of future work. See STATUS.md for the canonical decision registe
 
 ## Documentation
 
-- [ ] Author Patchouli guidebook content for the modlist — the Chronicle of Shadows (Apotheosis) ships with Patchouli, but no other mod in the pack provides Patchouli guidebooks. Author a custom Driftwood guidebook covering: getting started, keybinds reference, progression roadmap (Create → Mekanism → AE2), MineColonies basics, and the Apotheosis gear system. Stored under `patchouli_books/driftwood_guide/` as JSON entries + categories.
+- [ ] Author Patchouli guidebook content for the modlist — Patchouli is in pack (Mekanism Guide Book), but no Driftwood guidebook exists. Author a custom Driftwood guidebook covering: getting started, keybinds reference, progression roadmap (Create → Mekanism → AE2), MineColonies basics, and the loot-chase/enchanting systems. Stored under `patchouli_books/driftwood_guide/` as JSON entries + categories.
 
 ## Pending Work (from STATUS.md)
 
@@ -12,7 +12,6 @@ Scratch backlog of future work. See STATUS.md for the canonical decision registe
 - [ ] Verify no mod conflicts
 - [ ] Cross-wave integration testing
 - [ ] Config tuning per mod
-- [ ] After test launch, capture Apotheosis 8.x defaults (module configs — adventure/enchanting/spawners/attributes; paths generated at first launch) then apply overrides per GUIDE.md §Wave 3
 - [x] Effectual config tuning: disable cave dust (duplicated by Particular Reforged) — **done Aug 2026 (Wave 0.5 review)**: `config/effectual.json` → `"caveDust": false` (JSON config — GsonConfigSerializer, not TOML)
 - [x] Day Counter config — verify keys after test launch — **closed Aug 2026**: Day Counter removed (user reads the day from JourneyMap minimap labels); tracked override `config/day_counter.toml` deleted with the mod
-- [ ] Author ~85 FTB Quests for non-MineColonies mods (Create, Mekanism, AE2, Apotheosis, Combat, Exploration, Food & Farming)
+- [ ] Author FTB Quests for non-MineColonies mods (Create, Mekanism, AE2, Combat, Exploration, Food & Farming) — the Apotheosis chapter (12 quests) was removed with the mod (Aug 2026)
