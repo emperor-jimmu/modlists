@@ -643,7 +643,7 @@ Manually sum: Wave rows' mods + deps + 1 per row convention = Total row. Run `gr
 - [ ] **Step 5: Verify no stray references**
 
 Run: `grep -in "apoth" GUIDE.md`
-Expected: **zero matches** anywhere in GUIDE.md.
+Expected: zero matches EXCEPT the intentional removal-changelog mod names in the Mod Count Summary Notes (Wave 3 + Total rows — "−Apotheosis −Apothic Compats"; adjudicated Aug 26: summary Notes are intentional removal records, same treatment as STATUS.md history).
 
 - [ ] **Step 6: Commit**
 
@@ -874,7 +874,7 @@ git commit -m "docs(driftwood): regenerate DRIFTWOOD-GUIDE.pdf (Apotheosis remov
 - [ ] **Step 1: Sweep for stray references**
 
 Run: `grep -rin "apoth" GUIDE.md AGENTS.md TODO.md tools/ftbquests/`
-Expected: zero matches. (STATUS.md intentionally retains historical mentions — exclude it from this sweep.)
+Expected: zero matches, EXCEPT the intentional removal-changelog mod names in GUIDE.md's Mod Count Summary Notes (Wave 3 + Total rows). STATUS.md intentionally retains historical mentions — exclude it from this sweep.
 
 - [ ] **Step 2: Run the quest validator**
 
