@@ -565,6 +565,38 @@ Current (verbatim):
 ```
 Replace `Mekanism, AE2, MineColonies, Apotheosis, dimension mods` with `Mekanism, AE2, MineColonies, dimension mods`.
 
+- [ ] **Step 11a (plan-gap fix, Aug 26): Interdependency notes — Affix coverage bullet**
+
+Current (verbatim):
+```markdown
+- **Affix coverage**: Apotheosis applies affixes and gems natively by item category — Simply Swords, Arsenal, and Too Many Bows weapons plus all Immersive Armors pieces are affixable out of the box (no compat mod needed). Relics accessories do not take affixes (accessory items, by design). Better Combat (Wave 5) is the shared animation layer for all four weapon mods.
+```
+Replace with:
+```markdown
+- **Enchantability**: All Simply Swords, Arsenal, Too Many Bows, and Immersive Armors pieces are enchantable at the vanilla enchanting table (Easy Magic QoL). Relics accessories are not enchantable (accessory items, by design). Better Combat (Wave 5) is the shared animation layer for all four weapon mods.
+```
+
+- [ ] **Step 11b (plan-gap fix, Aug 26): Interdependency notes — delete Apothic Compats bullet**
+
+Delete the entire bullet (verbatim):
+```markdown
+- **Apothic Compats** extends the affix/gem/gear-set/invader system to other in-pack mods' gear and loot: AE2 (affixed loot + gear sets), The Aether (affixes, gear sets, invaders, affixable dart shooters), Cataclysm (affixed loot + gear sets + invaders), Create (affixable potato cannons), Curios (per-slot loot categories + special affixed curio chest loot), Deep Aether + Deeper and Darker + Twilight Forest (affixes, gear sets, invaders), Farmer's Delight (affixed loot), Mekanism Tools (affixed loot + gear sets), and Supplementaries (enchanting stats on candle holders). Each bridge is a datapack that activates only when its target mod is present — so only the 11 in-pack targets take effect; the rest stay inert. This widens the Apotheosis loot chase across tech and exploration.
+```
+
+- [ ] **Step 11c (plan-gap fix, Aug 26): Immersive Armors — remove "Apotheosis affixes and gems apply" sentence**
+
+Current (verbatim):
+```markdown
+**Immersive Armors** adds 40+ unique armor sets with custom effects: Wooden (arrow/explosion protection), Skeleton (speed, Wither variant, skeleton neutrality), Divine (dyeable, blocks 1 attack/min), Heavy (high armor, anti-knockback, slow), Slime (bounce attackers), Warrior (berserk — more damage at low HP), Robe (dyeable wool, fire thorns, fireproof), Steampunk (hostile radar, enhanced UI, double jump, no fall damage), and Prismarine (spikes, depth strider). All sets are enchantable, repairable, and dyeable where applicable. Recipes in vanilla recipe book and EMI. **Apotheosis affixes and gems apply to all Immersive Armors pieces.** Mekanism Tools fills the material-tier progression (Osmium→Bronze→Steel→MekaSuit); Immersive Armors fills the unique-effect s…
+```
+Replace the sentence `**Apotheosis affixes and gems apply to all Immersive Armors pieces.**` with `All sets are enchantable at the vanilla enchanting table (Easy Magic QoL).` (keep the rest of the paragraph verbatim).
+
+Current (verbatim):
+```markdown
+**Not covered — stay bright vanilla**: Mekanism, AE2, MineColonies, Apotheosis, dimension mods (Mindful Darkness darkened every GUI uniformly; that c...
+```
+Replace `Mekanism, AE2, MineColonies, Apotheosis, dimension mods` with `Mekanism, AE2, MineColonies, dimension mods`.
+
 - [ ] **Step 12: Verify**
 
 Run: `grep -n "Apotheosis\|apoth" GUIDE.md | head -40`
