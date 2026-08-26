@@ -1,3 +1,15 @@
+### Apotheosis + Apothic Compats + Loot Beams Removed, Easy Magic Added (Aug 26, 2026)
+
+- [x] **User request**: remove **Apotheosis** and **Apothic Compats** from the pack; user also requested **Loot Beams: Refork** removal. Replacement decision (user): **Easy Magic v21.1.4** (enchanting-table QoL — items persist, easy re-rolls, hint tooltips) fills the enchanting role; gems/affixes/rarity are gone by design (power fantasy rides on unique drops + skill tree).
+- [x] **Removed mods**: Apotheosis 1.21.1-8.7.0, Apothic Compats 0.2.4.2, Apothic Attributes / Apothic-Enchanting / Apothic-Spawners (modules — can't run without core), Loot Beams: Refork neoforge-1.21.1-3.4.7 + its deps **Nirvana Library 2.2.0** + **Common Network 1.0.21-1.21.1** (verified Modrinth API: Loot Beams requires Nirvana (Clefal's lib), Nirvana requires Common Network; no other in-pack consumers).
+- [x] **Kept deps (verified)**: Placebo (Toast Control + FastWorkbench), Patchouli (Mekanism Guide Book), Simply Tooltips (Simply Swords; Apotheosis bridge was optional), Fzzy Config (Simply Swords).
+- [x] **Config**: `config/apotheosis/` deleted from repo (user already removed instance config). Easy Magic runs **stock defaults** — no overrides.
+- [x] **Quests**: `quest_data/apotheosis.json` chapter (12 quests, group `80000000`) deleted; `validate.py` whitelist updated; mekanism.json affix line reworded.
+- [x] **GUIDE.md**: Wave 3 Loot & Affixes table → Enchanting (Easy Magic); Apotheosis config block + overhaul section replaced; ~20 scattered references scrubbed; Session Plan reworked; Mod Count Summary Wave 3 `10/12/23 → 9/9/19`, Total `177/48/226 → 175/43/219`.
+- [x] **AGENTS.md**: combat doctrine, Phase 1/2/3, integration rules updated (equipment-magic role = Relics + Simply Swords + skill tree).
+- [ ] **Instance action (XMCL)**: remove `Apotheosis*`, `Apothic*`, `Loot Beams Refork*`, `Nirvana*`, `CommonNetwork*` jars from `mods/`; add `EasyMagic-v21.1.4-1.21.1-NeoForge.jar`. [VERIFY] at next launch: no missing-dependency errors (Placebo/Patchouli/Simply Tooltips still resolve), enchanting table keeps items in place + re-rolls work, no rarity beams on drops, quest book has no Apotheosis chapter.
+- [x] DRIFTWOOD-GUIDE.pdf regenerated
+
 ### Advancement Plaques + Toast Control Restored (Aug 25, 2026)
 
 - [x] **User decision — return to the proven pairing**: remove **Fancy Toasts 1.5.0**; restore **Advancement Plaques 1.6.8** (CurseForge `advancement-plaques`, file 5905995 → `AdvancementPlaques-1.21.1-neoforge-1.6.8.jar`) and add **Toast Control 9.0.1** (Shadows_of_Fire; CurseForge `toast-control`, Modrinth `CnOG2wlS` → `ToastControl-1.21.1-9.0.1.jar`, release Jun 19 2026; client-only, MIT).
