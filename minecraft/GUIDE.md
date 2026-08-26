@@ -2061,46 +2061,7 @@ If you've never built anything beyond a dirt hut, follow these steps for your fi
 
 ### Configuration — Wave 3
 
-**Apotheosis** — the most config-heavy major mod. On 1.21.1 Apotheosis ships as **4 module mods**, each with its own config: Apotheosis (Adventure), Apothic Attributes, Apothic Spawners, Apothic Enchanting (plus the Patchouli book):
-
-**Adventure module** — affixes, gems, boss modifiers, rogue spawners:
-
-- Keep all affix types enabled: Ruthless (crit), Arcane (spell), Sturdy (armor), Nimble (speed), Plentiful (mining), Titanic (HP). Each supports a different playstyle.
-- Gem tiers enabled: Rough, Cut, Flawless. The gem progression (Rough → Cut → Flawless) provides a satisfying vertical upgrade path. Each tier unlockable through Apotheosis's reforging mechanic.
-- Gem types cover all primary stats: melee damage, projectile damage, magic damage, armor, max HP, mining speed, movement speed, luck. This ensures every build archetype benefits from gem-socketed gear.
-- Socket count: Gear drops with 1-2 sockets by default. Reforging at the Smithing Table can add a 3rd socket at high rarity (Mythic+). This prevents socket overload while keeping the system meaningful.
-- Boss modifiers: all active. Apothic Invaders and Elites spawn naturally with random affixes. They always drop affix items — this is the primary source of mythic gear.
-- Rogue Spawners: enabled. Underground spawner+chest combos. Risk vs reward.
-- Affix item probability: default rates (~5% base for rare+, scaling with luck and difficulty). Common-enough to feel rewarding, rare-enough to keep each upgrade exciting.
-
-**Enchanting module** (Apothic Enchanting — separate module mod; capture its config paths at first launch, then apply overrides):
-
-- Keep all enchantment overhauls enabled: higher level cap (up to level 150+), tiered bookshelves (Hell, Seashelf, Endshelf), Library of Alexandria, new enchantments (Chromatic, Mounting, Stable Footing, etc.).
-- The Library of Alexandria stores all enchanted books in one block — essential for enchanting organization at scale.
-- Enchantment max levels increased for many vanilla enchantments: Protection can reach level 8, Sharpness level 6, Fortune level 5, Looting level 5, etc. These higher caps match the power fantasy curve — gear enchanted at max level should feel mythic.
-
-**Potion module**:
-
-- Potion Charms enabled: craft a charm from blaze powder + potions, equip in offhand for passive effect. Reduces inventory clutter from potion bottles.
-- Potion augmentation allowed: glowing, brewing, changing base type into splash/lingering at standard ratios. Augmented potions can have higher level caps (e.g., Potion of Strength III).
-
-**Spawner module**:
-
-- Spawner capture and modification enabled. Silk-touch a spawner with a pickaxe, then modify it (entity type, spawn delay, player range, min/max entities). Key for XP farms and mob-based automation.
-- Spawner stats are fully configurable after placement through the spawner's GUI (right-click with an empty hand). Players can fine-tune delay, count, range, and conditions per spawner — no external tool needed.
-
-**Village module**:
-
-- Wandering trader improvements enabled. Traders can sell Apotheosis items (gems, affix gear, enchanted books) at elevated prices. Adds a secondary acquisition path for players who prefer trading over combat.
-
-**World Tiers (Adventure module)**: **Enabled.** Apotheosis 8.x folded the old "Deadly module" into the Adventure module's World Tiers system (data-map driven: affixed Elites, Invaders, and tiered dungeon loot). Kept enabled for risk-reward tension — affixed elites are the primary Mythic-gear source, and GraveStone Mod keeps your items safe, so the chill rule is preserved.
-
-**Reforging costs** — Apotheosis's reforging mechanic (reroll affixes with gem dust) uses default material costs. As the player progresses, reforging costs scale:
-
-- Rare→Epic: moderate (dust + some ingots)
-- Epic→Mythic: expensive (dust + rare materials like netherite scrap/echo shards)
-
-This cost curve encourages the player to settle for "good enough" gear until they're ready to invest in perfect rolls.
+**Easy Magic** — stock defaults. No overrides. (Puzzles Lib already in pack; Enchantment Descriptions integration is automatic.)
 
 ### Interdependency notes for Wave 3
 
