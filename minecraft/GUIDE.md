@@ -2207,93 +2207,29 @@ Unique accessories for **Curios slots**. You have 6 slots: Ring (2), Amulet (1),
 
 **Finding strategy**: Use Explorer's Compass → find YUNG's structures → loot them. Relics have higher drop rates in YUNG's structures than vanilla ones.
 
-### Apotheosis — Loot & Enchanting Overhaul
+### Easy Magic — Enchanting Table QoL
 
-The single largest change to how gear feels.
+The enchanting table keeps vanilla behavior but loses the friction:
 
-#### Rarity System
+- **Items stay in the table** after closing the GUI — no re-inserting your sword every time.
+- **Easy re-rolls** — cycle the offered enchantments without burning levels on bad rolls.
+- **Enchantment hints** — see exactly what each option does in the tooltip; integrates with Enchantment Descriptions (in pack) for full descriptions.
+- Requires **Puzzles Lib** (already in pack). Runs stock defaults — no config to manage.
 
-Every item drop rolls with rarity:
-
-| Rarity   | Affix slots | Color  | Source                      |
-|----------|-------------|--------|-----------------------------|
-| Common   | 0           | White  | Basic mobs, mining          |
-| Uncommon | 1           | Yellow | Hostile mobs, basic chests  |
-| Rare     | 2           | Cyan   | Dungeon chests, mini-bosses |
-| Epic     | 3           | Purple | Bosses, late-game chests    |
-| Mythic   | 4           | Gold   | Endgame bosses, Cataclysm   |
-
-Higher rarities = more gem sockets + better affixes.
-
-#### Affixes — Random Stats
-
-| Affix     | Effect                         | Gear type       |
-|-----------|--------------------------------|-----------------|
-| Ruthless  | +crit damage, +crit chance     | Melee weapons   |
-| Arcane    | +spell damage, +mana           | All weapons     |
-| Sturdy    | +armor, +knockback resist      | Armor           |
-| Nimble    | +movement speed, +attack speed | Boots, leggings |
-| Plentiful | +mining speed, +fortune        | Tools           |
-| Titanic   | +max HP, +natural regen        | Chestplate      |
-
-**Tip**: Check every drop. A Common helmet with a good affix can beat an Epic with useless stats. Salvage unwanted gear at a salvaging table for gem dust.
-
-#### Gem System
-
-Socketable permanent stat boosts:
-
-| Tier         | How                                | Effect           |
-|--------------|------------------------------------|------------------|
-| **Rough**    | Mob/chest drops                    | Basic stat boost |
-| **Cut**      | Rough + Gem Cutting Station + dust | +50% stat value  |
-| **Flawless** | 2 Cut gems of same type + station  | +100% stat value |
-
-**Gem Cutting Station**: Craft (check EMI), place rough gem + dust → cut gem. Dust from breaking unwanted cut gems.
-
-**Gem Socketing Table**: Craft (check EMI), place item + gem in socket slot. Limited sockets per gear piece — expand with socketing tools.
-
-#### Enchanting Overhaul
-
-- **Higher level cap**: Sharpness VIII, Protection VIII, Fortune V, Looting V possible
-- **Tiered bookshelves**: Hell, Seashelf, Endshelf enable higher enchantment levels
-- **Library of Alexandria**: Stores all enchanted books in one block
-- **30+ new enchantments**: Check EMI for full list
-
-#### Boss Affixes
-
-Boss mobs spawn with modifiers under their health bar:
-
-| Modifier | Effect                    | Strategy                          |
-|----------|---------------------------|-----------------------------------|
-| Tough    | +50% HP, damage reduction | High-damage weapons + Lifesteal   |
-| Blinding | Blinds on hit             | Blindness-resistant gear or milk  |
-| Clumsy   | Disarms on hit            | Speed — don't get hit             |
-| Plagued  | Poison/wither on hit      | Antidotes, regeneration           |
-| Huge     | 2× size, more knockback   | Stay mobile                       |
-| Chaotic  | Random effects per hit    | Unpredictable — bring all potions |
-
-**Tip**: Boss affixes are the main source of Mythic gear. Hunt affixed bosses for endgame upgrades.
-
-#### Spawner Module
-
-Silk-touch a spawner with a pickaxe → modify it (entity type, spawn delay, player range, min/max entities). Right-click placed spawner with empty hand to fine-tune. Essential for XP farms and mob automation.
-
-#### World Tiers (Adventure Module)
-
-Enabled by default in Apotheosis 8.x — the old "Deadly module" no longer exists as a separate config; its content (affixed Elites, Invaders, boss augments) now runs through the Adventure module's World Tiers system. Affixed elites are the primary Mythic-gear source. GraveStone Mod preserves your items if a fight goes sideways, so the chill rule holds.
+Enchanting stays vanilla-capped (Protection IV, Sharpness V). The gear fantasy now comes from unique weapon/armor passives (Simply Swords, Arsenal, Relics, Immersive Armors) and the Skills Mastery Reimagined tree rather than max-level enchantment stacking.
 
 ### Session Plan — Wave 3
 
 | Session                          | Focus                                                                                                       | What to Do                    |
 |----------------------------------|-------------------------------------------------------------------------------------------------------------|-------------------------------|
 | **Session 1 — Skill tree**       | Set keybind (`P`). Spend first points on Strength or Vitality                                               | Permanent progression started |
-| **Session 2 — First affix loot** | Check every gear drop. Look for Rare+ with useful affixes                                                   | Learn the loot system         |
+| **Session 2 — First unique loot** | Check every gear drop and dungeon chest. Look for Simply Swords / Arsenal / Relics uniques               | Learn the loot system         |
 | **Session 3 — Weapon hunt**      | Explorer's Compass → YUNG's dungeon → loot for a Simply Swords or Arsenal weapon. Try Rapier (fast) or Greathammer (AoE) | First unique weapon           |
-| **Session 4 — Gem cutting**      | Collect rough gems. Build Gem Cutting Station. Cut Rough → Cut. Socket into gear                            | Permanent gear upgrade        |
+| **Session 4 — Enchanting setup**  | Build an enchanting table + bookshelves. Use Easy Magic re-rolls to get Sharpness IV / Protection IV       | First maxed gear              |
 | **Session 5 — Relic hunting**    | Monkey Talisman (dungeons) + Lucky Coin (mineshafts)                                                        | Accessory slots filled        |
-| **Session 6 — Boss affixes**     | Search for affixed bosses (colored name above health bar). Best source of Mythic gear                       | Endgame gear progression      |
+| **Session 6 — Endgame gear hunt** | Hunt Cataclysm / Twilight Forest / Aether bosses for top-tier unique drops                                 | Endgame gear progression      |
 
-**Tip**: Wave 3 gear changes how every other wave feels. A Rare+ weapon with the right affix makes Twilight Forest and Cataclysm bosses dramatically easier. Invest in gear before tackling tough content.
+**Tip**: Wave 3 gear changes how every other wave feels. A unique weapon with a strong passive makes Twilight Forest and Cataclysm bosses dramatically easier. Invest in gear before tackling tough content.
 
 ---
 
