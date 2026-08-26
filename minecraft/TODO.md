@@ -14,4 +14,4 @@ Scratch backlog of future work. See STATUS.md for the canonical decision registe
 - [ ] Config tuning per mod
 - [x] Effectual config tuning: disable cave dust (duplicated by Particular Reforged) — **done Aug 2026 (Wave 0.5 review)**: `config/effectual.json` → `"caveDust": false` (JSON config — GsonConfigSerializer, not TOML)
 - [x] Day Counter config — verify keys after test launch — **closed Aug 2026**: Day Counter removed (user reads the day from JourneyMap minimap labels); tracked override `config/day_counter.toml` deleted with the mod
-- [ ] Author FTB Quests for non-MineColonies mods (Create, Mekanism, AE2, Combat, Exploration, Food & Farming) — the Apotheosis chapter (12 quests) was removed with the mod (Aug 2026)
+- [ ] Author FTB Quests for non-MineColonies mods (Create, Mekanism, AE2, Combat, Exploration, Food & Farming) — the gear chapter (12 quests) was dropped with its mods (Aug 2026)
