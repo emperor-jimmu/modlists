@@ -91,7 +91,7 @@ Fzzy Config **stays** (required by Simply Swords).
   - Mod Count Summary Wave 3 row + Total row (lines 3262, 3267) → new counts + changelog note
   - Phase table rows (lines 3300–3301) "Apotheosis Rare/Epic gear", "Endgame Apotheosis Mythic gear with perfect gem sockets" → reword (unique weapon/armor drops + max-enchanted gear)
   - General Tips loot row (line 3341) "loot → Apotheosis Rare+ gear" → reword
-- **Mod Count Summary**: Wave 3 row `10/12/23 → 8/9/17`; Total `177/48/226 → 174/45/222`; append changelog note to Total row.
+- **Mod Count Summary**: Wave 3 row `10/12/23 → 9/9/19`; Total `177/48/226 → 175/43/219`; append changelog note to Total row. (Counts corrected to match §Mod-count impact — Aug 26 final review.)
 
 ### 3. AGENTS.md
 - Line 19 combat doctrine: "Apotheosis-forged melee via Simply Swords / Simply More" → "Simply Swords / Simply More melee with Easy Magic enchantment QoL"
