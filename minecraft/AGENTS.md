@@ -16,7 +16,7 @@ This modpack is built around four pillars that must coexist in every design deci
 
 4. **Chill living** — at any point, the player can stop optimizing and just build a home, tend a garden, exist. The pack never punishes you for logging off, ignoring progression, or spending a session decorating. Cozy is always a valid game state.
 
-**Combat & weapons — the power fantasy's edge.** Battles and powerful weapons are a core expression of the power fantasy, deliberately **late-game** (Phase 2+, peaking in Phase 3) so the early ramp stays forgiving. Weapons — not escalating enemy spawns — are the focus. The weapon ceiling is **steampunk / Create-native**: Create: Gunsmithing (personal firearms), Create: Big Cannons + Advanced Technologies (artillery), and Apotheosis-forged melee via Simply Swords / Simply More. Modern ballistic firearm mods (TACZ, Scorched Guns) are **out of scope** — they duplicate Gunsmithing's role and break the aesthetic. Energy-based weapons (e.g. Mekanism: Weapons' Meka-Tana / Meka-Bow / Meka-Gun) are **in scope** as Phase 3 Mekanism-native gear — a distinct category from ballistic firearms that ties into Mekanism's energy line. The goal: worthy battles with worthy weapons, never bullet-sponge hordes.
+**Combat & weapons — the power fantasy's edge.** Battles and powerful weapons are a core expression of the power fantasy, deliberately **late-game** (Phase 2+, peaking in Phase 3) so the early ramp stays forgiving. Weapons — not escalating enemy spawns — are the focus. The weapon ceiling is **steampunk / Create-native**: Create: Gunsmithing (personal firearms), Create: Big Cannons + Advanced Technologies (artillery), and melee via Simply Swords / Simply More (enchantable at the table with Easy Magic QoL). Modern ballistic firearm mods (TACZ, Scorched Guns) are **out of scope** — they duplicate Gunsmithing's role and break the aesthetic. Energy-based weapons (e.g. Mekanism: Weapons' Meka-Tana / Meka-Bow / Meka-Gun) are **in scope** as Phase 3 Mekanism-native gear — a distinct category from ballistic firearms that ties into Mekanism's energy line. The goal: worthy battles with worthy weapons, never bullet-sponge hordes.
 
 ---
 
@@ -24,7 +24,7 @@ This modpack is built around four pillars that must coexist in every design deci
 
 ### Phase 1 — Cozy Roots (hours 0-40)
 
-The player eases into the world. Punch trees, build a starter home with Sophisticated Storage barrels. Recruit a few Guard Villagers for safety. Place the first MineColonies builder hut. Early Create mechanical power (water wheel, windmill) and early Mekanism basic machines (metallurgic infuser, enrichment chamber). First Apotheosis gear drops with affixes start appearing. Farmer's Delight + Brewin' And Chewin' provide hearty meals and drinks. Waystones unlock fast travel between villages. GraveStone Mod makes death forgiving — keep XP, 24h grave protection.
+The player eases into the world. Punch trees, build a starter home with Sophisticated Storage barrels. Recruit a few Guard Villagers for safety. Place the first MineColonies builder hut. Early Create mechanical power (water wheel, windmill) and early Mekanism basic machines (metallurgic infuser, enrichment chamber). First skill-tree points and early unique drops start appearing. Farmer's Delight + Brewin' And Chewin' provide hearty meals and drinks. Waystones unlock fast travel between villages. GraveStone Mod makes death forgiving — keep XP, 24h grave protection.
 
 - Difficulty: forgiving
 - Focus: shelter, food, basic automation
@@ -34,7 +34,7 @@ The player eases into the world. Punch trees, build a starter home with Sophisti
 
 ### Phase 2 — Industrial Ascent (hours 40-200)
 
-This is the core of the modpack. Mekanism expands into mid-tier and late-tier: digital miner, ore quintupling, induction matrix, fission reactor. Applied Energistics 2 ME system goes online and becomes the storage backbone. Create rotational power drives factories, sequenced crafters, and contraptions of increasing scale — including The Factory Must Grow for oil processing, diesel engines, and aluminum/steel production. MineColonies grows from a village into a functioning city, consuming excess resources and supplying rare materials. Apotheosis gear customization (gems, affixes, enchanting overhaul) matures into the primary loot chase — the player hunts for mythic rolls and perfect gem sockets. Create: Big Cannons enters the picture for colony defense and siege spectacle. Chunk Loaders keep factories running across dimensions. The Farmer's Delight ecosystem expands with More Delight, My Nether's Delight, and Ocean's Delight. YUNG's dungeon mods enrich exploration loot. Storage Delight adds kitchen furniture for base decoration. Northstar Redux adds space exploration with Create-based rockets, oxygen systems, and off-world colonies.
+This is the core of the modpack. Mekanism expands into mid-tier and late-tier: digital miner, ore quintupling, induction matrix, fission reactor. Applied Energistics 2 ME system goes online and becomes the storage backbone. Create rotational power drives factories, sequenced crafters, and contraptions of increasing scale — including The Factory Must Grow for oil processing, diesel engines, and aluminum/steel production. MineColonies grows from a village into a functioning city, consuming excess resources and supplying rare materials. The loot chase matures — the player hunts unique weapon/armor drops from dungeons and bosses, and maxes gear via the enchanting table (Easy Magic QoL). Create: Big Cannons enters the picture for colony defense and siege spectacle. Chunk Loaders keep factories running across dimensions. The Farmer's Delight ecosystem expands with More Delight, My Nether's Delight, and Ocean's Delight. YUNG's dungeon mods enrich exploration loot. Storage Delight adds kitchen furniture for base decoration. Northstar Redux adds space exploration with Create-based rockets, oxygen systems, and off-world colonies.
 
 - Difficulty: standard, gradual ramp
 - Focus: deep automation scaling, logistics puzzles, resource multiplication
@@ -44,7 +44,7 @@ This is the core of the modpack. Mekanism expands into mid-tier and late-tier: d
 
 ### Phase 3 — Perpetual Ascent (hours 200+)
 
-No endpoint. Mekanism endgame activates: fusion reactor, supercritical phase shifter, antimatter, full Mekasuit. Applied Energistics 2 grows into quantum networks and spatial storage. Create reaches absurd speeds and scale — mega-factories, infinite resource loops. Apotheosis mythic gear with perfectly socketed gems, max-level enchantments, and ideal affix rolls turns the player into an unstoppable force. MineColonies is a self-sufficient empire across multiple biomes. The Aether, Twilight Forest, and L_Ender's Cataclysm provide combat endgame for those who want it. The player flies freely, oneshots anything, and builds at creative-scale using survival-automated resources.
+No endpoint. Mekanism endgame activates: fusion reactor, supercritical phase shifter, antimatter, full Mekasuit. Applied Energistics 2 grows into quantum networks and spatial storage. Create reaches absurd speeds and scale — mega-factories, infinite resource loops. Legendary unique drops and max-enchanted gear turn the player into an unstoppable force. MineColonies is a self-sufficient empire across multiple biomes. The Aether, Twilight Forest, and L_Ender's Cataclysm provide combat endgame for those who want it. The player flies freely, oneshots anything, and builds at creative-scale using survival-automated resources.
 
 - Difficulty: the player is the difficulty
 - Focus: endless optimization, personal power ceiling, megabuilds, "just one more thing"
@@ -61,14 +61,14 @@ The complete mod list with versions, roles, and download links is maintained in 
 ### Integration Rules
 
 - Create outputs (cobblestone, alloys, processed ingots) feed into AE2 storage. AE2 autocrafting queues feed back into Mekanism.
-- Ars Nouveau spellbooks complement Mekanism gear — magic enhances tech, tech enhances magic. Neither should obsolete the other. *(Only if Ars Nouveau is added — currently not in V3; Apotheosis + Relics + Simply Swords fill the equipment-magic role.)*
+- Ars Nouveau spellbooks complement Mekanism gear — magic enhances tech, tech enhances magic. Neither should obsolete the other. *(Only if Ars Nouveau is added — currently not in V3; Relics + Simply Swords + the skill tree fill the equipment-magic role.)*
 - Guard Villagers scale their presence with colony size. A larger base should have proportionally more guards.
 - Sophisticated Storage is intentionally outclassed by AE2 in Phase 2 but remains useful for localized micro-storage near Create contraptions.
 - Farmer's Delight is the hub for all food mods. Brewin' And Chewin' (drinks/fermentation), More Delight (new meals), and Storage Delight (kitchen furniture) extend it without overlapping.
-- YUNG's dungeon mods add exploration targets and loot injection points — they feed items into Apotheosis affix/gem system and reward dungeon diving in any phase.
+- YUNG's dungeon mods add exploration targets and loot injection points — they feed items into the loot chase (unique drops, enchantment books) and reward dungeon diving in any phase.
 - The Aether, Twilight Forest, and L_Ender's Cataclysm are optional endgame combat dimensions. They don't gate or block any tech/magic progression — the player engages when they choose.
 - Waystones (fast travel) and GraveStone Mod (forgiving death) are chill-living enablers. Their configs should always be set to reduce friction, never to add it.
-- Apotheosis gems and affixes work on Mekanism armor/tools — gear customization feeds power fantasy across both tracks.
+- Mekanism armor/tools are enchantable at the table — gear customization feeds power fantasy across both tracks.
 - Chunk Loaders are essential for Phase 2+ automation across dimensions. They keep Mekanism factories and MineColonies running when the player explores.
 - No data pack should duplicate a mod's functionality. Data packs handle targeted QoL only (e.g., anti-creeper grief, armor stand posing).
 - No mod should duplicate another mod's core purpose. If two mods provide the same capability, one must be configured lower or gated later.
