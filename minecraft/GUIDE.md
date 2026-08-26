@@ -243,7 +243,7 @@ Distant Horizons handles far rendering — keep vanilla render distance low. DH 
     - **Boss Bars Overlap** → **Push Down Tooltip** (Jade tooltips push below the bar instead of covering it)
 - **Faithful 32x AppleSkin Addon** — AppleSkin's hunger/saturation HUD icons redrawn at 32x to match Faithful's style. AppleSkin ships 16x icons from the mod, so this keeps the food bar crisp on the 32x base. Zero deps; order-independent (only touches AppleSkin's own icons) — grouped with the UI tier.
 - **Dark Coffee GUI** — warm dark coffee-themed retexture of the vanilla GUI (16x): all inventories, a brand-new hotbar, remade hearts/armor/food icons, buttons, toasts. **Replaces Mindful Darkness (full swap, Aug 2026)** — the pack IS the dark UI now; the Mindful Darkness config override was deleted (running both would double-darken the already-dark textures). v2.2.1 supports 1.21.1 (verified via Modrinth API). Ships a **NOSHADERS variant** — use it if the pack's shader-based text recolor looks off under Iris. **Modern UI compatible**: its documented conflicts are tooltip/text-engine mods, not GUI-texture packs (the instance already proves the surface with Faithful 32x); no shader-pipeline fight (unlike the old Dark Mode Everywhere watch). The pack's text recolor follows Minecraft's JSON font definitions, which Modern UI honors. Tooltips unaffected — Obscure Tooltips owns the surface (Modern UI tooltips off), and the pack's custom tooltip frame is a 1.21.2+ feature (N/A on 1.21.1). **Load at the top** of pack order so its GUI wins over Faithful 32x's 32x GUI and the 32x mod packs' GUI portions (their item/block textures are untouched).
-- **Modded Coffee GUI** — Dark Coffee GUI's official mod-compat addon (same author): coffee-styled screens for **EMI, Create, Farmer's Delight, Waystones, Relics, Curios, Supplementaries, AppleSkin, Overflowing Bars, Spell Engine, Immersive Aircraft, Immersive Overlays**, Sophisticated Storage/Backpacks (partial — scrollbar/search stay grey) and more. **Not covered — stay bright vanilla**: Mekanism, AE2, MineColonies, Apotheosis, dimension mods (Mindful Darkness darkened every GUI uniformly; that coverage is the loss). **Load directly above Dark Coffee GUI.** Main test versions per author: 1.20.1 / 1.21.1.
+- **Modded Coffee GUI** — Dark Coffee GUI's official mod-compat addon (same author): coffee-styled screens for **EMI, Create, Farmer's Delight, Waystones, Relics, Curios, Supplementaries, AppleSkin, Overflowing Bars, Spell Engine, Immersive Aircraft, Immersive Overlays**, Sophisticated Storage/Backpacks (partial — scrollbar/search stay grey) and more. **Not covered — stay bright vanilla**: Mekanism, AE2, MineColonies, dimension mods (Mindful Darkness darkened every GUI uniformly; that coverage is the loss). **Load directly above Dark Coffee GUI.** Main test versions per author: 1.20.1 / 1.21.1.
 - **RAY's 3D Rails** — 3D rail models; shader support since v3.0. Compatible with Steam 'n' Rails and Create rails. Rails only — ladders are covered by the separate **RAY's 3D Ladders** pack below.
 - **RAY's 3D Ladders** — 3D ladder models (vanilla + Create); shader support (LabPBR) since v2.0. Same author as RAY's 3D Rails, but a separate pack — Rails does **not** cover ladders. Updated Aug 2026.
 - **Better Lanterns** — 3D lanterns + connected chain models. Compatible with Arcane Lanterns and Thin Air.
@@ -2067,11 +2067,10 @@ If you've never built anything beyond a dirt hut, follow these steps for your fi
 - **Spell Engine** is required by Relics (RPG Series) and Arsenal (RPG Series) — it was previously considered for removal but must be retained as a mandatory dependency of the RPG Series mods.
 - **Ranged Weapon API** is shared between Relics (RPG Series), Arsenal (RPG Series), and Pufferfish's Skills ecosystem — install once, used by all.
 - **Shield API** is required by Arsenal (RPG Series) — small RPG-Series library; no standalone content.
-- **Affix coverage**: Apotheosis applies affixes and gems natively by item category — Simply Swords, Arsenal, and Too Many Bows weapons plus all Immersive Armors pieces are affixable out of the box (no compat mod needed). Relics accessories do not take affixes (accessory items, by design). Better Combat (Wave 5) is the shared animation layer for all four weapon mods.
+- **Enchantability**: All Simply Swords, Arsenal, Too Many Bows, and Immersive Armors pieces are enchantable at the vanilla enchanting table (Easy Magic QoL). Relics accessories are not enchantable (accessory items, by design). Better Combat (Wave 5) is the shared animation layer for all four weapon mods.
 - **Curios API** provides the accessory slot system used by Relics (RPG Series) and Immersive Armors. Adds an equipment GUI (keybind `Y`) with ring, amulet, belt, gloves, back, and charm slots. Auto-installed dependency — no separate config needed.
-- **Apothic Compats** extends the affix/gem/gear-set/invader system to other in-pack mods' gear and loot: AE2 (affixed loot + gear sets), The Aether (affixes, gear sets, invaders, affixable dart shooters), Cataclysm (affixed loot + gear sets + invaders), Create (affixable potato cannons), Curios (per-slot loot categories + special affixed curio chest loot), Deep Aether + Deeper and Darker + Twilight Forest (affixes, gear sets, invaders), Farmer's Delight (affixed loot), Mekanism Tools (affixed loot + gear sets), and Supplementaries (enchanting stats on candle holders). Each bridge is a datapack that activates only when its target mod is present — so only the 11 in-pack targets take effect; the rest stay inert. This widens the Apotheosis loot chase across tech, food, and exploration without adding any standalone content that conflicts with the pack's own progression.
 
-**Immersive Armors** adds 40+ unique armor sets with custom effects: Wooden (arrow/explosion protection), Skeleton (speed, Wither variant, skeleton neutrality), Divine (dyeable, blocks 1 attack/min), Heavy (high armor, anti-knockback, slow), Slime (bounce attackers), Warrior (berserk — more damage at low HP), Robe (dyeable wool, fire thorns, fireproof), Steampunk (hostile radar, enhanced UI, double jump, no fall damage), and Prismarine (spikes, depth strider). All sets are enchantable, repairable, and dyeable where applicable. Recipes in vanilla recipe book and EMI. **Apotheosis affixes and gems apply to all Immersive Armors pieces.** Mekanism Tools fills the material-tier progression (Osmium→Bronze→Steel→MekaSuit); Immersive Armors fills the unique-effect side grade slot — different armor sets for different situations rather than linear upgrades.
+**Immersive Armors** adds 40+ unique armor sets with custom effects: Wooden (arrow/explosion protection), Skeleton (speed, Wither variant, skeleton neutrality), Divine (dyeable, blocks 1 attack/min), Heavy (high armor, anti-knockback, slow), Slime (bounce attackers), Warrior (berserk — more damage at low HP), Robe (dyeable wool, fire thorns, fireproof), Steampunk (hostile radar, enhanced UI, double jump, no fall damage), and Prismarine (spikes, depth strider). All sets are enchantable, repairable, and dyeable where applicable. Recipes in vanilla recipe book and EMI. All sets are enchantable at the vanilla enchanting table (Easy Magic QoL). Mekanism Tools fills the material-tier progression (Osmium→Bronze→Steel→MekaSuit); Immersive Armors fills the unique-effect side grade slot — different armor sets for different situations rather than linear upgrades.
 
 ### Skills Mastery Reimagined — Character Growth
 
@@ -2100,7 +2099,7 @@ If you've never built anything beyond a dirt hut, follow these steps for your fi
 | Killing Warden         | 500                       |                |
 | Killing Ender Dragon   | 600                       |                |
 
-**Unique attributes**: Skills Mastery Reimagined unlocks attributes you won't find in vanilla or Apotheosis — Gravity (lower = floaty jumps), Scale (character size), Burning Time, Sneak Speed, Water Efficiency, Oxygen Bonus, Crossbow Projectile Speed, and weapon-specific damage (Mace, Trident, Sword, Axe). These change *how you interact with the world*, not just how hard you hit.
+**Unique attributes**: Skills Mastery Reimagined unlocks attributes you won't find in vanilla — Gravity (lower = floaty jumps), Scale (character size), Burning Time, Sneak Speed, Water Efficiency, Oxygen Bonus, Crossbow Projectile Speed, and weapon-specific damage (Mace, Trident, Sword, Axe). These change *how you interact with the world*, not just how hard you hit.
 
 **Weapon synergy**: Weapon-specific nodes (Sword Damage, Axe Damage, Mace Damage, Trident Damage) create a direct feedback loop with Simply Swords and Simply More drops. Find a cool unique sword? There's a node that amplifies it. The skill tree and your loot chase feed each other.
 
@@ -2112,7 +2111,7 @@ If you've never built anything beyond a dirt hut, follow these steps for your fi
 
 ### Simply Swords — Unique Weapons
 
-**Version pin (Aug 2026)**: Simply Swords **1.63.0** — pinned alongside Simply More 1.2.3 (both stable releases). The 1.70 line (Aug 24, 2026) is a save/config-breaking rewrite that forces Simply More onto its alpha 1.3.0 line; upgrade to 1.70.x + 1.3.0 once Simply More ships stable. Simply Tooltips (auto-installed dep) also bridges Apotheosis affix/gem tooltips onto Simply Swords items.
+**Version pin (Aug 2026)**: Simply Swords **1.63.0** — pinned alongside Simply More 1.2.3 (both stable releases). The 1.70 line (Aug 24, 2026) is a save/config-breaking rewrite that forces Simply More onto its alpha 1.3.0 line; upgrade to 1.70.x + 1.3.0 once Simply More ships stable. Simply Tooltips (auto-installed dep) renders the dynamic tooltips with ability descriptions and stat previews.
 
 60+ unique weapons with passive and activated abilities. Drop from mobs (~2% chance), chests, and bosses.
 
@@ -2180,7 +2179,7 @@ Plus 33 unique weapons with special abilities. All weapons use Simply Swords' un
 
 40+ legendary weapons across 15 types, each with at least one built-in passive spell. **Not crafted — conquered**: drops from bosses and endgame dungeon chests only, matching the pack's loot-driven power fantasy.
 
-**Integration**: Arsenal weapons are melee weapons, so Apotheosis affixes and gems apply natively (MELEE_WEAPON loot category). Passive spells run through Spell Engine — the same RPG Series infrastructure as Relics: no new magic systems, no crafting chain. Better Combat (Wave 5) animates them alongside Simply Swords.
+**Integration**: Arsenal weapons are melee weapons, enchantable via the vanilla enchanting table (Easy Magic QoL). Passive spells run through Spell Engine — the same RPG Series infrastructure as Relics: no new magic systems, no crafting chain. Better Combat (Wave 5) animates them alongside Simply Swords.
 
 **Dependencies**: Spell Engine, Ranged Weapon API, Shield API (auto-installed RPG-Series libraries) + GeckoLib (already in pack) — zero new frameworks.
 
@@ -2578,8 +2577,6 @@ Starcatcher × Farmer's Delight crossover by wdiscute (same author as Starcatche
 | [Create Big Cannons: Advanced Technologies](https://www.curseforge.com/minecraft/mc-mods/create-big-cannons-advanced-technologies) | CBC addon — twin/heavy autocannons, rocket pods & rails, muzzle brakes, silencers, rifled barrels                                        |
 | [Torchmaster](https://www.curseforge.com/minecraft/mc-mods/torchmaster)                                                            | Territory pacification — Mega Torch suppresses hostile spawns in a radius; each torch gated behind a Cataclysm boss conquest (see below) |
 
-Apotheosis also adds boss modifiers and elite mob affixes — partially covers what Champions would have done.
-
 ### Better Combat — Weapon Feel
 
 Replaces Minecraft's single swing with weapon-specific movesets:
@@ -2868,7 +2865,7 @@ Place many blocks at once. Closest thing to WorldEdit without a server plugin.
 | **Sofa**      | Multi-block seating               | Wool + wood              |
 | **Dresser**   | Tall drawer storage               | Wood + relevant material |
 
-**Tip**: Place in your most-used rooms — kitchen, dining, bedroom. Use shelves to display favorite loot (Twilight Forest trophies, Apotheosis mythic gear, rare Simply Swords weapons).
+**Tip**: Place in your most-used rooms — kitchen, dining, bedroom. Use shelves to display favorite loot (Twilight Forest trophies, unique drops, rare Simply Swords weapons).
 
 ### Fetzi's Displays — Item Showcases
 
@@ -2883,7 +2880,7 @@ Display your hard-earned items in style. Craft a **Workbench** (check EMI) to ma
 
 **Scale, rotation, position**: Items in displays can be scaled, rotated, and repositioned. Check the [Wiki](https://github.com/NotFetzi/FetzisDisplays/wiki) for exact controls.
 
-**Integration with Apotheosis (Wave 3)**: Glass cloches and katana stands are ideal for showcasing mythic drops. Mount your perfect gem rolls and affix-rolled weapons as trophies. Wall holders with plaques let you name your legendary weapons — "Flamebane, Bane of the Ender Dragon."
+**Integration with Wave 3 gear**: Glass cloches and katana stands are ideal for showcasing unique drops. Mount your best Simply Swords / Arsenal / Relics finds as trophies. Wall holders with plaques let you name your legendary weapons — "Flamebane, Bane of the Ender Dragon."
 
 ### Lili's Pottery — Decorative Earthenware
 
@@ -3085,7 +3082,7 @@ In the game instance:
 || **Fuel**           | TFMG diesel/gasoline compatibility for Northstar rocket fuel (native compat)                                       |
 || **Backpacks**      | Netherite-upgraded backpacks carry oxygen tanks and supplies                                                       |
 || **Food**           | Farmer's Delight meals eatable in space with oxygen present                                                        |
-|| **Gear**           | Apotheosis affixes may apply to space suit (if item tags align)                                                    |
+|| **Gear**           | Space suit pieces are enchantable via the vanilla enchanting table                                                 |
 || **MekaSuit**       | Pending compat bridge — modules make the MekaSuit a space suit once it tracks Redux 0.6.4+                        |
 
 ### Progression Placement
@@ -3131,7 +3128,7 @@ All mods installed and every wave configured — here's how to start a proper wo
 | Setting                     | Value        | Why                                                                                                                                                                                        |
 |-----------------------------|--------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Game Mode                   | **Survival** | The pack is survival-only — every block placed and item crafted must be earned                                                                                                             |
-| Difficulty                  | **Normal**   | Easy-to-standard curve. The real difficulty ramp is Apotheosis mobs and boss fights, not vanilla mobs                                                                                      |
+| Difficulty                  | **Normal**   | Easy-to-standard curve. The real difficulty ramp is Wave 5 combat mods (Cataclysm) and dimension boss fights, not vanilla mobs                                                             |
 | **Allow Commands (Cheats)** | **OFF**      | Survival purity — no `/gamemode` escapes, no creative shortcuts; quest rewards stay earned. Cheats can't be enabled later without opening the world to LAN, so set everything you need now |
 | World Type                  | **Default**  | Terralith + Tectonic overhaul the overworld automatically. Don't pick Superflat, Single Biome, or Amplified — they break modded worldgen                                                   |
 | Seed                        | Leave empty  | Random is fine — worldgen mods guarantee interesting terrain either way                                                                                                                    |
@@ -3192,8 +3189,8 @@ All mods installed and every wave configured — here's how to start a proper wo
 
 | Phase                      | What you'll be doing                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 |----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Phase 2** (hours 40–200) | Full Create factory (conveyors, deployers, sequenced crafters, trains). Mekanism 3x–5x ore processing. AE2 ME network with autocrafting. Explore Twilight Forest bosses. Apotheosis Rare/Epic gear. First Cataclysm boss. TFMG oil refining and diesel engines. Build with Rechiseled, Macaw's, Handcrafted. Small Ships for ocean travel. Immersive Aircraft for aerial exploration. Complete quest chapters. Northstar Redux Moon and early planets |
-| **Phase 3** (hours 200+)   | Mekanism fusion reactor + MekaSuit. AE2 full autocrafting CPU chains. Endgame Apotheosis Mythic gear with perfect gem sockets. Twilight Forest final bosses. Cataclysm endgame bosses. End dimension exploration. Mars and Venus space bases. Monumental building projects. Create mega-factories. Perpetual optimization                                                                                                                             |
+| **Phase 2** (hours 40–200) | Full Create factory (conveyors, deployers, sequenced crafters, trains). Mekanism 3x–5x ore processing. AE2 ME network with autocrafting. Explore Twilight Forest bosses. Unique weapon/armor drops from dungeons and bosses. First Cataclysm boss. TFMG oil refining and diesel engines. Build with Rechiseled, Macaw's, Handcrafted. Small Ships for ocean travel. Immersive Aircraft for aerial exploration. Complete quest chapters. Northstar Redux Moon and early planets |
+| **Phase 3** (hours 200+)   | Mekanism fusion reactor + MekaSuit. AE2 full autocrafting CPU chains. Endgame unique drops + max-enchanted gear. Twilight Forest final bosses. Cataclysm endgame bosses. End dimension exploration. Mars and Venus space bases. Monumental building projects. Create mega-factories. Perpetual optimization                                                                                                                             |
 
 ---
 
@@ -3233,7 +3230,7 @@ Minecraft 1.21.1 requires **Java 21**. See [Wave -1](#wave--1--prerequisites) fo
 | Autocraft Mekanism chemicals      | Applied Mekanistics + AE2 Pattern Provider                                                    |
 | Cook from your ME network         | AE2 Export Bus on Farmer's Delight cooking pot                                                |
 | Get combat buffs before bosses    | Farmer's Delight meal + Brewin' And Chewin' drink (effects stack)                             |
-| Find the best loot                | Explorer's Compass → YUNG's structure → loot → Apotheosis Rare+ gear                          |
+| Find the best loot                | Explorer's Compass → YUNG's structure → loot → unique weapons and enchantment books           |
 | Build a train network             | Steam 'n' Rails tracks → Train Utilities stations → Railways Navigator boards                 |
 | Fly between Aether islands        | Immersive Aircraft airship + Aether portal                                                    |
 | Defend colony perimeter           | Create Big Cannons on walls + Guard Towers                                                    |
