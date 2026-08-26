@@ -469,7 +469,7 @@
       "title": "Osmium Gear",
       "subtitle": "Better than iron",
       "description": [
-        "Osmium gear beats iron. Progression: Osmium -> Bronze -> Refined Obsidian -> MekaSuit. Apotheosis affixes apply to it."
+        "Osmium gear beats iron. Progression: Osmium -> Bronze -> Refined Obsidian -> MekaSuit. Enchantable via vanilla enchanting."
       ],
       "icon": "mekanismtools:osmium_pickaxe",
       "shape": "square",

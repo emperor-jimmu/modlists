@@ -10,7 +10,7 @@ QUESTS_DIR = ROOT / "config" / "ftbquests" / "quests"
 KNOWN_MODS = {
     "minecraft", "mekanism", "mekanismgenerators", "mekanismtools",
     "create", "ae2", "tfmg", "northstar",
-    "createbigcannons", "apotheosis", "simplyswords",
+    "createbigcannons", "simplyswords",
     "railways", "createaddition", "cgs", "powergrid", "farmersdelight",
     "oceansdelight", "endersdelight", "mynethersdelight", "twilightdelight",
     "brewinandchewin", "storagedelight", "sliceanddice",
