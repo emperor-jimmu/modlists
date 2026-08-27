@@ -1,3 +1,9 @@
+### L_Ender's Cataclysm — Install Gap Closed (Aug 27, 2026)
+
+- [x] **User report**: guide documents L_Ender's Cataclysm (Wave 5 anchor) but the mod is not in the instance. Verified against the pack record: **no replacement or removal decision exists** — Mutant Monsters (removed Aug 13 — non-voluntary spawns, griefing risk) and When Dungeons Arise (removed Aug 2026 — redundancy) were dropped for other reasons; Mowzie's Mobs (the original alternative candidate to replace AdventureZ) was never adopted; Cataclysm was kept as the wave anchor. It's an install gap, not stale docs.
+- [x] **No doc changes** — GUIDE.md already carries the Wave 5 table row, "L_Ender's Cataclysm — Epic Boss Fights" section, Torchmaster conquest gate, and session plans; mod counts unchanged (174/43/218).
+- [ ] **Instance action (XMCL)** — add the **L_Ender's Cataclysm** NeoForge 1.21.1 jar from CurseForge (`lendercataclysm`; latest 1.21.1 NeoForge build — no version pin in guide) to `mods/`. Only dep **GeckoLib — already in pack** (Wave 1). [VERIFY] at next launch: no missing-dependency errors; Leviathan altar summon works; Torchmaster Mega Torch recipe shows the Cataclysm Ignitium Ingot gate (KubeJS `wave5_torchmaster.js`).
+
 ### Dynamic Waters Removed (Aug 27, 2026)
 
 - [x] **User decision: remove Dynamic Waters** (adopted Aug 23, 2026; Wave 2 — Overworld Worldgen) — the mod is the root cause of the user's **falling off the world** issue (user report; worldgen river carving). GUIDE.md updated: Overworld Worldgen table row + blurb + new-world warning removed.
