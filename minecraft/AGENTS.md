@@ -8,7 +8,7 @@ This document defines the vision, constraints, and working conventions for this 
 
 This modpack is built around four pillars that must coexist in every design decision:
 
-1. **Serious power fantasy** — the player should eventually become godlike. Flight, oneshotting bosses, extreme mobility, personal invincibility. Power is personal — world-altering magic is kept minimal or absent. The player becomes a demigod, not a world-shaper. **RPG-style levels and skills** reinforce this — every action earns XP, every level-up unlocks or improves a tangible ability, and the player always feels like they're growing stronger even between gear upgrades.
+1. **Serious power fantasy** — the player should eventually become godlike. Flight, oneshotting bosses, extreme mobility, personal invincibility. Power is personal — world-altering magic is kept minimal or absent. The player becomes a demigod, not a world-shaper. **RPG-style progression** reinforces this — unique gear drops, accessory leveling (Relics), and steady power growth keep the player feeling stronger even between gear upgrades.
 
 2. **Easy-to-standard difficulty curve** — the early game is accessible and forgiving. The ramp is smooth, never a wall. No single biome, mob, or mechanic gatekeeps progress. Difficulty escalates at the player's pace through voluntary engagement with harder content.
 
@@ -24,13 +24,13 @@ This modpack is built around four pillars that must coexist in every design deci
 
 ### Phase 1 — Cozy Roots (hours 0-40)
 
-The player eases into the world. Punch trees, build a starter home with Sophisticated Storage barrels. Recruit a few Guard Villagers for safety. Place the first MineColonies builder hut. Early Create mechanical power (water wheel, windmill) and early Mekanism basic machines (metallurgic infuser, enrichment chamber). First skill-tree points and early unique drops start appearing. Farmer's Delight + Brewin' And Chewin' provide hearty meals and drinks. Waystones unlock fast travel between villages. GraveStone Mod makes death forgiving — keep XP, 24h grave protection.
+The player eases into the world. Punch trees, build a starter home with Sophisticated Storage barrels. Recruit a few Guard Villagers for safety. Place the first MineColonies builder hut. Early Create mechanical power (water wheel, windmill) and early Mekanism basic machines (metallurgic infuser, enrichment chamber). Early unique drops start appearing. Farmer's Delight + Brewin' And Chewin' provide hearty meals and drinks. Waystones unlock fast travel between villages. GraveStone Mod makes death forgiving — keep XP, 24h grave protection.
 
 - Difficulty: forgiving
 - Focus: shelter, food, basic automation
 - New mechanics are introduced slowly
 - The world feels safe enough to build something pretty
-- **RPG levels 1–25**: early skill unlocks (mining speed, jump height, fall damage reduction)
+- **Gear baseline**: early unique weapon/armor drops (Simply Swords, Immersive Armors) start the loot chase
 
 ### Phase 2 — Industrial Ascent (hours 40-200)
 
@@ -40,7 +40,7 @@ This is the core of the modpack. Mekanism expands into mid-tier and late-tier: d
 - Focus: deep automation scaling, logistics puzzles, resource multiplication
 - This phase alone should provide 100-150 hours of content
 - Every session unlocks a new capability, nothing comes fast
-- **RPG levels 25–60**: passive skill trees (damage boosts, resource efficiency, movement upgrades)
+- **Gear progression**: the loot chase matures — unique drops and max-enchanted gear carry power growth
 
 ### Phase 3 — Perpetual Ascent (hours 200+)
 
@@ -61,7 +61,7 @@ The complete mod list with versions, roles, and download links is maintained in 
 ### Integration Rules
 
 - Create outputs (cobblestone, alloys, processed ingots) feed into AE2 storage. AE2 autocrafting queues feed back into Mekanism.
-- Ars Nouveau spellbooks complement Mekanism gear — magic enhances tech, tech enhances magic. Neither should obsolete the other. *(Only if Ars Nouveau is added — currently not in V3; Relics + Simply Swords + the skill tree fill the equipment-magic role.)*
+- Ars Nouveau spellbooks complement Mekanism gear — magic enhances tech, tech enhances magic. Neither should obsolete the other. *(Only if Ars Nouveau is added — currently not in V3; Relics + Simply Swords fill the equipment-magic role.)*
 - Guard Villagers scale their presence with colony size. A larger base should have proportionally more guards.
 - Sophisticated Storage is intentionally outclassed by AE2 in Phase 2 but remains useful for localized micro-storage near Create contraptions.
 - Farmer's Delight is the hub for all food mods. Brewin' And Chewin' (drinks/fermentation), More Delight (new meals), and Storage Delight (kitchen furniture) extend it without overlapping.

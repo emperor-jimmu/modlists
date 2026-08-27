@@ -1,3 +1,14 @@
+### Skills Mastery Reimagined + Pufferfish's Stack Removed — Skills Dropped (Aug 27, 2026)
+
+- [x] **User request**: Skills Mastery Reimagined "sucks ass, and has no relation to my modlist" — remove it.
+- [x] **Replacement research** (Modrinth + CurseForge APIs, Aug 27 2026): only tech-vibe skill mod for NeoForge 1.21.1 is **Create: skills tree** (CurseForge `create-skills-tree` — released Aug 21 2026, v1.0.0, ~60 DL, 9 KB data-only addon for Create + Pufferfish's Skills; step-height / block-reach / crouch-speed paths, XP from crafting Create items). **User decision: skip skills entirely** rather than adopt a 6-day-old, ~60-download mod; every other tree (Arcwise, Keystone, Adventurer Skills, Tyz's Skills, Improvable Skills…) is generic MMO/fantasy.
+- [x] **Removed mods**: Skills Mastery Reimagined 1.2.1 (mod), Pufferfish's Skills 0.18.3 (framework), Pufferfish's Attributes 0.8.3 (attribute registry) — all three exist only for the skill tree; no other in-pack consumers (Ranged Weapon API stays — required by Relics/Arsenal regardless).
+- [x] **Config**: none tracked (no overrides existed).
+- [x] **GUIDE.md**: RPG Progression table + "Skills Mastery Reimagined — Character Growth" section deleted; Ranged Weapon API note, Easy Magic gear-fantasy line, Overflowing Bars bullet reworded; Session Plan skill-tree row dropped (sessions renumbered 1–5); keybind row removed; Mod Count Summary Wave 3 `9/9/19 → 7/8/16`, Total `176/43/220 → 174/42/217`.
+- [x] **AGENTS.md**: pillar 1 (RPG levels/skills → RPG-style progression), Phase 1 paragraph + Phase 1/2 gear bullets, equipment-magic integration rule (Relics + Simply Swords).
+- [ ] **Instance action (XMCL)**: remove the Skills Mastery Reimagined, Pufferfish's Skills, and Pufferfish's Attributes jars from `mods/`. [VERIFY] at next launch: no missing-dependency errors; `K` no longer opens a skill tree.
+- [x] DRIFTWOOD-GUIDE.pdf regenerated
+
 ### Fast Noise Adopted — NoisiumForked Replaced (Aug 27, 2026)
 
 - [x] **User decision: adopt Fast Noise** ([Modrinth](https://modrinth.com/mod/zfastnoise), project `OnlVIpq5`) into Wave 0 — Performance & Rendering, as a 1-for-1 replacement for NoisiumForked. Vanilla worldgen optimization — replaces the `populateNoise`/`populateBiomes`/surface-builder block-storage paths with packed, allocation-light implementations; **vanilla parity maintained** (incl. datapacks), risky mod-compat-affecting optimizations off by default.
