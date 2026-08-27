@@ -1,3 +1,13 @@
+### Project MMO + Farmer's Delight Compat Removed (Aug 27, 2026)
+
+- [x] **User decision (same-day revert)**: Project MMO + PMMO × Farmer's Delight Compat "is not what I wanted" — removed. Adopted earlier today after the four-way skills discussion; user rejected it on review/play.
+- [x] **Removed mods**: `pmmo-1.21.1-2.10.46.jar` + `pmmo_farmers_compat-1.21.1-1.2.2.jar` (zero deps — nothing else in pack depends on either).
+- [x] **GUIDE.md**: RPG Progression table, "Project MMO — Skills & Stats" section, Configuration note, and keybind row removed; Mod Count Summary Wave 3 `9/8/18 → 7/8/16`, Total `176/42/219 → 174/42/217` (changelog noted).
+- [x] **AGENTS.md**: pillar 1 + Phase 1/2 reverted to gear/Relics progression (no XP engine).
+- [x] **Spec**: `docs/superpowers/specs/2026-08-27-project-mmo-adoption-design.md` deleted (design reverted same day; history preserved in git).
+- [ ] **Instance action (XMCL)**: remove the two jars from `mods/` (if already added). [VERIFY] at next launch: no missing-dependency errors.
+- [x] DRIFTWOOD-GUIDE.pdf regenerated
+
 ### Project MMO + Farmer's Delight Compat Adopted (Aug 27, 2026)
 
 - [x] **User decision**: adopt **Project MMO** into Wave 3 — RPG Progression after a four-way skills discussion (Reskillable Reimagined / JustLeveling Fork / Project MMO / Improvable Skills). Chose PMMO: reward-first (no item gating — respects the chill rule + no-hard-gating stance), **zero dependencies**, most mature NeoForge 1.21.1 line (7 months of releases), and vein mining + skill fortune feed the Create/Mekanism/AE2 ore loop. User also requested **Project MMO: Farmer's Delight Compat** (FD cooking → PMMO XP).
