@@ -7,6 +7,16 @@
 - [ ] **Instance action (XMCL)** — remove `noisiumforked-*.jar` from `mods/` if present; add `zfastnoise-1.0.13+1.21.1+neoforge.jar`. [VERIFY] at next launch: no missing-dependency errors; loads cleanly with Lithium (Fast Noise changelog documents a Lithium load-order fix); Terralith/Tectonic terrain generates correctly; no new world needed (worldgen parity).
 - [x] DRIFTWOOD-GUIDE.pdf regenerated
 
+### C2ME (NeoForge) Adopted — Parallel Chunk Gen (Aug 27, 2026)
+
+- [x] **User decision: adopt C2ME (NeoForge)** ([Modrinth](https://modrinth.com/mod/c2me-neoforge), project `COlSi5iR`) into Wave 0 — Performance & Rendering. Parallelizes chunk generation/loading/IO across CPU cores — the single biggest worldgen speedup available; server-side (runs in the single-player integrated server). Pairs with Fast Noise (block-storage opt, adopted earlier today) + Lithium (already in pack) — C2ME's recommended stack.
+- [x] **Pinned 0.4.0-alpha.0.120+1.21.1** (`c2me-neoforge-mc1.21.1-0.4.0-alpha.0.120.jar`, 3.5 MB, Aug 14 2026, 52.6K DL on build; project 2.43M DL, MIT). **Zero dependencies** (Modrinth API verified). ⚠ **Alpha backport devbuild** — the 1.21.1 line ships as auto-uploaded GitHub Actions builds; "alpha" is the project's standing versioning convention (Fabric original: 35M DL, the most-deployed worldgen optimization mod).
+- [x] **Prior skip superseded** (Jul 2026: "NoisiumForked + ModernFix cover chunk-gen; seed non-determinism risk with mod worldgen"): NoisiumForked is gone (→ Fast Noise), and Fast Noise's incompatible list excludes C2ME (only Moonrise/AntiXray/NoisiumForked — verified via API); C2ME's own benchmarks run zfastnoise + Terralith/Terratonic. C2ME keeps vanilla parity by default (non-determinism = vanilla MC-55596). No duplication: Fast Noise optimizes block-storage paths, C2ME parallelizes the whole chunk pipeline.
+- [x] **Hardware fit**: Ryzen 9 9900X (12C/24T) — C2ME scales linearly to 16 threads (~10x vanilla at 8t; ~2.2x even at 1t); directly reduces exploration stutter, DH LOD-gen CPU load, and first-world load time.
+- [x] GUIDE.md updated: Wave 0 Performance & Rendering table +C2ME row (alpha flagged); C2ME note after the Fast Noise note. **Mod Count Summary** Wave 0 `9/10/20 → 10/10/21`; Total `175/43/219 → 176/43/220` (mods +1, deps unchanged).
+- [ ] **Instance action (XMCL)** — add `c2me-neoforge-mc1.21.1-0.4.0-alpha.0.120.jar` to `mods/`. [VERIFY] at next launch: no missing-dependency errors; clean load with Lithium + Fast Noise; Terralith/Tectonic/Incendium terrain generates correctly; chunk-gen visibly faster (F3 chunk updates while flying); no new world needed (vanilla parity).
+- [x] DRIFTWOOD-GUIDE.pdf regenerated
+
 ### L_Ender's Cataclysm — Install Gap Closed (Aug 27, 2026)
 
 - [x] **User report**: guide documents L_Ender's Cataclysm (Wave 5 anchor) but the mod is not in the instance. Verified against the pack record: **no replacement or removal decision exists** — Mutant Monsters (removed Aug 13 — non-voluntary spawns, griefing risk) and When Dungeons Arise (removed Aug 2026 — redundancy) were dropped for other reasons; Mowzie's Mobs (the original alternative candidate to replace AdventureZ) was never adopted; Cataclysm was kept as the wave anchor. It's an install gap, not stale docs.
