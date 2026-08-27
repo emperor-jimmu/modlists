@@ -1,3 +1,14 @@
+### Project MMO + Farmer's Delight Compat Adopted (Aug 27, 2026)
+
+- [x] **User decision**: adopt **Project MMO** into Wave 3 — RPG Progression after a four-way skills discussion (Reskillable Reimagined / JustLeveling Fork / Project MMO / Improvable Skills). Chose PMMO: reward-first (no item gating — respects the chill rule + no-hard-gating stance), **zero dependencies**, most mature NeoForge 1.21.1 line (7 months of releases), and vein mining + skill fortune feed the Create/Mekanism/AE2 ore loop. User also requested **Project MMO: Farmer's Delight Compat** (FD cooking → PMMO XP).
+- [x] **Mods**: `pmmo-1.21.1-2.10.46.jar` (NeoForge, release Jul 11 2026; 13.1M DL project; **zero deps** — Modrinth API verified) + `pmmo_farmers_compat-1.21.1-1.2.2.jar` (NeoForge, Apr 29 2026; requires PMMO + Farmer's Delight 1.3.2, both in pack; mixin into FD flagged in mod docs).
+- [x] **Config stance**: **Default Project MMO Pack** (auto for existing worlds — docs-confirmed); stock defaults elsewhere. **[Post-launch] mob-scaling check** — if mobs scale with player level (violates easy-curve/chill pillars), tame via tracked datapack override under `datapacks/`. Vein mining + skill fortune stay stock (reward-first). No config/ overrides authored blind (PMMO generates config at first launch).
+- [x] **GUIDE.md**: RPG Progression table restored (+PMMO +FD compat); "Project MMO — Skills & Stats" section (XP-by-doing, perks, glossary `P`, chill stance, mob-scaling watch, FD compat); Configuration — Wave 3 note; keybind row (Open PMMO Glossary `P`); Mod Count Summary Wave 3 `7/8/16 → 9/8/18`, Total `174/42/217 → 176/42/219`.
+- [x] **AGENTS.md**: pillar 1 reinstates "every action earns XP" (PMMO); Phase 1 paragraph + Phase 1/2 bullets updated; equipment-magic role unchanged (Relics + Simply Swords).
+- [x] Spec: `docs/superpowers/specs/2026-08-27-project-mmo-adoption-design.md`.
+- [ ] **Instance action (XMCL)**: add `pmmo-1.21.1-2.10.46.jar` + `pmmo_farmers_compat-1.21.1-1.2.2.jar` to `mods/`. [VERIFY] at next launch: no missing-dependency errors; glossary opens with `P`; XP accrues from mining/crafting/FD cooking; mob scaling absent or tamed (else apply override); no conflict with FastWorkbench / Better Combat / Curios (PMMO's known conflict is FastFurnace — not in pack).
+- [x] DRIFTWOOD-GUIDE.pdf regenerated
+
 ### Skills Mastery Reimagined + Pufferfish's Stack Removed — Skills Dropped (Aug 27, 2026)
 
 - [x] **User request**: Skills Mastery Reimagined "sucks ass, and has no relation to my modlist" — remove it.

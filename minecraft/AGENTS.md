@@ -8,7 +8,7 @@ This document defines the vision, constraints, and working conventions for this 
 
 This modpack is built around four pillars that must coexist in every design decision:
 
-1. **Serious power fantasy** — the player should eventually become godlike. Flight, oneshotting bosses, extreme mobility, personal invincibility. Power is personal — world-altering magic is kept minimal or absent. The player becomes a demigod, not a world-shaper. **RPG-style progression** reinforces this — unique gear drops, accessory leveling (Relics), and steady power growth keep the player feeling stronger even between gear upgrades.
+1. **Serious power fantasy** — the player should eventually become godlike. Flight, oneshotting bosses, extreme mobility, personal invincibility. Power is personal — world-altering magic is kept minimal or absent. The player becomes a demigod, not a world-shaper. **RPG-style progression** reinforces this — Project MMO skills level with every action (mining, crafting, smelting, combat), every level-up pays out a tangible perk, and the player always feels stronger even between gear upgrades.
 
 2. **Easy-to-standard difficulty curve** — the early game is accessible and forgiving. The ramp is smooth, never a wall. No single biome, mob, or mechanic gatekeeps progress. Difficulty escalates at the player's pace through voluntary engagement with harder content.
 
@@ -24,13 +24,13 @@ This modpack is built around four pillars that must coexist in every design deci
 
 ### Phase 1 — Cozy Roots (hours 0-40)
 
-The player eases into the world. Punch trees, build a starter home with Sophisticated Storage barrels. Recruit a few Guard Villagers for safety. Place the first MineColonies builder hut. Early Create mechanical power (water wheel, windmill) and early Mekanism basic machines (metallurgic infuser, enrichment chamber). Early unique drops start appearing. Farmer's Delight + Brewin' And Chewin' provide hearty meals and drinks. Waystones unlock fast travel between villages. GraveStone Mod makes death forgiving — keep XP, 24h grave protection.
+The player eases into the world. Punch trees, build a starter home with Sophisticated Storage barrels. Recruit a few Guard Villagers for safety. Place the first MineColonies builder hut. Early Create mechanical power (water wheel, windmill) and early Mekanism basic machines (metallurgic infuser, enrichment chamber). PMMO skill XP accrues from minute 1 (mining, crafting, cooking), and early unique drops start appearing. Farmer's Delight + Brewin' And Chewin' provide hearty meals and drinks. Waystones unlock fast travel between villages. GraveStone Mod makes death forgiving — keep XP, 24h grave protection.
 
 - Difficulty: forgiving
 - Focus: shelter, food, basic automation
 - New mechanics are introduced slowly
 - The world feels safe enough to build something pretty
-- **Gear baseline**: early unique weapon/armor drops (Simply Swords, Immersive Armors) start the loot chase
+- **Skill baseline**: PMMO skills level as you play — early perks: mining speed, jump height, run speed
 
 ### Phase 2 — Industrial Ascent (hours 40-200)
 
@@ -40,7 +40,7 @@ This is the core of the modpack. Mekanism expands into mid-tier and late-tier: d
 - Focus: deep automation scaling, logistics puzzles, resource multiplication
 - This phase alone should provide 100-150 hours of content
 - Every session unlocks a new capability, nothing comes fast
-- **Gear progression**: the loot chase matures — unique drops and max-enchanted gear carry power growth
+- **Skill + gear progression**: PMMO perks (vein mining, skill fortune) multiply ore output; the loot chase matures with unique drops and max-enchanted gear
 
 ### Phase 3 — Perpetual Ascent (hours 200+)
 
