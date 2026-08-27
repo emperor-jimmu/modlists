@@ -1,3 +1,11 @@
+### Macaw's Fences and Walls Adopted — 5th Macaw's Module Doc-Gap Closed (Aug 28, 2026)
+
+- [x] **User flag**: "I think we're missing this one" — Macaw's Fences and Walls (CurseForge `macaws-fences-and-walls`). Verified: it's the pack's 5th Macaw's module — already documented in the "Macaw's — Complete Building Set" prose ("Five modules" + a "Fences" bullet), but its Wave 6 table row and mod count were never added (table listed only Bridges/Doors/Roofs/Windows; count said "Macaw's (4)").
+- [x] **Adopted** — Macaw's Fences and Walls, NeoForge 1.21.1 build **1.2.1** (Dec 8 2025; Modrinth API verified), **zero deps**, ~10.3M DLs (sketchmacaw — same author as the other four Macaw's mods in pack). Fit: completes the Wave 6 building set; fences/gates/walls serve the chill-living build pillar; no duplication (the other four cover bridges/doors/roofs/windows only).
+- [x] **GUIDE.md updated**: Wave 6 table +row; "Fences" prose bullet → "Fences & Walls" (now matches the 5-module header). Mod Count Summary: Wave 6 `12/3/15 → 13/3/16`; Total `176/42/218 → 177/42/219` (mods +1, deps unchanged).
+- [ ] **Instance action (XMCL)**: add the Macaw's Fences and Walls jar (NeoForge 1.21.1, 1.2.1) to `mods/`. [VERIFY] at next launch: no missing-dependency errors; fences/gates/walls appear in the creative menu alongside the other Macaw's blocks.
+- [x] DRIFTWOOD-GUIDE.pdf regenerated
+
 ### CBC Enchanced Shells + Cataclysmic Combat ADOPTED; Create Sabers + Better Swords Trims SKIP (Aug 28, 2026)
 
 - [x] **User request: review 4 CurseForge candidates** (`create-sabers`, `cbc-enchanced-shells-create-big-cannons`, `cataclysmic-combat`, `better-swords-trims`). Source-verified via CurseForge pages, Modrinth API, and web. User decision (Aug 28 2026): adopt the two Wave 5 adds; skip the other two.
