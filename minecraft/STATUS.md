@@ -1,3 +1,20 @@
+### Research: Message-in-a-Bottle + Pirate/Hostile Ships (Aug 28, 2026)
+
+- [x] **Q1 — Which mods add a `message in a bottle` item?** → **Starcatcher only** (Wave 4). Modrinth API verified: Starcatcher's Message-in-a-Bottle lets players write and cast bottles out to sea for others to fish up, plus lore bottles as loot (angler stories). **NOT** a treasure-coordinate locator. Small Ships, Better Fishtanks, Upgrade Aquatic, Ocean's Delight, Starcatcher's Delight, The Bumblezone, YUNG's: verified NO (primary sources).
+- [x] **Q2 — Which mods add pirate/hostile ships?** → **The Bumblezone only** (Wave 2), and it's a found, non-hostile structure: a **Pirate Ship** generating in the Sugar Water Floor biome with pirate-named bees + gold/Honey Compass loot. **No mod adds hostile pirates or hostile ships.** Small Ships (Cog/Brigg/Galley/Drakkar) are player-crafted/crewed with cannons — no spawned ships, no pirates. Immersive Aircraft "Warship" is a flying aircraft; MoMP, Vehicle Upgrade, Immersive Machinery (submarine), YUNG's ×12, L_Ender's Cataclysm, Northstar Redux, Incendium, MNS: verified NO.
+- [x] No GUIDE.md changes needed (both findings already documented: Starcatcher in Wave 4, Bumblezone Pirate Ship in Wave 2 structures).
+
+### Macaw's Lights and Lamps + Stairs + Paintings Adopted — 6th–8th Macaw's Modules (Aug 28, 2026)
+
+- [x] **User request: add three Macaw's mods** (Wave 6 — Building & Decoration), all sketchmacaw like the existing five. Modrinth API verified (all NeoForge 1.21.1, **zero deps**):
+  - **Macaw's Lights and Lamps** `1.1.5` (Dec 7 2025; 3.6M DLs) — vanilla-styled lamps, torches, street lamps, paper lamps, wall lamps in every wood type.
+  - **Macaw's Stairs** `1.0.2` (Dec 10 2025; 6.8M DLs) — new stair styles (Terrace, Skyline, Compact, Bulk, Loft), stair handrails, balconies/platforms.
+  - **Macaw's Paintings** `1.1.0` (Mar 30 2026; 4.9M DLs) — 35 new custom paintings + 22 updated (farm scenes, the Creaking, pets, coral reefs).
+- [x] **Fit**: completes the Wave 6 building set (now 8 modules); no duplication — the existing five cover bridges/doors/roofs/windows/fences, these cover lighting/stairs/decor. Zero new deps (all three `dependencies: []` per Modrinth API).
+- [x] **GUIDE.md updated**: Wave 6 Core Decoration table +3 rows; "Macaw's — Complete Building Set" prose "Five modules" → "Eight modules" + three new bullets. Mod Count Summary: Wave 6 `12/3/15 → 15/3/18` (mods +3, deps unchanged); Total `176/42/218 → 179/42/221`. Changelog note appended.
+- [ ] **Instance action (XMCL)**: add `mcw-lights-1.1.5-mc1.21.1neoforge.jar`, `mcw-mcwstairs-1.0.2-mc1.21.1neoforge.jar`, `mcw-paintings-1.1.0-mc1.21.1neoforge.jar` to `mods/`. [VERIFY] at next launch: no missing-dependency errors; lamps/stairs/paintings appear in creative menu alongside other Macaw's blocks.
+- [x] DRIFTWOOD-GUIDE.pdf regenerated
+
 ### Building Wands Removed (Aug 28, 2026)
 
 - [x] **User request: remove Building Wands** (Wave 6 — Building & Decoration). Removed from the guide: Modpack-Specific Building Tools row, Core Decoration table row, "Building Wands — Large-Scale Construction" section, Session Plan "Large-scale" session (sessions renumbered 1–4), Cross-Wave cheat-sheet megabase row (now Create Blueprint + Schematicannon for structure).
@@ -799,9 +816,10 @@ PUT 90.*:
 - [x] Create Big Cannons + Ritchie's Projectile Library
 - [x] All mods configured at defaults
 
-### Wave 6 — Building & Decoration (12 mods + 3 deps)
+### Wave 6 — Building & Decoration (15 mods + 3 deps)
 
 - [x] Rechiseled (replaces Chipped), Supplementaries (Modrinth), Macaw's Bridges/Doors/Roofs/Windows, Handcrafted
+- [x] Macaw's expansion: Lights and Lamps 1.1.5, Stairs 1.0.2, Paintings 1.1.0 (6th–8th Macaw's modules)
 - [x] Rechiseled addons: Rechiseled: Create, Rechiseled: Applied Energistics 2
 - [x] Fetzi's Displays (glass cloches, katana stands, wall holders, racks)
 - [x] Lili's Pottery (decorative pots, vases, urns, amphores, clay variants)
