@@ -1,3 +1,10 @@
+### Building Wands Removed (Aug 28, 2026)
+
+- [x] **User request: remove Building Wands** (Wave 6 — Building & Decoration). Removed from the guide: Modpack-Specific Building Tools row, Core Decoration table row, "Building Wands — Large-Scale Construction" section, Session Plan "Large-scale" session (sessions renumbered 1–4), Cross-Wave cheat-sheet megabase row (now Create Blueprint + Schematicannon for structure).
+- [x] Mod Count Summary updated — Wave 6 `13/3/16 → 12/3/15` (mods −1, deps unchanged); Total `177/42/219 → 176/42/218`. Changelog note appended.
+- [ ] **Instance action (XMCL)**: remove the Building Wands jar from `mods/` if installed (zero-dep — no missing-dependency risk). [VERIFY] at next launch: no missing-dependency errors; building tools no longer include wands.
+- [x] DRIFTWOOD-GUIDE.pdf regenerated
+
 ### Wave 7 Broken Tables Fixed — Extra Leading Pipes (Aug 28, 2026)
 
 - [x] **User report**: Wave 7 tables render as literal text in the PDF ("|| Layer | Northstar Redux ↔ Tech Mod Interaction |" + stray rule line).
@@ -794,7 +801,7 @@ PUT 90.*:
 
 ### Wave 6 — Building & Decoration (12 mods + 3 deps)
 
-- [x] Rechiseled (replaces Chipped), Supplementaries (Modrinth), Macaw's Bridges/Doors/Roofs/Windows, Building Wands, Handcrafted
+- [x] Rechiseled (replaces Chipped), Supplementaries (Modrinth), Macaw's Bridges/Doors/Roofs/Windows, Handcrafted
 - [x] Rechiseled addons: Rechiseled: Create, Rechiseled: Applied Energistics 2
 - [x] Fetzi's Displays (glass cloches, katana stands, wall holders, racks)
 - [x] Lili's Pottery (decorative pots, vases, urns, amphores, clay variants)
