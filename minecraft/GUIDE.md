@@ -333,7 +333,7 @@ Open **Video Settings → [colored tiles icon]** next to the FOV slider.
 | Quality Preset             | Medium     |
 | CPU Load                   | Aggressive |
 | Enable Cloud Rendering     | OFF        |
-|| Show LOD Gen Progress      | ON         |
+| Show LOD Gen Progress      | ON         |
 
 > **Tip**: DH generates LOD data as you explore, in new chunks only. First visit to an area has temporary pop-in. Terralith + Tectonic terrain takes longer than vanilla. Monitor VRAM — shaders + DH at 4K can push past 12GB.
 
@@ -2950,7 +2950,7 @@ Futuristic laser barriers created by powering Laser Source blocks with redstone.
 
 | Mod | Role |
 |-----|------|
-|| [**Northstar Redux**](https://www.curseforge.com/minecraft/mc-mods/northstar-redux) 0.6.4 | Create-based space exploration — player-built rockets, science unlocks, oxygen + temperature systems, Moon/Mars/Mercury/Venus |
+| [**Northstar Redux**](https://www.curseforge.com/minecraft/mc-mods/northstar-redux) 0.6.4 | Create-based space exploration — player-built rockets, science unlocks, oxygen + temperature systems, Moon/Mars/Mercury/Venus |
 
 Northstar Redux (by Astronauts-of-Create) is the maintained continuation of Create: Northstar — space exploration built on the Create mod. Rockets are player-built, superglued Create contraptions; progression runs through a science system (Telescope → Astronomical Readings → Astronomy Table → Space Atlas) that unlocks planets. Oxygen and temperature management, Titanium/Martian Steel/Tungsten materials, and four reachable planets: Moon, Mars, Mercury, Venus.
 
@@ -2962,14 +2962,14 @@ Northstar Redux (by Astronauts-of-Create) is the maintained continuation of Crea
 
 ### Integration with Tech Mods
 
-|| Layer          | Northstar Redux ↔ Tech Mod Interaction                                                     |
-||----------------|------------------------------------------------------------------------------------------|
-|| Power          | Mekanism cables can power Northstar machines. Create rotational → Mekanism → Northstar   |
-|| Energy         | Mekanism universal cable connects to Northstar machines (energy API compat)              |
-|| Storage        | AE2 ME drives store Northstar materials; autocrafting builds rocket components           |
-|| Ore Processing | Mekanism 5x ore multiplication works on Northstar ores (titanium, martian iron, etc.)    |
-|| Fuel           | TFMG diesel/gasoline compatibility for rocket fuel (native compat)                       |
-|| Food           | Farmer's Delight meals eatable in space when oxygen is present                           |
+| Layer          | Northstar Redux ↔ Tech Mod Interaction                                                     |
+|----------------|------------------------------------------------------------------------------------------|
+| Power          | Mekanism cables can power Northstar machines. Create rotational → Mekanism → Northstar   |
+| Energy         | Mekanism universal cable connects to Northstar machines (energy API compat)              |
+| Storage        | AE2 ME drives store Northstar materials; autocrafting builds rocket components           |
+| Ore Processing | Mekanism 5x ore multiplication works on Northstar ores (titanium, martian iron, etc.)    |
+| Fuel           | TFMG diesel/gasoline compatibility for rocket fuel (native compat)                       |
+| Food           | Farmer's Delight meals eatable in space when oxygen is present                           |
 
 ### Northstar — Interplanetary Travel
 
@@ -3064,17 +3064,17 @@ In the game instance:
 
 ### Integration With Tech Base
 
-|| System             | How it connects                                                                                                    |
-||--------------------|--------------------------------------------------------------------------------------------------------------------|
-|| **Power**          | Mekanism generators at Moon base. Universal cables power Northstar machines                                       |
-|| **Ore processing** | Bring planet ores (titanium, martian iron, tungsten) back to Mekanism line. 5x works on Northstar ores             |
-|| **Storage**        | AE2 ME drives store Northstar materials. Autocraft rocket components. Quantum link or P2P tunnel to off-world base |
-|| **Transport**      | Create trains move rocket materials to the launch site. Conveyors feed the Rocket Station                          |
-|| **Fuel**           | TFMG diesel/gasoline compatibility for Northstar rocket fuel (native compat)                                       |
-|| **Backpacks**      | Netherite-upgraded backpacks carry oxygen tanks and supplies                                                       |
-|| **Food**           | Farmer's Delight meals eatable in space with oxygen present                                                        |
-|| **Gear**           | Space suit pieces are enchantable via the vanilla enchanting table                                                 |
-|| **MekaSuit**       | Pending compat bridge — modules make the MekaSuit a space suit once it tracks Redux 0.6.4+                        |
+| System             | How it connects                                                                                                    |
+|--------------------|--------------------------------------------------------------------------------------------------------------------|
+| **Power**          | Mekanism generators at Moon base. Universal cables power Northstar machines                                       |
+| **Ore processing** | Bring planet ores (titanium, martian iron, tungsten) back to Mekanism line. 5x works on Northstar ores             |
+| **Storage**        | AE2 ME drives store Northstar materials. Autocraft rocket components. Quantum link or P2P tunnel to off-world base |
+| **Transport**      | Create trains move rocket materials to the launch site. Conveyors feed the Rocket Station                          |
+| **Fuel**           | TFMG diesel/gasoline compatibility for Northstar rocket fuel (native compat)                                       |
+| **Backpacks**      | Netherite-upgraded backpacks carry oxygen tanks and supplies                                                       |
+| **Food**           | Farmer's Delight meals eatable in space with oxygen present                                                        |
+| **Gear**           | Space suit pieces are enchantable via the vanilla enchanting table                                                 |
+| **MekaSuit**       | Pending compat bridge — modules make the MekaSuit a space suit once it tracks Redux 0.6.4+                        |
 
 ### Progression Placement
 
@@ -3091,13 +3091,13 @@ Start with Moon missions and a sealed Moon base, then Mars. Mercury and Venus ar
 
 ### Session Plan — Wave 7
 
-|| Session                      | Focus                                                                                                 | What to Build              |
-||------------------------------|-------------------------------------------------------------------------------------------------------|----------------------------|
-|| **Session 1 — Ground prep**  | Build Rocket Station + Rocket Controls. Process Titanium. Assemble and superglue the rocket            | Launch infrastructure      |
-|| **Session 2 — First launch** | Craft Telescope, take Readings. Craft Iron Space Suit, fill oxygen. Launch to the Moon                 | First off-world base       |
-|| **Session 3 — Moon base**    | Sealed base: Oxygen Sealer + Filler. Waystone. Mine lunar sapphire. Chunk Loader                       | Sustainable Moon operation |
-|| **Session 4 — Mars**         | Smelt Martian Steel. Land on Mars, mine martian iron and titanium. Temp base + weapons for hostile mobs | New resources              |
-|| **Session 5+ — Deep space**  | Mercury (tungsten, heat). Venus (endgame). Martian Steel Space Suit. Space Atlas + Return Tickets       | Interplanetary logistics   |
+| Session                      | Focus                                                                                                 | What to Build              |
+|------------------------------|-------------------------------------------------------------------------------------------------------|----------------------------|
+| **Session 1 — Ground prep**  | Build Rocket Station + Rocket Controls. Process Titanium. Assemble and superglue the rocket            | Launch infrastructure      |
+| **Session 2 — First launch** | Craft Telescope, take Readings. Craft Iron Space Suit, fill oxygen. Launch to the Moon                 | First off-world base       |
+| **Session 3 — Moon base**    | Sealed base: Oxygen Sealer + Filler. Waystone. Mine lunar sapphire. Chunk Loader                       | Sustainable Moon operation |
+| **Session 4 — Mars**         | Smelt Martian Steel. Land on Mars, mine martian iron and titanium. Temp base + weapons for hostile mobs | New resources              |
+| **Session 5+ — Deep space**  | Mercury (tungsten, heat). Venus (endgame). Martian Steel Space Suit. Space Atlas + Return Tickets       | Interplanetary logistics   |
 
 **Tip**: Space is the most resource-intensive activity. Don't rush it. Each planet should feel like a meaningful expansion. Note: the MekaSuit is **not** a Northstar space suit by default — you still need the Iron/Martian Steel suits for oxygen. The *Mekanism × Create: Northstar* compat mod adds MekaSuit space-suit modules; it's queued for the pack once it tracks Redux 0.6.4+.
 

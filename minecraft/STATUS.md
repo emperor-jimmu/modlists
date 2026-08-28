@@ -1,3 +1,10 @@
+### Wave 7 Broken Tables Fixed — Extra Leading Pipes (Aug 28, 2026)
+
+- [x] **User report**: Wave 7 tables render as literal text in the PDF ("|| Layer | Northstar Redux ↔ Tech Mod Interaction |" + stray rule line).
+- [x] **Root cause**: 28 table rows across the guide started with `||` (one extra leading pipe) instead of `|` — cmarker (Typst markdown renderer) stops recognizing them as table rows, so they fall through as literal text. Affected: Wave 7 "Core Space Mod" row, "Integration with Tech Mods" (8 rows), "Integration With Tech Base" (11 rows), "Session Plan — Wave 7" (7 rows), and the Distant Horizons "Show LOD Gen Progress" row (Wave 0).
+- [x] **Fix**: normalized the leading-pipe run to exactly one `|` on all 28 lines (`^\|+` → `|`). Verified: zero `^\|\|` lines remain in GUIDE.md; regenerated PDF contains zero literal `||` strings; the "Integration with Tech Mods" table now renders as proper columns (Layer | Northstar Redux ↔ Tech Mod Interaction; Power/Energy/Storage rows).
+- [x] DRIFTWOOD-GUIDE.pdf regenerated
+
 ### Macaw's Fences and Walls Adopted — 5th Macaw's Module Doc-Gap Closed (Aug 28, 2026)
 
 - [x] **User flag**: "I think we're missing this one" — Macaw's Fences and Walls (CurseForge `macaws-fences-and-walls`). Verified: it's the pack's 5th Macaw's module — already documented in the "Macaw's — Complete Building Set" prose ("Five modules" + a "Fences" bullet), but its Wave 6 table row and mod count were never added (table listed only Bridges/Doors/Roofs/Windows; count said "Macaw's (4)").
