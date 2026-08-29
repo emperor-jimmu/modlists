@@ -95,7 +95,7 @@ Mod Management       Add mods one wave at a time, test launch after each wave
                          - Xaero's Minimap / JourneyMap (minimap)
                          - AppleSkin (food info)
                          - Loot Journal (pickup notifications)
-                         - Advancement Plaques (advancement plaques)
+                         - Fancy Notify + Fancy Toasts (toast/notification popups)
 
                          - Modern UI (modernized UI framework — text engine, fancy tooltips, GUI blur)
                          - Traveler's Titles (biome/dimension entry titles)

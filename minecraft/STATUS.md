@@ -1,3 +1,14 @@
+### Toast Stack Reconciled — Fancy Notify + Fancy Toasts Replace Advancement Plaques + Toast Control (Aug 29, 2026)
+
+- [x] **User flag**: guide still lists Advancement Plaques + Toast Control; "we now use Fancy Notify + Fancy Toasts".
+- [x] **Doc drift found**: the Aug 25-26 FN/FT entries claimed "GUIDE.md updated" but the edits never landed — the guide kept the pre-swap rows/bullets. This entry applies the actual stack.
+- [x] **Fancy Notify re-adopted** (1.0.1+, CurseForge `fancy-notify`): the 1.0.0 MusicManager startup NPE is fixed — [Bivrik/FancyNotify#3](https://github.com/Bivrik/FancyNotify/issues/3) closed by Bivrik Aug 26 2026; commits show the fix + explicit "Compatibility with Fancy Toasts" (FT owns advancement popups; FN owns recipe/system/music/etc. toasts + per-type filters).
+- [x] **Removed from guide**: Advancement Plaques (Wave 0 Inventory & UI — jar already out of the instance Aug 25) and Toast Control (its silencing role is now FN Filters → Recipes). Iceberg stays (Item Borders); Placebo stays (FastWorkbench + Wave 3 deps). Fancy Toasts 1.5.0 (Modrinth, zero deps) + Fancy Notify 1.0.1+ (CurseForge) documented in their place.
+- [x] **GUIDE.md**: Inventory & UI table rows (−Advancement Plaques −Toast Control +Fancy Toasts 1.5.0 +Fancy Notify 1.0.1+), bullets rewritten (incl. Biomes filter OFF note + FT compatibility note), Better Advancements pairing note, Game Rules note (popups via Fancy Toasts), Mod Count Summary annotations (2:2 swap — counts unchanged: Wave 0 10/10/21, Total 179/42/221).
+- [x] **AGENTS.md**: QoL list Advancement Plaques → Fancy Notify + Fancy Toasts.
+- [ ] **Instance action (XMCL)**: ensure `fancynotify-1.0.1+…` jar (CurseForge download — verify exact file/version) is in `mods/`; remove `toastcontrol*.jar` if present (Advancement Plaques jar already removed Aug 25); keep `fancytoasts-1.5.0-neoforge-1.21.1.jar`. [VERIFY] at next launch: advancement popups render Fancy Toasts style; recipe/system/music toasts render Fancy Notify style; Mods screen → Fancy Notify → Filters → **Biomes OFF**; no double toasts (FN × FT compat); no missing-dependency errors (Iceberg/Placebo still present).
+- [x] DRIFTWOOD-GUIDE.pdf regenerated
+
 ### Immersive Armor HUD → Detail Armor Bar Reconstructed Swap (Aug 29, 2026)
 
 - [x] **User-reported bug**: Immersive Armor HUD icons stay visible when Auto HUD hides the rest of the HUD.
