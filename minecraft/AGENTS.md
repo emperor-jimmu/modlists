@@ -8,7 +8,7 @@ This document defines the vision, constraints, and working conventions for this 
 
 This modpack is built around four pillars that must coexist in every design decision:
 
-1. **Serious power fantasy** — the player should eventually become godlike. Flight, oneshotting bosses, extreme mobility, personal invincibility. Power is personal — world-altering magic is kept minimal or absent. The player becomes a demigod, not a world-shaper. **RPG-style progression** reinforces this — unique gear drops, accessory leveling (Relics), a passive XP/skill-point character layer (Tyz's Skills), and steady power growth keep the player feeling stronger even between gear upgrades.
+1. **Serious power fantasy** — the player should eventually become godlike. Flight, oneshotting bosses, extreme mobility, personal invincibility. Power is personal — world-altering magic is kept minimal or absent. The player becomes a demigod, not a world-shaper. **RPG-style progression** reinforces this — unique gear drops, accessory leveling (Relics), a passive XP/skill-point character layer (Improvable Skills), and steady power growth keep the player feeling stronger even between gear upgrades.
 
 2. **Easy-to-standard difficulty curve** — the early game is accessible and forgiving. The ramp is smooth, never a wall. No single biome, mob, or mechanic gatekeeps progress. Difficulty escalates at the player's pace through voluntary engagement with harder content.
 
