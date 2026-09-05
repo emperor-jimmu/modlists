@@ -1,3 +1,11 @@
+### Upscaled Mekanism 32x Added — Mekanism 32x Layer (Sep 5, 2026)
+
+- [x] **User request**: add [Upscaled Mekanism 32x](https://modrinth.com/resourcepack/upscaled-mekanism-32x). Fit confirmed: closes the last gap in the 32x mod tier (Improved Create 32x + Improved AE2 32x already in; nothing covered Mekanism) — Faithful-style 32x for Mekanism blocks/items/GUIs above the Faithful 32x base. Modded Coffee GUI explicitly leaves Mekanism screens alone, so zero overlap on either surface. Bright Mekanism GUIs remain — user-confirmed acceptable.
+- [x] **Pinned v1.5** (`Upscaled Mekanism 32x v1.5 - [1.20.1-1.21.1].zip`, ~1.9 MB, Aug 13 2026, release; Modrinth API verified — version id `4qeAalJ9`, `dependencies: []`, 1.21.1 ✅). Covers Mekanism core + Generators + Additions + Tools + JEI Mekanism Multiblocks (Tools/Additions coverage is bonus — neither is in the pack). CC-BY-NC-SA-4.0 — link + XMCL install only. Niche traction (~1.5k project DL) accepted: pure texture overlay, no code risk.
+- [x] **GUIDE.md updated**: Texture Packs table (+row after Improved AE2), blurbs (+Upscaled Mekanism 32x blurb; Modded Coffee "not covered" clause now notes Mekanism blocks/items are 32x-covered, GUIs still bright), Resource Pack Load Order (new #5 in the 32x tier; renumbered to 25 entries, Faithful 32x base now #25). Mod Count Summary: Wave 0 note `+24 → +25 resource packs`; Total changelog appended. No mod/config/keybinding/datapack changes.
+- [ ] **Instance action (XMCL)** — add `Upscaled Mekanism 32x v1.5 - [1.20.1-1.21.1].zip` to the instance's `resourcepacks/` and enable it in the 32x tier above Faithful 32x. [VERIFY] at next launch: Mekanism machines/cables/items render 32x; no resource-pack incompatibility warnings.
+- [x] DRIFTWOOD-GUIDE.pdf regenerated
+
 ### Streams Reflowing Adopted — Wave 2 Hydrology (Sep 2, 2026)
 
 - [x] **User request**: review [Streams Reflowing](https://modrinth.com/mod/streams-reflowing) for the guide — "will it fit?" Fit confirmed: restores the flowing-water *capability* lost with Dynamic Waters (removed Aug 27 — world-breaking river-carve bug) without re-adopting that codebase. Successor role in Wave 2 — Overworld Worldgen (Terralith + Tectonic keep their lanes; nothing else does hydrology).
