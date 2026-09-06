@@ -54,14 +54,14 @@ only -- every visual mod must justify its frametime cost.
 ### Environment Textures Overhaul - ETO
 
 - **Nexus:** https://www.nexusmods.com/cyberpunk2077/mods/13372
-- **Version:** Verify
-- **Released:** 2024-03-08
+- **Version:** 1.3
+- **Released:** 2025-09-16
 - **Summary:** Comprehensive overhaul of environment textures including roads, sidewalks, buildings, and terrain at 4K resolution.
 - **Why:** Supports the modlist's 4K baseline with high-resolution environment textures. Replaces vanilla textures that look blurry at 4K, significantly improving visual fidelity of Night City's surfaces.
 - **Conflicts:** Will be overwritten by any mod that changes the same textures. Install early in load order.
 - **Dependencies:** None (texture replacer)
-- **MO2 Notes:** Extract to `archive/pc/mod/`. Install early -- other texture mods should overwrite ETO where they conflict. Large download size.
-- **Performance:** Heavy (increased VRAM usage from 4K textures)
+- **MO2 Notes:** Extract to `archive/pc/mod/`. Install early -- other texture mods should overwrite ETO where they conflict. Large download size. Take the 2K version -- the author flags 4K as not recommended for high RT/PT, and 2K is the recommended tier.
+- **Performance:** Heavy (increased VRAM usage; 2K tier measured +0.7GB over vanilla with no RT/PT)
 
 ---
 
@@ -89,6 +89,20 @@ only -- every visual mod must justify its frametime cost.
 - **Conflicts:** None known (shader-level fixes)
 - **Dependencies:** None (standalone)
 - **MO2 Notes:** Extract to game root. Works alongside other visual mods.
+- **Performance:** None
+
+---
+
+### Blur Begone (Clear Materials with Refraction)
+
+- **Nexus:** https://www.nexusmods.com/cyberpunk2077/mods/8105
+- **Version:** 1.26.0
+- **Released:** 2026-09-02
+- **Summary:** Removes blur and haze from translucent materials (glass, plastic, vinyl) for clear, sharp surfaces with proper reflection and refraction.
+- **Why:** Vanilla frosts glass and translucent surfaces with a milky blur that looks dated at 4K. By CyanideX (Nova LUT author), 10K endorsements and actively maintained -- clean sharpness gain with no per-frame cost.
+- **Conflicts:** Test alongside Preem Mirrors (#25633) -- different surfaces (translucent props vs. mirror shaders), expected compatible.
+- **Dependencies:** None (material/mesh replacer)
+- **MO2 Notes:** Extract to game root. Optional Preem Windows addon also clears building exterior windows -- take it only if exteriors look frosty in your setup.
 - **Performance:** None
 
 ---
@@ -173,19 +187,35 @@ only -- every visual mod must justify its frametime cost.
 - **MO2 Notes:** Extract to `archive/pc/mod/`. Install BEFORE ETO and other texture mods — let other visual mods overwrite where they conflict. Large download (multi-GB). Performance testing at 4K recommended.
 - **Performance:** Moderate (increased VRAM usage from high-resolution textures; author's optimizations aim to offset this)
 
+---
+
+### Nova LUT 4.0 (AgX - New HDR)
+
+- **Nexus:** https://www.nexusmods.com/cyberpunk2077/mods/11622
+- **Version:** 4.0.0
+- **Released:** 2026-05-10
+- **Summary:** Color-grading LUT with AgX tonemapping -- natural palette and lifelike luminance with contrast pop. Includes SDR/HDR variants and LUT Switcher pack (ENV bundled).
+- **Why:** The list's cinematic color baseline. By CyanideX, 16K+ endorsements and actively maintained. Pick ONE LUT and stick with it -- v4 supersedes the older v3 presets.
+- **Conflicts:** Mutually exclusive with any other LUT or Reshade preset. Stacks with ReLUX (#20808, lighting vs. grading) -- do a visual coherence pass since both shift mood.
+- **Dependencies:** None (LUT replacer; optional LUT Switcher pack for variants)
+- **MO2 Notes:** Extract to game root. Choose one preset matching your display (HDR variants for PT). Install last so grading applies over fixed lighting.
+- **Performance:** None (LUT only)
+
 ## Install Order
 
 1. Cyberpunk 2077 HD Reworked Project
-2. Environment Textures Overhaul - ETO
+2. Environment Textures Overhaul - ETO (2K version)
 3. Expanded Citizens
 4. No More Duplicate NPCs
 5. Beautiful IRIS - Eyes Texture for NPC
 6. Immersive Night City Fixes
 7. General Shadows Fixes
-8. Night City Recolor
-9. Preem Mirrors - Reflective Mirror Materials
-10. Nova Rain (and Improved Ripples)
-11. ReLUX (Lighting Redux)
+8. Blur Begone (Clear Materials with Refraction)
+9. Night City Recolor
+10. Preem Mirrors - Reflective Mirror Materials
+11. Nova Rain (and Improved Ripples)
+12. ReLUX (Lighting Redux)
+13. Nova LUT 4.0 (AgX - New HDR)
 
 **Notes:**
 

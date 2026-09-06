@@ -170,11 +170,11 @@ and moment-to-moment action. How combat and encounters play out.
 - **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/22340>
 - **Version:** Verify
 - **Released:** June 2025
-- **Summary:** Adds dynamic camera movement in first-person — head bob, inertia, leaning, and contextual camera shifts based on movement and actions.
+- **Summary:** Adds dynamic camera movement in first-person — head bob, inertia, leaning, and contextual camera shifts based on movement and actions. Also covers the first-person vehicle camera with per-vehicle presets (angle, FOV, shake, responsiveness).
 - **Why:** Vanilla first-person camera is rigid and disconnected from V's movement. Shift adds physical presence to the first-person view, making walking, running, and combat feel more grounded without affecting aim or gameplay.
-- **Conflicts:** Check compatibility with Immersive First Person (#9309) — Shift focuses on camera dynamics while IFP focuses on body visibility. May be complementary.
+- **Conflicts:** Check compatibility with Immersive First Person (#9309) — Shift focuses on camera dynamics while IFP focuses on body visibility. If stacking, disable the vehicle-camera features in one of them and keep Shift's presets. No conflict with the third-person vehicle toolkit (#20476, different domain).
 - **Dependencies:** Cyber Engine Tweaks, Native Settings UI (optional)
-- **MO2 Notes:** Extract to CET plugins folder. Configure intensity via Native Settings UI. Test alongside Immersive First Person for compatibility.
+- **MO2 Notes:** Extract to CET plugins folder. Configure on-foot intensity and per-vehicle camera presets via Native Settings UI. Test alongside Immersive First Person for compatibility.
 - **Performance:** None
 
 ### Easier Controller Sprint
