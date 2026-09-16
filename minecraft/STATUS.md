@@ -1,3 +1,12 @@
+### Shader Config Tripled — Photon + Bliss Join Solas (Sep 16, 2026)
+
+- [x] **User request**: 3-fold config/info for Bliss/Solas/Photon + verify 9900X CPU Load + revisit the "LODs invisible past 100 blocks" claim per shader.
+- [x] **Research** (background agent, primary sources only): `minecraft/docs/shader-comparison.md` (222 lines) — Solas V3.7b / Photon v1.3b / Bliss v2.1.2 on MC 1.21.1 + Iris. Key findings: all three have native DH LOD programs; only Solas has generated PBR (Photon/Bliss go flat micro-surface on map-less Faithful 32x — expected, not misconfig); only Solas has official ColorWheel support (Photon/Bliss patcher-only, [UNVERIFIED] live); Bliss snow LODs discolor with Seasons ON (upstream #246/#357 closed `not_planned` — Seasons OFF is load-bearing); Photon owns a DH settings screen (overdraw 16/noise ON); Bliss has the richest LOD menu but no quality profiles. LOD-legibility claim corrected: Solas-specific, not general — Photon's noise/SSS keeps LODs legible farther.
+- [x] **9900X verdict**: 12C/24T Zen 5 — Aggressive CPU Load confirmed correct; the "drop to Balanced" tip is for <8-core rigs only.
+- [x] **GUIDE.md updated**: Shaderpack table +Photon +Bliss rows; per-shader settings sections (Photon High-profile table + FPS order with TAAU reserve lever; Bliss defaults table + FPS order, Seasons-OFF warning); DH note rewritten per-shader (Solas SS-shadows/LOD-reflection, Photon overdraw/noise, Bliss AO/SSR/noise + Seasons OFF); launch checklist generalized (shader choice, CPU Load Aggressive-on-8+-cores rule); Session 1, Forgematica caveat, Grassier Grass + Bumblezone blurbs de-Solas'd. Solas stays main shader — no pick change.
+- [ ] **Instance action (none required)** — Solas setup unchanged. Trying Photon/Bliss is opt-in: drop that shader's `.zip` into `shaderpacks/` and follow its settings table. [VERIFY] if switching: LODs render clean at 128; Create contraptions render (patcher needed for full ColorWheel lighting — [UNVERIFIED]); Bliss winter-biome check with Seasons OFF.
+- [x] DRIFTWOOD-GUIDE.pdf regenerated
+
 ### Wave -1 Keybind Section Removed — Mods Not Installed Yet (Sep 16, 2026)
 
 - [x] **User report**: "Keybind to Set Immediately" in Wave -1 makes no sense — Waystones/Sodium/LambDynamicLights/Backpacks/JourneyMap aren't installed yet at that point.

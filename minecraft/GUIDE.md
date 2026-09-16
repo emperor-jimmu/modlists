@@ -160,6 +160,8 @@ The essentials that make the game run well. Performance, rendering, shaders, chu
 | Shaderpack                                               | Description                                                                                                                                       |
 |----------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Solas Shader](https://modrinth.com/shader/solas-shader) | Main shader — modern fantasy look by Septonious; colored lighting, ray-marched volumetrics, generated PBR + Distant Horizons support, iris-native |
+| [Photon Shader](https://modrinth.com/shader/photon-shader) | Alt 1 — crisp realistic look (sixthsurge); native DH LOD support with own DH settings screen; LabPBR-only (no generated PBR — flat micro-surface on map-less Faithful 32x); ColorWheel via patcher only ([UNVERIFIED] live). Use **v1.3b** |
+| [Bliss Shader](https://modrinth.com/shader/bliss-shader) | Alt 2 — cinematic heavy-volumetric look (X0nk, Chocapic13 V9 edit); native DH support (v2.1.0+) with the richest LOD settings menu; LabPBR-only; ColorWheel via patcher only, weakest of the three ([UNVERIFIED] live). Use **v2.1.2**. ⚠ keep Seasons/Seasonal Colours OFF with DH (pink/green/blue snow-LOD bug, upstream `not_planned`) |
 
 **Solas Shader** is the pack's main shader (Septonious) — a modern fantasy-stylized look: smooth, saturated lighting, 3D volumetric clouds, volumetric light, colored block lighting, aurora/Milky Way skies, and an integrated generated-PBR system. Runs on Iris (NeoForge) with zero extra mods. Use **V3.7** — Distant Horizons support is native (dedicated LOD programs, no shader-side setup; V3.7 fixed DH/Voxy translucency blending). Quality profiles run Low → Medium → **High (default)** → Ultra; LabPBR/SEUS resourcepack PBR is supported alongside the internally generated PBR.
 
@@ -187,10 +189,45 @@ Start from the **High** profile (the shader's default), then apply the table bel
 | Water                                   | Water Reflections · Normals (Perlin-Worley) · Caustics · Light Refraction | ON (defaults)                         | Solas water look; all cheap at 4K                                                                                                                                                            |
 | Cinematic Effects & Post Processing     | TAA                                                                       | ON (default)                          | temporal SSAO / screen-space-shadows cleaner                                                                                                                                                 |
 | Cinematic Effects & Post Processing     | FXAA                                                                      | OFF (default)                         | TAA supersedes it                                                                                                                                                                            |
-| Cinematic Effects & Post Processing     | Depth of Field · Motion Blur                                              | OFF (defaults)                        | keep off — build & mine clarity, and both cost frames at 4K                                                                                                                                  |
 | Cinematic Effects & Post Processing     | Bloom · Lens Flare                                                        | ON (defaults)                         | cheap; part of the signature glow                                                                                                                                                            |
+| Cinematic Effects & Post Processing     | Depth of Field · Motion Blur                                              | OFF (defaults)                        | keep off — build & mine clarity, and both cost frames at 4K                                                                                                                                  |
 
-> **Distant Horizons — no shader-side setup**: unlike Bliss, Solas has no DH settings screen — DH support is native (the shader ships dedicated `dh_terrain`/`dh_water` LOD programs, and V3.7 fixed DH/Voxy translucency blending). Two options interact with LODs: **Screen Space Shadows ON** (above — shades LOD terrain past the realtime shadow distance) and **PBR → Material → Specular & Reflections → LOD Reflection: Fancy (default)** — "determines the quality of DH and Voxy chunks in reflections". DH cloud rendering stays OFF (shader default) — Solas draws its own volumetric clouds. If you ever see dithering noise on LOD chunks, the DH settings screen's noise texture (NOISE_INTENSITY / NOISE_DROPOFF) still applies.
+#### Photon Shader Settings — Recommended
+
+Start from the **High** profile, then apply the table below. Same screens path as Solas: Options → Video Settings → Shaderpacks → Photon → **Shader Settings**. Values tuned for the pack's target (RTX 4080 SUPER, 4K, 70–80 FPS, DH LODs at 128–256). Photon has **no generated PBR** — on map-less Faithful 32x, blocks get correct lighting but flat micro-surface; that is the expected look difference vs Solas, not a misconfiguration.
+
+| Settings screen | Option | Recommended | Why |
+|---|---|---|---|
+| (shader settings top) | **Profile** | **High** | VL + GTAO + SSRT shadows without Ultra's voxel colored lights (Ultra-only, Iris-only). Ultra's extras blow the 4K budget |
+| Lighting → Shadows | Shadow Resolution | 2048 (default) → **1024** if FPS < 70 | classic first shadow lever |
+| Lighting → Shadows | Shadow Distance | 192 (default) → **128** if needed | DH shades the distance anyway |
+| Lighting → Shadows | Screen Space Shadows (SSRT) | ON | shades LOD terrain past the realtime distance — the DH-relevant one |
+| Mods → Distant Horizons | DH Overdraw Distance / Fade Length | **16 / 16** (defaults) | LOD edge blending — leave at defaults unless LOD seams appear |
+| Mods → Distant Horizons | Noise on DH Terrain | **ON** | high-frequency detail noise keeps far LODs legible — this is why Photon LODs read farther than Solas |
+| Lighting | Colored Lights (voxel) | OFF (default below Ultra) | Ultra-only feature — do not force-enable on High |
+| Post | TAAU (temporal upscaling) | OFF (default) → **ON at 0.75** as emergency lever | reserve FPS lever before touching LOD distance; off by default so enable only if needed |
+| Clouds | Cloud steps | defaults → **reduce primary/lighting steps first** if FPS < 70 | volumetrics are Photon's biggest GPU cost after voxel lighting |
+
+**Photon FPS order**: cloud steps → SSRT steps → shadow 2048→1024 → **TAAU ON** → LOD distance down. Keep overdraw 16/noise ON throughout.
+
+#### Bliss Shader Settings — Recommended
+
+Bliss has **no quality profiles** — cost control is purely per-setting. Start from defaults (shadow 2048/distance 128), then apply the table below. Same screens path: Options → Video Settings → Shaderpacks → Bliss → **Shader Settings**. Like Photon, **no generated PBR** — lighting/fog carry the image on map-less Faithful 32x. Values tuned for the pack's target (RTX 4080 SUPER, 4K, 70–80 FPS, DH LODs at 128–256).
+
+| Settings screen | Option | Recommended | Why |
+|---|---|---|---|
+| Direct Light | Shadow Resolution / Distance | **2048 / 128** (defaults) → **1024** if FPS < 70 | classic first shadow lever |
+| Distant Horizons Settings | DH Ambient Occlusion · DH Screenspace Reflections · DH Noise Texture | **ON** | LOD depth/reflection/detail — the LOD legibility trio |
+| Distant Horizons Settings | DH Volumetric Clouds / VL Fog on LODs | **ON** (default) | far LODs keep volumetrics; turn off only as late lever |
+| Distant Horizons Settings | DH Shadowmap | ON | LODs receive shadows |
+| World / Seasons | **Seasons · Seasonal Colours** | **OFF** | ⚠ load-bearing — snow LODs discolor pink/green/blue with Seasons ON (upstream issues [#246](https://github.com/X0nk/Bliss-Shader/issues/246) / [#357](https://github.com/X0nk/Bliss-Shader/issues/357), closed `not_planned`) |
+| Clouds | Cloud raymarch steps | defaults → **reduce first** if FPS < 70 | heaviest Bliss cost center |
+| Post | Screenspace shadows (SSRT) ray count / steps | defaults → **reduce second** | second cost center |
+| Post | TAA upscaling scale | default → **lower** as late lever | reserve lever before touching LOD distance |
+
+**Bliss FPS order**: cloud raymarch steps → SSRT rays/steps → shadow 2048→1024 → TAA scale → LOD volumetric toggles → LOD distance down. Push LODs to 256 only after a winter-biome check passes without discoloration.
+
+> **Distant Horizons per shader**: **Solas** needs no shader-side setup — DH support is native (dedicated `dh_terrain`/`dh_water` LOD programs; V3.7 fixed DH/Voxy translucency blending). Two Solas options interact with LODs: **Screen Space Shadows ON** (above — shades LOD terrain past the realtime shadow distance) and **PBR → Material → Specular & Reflections → LOD Reflection: Fancy (default)** — "determines the quality of DH and Voxy chunks in reflections". **Photon** has its own DH screen (`mods → distant_horizons`): keep `DH_OVERDRAW_DISTANCE`/`DH_OVERDRAW_FADE_LENGTH` at 16, `NOISE_ON_DH_TERRAIN` ON. **Bliss** has the richest LOD menu (`DISTANT_HORIZONS_SETTINGS`): keep `DH_AMBIENT_OCCLUSION` + `DH_SCREENSPACE_REFLECTIONS` + `DH_NOISE_TEXTURE` ON — and **Seasons/Seasonal Colours OFF** (pink/green/blue snow-LOD bug, upstream `not_planned`). All three: DH cloud rendering stays OFF (each shader draws its own clouds). Full research: `docs/shader-comparison.md`.
 
 **General MC settings**: Graphics **Fancy**, Render Distance **10 chunks**, Simulation Distance **8 chunks**, Biome Blend **2 blocks**, Mipmap Levels **4x**, Entity Distance **100%**, Fullscreen ON, VSync OFF, Max Framerate **120**. Always Defer Chunk Updates **Enabled**, Use No Error Context **Enabled**.
 
@@ -330,11 +367,11 @@ Open **Video Settings → [colored tiles icon]** next to the FOV slider.
 
 #### 3. Shader Setup
 
-Drop **Solas Shader** `.zip` into `shaderpacks/`. In-game: Options → Video Settings → Shaderpacks → select Solas Shader. Works with Iris on NeoForge. Use **V3.7** — current release with native Distant Horizons support and ColorWheel compatibility fixes.
+Drop your chosen shader `.zip` into `shaderpacks/`. In-game: Options → Video Settings → Shaderpacks → select it. All three work with Iris on NeoForge: **Solas V3.7** (main — native DH support, ColorWheel fixes), **Photon v1.3b** (Alt 1 — own DH settings screen, ColorWheel via patcher), **Bliss v2.1.2** (Alt 2 — richest LOD menu, patcher-only ColorWheel, Seasons OFF with DH).
 
-Solas needs no add-on mods — it fully replaces the previous Complementary Unbound + Euphoria Patches setup.
+No shader needs add-on mods — Solas fully replaces the previous Complementary Unbound + Euphoria Patches setup.
 
-Recommended baseline (RTX 4080 SUPER, 16GB VRAM): High profile, tune from there — see the [Solas Shader Settings](#solas-shader-settings--recommended) table in [Shaderpack](#shaderpack) above (incl. the **Screen Space Shadows ON** rule for DH). General MC: Graphics Fancy, Render Distance 10, Simulation 8, VSync OFF.
+Recommended baseline (RTX 4080 SUPER, 16GB VRAM): High profile (Solas/Photon; Bliss has no profiles — start from defaults), tune from there — see the per-shader settings tables in [Shaderpack](#shaderpack) above (incl. each shader's DH rules). General MC: Graphics Fancy, Render Distance 10, Simulation 8, VSync OFF. DH CPU Load: Aggressive on 8+ cores, Balanced below.
 
 ---
 
@@ -533,7 +570,7 @@ These mods change how the game looks and feels. All are client-side and work imm
 - **Dark Coffee GUI + Modded Coffee GUI** — dark coffee-themed GUI retexture (replaces Mindful Darkness, Aug 2026 full swap). Dark Coffee GUI restyles all vanilla inventories + HUD icons (hearts, armor, food, hotbar) in a warm coffee palette; Modded Coffee GUI (load directly above it) extends the style to EMI, Create, Farmer's Delight, Waystones, Relics, Curios, Supplementaries, AppleSkin, Overflowing Bars, Spell Engine, Immersive Aircraft, Immersive Overlays, Sophisticated Storage/Backpacks (partial — scrollbar/search stay grey). **Not covered — stay bright vanilla**: Mekanism, AE2, MineColonies, dimension mods (Mindful Darkness darkened every GUI; that coverage is the loss). Modern UI compatible — no shader-pipeline fight; tooltip surface still Obscure Tooltips' (Modern UI tooltips off). v2.2.1 / v1.15.2, 1.21.1 verified; NOSHADERS variant if the text recolor glitches under Iris. Load order + details in Texture Packs. ⚠ **Modded Coffee GUI watch**: GUI-texture coverage of Detail Armor Bar Reconstructed unverified (cosmetic only — bar renders fine, palette may differ until a compat texture exists).
 - **Obscure Tooltips** — stylized tooltips: animated effects/particles, rarity-tinted flair, labels/shadows, auto-wrap, scrolling, armor + tool previews. **Owns the tooltip surface** — Modern UI's tooltip feature is off (Action Center `Ctrl+K`). Config: `config/obscuria/` (Fragmentum).
 - **BetterGrassify** — OptiFine-style connected grass: grass blocks, snowy grass, podzol, mycelium, dirt paths, farmland, and both nylium blend their side textures into surrounding terrain (Fancy, default) or use the top texture (Fast). Adds Better Snow + Better Snowy Grass for snowy biomes. Ships no textures — samples your active texture pack's sprites at runtime, so it works at any resolution; resource-pack compatibility mode is on by default. Set mode in config — YACL GUI (already in pack) or `config/bettergrass.json`. Requires Forgified Fabric API.
-- **Grassier Grass** — animated 3D grass blades with a wind shader (64/block, 160 radius defaults) — grass leans and ripples in gusts, sheds blade particles in strong wind. Iris + Distant Horizons compatible (DH fix in 1.4.0). **Flower clumps OFF** — Foxified Dense Flowers owns flowers. Pure client-side, zero deps. If FPS dips under Solas + DH, lower blades-per-block/render radius first.
+- **Grassier Grass** — animated 3D grass blades with a wind shader (64/block, 160 radius defaults) — grass leans and ripples in gusts, sheds blade particles in strong wind. Iris + Distant Horizons compatible (DH fix in 1.4.0). **Flower clumps OFF** — Foxified Dense Flowers owns flowers. Pure client-side, zero deps. If FPS dips under shaders + DH, lower blades-per-block/render radius first.
 
 ---
 
@@ -601,7 +638,7 @@ Forces villages to spawn on flat terrain. No more cliff-side or underwater villa
 
 | Session                         | Goal                                                                                                                                                                               |
 |---------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Session 1 — Setup**           | Launch, set keybinds, configure Distant Horizons (LOD 128-256, Medium quality). Install Solas shader. Enable Fresh Animations texture pack. Walk around spawn to generate LOD data |
+| **Session 1 — Setup**           | Launch, set keybinds, configure Distant Horizons (LOD 128-256, Medium quality, CPU Aggressive on 8+ cores). Install shader (Solas main; Photon/Bliss alts). Enable Fresh Animations texture pack. Walk around spawn to generate LOD data |
 | **Session 2 — Survival basics** | Punch trees, build a starter shack, find food, get iron. Place your first Waystone. Craft a Sophisticated Storage barrel. Craft a backpack                                         |
 | **Session 3 — Comfort**         | Explore nearby terrain. Find a village. Set up a bed. Light up your base perimeter. Start noticing Traveler's Titles when entering new biomes                                      |
 
@@ -1128,7 +1165,7 @@ These schematics complement the Driftwood progression. All are free downloads �
 - **Forgematica × MineColonies**: The Oasis Sanctuary (`10-Oasis Sanctuary Schematic-from-abfielder.litematic`) makes a landmark-scale colony centerpiece; the Simple Medieval House (`4-use this-from-abfielder.litematic`) and Large Farmhouse (`7-Large_Farmhouse-from-abfielder.litematic`) work as early colony housing, and the Trading Hall with Basement (`6-Trading-Hall-from-abfielder.litematic`, ID:3396) anchors a villager economy beside the colony.
 - **Forgematica × AE2**: The Cozy Mountain Chalet's (`13-Snowy Chalet-from-abfielder.litematic`) large storage room is built for pre-AE2 bulk storage — once you transition to ME drives, repurpose it as overflow or a decorative archive hall.
 - **Forgematica × Enchanting**: The Cozy Mountain Chalet (`13-Snowy Chalet-from-abfielder.litematic`) has a built-in enchanting corner, and the Simple Medieval House (`4-use this-from-abfielder.litematic`), Ultimate Survival Base (`5-Ultimate Survival Base by Emik-from-abfielder.litematic`), Large Farmhouse (`7-Large_Farmhouse-from-abfielder.litematic`), and Modern Stone and Wood House (`20-casa-moderna-de-qdkqmx4d.litematic`) each include an enchanting table — base your enchanting setup on whichever room you like best.
-- **Shader caveat**: Forgematica hologram rendering may flicker with Solas shaders. Toggle shaders off (`K`) while placing schematics, then re-enable. The 1.21.1 compatibility is better than newer MC versions — distortion is usually minor.
+- **Shader caveat**: Forgematica hologram rendering may flicker under shaders (Solas/Photon/Bliss). Toggle shaders off (`K`) while placing schematics, then re-enable. The 1.21.1 compatibility is better than newer MC versions — distortion is usually minor.
 - **Survival constraint**: Forgematica is purely a visual guide. No blocks are auto-placed. Every resource must be gathered and placed by the player in survival mode. This respects the pack's survival-only constraint.
 
 **Install**: In XMCL, search `Forgematica` in the Mods tab, or download the `.jar` from CurseForge and drop into `mods/`. Create a `schematics/` folder in your instance directory, then drop downloaded `.litematic` (or `.schem`) files there. Forgematica will pick them up automatically on next launch.
@@ -1760,7 +1797,7 @@ A cozy bee-themed dimension entered directly from any **bee nest or beehive** �
 - **Neo Bee Fix** (Wave 4) — its vanilla bee AI repairs apply inside the dimension too (Bumblezone's bees are vanilla bees at heart)
 - **Farmer's Delight** — honey, royal jelly, and bee bread feed FD honey recipes (e.g., Honey Glazed Ham)
 - **Field Guide** — auto-catalogs Bumblezone mobs and plants
-- **Bundled resource packs** (from the mod, enable in Resource Packs): **Bumblezone - Shader Emissive** for glowing blocks under Solas (works with ETF/Continuity now in the pack); **Bumblezone - Anti Tripophobia** replaces the trippy honey patterns with plain textures — enable if they bother you
+- **Bundled resource packs** (from the mod, enable in Resource Packs): **Bumblezone - Shader Emissive** for glowing blocks under shaders (works with ETF/Continuity now in the pack); **Bumblezone - Anti Tripophobia** replaces the trippy honey patterns with plain textures — enable if they bother you
 
 **Chill fit**: fully opt-in, no gates, no structure hunting — enter any hive whenever you like. Honey/wax builds a cozy supply chain; deeper structures (Mite Fortress) reward mid-game gear.
 
