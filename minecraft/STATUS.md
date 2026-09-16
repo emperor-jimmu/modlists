@@ -1,3 +1,13 @@
+### Grassier Grass Adopted — Animated Grass Blades, Wave 0 Visual QoL (Sep 16, 2026)
+
+- [x] **User request**: consider adding [Grassier Grass](https://modrinth.com/mod/grassier-grass). Fit confirmed: animated 3D grass blades via a custom wind shader (64/block, 160 radius defaults) — grass leans/ripples in gusts, sheds blade particles in strong wind. Complements (not duplicates) BetterGrassify (block-side blending), Foxified Dense Flowers (flowers), Motsch's Better Leaves (leaves). Chill-living win, neutral on power/difficulty/runway.
+- [x] **Pinned 1.4.5** (`grassiergrass-neoforge-1.4.5+mc1.21.1.jar`, ~2.3 MB, Jul 18 2026, release; Modrinth API verified — version id `hWKkBn3u`, `dependencies: []`, NeoForge 1.21.1 ✅). `client_only` (single-player: integrated server unaffected). ARR license — link + XMCL install only. Project active (~292K DL).
+- [x] **Compat**: Iris shader support incl. shadows toggle (leave OFF — default), Distant Horizons fix in 1.4.0 (Solas-native LOD programs unaffected). **Flower clumps OFF** — 1.4.2's Dense-Flowers-inspired toggle would duplicate Foxified Dense Flowers; Foxified owns flowers.
+- [x] **Perf watch**: 64 blades/block @ 160 radius under Solas High + DH 128–256 could pressure the 70–80 FPS 4K budget — blades-per-block + render radius + wind limit are in-Sodium-menu sliders; documented "tune down first if FPS < 70".
+- [x] **GUIDE.md updated**: Wave 0 Visual & Client QoL table +row; What-to-Expect +Grassier Grass bullet (flower-clumps-OFF rule, perf lever); Mod Count Summary: Wave 0 notes clause appended (numerics untouched — stale groupings per Streams precedent); Total `181/43/224 → 182/43/225` (mods +1, deps unchanged) + changelog appended.
+- [ ] **Instance action (XMCL)** — add `grassiergrass-neoforge-1.4.5+mc1.21.1.jar` from Modrinth (`grassier-grass`) to `<instance>\mods\` — instance `Driftwood` at `C:\Users\nimro\.minecraftx\instances\Driftwood`. Zero deps. [VERIFY] at next launch: grass blades sway in wind; no missing-dependency errors; Iris/Solas clean (shadows OFF); DH LODs clean; Foxified flower fields untouched (flower clumps OFF); FPS within budget or blades/radius tuned down.
+- [x] DRIFTWOOD-GUIDE.pdf regenerated
+
 ### Upscaled Mekanism 32x Added — Mekanism 32x Layer (Sep 5, 2026)
 
 - [x] **User request**: add [Upscaled Mekanism 32x](https://modrinth.com/resourcepack/upscaled-mekanism-32x). Fit confirmed: closes the last gap in the 32x mod tier (Improved Create 32x + Improved AE2 32x already in; nothing covered Mekanism) — Faithful-style 32x for Mekanism blocks/items/GUIs above the Faithful 32x base. Modded Coffee GUI explicitly leaves Mekanism screens alone, so zero overlap on either surface. Bright Mekanism GUIs remain — user-confirmed acceptable.
