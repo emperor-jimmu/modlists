@@ -1,3 +1,9 @@
+### Chunk-Loader Alternatives Researched — Incumbent Keeps the Job (Sep 16, 2026)
+
+- [x] **User request**: research whether any chunk-loader mod beats Chunk Loaders for this pack. Background agent, primary sources only → `minecraft/docs/chunkloader-alternatives.md` (13 candidates checked against the Modrinth API for real 1.21.1 NeoForge builds).
+- [x] **Verdict: KEEP the incumbent.** Only SuperMartijn642 Chunk Loaders satisfies all of: real 1.21.1 build + confirmed random ticks + craftable-no-fuel + per-chunk map control + 7×7 coverage + zero new deps + no role duplication. Runner-up Create: Power Loader (2.49M DL, zero new deps, Create-native incl. train loading) loses on 5×5 max coverage, brass-gating timing, and [UNVERIFIED] ticks — and adopting it *for trains* alongside the incumbent would duplicate the loader role. Load My Chunks rejected (ticks OFF by default — every farm needs a second Broadcaster block); 2mal3 rejected (documented NO plant growth + redstone/min fuel tax); FTB Chunks rejected (claim-map duplicates JourneyMap's surface + 2 new deps + dead team machinery in solo); Fakeplayer + 6 others disqualified (no 1.21.1 build or Fabric-only).
+- [x] No GUIDE.md/STATUS-count/config/PDF changes — research doc only. Migration notes captured in the doc if a future revisit reverses this.
+
 ### Bliss Removed — Back to Solas + Photon (Sep 16, 2026)
 
 - [x] **User decision**: remove Bliss, same day it was added. Standing reasons: weakest Create/ColorWheel support (no in-repo integration, patcher-only), no generated PBR (flat on map-less Faithful 32x), no quality profiles (per-knob tuning only), and the snow-LOD discoloration upstream closed as `not_planned` (Seasons OFF would be load-bearing forever).
