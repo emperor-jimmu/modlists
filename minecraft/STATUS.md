@@ -1,3 +1,10 @@
+### Bliss Removed — Back to Solas + Photon (Sep 16, 2026)
+
+- [x] **User decision**: remove Bliss, same day it was added. Standing reasons: weakest Create/ColorWheel support (no in-repo integration, patcher-only), no generated PBR (flat on map-less Faithful 32x), no quality profiles (per-knob tuning only), and the snow-LOD discoloration upstream closed as `not_planned` (Seasons OFF would be load-bearing forever).
+- [x] **GUIDE.md stripped**: shader table −Bliss row (Photon "Alt 1" → "Alt"); Bliss settings section + FPS order deleted; DH note per-shader → Solas + Photon only ("All three" → "Both"); launch checklist, Session 1, Forgematica caveat de-Bliss'd. Zero Bliss mentions remain in GUIDE.
+- [x] **Research doc trimmed**: `docs/shader-comparison.md` retitled Solas vs Photon, Bliss section cut, table/recs/limitations repaired, removal note with git-history pointer (`c7058fe`) at top.
+- [x] DRIFTWOOD-GUIDE.pdf regenerated
+
 ### Shader Config Tripled — Photon + Bliss Join Solas (Sep 16, 2026)
 
 - [x] **User request**: 3-fold config/info for Bliss/Solas/Photon + verify 9900X CPU Load + revisit the "LODs invisible past 100 blocks" claim per shader.

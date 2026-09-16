@@ -1,4 +1,6 @@
-# Shader comparison — Solas vs Photon vs Bliss (Driftwood)
+# Shader comparison — Solas vs Photon (Driftwood)
+
+> **Bliss removed from the pack (Sep 16, 2026)** — user decision, same day it was added. Weakest Create/ColorWheel support, no generated PBR, no quality profiles, and the snow-LOD discoloration upstream closed as `not_planned`. Bliss section stripped below; kept in git history (`git show c7058fe:minecraft/docs/shader-comparison.md`).
 
 Target context: NeoForge 1.21.1, Iris 1.8.14, RTX 4080 SUPER at 4K (70–80 FPS target),
 Distant Horizons LODs 128–256, Faithful 32x base (no PBR maps), Create contraptions via ColorWheel.
@@ -107,76 +109,18 @@ Modrinth/ColorWheel project page. Secondary claims are marked [UNVERIFIED].
   `VOXEL_VOLUME_SIZE` (Ultra only), per-cloud-type step counts, `TAAU_RENDER_SCALE` (0.75 default
   when enabled). Source: [`shaders.properties`](https://raw.githubusercontent.com/sixthsurge/photon/main/shaders/shaders.properties).
 
-## 3. Bliss Shaders (X0nk — Chocapic13 V9 edit)
+## 3. Comparison table
 
-- Latest version supporting MC 1.21.1 + Iris: **v2.1.2** (2025-11-23), loaders `iris` + `optifine`,
-  game versions include 1.21.1. Note: v2.0.4 and older explicitly carry "(NO DISTANT HORIZONS
-  SUPPORT)" in their release names — DH support starts with v2.1.0 (2025-09-03: "added Distant
-  Horizons support. huge thanks to Null").
-  Sources: [Bliss versions](https://api.modrinth.com/v2/project/bliss-shader/version?limit=8),
-  [v2.1.0 changelog](https://api.modrinth.com/v2/project/bliss-shader/version?limit=8).
-- **Distant Horizons support: native, with the largest DH settings menu of the three.**
-  `shaders.properties` gates `dh_terrain`/`dh_water` programs per dimension behind
-  `DISTANT_HORIZONS && IS_IRIS`, with a `DISTANT_HORIZONS_SHADOWMAP` → `dhShadow` toggle, and a
-  dedicated `DISTANT_HORIZONS_SETTINGS` screen: `DH_OVERDRAW_PREVENTION`, `OVERDRAW_MAX_DISTANCE`,
-  `DH_AMBIENT_OCCLUSION`, `DH_SUBSURFACE_SCATTERING`, `DH_SCREENSPACE_REFLECTIONS`,
-  `DH_NOISE_TEXTURE` + `NOISE_RESOLUTION/INTENSITY/DROPOFF`, `TOGGLE_VL_FOG` + `VOLUMETRIC_CLOUDS`
-  for LODs, and DH shadowmap resolution/distance reuse. The repo ships
-  `shaders/dimensions/DH_solid.*` + `DH_translucent.*` programs, and the DH vertex shader applies
-  the seasonal-color path to LODs (`DH_SEASONS`).
-  Sources: [`shaders.properties`](https://raw.githubusercontent.com/X0nk/Bliss-Shader/main/shaders/shaders.properties),
-  [`DH_solid.vsh`](https://raw.githubusercontent.com/X0nk/Bliss-Shader/main/shaders/dimensions/DH_solid.vsh).
-- **Known LOD bug (primary source): snow/seasonal colors turn LODs pink/green/blue.**
-  Issue [#246 "Snow in DH LODs messes with seasonal colours"](https://github.com/X0nk/Bliss-Shader/issues/246)
-  (1.21 + Iris + DH: snow-covered grass/leaves LODs go bright green/pink/blue with Seasonal Colours ON)
-  and issue [#357 "Snow LODs rendering as green/pink/blue with seasonal colors turned on"](https://github.com/X0nk/Bliss-Shader/issues/357)
-  (1.21.1, same symptom; cleared by shader reload, returns when seasonal colors re-enabled).
-  Both are currently **closed as `not_planned`**. Practical consequence: keep Bliss's
-  Seasons/Seasonal Colours OFF when running DH, or expect discolored winter LODs.
-- **Volumetrics / clouds / fog:** `TOGGLE_VL_FOG` (VL samples default 8), three cloud layers
-  (250 / 500 / 2000 height defaults) + `CLOUDS_SHADOWS`, per-time-of-day uniform/cloudy fog
-  densities, per-biome fog environments (swamp/jungle/dark forest), cave + border fog, bloom-fed
-  fog, daily-weather system (10 rotating weather profiles driving coverage/density/fog).
-  Far LODs can keep VL fog + volumetrics via the DH settings toggles above.
-  Source: [`settings.glsl`](https://raw.githubusercontent.com/X0nk/Bliss-Shader/main/shaders/lib/settings.glsl).
-- **PBR / materials:** LabPBR support (specular reflections f0/roughness/metalness, SSS,
-  emissives incl. translucent emissives, POM with dynamic quality, porosity/puddles, material AO,
-  per the author's [gallery captions](https://modrinth.com/shader/bliss-shader)). Like Photon,
-  **no generated-PBR fallback** — on map-less Faithful 32x the image relies on lighting/fog
-  rather than invented surface detail. Source: [Modrinth gallery](https://modrinth.com/shader/bliss-shader),
-  [`settings.glsl` LabPBR section](https://raw.githubusercontent.com/X0nk/Bliss-Shader/main/shaders/lib/settings.glsl).
-- **ColorWheel / Create:** weakest of the three. No `colorwheel.properties` exists in the Bliss
-  repo (fetch returns 404), so there is no official in-shader ColorWheel integration; the
-  [ColorWheel mod page](https://modrinth.com/mod/colorwheel) lists only "Bliss 2.1.1 – 2.1.2"
-  under **non-official** Colorwheel-Patcher support. (The officially supported
-  [Eclipse shader](https://github.com/Merlin1809/Eclipse-Shader) is a Bliss edit, not Bliss
-  itself.) Expect Create contraptions on the fallback path at best. [UNVERIFIED] in-game.
-- **Performance / presets:** **no Low/Medium/High/Ultra quality profiles** — the only `profile.*`
-  lines in `shaders.properties` are tonemap presets (`SHADER_VERSION_LABEL` = AgX default,
-  `OLD_BLISS_TONEMAP` = Hejl2015). Cost control is purely per-setting (shadow resolution 2048 /
-  distance 128 defaults, SSRT ray count/steps, cloud raymarch steps, SSR steps, POM iterations,
-  TAA upscaling `SCALE_FACTOR`). Self-described "well performing"; the v2.1.1 changelog fixed a
-  4K-specific bug ("random sparkly colors / broken cave lighting at high window resolution").
-  Sources: [`shaders.properties`](https://raw.githubusercontent.com/X0nk/Bliss-Shader/main/shaders/shaders.properties),
-  [v2.1.1 changelog](https://api.modrinth.com/v2/project/bliss-shader/version?limit=8).
-- **Config surface:** the widest but least guided (Direct_Light / World / Ambient_light / Fog /
-  Post_Processing / Clouds / Resource_Pack_Support / Climate / Misc / Mod_support, plus 10 daily
-  weather profiles and per-season color curves). Key DH-relevant levers: the whole
-  `DISTANT_HORIZONS_SETTINGS` screen (above), `shadowMapResolution`/`shadowDistance`,
-  `SCREENSPACE_CONTACT_SHADOWS`, cloud raymarch steps, `VOLUMETRIC_CLOUDS` on/off.
+| Dimension | Solas V3.7b | Photon v1.3b |
+|---|---|---|
+| DH support | Native `dh_terrain`/`dh_water`; no shader-side setup; V3.7 fixed LOD translucency | Native via `lod_mod_support.glsl` (DH + Voxy branches); v1.3 added LOD SS-shadows + SSS |
+| Far-LOD legibility | Screen-space shadows past realtime distance; Fancy LOD reflections; DH fog applies | Overdraw distance/fade + LOD noise; LOD SSS + screen-space shadows |
+| GPU cost (4K) | Moderate by design; High default well-defined; voxel-192 + VL8 + 2048 shadows | Heaviest ceiling (voxel colored lights + caustics + shafts are Ultra-only); TAAU upscaler as reserve lever |
+| Config friction | Lowest: 4 profiles + focused screens | Medium: huge menu but clear profile ladder |
+| Faithful-32x fit | Best: generated PBR invents normals/specular/emission on map-less textures | Flat micro-surface (lighting-only); needs a LabPBR pack to shine |
+| Create / ColorWheel | Official support since v3.2, in-repo integration | Patcher-only (1.3a) or djefrey fork; [UNVERIFIED] live |
 
-## 4. Comparison table
-
-| Dimension | Solas V3.7b | Photon v1.3b | Bliss v2.1.2 |
-|---|---|---|---|
-| DH support | Native `dh_terrain`/`dh_water`; no shader-side setup; V3.7 fixed LOD translucency | Native via `lod_mod_support.glsl` (DH + Voxy branches); v1.3 added LOD SS-shadows + SSS | Native `DH_solid`/`DH_translucent` per dimension + `dhShadow`; added v2.1.0 |
-| Far-LOD legibility | Screen-space shadows past realtime distance; Fancy LOD reflections; DH fog applies | Overdraw distance/fade + LOD noise; LOD SSS + screen-space shadows | Per-LOD AO/SSS/SSR/noise/VL toggles; richest LOD menu — but snow LODs discolor with Seasons ON ([#246](https://github.com/X0nk/Bliss-Shader/issues/246), [#357](https://github.com/X0nk/Bliss-Shader/issues/357)) |
-| GPU cost (4K) | Moderate by design; High default well-defined; voxel-192 + VL8 + 2048 shadows | Heaviest ceiling (voxel colored lights + caustics + shafts are Ultra-only); TAAU upscaler as reserve lever | No profiles to anchor cost; per-knob tuning only; 4K sparkle bug fixed in v2.1.1 |
-| Config friction | Lowest: 4 profiles + focused screens | Medium: huge menu but clear profile ladder | Highest: biggest menu, no profiles, 10 weather profiles + season curves to learn |
-| Faithful-32x fit | Best: generated PBR invents normals/specular/emission on map-less textures | Flat micro-surface (lighting-only); needs a LabPBR pack to shine | Same as Photon: lighting/fog carry the image, no generated detail |
-| Create / ColorWheel | Official support since v3.2, in-repo integration | Patcher-only (1.3a) or djefrey fork; [UNVERIFIED] live | Patcher-only (2.1.1–2.1.2); no in-repo integration; weakest |
-
-## 5. Per-shader DH recommendations (RTX 4080 SUPER, 4K, LODs 128–256)
+## 4. Per-shader DH recommendations (RTX 4080 SUPER, 4K, LODs 128–256)
 
 - **Solas:** start LOD distance **128** on the **High** profile (2048 shadows / 192 distance /
   voxel 192 / VL 8). First FPS levers in order: voxel 192→128, VL samples 8→7, shadow
@@ -189,31 +133,15 @@ Modrinth/ColorWheel project page. Secondary claims are marked [UNVERIFIED].
   `DH_OVERDRAW_DISTANCE/FADE` at 16 and `NOISE_ON_DH_TERRAIN` ON for LOD legibility; colored
   lights stay OFF unless Ultra headroom is proven. Basis: [`shaders.properties`](https://raw.githubusercontent.com/sixthsurge/photon/main/shaders/shaders.properties).
   [UNVERIFIED] end-to-end FPS on this pack.
-- **Bliss:** start LOD distance **128** with shadows 2048/128, `DH_AMBIENT_OCCLUSION` +
-  `DH_SCREENSPACE_REFLECTIONS` ON, `DH_NOISE_TEXTURE` ON, LOD `VOLUMETRIC_CLOUDS` ON; keep
-  **Seasons/Seasonal Colours OFF** (pink/green/blue snow-LOD bug, issues linked above). First
-  levers: cloud `min/maxRayMarchSteps`, SSRT `RAY_COUNT`/`STEPS`, shadow 2048→1024, TAA upscaling
-  scale. Push LODs to 256 only after a winter-biome check passes without discoloration. Basis:
-  [`shaders.properties` DH screen](https://raw.githubusercontent.com/X0nk/Bliss-Shader/main/shaders/shaders.properties).
-  [UNVERIFIED] end-to-end FPS on this pack.
-
-## 6. Limitations — what could not be verified from primary sources
+## 5. Limitations — what could not be verified from primary sources
 
 - **No in-game benchmarking was done** (per assignment non-goals). All FPS reasoning is derived
   from profile definitions and each author's qualitative performance claims ("moderate cost" /
-  "gameplay-focused" / "well performing"), not measurements. Any 70–80 FPS statement for Photon
-  or Bliss on the RTX 4080 SUPER is [UNVERIFIED].
-- **Photon and Bliss ColorWheel behavior is second-hand**: the only primary source is the
+  "gameplay-focused"), not measurements. Any 70–80 FPS statement for Photon on the RTX 4080 SUPER is [UNVERIFIED].
+- **Photon ColorWheel behavior is second-hand**: the only primary source is the
   [ColorWheel mod page](https://modrinth.com/mod/colorwheel) listing patcher-supported versions
-  (Photon 1.3a, Bliss 2.1.1–2.1.2). Whether Create 6 contraptions render correctly with the
+  (Photon 1.3a). Whether Create 6 contraptions render correctly with the
   patcher on this pack's exact mod set is [UNVERIFIED].
-- **Bliss pink-LOD status**: issues [#246](https://github.com/X0nk/Bliss-Shader/issues/246) and
-  [#357](https://github.com/X0nk/Bliss-Shader/issues/357) are primary (author's own tracker) but
-  both are closed `not_planned`, so it is unknown whether v2.1.2 fixed, sidestepped, or still
-  carries the seasonal-LOD discoloration. Treat "keep Seasons OFF" as load-bearing until tested.
-- **Version-mismatch quirk**: Bliss v2.0.x releases are explicitly "(NO DISTANT HORIZONS
-  SUPPORT)" — any guide or video showing Bliss without LODs is almost certainly on that line;
-  only v2.1.x is comparable. Source: [Bliss versions](https://api.modrinth.com/v2/project/bliss-shader/version?limit=8).
 - **Iris pin**: the pack targets Iris 1.8.14; the Modrinth query for 1.21.1 returns
   `1.8.14-beta.1+1.21.1-neoforge` (beta, 2026-06-13) alongside release 1.8.12, so 1.8.14
   availability on the NeoForge loader train is beta-grade. Source: [Iris 1.21.1 versions](https://api.modrinth.com/v2/project/iris/version?limit=5&game_versions=%5B%221.21.1%22%5D).
