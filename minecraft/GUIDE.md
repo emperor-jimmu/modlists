@@ -123,18 +123,6 @@ Skip this if you've played Minecraft before.
 4. **Survive the night** — Stay inside. Dig, expand, or sleep if you have a bed (3 wool + 3 planks).
 5. **Day 2 priorities**: Find food, get iron (dig staircase-down until you see brown speckled blocks), find a village, make a bed.
 
-### Keybind to Set Immediately
-
-Open **Options → Controls → Key Binds** and set these before anything else:
-
-| Action                | Suggested Key  | Why                              |
-|-----------------------|----------------|----------------------------------|
-| Open Waystone Menu    | `Ctrl+Shift+W` | Fast travel anywhere             |
-| Zoom                  | `C`            | Sodium zoom                      |
-| Toggle Dynamic Lights | `Ctrl+L`       | Torch in off-hand = mobile light |
-| Open Backpack         | `B`            | Sophisticated Backpacks          |
-| Open Fullscreen Map   | `J`            | JourneyMap                       |
-
 ---
 
 <!--raw-typst #pagebreak() -->

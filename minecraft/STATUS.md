@@ -1,3 +1,9 @@
+### Wave -1 Keybind Section Removed — Mods Not Installed Yet (Sep 16, 2026)
+
+- [x] **User report**: "Keybind to Set Immediately" in Wave -1 makes no sense — Waystones/Sodium/LambDynamicLights/Backpacks/JourneyMap aren't installed yet at that point.
+- [x] **Fix**: deleted the section from GUIDE.md (Wave -1 now ends at Day 2 priorities). All five binds already live in the Keybindings Reference table — no coverage lost, no other references to the section.
+- [x] DRIFTWOOD-GUIDE.pdf regenerated
+
 ### Grassier Grass Adopted — Animated Grass Blades, Wave 0 Visual QoL (Sep 16, 2026)
 
 - [x] **User request**: consider adding [Grassier Grass](https://modrinth.com/mod/grassier-grass). Fit confirmed: animated 3D grass blades via a custom wind shader (64/block, 160 radius defaults) — grass leans/ripples in gusts, sheds blade particles in strong wind. Complements (not duplicates) BetterGrassify (block-side blending), Foxified Dense Flowers (flowers), Motsch's Better Leaves (leaves). Chill-living win, neutral on power/difficulty/runway.
