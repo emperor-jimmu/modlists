@@ -1,3 +1,10 @@
+### AppleSkin Addon Removed, MissingSoundsFix Kept, Two Links Fixed (Sep 16, 2026)
+
+- [x] **User request 1: remove Faithful 32x AppleSkin Addon — done.** Dark Coffee GUI (#1, owns hearts/armor/food/hotbar) paints the same food bar the addon (ex-#12) redraws in 32x style — pure overlap, addon loses everywhere. Table row + blurb + load-order slot removed; order 27 → **26**, Wave 0 note `+27 → +26`. [VERIFY] at next launch: food bar renders Dark Coffee style, no missing-pack warnings.
+- [x] **User request 2: review MissingSoundsFix — KEPT.** Not redundant: silences Mojang's empty-sound log spam (`salmon.ambient` etc., [MC-97521](https://bugs.mojang.com/browse/MC-97521), still open/wontfix) — a surface no mod in the pack owns (Sound Physics/AmbientSounds/Sounds all *add* audio, none suppress warnings). Matters with Upgrade/Hybrid Aquatic fish density + 180-mod logs. Cost ~nothing: v1.1 (Oct 2024, 1.21.1 ✅, zero deps, GPL-3.0). Fixed its guide link slug (`missingsoundsfix` 404 → `missing-sounds-fix`, [Modrinth](https://modrinth.com/resourcepack/missing-sounds-fix)).
+- [x] **Drive-by fix**: Enhanced Boss Bars companion-mod link was a dead CurseForge URL (403) → [Modrinth](https://modrinth.com/mod/enhanced-boss-bars-mod) (1.21.1 NeoForge `1.21.1-1.0.0` verified).
+- [x] DRIFTWOOD-GUIDE.pdf regenerated
+
 ### LambDynamicLights Pinned + FA Objects & Emissive Adopted (Sep 16, 2026)
 
 - [x] **User question**: LambDynamicLights claims EOL on 1.21.1 — is there a better dynamic-lights mod? Verdict: **no, keep Lamb**. EOL = feature-freeze on the 1.21 line, not abandonment — 4.8.9 (Sodium 0.8.x compat) + 4.8.10 + **4.8.11** (Aug 31 2026, fixes duplicate-keybind `options.txt` corruption #311/#386) all shipped *after* the EOL notice; Modrinth API verified. The only alternative (Txni Sodium Dynamic Lights, a Lamb port) is 8 months staler (Jan 2025) and mutually incompatible per Lamb's own manifest. Pack is version-locked on 1.21.1 anyway — a frozen-but-bugfixed build is ideal.
