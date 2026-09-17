@@ -1,3 +1,10 @@
+### AttributeFix Adopted — Bar Engine for Overflowing Bars (Sep 17, 2026)
+
+- [x] **User request**: add [AttributeFix](https://www.curseforge.com/minecraft/mc-mods/attributefix). Fit confirmed: Overflowing Bars' own page names it for "proper support of armor and toughness beyond vanilla limits" — without it the pack renders Phase 3 bar values the game silently clamps. Darkhax, 21.1.3 NeoForge 1.21.1 ✅ (Modrinth API verified, `dependencies: [Prickle, Bookshelf]`, LGPL). Changes no stats — raises caps only (damage-formula soft-cap ~25 remains, fine for the curve).
+- [x] **GUIDE.md updated**: Wave 0.5 Visual & Client QoL table +row (after Overflowing Bars); OB blurb now points at AttributeFix; +AttributeFix blurb; Total **181/43/224 → 182/45/227** (+1 mod, +2 deps — both auto-install via XMCL). No config/keybinding/datapack changes.
+- [ ] **Instance action (XMCL)** — add `attributefix-*.jar` (Prickle + Bookshelf auto-install). [VERIFY] at next launch: no dependency errors; high-armor gear displays past vanilla caps.
+- [x] DRIFTWOOD-GUIDE.pdf regenerated
+
 ### Countered's Smooth F5 Removed (Sep 17, 2026)
 
 - [x] **User request**: remove [Countered's Smooth F5](https://modrinth.com/mod/countereds-smooth-f5). Better Third Person keeps third-person rotation; the cinematic F5 transition was the only loss. Zero deps removed (its Architectury requirement is shared with Effectual + others, all still in pack).
