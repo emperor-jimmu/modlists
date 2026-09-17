@@ -1,3 +1,10 @@
+### Visual Traveler's Titles Adopted — Dimension Logos (Sep 16, 2026)
+
+- [x] **User request**: add [Visual Traveler's Titles](https://www.curseforge.com/minecraft/texture-packs/visual-travelers-titles). Fit confirmed: handmade dimension logos for the Traveler's Titles entry cards (un_roman, 12.6M DL, co-authored with YUNGNIKYOUNG) — covers Overworld/Nether/End + Aether, Twilight Forest, Northstar planets (the pack's lineup). Uncovered dims fall back to text, gracefully. Zero surface conflicts. Standard Visual variant (Legacy compat unneeded). ARR link + XMCL install only; CurseForge 403s file listings so unpinned — [VERIFY] 1.21.1 file at install.
+- [x] **GUIDE.md updated**: Texture Packs table +row; +blurb; Resource Pack Load Order 26 → **27** (new #12 in UI tier, rest renumbered, Faithful base now #27); Wave 0 note `+26 → +27`. No mod/config/keybinding/datapack changes.
+- [ ] **Instance action (XMCL)** — add the Visual variant `.zip` to `resourcepacks/` enabled in the UI tier. [VERIFY] at next launch: dimension entry cards show logos for Overworld/Aether/TF; no pack-order warnings.
+- [x] DRIFTWOOD-GUIDE.pdf regenerated
+
 ### AppleSkin Addon Removed, MissingSoundsFix Kept, Two Links Fixed (Sep 16, 2026)
 
 - [x] **User request 1: remove Faithful 32x AppleSkin Addon — done.** Dark Coffee GUI (#1, owns hearts/armor/food/hotbar) paints the same food bar the addon (ex-#12) redraws in 32x style — pure overlap, addon loses everywhere. Table row + blurb + load-order slot removed; order 27 → **26**, Wave 0 note `+27 → +26`. [VERIFY] at next launch: food bar renders Dark Coffee style, no missing-pack warnings.
