@@ -1,3 +1,10 @@
+### Countered's Smooth F5 Removed (Sep 17, 2026)
+
+- [x] **User request**: remove [Countered's Smooth F5](https://modrinth.com/mod/countereds-smooth-f5). Better Third Person keeps third-person rotation; the cinematic F5 transition was the only loss. Zero deps removed (its Architectury requirement is shared with Effectual + others, all still in pack).
+- [x] **GUIDE.md updated**: Visual & Client QoL table −row; BTP blurb de-watchified (Smooth F5 watch clause deleted); Mod Count Summary: Wave 0 notes + Total **182/43/225 → 181/43/224**. No config/keybinding/datapack changes.
+- [ ] **Instance action (XMCL)** — remove `smooth_f5-*.jar` from `mods/`. [VERIFY] at next launch: F5 switches cleanly; BTP toggle unaffected.
+- [x] DRIFTWOOD-GUIDE.pdf regenerated
+
 ### Visual Traveler's Titles Adopted — Dimension Logos (Sep 16, 2026)
 
 - [x] **User request**: add [Visual Traveler's Titles](https://www.curseforge.com/minecraft/texture-packs/visual-travelers-titles). Fit confirmed: handmade dimension logos for the Traveler's Titles entry cards (un_roman, 12.6M DL, co-authored with YUNGNIKYOUNG) — covers Overworld/Nether/End + Aether, Twilight Forest, Northstar planets (the pack's lineup). Uncovered dims fall back to text, gracefully. Zero surface conflicts. Standard Visual variant (Legacy compat unneeded). ARR link + XMCL install only; CurseForge 403s file listings so unpinned — [VERIFY] 1.21.1 file at install.
