@@ -1,3 +1,9 @@
+### Dark Loading Screen Neoforge Reverted — DLS Restored (Sep 17, 2026)
+
+- [x] **User report (ground truth)**: the NeoForge port does not theme the initial/early loading screen — the whole purpose of the mod. Reverted same-day: [DLS] row + blurb restored verbatim, Wave 0 notes clause corrected. Counts unchanged (1:1:1, zero deps throughout).
+- [ ] **Instance action (XMCL)** — remove `dark_loading_screen-*.jar`; restore the pinned DLS file. [VERIFY] at next launch: the very first loading screen renders dark.
+- [x] DRIFTWOOD-GUIDE.pdf regenerated
+
 ### Dark Loading Screen Swapped to NeoForge Port (Sep 17, 2026)
 
 - [x] **User request**: replace [DLS] with [Dark Loading Screen Neoforge](https://modrinth.com/mod/dark-loading-screen-neoforge). Fit confirmed: 1:1 swap — same dark screen, NeoForge-native (1.0.1, 1.21.1 ✅, `dependencies: []`, MIT, client-only). Bonus over the old pin: customizable colors/bar/logo/fades via `config/dark-loading-screen.json` (+ in-game screen via Cloth Config, already in pack). Counts unchanged (1:1, zero deps).
