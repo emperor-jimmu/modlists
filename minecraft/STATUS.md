@@ -1,3 +1,10 @@
+### Dark Loading Screen Swapped to NeoForge Port (Sep 17, 2026)
+
+- [x] **User request**: replace [DLS] with [Dark Loading Screen Neoforge](https://modrinth.com/mod/dark-loading-screen-neoforge). Fit confirmed: 1:1 swap — same dark screen, NeoForge-native (1.0.1, 1.21.1 ✅, `dependencies: []`, MIT, client-only). Bonus over the old pin: customizable colors/bar/logo/fades via `config/dark-loading-screen.json` (+ in-game screen via Cloth Config, already in pack). Counts unchanged (1:1, zero deps).
+- [x] **GUIDE.md updated**: table row + blurb swapped; Wave 0 notes clause. No config/keybinding/datapack changes.
+- [ ] **Instance action (XMCL)** — remove old `dls-*.jar`; add `dark_loading_screen-neoforge-1.21.1-1.0.1.jar`. [VERIFY] at next launch: dark loading screen renders; no missing-dep errors.
+- [x] DRIFTWOOD-GUIDE.pdf regenerated
+
 ### Real Camera Removed (Sep 17, 2026)
 
 - [x] **User request**: remove [Real Camera](https://www.curseforge.com/minecraft/mc-mods/real-camera). Camera Overhaul (movement feedback) + Better Third Person (TPP rotation) keep the camera stack; the FPV body-view anchor was the only loss. Zero deps removed (Cloth Config shared, still in pack). The Protection Pixel model-binding [VERIFY] retires with it.
