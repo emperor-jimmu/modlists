@@ -1,3 +1,10 @@
+### Real Camera Removed (Sep 17, 2026)
+
+- [x] **User request**: remove [Real Camera](https://www.curseforge.com/minecraft/mc-mods/real-camera). Camera Overhaul (movement feedback) + Better Third Person (TPP rotation) keep the camera stack; the FPV body-view anchor was the only loss. Zero deps removed (Cloth Config shared, still in pack). The Protection Pixel model-binding [VERIFY] retires with it.
+- [x] **GUIDE.md updated**: Wave 0.5 Visual & Client QoL table −row; −blurb; Total **182/45/227 → 181/45/226**. No config/keybinding/datapack changes.
+- [ ] **Instance action (XMCL)** — remove `realcamera-*.jar` from `mods/`. [VERIFY] at next launch: FPV default; Camera Overhaul feedback unaffected.
+- [x] DRIFTWOOD-GUIDE.pdf regenerated
+
 ### AttributeFix Adopted — Bar Engine for Overflowing Bars (Sep 17, 2026)
 
 - [x] **User request**: add [AttributeFix](https://www.curseforge.com/minecraft/mc-mods/attributefix). Fit confirmed: Overflowing Bars' own page names it for "proper support of armor and toughness beyond vanilla limits" — without it the pack renders Phase 3 bar values the game silently clamps. Darkhax, 21.1.3 NeoForge 1.21.1 ✅ (Modrinth API verified, `dependencies: [Prickle, Bookshelf]`, LGPL). Changes no stats — raises caps only (damage-formula soft-cap ~25 remains, fine for the curve).
