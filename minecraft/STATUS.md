@@ -1,3 +1,9 @@
+### Inventory Essentials Removed (Sep 18, 2026)
+
+- [x] **User request**: remove Inventory Essentials. Lost: drag-to-transfer gestures (`Ctrl+click` single-item, `Shift+Ctrl+click` move-all-of-type, shift-hover sweep, bundle drag) — middle-click sorting was already ClientSort's (IE was consolidate-only). ClientSort keeps all sorting; no replacement for the transfer gestures (Mouse Tweaks was already rejected Aug 2026 — gesture-complementary, no single-item moves). Balm stays — Waystones still requires it. Deps unchanged.
+- [x] **GUIDE.md updated**: Inventory & UI table −row; −config block; −What-to-Expect bullet; ClientSort bullet de-IE'd; Mod Count Summary Wave 0 11/10/22 → **10/10/21**; Total **183/45/228 → 182/45/227** (mods −1, deps unchanged). Tracked `config/inventoryessentials-common.toml` deleted.
+- [ ] **Instance action (XMCL)** — remove `inventoryessentials*.jar` from `mods/`; delete `config/inventoryessentials-common.toml` from the instance config (plus any generated `config/inventoryessentials-client.toml`). Keep `balm-*.jar` (Waystones needs it). [VERIFY] at next launch: no missing-dependency errors; ClientSort sorting unaffected.
+
 ### Compass to Map Adopted — Compass Finds Auto-Pin to JourneyMap (Sep 18, 2026)
 
 - [x] **User request**: reviewed [Compass to Map](https://modrinth.com/mod/compass-to-map) — verdict: adopt. **2.0.4** (NeoForge 1.21.1 ✅, Sep 2026 release, `compass2map-2.0.4-neoforge-1.21.1.jar`, ~38KB, zero required deps — Explorer's Compass / Nature's Compass / JourneyMap all optional): auto-creates color-coded JourneyMap waypoints on every successful Explorer's Compass search. Deletes the guide's manual "add a JourneyMap waypoint" step. No overlap (JourneyMap Integration only mirrors Waystones). ARR, explicitly modpack-allowed. Watch item: tiny new project (~7K DL, solo author) — 2.0.4 changelog shows real maintenance (dup-waypoint/dimension fixes).
