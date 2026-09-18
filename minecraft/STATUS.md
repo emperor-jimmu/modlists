@@ -1,3 +1,9 @@
+### Armored Legacy Removed — EMF/ETF Kept for Fresh Animations (Sep 18, 2026)
+
+- [x] **User request**: remove Armored Legacy + EMF + ETF. Scoped down per user decision: Armored Legacy was EMF's only armor consumer, but EMF + ETF also power Fresh Animations (base + Objects + Emissive are CEM packs — dead without EMF), so **only the resource pack goes**; both mods stay as FA's engine. Zero mod/dep count changes.
+- [x] **GUIDE.md updated**: Texture Packs table −row; −blurb; Resource Pack Load Order slot removed + renumbered 27 → **26** (Faithful base now #26); Wave 0 note `+27 → +26 resource packs`; EMF row reworded (powers Fresh Animations); 3D Skin Layers EMF watch de-armored; Wave 0.5 note + changelog annotated. No mod/config/keybinding/datapack changes.
+- [ ] **Instance action (XMCL)** — remove the Armored Legacy `.zip` from `resourcepacks/`. [VERIFY] at next launch: no missing-pack warnings; armor renders vanilla/Faithful; Fresh Animations mobs still animate.
+
 ### Dark Loading Screen Neoforge Reverted — DLS Restored (Sep 17, 2026)
 
 - [x] **User report (ground truth)**: the NeoForge port does not theme the initial/early loading screen — the whole purpose of the mod. Reverted same-day: [DLS] row + blurb restored verbatim, Wave 0 notes clause corrected. Counts unchanged (1:1:1, zero deps throughout).
