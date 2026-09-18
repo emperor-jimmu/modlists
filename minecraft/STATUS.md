@@ -1,3 +1,9 @@
+### Compass to Map Adopted — Compass Finds Auto-Pin to JourneyMap (Sep 18, 2026)
+
+- [x] **User request**: reviewed [Compass to Map](https://modrinth.com/mod/compass-to-map) — verdict: adopt. **2.0.4** (NeoForge 1.21.1 ✅, Sep 2026 release, `compass2map-2.0.4-neoforge-1.21.1.jar`, ~38KB, zero required deps — Explorer's Compass / Nature's Compass / JourneyMap all optional): auto-creates color-coded JourneyMap waypoints on every successful Explorer's Compass search. Deletes the guide's manual "add a JourneyMap waypoint" step. No overlap (JourneyMap Integration only mirrors Waystones). ARR, explicitly modpack-allowed. Watch item: tiny new project (~7K DL, solo author) — 2.0.4 changelog shows real maintenance (dup-waypoint/dimension fixes).
+- [x] **GUIDE.md updated**: Navigation table +row; Explorer's Compass step 6 → auto-waypoint; JourneyMap bullet +glue note; Mod Count Summary Wave 2 37/7/45 → **38/7/46**; Total **182/45/227 → 183/45/228** (+1 mod, deps unchanged). No config/keybinding/datapack changes.
+- [ ] **Instance action (XMCL)** — add `compass2map-2.0.4-neoforge-1.21.1.jar` to `mods/`. [VERIFY] at next launch: Explorer's Compass search auto-creates a color-coded JourneyMap waypoint; no missing-dependency errors.
+
 ### JustEnoughBreeding Adopted — EMI Breeding Lookup (Sep 18, 2026)
 
 - [x] **User request**: reviewed 5 EMI-adjacent candidates — verdict: adopt JEBr, skip the rest. **JustEnoughBreeding 3.2.1** (NeoForge 1.21.1 ✅, Jul 2026 release, `justenoughbreeding-neoforge-1.21.1-3.2.1.jar`, client-only, zero required deps, MIT, ~7.9M DL): EMI breeding lookup — food, egg output, tamed-flag for vanilla + modded mobs. Chill-living/farming fit; Jade owns growth info (different surface, no overlap); no conflicts.
