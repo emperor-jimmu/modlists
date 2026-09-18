@@ -1,3 +1,10 @@
+### JustEnoughBreeding Adopted — EMI Breeding Lookup (Sep 18, 2026)
+
+- [x] **User request**: reviewed 5 EMI-adjacent candidates — verdict: adopt JEBr, skip the rest. **JustEnoughBreeding 3.2.1** (NeoForge 1.21.1 ✅, Jul 2026 release, `justenoughbreeding-neoforge-1.21.1-3.2.1.jar`, client-only, zero required deps, MIT, ~7.9M DL): EMI breeding lookup — food, egg output, tamed-flag for vanilla + modded mobs. Chill-living/farming fit; Jade owns growth info (different surface, no overlap); no conflicts.
+- [x] **Skipped**: EMIffect (Aug 2026 JEED + MEED swap stands — same surface), Distraction Free Recipes (hides the EMI browser the pack teaches; EMI favorites already declutter; +TxniLib dep), EMI Enchanting (thin gain over Enchantment Descriptions + Easy Magic; NeoForge build a year stale), Extra Mod Integrations (already in pack — Wave 4 row; guide blurb oversells it: 1.21.1 build covers 7 mods, not 50+).
+- [x] **GUIDE.md updated**: Inventory & UI table +row; What-to-Expect +bullet; Mod Count Summary Wave 0 10/10/21 → **11/10/22**; Total **181/45/226 → 182/45/227** (+1 mod, deps unchanged). No config/keybinding/datapack changes.
+- [ ] **Instance action (XMCL)** — add `justenoughbreeding-neoforge-1.21.1-3.2.1.jar` to `mods/`. [VERIFY] at next launch: breeding info shows in EMI; no missing-dependency errors.
+
 ### Armored Legacy Removed — EMF/ETF Kept for Fresh Animations (Sep 18, 2026)
 
 - [x] **User request**: remove Armored Legacy + EMF + ETF. Scoped down per user decision: Armored Legacy was EMF's only armor consumer, but EMF + ETF also power Fresh Animations (base + Objects + Emissive are CEM packs — dead without EMF), so **only the resource pack goes**; both mods stay as FA's engine. Zero mod/dep count changes.
