@@ -601,12 +601,7 @@ Drink to teleport straight back to your **spawn point** — the classic Terraria
 
 Villager trades change dynamically — villagers specialize in what you buy from them. No more massive trading halls. The actual mod by **orlouge** (3.3M DL); the 1.21.1 build is Fabric-only, so it runs via **Sinytra Connector** (already in pack).
 
-**Config** (`config/dynamicvillagertrades.properties`):
-
-- `global_randomness = 0.7` — faster specialization
-- `refresh_delay = 1` — trades change every other restock
-- `no_book_duplicates = true` — no duplicate enchantment books
-- `enchant_repair_compat = false` — no Curse of Vanishing on librarian books (for Enchant & Repair compatibility; keep off unless that mod is added)
+**Config**: see [Configuration — Wave 0.5](#configuration--wave-05) above (`config/dynamicvillagertrades.properties` — tracked override).
 
 #### Improved Village Placement
 
