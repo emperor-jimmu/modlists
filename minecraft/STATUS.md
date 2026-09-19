@@ -1,3 +1,17 @@
+### TFMG Energy Converter Removed — Broken (Sep 19, 2026)
+
+- [x] **User report (ground truth)**: [Nio] TFMG Energy Converter is broken — removed per user decision.
+- [x] **GUIDE.md updated**: Create Addons table −row; −TFMG detail blurb; How-Wave-1-Work-Together power-bridge row → Crafts & Additions only (`Kinetic ↔ FE`); cheat-sheet bridge row → `TFMG diesel → SU → Crafts & Additions alternator → Mekanism universal cable` (diesel/SU per TFMG section, SU→FE per C&A role — no new instruction); Hybrid Delights blurb de-"Wave 0 dep"'d; Mod Count Summary Wave 1 21/5/26 → **20/5/25**; Total **182/45/227 → 181/45/226** (mods −1, deps unchanged). Mekanism TFMG Compat (85+ recipe bridges) and Create: Power Grid (physics sim + FE conversion) stay — no replacement row. Kotlin for Forge stays (Hybrid Delights 1.2.1 NeoForge hard-requires it, Modrinth API verified; converter 26.03 declared zero deps anyway). No tracked config changes (nothing under `config/` referenced it).
+- [ ] **Instance action (XMCL)** — remove `tfmg_energy_connector-*.jar` from `mods/`; keep `kotlin-for-forge` (Hybrid Delights needs it). [VERIFY] at next launch: no missing-dependency errors; TFMG diesel → SU path + C&A alternator → FE/AE2/Mekanism path still documented in cheat sheet.
+- [x] DRIFTWOOD-GUIDE.pdf regenerated
+
+### Wakes 1.4.1 Client-Tick Crash Triaged — Wave 1 (Sep 19, 2026)
+
+- [x] **User report (ground truth)**: mid-Wave-1 launch crashes on first client tick — `ExceptionInInitializerError` at `WakeClientTicker.onClientTick` → `WakeHandler.<clinit>` → `IllegalStateException: Cannot get config value before config is loaded` (`wakes-1.21.1-NeoForge-1.4.1.jar`, NeoForge 21.1.250). Java 21.0.11 + vanilla libs ruled out (game reached tick 1). Connector present but not in the causal chain.
+- [x] **Upstream match**: same signature as Wakes issues #7 (NeoForge 21.1.176) and #39 (NeoForge 21.1.238, "sometimes" race). 1.4.1 is the latest NeoForge 1.21.1 build (Modrinth API verified, Aug 15 2026) — no newer fix to pin. #7 precedent: Wakes is the first victim of this race, and a corrupted config from another mod can trigger the cascade — so a second crash naming a different mod after removing Wakes points at configs, not a second bad mod.
+- [x] No GUIDE.md/config/PDF changes — Wakes stays in the pack; cosmetic water mod, remove-from-pack decision needs user call.
+- [ ] **Instance action (XMCL)** — 1) remove `wakes-1.21.1-NeoForge-1.4.1.jar` from `mods/` and launch: if clean, rest of Wave 1 is fine. 2) re-add path: delete `config/wakes*` in the instance, re-add the jar, relaunch. 3) if it crashes again, leave Wakes out and file upstream at https://github.com/Leclowndu93150/Wakes/issues citing #39 + NeoForge 21.1.250 + 1.4.1. [VERIFY] at next launch: no `WakeHandler` crash; if a *different* mod then throws the same "before config is loaded" error, delete that mod's config file too and relaunch before reporting anything.
+
 ### Inventory Essentials Removed (Sep 18, 2026)
 
 - [x] **User request**: remove Inventory Essentials. Lost: drag-to-transfer gestures (`Ctrl+click` single-item, `Shift+Ctrl+click` move-all-of-type, shift-hover sweep, bundle drag) — middle-click sorting was already ClientSort's (IE was consolidate-only). ClientSort keeps all sorting; no replacement for the transfer gestures (Mouse Tweaks was already rejected Aug 2026 — gesture-complementary, no single-item moves). Balm stays — Waystones still requires it. Deps unchanged.
