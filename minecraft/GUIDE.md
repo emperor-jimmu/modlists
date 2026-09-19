@@ -949,7 +949,7 @@ Progression: water wheel → steam engine → diesel engine.
 
 **Aluminum**: Bauxite ore (mid-to-high Y-levels) → multi-block smelter → aluminum ingots. Used in advanced TFMG machines and feeds into Mekanism alloy processing.
 
-**Mekanism TFMG Compatibility**: Resolves 85+ recipe overlaps between TFMG and Mekanism. Steel, lead, sulfur unified under TFMG. Mekanism's steel recipe disabled — use TFMG Blast Furnace instead. Per-recipe toggles in `config/mekanism_tfmg_compat-common.toml` (mod ID `mekanism_tfmg_compat` — generated on first successful launch with both mods present).
+**Mekanism TFMG Compatibility**: Resolves 85+ recipe overlaps between TFMG and Mekanism. Steel, lead, sulfur unified under TFMG. Mekanism's steel recipe disabled — use TFMG Blast Furnace instead.
 
 #### Create: Gunsmithing
 
