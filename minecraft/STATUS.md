@@ -1,3 +1,10 @@
+### Immersive Overlays Removed — Field Guide Companion Only (Sep 21, 2026)
+
+- [x] **User request**: remove Immersive Overlays. Verdict from review: Field Guide companion only (spawn/biome display box); its own HUD role (compass coords, clock time, map biome) is duplicated by JourneyMap + BetterF3 + Traveler's Titles + Explorer's Compass. Since Field Guide 1.16.0 it's optional at runtime (still marked `required` on Modrinth so launchers auto-download) — Field Guide runs without it, losing only the spawn/biome box.
+- [x] **GUIDE.md updated**: Field Guide companion table −row; companion blurb rewritten (Item Descriptions only, removal noted); 2 Modded Coffee GUI coverage mentions de-Overlays'd; Mod Count Summary Wave 2 38/7/46 → **37/7/45**; Total **181/45/226 → 180/45/225** (mods −1, deps unchanged); Total changelog annotated. No config/keybinding/datapack changes.
+- [ ] **Instance action (XMCL)** — remove `immersiveoverlays-*.jar` from `mods/`. If the launcher re-offers it as a Field Guide dependency, decline/ignore — Field Guide runs without it. [VERIFY] at next launch: no missing-dependency errors; Field Guide scans/catalogs normally (entries just lack the spawn/biome box).
+- [x] DRIFTWOOD-GUIDE.pdf regenerated
+
 ### TFMG Energy Converter Removed — Broken (Sep 19, 2026)
 
 - [x] **User report (ground truth)**: [Nio] TFMG Energy Converter is broken — removed per user decision.
