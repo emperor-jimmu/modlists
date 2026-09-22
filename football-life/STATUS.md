@@ -28,10 +28,10 @@
 
 | # | Mod | Version | Source | Status | Notes |
 |---|---|---|---|---|---|
-| 5 | SoundServer (nesa24/juce) | unversioned Sider module — confirmed active Aug 2026 | Bundled in Essentials (#9); standalone: https://pesnewupdate.com/pes-2021-sound-server-by-nesa24/ (nesa24/Digitalfoxx, Sider 7) or EvoWeb — search: "SoundServer nesa24" | VERIFIED | Audio mixer: crowd, referee, announcer, ambient. Sider module → enable in `sider.ini`. Install Layer 3 first — standalone download only needed if skipping the pack. |
+| 5 | SoundServer (All Makers 2026 / nesa24 lineage) | Jul 2026 update (explicit FL26 compat) | Standalone: https://pes-files.ru/pes_2021_sound_server_mod_update_2026 (Modsfire/Sharemods) — bundled in Essentials (#9); legacy nesa24/Digitalfoxx mirror: https://pesnewupdate.com/pes-2021-sound-server-by-nesa24/ | VERIFIED | FL26-tuned audio mixer (stadium atmosphere, fan reactions, whistles, kick/net sounds). Sider 2026 v7.4.1, `lua.module = "SoundServer.lua"`. Install Layer 3 first — standalone only needed if skipping the pack. |
 | 6 | Predator002 Chant Pack | V8 / V8.1 | https://pes-files.ru/pes_2021_chants_pack_v8_1_aio_update_season_2024 (V8.1 AIO) or EvoWeb — search: "Predator002 chants" | VERIFIED | Thousands of team-specific chants + ChantsBase ambient crowd. Player-specific chants. Sider `livecpk/preds-root` → `cpk.root`. |
 | 7 | Referee Whistle Mod (SoulBallZ) | 7 variants (Default, A–F) | https://caocacao.net/pes-2021-referee-whistle-fix/ (Sider + CPK via Modsfire/Sharemods) | VERIFIED | High-fidelity whistle replacements. Sider `livecpk` — pick one variant, `cpk.root = ".\livecpk\Referee Whistle Fix"`. |
-| 8 | Atmosphere / Stadium Sound Overhaul | unversioned — confirmed active Aug 2026 | No single canonical file — EvoWeb — search: "atmosphere sound overhaul" | VERIFIED | Goal reactions, jeers, momentum crowd swells. Sider `livecpk`. SoundServer + Predator002 cover the baseline if skipped. |
+| 8 | Atmosphere Sound Server 2026 + Crowd Overhaul 2026 | May/Jul 2026 (All Makers) | https://pes-files.ru/pes_2021_atmosphere_sound_server_2026 + https://pes-files.ru/pes_2021_crowd_sound_overhaul_update_2026 (Modsfire/Sharemods) | VERIFIED | Canonical 2026 atmosphere stack: NetSound + Pitch Sound FX (`cpk.root`) + `lua.module = "CrowdSoundOverhaul.lua"`. Sider 2026 v7.4.1. Replaces the old no-canonical-file row. |
 
 ## EvoWeb — Visual Foundation
 
@@ -45,11 +45,11 @@
 |---|---|---|---|---|---|
 | 10 | Stadium Server (zlac, v1.60) | v1.60 — pre-installed in FL25/FL26 | Docs + regional packs: https://www.pessmokepatch.com/2024/11/siderstadiums.html — standalone module: https://pes-files.ru/pes_2021_stadium_server_2020_v1_60 | VERIFIED | #strong[Pre-installed — do not replace with an older version.] Unlimited stadiums, `map_teams.txt` + `map_competition.txt`. Enable in `sider.ini`. |
 | 11 | Stadium packs (SmokePatch regional) | per-region (England 36 ~9 GB, Spain 36 ~6.5 GB, …) | https://www.pessmokepatch.com/2024/11/siderstadiums.html | VERIFIED | High-res stadiums + adboards + tunnels. Extract to `SiderAddons\content\stadiums\`, copy page's map lines into `map_teams.txt`. Excludes the 36 pre-installed FL stadiums. |
-| 12 | Soccer Revolution | unversioned — confirmed active Aug 2026 | https://evoweb.uk/threads/soccer-revolution-10-0-brand-new-gameplay-graphics-reshades.94305/ | VERIFIED | Lighting overhaul: pitch textures, stadium shadows. Sider module / `livecpk`. |
+| 12 | Soccer Revolution 2026 v12 / Revamped | v12 (Mar 2026) / Revamped 10 (Apr 2026), elijio876 | v12: https://www.pesmodding.com/2026/03/pes-2021-soccer-revolution-2026-v12.html — Revamped: https://www.pesmodding.com/2026/04/pes-2021-soccer-revolution-revamped-10.html — base thread: https://evoweb.uk/threads/soccer-revolution-10-0-brand-new-gameplay-graphics-reshades.94305/ | VERIFIED | Newer than v10.0 base. #strong[Replaces EXE/dt18 — back up FL26.exe + Data first; check vs UML.] |
 | 13 | Jeremiah's Ultra Turfs | unversioned — confirmed active Aug 2026 | EvoWeb — search: "Jeremiah Ultra Turfs" | VERIFIED | Organic non-repeating grass with realistic wear. Sider `livecpk`. |
 | 14 | ReShade preset (Machete Gaming / KnightMD) | unversioned preset — confirmed active Aug 2026 | Machete Gaming (YouTube/Discord) or EvoWeb; ReShade base: https://reshade.me/ | VERIFIED | `.ini` preset into FL26 root. Install ReShade separately targeting `FL 26.exe`. |
 | 15 | Nesa24's Camera Modules | unversioned Sider module — confirmed active Aug 2026 | EvoWeb — search: "Nesa24 camera" | VERIFIED | TV-broadcast camera: zoom, height, smooth panning. Sider module. |
-| 16 | Ball Server (Hawke/community) | unversioned Sider module — confirmed active Aug 2026 | Included in Essentials Mod Pack (Layer 3); standalone thread: EvoWeb — search: "Ball Server sider" | VERIFIED | Competition-aware ball selection. Sider module. In-game: Spacebar → `~` → OMB.lua. Bundled with Ballpack v60 AIO in the Essentials Mod Pack. |
+| 16 | Ball Server (zlac v1.30, final) | v1.30 + CommonLib, Sider 7 | Guide: https://caocacao.net/pes-2021-ball-pack-hawke/ — module standalone: EvoWeb — search: "Ball Server sider" | VERIFIED | Version-final, engine-identical. CommonLib loads first. Bundled in Essentials (#9). |
 
 ## Gameplay & Career
 
@@ -70,7 +70,7 @@
 
 | # | Mod | Version | Source | Status | Notes |
 |---|---|---|---|---|---|
-| 23 | Soundtrack Server v8.0 (marcoiacovelli02) | v8.0 — confirmed active Aug 2026 | https://www.pesoccerworld.com/descargar/sp-football-life-2026-soundtrack-server-v8-0-by-marcoiacovelli02-6032.html?lang=en | VERIFIED | 3 music collections: 80s (182 songs), Iconic (88 songs), PES+FIFA (97 songs) — 367 total. Favorites system, pre-match intro compatible, Ctrl+F5 live reload. Sider module. Install per included TXT instructions. |
+| 23 | Soundtrack Server v9.0 AIO (marcoiacovelli02) | v9.0 (Jul 11 2026) | https://pes-files.ru/pes_2021_soundtrack_server_v9_0_aio | VERIFIED | SP-FL compatible. F1/F2 favorites, F3 search, Ctrl+F5 refresh, 8-state detection, 40+ tournaments, ML/BAL career support. Collections: 2000s Throwbacks 400+, Best Rock 360+, 90s Hits 250+ (~1,010 total). Install per TXT guides. |
 
 ## pesoccerworld — Kitpacks
 
@@ -83,7 +83,7 @@
 
 | # | Mod | Version | Source | Status | Notes |
 |---|---|---|---|---|---|
-| 26 | Gloves & Boots Pack (Fallons) | April 2026 | https://www.pesoccerworld.com/descargar/pes-2021-y-football-life-2026-pack-de-guantes-y-botas-abril-by-fallons-6052.html?lang=en | VERIFIED | Updated gloves and boots for FL26. Sider `livecpk` + `cpk.root` entry. |
+| 26 | Boot-Root August 2026 (Fallons/DN7/leom3219) | Aug 6 2026 | https://pes-files.com/pes-2021-added-boot-root-august-season-2026/ | VERIFIED | Remove old boot-root first. `livecpk\boot-root` + cpk.root. April Fallons pack kept as fallback link in guide. |
 
 ## pesoccerworld — Graphics
 
@@ -99,7 +99,7 @@ All mods sourced from pes-files.com with Modsfire/Sharemods download mirrors. Al
 
 | # | Mod | Version | Source | Status | Notes |
 |---|---|---|---|---|---|
-| 28 | Mega Scoreboard Pack 2026 v2 | v2 | https://pes-files.com/pes-2021-mega-scoreboard-pack-2026-update-v2/ | VERIFIED — UML conflict | Argentina, WC2026, AFCON scoreboards. Sider: `lua.module = "common\Scoreboard-Server.lua"` + `lua.module = "common\Scoreboard-Hexx.lua"`. #strong[CONFLICT:] UML v3 ships exclusive scoreboards — installing this pack overrides UML's scoreboard assignments. Install only if not using UML, or accept that UML scoreboards will be replaced. |
+| 28 | Mega Scoreboard Pack 2026 v2 | v2 (Jun 13 2026, All Makers) | https://pes-files.com/pes-2021-mega-scoreboard-pack-2026-update-v2/ | VERIFIED — UML conflict | Non-UML base: Argentina, WC2026, AFCON. Server + Hexx. #strong[UML users skip — use UML's own boards.] No v3 exists. |
 | 29 | TV Logo Scoreboard FIFA WC 2026 | unversioned | https://pes-files.com/pes-2021-update-tv-logo-scoreboard-fifa-wc-2026/ | VERIFIED | WC-specific TV logo overlay scoreboard. Copy to matching Sider folders. |
 
 ### Stadiums & Turf
@@ -113,7 +113,7 @@ All mods sourced from pes-files.com with Modsfire/Sharemods download mirrors. Al
 
 | # | Mod | Version | Source | Status | Notes |
 |---|---|---|---|---|---|
-| 32 | Kitpack Style Collection 2026/27 V16 AIO | V16 | https://pes-files.com/pes-2021-kitpack-style-collection-2026-27-v16-aio/ | VERIFIED | By Karjan. Compatible with all patches including FL26. Copy to matching Sider `livecpk` folder. |
+| 32 | Collection Kits Style V19 AIO 2026/27 | V19 (Aug 25 2026, Karjan Studio et al.) | https://pes-files.com/pes-2021-collection-kits-style-v19-aio-season-2026-27/ | VERIFIED | Full 2026/27 AIO, no priors required. PES2021 + FL26. 20+ leagues. Place last in cpk.root chain. (Guide Layer 18: replaces V16 AIO; optional V20–V24 incrementals in mod-ideas.) |
 | 33 | Animated Adboard Pack V2 AIO 2026/27 | V2 | https://pes-files.com/pes-2021-animated-adboard-pack-v2-aio-2026-27/ | VERIFIED | By lanphan09. FL26-compatible animated adboards. `cpk.root = ".\livecpk\Adboard"`. |
 | 34 | FIFA WC New Adboard 2026 | 2026 | https://pes-files.com/pes-2021-fifa-world-cup-new-adboard-2026/ | VERIFIED | World Cup 2026 themed adboards. Copy to matching Sider `livecpk` folder. |
 
@@ -123,7 +123,7 @@ All mods sourced from pes-files.com with Modsfire/Sharemods download mirrors. Al
 |---|---|---|---|---|---|
 | 35 | Realistic Chants Pack 2026 | 2026 | https://pes-files.com/pes-2021-realistic-chants-pack-season-2026/ | VERIFIED | England, Argentina, Spain, France, Italy chants. Sider: `lua.module = "chants.lua"`. Complementary to Predator002 (Layer 2) — install alongside, not as replacement. |
 | 36 | Player Enhanced Foul Voices | unversioned | https://pes-files.com/pes-2021-player-enhanced-foul-voices/ | VERIFIED | Player reaction sound effects for fouls. Copy to matching Sider folders. |
-| 37 | Mariano Closs V5.5.1 | v5.5.1 | https://pes-files.com/pes-2021-mariano-closs-update-v5-5-1/ | VERIFIED | Spanish commentary by Mariano Closs. Alternative to English Commentary v8. Copy to matching Sider folders; select Spanish under System Settings > Language after install. |
+| 37 | Mariano Closs V5.6 (TheViper12) | v5.6 (Aug 30 2026) | https://pes-files.ru/pes_2021_mariano_closs_v5_6 | VERIFIED | +6 phrases, 1,526 callnames, WC2026 intro, AI free-kick selection. Universal Sider/CPK. Same install: `livecpk\Mariano Closs V5` + cpk.root. Spanish alternative to English v8. |
 | 38 | Real Atmosphere Announcer Stadium | unversioned | https://pes-files.com/pes-2021-real-atmosphere-announcer-stadium-update/ | VERIFIED | Stadium PA announcer sounds — goal calls, substitutions, added time announcements. Copy to matching Sider folders. |
 
 ### Immersion & Visuals
@@ -142,9 +142,13 @@ All mods sourced from pes-files.com with Modsfire/Sharemods download mirrors. Al
 | # | Mod | Version | Source | Status | Notes |
 |---|---|---|---|---|---|
 | 48 | Realism Gameplay V12 (All Makers) | V12 (Sep 2026) | https://sharemods.com/8lsb0ktln8e9/PES_2021_Realism_Gameplay_V12.rar.html | VERIFIED | Holland-lineage gameplay overhaul. Install pattern (`livecpk` + Lua modules + Data cpks) — verify the v12 module/file list in the pack readme before swapping. |
-| 49 | Ballpack Season 2026/27 AIO (All Makers) | 2026/27 (Sep 2026) | https://www.ultigamerz.com/2025/09/pes-2021-ballserver-v5-pack-2026-6-aio.html | VERIFIED | 2026/27 balls for every major league (Puma Stellar Nitro set, Adidas UCL Pro, Torfabrik, Brillant APS). Replaces Ball Server content wholesale. |
-| 50 | DN7 FIFA World Cup 2026 Full Kits Pack | Jun 2026 | https://www.kazemario.com/2026/06/pes-2021-fifa-world-cup-2026-kitpack.html | VERIFIED | All 48 WC teams (+ non-qualifiers): kits, fonts/numbers, shorts/socks, WC hierarchy folders, PANDURO badge-server sleeve badges, referee kits. By DN7 + KitManCal, byBAU, Hawke, PANDURO et al. (corroborated: Kazemario + pesmodding + video showcases). KitServer `content/kit-server` + map.txt alignment; WC-tournament use. |
+| 49 | Ballpack v60 AIO 2025/26 (Hawke) | Vol 60 Christmas Ed. (~1,606 balls, Dec 2025) | https://www.ultigamerz.com/2025/12/pes-2021-ballpack-v60-aio-2025-26.html | VERIFIED | PES2021 + FL26. Delete old `content\ball-server\` first — never mix packs. |
+| 50 | DN7 FIFA World Cup 2026 Full Kits Pack | Jun 2026 | https://www.kazemario.com/2026/06/pes-2021-fifa-world-cup-2026-kitpack.html | VERIFIED | Kept as fallback — prefer #56 v3 below. All 48 WC teams (+ non-qualifiers). KitServer + map.txt. |
 | 51 | SmokePatch Real Faces Update 4 | Update 4: 12 May 2026 (pack released 15 Oct 2025) | https://www.pessmokepatch.com/2025/10/faces2627.html | VERIFIED | +600 faces in U4 (~1,400 across U1–U4, includes all previous). 8 pre-installed cpk (1–6 main, 7 updates, 8 next season); 15k+ faces; 37.4 GB disk (34.5 GB archives) — raise pagefile. Install: extract `01_smkdb_fa7.cpk` → `game/download`. Compat: SP FL26 (older versions = mismatched IDs). |
+| 56 | Kitpack FIFA WC 2026 Update v3 | v3 (Aug 25 2026, All Makers) | https://pes-files.com/pes-2021-kitpack-fifa-wc-2026-update-v3/ | VERIFIED | Newest WC kitpack, PES2021 + FL26. Complete WC NT kits. Prefer over #50 DN7 June pack. |
+| 57 | Scoreboard La Liga 2026/27 (Juandrs) | Sep 2 2026 | https://pes-files.com/pes-2021-scoreboard-la-liga-season-2026-27/ | VERIFIED | Companion ON TOP of #28 v2 (`map_competitions.txt`: `19, Spain\La Liga\ESPN NEW LOGO`). Non-UML only. |
+| 58 | Menu Server AIO 2026/27 (All Makers) | Sep 2 2026 | https://pes-files.com/pes-2021-menu-server-aio-season-2026-27/ | VERIFIED | Full 2026/27 menu server over JEMP Max AIO 2025/26. Either this OR PES Street — never both. |
+| 59 | Mega Facepack FL 2026 Update v6 (optional) | Sep 22 2026 | https://pes-files.com/pes-2021-mega-facepack-fl-2026-update-v6/ | VERIFIED existence / UNVERIFIED ID-match | NOT a V5 successor — small Sider supplement (~100 faces, `livecpk\Faces` + cpk.root). Install after V5; revert on mismatch. |
 +
 ## September 2026 Additions — UNVERIFIED (pending FL26 v2.2 smoke test)
 +
@@ -153,17 +157,14 @@ All mods sourced from pes-files.com with Modsfire/Sharemods download mirrors. Al
 | 52 | Prologue — BAL companion (ASK Andalus) | v0.6.5 (post: v0.6.0 beta, Sep 19 2026) | https://askandalus.com/downloads/prologue — post: https://www.reddit.com/r/SPFootballLife/comments/1wkyaa4/new_become_a_legend_immersionstoryline_prologue/ — guide: https://askandalus.com/downloads/prologue/install-guide.html | UNVERIFIED | Free external BAL layer (25 MB, Win 10/11). Inbox/decisions, sponsors, rankings/honours, invented injuries (none/minimum/realistic), crest import shared with Touchline. Reads save only; ±3 own-player boosts via running game with GAME WRITES off-switch (admin parity needed for boosts/OVR). Adds `PrologueCompanion` + `content\prologue`; no Sider scripts, never edits `sider.ini`. #strong[Official site only — author disavows mirrors. UNVERIFIED: site names FL26 v1.4 for live features, no v2.2 statement.] |
 | 53 | Touchline — ML companion (ASK Andalus) | v0.8.6 (post: v0.8.0, ~Sep 12 2026) | https://askandalus.com/downloads/prologue (sibling app, same page) — guide: https://askandalus.com/downloads/touchline/install-guide.html | UNVERIFIED | Free external ML layer. Stories/press/board memory/staff; form arcs, coaching, LIVE ECONOMY budget (all toggleable). Adds `TouchlineCompanion` + 3 scripts (`MLRuntime.lua`, `MLImmersion.lua`, `MLRegenAliases.lua`) with `sider.ini.touchline-<date>.bak` backup; data in `content\ml-immersion\profiles`. #strong[Auto-disables BudgetSetter.lua — crash risk.] #strong[UNVERIFIED: site names FL26 v1.4 for live features, no v2.2 statement.] |
 | 54 | BroadcastCam Manager (Ngysz_419) | v2.0 (Sep 19 2026; v1.0 Sep 18) | Post: https://www.reddit.com/r/SPFootballLife/comments/1wkjccw/broadcastcam_manager_v20/ (v1.0: https://www.reddit.com/r/SPFootballLife/comments/1wjytfq/broadcastcam_manager_v10/) — posts by u/Least-Supermarket-57, tool by Ngysz_419; downloads: https://www.mediafire.com/file/9ihum8weyvlmrz3/BroadCastCam_Manager_v2.0.rar/file + https://www.mediafire.com/file/3lax714vmxd3s1d/BroadCastCam_Manager.rar/file | UNVERIFIED | External `BroadCastCam.ini` + `BroadCastCam.lua` manager: per-stadium TV angles, presets, merge/install + v2.0 AI auto-correct vs stadium map. MediaFire v2.0: 11.81 MB, uploaded 2026-09-19, VirusTotal 0/28 (observed Sep 22). Needs Nesa24 modules (#15) + Stadium Server map first; no `sider.ini` changes. #strong[Scan before running. UNVERIFIED: no explicit v2.2 stamp.] |
-+
 ## Summary
 
-- **Sep 2026: 52 entries tracked — 48 VERIFIED, 4 UNVERIFIED (pending v2.2 smoke test: #52–#55), 0 SUPERSEDED;** 3 SUBSUMED by Essentials (#9 bundles SoundServer, Ball Server, Gameplay Loader), **2 CONFLICTS logged** (Mega Scoreboard × UML; Touchline × BudgetSetter.lua — see conflicts-mods.md). Aug 2026 baseline was 46/46 VERIFIED. Removed #4 v2.20 Option File, #18 Realism v10, #47 Gondowan (Sep 22): superseded or UML-incompatible with no standalone value in a UML guide.
+- **Sep 2026: 56 entries tracked — 51 VERIFIED (+1 half: #59 existence VERIFIED / ID-match UNVERIFIED), 4 UNVERIFIED (#52–#55), 0 SUPERSEDED;** 3 SUBSUMED by Essentials, **2 CONFLICTS** (Mega Scoreboard × UML; Touchline × BudgetSetter.lua). Aug baseline was 46/46. Removed #4, #18, #47 (Sep 22, no standalone value). Added #56 WC v3, #57 La Liga board, #58 Menu Server, #59 V6 faces; upgraded #5, #8, #12, #16, #23, #26, #28, #32, #37, #39, #40, #41, #49, #50.
 - **0 DROPPED**; 1 skipped (Crowd Audio Pack 2026 — redundant: already covered by Atmosphere Overhaul + Predator002)
 - **Download sources: caocacao.net** (base game, updates, commentary), **pesoccerworld.com** (facepacks, kitpacks, accessories, graphics), **EvoWeb** (community mods), **pes-files.com** (scoreboards, audio, visuals, immersion — Modsfire/Sharemods mirrors). 36 stadiums are included in the base installation; commentary v8 is a separate download.
-- **Sourcing methodology:** Direct EvoWeb thread URLs provided where available (Essentials Mod Pack #103385, Soccer Revolution #94305). Mods behind EvoWeb's login wall use `EvoWeb — search: "<term>"` — exact search terms are quoted for copy-paste into EvoWeb's search bar. Mods bundled in the Essentials Mod Pack note both the pack source and the standalone thread for users who skip Layer 3.
-- **UML v3 is free** — hosted on caocacao.net; FL26 v2.2 compatible with PixelDrain downloads.
+- **September 2026 sources added:** r/SPFootballLife posts (BroadcastCam v2.0, Prologue v0.6.0, new-leagues beta, UEFA-format research), askandalus.com (Prologue v0.6.5 + Touchline v0.8.6), pes-files.com + pes-files.ru file pages (V12, Ballpack v60, Soundtrack v9, Closs v5.6, La Liga board, Menu Server, V6 faces, WC v3, boot-root Aug), Sharemods/ultigamerz mirrors, pessmokepatch.com (Faces U4).
+- **Still current, no change:** Essentials Mod Pack v1.4 (no v1.5+ exists), UML v3 (no v4 for FL26), Nesa24 v3.3 (final), Stadium Server v1.60 (final), Mega Facepack V5 (no F4L V6 — pes-files "V6" is a different sider supplement), English Commentary v8, Predator V8.1 (latest official), Referee Whistle, Realistic Chants, Foul Voices, Announcer, 4K Turf, Snow Turf, Karjan V16 line (see #32 → V19 note), Sleeve 4.0 (no v4.1+), Shirtless v4.2 (latest), Adboard V2 (latest on pes-files), Gameplay Loader v2.6, AI Manager v2, Realism V12, Touchline/Prologue versions + v2.2 caveat.
 - **League expansion mods are community-driven and scope varies** — verify current coverage at install time.
-- **September 2026 sources added:** r/SPFootballLife release posts (BroadcastCam Manager v2.0, Prologue v0.6.0, new-leagues beta, UEFA-format research), askandalus.com (Prologue v0.6.5 + Touchline v0.8.6 official downloads), Sharemods/ultigamerz mirrors (Realism V12, Ballpack 2026/27), kazemario.com (DN7 WC kits), pessmokepatch.com (Real Faces Update 4).
-- **Still current, no change:** Essentials Mod Pack v1.4, UML v3, Mega Facepack V5 (no V6 file page found — "V6" hits are unversioned volumes), English Commentary v8.
 
 
 ## Installation Guide Decisions — Layers 1–5
