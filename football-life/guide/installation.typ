@@ -78,14 +78,13 @@ The FL26 root contains these directories relevant to the mod stack:
     columns: (1fr, 2fr, 2fr),
     table.header([Mod], [Details], [Install]),
     [SoundServer (2026)], [FL26-tuned audio mixer by All Makers (nesa24 lineage): stadium atmosphere, fan reactions, whistles, kick/net sounds. #strong[Bundled in Essentials (Layer 3).] Standalone: #link("https://pes-files.ru/pes_2021_sound_server_mod_update_2026")[Sound Server 2026 (Jul 2026)]. Legacy build: #link("https://pesnewupdate.com/pes-2021-sound-server-by-nesa24/")[PESNewupdate mirror].], [Place the Lua module in `Sider\`. Enable with `lua.module = "SoundServer.lua"`. Tune levels via the Sider overlay. Skip if you installed Essentials first.],
-    [Predator002 Chants V8.1 AIO], [Latest release (Dec 2023, 2024 season — no newer version exists; compatible with all patches incl. FL26). ~950 teams + 331 player chants + ChantsBase ambient. #link("https://pes-files.ru/pes_2021_chants_pack_v8_1_aio_update_season_2024")[V8.1 AIO]. For 2026-season coverage of 5 big nations, add Realistic Chants 2026 (Layer 19).], [Extract; copy `livecpk` contents to Sider's `livecpk\`. Add `cpk.root = ".\livecpk\Preds2021_Chants"` (+ Player Chants Enabled/Disabled lines per readme).],
     [Whistle Mod (SoulBallZ)], [7 whistle options (Default, A–F), 300–400% volume variants. #link("https://caocacao.net/pes-2021-referee-whistle-fix/")[Sider + CPK versions].], [Pick one variant, copy its folder to `livecpk\`. Add its `cpk.root`.],
     [Atmosphere 2026 + Crowd Overhaul], [All-Makers 2026 stack: net sounds, pitch FX, crowd overhaul via `CrowdSoundOverhaul.lua`. #link("https://pes-files.ru/pes_2021_atmosphere_sound_server_2026")[Atmosphere 2026] + #link("https://pes-files.ru/pes_2021_crowd_sound_overhaul_update_2026")[Crowd Overhaul] (Sider 2026 v7.4.1).], [Copy folders to matching Sider dirs. Add the `cpk.root` lines and `lua.module = "CrowdSoundOverhaul.lua"` per the pack readme.],
   ),
   caption: [Layer 2 — Audio Framework & Atmosphere]
 )
 
-#strong[Volume tuning:] In-game, set Commentary to 10–12 in the audio settings. Balance Stadium Sound against Commentary to preference — the Atmosphere Overhaul and Predator002 packs drive the stadium mix, so keep crowd channels high. Use SoundServer's Sider overlay for fine-grained per-channel adjustment.
+#strong[Volume tuning:] In-game, set Commentary to 10–12 in the audio settings. Balance Stadium Sound against Commentary to preference — the Atmosphere Overhaul packs drive the stadium mix, so keep crowd channels high. Use SoundServer's Sider overlay for fine-grained per-channel adjustment.
 
 === Layer 3 — Visual Foundation
 
@@ -347,7 +346,7 @@ Realism Gameplay V12 (All Makers) is the primary recommendation — the Septembe
   table(
     columns: (auto, 2fr, 2fr),
     table.header([Mod], [Details], [Install]),
-    [Realistic Chants Pack 2026], [Team-specific chants for England, Argentina, Spain, France, and Italy. Sider module. Complementary to Predator002 (Layer 2) — install alongside for broader chant coverage. Available at #link("https://pes-files.com/pes-2021-realistic-chants-pack-season-2026/")[pes-files.com].], [Enable in `sider.ini` with `lua.module = "chants.lua"`. Copy chant audio files to the Sider module's designated directory. This coexists with Predator002 — each module handles different teams and leagues.],
+    [Realistic Chants Pack 2026], [Team-specific chants for England, Argentina, Spain, France, and Italy. Sider module. 2026-season coverage via All Makers (Apr 2026). Available at #link("https://pes-files.com/pes-2021-realistic-chants-pack-season-2026/")[pes-files.com].], [Enable in `sider.ini` with `lua.module = "chants.lua"`. Copy chant audio files to the Sider module's designated directory.],
     [Player Enhanced Foul Voices], [Player reaction voice samples for fouls — adds grunts, shouts, and protests on heavy tackles. Unversioned. Available at #link("https://pes-files.com/pes-2021-player-enhanced-foul-voices/")[pes-files.com].], [Copy to matching Sider `livecpk` folder.],
     [Mariano Closs V5.6 (TheViper12)], [Spanish-language commentary by Mariano Closs (Aug 2026): +6 phrases, 1,526 callnames, WC2026 intro. Universal Sider/CPK version, no previous versions required. Available at #link("https://pes-files.ru/pes_2021_mariano_closs_v5_6")[pes-files.ru].], [Copy `Mariano Closs V5` to `livecpk\`. Add `cpk.root = ".\livecpk\Mariano Closs V5"` to `sider.ini`. After install, select Spanish under System Settings > Language > Commentary. This replaces English commentary entirely — not a mix.],
     [Real Atmosphere Announcer Stadium], [Stadium PA announcer: goal calls, substitution announcements, added time declarations. Unversioned. Available at #link("https://pes-files.com/pes-2021-real-atmosphere-announcer-stadium-update/")[pes-files.com].], [Copy to matching Sider folders. Works through SoundServer's ambient channel — ensure SoundServer (Layer 2) is installed and active.],
@@ -355,7 +354,7 @@ Realism Gameplay V12 (All Makers) is the primary recommendation — the Septembe
   caption: [Layer 19 — Audio Additions]
 )
 
-#strong[Audio coexistence:] The Realistic Chants Pack and Predator002 (Layer 2) serve different teams and can coexist without conflicts. The Mariano Closs commentary is a complete replacement for English commentary — install one, not both. The Stadium Announcer operates through SoundServer's ambient audio channel and complements all other audio mods.
+#strong[Audio coexistence:] The Mariano Closs commentary is a complete replacement for English commentary — install one, not both. The Stadium Announcer operates through SoundServer's ambient audio channel and complements all other audio mods.
 
 === Layer 20 — Immersion & Visuals
 

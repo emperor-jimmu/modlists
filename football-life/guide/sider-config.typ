@@ -48,9 +48,9 @@ This is the opposite of how many game mod managers work (loose files override ar
 
 ```ini
 [cpk]
-cpk.root = ".\livecpk\preds-root"
-cpk.root = ".\livecpk\referee-whistle"
-cpk.root = ".\livecpk\atmosphere-overhaul"
+cpk.root = ".\livecpk\Referee Whistle Fix"
+cpk.root = ".\livecpk\NetSound"
+cpk.root = ".\livecpk\Pitch Sound FX"
 
 ```
 
@@ -68,9 +68,8 @@ Complete `sider.ini` template for this mod stack:
     [`lua.module = "BallServer.lua"`], [Competition-aware ball selection.],
     [`lua.module = "GameplayLoader.lua"`], [Gameplay mod switcher — activate one mod at a time.],
     [`lua.module = "BroadCastCam.lua"`], [Camera tuning modules by nesa24.],
-    [`cpk.root = ".\livecpk\preds-root"`], [Predator002 Chant Pack V8 — team-specific chants + ChantsBase ambient crowd.],
-    [`cpk.root = ".\livecpk\referee-whistle"`], [Referee Whistle Mod — high-fidelity whistle samples.],
-    [`cpk.root = ".\livecpk\atmosphere-overhaul"`], [Atmosphere / Stadium Sound Overhaul — goal reactions, jeers, crowd swells.],
+    [`cpk.root = ".\livecpk\Referee Whistle Fix"`], [Whistle Mod (SoulBallZ) — pick one variant folder.],
+    [`cpk.root = ".\livecpk\NetSound"` + `cpk.root = ".\livecpk\Pitch Sound FX"`], [Atmosphere 2026 + Crowd Overhaul — net sounds, pitch FX (`lua.module = "CrowdSoundOverhaul.lua"`).],
     [—], [#strong[Facepack:] Mega Facepack V4/V5 installs to `download\` — no `cpk.root` entry needed. FL26 reads faces directly from the `download` folder at startup. #emph[Remove any old `cpk.root = ".\content\faces"` line if migrating from the SmokePatch facepack.]],
   ),
   caption: [Complete `sider.ini` — Our Mod Stack]
