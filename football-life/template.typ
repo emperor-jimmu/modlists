@@ -16,6 +16,7 @@
 #show heading.where(level: 3): set text(fill: rgb("#3a3a3a"), weight: "bold", size: 13pt, font: "Bahnschrift")
 #show heading.where(level: 1): it => { it; line(length: 100%, stroke: 0.5pt + rgb("#1a5c2a")) }
 #show link: set text(fill: rgb("#2d8a4e"))
+#show figure: set block(breakable: true)
 
 // == Cover Page
 #v(3.5cm)
