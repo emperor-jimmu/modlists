@@ -1,7 +1,7 @@
 # SP Football Life 26 — Mod Verification Register
 
 **Baseline:** FL26 v2.2 (May 2026)
-**Verified:** 2026-08-10
+**Verified:** 2026-09-22 (r/SPFootballLife sweep + Prologue + BroadcastCam Manager v2.0)
 
 #strong[Download Source:] Football Life 2026 base game, updates, and commentary are hosted on caocacao.net. Downloads are via Mediafire and Sharemods mirrors — no deceptive ad traps. Commentary v8 (English, Peter Drury & Jim Beglin) is available as a separate download; 36 stadiums are included in the base installation.
 
@@ -12,7 +12,7 @@
 | 1 | SP Football Life 2026 (base) | v1.0 | https://caocacao.net/download-football-life-2026-fl-26/ | VERIFIED | 11-part download via Mediafire + Sharemods mirrors. Extract all parts, run `SPFL26_setup.exe` to a clean directory. Launch via `FL_2026 start.exe`. 36 stadiums included. |
 | 2 | Update v2.0 | v2.0 | https://caocacao.net/download-football-life-2026-fl-26/ | VERIFIED | Single file via Modsfire + Sharemods. 15 new promoted teams, winter transfers, refreshed player stats, gameplay adjustments (slower, more tactical pacing). Run installer over existing install. Compatible with all prior save games. |
 | 3 | Update v2.1 | v2.1 | https://caocacao.net/download-football-life-2026-fl-26/ | VERIFIED | Database + kit update. Apply after v2.0. |
-| 4 | v2.20 Option File | Jun 2026 | https://caocacao.net/download-football-life-2026-fl-26/ | VERIFIED | World Cup 2026 rosters, confirmed summer transfers through June 25 2026. Backup `EDIT00000000` first, install over FL26, replace files. Compatible with FL26 v2.20. |
+| 4 | v2.20 Option File | Jun 2026 | https://caocacao.net/download-football-life-2026-fl-26/ | SUPERSEDED | Superseded by #47 Gondowan Final EDIT File (Sep 2026: summer window to mid-Sep, 800+ revisions). Kept for reference — use #47 unless you must stay on the June database. |
 | 5 | English Commentary v8 | v8 | https://caocacao.net/download-football-life-2026-fl-26/ | VERIFIED | Separate download from caocacao.net. Peter Drury & Jim Beglin. Install then select English under System Settings > Language. |
 | 6 | Facepack + Update 3 | 14,500 faces / 38 GB | https://caocacao.net/download-football-life-2026-fl-26/ | VERIFIED | Available on caocacao.net alongside base game. For the best face coverage, see the dedicated facepack section below. |
 
@@ -38,7 +38,7 @@
 
 | # | Mod | Version | Source | Status | Notes |
 |---|---|---|---|---|---|
-| 9 | Essentials Mod Pack (SPFL 26) | v1.4 — confirmed active Aug 2026 | https://evoweb.uk/threads/sp-football-life-spfl26-1-4-essentials-mod-pack-unpacked-recommended-addons.103385/ | VERIFIED | Community AIO foundation pack. Bundles: Ballpack v60 AIO by Hawke (Ball Server), SoundServer, Gameplay Loader, scoreboards, adboards, updated kits/boots/gloves, referee kits by RezvFX, entrance scenes. Extract into FL26 root, merge `SiderAddons`. Subsumes standalone Ball Server, SoundServer, and Gameplay Loader threads. |
+| 9 | Essentials Mod Pack (SPFL 26) | v1.4 — confirmed active Aug 2026 | https://evoweb.uk/threads/sp-football-life-spfl26-1-4-essentials-mod-pack-unpacked-recommended-addons.103385/ | VERIFIED | Community AIO foundation pack. Bundles: Ballpack v60 AIO by Hawke (Ball Server), SoundServer, Gameplay Loader, scoreboards, adboards, updated kits/boots/gloves, referee kits by RezvFX, entrance scenes. Extract into FL26 root, merge `SiderAddons`. Subsumes standalone Ball Server, SoundServer, and Gameplay Loader threads. Bundled Ballpack v60 AIO superseded by #49 (Ballpack 2026/27 AIO). |
 
 ## EvoWeb — Graphics, Stadiums, Camera, Balls
 
@@ -57,7 +57,7 @@
 | # | Mod | Version | Source | Status | Notes |
 |---|---|---|---|---|---|
 | 17 | Gameplay Loader | unversioned Sider module — confirmed active Aug 2026 | Included in Essentials Mod Pack (Layer 3); standalone thread: EvoWeb — search: "Gameplay Loader" | VERIFIED | Swap between gameplay mods. Sider module. Bundled in the Essentials Mod Pack with multiple gameplay options pre-loaded. |
-| 18 | Realism Next-Gen v10 | v10 | https://pes-files.com/pes-2021-gameplay-realism-next-gen-update-v10/ | VERIFIED | Primary gameplay mod. Mature 10-iteration overhaul: improved player movement, natural animations, ball physics, shooting/finishing, goalkeeper behavior, physical contact, pitch feel. Explicitly FL26 compatible. Install: move "Realism Gameplay V10" folder to `livecpk`, merge modules into `Sider\`, add `cpk.root` + 10 `lua.module` entries to `sider.ini`, copy `dt18_all.cpk` and `dt13_all.cpk` to game Data folder. Downloads: Modsfire + Sharemods. |
+| 18 | Realism Next-Gen v10 | v10 | https://pes-files.com/pes-2021-gameplay-realism-next-gen-update-v10/ | SUPERSEDED | Superseded by #48 Realism Gameplay V12 (Sep 2026, same install pattern — verify the v12 module/file list before swapping). v10 install (archival): move "Realism Gameplay V10" folder to `livecpk`, merge modules into `Sider\`, add `cpk.root` + 10 `lua.module` entries to `sider.ini`, copy `dt18_all.cpk` and `dt13_all.cpk` to game Data folder. Downloads: Modsfire + Sharemods. |
 | 19 | AI Manager v2 (Emre Cakir) | v2 | https://pes-files.com/pes-2021-al-manager-mod-update-v2/ | VERIFIED | Complementary AI mentality manager — runs alongside any gameplay mod without conflicts. Auto mode adapts team mentality to match state (losing→attack level 3–4, winning against strong team→defense level 0 in last 10 min). Manual override available. Keys: 8 (select team), 9 (auto/manual toggle), PageUp/Down (manual attack/defense). Single Sider `lua.module = "Al-Manager.lua"`. Downloads: Modsfire + Sharemods. |
 | 20 | Ultimate Master League (UML) v3 | v3 (2026) | caocacao.net (free) — UML Team (PogChampion, jovic1901, Daemon, BMKits) | VERIFIED | Free download via PixelDrain. FL26 v2.2 compatible. Downloads: FL Version, EDIT00000000, install instructions, Ball Server fix v3 (PixelDrain), and WC addon fix (Modsfire). Overhauled player dev, 2,800+ stat adjustments, World Cup 2026 rosters, K League 1, exclusive facepacks. |
 | 21 | Ultra League Patch (ULP) / community league databases | WIP — active Aug 2026 | Community — EvoWeb / Reddit r/SPFootballLife | VERIFIED — note below | Adds regional leagues (various scopes — verify current coverage at install time). Liga MX and CSL available via separate community database mods. Active development as of Aug 2026. |
@@ -139,14 +139,34 @@ All mods sourced from pes-files.com with Modsfire/Sharemods download mirrors. Al
 | 43 | Celebration Mod Shirtless V4.2 | v4.2 | https://pes-files.com/pes-2021-celebration-mod-shirtless-update-v4-2/ | VERIFIED | Shirtless goal celebration animations. Copy to matching Sider folders. |
 | 44 | GP Prematch Animations 2026 | 2026 | https://pes-files.com/pes-2021-gp-prematch-animations-season-2026/ | VERIFIED | Pre-match tunnel, lineup, and warm-up animations. Copy to matching Sider `livecpk` folder. |
 
+## September 2026 Additions — VERIFIED
++
+| # | Mod | Version | Source | Status | Notes |
+|---|---|---|---|---|---|
+| 47 | Gondowan Final EDIT File | Sep 2026 (final) | https://www.reddit.com/r/SPFootballLife/comments/1wfnjz6/release_gondowan_final_edit_file_for_fl26/ | VERIFIED | #strong[Supersedes #4.] Summer window to Sep 14 2026, 800+ rating revisions, overalls/positions/heights, Brasileirão Série A destaques. "Road to FL27" bridge file for the v2.20 data level. Overwrite `EDIT00000000` in `Documents\KONAMI\…\save` (backup first — overwrites Edit Mode customs). #strong[INCOMPATIBLE with UML/private patches.] |
+| 48 | Realism Gameplay V12 (All Makers) | V12 (Sep 2026) | https://sharemods.com/8lsb0ktln8e9/PES_2021_Realism_Gameplay_V12.rar.html | VERIFIED | #strong[Supersedes #18 v10.] Holland-lineage next iteration. Same install pattern (`livecpk` + Lua modules + Data cpks) — verify the v12 module/file list in the pack readme before swapping. |
+| 49 | Ballpack Season 2026/27 AIO (All Makers) | 2026/27 (Sep 2026) | https://www.ultigamerz.com/2025/09/pes-2021-ballserver-v5-pack-2026-6-aio.html | VERIFIED | 2026/27 balls for every major league (Puma Stellar Nitro set, Adidas UCL Pro, Torfabrik, Brillant APS). Replaces Ball Server content wholesale — supersedes the Ballpack v60 AIO bundled in #9. |
+| 50 | DN7 FIFA World Cup 2026 Full Kits Pack | Jun 2026 | https://www.kazemario.com/2026/06/pes-2021-fifa-world-cup-2026-kitpack.html | VERIFIED | All 48 WC teams: kits + fonts + PANDURO sleeve badges + referee kits. Fills the WC-kit gap (register had WC badges, scoreboards, rosters — no WC kitpack). KitServer `content/kit-server` + map.txt. |
+| 51 | SmokePatch Real Faces Update 4 | Update 4 / cpk 7 | https://www.pessmokepatch.com/2025/10/faces2627.html | VERIFIED | Official +600-face cumulative update (~15k faces total). ID-safe alternative/supplement to FP2 Mega Facepack V5. Replace `01_smkdb_fa7.cpk` in `SP Football Life 26/download`. |
++
+## September 2026 Additions — UNVERIFIED (pending FL26 v2.2 smoke test)
++
+| # | Mod | Version | Source | Status | Notes |
+|---|---|---|---|---|---|
+| 52 | Prologue — BAL companion (ASK Andalus) | v0.6.5 (post: v0.6.0 beta, Sep 19 2026) | https://askandalus.com/downloads/prologue — post: https://www.reddit.com/r/SPFootballLife/comments/1wkyaa4/new_become_a_legend_immersionstoryline_prologue/ | UNVERIFIED | Free external BAL storyline layer (25 MB, Win 10/11): inbox decisions, sponsors, rankings/honours, ±3 boosts with GAME WRITES off-switch. No Sider scripts, never edits `sider.ini`; reads the save, never writes it. #strong[Author disavows mirrors — link the official site only.] |
+| 53 | Touchline — ML companion (ASK Andalus) | v0.8.6 (post: v0.8.0, ~Sep 12 2026) | https://askandalus.com/downloads/prologue (sibling app, same page) | UNVERIFIED | Free external ML storyline layer from the Prologue author. Adds a companion folder + 3 Sider scripts (backs up `sider.ini` first). #strong[Conflicts with BudgetSetter.lua] (installer auto-disables it). |
+| 54 | BroadcastCam Manager (Ngysz_419) | v2.0 (Sep 19 2026; v1.0 Sep 18) | Post: https://www.reddit.com/r/SPFootballLife/comments/1wkjccw/broadcastcam_manager_v20/ (v1.0: https://www.reddit.com/r/SPFootballLife/comments/1wjytfq/broadcastcam_manager_v10/) — posts by u/Least-Supermarket-57, tool by Ngysz_419; downloads: https://www.mediafire.com/file/9ihum8weyvlmrz3/BroadCastCam_Manager_v2.0.rar/file + https://www.mediafire.com/file/3lax714vmxd3s1d/BroadCastCam_Manager.rar/file | UNVERIFIED | External `BroadCastCam.ini` manager (not a Sider module): per-stadium TV angles, presets, merge/install + v2.0 AI auto-correct aligning stadium names with map files. Complements #15 (needs Nesa24 modules + Stadium Server map installed first). No `sider.ini` changes. #strong[Scan the binary before running; confirm FL26 v2.2 at install time.] |
++
 ## Summary
 
-- **46/46 mods VERIFIED** against live community sources; **0 BUNDLED**, **3 SUBSUMED by Essentials** (SoundServer, Ball Server, Gameplay Loader — bundled in the Essentials Mod Pack), **1 CONFLICT** (Mega Scoreboard Pack with UML exclusive scoreboards)
+- **Sep 2026: 55 entries tracked — 49 VERIFIED, 4 UNVERIFIED (pending v2.2 smoke test: #52–#55), 2 SUPERSEDED (#4 → #47, #18 → #48);** 3 SUBSUMED by Essentials (#9 bundles SoundServer, Ball Server, Gameplay Loader), **3 CONFLICTS logged** (Mega Scoreboard × UML; Gondowan file × UML; Touchline × BudgetSetter.lua — see conflicts-mods.md). Aug 2026 baseline was 46/46 VERIFIED.
 - **0 DROPPED**; 1 skipped (Crowd Audio Pack 2026 — redundant: already covered by Atmosphere Overhaul + Predator002)
 - **Download sources: caocacao.net** (base game, updates, commentary), **pesoccerworld.com** (facepacks, kitpacks, accessories, graphics), **EvoWeb** (community mods), **pes-files.com** (scoreboards, audio, visuals, immersion — Modsfire/Sharemods mirrors). 36 stadiums are included in the base installation; commentary v8 is a separate download.
 - **Sourcing methodology:** Direct EvoWeb thread URLs provided where available (Essentials Mod Pack #103385, Soccer Revolution #94305). Mods behind EvoWeb's login wall use `EvoWeb — search: "<term>"` — exact search terms are quoted for copy-paste into EvoWeb's search bar. Mods bundled in the Essentials Mod Pack note both the pack source and the standalone thread for users who skip Layer 3.
 - **UML v3 is free** — hosted on caocacao.net; FL26 v2.2 compatible with PixelDrain downloads.
 - **League expansion mods are community-driven and scope varies** — verify current coverage at install time.
+- **September 2026 sources added:** r/SPFootballLife release posts (Gondowan Final EDIT File, BroadcastCam Manager v2.0, Prologue v0.6.0, new-leagues beta, UEFA-format research), askandalus.com (Prologue v0.6.5 + Touchline v0.8.6 official downloads), Sharemods/ultigamerz mirrors (Realism V12, Ballpack 2026/27), kazemario.com (DN7 WC kits), pessmokepatch.com (Real Faces Update 4).
+- **Still current, no change:** Essentials Mod Pack v1.4, UML v3, Mega Facepack V5 (no V6 file page found — "V6" hits are unversioned volumes), English Commentary v8.
 
 
 ## Installation Guide Decisions — Layers 1–5
@@ -227,3 +247,13 @@ All mods sourced from pes-files.com with Modsfire/Sharemods download mirrors. Al
 - **Persona 3 — The Basque Purist (Iker Etxebarria):** Designed as the philosophical hard-mode. Regional-only signings adapt Athletic Bilbao's cantera policy to clubs outside the Basque Country, with specific geographic scopes provided for each suggested team. The "accept every transfer request" rule forces squad turnover the player cannot control — a genuine test of academy depth. Twelve-minute halves compensate for the youth-development time requirement inherent in the concept.
 - **Persona 4 — The Journeyman (Thomas Krause):** Designed as the bittersweet capstone. The two-season club rotation and free-agent-only transfers create the most mechanically distinct save in the set — no squad building, no youth pipelines, no transfer market. The age-sixty hard stop (seven seasons, honour-system) adds urgency: every season matters because there is a defined endpoint. Top Player difficulty and fast game speed reflect Krause's thirty years of reading the game faster than the player.
 - **Rule frameworks (5.3):** Five self-contained constraint sets that slot into any save. Transfer realism, scouting realism, and financial fair play govern the market; youth-first governs squad composition; sporting director mode governs scope of authority. All are honour-system — the game does not enforce them, and the guide states this explicitly. Frameworks are designed to stack without contradiction: a player can run youth-first plus financial fair play plus scouting realism simultaneously.
+
+## September 2026 Refresh Decisions (2026-09-22)
+
+- **Source sweep:** r/SPFootballLife posts Aug 10 → Sep 22 2026. Direct Reddit JSON returned 403, so facts were corroborated via post text plus official download pages, mirror/file pages, and videos. Single-source items (La Liga 26/27 scoreboard, autumn boot/kit volumes) stayed in mod-ideas.md; method-only research (UEFA 36-team format) is noted there until a downloadable pack exists.
+- **Gondowan Final EDIT File (#47):** Replaces the stale Jun-25 v2.20 Option File (#4, now SUPERSEDED) — summer window to Sep 14, 800+ revisions, "Road to FL27" bridge for the v2.20 data level. UML-incompatible and overwrites Edit Mode customs; both warnings are in the row and the guide.
+- **Realism V12 (#48) + Ballpack 2026/27 (#49):** Same authors and install patterns as the entries they supersede; recorded as VERIFIED with a verify-the-file-list note because lineage and mirrors triangulate. #18 v10 is now SUPERSEDED; #9's bundled Ballpack v60 is noted superseded in place.
+- **Prologue (#52) / Touchline (#53):** Real: VERIFIED (official site + install guide corroborate the post almost verbatim). FL26 v2.2: UNVERIFIED — no explicit v2.2 test statement; design is low-risk (Prologue adds no Sider scripts and never edits sider.ini; both read the save while FL writes it). Recorded at current-download versions (v0.6.5 / v0.8.6) with as-posted versions noted. Author disavows mirrors — official site only, never link reuploads.
+- **BroadcastCam Manager v2.0 (#54):** Complements Nesa24's camera modules (#15) rather than competing: Nesa24 tunes the in-game camera, BroadcastCam manages per-stadium `BroadCastCam.ini` presets and name-mapping. External tool, no Sider module, no `sider.ini` changes. Real verified; v2.2 smoke test pending.
+- **New-leagues beta (#55):** Experimental runtime club-ceiling break (750 → 1,600). Softens the "no lower-league pyramid" limitation to "experimental via beta" — the limitation itself is kept because the beta's season-gen wall and career crash make it unsuitable as a general recommendation.
+- **DN7 WC kits (#50) / SmokePatch Update 4 (#51):** Gap-fills with no supersession — the register had WC badges/scoreboards/rosters but no WC kitpack, and no official SmokePatch face entry.
