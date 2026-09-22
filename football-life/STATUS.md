@@ -44,7 +44,7 @@
 
 | # | Mod | Version | Source | Status | Notes |
 |---|---|---|---|---|---|
-| 10 | Stadium Server (zlac, v1.60) | v1.60 — pre-installed in FL25/FL26 | https://www.pessmokepatch.com/2024/11/siderstadiums.html (docs + packs); standalone: EvoWeb — search: "Stadium Server sider" | VERIFIED | #strong[Pre-installed — do not replace with an older version.] Unlimited stadiums, `map_teams.txt` + `map_competition.txt`. Enable in `sider.ini`. |
+| 10 | Stadium Server (zlac, v1.60) | v1.60 — pre-installed in FL25/FL26 | Docs + regional packs: https://www.pessmokepatch.com/2024/11/siderstadiums.html — standalone module: https://pes-files.ru/pes_2021_stadium_server_2020_v1_60 | VERIFIED | #strong[Pre-installed — do not replace with an older version.] Unlimited stadiums, `map_teams.txt` + `map_competition.txt`. Enable in `sider.ini`. |
 | 11 | Stadium packs (SmokePatch regional) | per-region (England 36 ~9 GB, Spain 36 ~6.5 GB, …) | https://www.pessmokepatch.com/2024/11/siderstadiums.html | VERIFIED | High-res stadiums + adboards + tunnels. Extract to `SiderAddons\content\stadiums\`, copy page's map lines into `map_teams.txt`. Excludes the 36 pre-installed FL stadiums. |
 | 12 | Soccer Revolution | unversioned — confirmed active Aug 2026 | https://evoweb.uk/threads/soccer-revolution-10-0-brand-new-gameplay-graphics-reshades.94305/ | VERIFIED | Lighting overhaul: pitch textures, stadium shadows. Sider module / `livecpk`. |
 | 13 | Jeremiah's Ultra Turfs | unversioned — confirmed active Aug 2026 | EvoWeb — search: "Jeremiah Ultra Turfs" | VERIFIED | Organic non-repeating grass with realistic wear. Sider `livecpk`. |
