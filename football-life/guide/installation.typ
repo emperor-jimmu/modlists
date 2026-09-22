@@ -28,7 +28,7 @@ Download SP Football Life 2026 from caocacao.net at #link("https://caocacao.net/
     [Update v2.0], [v2.0], [Download from #link("https://caocacao.net/download-football-life-2026-fl-26/")[caocacao.net] (Modsfire + Sharemods). Major database update: 15 new promoted teams, winter transfers, refreshed player stats, and gameplay adjustments (slower, more tactical pacing, revised set-piece power). Extract and run the installer over your existing FL26 install. Compatible with all prior save games.],
     [Update v2.1], [v2.1], [Download from #link("https://caocacao.net/download-football-life-2026-fl-26/")[caocacao.net]. Database and kit update. Apply after v2.0.],
     [Update v2.2 (final)], [May 12 2026], [Download from #link("https://pes-files.com/pes-2021-sp-football-life-2026-v2-2/")[pes-files.com] (Modsfire mirror + official link page). Final post-season update: database fixes (national teams), club + national kits. Requires v2.0 installed. Career saves from any FL26 version continue. Ships a new edit file. Unzip, run the installer, select the game directory.],
-    [Gondowan Final EDIT File], [Sep 2026 (final)], [Download from the #link("https://www.reddit.com/r/SPFootballLife/comments/1wfnjz6/release_gondowan_final_edit_file_for_fl26/")[r/SPFootballLife release post]. Summer window to Sep 14 2026, 800+ rating revisions, overalls/positions/heights. Backup `EDIT00000000` first — this overwrites Edit Mode customs. #strong[Not compatible with UML or private patches.]],
+    [Gondowan Final EDIT File], [Sep 2026 (final)], [Download from the #link("https://www.reddit.com/r/SPFootballLife/comments/1wfnjz6/release_gondowan_final_edit_file_for_fl26/")[r/SPFootballLife release post]. Summer window to Sep 14 2026, 800+ rating revisions, overalls/positions/heights. #strong[Stock-database path only — SKIP this row if you install UML (Layer 10 ships its own EDIT00000000).] Backup `EDIT00000000` first — this overwrites Edit Mode customs. #strong[Not compatible with UML or private patches.]],
   ),
   caption: [Base Game Components]
 )
@@ -223,7 +223,7 @@ Realism Gameplay V12 (All Makers) is the primary recommendation — the Septembe
 )
 
 #strong[caocacao.net note:] UML v3 is distributed by the UML Team and hosted freely on caocacao.net. Downloads are via PixelDrain (primary files) and Modsfire (WC addon fix). This mod is optional — the base FL26 Master League is fully playable without it.
-#strong[Verify before continuing (UML only):] boot to the Master League menu with UML applied — expect UML's league list (incl. K League 1) and exclusive scoreboards. If the game crashes on load, restore the pre-Layer-10 snapshot: UML and the Gondowan EDIT file are mutually exclusive (see conflicts).
+#strong[Pick one database:] stock + Gondowan (base table) OR UML (this layer, ships its own EDIT00000000) — never both. UML overwrites the EDIT file, so installing Gondowan first is wasted work; installing it after UML corrupts UML's custom DB. Decide before you leave the base-game table.
 
 === Layer 11 — Optional Leagues
 
