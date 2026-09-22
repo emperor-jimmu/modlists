@@ -20,8 +20,8 @@
 | # | Mod | Version | Source | Status | Notes |
 |---|---|---|---|---|---|
 | FP2 | Mega Facepack V5 (Football4Life) | V5 (17,555 faces) | https://www.pesoccerworld.com/descargar/mega-facepack-2026-v5-para-football-life-26-con-17-555-rostros-6103.html?lang=en | VERIFIED | #strong[Primary recommendation.] 17,555 faces across 5 parts. V5 is a complete standalone package — no previous versions required. Extract with WinRAR, copy to `SP Football Life 26/download`. |
-| FP4 | Managers Facepack V1 | V1 | https://www.pesoccerworld.com/descargar/pes-2021-y-sp-football-life-2026-pack-de-caras-de-entrenadores-v1-6124.html?lang=en | VERIFIED | #strong[Supplementary.] Manager faces for Master League. Install after main facepack. Copy to `SP Football Life 26/download`. |
-| FP5 | Youngster Facepack | 122 faces | https://www.pesoccerworld.com/descargar/pes-2021-y-football-life-2026-youngster-facepack-122-con-nuevos-rostros-juveniles-5988.html?lang=en | VERIFIED | #strong[Supplementary.] 122 young player faces. Install after main facepack. Copy to `SP Football Life 26/download`. |
+| FP4 | Managers Facepack V1 | V1 | https://www.pesoccerworld.com/descargar/pes-2021-y-sp-football-life-2026-pack-de-caras-de-entrenadores-v1-6124.html?lang=en | VERIFIED | #strong[Supplementary.] Manager faces for Master League. Install after main facepack. Copy to `SP Football Life 26\download`. |
+| FP4b | Nabilemu Manager Facepack 2026 v1 (optional) | v1 (Jul 21 2026) | https://pes-files.com/pes-2021-manager-facepack-2026-update-v1/ — VK: https://vk.ru/wall-47881762_115301 | VERIFIED existence / UNVERIFIED ID-match | 6 managers (Chivu, Deschamps, Kovac, Amorim, Tuchel, Montella). Sider ID-folder install, not `download\`. Install after V5. |
 | FP6 | Special Facepack by Halobaim | unversioned | https://www.pesoccerworld.com/descargar/pes-2021-y-football-life-2026-facepack-especial-by-halobaim-5990.html?lang=en | VERIFIED | #strong[Supplementary.] Additional special faces curated by Halobaim. Install after main facepack. Copy to `SP Football Life 26/download`. |
 
 ## EvoWeb — Audio & Atmosphere
@@ -114,7 +114,7 @@ All mods sourced from pes-files.com with Modsfire/Sharemods download mirrors. Al
 | # | Mod | Version | Source | Status | Notes |
 |---|---|---|---|---|---|
 | 32 | Collection Kits Style V19 AIO 2026/27 | V19 (Aug 25 2026, Karjan Studio et al.) | https://pes-files.com/pes-2021-collection-kits-style-v19-aio-season-2026-27/ | VERIFIED | Full 2026/27 AIO, no priors required. PES2021 + FL26. 20+ leagues. Place last in cpk.root chain. (Guide Layer 18: replaces V16 AIO; optional V20–V24 incrementals in mod-ideas.) |
-| 33 | Animated Adboard Pack V2 AIO 2026/27 | V2 | https://pes-files.com/pes-2021-animated-adboard-pack-v2-aio-2026-27/ | VERIFIED | By lanphan09. FL26-compatible animated adboards. `cpk.root = ".\livecpk\Adboard"`. |
+| 33 | Mega Animated Adboard Pack FL26 2026 (MindTuts) | Jun 17 2026, 5 parts (4× 2.0 GB + 14.6 MB) | https://sharemods.com/92g09wd9e45i/MEGA_ANIMATED_ADBOARD-PACK_FL26_2026.part1.rar.html (+ parts 2–5, same uploader) | VERIFIED (file pages live, sizes match multi-part split) / install UNVERIFIED | FL26-targeted animated boards (leagues + cups + WC2026). Replaces lanphan09 V2 in the guide. Extract from part1; `cpk.root` per folder name; disable older adboard mods. |
 | 34 | FIFA WC New Adboard 2026 | 2026 | https://pes-files.com/pes-2021-fifa-world-cup-new-adboard-2026/ | VERIFIED | World Cup 2026 themed adboards. Copy to matching Sider `livecpk` folder. |
 
 ### Audio
