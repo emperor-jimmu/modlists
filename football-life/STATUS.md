@@ -257,3 +257,13 @@ All mods sourced from pes-files.com with Modsfire/Sharemods download mirrors. Al
 - **BroadcastCam Manager v2.0 (#54):** Complements Nesa24's camera modules (#15) rather than competing: Nesa24 tunes the in-game camera, BroadcastCam manages per-stadium `BroadCastCam.ini` presets and name-mapping. External tool, no Sider module, no `sider.ini` changes. Real verified; v2.2 smoke test pending.
 - **New-leagues beta (#55):** Experimental runtime club-ceiling break (750 → 1,600). Softens the "no lower-league pyramid" limitation to "experimental via beta" — the limitation itself is kept because the beta's season-gen wall and career crash make it unsuitable as a general recommendation.
 - **DN7 WC kits (#50) / SmokePatch Update 4 (#51):** Gap-fills with no supersession — the register had WC badges/scoreboards/rosters but no WC kitpack, and no official SmokePatch face entry.
+
+## Guide Coherence Review Decisions (2026-09-22, grill session)
+
+- **No mod manager by design (Q1/Q7):** Sider IS the manager (live CPK overlay + Lua modules); no third-party tool understands `map_teams.txt` merging, `cpk.root` priority, or library load order. Doctrine preamble + skip table added at the top of installation.typ; full mechanics stay in the Sider Configuration chapter.
+- **Stadium path canonical (Q2):** `SiderAddons\content\stadiums\map_teams.txt` for FL26 v2.2. Fixed 3 stale `content\stadium-server\` references in sider-config.typ (module table, unmapped-stadiums pitfall, backup list).
+- **Lua order doctrine corrected (Q3):** order is irrelevant EXCEPT libraries first (`nesalib` before BroadCastCam, `CommonLib` before BallServer). Master template reordered with libraries at top.
+- **Camera filename canonical (Q4):** `BroadCastCam.lua` + `lib\nesalib.lua` (verified Sharemods v3.3 contents). Fixed `Camera.lua` placeholder in sider-config module table + master template.
+- **Faces troubleshooting corrected:** old text told users to check `cpk.root` for faces — faces live in `download\` with no `cpk.root`. Rewrote pitfall around extraction path, nested folders, and stale SmokePatch lines.
+- **Verify gates (Q9, load-bearing only):** Layer 3 (three modules in overlay), Layer 5 (kickoff at mapped ground), Layer 7 (clean `sider.log`), Layer 9 (Loader menu + persistence), Layer 10 UML (ML menu boot). Cosmetic layers fail visibly and get one-liners.
+- **Sync rule (Q8):** layer snippets authoritative; master template mirrors them; divergence = bug logged here.

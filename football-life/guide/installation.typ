@@ -1,3 +1,21 @@
+#strong[Read this first — Sider IS your mod manager.] There is no Nexus-style manager for FL26, and none is recommended: no third-party tool understands this stack's three load-bearing mechanisms — `map_teams.txt` merging, `cpk.root` priority (later entries win), and library-module load order (`nesalib`/`CommonLib` before the modules that need them). Sider itself does the managing (live CPK overlay + Lua modules); the layers below ARE the install order. Install in order, verify the gated layers before continuing, and keep the Sider Configuration chapter open beside this one — it holds the master `sider.ini` template that mirrors every layer's snippets.
+
+#strong[If you skip a layer:] some later steps become mandatory instead of optional. Do not skip silently — use this table:
+
+#figure(
+  table(
+    columns: (auto, 2fr),
+    table.header([If you skip], [Then you must]),
+    [Layer 3 (Essentials)], [Install SoundServer (Layer 2), Ball Server (Layer 8), and Gameplay Loader (Layer 9) standalone — each row says how.],
+    [Layer 5 (Stadiums)], [Layer 17 map merges have no base — configure `map_teams.txt` from scratch.],
+    [Layer 10 UML], [Layer 16 scoreboards become your WC2026 coverage — UML's exclusive boards won't be there.],
+    [Layers 11, 19, 20], [Nothing — these are optional by design. Skip freely.],
+  ),
+  caption: [Skip-layer consequences]
+)
+
+#strong[Sync rule:] each layer's snippet is authoritative. The master template in the Sider Configuration chapter mirrors them; any divergence is a bug — report it against the layer, and the fix lands in both places (logged in STATUS.md).
+
 === Base Game Installation
 
 Download SP Football Life 2026 from caocacao.net at #link("https://caocacao.net/download-football-life-2026-fl-26/")[caocacao.net]. The base game (v1.0) is an 11-part archive available via Mediafire and Sharemods mirrors. Extract all parts, then run `SPFL26_setup.exe` to install. The game ships as a standalone installer — no PES 2021 purchase or installation is required. 36 pre-installed stadiums are included in the base installation. English Commentary v8 (Peter Drury & Jim Beglin) is available as a separate download on the same page.
@@ -85,6 +103,8 @@ The FL26 root contains these directories relevant to the mod stack:
 
 This pack is the recommended visual baseline. It installs several community standards (ball server, kit server, scoreboard selector) that later layers expect to be present. Do not skip this layer.
 
+#strong[Verify before continuing:] launch via `FL_2026 start.exe`, press Spacebar for the Sider overlay — expect SoundServer, BallServer, and GameplayLoader listed as loaded. If any is missing, check its `lua.module` line exists in `sider.ini` and the `.lua` file is in `Sider\` (see Missing-module pitfall). Do not continue until all three load.
+
 === Layer 4 — Faces
 
 #figure(
@@ -119,6 +139,7 @@ FL26 includes 36 pre-installed stadiums in the base download (11 in the pre-inst
 )
 
 The Stadium Server is pre-installed — confirm it loads (check the Sider overlay in-game) before adding regional packs. Do not configure `map_teams.txt` until the server module is verified active. If Windows blocks saving `map_teams.txt`, save to Desktop first, then move it back.
+#strong[Verify before continuing:] start a kickoff match at a mapped home ground — expect the assigned stadium, not a generic. If generic, check `SiderAddons\content\stadiums\map_teams.txt` has the team line (see Unmapped-stadiums pitfall).
 
 === Layer 6 — Graphics Overhaul
 
@@ -147,6 +168,7 @@ The Stadium Server is pre-installed — confirm it loads (check the Sider overla
   ),
   caption: [Layer 7 — Camera]
 )
+#strong[Verify before continuing:] in the Sider overlay (Spacebar), confirm the camera module list shows no errors, then check `sider.log` has no `nesalib`/`BroadCastCam` load errors. If errors, the library line is missing or below the camera line — libraries first. Do not continue until the log is clean.
 
 === Layer 8 — Balls
 
@@ -183,6 +205,7 @@ The Stadium Server is pre-installed — confirm it loads (check the Sider overla
 )
 
 Realism Gameplay V12 (All Makers) is the primary recommendation — the September 2026 Holland-lineage iteration superseding v10, with explicit FL26 compatibility. Verify the v12 module and Data-file list in the pack's readme before swapping (folder and module names may differ from v10). AI Manager v2 adds adaptive AI mentality on top — it runs alongside any gameplay mod, including Realism V12, with zero conflicts. The Gameplay Loader is retained for testing other `.dt`-based gameplay mods or swapping between gameplay variants. Note that Realism V12 installs directly into Sider (`livecpk` + Lua modules) and does not use the Gameplay Loader — only `.dt`-based gameplay mods go through the Loader.
+#strong[Verify before continuing:] open the Sider overlay (Spacebar) — expect the Gameplay Loader menu plus AI Manager present with no module errors in `sider.log`. Pick a gameplay variant in the Loader and confirm it persists across a restart. If missing, check the `lua.module` lines and `Sider\` files (see Missing-module pitfall).
 
 === Layer 10 — Career Depth
 
@@ -200,6 +223,7 @@ Realism Gameplay V12 (All Makers) is the primary recommendation — the Septembe
 )
 
 #strong[caocacao.net note:] UML v3 is distributed by the UML Team and hosted freely on caocacao.net. Downloads are via PixelDrain (primary files) and Modsfire (WC addon fix). This mod is optional — the base FL26 Master League is fully playable without it.
+#strong[Verify before continuing (UML only):] boot to the Master League menu with UML applied — expect UML's league list (incl. K League 1) and exclusive scoreboards. If the game crashes on load, restore the pre-Layer-10 snapshot: UML and the Gondowan EDIT file are mutually exclusive (see conflicts).
 
 === Layer 11 — Optional Leagues
 

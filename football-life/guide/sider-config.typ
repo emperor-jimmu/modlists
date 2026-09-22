@@ -14,17 +14,17 @@ The framework is Lua-scriptable: modules can hook into in-game events, present o
 
 == `+[lua]` — Module Registration
 
-Each `lua.module` line loads a Sider Lua module at startup. Modules are read from the `Sider\` directory. The order of entries #emph[does not matter] for Lua modules — each module's hooks are wired independently by the Sider framework.
+Each `lua.module` line loads a Sider Lua module at startup. Modules are read from the `Sider\` directory. The order of entries #emph[does not matter — with one exception:] library modules must load before the modules that need them (`lib\nesalib.lua` before `BroadCastCam.lua`; `lib\CommonLib.lua` before `BallServer.lua`). Keep libraries at the top of the `[lua]` section and everything else can follow in any order.
 
 #figure(
   table(
     columns: (auto, auto, 2fr),
     table.header([Module], [Entry], [What It Does]),
     [SoundServer], [`lua.module = "SoundServer.lua"`], [Per-channel audio mixer — crowd, referee, announcer, ambient. Open in-game via Sider overlay to balance levels.],
-    [Stadium Server], [`lua.module = "StadiumServer.lua"`], [Per-team / per-league stadium assignment. Reads `content\stadium-server\map_teams.txt` at kickoff and injects the correct stadium.],
-    [Ball Server], [`lua.module = "BallServer.lua"`], [Competition-aware ball selection. In-game access: Spacebar → `~` → OMB.lua.],
+    [Stadium Server], [`lua.module = "StadiumServer.lua"`], [Per-team / per-league stadium assignment. Reads `SiderAddons\content\stadiums\map_teams.txt` at kickoff and injects the correct stadium.],
+    [Ball Server], [`lua.module = "lib\CommonLib.lua"` then `lua.module = "BallServer.lua"`], [Competition-aware ball selection. CommonLib must load first. In-game access: Spacebar → `~` → OMB.lua.],
     [Gameplay Loader], [`lua.module = "GameplayLoader.lua"`], [Swaps between gameplay mods without file replacement. Only one gameplay mod active at a time.],
-    [Camera], [`lua.module = "Camera.lua"`], [TV-broadcast camera tuning: zoom, height, smooth panning. Nesa24's camera modules.],
+    [Camera], [`lua.module = "lib\nesalib.lua"` then `lua.module = "BroadCastCam.lua"`], [TV-broadcast camera tuning: zoom, height, smooth panning. Nesa24's camera modules — nesalib must load first.],
   ),
   caption: [Lua Modules — Our Stack]
 )
@@ -61,11 +61,13 @@ Complete `sider.ini` template for this mod stack:
     columns: (auto, 2fr),
     table.header([Entry], [Purpose]),
     [`lua.enabled = 1`], [Master enable switch for all Lua modules.],
+    [`lua.module = "lib\CommonLib.lua"`], [Library — must load before BallServer.],
+    [`lua.module = "lib\nesalib.lua"`], [Library — must load before BroadCastCam.],
     [`lua.module = "SoundServer.lua"`], [Audio mixing framework — volume control per channel.],
     [`lua.module = "StadiumServer.lua"`], [Stadium assignment per team and league.],
     [`lua.module = "BallServer.lua"`], [Competition-aware ball selection.],
     [`lua.module = "GameplayLoader.lua"`], [Gameplay mod switcher — activate one mod at a time.],
-    [`lua.module = "Camera.lua"`], [Camera tuning modules by nesa24.],
+    [`lua.module = "BroadCastCam.lua"`], [Camera tuning modules by nesa24.],
     [`cpk.root = ".\livecpk\preds-root"`], [Predator002 Chant Pack V8 — team-specific chants + ChantsBase ambient crowd.],
     [`cpk.root = ".\livecpk\referee-whistle"`], [Referee Whistle Mod — high-fidelity whistle samples.],
     [`cpk.root = ".\livecpk\atmosphere-overhaul"`], [Atmosphere / Stadium Sound Overhaul — goal reactions, jeers, crowd swells.],
@@ -78,9 +80,9 @@ Complete `sider.ini` template for this mod stack:
 
 === Common Pitfalls
 
-#strong[Unmapped stadiums:] If a team plays at a generic stadium instead of its real-world ground, the Stadium Server's `map_teams.txt` is missing or outdated for that team. Check `content\stadium-server\map_teams.txt`. Each line maps a team ID to a stadium folder: `128, 009, Stamford Bridge, Chelsea\`. The file format is team ID, stadium ID, stadium name, stadium folder path — one line per assignment.
+#strong[Unmapped stadiums:] If a team plays at a generic stadium instead of its real-world ground, the Stadium Server's `map_teams.txt` is missing or outdated for that team. Check `SiderAddons\content\stadiums\map_teams.txt`. Each line maps a team ID to a stadium folder: `128, 009, Stamford Bridge, Chelsea\`. The file format is team ID, stadium ID, stadium name, stadium folder path — one line per assignment.
 
-#strong[Faces not loading:] Verify the `cpk.root` path to your face pack is correct and present in `sider.ini`. Common causes: (a) the path has a typo — each path must match the actual directory name exactly; (b) the face pack was not extracted to the expected location; (c) a later `cpk.root` with its own face folder is overriding the facepack. See the load order rule above.
+#strong[Faces not loading:] Faces install to `SP Football Life 26\download\` — there is no `cpk.root` entry for faces, so a missing `cpk.root` is never the cause. Check: (a) the pack was extracted to `download\` (not a nested subfolder); (b) `01_smkdb_fa7.cpk` (SmokePatch) or the facepack folders are directly in `download\`; (c) no stale `cpk.root = ".\content\faces"` line from a SmokePatch migration is present — remove it if so. See the faces note above.
 
 #strong[Sider not injecting:] The game is being launched through `FL 26.exe` instead of `FL_2026 start.exe`. The launcher must be the parent process so Sider can initialize. If you are using a desktop shortcut, edit the shortcut target to point to `FL_2026 start.exe`, not the game executable. If you run the game through a launcher (Steam, Playnite), configure it to launch `FL_2026 start.exe`.
 
@@ -114,6 +116,6 @@ Use `-aoa` (overwrite all) to force-restore every file to the snapshot state.
 
 - `sider.ini` — the single most valuable file; 2 KB that controls your entire mod stack
 - `Sider\` — all Lua module files; under 1 MB
-- `content\stadium-server\map_teams.txt` — hours of manual team-to-stadium mapping
+- `SiderAddons\content\stadiums\map_teams.txt` — hours of manual team-to-stadium mapping
 
 #strong[Timestamp and label:] Naming snapshot archives descriptively saves time. Example: `sider-backup-layer4-faces-20260810.zip` tells you exactly what it contains and when it was made. Store snapshots outside the FL26 root directory so they are not accidentally deleted during uninstall or mod cleanup.
