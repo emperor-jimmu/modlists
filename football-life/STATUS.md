@@ -14,8 +14,7 @@
 | 3 | Update v2.1 | v2.1 | https://caocacao.net/download-football-life-2026-fl-26/ | VERIFIED | Database + kit update. Apply after v2.0. |
 | 3b | Update v2.2 (final, May 12 2026) | v2.2 | https://pes-files.com/pes-2021-sp-football-life-2026-v2-2/ (Modsfire mirror + official pessmokepatch link page) | VERIFIED | Final post-season update — database fixes (national teams), club + national kits (Brasileirão, MLS, 40 NTs). Requires v2.0 installed. Career saves from any FL26 version continue. Ships a new edit file (2.0/2.1 edit files reusable via included option). Unzip, run installer, select game directory. |
 | 4 | v2.20 Option File | Jun 2026 | https://caocacao.net/download-football-life-2026-fl-26/ | SUPERSEDED | Superseded by #47 Gondowan Final EDIT File (Sep 2026: summer window to mid-Sep, 800+ revisions). Kept for reference — use #47 unless you must stay on the June database. |
-| 5 | English Commentary v8 | v8 | https://caocacao.net/download-football-life-2026-fl-26/ | VERIFIED | Separate download from caocacao.net. Peter Drury & Jim Beglin. Install then select English under System Settings > Language. |
-| 6 | Facepack + Update 3 | 14,500 faces / 38 GB | https://caocacao.net/download-football-life-2026-fl-26/ | VERIFIED | Available on caocacao.net alongside base game. For the best face coverage, see the dedicated facepack section below. |
+| 6 | Facepack + Update 3 | 14,500 faces / 38 GB (8 parts + Update 3) | https://caocacao.net/download-football-life-2026-fl-26/#d_Facepack_update_3_14500_face_-_38_GB | VERIFIED | caocacao.net Facepack section (anchor verified Sep 22): 8 parts + `faces2627up3.rar` Update 3 via CaoCacao Drive. Distinct from #4 v2.20 Option File (EDIT00000000 database) — this #6 is faces only. For the best face coverage, see the dedicated facepack section below. |
 
 ## Facepack Sources
 
