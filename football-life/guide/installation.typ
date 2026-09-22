@@ -78,7 +78,6 @@ The FL26 root contains these directories relevant to the mod stack:
     columns: (1fr, 2fr, 2fr),
     table.header([Mod], [Details], [Install]),
     [SoundServer (2026)], [FL26-tuned audio mixer by All Makers (nesa24 lineage): stadium atmosphere, fan reactions, whistles, kick/net sounds. #strong[Bundled in Essentials (Layer 3).] Standalone: #link("https://pes-files.ru/pes_2021_sound_server_mod_update_2026")[Sound Server 2026 (Jul 2026)]. Legacy build: #link("https://pesnewupdate.com/pes-2021-sound-server-by-nesa24/")[PESNewupdate mirror].], [Place the Lua module in `Sider\`. Enable with `lua.module = "SoundServer.lua"`. Tune levels via the Sider overlay. Skip if you installed Essentials first.],
-    [Whistle Mod (SoulBallZ)], [7 whistle options (Default, A–F), 300–400% volume variants. #link("https://caocacao.net/pes-2021-referee-whistle-fix/")[Sider + CPK versions].], [Pick one variant, copy its folder to `livecpk\`. Add its `cpk.root`.],
     [Atmosphere 2026 + Crowd Overhaul], [All-Makers 2026 stack: net sounds, pitch FX, crowd overhaul via `CrowdSoundOverhaul.lua`. #link("https://pes-files.ru/pes_2021_atmosphere_sound_server_2026")[Atmosphere 2026] + #link("https://pes-files.ru/pes_2021_crowd_sound_overhaul_update_2026")[Crowd Overhaul] (Sider 2026 v7.4.1).], [Copy folders to matching Sider dirs. Add the `cpk.root` lines and `lua.module = "CrowdSoundOverhaul.lua"` per the pack readme.],
   ),
   caption: [Layer 2 — Audio Framework & Atmosphere]

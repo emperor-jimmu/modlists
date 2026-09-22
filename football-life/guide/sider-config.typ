@@ -47,8 +47,6 @@ Each `cpk.root` line registers a filesystem directory that Sider scans and overl
 This is the opposite of how many game mod managers work (loose files override archives). In Sider, later entries are higher priority. Use this intentionally: put your base asset packs early and your fine-tuning overrides later.
 
 ```ini
-[cpk]
-cpk.root = ".\livecpk\Referee Whistle Fix"
 cpk.root = ".\livecpk\NetSound"
 cpk.root = ".\livecpk\Pitch Sound FX"
 
@@ -68,7 +66,6 @@ Complete `sider.ini` template for this mod stack:
     [`lua.module = "BallServer.lua"`], [Competition-aware ball selection.],
     [`lua.module = "GameplayLoader.lua"`], [Gameplay mod switcher — activate one mod at a time.],
     [`lua.module = "BroadCastCam.lua"`], [Camera tuning modules by nesa24.],
-    [`cpk.root = ".\livecpk\Referee Whistle Fix"`], [Whistle Mod (SoulBallZ) — pick one variant folder.],
     [`cpk.root = ".\livecpk\NetSound"` + `cpk.root = ".\livecpk\Pitch Sound FX"`], [Atmosphere 2026 + Crowd Overhaul — net sounds, pitch FX (`lua.module = "CrowdSoundOverhaul.lua"`).],
     [—], [#strong[Facepack:] Mega Facepack V4/V5 installs to `download\` — no `cpk.root` entry needed. FL26 reads faces directly from the `download` folder at startup. #emph[Remove any old `cpk.root = ".\content\faces"` line if migrating from the SmokePatch facepack.]],
   ),
