@@ -62,10 +62,10 @@ The FL26 root contains these directories relevant to the mod stack:
   table(
     columns: (auto, 2fr, 2fr),
     table.header([Mod], [Details], [Install]),
-    [SoundServer], [Audio mixing framework by nesa24 (JUCE-based). Controls crowd volume, referee calls, announcer levels, and ambient stadium atmosphere independently. #strong[Bundled in the Essentials Mod Pack (Layer 3).] Standalone thread: EvoWeb — search: "SoundServer nesa24".], [Place the SoundServer Lua module in `Sider\`. Enable in `sider.ini` with `lua.module = "SoundServer.lua"`. Configure levels in-game via the Sider overlay. If you installed the Essentials Mod Pack first, skip this step — the module is already present.],
-    [Predator002 Chant Pack V8], [Thousands of team-specific chants plus ChantsBase ambient crowd audio. Player-specific chants included. V8 / V8.1 confirmed active August 2026. EvoWeb — search: "Predator002 chants".], [Extract to `livecpk\preds-root\`. Add `cpk.root = ".\livecpk\preds-root"` to your `sider.ini`.],
-    [Referee Whistle Mod], [High-fidelity whistle replacement samples. Unversioned; confirmed active August 2026. EvoWeb — search: "referee whistle".], [Extract to a subdirectory under `livecpk\` (e.g. `livecpk\referee-whistle\`). Add `cpk.root = ".\livecpk\referee-whistle"` to `sider.ini`.],
-    [Atmosphere / Stadium Sound Overhaul], [Goal reactions, jeers, momentum crowd swells, and dynamic stadium ambiance. Unversioned; confirmed active August 2026. EvoWeb — search: "atmosphere sound overhaul".], [Extract to a subdirectory under `livecpk\` (e.g. `livecpk\atmosphere-overhaul\`). Add `cpk.root = ".\livecpk\atmosphere-overhaul"` to `sider.ini`.],
+    [SoundServer], [Audio mixing framework by nesa24 (JUCE-based). Controls crowd volume, referee calls, announcer levels, and ambient stadium atmosphere independently. #strong[Bundled in the Essentials Mod Pack (Layer 3).] Standalone: #link("https://pesnewupdate.com/pes-2021-sound-server-by-nesa24/")[PESNewupdate mirror (nesa24/Digitalfoxx, Sider 7)] or EvoWeb — search: "SoundServer nesa24".], [Place the SoundServer Lua module in `Sider\`. Enable in `sider.ini` with `lua.module = "SoundServer.lua"`. Configure levels in-game via the Sider overlay. If you installed the Essentials Mod Pack first, skip this step — the module is already present.],
+    [Predator002 Chant Pack V8], [Thousands of team-specific chants plus ChantsBase ambient crowd audio. Player-specific chants included. V8 / V8.1 confirmed active August 2026. Download: #link("https://pes-files.ru/pes_2021_chants_pack_v8_1_aio_update_season_2024")[pes-files.ru — V8.1 AIO] or EvoWeb — search: "Predator002 chants".], [Extract to `livecpk\preds-root\`. Add `cpk.root = ".\livecpk\preds-root"` to your `sider.ini`.],
+    [Referee Whistle Mod (SoulBallZ)], [High-fidelity whistle replacements — 7 options (Default, A–F), 300–400% volume variants. Download: #link("https://caocacao.net/pes-2021-referee-whistle-fix/")[caocacao.net — Sider + CPK versions (Modsfire/Sharemods)].], [Pick one variant, copy its `Referee Whistle Fix` folder to `livecpk\`. Add `cpk.root = ".\livecpk\Referee Whistle Fix"` to `sider.ini`.],
+    [Atmosphere / Stadium Sound Overhaul], [Goal reactions, jeers, momentum crowd swells, and dynamic stadium ambiance. No single canonical file — community packs via EvoWeb — search: "atmosphere sound overhaul". SoundServer (above) + Predator002 cover the baseline if you skip this.], [Extract to a subdirectory under `livecpk\` (e.g. `livecpk\atmosphere-overhaul\`). Add `cpk.root = ".\livecpk\atmosphere-overhaul"` to `sider.ini`.],
   ),
   caption: [Layer 2 — Audio Framework & Atmosphere]
 )
@@ -106,19 +106,19 @@ This pack is the recommended visual baseline. It installs several community stan
 
 === Layer 5 — Stadiums
 
-FL26 includes 36 pre-installed stadiums in the base download. The Stadium Server and AIO Stadium Pack below add per-team assignment and additional high-resolution stadiums beyond the built-in set.
+FL26 includes 36 pre-installed stadiums in the base download (11 in the pre-installed Stadium Server v1.60, the rest in cpk). The rows below add per-team assignment and regional high-resolution stadium packs beyond the built-in set. Download: #link("https://www.pessmokepatch.com/2024/11/siderstadiums.html")[SmokePatch FL Sider Stadiums] (MediaFire/Mega mirrors + copy-paste map lines).
 
 #figure(
   table(
     columns: (auto, 2fr, 2fr),
     table.header([Mod], [Details], [Install]),
-    [Stadium Server], [Sider module for per-team and per-league stadium assignment. Unversioned; confirmed active August 2026. EvoWeb — search: "Stadium Server sider".], [Place the Stadium Server Lua module in `Sider\`. Enable in `sider.ini` with `lua.module = "StadiumServer.lua"`. Configure assignments in `map_teams.txt` — see the Sider Configuration chapter.],
-    [AIO Stadium Pack], [High-resolution stadiums, adboards, and tunnel scenes for the 2025/26 season. EvoWeb — search: "AIO Stadium Pack FL26".], [Extract to `content\stadium-server\`. The pack includes pre-configured `map_teams.txt` entries — merge or replace as needed. Large download; allocate 50+ GB free space.],
+    [Stadium Server (zlac, v1.60)], [Sider module for per-team and per-league stadium assignment (unlimited stadiums, `map_teams.txt` + `map_competition.txt`). #strong[Already pre-installed in FL26 (v1.60, upgraded in FL25) — do not replace it with an older version.] Standalone module: EvoWeb — search: "Stadium Server sider". Server docs + regional packs: #link("https://www.pessmokepatch.com/2024/11/siderstadiums.html")[SmokePatch FL Sider Stadiums].], [Pre-installed — nothing to download. Enable in `sider.ini` with `lua.module = "StadiumServer.lua"` (+ `lua.module = "lib\commonLib.lua"` if required). Configure assignments in `map_teams.txt` — see the Sider Configuration chapter.],
+    [Stadium packs (SmokePatch regional)], [High-resolution stadiums + adboards + tunnels, per region (England 36 stadiums ~9 GB, Spain 36 ~6.5 GB, more regions on the page). Download: #link("https://www.pessmokepatch.com/2024/11/siderstadiums.html")[SmokePatch FL Sider Stadiums (MediaFire/Mega mirrors + map lines)]. Packs exclude the 36 pre-installed FL stadiums.], [Pick a region, extract its stadium folders to `SiderAddons\content\stadiums\` (FL26 path — older guides say `content\stadium-server\`), and copy the page's map lines into `map_teams.txt`. Map format: `TeamID, StadiumID, Stadium name, Folder # comment`.],
   ),
   caption: [Layer 5 — Stadiums]
 )
 
-The Stadium Server is the prerequisite module; the AIO Stadium Pack supplies the actual stadium data. Install the server first, confirm it loads (check the Sider overlay in-game), then install the stadium pack. Do not configure `map_teams.txt` until both are installed and the server module is verified active.
+The Stadium Server is pre-installed — confirm it loads (check the Sider overlay in-game) before adding regional packs. Do not configure `map_teams.txt` until the server module is verified active. If Windows blocks saving `map_teams.txt`, save to Desktop first, then move it back.
 
 === Layer 6 — Graphics Overhaul
 

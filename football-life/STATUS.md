@@ -29,10 +29,10 @@
 
 | # | Mod | Version | Source | Status | Notes |
 |---|---|---|---|---|---|
-| 5 | SoundServer (nesa24/juce) | unversioned Sider module — confirmed active Aug 2026 | Included in Essentials Mod Pack (Layer 3); standalone thread: EvoWeb — search: "SoundServer nesa24" | VERIFIED | Audio mixer: crowd, referee, announcer, ambient. Sider module → enable in `sider.ini`. Bundled in the Essentials Mod Pack; install Layer 3 first — standalone download only needed if skipping the pack. |
-| 6 | Predator002 Chant Pack | V8 / V8.1 | EvoWeb — search: "Predator002 chants" | VERIFIED | Thousands of team-specific chants + ChantsBase ambient crowd. Player-specific chants. Sider `livecpk/preds-root` → `cpk.root`. |
-| 7 | Referee Whistle Mod | unversioned — confirmed active Aug 2026 | EvoWeb — search: "referee whistle" | VERIFIED | High-fidelity whistle replacements. Sider `livecpk`. |
-| 8 | Atmosphere / Stadium Sound Overhaul | unversioned — confirmed active Aug 2026 | EvoWeb — search: "atmosphere sound overhaul" | VERIFIED | Goal reactions, jeers, momentum crowd swells. Sider `livecpk`. |
+| 5 | SoundServer (nesa24/juce) | unversioned Sider module — confirmed active Aug 2026 | Bundled in Essentials (#9); standalone: https://pesnewupdate.com/pes-2021-sound-server-by-nesa24/ (nesa24/Digitalfoxx, Sider 7) or EvoWeb — search: "SoundServer nesa24" | VERIFIED | Audio mixer: crowd, referee, announcer, ambient. Sider module → enable in `sider.ini`. Install Layer 3 first — standalone download only needed if skipping the pack. |
+| 6 | Predator002 Chant Pack | V8 / V8.1 | https://pes-files.ru/pes_2021_chants_pack_v8_1_aio_update_season_2024 (V8.1 AIO) or EvoWeb — search: "Predator002 chants" | VERIFIED | Thousands of team-specific chants + ChantsBase ambient crowd. Player-specific chants. Sider `livecpk/preds-root` → `cpk.root`. |
+| 7 | Referee Whistle Mod (SoulBallZ) | 7 variants (Default, A–F) | https://caocacao.net/pes-2021-referee-whistle-fix/ (Sider + CPK via Modsfire/Sharemods) | VERIFIED | High-fidelity whistle replacements. Sider `livecpk` — pick one variant, `cpk.root = ".\livecpk\Referee Whistle Fix"`. |
+| 8 | Atmosphere / Stadium Sound Overhaul | unversioned — confirmed active Aug 2026 | No single canonical file — EvoWeb — search: "atmosphere sound overhaul" | VERIFIED | Goal reactions, jeers, momentum crowd swells. Sider `livecpk`. SoundServer + Predator002 cover the baseline if skipped. |
 
 ## EvoWeb — Visual Foundation
 
@@ -44,8 +44,8 @@
 
 | # | Mod | Version | Source | Status | Notes |
 |---|---|---|---|---|---|
-| 10 | Stadium Server | unversioned Sider module — confirmed active Aug 2026 | EvoWeb — search: "Stadium Server sider" | VERIFIED | Per-team/per-league stadium assignment. Sider module → enable in `sider.ini`. |
-| 11 | AIO Stadium Pack | 2025/26 season pack | EvoWeb — search: "AIO Stadium Pack FL26" | VERIFIED | High-res stadiums + adboards + tunnels. `content/stadium-server` → configure `map_teams.txt`. |
+| 10 | Stadium Server (zlac, v1.60) | v1.60 — pre-installed in FL25/FL26 | https://www.pessmokepatch.com/2024/11/siderstadiums.html (docs + packs); standalone: EvoWeb — search: "Stadium Server sider" | VERIFIED | #strong[Pre-installed — do not replace with an older version.] Unlimited stadiums, `map_teams.txt` + `map_competition.txt`. Enable in `sider.ini`. |
+| 11 | Stadium packs (SmokePatch regional) | per-region (England 36 ~9 GB, Spain 36 ~6.5 GB, …) | https://www.pessmokepatch.com/2024/11/siderstadiums.html | VERIFIED | High-res stadiums + adboards + tunnels. Extract to `SiderAddons\content\stadiums\`, copy page's map lines into `map_teams.txt`. Excludes the 36 pre-installed FL stadiums. |
 | 12 | Soccer Revolution | unversioned — confirmed active Aug 2026 | https://evoweb.uk/threads/soccer-revolution-10-0-brand-new-gameplay-graphics-reshades.94305/ | VERIFIED | Lighting overhaul: pitch textures, stadium shadows. Sider module / `livecpk`. |
 | 13 | Jeremiah's Ultra Turfs | unversioned — confirmed active Aug 2026 | EvoWeb — search: "Jeremiah Ultra Turfs" | VERIFIED | Organic non-repeating grass with realistic wear. Sider `livecpk`. |
 | 14 | ReShade preset (Machete Gaming / KnightMD) | unversioned preset — confirmed active Aug 2026 | Machete Gaming (YouTube/Discord) or EvoWeb; ReShade base: https://reshade.me/ | VERIFIED | `.ini` preset into FL26 root. Install ReShade separately targeting `FL 26.exe`. |
