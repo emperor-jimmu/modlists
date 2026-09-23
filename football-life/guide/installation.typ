@@ -6,7 +6,7 @@
   table(
     columns: (auto, 2fr),
     table.header([If you skip], [Then you must]),
-    [Layer 3 (Essentials)], [Install SoundServer (Layer 2), Ball Server (Layer 8), and Gameplay Loader (Layer 9) standalone — each row says how.],
+    [Layer 3 (Essentials)], [Install the server frameworks standalone: SoundServer (Layer 2), Ball Server (Layer 8), Gameplay Loader (Layer 9), Kit/Badge/Sleeve servers (Layers 12/14 readmes), Scoreboard/Menu servers (Layers 13/16/20 readmes) — each row says how. Content packs in Layers 4+ are NOT replacements: they need these servers to load.],
     [Layer 5 (Stadiums)], [Layer 17 map merges have no base — configure `map_teams.txt` from scratch.],
     [Layer 10 UML], [Layer 16 scoreboards become your WC2026 coverage — UML's exclusive boards won't be there.],
     [Layers 11, 19, 20], [Nothing — these are optional by design. Skip freely.],
@@ -96,7 +96,7 @@ The FL26 root contains these directories relevant to the mod stack:
   caption: [Layer 3 — Visual Foundation]
 )
 
-This pack is the recommended visual baseline. It installs several community standards (ball server, kit server, scoreboard selector) that later layers expect to be present. Do not skip this layer.
+This pack is the server foundation, not content: it installs the Sider frameworks (kit/badge/sleeve, scoreboard, menu, ball, entrance, goalsong, referee-kit servers) that later content layers plug into. Layers 4+ bring the content (faces, stadiums, balls, kits) but do not ship these servers — without Layer 3 you must source each server from its layer's readme instead. Recommended, skippable via the table above; do not skip silently.
 
 #strong[Verify before continuing:] launch via `FL_2026 start.exe`, press Spacebar for the Sider overlay — expect SoundServer, BallServer, and GameplayLoader listed as loaded. If any is missing, check its `lua.module` line exists in `sider.ini` and the `.lua` file is in `Sider\` (see Missing-module pitfall). Do not continue until all three load.
 
